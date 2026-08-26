@@ -10,7 +10,7 @@ const { buildings } = gen('buildings.json');
 const { goods } = gen('goods.json');
 
 const goodsOut = {};
-for (const g of goods) goodsOut[g.id] = { name: g.name, cost: g.cost, icon: g.icon };
+for (const g of goods) goodsOut[g.id] = { name: g.name, cost: g.cost, icon: g.icon, index: g.index };
 
 const buildingsOut = buildings
   .map((b) => ({

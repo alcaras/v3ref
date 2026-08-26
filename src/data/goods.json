@@ -7,6 +7,7 @@
    "cost": 30,
    "icon": "img/goods/clothes.png",
    "id": "clothes",
+   "index": 12,
    "name": "Clothes",
    "needs": [
     {
@@ -541,6 +542,7 @@
    "cost": 30,
    "icon": "img/goods/electricity.png",
    "id": "electricity",
+   "index": 17,
    "name": "Electricity",
    "needs": [
     {
@@ -788,6 +790,7 @@
    "cost": 20,
    "icon": "img/goods/fabric.png",
    "id": "fabric",
+   "index": 9,
    "name": "Fabric",
    "needs": [
     {
@@ -1107,6 +1110,7 @@
    "cost": 20,
    "icon": "img/goods/fish.png",
    "id": "fish",
+   "index": 8,
    "name": "Fish",
    "needs": [
     {
@@ -1221,6 +1225,7 @@
    "cost": 30,
    "icon": "img/goods/furniture.png",
    "id": "furniture",
+   "index": 13,
    "name": "Furniture",
    "needs": [
     {
@@ -1496,6 +1501,7 @@
    "cost": 20,
    "icon": "img/goods/grain.png",
    "id": "grain",
+   "index": 7,
    "name": "Grain",
    "needs": [
     {
@@ -1978,6 +1984,7 @@
    "cost": 30,
    "icon": "img/goods/groceries.png",
    "id": "groceries",
+   "index": 11,
    "name": "Groceries",
    "needs": [
     {
@@ -2197,6 +2204,7 @@
    "cost": 50,
    "icon": "img/goods/merchant_marine.png",
    "id": "merchant_marine",
+   "index": 18,
    "name": "Merchant Marine",
    "needs": [],
    "obsessionChance": 0,
@@ -2443,6 +2451,7 @@
    "cost": 30,
    "icon": "img/goods/paper.png",
    "id": "paper",
+   "index": 14,
    "name": "Paper",
    "needs": [
     {
@@ -2513,6 +2522,7 @@
    "cost": 30,
    "icon": "img/goods/services.png",
    "id": "services",
+   "index": 15,
    "name": "Services",
    "needs": [
     {
@@ -2899,6 +2909,7 @@
    "cost": 30,
    "icon": "img/goods/transportation.png",
    "id": "transportation",
+   "index": 16,
    "name": "Transportation",
    "needs": [
     {
@@ -3338,6 +3349,7 @@
    "cost": 20,
    "icon": "img/goods/wood.png",
    "id": "wood",
+   "index": 10,
    "name": "Wood",
    "needs": [
     {
@@ -3597,6 +3609,7 @@
    "cost": 60,
    "icon": "img/goods/clippers.png",
    "id": "clippers",
+   "index": 19,
    "name": "Clippers",
    "needs": [
     {
@@ -4268,6 +4281,7 @@
    "cost": 30,
    "icon": "img/goods/coal.png",
    "id": "coal",
+   "index": 24,
    "name": "Coal",
    "needs": [
     {
@@ -4467,6 +4481,7 @@
    "cost": 40,
    "icon": "img/goods/dye.png",
    "id": "dye",
+   "index": 22,
    "name": "Dye",
    "needs": [],
    "obsessionChance": 0,
@@ -5061,6 +5076,7 @@
    "cost": 60,
    "icon": "img/goods/locomotives.png",
    "id": "engines",
+   "index": 30,
    "name": "Engines",
    "needs": [],
    "obsessionChance": 0,
@@ -5283,6 +5299,7 @@
    "cost": 50,
    "icon": "img/goods/explosives.png",
    "id": "explosives",
+   "index": 35,
    "name": "Explosives",
    "needs": [],
    "obsessionChance": 0,
@@ -5517,6 +5534,7 @@
    "cost": 30,
    "icon": "img/goods/fertilizer.png",
    "id": "fertilizer",
+   "index": 33,
    "name": "Fertilizer",
    "needs": [],
    "obsessionChance": 0,
@@ -5667,6 +5685,7 @@
    "cost": 40,
    "icon": "img/goods/glass.png",
    "id": "glass",
+   "index": 32,
    "name": "Glass",
    "needs": [
     {
@@ -5906,6 +5925,7 @@
    "cost": 40,
    "icon": "img/goods/hardwood.png",
    "id": "hardwood",
+   "index": 27,
    "name": "Hardwood",
    "needs": [],
    "obsessionChance": 0,
@@ -6212,6 +6232,7 @@
    "cost": 40,
    "icon": "img/goods/iron.png",
    "id": "iron",
+   "index": 25,
    "name": "Iron",
    "needs": [],
    "obsessionChance": 0,
@@ -6374,6 +6395,7 @@
    "cost": 40,
    "icon": "img/goods/lead.png",
    "id": "lead",
+   "index": 26,
    "name": "Lead",
    "needs": [],
    "obsessionChance": 0,
@@ -6804,6 +6826,7 @@
    "cost": 40,
    "icon": "img/goods/oil.png",
    "id": "oil",
+   "index": 29,
    "name": "Oil",
    "needs": [
     {
@@ -6967,6 +6990,7 @@
    "cost": 40,
    "icon": "img/goods/rubber.png",
    "id": "rubber",
+   "index": 28,
    "name": "Rubber",
    "needs": [],
    "obsessionChance": 0,
@@ -7057,6 +7081,7 @@
    "cost": 40,
    "icon": "img/goods/silk.png",
    "id": "silk",
+   "index": 21,
    "name": "Silk",
    "needs": [
     {
@@ -7184,6 +7209,7 @@
    "cost": 70,
    "icon": "img/goods/steamers.png",
    "id": "steamers",
+   "index": 20,
    "name": "Steamers",
    "needs": [
     {
@@ -7507,6 +7533,7 @@
    "cost": 50,
    "icon": "img/goods/steel.png",
    "id": "steel",
+   "index": 31,
    "name": "Steel",
    "needs": [],
    "obsessionChance": 0,
@@ -7693,6 +7720,7 @@
    "cost": 50,
    "icon": "img/goods/sulfur.png",
    "id": "sulfur",
+   "index": 23,
    "name": "Sulfur",
    "needs": [],
    "obsessionChance": 0,
@@ -8583,6 +8611,7 @@
    "cost": 40,
    "icon": "img/goods/tools.png",
    "id": "tools",
+   "index": 34,
    "name": "Tools",
    "needs": [],
    "obsessionChance": 0,
@@ -8661,6 +8690,7 @@
    "cost": 100,
    "icon": "img/goods/automobiles.png",
    "id": "automobiles",
+   "index": 46,
    "name": "Automobiles",
    "needs": [
     {
@@ -8779,6 +8809,7 @@
    "cost": 50,
    "icon": "img/goods/coffee.png",
    "id": "coffee",
+   "index": 42,
    "name": "Coffee",
    "needs": [
     {
@@ -8917,6 +8948,7 @@
    "cost": 200,
    "icon": "img/goods/fine_art.png",
    "id": "fine_art",
+   "index": 52,
    "name": "Fine Art",
    "needs": [
     {
@@ -9035,6 +9067,7 @@
    "cost": 30,
    "icon": "img/goods/fruit.png",
    "id": "fruit",
+   "index": 38,
    "name": "Fruit",
    "needs": [
     {
@@ -9233,6 +9266,7 @@
    "cost": 100,
    "icon": "img/goods/gold.png",
    "id": "gold",
+   "index": 51,
    "name": "Gold",
    "needs": [],
    "obsessionChance": 0,
@@ -9334,6 +9368,7 @@
    "cost": 30,
    "icon": "img/goods/liquor.png",
    "id": "liquor",
+   "index": 39,
    "name": "Liquor",
    "needs": [
     {
@@ -9468,6 +9503,7 @@
    "cost": 60,
    "icon": "img/goods/luxury_clothes.png",
    "id": "luxury_clothes",
+   "index": 49,
    "name": "Luxury Clothes",
    "needs": [
     {
@@ -9534,6 +9570,7 @@
    "cost": 60,
    "icon": "img/goods/luxury_furniture.png",
    "id": "luxury_furniture",
+   "index": 50,
    "name": "Luxury Furniture",
    "needs": [
     {
@@ -9637,6 +9674,7 @@
    "cost": 30,
    "icon": "img/goods/meat.png",
    "id": "meat",
+   "index": 37,
    "name": "Meat",
    "needs": [
     {
@@ -9819,6 +9857,7 @@
    "cost": 50,
    "icon": "img/goods/opium.png",
    "id": "opium",
+   "index": 45,
    "name": "Opium",
    "needs": [
     {
@@ -9921,6 +9960,7 @@
    "cost": 70,
    "icon": "img/goods/porcelain.png",
    "id": "porcelain",
+   "index": 36,
    "name": "Porcelain",
    "needs": [
     {
@@ -10000,6 +10040,7 @@
    "cost": 80,
    "icon": "img/goods/radios.png",
    "id": "radios",
+   "index": 48,
    "name": "Radios",
    "needs": [
     {
@@ -10143,6 +10184,7 @@
    "cost": 30,
    "icon": "img/goods/sugar.png",
    "id": "sugar",
+   "index": 43,
    "name": "Sugar",
    "needs": [
     {
@@ -10353,6 +10395,7 @@
    "cost": 50,
    "icon": "img/goods/tea.png",
    "id": "tea",
+   "index": 41,
    "name": "Tea",
    "needs": [
     {
@@ -10468,6 +10511,7 @@
    "cost": 70,
    "icon": "img/goods/telephones.png",
    "id": "telephones",
+   "index": 47,
    "name": "Telephones",
    "needs": [
     {
@@ -10522,6 +10566,7 @@
    "cost": 40,
    "icon": "img/goods/tobacco.png",
    "id": "tobacco",
+   "index": 44,
    "name": "Tobacco",
    "needs": [
     {
@@ -10664,6 +10709,7 @@
    "cost": 50,
    "icon": "img/goods/wine.png",
    "id": "wine",
+   "index": 40,
    "name": "Wine",
    "needs": [
     {
@@ -10742,6 +10788,7 @@
    "cost": 80,
    "icon": "img/goods/aeroplanes.png",
    "id": "aeroplanes",
+   "index": 4,
    "name": "Aeroplanes",
    "needs": [
     {
@@ -10825,6 +10872,7 @@
    "cost": 50,
    "icon": "img/goods/ammunition.png",
    "id": "ammunition",
+   "index": 0,
    "name": "Ammunition",
    "needs": [],
    "obsessionChance": 0,
@@ -10891,6 +10939,7 @@
    "cost": 70,
    "icon": "img/goods/artillery.png",
    "id": "artillery",
+   "index": 2,
    "name": "Artillery",
    "needs": [],
    "obsessionChance": 0,
@@ -10956,6 +11005,7 @@
    "cost": 80,
    "icon": "img/goods/ironclads.png",
    "id": "ironclads",
+   "index": 6,
    "name": "Ironclads",
    "needs": [],
    "obsessionChance": 0,
@@ -10972,6 +11022,7 @@
    "cost": 70,
    "icon": "img/goods/man_o_wars.png",
    "id": "manowars",
+   "index": 5,
    "name": "Man-o-Wars",
    "needs": [],
    "obsessionChance": 0,
@@ -11025,6 +11076,7 @@
    "cost": 60,
    "icon": "img/goods/small_arms.png",
    "id": "small_arms",
+   "index": 1,
    "name": "Small Arms",
    "needs": [
     {
@@ -11131,6 +11183,7 @@
    "cost": 80,
    "icon": "img/goods/tanks.png",
    "id": "tanks",
+   "index": 3,
    "name": "Tanks",
    "needs": [],
    "obsessionChance": 0,

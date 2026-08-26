@@ -22,7 +22,6 @@ const base = import.meta.env.BASE_URL;
         <select id="bp-rank" class="rail__select">
           <option value="net">Total profit (£ / level)</option>
           <option value="worker">Profit per worker</option>
-          <option value="constr">Profit per construction point</option>
         </select>
         <p class="bp__railnote" id="bp-ranknote"></p>
       </div>
@@ -79,7 +78,10 @@ const base = import.meta.env.BASE_URL;
       const data = await fetch(`${base}data/profit-calc.json`).then((r) => r.json());
       const $ = (id) => document.getElementById(id);
       const P = window.v3Prices;
-      const state = { building: null, choice: {} };
+      // A locked group is one you have decided for other reasons — you want the
+      // tanks even though switching them off pays better — so the optimiser has
+      // to work around it instead of switching it off.
+      const state = { building: null, choice: {}, locked: {} };
       const priceOf = (g) => P.of(data.goods, g);
 
       // Aggregate a building's goods and jobs for a set of PM choices.
@@ -121,7 +123,9 @@ const base = import.meta.env.BASE_URL;
         let combos = [{}];
         for (const { gi, g } of liveGroups()) {
           const next = [];
-          for (const c of combos) for (let pi = 0; pi < g.pms.length; pi++) next.push({ ...c, [gi]: pi });
+          // A locked group contributes only its chosen method.
+          const options = state.locked[gi] ? [state.choice[gi]] : g.pms.map((_, pi) => pi);
+          for (const c of combos) for (const pi of options) next.push({ ...c, [gi]: pi });
           combos = next;
         }
         return combos;
@@ -146,6 +150,7 @@ const base = import.meta.env.BASE_URL;
       function pickBuilding(id) {
         state.building = data.buildings.find((b) => b.id === id);
         state.choice = {};
+        state.locked = {};
         for (const { gi } of liveGroups()) state.choice[gi] = 0;
         renderPrices();
         renderAll();
@@ -200,6 +205,7 @@ const base = import.meta.env.BASE_URL;
         const best = bestEntry.r.net;
         const atBest = metric({ net, totalJobs }) >= metric(bestEntry.r) - 1e-9;
         const constr = state.building.construction;
+        const lockCount = Object.keys(state.locked).length;
 
         $('bp-head').innerHTML = `
           <div class="bp__netrow">
@@ -209,8 +215,9 @@ const base = import.meta.env.BASE_URL;
             <div class="bp__perw" title="Construction points this building costs — fixed per building, so it never changes which method wins here">${
               constr ? '£' + (net / constr).toFixed(2) : '—'}<span>per construction${constr ? ` (of ${constr})` : ''}</span></div>
             ${atBest
-              ? '<span class="bp__atbest">best set at these prices</span>'
-              : `<button type="button" id="bp-loadbest" class="bp__bestbtn">load best set (£${best.toFixed(0)})</button>`}
+              ? `<span class="bp__atbest">best set${lockCount ? ' within your locks' : ''} at these prices</span>`
+              : `<button type="button" id="bp-loadbest" class="bp__bestbtn">load best set${
+                  lockCount ? ' (keeping locks)' : ''} (£${best.toFixed(0)})</button>`}
           </div>
           <div class="bp__flow">
             ${lines.map((l) => `<span class="bp__fl">
@@ -246,7 +253,16 @@ const base = import.meta.env.BASE_URL;
           const ranked = [...options].sort((a, b) => b.score - a.score || a.pi - b.pi);
           return `
             <div class="bp__group">
-              <div class="bp__gname">${g.name}</div>
+              <div class="bp__gname">
+                <span>${g.name}</span>
+                <button type="button" class="bp__lock ${state.locked[gi] ? 'is-on' : ''}"
+                  data-lock="${gi}"
+                  title="${state.locked[gi]
+                    ? 'Locked — the optimiser keeps this choice'
+                    : 'Lock this group so the optimiser cannot change it'}">
+                  ${state.locked[gi] ? '&#128274; locked' : '&#128275; lock'}
+                </button>
+              </div>
               <table class="vtbl bp__gtable">
                 <thead><tr>
                   <th>Method</th>
@@ -279,6 +295,13 @@ const base = import.meta.env.BASE_URL;
             </div>`;
         }).join('');
 
+        $('bp-groups').querySelectorAll('.bp__lock').forEach((b) =>
+          b.addEventListener('click', () => {
+            const gi = b.dataset.lock;
+            if (state.locked[gi]) delete state.locked[gi]; else state.locked[gi] = true;
+            renderAll();
+          }));
+        // Picking a method inside a locked group locks it to that method.
         $('bp-groups').querySelectorAll('.bp__opt').forEach((tr) =>
           tr.addEventListener('click', () => {
             state.choice[tr.dataset.gi] = Number(tr.dataset.pi);
@@ -326,11 +349,11 @@ const base = import.meta.env.BASE_URL;
       function rankNote() {
         const c = state.building?.construction;
         const notes = {
-          net: 'Ranking by total profit per level.',
           worker: 'Ranking by output per job — this is where automation earns its place.',
-          constr: `Every method here divides by the same ${c ?? '—'} construction points, so the order `
-            + 'matches total profit; the £/con column is what compares this building against others. '
-            + `To rank across buildings, use <a href="${base}method-comparison">Compare Methods</a>.`,
+          net: `Ranking by total profit per level. Profit per construction point is the same ranking `
+            + `here — every method divides by this building's fixed ${c ?? '—'} points — so it is shown `
+            + `as a column instead. It only reorders across buildings: `
+            + `<a href="${base}method-comparison">Compare Buildings</a>.`,
         };
         $('bp-ranknote').innerHTML = notes[rankBy()];
       }
@@ -388,7 +411,14 @@ const base = import.meta.env.BASE_URL;
       font-family: var(--font-ui); font-size: 0.6rem; text-transform: uppercase;
       letter-spacing: 0.16em; color: var(--gold-soft); font-weight: 500;
       border-bottom: 1px solid var(--border); padding-bottom: 0.2rem;
+      display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
     }
+    .bp__lock {
+      font: inherit; font-size: 0.55rem; letter-spacing: 0.08em; cursor: pointer;
+      background: none; border: 0; color: var(--text-faint); padding: 0;
+    }
+    .bp__lock:hover { color: var(--gold); }
+    .bp__lock.is-on { color: var(--gold); }
     .bp__gtable { margin-bottom: 0.9rem; }
     .bp__gtable thead th {
       position: static; border-bottom: 1px solid var(--border);

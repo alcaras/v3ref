@@ -60,12 +60,17 @@ for (const [pmId, lines] of econ.pmGoods) {
   }
 }
 
-const goods = Object.entries(goodsRaw).map(([id, g]) => {
+// The save file identifies goods by their POSITION in the goods files, not by
+// name, so keep that index — it is the join key for importing prices.
+const fileOrder = Object.keys(goodsRaw);
+
+const goods = Object.entries(goodsRaw).map(([id, g], _i) => {
   const f = flows.get(id) ?? { producers: [], consumers: [] };
   const bySize = (a, b) => b.amount - a.amount || a.pm.localeCompare(b.pm);
   return {
     id,
     slug: id,
+    index: fileOrder.indexOf(id),
     name: loc.name(id),
     category: g.category ?? 'staple',
     cost: g.cost ?? 0,
