@@ -5,7 +5,7 @@
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
+import { dataRoot, parseFolder, asArray, stableStringify , idList } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
 import { iconPath } from './lib/icons.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
@@ -33,7 +33,7 @@ const traitList = Object.entries(traits.entries)
     character: bag(t.character_modifier),
     country: bag(t.country_modifier),
     command: bag(t.command_modifier ?? t.commander_modifier),
-    replaces: asArray(t.replace).flat(),
+    replaces: idList(t.replace),
   }))
   .sort(
     (a, b) =>
@@ -50,8 +50,8 @@ const decreeList = Object.entries(decrees.entries)
     name: loc.name(id),
     icon: iconPath(d.texture, 'decrees'),
     cost: d.cost ?? null,
-    techs: asArray(d.unlocking_technologies).flat().map((t) => ({ id: t, name: loc.name(t) })),
-    laws: asArray(d.unlocking_laws).flat().map((l) => ({ id: l, name: loc.name(l) })),
+    techs: idList(d.unlocking_technologies).map((t) => ({ id: t, name: loc.name(t) })),
+    laws: idList(d.unlocking_laws).map((l) => ({ id: l, name: loc.name(l) })),
     modifiers: bag(d.modifier),
   }))
   .sort((a, b) => a.name.localeCompare(b.name));

@@ -23,18 +23,44 @@ const base = import.meta.env.BASE_URL;
 
   <div id="pc-summary" class="pc__summary"></div>
 
-  <h2 class="sect">Every method, ranked at these prices</h2>
+  <h2 class="sect">Every combination, ranked at these prices</h2>
+  <p class="pc__hint">
+    Every combination the building can run, ranked. In the current game data every goods line is a flat
+    amount — there are no percentage goods modifiers — so the groups do not interact and the best option
+    in each group always combines into the best overall set (checked exhaustively against 19,200
+    building × random-market cases). This view is here to show the whole trade-off space, not to correct
+    the per-group one. Click a row to load it.
+  </p>
+  <div class="pc__cmbbar">
+    <span id="pc-cmb-count" class="pc__hint" style="margin:0;"></span>
+    <label class="pc__toggle"><input type="checkbox" id="pc-cmb-all" /> show all</label>
+  </div>
+  <div class="grid"><div class="grid__scroll">
+    <table class="vtbl" id="pc-cmb"><thead></thead><tbody></tbody></table>
+  </div></div>
+  <p class="caption">
+    Ranked on production margin only. Wages scale with employment and are not modeled, so a
+    higher-net combination that employs far more people is not automatically better — read the
+    £/worker column alongside the net.
+  </p>
+
+  <h2 class="sect">Each group on its own</h2>
   <p class="pc__hint">
     One block per production-method group — you run one method from each. Every option shows what the
-    <em>whole building</em> would earn if you picked it, holding your other groups fixed, so percentage
-    methods (throughput, automation) are valued in context. <b class="tone-good">Best</b> is marked;
-    the delta is what switching to it would gain or cost you. Click a row to select it.
+    <em>whole building</em> would earn if you picked it, holding your other groups fixed.
+    <b class="tone-good">Best</b> is marked; the delta is what switching to it would gain or cost you.
+    Automation methods read as a lower net because they buy the same output with fewer workers — the
+    saving is in wages, which this does not price. Click a row to select it.
   </p>
   <div id="pc-groups" class="pc__groups"></div>
 
   <p class="caption">
-    Revenue − input costs at your prices, per level at full employment · wages, economy-of-scale, and
-    state throughput bonuses are not modeled — this is the production margin, not final profitability
+    Revenue − input costs at your prices, per building level at full employment. This is the goods
+    margin: it counts every goods line and every employment line in the game's production methods, and
+    nothing else. Methods also carry effects this cannot price — mortality, shares, job attractiveness,
+    minimum wage, training rate — and wages, economy of scale, and state throughput bonuses are not
+    modeled. 64 of the game's 97 buildings appear here; the rest (monuments, financial districts,
+    ownership-only buildings) move no goods.
   </p>
 
   <TableTools showBar={false} />
@@ -71,8 +97,7 @@ const base = import.meta.env.BASE_URL;
     </table>
   </div></div>
   <p class="caption">
-    Per-method marginal values here: only that method's own inputs, outputs, and jobs, so percentage-only
-    methods are omitted — for those, use the in-context ranking above
+    Per-method values here: that method's own goods and jobs, independent of the rest of the building
   </p>
 
   <script is:inline define:vars={{ base }}>
@@ -172,6 +197,7 @@ const base = import.meta.env.BASE_URL;
             renderPriceLabels();
             renderSummary();
             renderGroups();
+            renderCombinations();
             renderCompare();
           });
           prices.appendChild(row);
@@ -269,6 +295,72 @@ const base = import.meta.env.BASE_URL;
             state.choice[tr.dataset.gi] = Number(tr.dataset.pi);
             renderSummary();
             renderGroups();
+            renderCombinations();
+          }));
+      }
+
+      // ── Every combination the building can run ─────────────────────
+      // The cartesian product over PM groups. The space is small (108 at the
+      // widest, Livestock Ranches), so rank exhaustively rather than assuming
+      // the per-group winners combine into the best set — with percentage
+      // methods in play they often do not.
+      function allCombinations() {
+        const groups = state.building.pmGroups
+          .map((g, gi) => ({ gi, g }))
+          .filter(({ g }) => g.pms.length);
+        let combos = [{}];
+        for (const { gi, g } of groups) {
+          const next = [];
+          for (const c of combos) for (let pi = 0; pi < g.pms.length; pi++) next.push({ ...c, [gi]: pi });
+          combos = next;
+        }
+        return { groups, combos };
+      }
+
+      function renderCombinations() {
+        const { groups, combos } = allCombinations();
+        const scored = combos.map((choice) => {
+          const r = evaluate(choice);
+          return {
+            choice,
+            net: r.net,
+            jobs: r.totalJobs,
+            perWorker: r.totalJobs > 0 ? r.net / r.totalJobs : null,
+          };
+        }).sort((a, b) => b.net - a.net);
+
+        const showAll = $('pc-cmb-all').checked;
+        const shown = showAll ? scored : scored.slice(0, 12);
+        const same = (c) => groups.every(({ gi }) => c[gi] === state.choice[gi]);
+
+        $('pc-cmb').tHead.innerHTML = `<tr>
+          <th class="num" style="width:3rem;">#</th>
+          ${groups.map(({ g }) => `<th>${g.name}</th>`).join('')}
+          <th class="num">Net £</th><th class="num">Jobs</th><th class="num">£/wkr</th></tr>`;
+        $('pc-cmb').tBodies[0].innerHTML = shown.map((r, i) => {
+          const rank = scored.indexOf(r) + 1;
+          return `<tr class="pc__opt ${same(r.choice) ? 'is-current' : ''}" data-combo="${
+            groups.map(({ gi }) => `${gi}:${r.choice[gi]}`).join(',')}">
+            <td class="num dim">${rank}</td>
+            ${groups.map(({ gi, g }) => `<td>${g.pms[r.choice[gi]].name}</td>`).join('')}
+            <td class="num"><b class="${r.net >= 0 ? 'tone-good' : 'tone-bad'}">£${r.net.toFixed(0)}</b></td>
+            <td class="num dim">${r.jobs}</td>
+            <td class="num dim">${r.perWorker == null ? '<span class="cell__dash">—</span>' : r.perWorker.toFixed(2)}</td>
+          </tr>`;
+        }).join('');
+        $('pc-cmb-count').textContent = showAll
+          ? `all ${scored.length} combinations`
+          : `top 12 of ${scored.length} combinations`;
+
+        $('pc-cmb').tBodies[0].querySelectorAll('tr').forEach((tr) =>
+          tr.addEventListener('click', () => {
+            for (const part of tr.dataset.combo.split(',')) {
+              const [gi, pi] = part.split(':');
+              state.choice[gi] = Number(pi);
+            }
+            renderSummary();
+            renderGroups();
+            renderCombinations();
           }));
       }
 
@@ -276,6 +368,7 @@ const base = import.meta.env.BASE_URL;
         renderPriceRows();
         renderSummary();
         renderGroups();
+        renderCombinations();
         renderCompare();
       }
 
@@ -345,6 +438,7 @@ const base = import.meta.env.BASE_URL;
         body.querySelectorAll('tr').forEach((tr) => tr.removeAttribute('data-tt-i'));
       }
 
+      $('pc-cmb-all').addEventListener('change', renderCombinations);
       $('pc-cmp-filter').addEventListener('input', renderCompare);
       $('pc-cmp-positive').addEventListener('change', renderCompare);
       buildingSel.addEventListener('change', () => pickBuilding(buildingSel.value));
@@ -418,6 +512,7 @@ const base = import.meta.env.BASE_URL;
     .pc__cur { font-family: var(--font-mono); font-size: 0.58rem; color: var(--text-faint); letter-spacing: 0.08em; }
     .pc__delta { font-variant-numeric: tabular-nums; }
 
+    .pc__cmbbar { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
     .pc__cmpbar { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
     .pc__field--inline { flex-direction: row; align-items: center; gap: 0.5rem; margin: 0; }
     .pc__field--inline .pc__select { min-width: 18rem; }

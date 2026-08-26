@@ -6,12 +6,10 @@ import techsJson from '../data/techs.json';
 
 const base = import.meta.env.BASE_URL;
 const techs = (techsJson as any).techs as any[];
-const categories = ['production', 'military', 'society'];
-const CATEGORY_LABEL: Record<string, string> = {
-  production: 'Production',
-  military: 'Military',
-  society: 'Society',
-};
+// Category order and labels come from the data, not a hand-written map.
+const categories = [...new Map(
+  techs.filter((t) => t.category).map((t) => [t.category.id, t.category]),
+).values()];
 
 const unlockText = (t: any) =>
   [
@@ -23,7 +21,7 @@ const unlockText = (t: any) =>
 const csv = {
   header: ['Technology', 'Id', 'Category', 'Era', 'Prerequisites', 'Own effects', 'Unlocks buildings', 'Unlocks PMs', 'Unlocks laws', 'Unlocks decrees'],
   rows: techs.map((t) => [
-    t.name, t.id, t.category ?? '', t.era, t.prereqs.map((p: any) => p.name).join('; '),
+    t.name, t.id, t.category?.name ?? '', t.era, t.prereqs.map((p: any) => p.name).join('; '),
     t.modifiers.map((m: any) => `${m.valueText} ${m.label}`).join('; '),
     t.unlocks.buildings.map((x: any) => x.name).join('; '),
     t.unlocks.pms.map((x: any) => x.name).join('; '),
@@ -39,14 +37,14 @@ const csv = {
   pageFilter="Filter technologies…"
   pageStats={[
     { value: techs.length, label: 'technologies' },
-    { value: 5, label: 'eras' },
+    { value: new Set(techs.map((t) => t.era)).size, label: 'eras' },
   ]}
 >
   <TableTools csvId="techs" csvName="victoria3-technologies" />
 
-  {categories.map((cat) => (
+  {categories.map((cat: any) => (
     <div data-techgroup>
-      <h2 class="sect">{CATEGORY_LABEL[cat]}</h2>
+      <h2 class="sect">{cat.name}</h2>
       <div class="grid"><div class="grid__scroll">
         <table class="vtbl">
           <thead>
@@ -59,7 +57,7 @@ const csv = {
             </tr>
           </thead>
           <tbody>
-            {techs.filter((t) => t.category === cat).map((t) => (
+            {techs.filter((t) => t.category?.id === cat.id).map((t) => (
               <tr id={t.id} data-name={`${t.name} ${t.id}`.toLowerCase()}>
                 <td class="lead-cell">
                   <span class="lead">

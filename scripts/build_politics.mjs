@@ -9,7 +9,7 @@
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
+import { dataRoot, parseFolder, asArray, stableStringify , idList } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
 import { iconPath } from './lib/icons.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
@@ -27,7 +27,7 @@ const [laws, lawGroups, ideologies, igs, igTraits, institutions] = await Promise
   parseFolder(join(root, 'institutions')),
 ]);
 
-const names = (ids) => asArray(ids).flat().map((id) => ({ id, name: loc.name(id) }));
+const names = (ids) => idList(ids).map((id) => ({ id, name: loc.name(id) }));
 const iconOf = (entry, dir) => iconPath(entry.icon ?? entry.texture, dir);
 const bag = (m) => mods.formatBag(Object.assign({}, ...asArray(m)));
 
@@ -39,8 +39,8 @@ const STANCES = ['strongly_disapprove', 'disapprove', 'neutral', 'approve', 'str
 // matrix displays, which they would swamp.
 const coreIds = new Set(
   Object.values(igs.entries).flatMap((ig) => [
-    ...asArray(ig.ideologies).flat(),
-    ...asArray(ig.character_ideologies).flat(),
+    ...idList(ig.ideologies),
+    ...idList(ig.character_ideologies),
   ]),
 );
 
@@ -74,7 +74,7 @@ const igList = Object.entries(igs.entries).map(([id, ig]) => ({
   icon: iconOf(ig, 'igs'),
   ideologies: names(ig.ideologies),
   characterIdeologies: names(ig.character_ideologies),
-  traits: asArray(ig.traits).flat().map((tId) => {
+  traits: idList(ig.traits).map((tId) => {
     const t = igTraits.entries[tId] ?? {};
     return {
       id: tId,
@@ -127,7 +127,9 @@ const lawGroupList = groupIds.map((gId) => {
   return {
     id: gId,
     name: loc.name(gId),
-    category: g.law_group_category ?? null,
+    category: g.law_group_category
+      ? { id: g.law_group_category, name: loc.name(g.law_group_category) }
+      : null,
     enactmentDays: g.base_enactment_days ?? null,
     laws: groupLaws,
   };

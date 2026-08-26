@@ -6,7 +6,7 @@
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
+import { dataRoot, parseFolder, asArray, stableStringify , idList } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
 import { iconPath } from './lib/icons.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
@@ -23,7 +23,7 @@ const [articles, identities, principleGroups, principles] = await Promise.all([
 ]);
 
 const bag = (m) => mods.formatBag(Object.assign({}, ...asArray(m)));
-const names = (ids) => asArray(ids).flat().map((id) => ({ id, name: loc.name(id) }));
+const names = (ids) => idList(ids).map((id) => ({ id, name: loc.name(id) }));
 
 // ── Treaty articles ─────────────────────────────────────────────────
 const treatyList = Object.entries(articles.entries)
@@ -34,7 +34,7 @@ const treatyList = Object.entries(articles.entries)
     kind: a.kind ?? null,
     cost: a.cost ?? null,
     usageLimit: a.usage_limit ?? null,
-    flags: asArray(a.flags).flat(),
+    flags: idList(a.flags),
     exclusions: names(a.mutual_exclusions),
     techs: names(a.unlocked_by_technologies),
     // The three modifier scopes an article can carry.

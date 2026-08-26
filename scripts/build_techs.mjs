@@ -5,7 +5,7 @@
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
+import { dataRoot, parseFolder, asArray, stableStringify , idList } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
 import { iconPath } from './lib/icons.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
@@ -26,7 +26,7 @@ const [techs, eras, laws, decrees] = await Promise.all([
 // Reverse unlock index: tech -> {buildings, pms, laws, decrees}
 const unlocks = {};
 const addUnlock = (techIds, kind, ref) => {
-  for (const t of asArray(techIds).flat()) {
+  for (const t of idList(techIds)) {
     ((unlocks[t] ??= {})[kind] ??= []).push(ref);
   }
 };
@@ -57,9 +57,9 @@ const techList = Object.entries(techs.entries)
     icon: iconPath(t.texture, 'techs'),
     era: eraNum(t.era),
     eraCost: eras.entries[t.era]?.technology_cost ?? null,
-    category: t.category ?? null,
+    category: t.category ? { id: t.category, name: loc.name(t.category) } : null,
     canResearch: !(t.can_research === false || t.can_research === 'no'),
-    prereqs: asArray(t.unlocking_technologies).flat().map((p) => ({ id: p, name: loc.name(p) })),
+    prereqs: idList(t.unlocking_technologies).map((p) => ({ id: p, name: loc.name(p) })),
     modifiers: mods.formatBag(Object.assign({}, ...asArray(t.modifier))),
     unlocks: {
       buildings: (unlocks[id]?.buildings ?? []).sort((a, b) => a.name.localeCompare(b.name)),

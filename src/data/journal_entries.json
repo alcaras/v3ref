@@ -297,6 +297,22 @@
    "hasCompletion": true,
    "hasFailure": false,
    "hasTimeout": false,
+   "id": "je_urbanization_events_2",
+   "name": "Je Urbanization Events 2",
+   "reason": "The future is not white or black, like the old tales say—it's gray! The color of the train that lets us visit foreign lands! The color of the factory that lets us pay for such a travel! The color, my friend, of progress.",
+   "rewards": [],
+   "source": "00_urbanization.txt",
+   "timeout": null
+  },
+  {
+   "goal": null,
+   "group": {
+    "id": "je_group_technology",
+    "name": "Development"
+   },
+   "hasCompletion": true,
+   "hasFailure": false,
+   "hasTimeout": false,
    "id": "je_realism",
    "name": "Patronize Realist Art",
    "reason": "Artists are moving away from abstract, fantastical art and towards realistic portrayals of a concrete subject matter. As patrons of this movement there could be much to gain.",
@@ -553,43 +569,11 @@
    "hasCompletion": true,
    "hasFailure": false,
    "hasTimeout": false,
-   "id": "je_urbanization_events_2",
-   "name": "Urbanize …",
-   "reason": "The future is not white or black, like the old tales say—it's gray! The color of the train that lets us visit foreign lands! The color of the factory that lets us pay for such a travel! The color, my friend, of progress.",
-   "rewards": [],
-   "source": "00_urbanization.txt",
-   "timeout": null
-  },
-  {
-   "goal": null,
-   "group": {
-    "id": "je_group_technology",
-    "name": "Development"
-   },
-   "hasCompletion": true,
-   "hasFailure": false,
-   "hasTimeout": false,
    "id": "je_war_nursing",
    "name": "War Wounded",
    "reason": "Disease is running rampant amongst the war wounded in the … war. The facilities to deal with the wounded are overwhelmed. We need to reduce the levels of disease somehow or more will die.",
    "rewards": [],
    "source": "00_nursing.txt",
-   "timeout": null
-  },
-  {
-   "goal": "The … dynasty maintains uninterrupted rule at no less than … Legitimacy. The higher Legitimacy the dynasty can achieve the sooner they will secure the throne.",
-   "group": {
-    "id": "je_group_france_divided_monarchists",
-    "name": "Divided Monarchists"
-   },
-   "hasCompletion": true,
-   "hasFailure": true,
-   "hasTimeout": false,
-   "id": "je_cement_the_rightful_dynasty",
-   "name": "Cement the House of …",
-   "reason": "France is a tumultuous land, and has seen more governments come and go in recent generations than some other countries have seen pass over centuries. To firmly establish the monarchy, the House of … must prove that it can provide the stability France cries out for.",
-   "rewards": [],
-   "source": "01_french_monarchism.txt",
    "timeout": null
   },
   {
@@ -604,6 +588,22 @@
    "id": "je_divided_monarchists",
    "name": "Divided Monarchists",
    "reason": "Three dynastic lines have claims on the French throne: the Orléanists, who back the constitutional July Monarchy established in 1830, the Legitimists who support the deposed Charles X of Bourbon and his descendants, and the Bonapartists, who seek to restore Napoleon Bonaparte's family to power. All three dynastic monarchists vie with the powers-that-be and each other to see their particular claimants put upon the throne of France.",
+   "rewards": [],
+   "source": "01_french_monarchism.txt",
+   "timeout": null
+  },
+  {
+   "goal": "The … dynasty maintains uninterrupted rule at no less than … Legitimacy. The higher Legitimacy the dynasty can achieve the sooner they will secure the throne.",
+   "group": {
+    "id": "je_group_france_divided_monarchists",
+    "name": "Divided Monarchists"
+   },
+   "hasCompletion": true,
+   "hasFailure": true,
+   "hasTimeout": false,
+   "id": "je_cement_the_rightful_dynasty",
+   "name": "Je Cement The Rightful Dynasty",
+   "reason": "France is a tumultuous land, and has seen more governments come and go in recent generations than some other countries have seen pass over centuries. To firmly establish the monarchy, the House of … must prove that it can provide the stability France cries out for.",
    "rewards": [],
    "source": "01_french_monarchism.txt",
    "timeout": null
@@ -1019,6 +1019,38 @@
    }
   },
   {
+   "goal": "The following must be true for 10 total years:",
+   "group": {
+    "id": "je_group_internal_affairs",
+    "name": "Domestic Affairs"
+   },
+   "hasCompletion": true,
+   "hasFailure": false,
+   "hasTimeout": false,
+   "id": "je_king_in_parliament",
+   "name": "Je King In Parliament",
+   "reason": "The end of absolutist rule in … has not settled the question of the balance of powers between the … and …. In order to cement itself, the new parliamentary order must establish the will of the people to be above the will of the ….",
+   "rewards": [],
+   "source": "00_autocracy.txt",
+   "timeout": null
+  },
+  {
+   "goal": "The progress of the emerging … National Identity has reached 100%",
+   "group": {
+    "id": "je_group_internal_affairs",
+    "name": "Domestic Affairs"
+   },
+   "hasCompletion": true,
+   "hasFailure": true,
+   "hasTimeout": false,
+   "id": "je_south_american_national_identity_emergence",
+   "name": "Je South American National Identity Emergence",
+   "reason": "The independence of … from Spain has given rise to rumblings of nationalism across the nation. As our nation advances into the future, our intellectuals seek to formulate a new identity, one that is distinctly and solely ….\n\nThe following conditions will benefit the process of developing our national identity:\n• … or … Interest Groups that are In Government or have high Clout\n• Ongoing Wars with high War Support\n• …, …, and … buildings with high Occupancy\n• High national Prestige\n• Not owning non-… Homelands\n\nThe progress of this national awakening is expected to progress by #tooltippable;tooltip:…,je_south_american_national_identity_emergence_special_tooltip … next month.\n\nCompleting this Journal Entry will exclude … from pursuing greater pan-national ambitions",
+   "rewards": [],
+   "source": "02_south_american_national_identity.txt",
+   "timeout": null
+  },
+  {
    "goal": "Has reclaimed at least 20 Arable Land",
    "group": {
     "id": "je_group_internal_affairs",
@@ -1254,38 +1286,6 @@
    "reason": "It is time to put the outdated system of hereditary rule behind us. The monarchy must be removed and its supporters humbled, and it must be given time to fade into memory.",
    "rewards": [],
    "source": "00_abolish_monarchy.txt",
-   "timeout": null
-  },
-  {
-   "goal": "The progress of the emerging … National Identity has reached 100%",
-   "group": {
-    "id": "je_group_internal_affairs",
-    "name": "Domestic Affairs"
-   },
-   "hasCompletion": true,
-   "hasFailure": true,
-   "hasTimeout": false,
-   "id": "je_south_american_national_identity_emergence",
-   "name": "The … Nation",
-   "reason": "The independence of … from Spain has given rise to rumblings of nationalism across the nation. As our nation advances into the future, our intellectuals seek to formulate a new identity, one that is distinctly and solely ….\n\nThe following conditions will benefit the process of developing our national identity:\n• … or … Interest Groups that are In Government or have high Clout\n• Ongoing Wars with high War Support\n• …, …, and … buildings with high Occupancy\n• High national Prestige\n• Not owning non-… Homelands\n\nThe progress of this national awakening is expected to progress by #tooltippable;tooltip:…,je_south_american_national_identity_emergence_special_tooltip … next month.\n\nCompleting this Journal Entry will exclude … from pursuing greater pan-national ambitions",
-   "rewards": [],
-   "source": "02_south_american_national_identity.txt",
-   "timeout": null
-  },
-  {
-   "goal": "The following must be true for 10 total years:",
-   "group": {
-    "id": "je_group_internal_affairs",
-    "name": "Domestic Affairs"
-   },
-   "hasCompletion": true,
-   "hasFailure": false,
-   "hasTimeout": false,
-   "id": "je_king_in_parliament",
-   "name": "The …-in-Parliament",
-   "reason": "The end of absolutist rule in … has not settled the question of the balance of powers between the … and …. In order to cement itself, the new parliamentary order must establish the will of the people to be above the will of the ….",
-   "rewards": [],
-   "source": "00_autocracy.txt",
    "timeout": null
   },
   {
@@ -2847,6 +2847,38 @@
     "name": "Major Situations"
    },
    "hasCompletion": true,
+   "hasFailure": true,
+   "hasTimeout": false,
+   "id": "je_red_summer",
+   "name": "Je Red Summer",
+   "reason": "The revolutionary surge of the Springtime of the Peoples have swept a new liberal government into power in …. To acquire power, however, is not the same as maintaining it. The liberal government is threatened by both conservative forces who wish to abolish the new parliamentary order, and radicals who threaten a second, much more comprehensive revolution.\n\nThe Counter-Revolution\nUntil the liberal government cements its rule, it will be threatened by the vengeful remnants of the old order. If counter-revolution progress reaches 100, the revolutionary government will be removed from power, and a conservative order re-established.",
+   "rewards": [],
+   "source": "00_peoples_springtime_je.txt",
+   "timeout": null
+  },
+  {
+   "goal": null,
+   "group": {
+    "id": "je_group_crises",
+    "name": "Major Situations"
+   },
+   "hasCompletion": false,
+   "hasFailure": false,
+   "hasTimeout": true,
+   "id": "je_the_hungry_forties",
+   "name": "Je The Hungry Forties",
+   "reason": "A wave of crop blights has struck …, spurring poor harvests and food shortages. The blight is especially lethal to potatoes, causing them to rapidly decay into a foul-smelling, inedible mush.\n\nThe European Potato Blight:\nWhilst this Journal Entry is active, the rate at which the Disease Outbreak Harvest Condition appears in European states will be greatly elevated.",
+   "rewards": [],
+   "source": "05_hungry_forties.txt",
+   "timeout": 1095
+  },
+  {
+   "goal": null,
+   "group": {
+    "id": "je_group_crises",
+    "name": "Major Situations"
+   },
+   "hasCompletion": true,
    "hasFailure": false,
    "hasTimeout": true,
    "id": "je_pro_lobby_demand",
@@ -2943,22 +2975,6 @@
     "name": "Major Situations"
    },
    "hasCompletion": true,
-   "hasFailure": true,
-   "hasTimeout": false,
-   "id": "je_red_summer",
-   "name": "Red …",
-   "reason": "The revolutionary surge of the Springtime of the Peoples have swept a new liberal government into power in …. To acquire power, however, is not the same as maintaining it. The liberal government is threatened by both conservative forces who wish to abolish the new parliamentary order, and radicals who threaten a second, much more comprehensive revolution.\n\nThe Counter-Revolution\nUntil the liberal government cements its rule, it will be threatened by the vengeful remnants of the old order. If counter-revolution progress reaches 100, the revolutionary government will be removed from power, and a conservative order re-established.",
-   "rewards": [],
-   "source": "00_peoples_springtime_je.txt",
-   "timeout": null
-  },
-  {
-   "goal": null,
-   "group": {
-    "id": "je_group_crises",
-    "name": "Major Situations"
-   },
-   "hasCompletion": true,
    "hasFailure": false,
    "hasTimeout": false,
    "id": "je_strike",
@@ -2983,22 +2999,6 @@
    "rewards": [],
    "source": "00_belle_epoque.txt",
    "timeout": null
-  },
-  {
-   "goal": null,
-   "group": {
-    "id": "je_group_crises",
-    "name": "Major Situations"
-   },
-   "hasCompletion": false,
-   "hasFailure": false,
-   "hasTimeout": true,
-   "id": "je_the_hungry_forties",
-   "name": "The Hungry …",
-   "reason": "A wave of crop blights has struck …, spurring poor harvests and food shortages. The blight is especially lethal to potatoes, causing them to rapidly decay into a foul-smelling, inedible mush.\n\nThe European Potato Blight:\nWhilst this Journal Entry is active, the rate at which the Disease Outbreak Harvest Condition appears in European states will be greatly elevated.",
-   "rewards": [],
-   "source": "05_hungry_forties.txt",
-   "timeout": 1095
   },
   {
    "goal": null,
@@ -3218,22 +3218,6 @@
     }
    ],
    "source": "00_seminole_wars.txt",
-   "timeout": null
-  },
-  {
-   "goal": null,
-   "group": {
-    "id": "je_group_historical_content",
-    "name": "National Agenda"
-   },
-   "hasCompletion": true,
-   "hasFailure": true,
-   "hasTimeout": false,
-   "id": "je_spain_provisional_government",
-   "name": "…",
-   "reason": "… With the … throne made empty, the newly-declared Provisional Government has set itself to the task of finding a candidate to serve as King.",
-   "rewards": [],
-   "source": "06_spain_provisional_government.txt",
    "timeout": null
   },
   {
@@ -3896,6 +3880,38 @@
     "name": "National Agenda"
    },
    "hasCompletion": true,
+   "hasFailure": false,
+   "hasTimeout": false,
+   "id": "je_iwakura_mission",
+   "name": "Je Iwakura Mission",
+   "reason": "As part of its modernizing measures, the new government of … has sent … and a sizable entourage of ministers and scholars upon a diplomatic mission across the Western world. The … Mission seeks to renegotiate unequal treaties with the West, and conduct inquiries into the political and technological foundations of the Great Powers.\n\nFor each month the Mission remains in a country, there will be a chance that it collects findings on that country's Laws or Technologies. These findings will affect the report the Mission will issue upon its return, as well as the Ideology of the expedition leader.",
+   "rewards": [],
+   "source": "07_iwakura_mission.txt",
+   "timeout": null
+  },
+  {
+   "goal": null,
+   "group": {
+    "id": "je_group_historical_content",
+    "name": "National Agenda"
+   },
+   "hasCompletion": true,
+   "hasFailure": true,
+   "hasTimeout": false,
+   "id": "je_spain_provisional_government",
+   "name": "Je Spain Provisional Government",
+   "reason": "… With the … throne made empty, the newly-declared Provisional Government has set itself to the task of finding a candidate to serve as King.",
+   "rewards": [],
+   "source": "06_spain_provisional_government.txt",
+   "timeout": null
+  },
+  {
+   "goal": null,
+   "group": {
+    "id": "je_group_historical_content",
+    "name": "National Agenda"
+   },
+   "hasCompletion": true,
    "hasFailure": true,
    "hasTimeout": false,
    "id": "je_cuba_la_vida_dulce",
@@ -4350,22 +4366,6 @@
    "reason": "For years, … liberal politicians have dreamt of a \"Regeneration\" - an ambitious program to construct the physical and legal infrastructure that will serve as a basis for national development. The relative political stability that … has achieved has created an opportunity to realize these many reforms.\n\nThe inefficient and antiquated nature of … agriculture has long served as a brake on development. The countryside is the realm of vast, inefficient noble estates and church lands which make use of techniques unchanged for centuries. If Regeneration is to come to the countryside, it must come alongside the use of new technologies and more entrepreneurial forms of land ownership.",
    "rewards": [],
    "source": "06_portugal_politics.txt",
-   "timeout": null
-  },
-  {
-   "goal": null,
-   "group": {
-    "id": "je_group_historical_content",
-    "name": "National Agenda"
-   },
-   "hasCompletion": true,
-   "hasFailure": false,
-   "hasTimeout": false,
-   "id": "je_iwakura_mission",
-   "name": "Restoration: The … Mission",
-   "reason": "As part of its modernizing measures, the new government of … has sent … and a sizable entourage of ministers and scholars upon a diplomatic mission across the Western world. The … Mission seeks to renegotiate unequal treaties with the West, and conduct inquiries into the political and technological foundations of the Great Powers.\n\nFor each month the Mission remains in a country, there will be a chance that it collects findings on that country's Laws or Technologies. These findings will affect the report the Mission will issue upon its return, as well as the Ideology of the expedition leader.",
-   "rewards": [],
-   "source": "07_iwakura_mission.txt",
    "timeout": null
   },
   {
@@ -6176,100 +6176,6 @@
     "name": "The Administration of India"
    },
    "hasCompletion": true,
-   "hasFailure": false,
-   "hasTimeout": false,
-   "id": "je_indian_famines",
-   "name": "…",
-   "reason": "\"Death and famine on every side, and never a sign of rain\nThe bones of those who have starved and died, unburied upon the plain.\"\n\nA great and terrible calamity has struck India. Owing to a series of poor harvests, and exacerbated by general poverty and governmental mismanagement, conditions have deteriorated to the point where a state of famine has officially been declared in ….\n\nAs long as the … persists, we can expect higher rates of agitation from forces hostile to our rule.\n\nFamine in India\nHighly dependent on favorable monsoon rains for irrigation, much of India is especially vulnerable to droughts and other adverse Harvest Conditions. To counteract this, the interior office has recommended we irrigate the interior drylands, to mitigate the impact of droughts.",
-   "rewards": [],
-   "source": "04_indian_famines.txt",
-   "timeout": null
-  },
-  {
-   "goal": "Increase the number of … in … by …",
-   "group": {
-    "id": "je_group_british_india",
-    "name": "The Administration of India"
-   },
-   "hasCompletion": true,
-   "hasFailure": false,
-   "hasTimeout": true,
-   "id": "je_british_dictate_plantations",
-   "name": "… Dictate: Agricultural Production",
-   "reason": "The … in … routinely issues dictates regarding the direction of our operations in India. To comply with their current dictate, we must focus our efforts on constructing additional ….",
-   "rewards": [],
-   "source": "04_india_british_dictates.txt",
-   "timeout": 1825
-  },
-  {
-   "goal": null,
-   "group": {
-    "id": "je_group_british_india",
-    "name": "The Administration of India"
-   },
-   "hasCompletion": true,
-   "hasFailure": false,
-   "hasTimeout": true,
-   "id": "je_british_dictate_universities",
-   "name": "… Dictate: Higher Education",
-   "reason": "The … in … routinely issues dictates regarding the direction of our operations in India. To comply with their current dictate, we must focus our efforts on expanding the … system in each of our Presidency cities.",
-   "rewards": [],
-   "source": "04_india_british_dictates.txt",
-   "timeout": 1825
-  },
-  {
-   "goal": null,
-   "group": {
-    "id": "je_group_british_india",
-    "name": "The Administration of India"
-   },
-   "hasCompletion": true,
-   "hasFailure": false,
-   "hasTimeout": true,
-   "id": "je_british_dictate_law",
-   "name": "… Dictate: Law Enactment",
-   "reason": "The … in … routinely issues dictates regarding the direction of our operations in India. To comply with their current dictate, we must focus our efforts on enacting ….",
-   "rewards": [
-    {
-     "id": "successfully_met_foreign_imposition_legitimacy",
-     "modifiers": [
-      {
-       "key": "country_legitimacy_base_add",
-       "label": "Legitimacy",
-       "tone": "good",
-       "value": 10,
-       "valueText": "+10"
-      }
-     ],
-     "name": "Enacted an Imposed Law"
-    }
-   ],
-   "source": "04_india_british_dictates.txt",
-   "timeout": 1825
-  },
-  {
-   "goal": "Increase Army Power Projection by 25%, through either improving current units or constructing new ones",
-   "group": {
-    "id": "je_group_british_india",
-    "name": "The Administration of India"
-   },
-   "hasCompletion": true,
-   "hasFailure": false,
-   "hasTimeout": true,
-   "id": "je_british_dictate_military",
-   "name": "… Dictate: Military Expansion",
-   "reason": "The … in … routinely issues dictates regarding the direction of our operations in India. To comply with their current dictate, we must focus our efforts on improving the size and quality of our armed forces.",
-   "rewards": [],
-   "source": "04_india_british_dictates.txt",
-   "timeout": 1825
-  },
-  {
-   "goal": null,
-   "group": {
-    "id": "je_group_british_india",
-    "name": "The Administration of India"
-   },
-   "hasCompletion": true,
    "hasFailure": true,
    "hasTimeout": false,
    "id": "je_communal_divides",
@@ -6351,6 +6257,116 @@
    },
    "hasCompletion": true,
    "hasFailure": false,
+   "hasTimeout": true,
+   "id": "je_british_dictate_law",
+   "name": "Je British Dictate Law",
+   "reason": "The … in … routinely issues dictates regarding the direction of our operations in India. To comply with their current dictate, we must focus our efforts on enacting ….",
+   "rewards": [
+    {
+     "id": "successfully_met_foreign_imposition_legitimacy",
+     "modifiers": [
+      {
+       "key": "country_legitimacy_base_add",
+       "label": "Legitimacy",
+       "tone": "good",
+       "value": 10,
+       "valueText": "+10"
+      }
+     ],
+     "name": "Enacted an Imposed Law"
+    }
+   ],
+   "source": "04_india_british_dictates.txt",
+   "timeout": 1825
+  },
+  {
+   "goal": "Increase Army Power Projection by 25%, through either improving current units or constructing new ones",
+   "group": {
+    "id": "je_group_british_india",
+    "name": "The Administration of India"
+   },
+   "hasCompletion": true,
+   "hasFailure": false,
+   "hasTimeout": true,
+   "id": "je_british_dictate_military",
+   "name": "Je British Dictate Military",
+   "reason": "The … in … routinely issues dictates regarding the direction of our operations in India. To comply with their current dictate, we must focus our efforts on improving the size and quality of our armed forces.",
+   "rewards": [],
+   "source": "04_india_british_dictates.txt",
+   "timeout": 1825
+  },
+  {
+   "goal": "Increase the number of … in … by …",
+   "group": {
+    "id": "je_group_british_india",
+    "name": "The Administration of India"
+   },
+   "hasCompletion": true,
+   "hasFailure": false,
+   "hasTimeout": true,
+   "id": "je_british_dictate_plantations",
+   "name": "Je British Dictate Plantations",
+   "reason": "The … in … routinely issues dictates regarding the direction of our operations in India. To comply with their current dictate, we must focus our efforts on constructing additional ….",
+   "rewards": [],
+   "source": "04_india_british_dictates.txt",
+   "timeout": 1825
+  },
+  {
+   "goal": null,
+   "group": {
+    "id": "je_group_british_india",
+    "name": "The Administration of India"
+   },
+   "hasCompletion": true,
+   "hasFailure": false,
+   "hasTimeout": true,
+   "id": "je_british_dictate_universities",
+   "name": "Je British Dictate Universities",
+   "reason": "The … in … routinely issues dictates regarding the direction of our operations in India. To comply with their current dictate, we must focus our efforts on expanding the … system in each of our Presidency cities.",
+   "rewards": [],
+   "source": "04_india_british_dictates.txt",
+   "timeout": 1825
+  },
+  {
+   "goal": null,
+   "group": {
+    "id": "je_group_british_india",
+    "name": "The Administration of India"
+   },
+   "hasCompletion": true,
+   "hasFailure": true,
+   "hasTimeout": false,
+   "id": "je_federation_of_india",
+   "name": "Je Federation Of India",
+   "reason": "…\n\nWhilst this Journal Entry is active, Princely State Subjects with low Liberty Desire and high Relations will occasionally petition for accession into the ….\n\nThe Privy Purse:\nThe former rulers of the Princely States will be entitled to a state pension as compensation for accession to the …. The Privy Purse payments will add National Expenses of … times the number of Princely States annexed using this Journal Entry.…",
+   "rewards": [],
+   "source": "04_indian_federation.txt",
+   "timeout": null
+  },
+  {
+   "goal": null,
+   "group": {
+    "id": "je_group_british_india",
+    "name": "The Administration of India"
+   },
+   "hasCompletion": true,
+   "hasFailure": false,
+   "hasTimeout": false,
+   "id": "je_indian_famines",
+   "name": "Je Indian Famines",
+   "reason": "\"Death and famine on every side, and never a sign of rain\nThe bones of those who have starved and died, unburied upon the plain.\"\n\nA great and terrible calamity has struck India. Owing to a series of poor harvests, and exacerbated by general poverty and governmental mismanagement, conditions have deteriorated to the point where a state of famine has officially been declared in ….\n\nAs long as the … persists, we can expect higher rates of agitation from forces hostile to our rule.\n\nFamine in India\nHighly dependent on favorable monsoon rains for irrigation, much of India is especially vulnerable to droughts and other adverse Harvest Conditions. To counteract this, the interior office has recommended we irrigate the interior drylands, to mitigate the impact of droughts.",
+   "rewards": [],
+   "source": "04_indian_famines.txt",
+   "timeout": null
+  },
+  {
+   "goal": null,
+   "group": {
+    "id": "je_group_british_india",
+    "name": "The Administration of India"
+   },
+   "hasCompletion": true,
+   "hasFailure": false,
    "hasTimeout": false,
    "id": "je_india_railway",
    "name": "Purveyor of Progress",
@@ -6387,22 +6403,6 @@
     }
    ],
    "source": "04_sepoy_mutiny.txt",
-   "timeout": null
-  },
-  {
-   "goal": null,
-   "group": {
-    "id": "je_group_british_india",
-    "name": "The Administration of India"
-   },
-   "hasCompletion": true,
-   "hasFailure": true,
-   "hasTimeout": false,
-   "id": "je_federation_of_india",
-   "name": "The … of India",
-   "reason": "…\n\nWhilst this Journal Entry is active, Princely State Subjects with low Liberty Desire and high Relations will occasionally petition for accession into the ….\n\nThe Privy Purse:\nThe former rulers of the Princely States will be entitled to a state pension as compensation for accession to the …. The Privy Purse payments will add National Expenses of … times the number of Princely States annexed using this Journal Entry.…",
-   "rewards": [],
-   "source": "04_indian_federation.txt",
    "timeout": null
   },
   {
@@ -6570,6 +6570,22 @@
    "hasCompletion": true,
    "hasFailure": true,
    "hasTimeout": false,
+   "id": "je_new_republic",
+   "name": "Je New Republic",
+   "reason": "… … and … supporters have overthrown the previous government of …, and established a new regime founded on nationalism and modernization of the state.",
+   "rewards": [],
+   "source": "02_vargas.txt",
+   "timeout": null
+  },
+  {
+   "goal": null,
+   "group": {
+    "id": "je_group_brazil",
+    "name": "The Brazilian Nation"
+   },
+   "hasCompletion": true,
+   "hasFailure": true,
+   "hasTimeout": false,
    "id": "je_populist_unrest",
    "name": "Populist Unrest",
    "reason": "The domination of … politics by the … has sparked discontent across the nation. Populist figures supported by the … agitate against the current government in the streets, and liberal military organizations look to the example of the Tenentes that stood against the agrarian oligarchy in the past. If this unrest is not successfully navigated, the ailing … faces a violent reorientation of power.",
@@ -6607,22 +6623,6 @@
    "reason": "The status of the Progress Bar will be determined by various #tooltippable;tooltip:…,je_brazilian_slavery_tooltip_advance positive or #tooltippable;tooltip:…,je_brazilian_slavery_tooltip_deplete negative conditions. The Progress Bar reaching 0 will lead to the ban on the slave trade being officially repealed, further entrenching the institution in Brazilian cultural and political life.\n\nDecried as a cancer threatening the very foundations of … by its opponents, and lauded as a natural, necessary, and legitimate institution by its proponents, Slavery has defined the political landscape of … for centuries.\n\nThe South Atlantic Slave Trade\nWhile Brazil officially committed itself to the ending of the … in the British-Brazilian Treaty of 1826, few steps have been taken since then to actually enforce the ban, and the trade remains effectively in place.\n\nAs long as Brazil maintains the … Law, … may feel justified in disrupting Brazilian vessels carrying slaves on the high seas.",
    "rewards": [],
    "source": "02_brazilian_slavery.txt",
-   "timeout": null
-  },
-  {
-   "goal": null,
-   "group": {
-    "id": "je_group_brazil",
-    "name": "The Brazilian Nation"
-   },
-   "hasCompletion": true,
-   "hasFailure": true,
-   "hasTimeout": false,
-   "id": "je_new_republic",
-   "name": "The New …",
-   "reason": "… … and … supporters have overthrown the previous government of …, and established a new regime founded on nationalism and modernization of the state.",
-   "rewards": [],
-   "source": "02_vargas.txt",
    "timeout": null
   },
   {
@@ -6722,6 +6722,22 @@
    "timeout": null
   },
   {
+   "goal": "Complete all 3 Restoration Journal Entries",
+   "group": {
+    "id": "je_group_meiji_restoration",
+    "name": "The Imperial Restoration"
+   },
+   "hasCompletion": true,
+   "hasFailure": true,
+   "hasTimeout": true,
+   "id": "je_meiji_main",
+   "name": "Je Meiji Main",
+   "reason": "The Emperor has been restored to power, and the process of building Japan anew can now begin. There is much work to be done. Foreign powers look at us with hungry eyes. We must be able to withstand the onslaught of these nations not just militarily, but in economic and political terms as well:\n\n• …\n• …\n• …\n\nWe must build this new Japan while the iron is hot, and use this opportunity to shape the country in ways our forefathers never dreamed.",
+   "rewards": [],
+   "source": "00_meiji_restoration.txt",
+   "timeout": 4380
+  },
+  {
    "goal": null,
    "group": {
     "id": "je_group_meiji_restoration",
@@ -6768,22 +6784,6 @@
    "rewards": [],
    "source": "00_meiji_restoration.txt",
    "timeout": null
-  },
-  {
-   "goal": "Complete all 3 Restoration Journal Entries",
-   "group": {
-    "id": "je_group_meiji_restoration",
-    "name": "The Imperial Restoration"
-   },
-   "hasCompletion": true,
-   "hasFailure": true,
-   "hasTimeout": true,
-   "id": "je_meiji_main",
-   "name": "The … Restoration",
-   "reason": "The Emperor has been restored to power, and the process of building Japan anew can now begin. There is much work to be done. Foreign powers look at us with hungry eyes. We must be able to withstand the onslaught of these nations not just militarily, but in economic and political terms as well:\n\n• …\n• …\n• …\n\nWe must build this new Japan while the iron is hot, and use this opportunity to shape the country in ways our forefathers never dreamed.",
-   "rewards": [],
-   "source": "00_meiji_restoration.txt",
-   "timeout": 4380
   },
   {
    "goal": null,

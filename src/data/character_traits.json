@@ -1840,9 +1840,7 @@
    "icon": "img/traits/bandit.png",
    "id": "bandit",
    "name": "Bandit",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -1949,9 +1947,7 @@
    "icon": "img/traits/convoy_raider_commander.png",
    "id": "convoy_raider_commander",
    "name": "Convoy Raider",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -2098,9 +2094,7 @@
    "icon": "img/traits/drydock_repairs.png",
    "id": "dockyard_master",
    "name": "Dockyard Organizer",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -2183,9 +2177,7 @@
    "icon": "img/traits/elder.png",
    "id": "elder",
    "name": "Elder",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -2239,9 +2231,7 @@
    "icon": "img/traits/engineer.png",
    "id": "engineer",
    "name": "Engineer",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -2274,9 +2264,7 @@
    "icon": "img/traits/erudite.png",
    "id": "erudite",
    "name": "Erudite",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3025,9 +3013,7 @@
    "icon": "img/traits/explorer.png",
    "id": "explorer",
    "name": "Explorer",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3121,9 +3107,7 @@
    "icon": "img/traits/inept.png",
    "id": "inept",
    "name": "Inept",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3192,9 +3176,7 @@
    "icon": "img/traits/inexperienced.png",
    "id": "inexperienced",
    "name": "Inexperienced",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3454,9 +3436,7 @@
    "icon": "img/traits/mountain_commander.png",
    "id": "mountain_commander",
    "name": "Mountain Combat Expert",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3535,9 +3515,7 @@
    "icon": "img/traits/plains_commander.png",
    "id": "plains_commander",
    "name": "Open Terrain Commander",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3569,9 +3547,7 @@
    "icon": "img/traits/pillager.png",
    "id": "pillager",
    "name": "Pillager",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3612,9 +3588,7 @@
    "icon": "img/traits/political_appointee.png",
    "id": "political_appointee",
    "name": "Political Appointee",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3772,9 +3746,7 @@
    "icon": "img/traits/social_banditry.png",
    "id": "social_bandit",
    "name": "Social Bandit",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3799,9 +3771,7 @@
    "icon": "img/traits/stalwart_defender.png",
    "id": "stalwart_defender",
    "name": "Stalwart Defender",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3833,9 +3803,7 @@
    "icon": "img/traits/resupply_commander.png",
    "id": "resupply_commander",
    "name": "Supply Requisitions Expert",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3881,9 +3849,7 @@
    "icon": "img/traits/surveyor.png",
    "id": "surveyor",
    "name": "Surveyor",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3923,9 +3889,7 @@
    "icon": "img/traits/traditionalist_commander.png",
    "id": "traditionalist_commander",
    "name": "Traditionalist Commander",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -3984,9 +3948,7 @@
    "icon": "img/traits/forest_commander.png",
    "id": "forest_commander",
    "name": "Woodland Combat Expert",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "skill"
   },
   {
@@ -4027,9 +3989,7 @@
    "icon": "img/traits/alcoholic.png",
    "id": "alcoholic",
    "name": "Alcoholic",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4065,9 +4025,7 @@
    "icon": "img/traits/cancer.png",
    "id": "cancer",
    "name": "Cancer",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4092,9 +4050,7 @@
    "icon": "img/traits/cocaine_addiction.png",
    "id": "cocaine_addiction",
    "name": "Cocaine Addict",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4127,9 +4083,7 @@
    "icon": "img/traits/expensive_tastes.png",
    "id": "expensive_tastes",
    "name": "Expensive Tastes",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4184,9 +4138,7 @@
    "icon": "img/traits/grifter.png",
    "id": "grifter",
    "name": "Grifter",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4219,9 +4171,7 @@
    "icon": "img/traits/kidney_stones.png",
    "id": "kidney_stones",
    "name": "Kidney Stones",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4254,9 +4204,7 @@
    "icon": "img/traits/opium_addiction.png",
    "id": "opium_addiction",
    "name": "Opium Addict",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4281,9 +4229,7 @@
    "icon": "img/traits/psychological_affliction.png",
    "id": "psychological_affliction",
    "name": "Psychological Affliction",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4358,9 +4304,7 @@
    "icon": "img/traits/senile.png",
    "id": "senile",
    "name": "Senile",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4407,9 +4351,7 @@
    "icon": "img/traits/shellshocked.png",
    "id": "shellshocked",
    "name": "Shell Shock",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4427,9 +4369,7 @@
    "icon": "img/traits/sickly.png",
    "id": "sickly",
    "name": "Sickly",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4455,9 +4395,7 @@
    "icon": "img/traits/syphilis.png",
    "id": "syphilis",
    "name": "Syphilis",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4475,9 +4413,7 @@
    "icon": "img/traits/tuberculosis.png",
    "id": "tuberculosis",
    "name": "Tuberculosis",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   },
   {
@@ -4529,9 +4465,7 @@
    "icon": "img/traits/wounded.png",
    "id": "wounded",
    "name": "Wounded",
-   "replaces": [
-    {}
-   ],
+   "replaces": [],
    "type": "condition"
   }
  ]

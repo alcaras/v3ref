@@ -7,7 +7,7 @@
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { dataRoot, parseFolder, parseFile, asArray, stableStringify } from './lib/pdx.mjs';
+import { dataRoot, parseFolder, parseFile, asArray, stableStringify , idList } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
 import { iconPath } from './lib/icons.mjs';
 
@@ -20,7 +20,7 @@ const [cultures, religions, concepts] = await Promise.all([
   parseFolder(join(root, 'game/common/game_concepts')),
 ]);
 
-const goodRefs = (ids) => asArray(ids).flat().map((g) => ({ id: g, name: loc.name(g) }));
+const goodRefs = (ids) => idList(ids).map((g) => ({ id: g, name: loc.name(g) }));
 
 const cultureList = Object.entries(cultures.entries).map(([id, c]) => ({
   id,
@@ -29,7 +29,7 @@ const cultureList = Object.entries(cultures.entries).map(([id, c]) => ({
   language: c.language ? { id: c.language, name: loc.name(c.language) } : null,
   religion: c.religion ? { id: c.religion, name: loc.name(c.religion) } : null,
   obsessions: goodRefs(c.obsessions),
-  traditions: asArray(c.traditions).flat().map((t) => loc.name(t)),
+  traditions: idList(c.traditions).map((t) => loc.name(t)),
 }));
 cultureList.sort(
   (a, b) => (a.heritage?.name ?? '').localeCompare(b.heritage?.name ?? '') || a.name.localeCompare(b.name),

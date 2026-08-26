@@ -11973,12 +11973,7 @@
     "id": "region_eastern_europe",
     "name": "Eastern Europe"
    },
-   "traits": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ]
+   "traits": []
   },
   {
    "arableLand": 150,
@@ -12259,12 +12254,7 @@
     "id": "region_eastern_europe",
     "name": "Eastern Europe"
    },
-   "traits": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ]
+   "traits": []
   },
   {
    "arableLand": 18,
@@ -12629,12 +12619,7 @@
     "id": "region_eastern_europe",
     "name": "Eastern Europe"
    },
-   "traits": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ]
+   "traits": []
   },
   {
    "arableLand": 132,
@@ -17764,12 +17749,7 @@
     "id": "region_indochina",
     "name": "Indochina"
    },
-   "traits": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ]
+   "traits": []
   },
   {
    "arableLand": 50,
@@ -25078,12 +25058,7 @@
     "id": "region_north_india",
     "name": "North India"
    },
-   "traits": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ]
+   "traits": []
   },
   {
    "arableLand": 205,
@@ -26662,12 +26637,7 @@
     "id": "region_northeast_asia",
     "name": "Northeast Asia"
    },
-   "traits": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ]
+   "traits": []
   },
   {
    "arableLand": 101,
@@ -34539,12 +34509,7 @@
     "id": "region_south_india",
     "name": "South India"
    },
-   "traits": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ]
+   "traits": []
   },
   {
    "arableLand": 30,

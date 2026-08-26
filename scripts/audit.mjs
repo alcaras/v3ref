@@ -100,7 +100,49 @@ if (badPages.length) {
   );
 }
 
-// 4. Loc leaks — unresolved $KEY$ / [Scope.Function] in rendered text.
+// 4. Claims the site makes about the data must stay true. The profit tools
+//    tell the reader that every goods line is a flat amount and that groups
+//    therefore do not interact. If a patch ever adds a percentage goods
+//    modifier that stops being true, so fail here rather than let the page
+//    keep asserting it.
+const pmLines = JSON.parse(readFileSync(join(DATA, 'pms.json'), 'utf8')).pms
+  .flatMap((pm) => [...pm.inputs, ...pm.outputs]);
+const multGoods = pmLines.filter((l) => l.kind === 'mult');
+if (multGoods.length) {
+  failures.push(
+    `${multGoods.length} percentage goods line(s) now exist (e.g. ${multGoods[0].name}). The profit ` +
+      `calculator's copy claims goods lines are always flat and that PM groups do not interact — ` +
+      `re-verify the greedy-vs-exhaustive claim and rewrite that copy.`,
+  );
+}
+
+// 5. A stringified object in rendered text means an id list picked up an
+//    empty `key = { }` block — see idList() in pdx.mjs. Never ship it.
+const objectLeaks = Object.entries(blobs)
+  .filter(([, blob]) => JSON.stringify(blob).includes('[object Object]'))
+  .map(([file]) => file);
+if (objectLeaks.length) {
+  failures.push(
+    `"[object Object]" reached generated data in: ${objectLeaks.join(', ')} — an id list read a ` +
+      `non-string (empty \`key = { }\` block). Read id lists with idList(), not asArray().flat().`,
+  );
+}
+
+// 6. Labels we invented. loc.name() falls back to Title Case when the game has
+//    no text for an id; that is our wording, not the game's, so keep it visible.
+let invented = [];
+try {
+  invented = JSON.parse(readFileSync(new URL('../data/invented-labels.json', import.meta.url).pathname, 'utf8'));
+} catch { /* no pool yet — `make data` writes it */ }
+if (invented.length) {
+  warnings.push(
+    `${invented.length} id(s) have no game text — displayed with a Title-Cased label we made up:\n    ` +
+      invented.slice(0, 12).join('\n    ') +
+      (invented.length > 12 ? `\n    …and ${invented.length - 12} more` : ''),
+  );
+}
+
+// 7. Loc leaks — unresolved $KEY$ / [Scope.Function] in rendered text.
 if (leaks.size) {
   warnings.push(
     `${leaks.size} generated string(s) still contain loc markup:\n    ` +

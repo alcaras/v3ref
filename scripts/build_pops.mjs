@@ -8,7 +8,7 @@
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
+import { dataRoot, parseFolder, asArray, stableStringify , idList } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
 import { iconPath } from './lib/icons.mjs';
 import { loadEconomy } from './lib/economy.mjs';
@@ -29,7 +29,7 @@ const [{ entries: popsRaw }, { entries: classesRaw }, { entries: needsRaw }, { e
 const strataOf = {};
 for (const cls of Object.values(classesRaw)) {
   if (cls.social_hierarchy !== 'default_social_hierarchy') continue;
-  for (const p of asArray(cls.allowed_professions).flat()) strataOf[p] = cls.strata;
+  for (const p of idList(cls.allowed_professions)) strataOf[p] = cls.strata;
 }
 
 // pop type -> how many PMs employ it (a feel for demand).

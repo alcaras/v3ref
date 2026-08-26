@@ -96,6 +96,17 @@ export function asArray(v) {
   return Array.isArray(v) ? v : [v];
 }
 
+/**
+ * A list of script ids from a `key = { a b c }` block.
+ *
+ * Paradox writes empty blocks as `traditions = { }`, which parses to `{}` —
+ * so a bare asArray().flat() hands you an OBJECT where an id belongs, and it
+ * ends up rendered as "[object Object]". Always read id lists through this.
+ */
+export function idList(v) {
+  return asArray(v).flat().filter((x) => typeof x === 'string');
+}
+
 /** Stable stringify: sorted keys at every level, for diffable generated JSON. */
 export function stableStringify(value, indent = 1) {
   return JSON.stringify(sortDeep(value), null, indent);

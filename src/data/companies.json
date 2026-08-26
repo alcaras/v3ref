@@ -13,6 +13,7 @@
      "slug": "port"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_tooling_workshop",
@@ -66,6 +67,7 @@
      "slug": "port"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_shipyard",
@@ -124,6 +126,7 @@
      "slug": "motor_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_tooling_workshop",
@@ -172,6 +175,7 @@
      "slug": "rye_farm"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_food_industry",
@@ -239,6 +243,7 @@
      "slug": "iron_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -285,6 +290,7 @@
      "slug": "munition_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_explosives_factory",
@@ -333,6 +339,7 @@
      "slug": "oil_rig"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -369,6 +376,7 @@
      "slug": "sulfur_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_port",
@@ -424,6 +432,7 @@
      "slug": "food_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_wheat_farm",
@@ -491,6 +500,7 @@
      "slug": "tea_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -539,6 +549,7 @@
      "slug": "rice_farm"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_chemical_plant",
@@ -592,6 +603,7 @@
      "slug": "glassworks"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_vineyard",
@@ -640,6 +652,7 @@
      "slug": "chemical_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_dye_plantation",
@@ -698,6 +711,7 @@
      "slug": "shipyard"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_tooling_workshop",
@@ -741,6 +755,7 @@
      "slug": "coal_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -794,6 +809,7 @@
      "slug": "steel_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_lead_mine",
@@ -840,6 +856,7 @@
      "slug": "rubber_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_tea_plantation",
@@ -898,6 +915,7 @@
      "slug": "textile_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_cotton_plantation",
@@ -946,6 +964,10 @@
      "slug": "opium_plantation"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_tobacco_plantation",
@@ -994,6 +1016,7 @@
      "slug": "oil_rig"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -1047,6 +1070,7 @@
      "slug": "lead_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -1074,12 +1098,7 @@
      "name": "New South Wales"
     }
    ],
-   "prestigeGoods": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "prestigeGoods": [],
    "prosperity": [
     {
      "key": "country_production_tech_research_speed_mult",
@@ -1115,6 +1134,7 @@
      "slug": "food_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_chemical_plant",
@@ -1158,6 +1178,7 @@
      "slug": "power_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -1206,6 +1227,10 @@
      "slug": "railway"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -1244,6 +1269,7 @@
      "slug": "power_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -1287,6 +1313,7 @@
      "slug": "oil_rig"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -1344,6 +1371,7 @@
      "slug": "coal_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_art_academy",
@@ -1392,6 +1420,10 @@
      "slug": "railway"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -1433,6 +1465,7 @@
      "slug": "chemical_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_synthetics_plant",
@@ -1481,6 +1514,7 @@
      "slug": "arms_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_munition_plant",
@@ -1529,6 +1563,7 @@
      "slug": "coal_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -1582,6 +1617,10 @@
      "slug": "iron_mine"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_railway",
@@ -1635,6 +1674,10 @@
      "slug": "millet_farm"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -1691,6 +1734,7 @@
      "slug": "textile_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_cotton_plantation",
@@ -1749,6 +1793,10 @@
      "slug": "food_industry"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_glassworks",
@@ -1809,6 +1857,7 @@
      "slug": "tobacco_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_textile_mill",
@@ -1872,6 +1921,7 @@
      "slug": "railway"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -1915,6 +1965,7 @@
      "slug": "lead_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -1968,6 +2019,7 @@
      "slug": "food_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_port",
@@ -2016,6 +2068,7 @@
      "slug": "port"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_shipyard",
@@ -2064,6 +2117,10 @@
      "slug": "vineyard"
     }
    ],
+   "category": {
+    "id": "shopkeeper_owned",
+    "name": "Partial Shopkeeper Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_food_industry",
@@ -2112,6 +2169,7 @@
      "slug": "textile_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_cotton_plantation",
@@ -2165,6 +2223,10 @@
      "slug": "cotton_plantation"
     }
    ],
+   "category": {
+    "id": "shopkeeper_owned",
+    "name": "Partial Shopkeeper Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_port",
@@ -2206,6 +2268,7 @@
      "slug": "gold_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -2261,6 +2324,7 @@
      "slug": "coal_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_dye_plantation",
@@ -2317,6 +2381,7 @@
      "slug": "iron_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -2375,6 +2440,10 @@
      "slug": "opium_plantation"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_silk_plantation",
@@ -2416,6 +2485,10 @@
      "slug": "railway"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -2454,6 +2527,7 @@
      "slug": "oil_rig"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -2497,6 +2571,7 @@
      "slug": "food_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -2540,6 +2615,7 @@
      "slug": "power_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -2583,6 +2659,7 @@
      "slug": "electrics_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -2636,6 +2713,7 @@
      "slug": "tooling_workshop"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -2684,6 +2762,7 @@
      "slug": "artillery_foundry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -2732,6 +2811,7 @@
      "slug": "shipyard"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_railway",
@@ -2795,6 +2875,7 @@
      "slug": "munition_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_explosives_factory",
@@ -2848,6 +2929,7 @@
      "slug": "artillery_foundry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_munition_plant",
@@ -2906,6 +2988,7 @@
      "slug": "electrics_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_tooling_workshop",
@@ -2959,6 +3042,7 @@
      "slug": "railway"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -3012,6 +3096,7 @@
      "slug": "automotive_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -3065,6 +3150,10 @@
      "slug": "artillery_foundry"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -3118,6 +3207,7 @@
      "slug": "automotive_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -3176,6 +3266,7 @@
      "slug": "automotive_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -3219,6 +3310,7 @@
      "slug": "power_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_textile_mill",
@@ -3241,12 +3333,7 @@
      "name": "Bavaria"
     }
    ],
-   "prestigeGoods": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "prestigeGoods": [],
    "prosperity": [
     {
      "key": "country_frankenstein_company_bool",
@@ -3296,6 +3383,7 @@
      "slug": "steel_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -3349,6 +3437,7 @@
      "slug": "iron_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -3402,6 +3491,7 @@
      "slug": "coal_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -3450,6 +3540,10 @@
      "slug": "art_academy"
     }
    ],
+   "category": {
+    "id": "academic_owned",
+    "name": "Partial Academic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_vineyard",
@@ -3493,6 +3587,7 @@
      "slug": "oil_rig"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -3545,6 +3640,7 @@
      "slug": "furniture_manufactory"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -3605,6 +3701,7 @@
      "slug": "power_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -3662,6 +3759,7 @@
      "slug": "power_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_synthetics_plant",
@@ -3715,6 +3813,7 @@
      "slug": "tooling_workshop"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -3763,6 +3862,7 @@
      "slug": "glassworks"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_lead_mine",
@@ -3828,6 +3928,7 @@
      "slug": "tooling_workshop"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -3881,6 +3982,10 @@
      "slug": "railway"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -3919,6 +4024,7 @@
      "slug": "railway"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -3962,6 +4068,7 @@
      "slug": "tea_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_rubber_plantation",
@@ -3989,12 +4096,7 @@
      "name": "Malaya"
     }
    ],
-   "prestigeGoods": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "prestigeGoods": [],
    "prosperity": [
     {
      "key": "building_port_throughput_add",
@@ -4027,6 +4129,10 @@
      "slug": "power_plant"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_railway",
@@ -4080,6 +4186,10 @@
      "slug": "munition_plant"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_explosives_factory",
@@ -4133,6 +4243,7 @@
      "slug": "logging_camp"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_port",
@@ -4191,6 +4302,7 @@
      "slug": "iron_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -4239,6 +4351,7 @@
      "slug": "railway"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -4277,6 +4390,7 @@
      "slug": "tobacco_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_opium_plantation",
@@ -4315,6 +4429,10 @@
      "slug": "railway"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -4351,6 +4469,10 @@
      "slug": "munition_plant"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_artillery_foundry",
@@ -4404,6 +4526,7 @@
      "slug": "textile_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_cotton_plantation",
@@ -4457,6 +4580,7 @@
      "slug": "paper_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_chemical_plant",
@@ -4500,6 +4624,7 @@
      "slug": "textile_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_cotton_plantation",
@@ -4556,6 +4681,7 @@
      "slug": "glassworks"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_lead_mine",
@@ -4609,6 +4735,7 @@
      "slug": "steel_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -4667,6 +4794,7 @@
      "slug": "port"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_shipyard",
@@ -4710,6 +4838,10 @@
      "slug": "electrics_industry"
     }
    ],
+   "category": {
+    "id": "academic_owned",
+    "name": "Partial Academic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -4768,6 +4900,7 @@
      "slug": "railway"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -4813,6 +4946,7 @@
      "slug": "glassworks"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -4868,6 +5002,7 @@
      "slug": "coal_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -4909,6 +5044,7 @@
      "slug": "logging_camp"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_sulfur_mine",
@@ -4957,6 +5093,7 @@
      "slug": "livestock_ranch"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_wheat_farm",
@@ -5005,6 +5142,10 @@
      "slug": "glassworks"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_lead_mine",
@@ -5065,6 +5206,7 @@
      "slug": "tooling_workshop"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_automotive_industry",
@@ -5118,6 +5260,7 @@
      "slug": "cotton_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_silk_plantation",
@@ -5169,6 +5312,10 @@
      "slug": "livestock_ranch"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_railway",
@@ -5217,6 +5364,7 @@
      "slug": "motor_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_tooling_workshop",
@@ -5272,6 +5420,7 @@
      "slug": "artillery_foundry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -5325,6 +5474,10 @@
      "slug": "port"
     }
    ],
+   "category": {
+    "id": "shopkeeper_owned",
+    "name": "Partial Shopkeeper Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_rice_farm",
@@ -5391,6 +5544,7 @@
      "slug": "wheat_farm"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_railway",
@@ -5449,6 +5603,7 @@
      "slug": "tooling_workshop"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -5494,6 +5649,10 @@
      "slug": "iron_mine"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -5535,6 +5694,7 @@
      "slug": "textile_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_rubber_plantation",
@@ -5595,6 +5755,10 @@
      "slug": "textile_mill"
     }
    ],
+   "category": {
+    "id": "shopkeeper_owned",
+    "name": "Partial Shopkeeper Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_cotton_plantation",
@@ -5665,6 +5829,7 @@
      "slug": "automotive_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -5718,6 +5883,7 @@
      "slug": "textile_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_cotton_plantation",
@@ -5776,6 +5942,10 @@
      "slug": "glassworks"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_food_industry",
@@ -5834,6 +6004,7 @@
      "slug": "munition_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_explosives_factory",
@@ -5882,6 +6053,7 @@
      "slug": "furniture_manufactory"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -5935,6 +6107,7 @@
      "slug": "tooling_workshop"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_arms_industry",
@@ -5998,6 +6171,7 @@
      "slug": "tooling_workshop"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -6039,6 +6213,10 @@
      "slug": "food_industry"
     }
    ],
+   "category": {
+    "id": "shopkeeper_owned",
+    "name": "Partial Shopkeeper Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_livestock_ranch",
@@ -6094,6 +6272,10 @@
      "slug": "tooling_workshop"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_automotive_industry",
@@ -6140,6 +6322,10 @@
      "slug": "cotton_plantation"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_silk_plantation",
@@ -6191,6 +6377,7 @@
      "slug": "paper_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -6264,6 +6451,7 @@
      "slug": "dye_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_tea_plantation",
@@ -6334,6 +6522,7 @@
      "slug": "silk_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_cotton_plantation",
@@ -6396,6 +6585,10 @@
      "slug": "rice_farm"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_wheat_farm",
@@ -6449,6 +6642,7 @@
      "slug": "textile_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_cotton_plantation",
@@ -6495,6 +6689,10 @@
      "slug": "oil_rig"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -6548,6 +6746,7 @@
      "slug": "dye_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_tobacco_plantation",
@@ -6613,6 +6812,7 @@
      "slug": "oil_rig"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -6654,6 +6854,7 @@
      "slug": "iron_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_railway",
@@ -6706,6 +6907,7 @@
      "slug": "food_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_rice_farm",
@@ -6769,6 +6971,7 @@
      "slug": "power_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_electrics_industry",
@@ -6822,6 +7025,7 @@
      "slug": "power_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_sulfur_mine",
@@ -6870,6 +7074,7 @@
      "slug": "iron_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_railway",
@@ -6913,6 +7118,10 @@
      "slug": "chemical_plant"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -6956,6 +7165,7 @@
      "slug": "tea_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_food_industry",
@@ -7009,6 +7219,7 @@
      "slug": "logging_camp"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -7031,12 +7242,7 @@
      "name": "Yangseo"
     }
    ],
-   "prestigeGoods": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "prestigeGoods": [],
    "prosperity": [
     {
      "key": "state_mortality_mult",
@@ -7072,6 +7278,7 @@
      "slug": "wheat_farm"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_maize_farm",
@@ -7130,6 +7337,7 @@
      "slug": "artillery_foundry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -7188,6 +7396,7 @@
      "slug": "tobacco_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_opium_plantation",
@@ -7229,6 +7438,10 @@
      "slug": "port"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_shipyard",
@@ -7289,6 +7502,10 @@
      "slug": "food_industry"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_rice_farm",
@@ -7337,6 +7554,10 @@
      "slug": "cotton_plantation"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_textile_mill",
@@ -7375,6 +7596,10 @@
      "slug": "silk_plantation"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_textile_mill",
@@ -7413,6 +7638,7 @@
      "slug": "rubber_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -7456,6 +7682,7 @@
      "slug": "electrics_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -7513,6 +7740,10 @@
      "slug": "railway"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -7549,6 +7780,7 @@
      "slug": "wheat_farm"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_port",
@@ -7623,6 +7855,7 @@
      "slug": "fishing_wharf"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_whaling_station",
@@ -7686,6 +7919,7 @@
      "slug": "explosives_factory"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -7760,6 +7994,10 @@
      "slug": "port"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -7815,6 +8053,10 @@
      "slug": "tobacco_plantation"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_opium_plantation",
@@ -7865,6 +8107,7 @@
      "slug": "food_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_wheat_farm",
@@ -7911,6 +8154,7 @@
      "slug": "railway"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -7959,6 +8203,7 @@
      "slug": "textile_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_cotton_plantation",
@@ -8017,6 +8262,7 @@
      "slug": "motor_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_automotive_industry",
@@ -8070,6 +8316,7 @@
      "slug": "textile_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_cotton_plantation",
@@ -8111,6 +8358,10 @@
      "slug": "cotton_plantation"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_textile_mill",
@@ -8147,6 +8398,7 @@
      "slug": "power_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_railway",
@@ -8164,12 +8416,7 @@
      "name": "Bangkok"
     }
    ],
-   "prestigeGoods": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "prestigeGoods": [],
    "prosperity": [
     {
      "key": "building_rice_farm_throughput_add",
@@ -8195,6 +8442,7 @@
      "slug": "electrics_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -8246,6 +8494,7 @@
      "slug": "munition_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_automotive_industry",
@@ -8263,12 +8512,7 @@
      "name": "Yorkshire"
     }
    ],
-   "prestigeGoods": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "prestigeGoods": [],
    "prosperity": [
     {
      "key": "ship_ship_type_aircraft_carrier_hull_damage_mult",
@@ -8304,6 +8548,7 @@
      "slug": "artillery_foundry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_automotive_industry",
@@ -8357,6 +8602,7 @@
      "slug": "steel_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -8407,6 +8653,10 @@
      "slug": "tobacco_plantation"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -8472,6 +8722,7 @@
      "slug": "motor_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -8522,6 +8773,7 @@
      "slug": "logging_camp"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_port",
@@ -8549,12 +8801,7 @@
      "name": "Tonkin"
     }
    ],
-   "prestigeGoods": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "prestigeGoods": [],
    "prosperity": [
     {
      "key": "building_coal_mine_throughput_add",
@@ -8585,6 +8832,7 @@
      "slug": "railway"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -8630,6 +8878,7 @@
      "slug": "sulfur_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_lead_mine",
@@ -8676,6 +8925,7 @@
      "slug": "shipyard"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_munition_plant",
@@ -8734,6 +8984,7 @@
      "slug": "explosives_factory"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -8770,6 +9021,7 @@
      "slug": "artillery_foundry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -8823,6 +9075,7 @@
      "slug": "railway"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_port",
@@ -8854,6 +9107,7 @@
      "slug": "oil_rig"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -8895,6 +9149,7 @@
      "slug": "rice_farm"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -8936,6 +9191,10 @@
      "slug": "port"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_shipyard",
@@ -9001,6 +9260,7 @@
      "slug": "chemical_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -9064,6 +9324,7 @@
      "slug": "rice_farm"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_food_industry",
@@ -9105,6 +9366,10 @@
      "slug": "railway"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_motor_industry",
@@ -9146,6 +9411,7 @@
      "slug": "steel_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -9204,6 +9470,10 @@
      "slug": "artillery_foundry"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -9245,6 +9515,7 @@
      "slug": "power_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_railway",
@@ -9262,12 +9533,7 @@
      "name": "Kanto"
     }
    ],
-   "prestigeGoods": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "prestigeGoods": [],
    "prosperity": [
     {
      "key": "building_electrics_industry_throughput_add",
@@ -9293,6 +9559,7 @@
      "slug": "oil_rig"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -9349,6 +9616,7 @@
      "slug": "banana_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_railway",
@@ -9397,6 +9665,7 @@
      "slug": "motor_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_automotive_industry",
@@ -9455,6 +9724,7 @@
      "slug": "shipyard"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -9482,12 +9752,7 @@
      "name": "Holland"
     }
    ],
-   "prestigeGoods": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "prestigeGoods": [],
    "prosperity": [
     {
      "key": "building_sugar_plantation_throughput_add",
@@ -9525,6 +9790,10 @@
      "slug": "vineyard"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_wheat_farm",
@@ -9580,6 +9849,7 @@
      "slug": "artillery_foundry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_explosives_factory",
@@ -9649,6 +9919,7 @@
      "slug": "oil_rig"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_power_plant",
@@ -9697,6 +9968,7 @@
      "slug": "port"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_shipyard",
@@ -9750,6 +10022,7 @@
      "slug": "motor_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_artillery_foundry",
@@ -9801,6 +10074,7 @@
      "slug": "steel_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -9852,6 +10126,7 @@
      "slug": "iron_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_lead_mine",
@@ -9905,6 +10180,7 @@
      "slug": "port"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_tooling_workshop",
@@ -9980,6 +10256,7 @@
      "slug": "sugar_plantation"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_shipyard",
@@ -10033,6 +10310,7 @@
      "slug": "munition_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_artillery_foundry",
@@ -10086,6 +10364,7 @@
      "slug": "explosives_factory"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_sulfur_mine",
@@ -10137,6 +10416,10 @@
      "slug": "maize_farm"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_rye_farm",
@@ -10185,6 +10468,7 @@
      "slug": "artillery_foundry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_automotive_industry",
@@ -10233,6 +10517,10 @@
      "slug": "vineyard"
     }
    ],
+   "category": {
+    "id": "shopkeeper_owned",
+    "name": "Partial Shopkeeper Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_livestock_ranch",
@@ -10269,6 +10557,7 @@
      "slug": "synthetics_plant"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_sulfur_mine",
@@ -10317,6 +10606,7 @@
      "slug": "whaling_station"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_shipyard",
@@ -10360,6 +10650,7 @@
      "slug": "tooling_workshop"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -10396,6 +10687,7 @@
      "slug": "shipyard"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -10427,6 +10719,7 @@
      "slug": "oil_rig"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -10458,6 +10751,7 @@
      "slug": "steel_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -10504,6 +10798,10 @@
      "slug": "livestock_ranch"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_textile_mill",
@@ -10540,6 +10838,7 @@
      "slug": "textile_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_cotton_plantation",
@@ -10586,6 +10885,10 @@
      "slug": "tea_plantation"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_tobacco_plantation",
@@ -10622,6 +10925,7 @@
      "slug": "electrics_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -10663,6 +10967,7 @@
      "slug": "lead_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_coal_mine",
@@ -10701,6 +11006,7 @@
      "slug": "paper_mill"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -10737,6 +11043,7 @@
      "slug": "gold_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_lead_mine",
@@ -10775,6 +11082,10 @@
      "slug": "food_industry"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_livestock_ranch",
@@ -10821,6 +11132,7 @@
      "slug": "furniture_manufactory"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_logging_camp",
@@ -10867,6 +11179,10 @@
      "slug": "rye_farm"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_maize_farm",
@@ -10908,6 +11224,10 @@
      "slug": "dye_plantation"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_textile_mill",
@@ -10956,6 +11276,10 @@
      "slug": "tobacco_plantation"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_tea_plantation",
@@ -10997,6 +11321,7 @@
      "slug": "coal_mine"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_iron_mine",
@@ -11033,6 +11358,7 @@
      "slug": "automotive_industry"
     }
    ],
+   "category": null,
    "extensionBuildings": [
     {
      "id": "building_steel_mill",
@@ -11081,6 +11407,10 @@
      "slug": "glassworks"
     }
    ],
+   "category": {
+    "id": "bureaucrat_owned",
+    "name": "Partial Bureaucrat Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_lead_mine",
@@ -11117,6 +11447,10 @@
      "slug": "rubber_plantation"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_tooling_workshop",
@@ -11160,6 +11494,10 @@
      "slug": "banana_plantation"
     }
    ],
+   "category": {
+    "id": "aristocrat_owned",
+    "name": "Partial Aristocratic Ownership"
+   },
    "extensionBuildings": [
     {
      "id": "building_sugar_plantation",

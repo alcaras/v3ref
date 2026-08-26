@@ -7,12 +7,6 @@ import lawsJson from '../data/laws.json';
 const base = import.meta.env.BASE_URL;
 const lawGroups = (lawsJson as any).lawGroups as any[];
 const lawCount = lawGroups.reduce((s, g) => s + g.laws.length, 0);
-const CATEGORY_LABEL: Record<string, string> = {
-  power_structure: 'Power Structure',
-  economy: 'Economy',
-  human_rights: 'Human Rights',
-};
-
 const reqText = (l: any) =>
   [
     ...l.techs.map((t: any) => t.name),
@@ -23,7 +17,7 @@ const csv = {
   header: ['Law group', 'Category', 'Law', 'Id', 'Progressiveness', 'Requires', 'Institution', 'Effects'],
   rows: lawGroups.flatMap((g) =>
     g.laws.map((l: any) => [
-      g.name, g.category ?? '', l.name, l.id, l.progressiveness, reqText(l),
+      g.name, g.category?.name ?? '', l.name, l.id, l.progressiveness, reqText(l),
       l.institution?.name ?? '',
       l.modifiers.map((m: any) => `${m.valueText} ${m.label}`).join('; '),
     ]),
@@ -45,11 +39,11 @@ let lastCategory = '';
   <TableTools csvId="laws" csvName="victoria3-laws" />
 
   {lawGroups.map((g) => {
-    const showCategory = g.category !== lastCategory;
-    lastCategory = g.category;
+    const showCategory = g.category?.id !== lastCategory;
+    lastCategory = g.category?.id;
     return (
       <>
-        {showCategory && <h2 class="sect">{CATEGORY_LABEL[g.category] ?? g.category}</h2>}
+        {showCategory && <h2 class="sect">{g.category?.name}</h2>}
         <h3 class="lawgroup" id={g.id}>
           {g.name}
           {g.enactmentDays && <span class="lawgroup__meta">{g.enactmentDays} base enactment days</span>}

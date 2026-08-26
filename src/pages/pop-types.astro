@@ -9,7 +9,7 @@ const pops = (popsJson as any).pops as any[];
 const csv = {
   header: [
     'Pop type', 'Id', 'Strata', 'Wage weight', 'Dependent wage', 'Political engagement',
-    'Destitution sink (wealth <=)', 'Starting QoL', 'Qualifications', 'PMs employing',
+    'Becomes this profession at wealth <=', 'Starting QoL', 'Qualifications', 'PMs employing',
   ],
   rows: pops.map((p) => [
     p.name, p.id, p.strata ?? '', p.wageWeight ?? '', p.dependentWage ?? '',
@@ -36,7 +36,7 @@ const csv = {
             <th class="num" title="Relative share of the building's wage budget">Wage weight</th>
             <th class="num" title="Wage paid per dependent, per year">Dependent wage</th>
             <th class="num" title="Base share politically engaged (before literacy)">Engagement</th>
-            <th class="num" title="Pops that fall to this wealth level or below switch INTO this profession — the game's unemployment sink">Destitution sink</th>
+            <th class="num" title="Pops that fall to this wealth level or below switch INTO this profession — the game's unemployment sink">Becomes this at wealth ≤</th>
             <th class="num" title="Quality of life at game start">Start QoL</th>
             <th>Qualifications</th>
             <th class="num" title="Production methods that employ this profession">PMs</th>
@@ -75,8 +75,8 @@ const csv = {
 
   <p class="caption">
     Wage weight is this profession's share of its building's wage budget · engagement is the base share
-    politically active, before literacy · <b>destitution sink</b>: unemployed pops whose wealth falls to that
-    level or below become this profession, so Laborers absorb the destitute ·
+    politically active, before literacy · the wealth column is the game's <code>unemployment_wealth</code>: "unemployed pops whose wealth drops
+    to or below this level switches to this profession", which is why Laborers absorb the destitute ·
     wealth levels run 1–99 and drive which <a href={`${base}pop-needs`}>buy package</a> a pop can afford
   </p>
 

@@ -4,7 +4,7 @@
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
+import { dataRoot, parseFolder, asArray, stableStringify , idList } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
 
@@ -18,7 +18,7 @@ const [shipTypes, shipGroups, shipMods] = await Promise.all([
   parseFolder(join(root, 'ship_modifications')),
 ]);
 
-const names = (ids) => asArray(ids).flat().map((id) => ({ id, name: loc.name(id) }));
+const names = (ids) => idList(ids).map((id) => ({ id, name: loc.name(id) }));
 
 // Headline stats shown as table columns; everything else stays a mod list.
 const HEADLINE = {
@@ -37,7 +37,7 @@ const techsIn = (trigger) => {
   const walk = (v) => {
     if (!v || typeof v !== 'object') return;
     for (const [k, val] of Object.entries(v)) {
-      if (k === 'has_technology_researched') out.push(...asArray(val).flat());
+      if (k === 'has_technology_researched') out.push(...idList(val));
       else if (typeof val === 'object') walk(val);
     }
   };

@@ -18,7 +18,7 @@
 // resolve() returns { text, concepts } — use text for plain display, concepts
 // to auto-link. get() returns the raw unresolved string.
 
-import { readFileSync, readdirSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot } from './pdx.mjs';
 
@@ -58,16 +58,59 @@ function ymlFiles(dir, out = []) {
   return out;
 }
 
+// Every build script runs in its own process, so the ids we had to invent
+// labels for are pooled in one file that the audit reads afterwards.
+// `make data` clears it at the start of a run.
+export const INVENTED_LOG = new URL('../../data/invented-labels.json', import.meta.url).pathname;
+
 export class Loc {
-  constructor(map) { this.map = map; }
+  constructor(map) {
+    this.map = map;
+    this.invented = new Set();
+    // Flush on exit rather than per-call: a build resolves tens of thousands
+    // of names and most of them succeed.
+    process.on('exit', () => {
+      if (!this.invented.size) return;
+      let pooled = [];
+      try { pooled = JSON.parse(readFileSync(INVENTED_LOG, 'utf8')); } catch {}
+      const merged = [...new Set([...pooled, ...this.invented])].sort();
+      try { writeFileSync(INVENTED_LOG, JSON.stringify(merged, null, 1)); } catch {}
+    });
+  }
 
   has(key) { return this.map.has(key); }
   get(key) { return this.map.get(key); }
 
-  /** Display name for a script key; falls back to Title Casing the id. */
-  name(key) {
-    const r = this.resolve(key);
-    return r && r.text.trim() ? r.text : titleCase(key);
+  /**
+   * Display name for a script key.
+   *
+   * The game does not use one naming convention: a law group is `lawgroup_x`,
+   * a country tier is `country_tier_x`, a law-group category is bare
+   * `POWER_STRUCTURE`. So try the id, then the caller's known prefixes, then
+   * the uppercase form, before giving up.
+   *
+   * Giving up means Title-Casing the id — a LABEL WE INVENTED, not the game's
+   * word for the thing. Those are recorded in `invented` so the audit can
+   * report them instead of letting them pass as if they came from the game.
+   */
+  name(key, prefixes = []) {
+    for (const candidate of [key, ...prefixes.map((p) => `${p}${key}`), String(key).toUpperCase()]) {
+      const r = this.resolve(candidate);
+      if (!r) continue;
+      const text = r.text.trim();
+      // Some ids only have a TEMPLATED string, e.g. war_goal_conquer_state is
+      // "Conquer [WAR_GOAL_DRAFT.GetTargetState.GetName]" — a runtime sentence,
+      // not a label. Resolving it statically yields "Conquer …", which is worse
+      // than nothing, so a name with an elision is not a name.
+      if (text && !text.includes('…')) return text;
+    }
+    this.invented.add(key);
+    return titleCase(key);
+  }
+
+  /** Ids we had no game text for, and therefore labelled ourselves. */
+  get inventedNames() {
+    return [...this.invented].sort();
   }
 
   /** Fully resolve a loc key. Returns { text, concepts } or null if missing. */

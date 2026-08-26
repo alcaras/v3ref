@@ -5,7 +5,7 @@
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
+import { dataRoot, parseFolder, asArray, stableStringify , idList } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
 import { iconPath } from './lib/icons.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
@@ -17,17 +17,18 @@ const { entries: companies } = await parseFolder(join(root, 'company_types'));
 
 const bag = (m) => mods.formatBag(Object.assign({}, ...asArray(m)));
 const buildingRefs = (ids) =>
-  asArray(ids).flat().map((b) => ({ id: b, slug: b.replace(/^building_/, ''), name: loc.name(b) }));
+  idList(ids).map((b) => ({ id: b, slug: b.replace(/^building_/, ''), name: loc.name(b) }));
 
 const list = Object.entries(companies.entries ?? companies).map(([id, c]) => ({
   id,
   name: loc.name(id),
   icon: iconPath(c.icon, 'companies'),
   flavored: c.flavored_company === true || c.flavored_company === 'yes',
+  category: c.category ? { id: c.category, name: loc.name(c.category, ['company_category_']) } : null,
   buildings: buildingRefs(c.building_types),
   extensionBuildings: buildingRefs(c.extension_building_types),
-  prestigeGoods: asArray(c.possible_prestige_goods).flat().map((p) => ({ id: p, name: loc.name(p) })),
-  preferredHq: asArray(c.preferred_headquarters).flat().map((s) => ({ id: s, name: loc.name(s) })),
+  prestigeGoods: idList(c.possible_prestige_goods).map((p) => ({ id: p, name: loc.name(p) })),
+  preferredHq: idList(c.preferred_headquarters).map((s) => ({ id: s, name: loc.name(s) })),
   prosperity: bag(c.prosperity_modifier),
 }));
 

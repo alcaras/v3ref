@@ -10,7 +10,7 @@ const pmCount = (b: any) => b.pmGroups.reduce((s: number, g: any) => s + g.pms.l
 
 const csv = {
   header: [
-    'Building', 'Id', 'Group', 'Subgroup', 'Land use', 'Construction',
+    'Building', 'Id', 'Group', 'Subgroup', 'State resource', 'Construction',
     'Unlock techs', 'PM groups', 'PMs', 'Output goods', 'Unique',
   ],
   rows: buildings.map((b) => [
@@ -41,7 +41,7 @@ const csv = {
           <tr>
             <th>Building</th>
             <th>Group</th>
-            <th>Land</th>
+            <th title="State resource the building consumes: urban = Urbanization, rural = Arable Land. Blank = neither.">State resource</th>
             <th class="num">Construction</th>
             <th>Unlocked by</th>
             <th class="num">PMs</th>
@@ -85,7 +85,11 @@ const csv = {
     </div>
   </div>
 
-  <p class="caption">Construction is points of construction capacity · unlock techs from the building itself (PMs gate separately)</p>
+  <p class="caption">
+    Construction is points of construction capacity · unlock techs are the building's own (production
+    methods gate separately) · state resource is the building group's declared land_usage; blank means
+    the building consumes neither Urbanization nor Arable Land
+  </p>
 
   <script is:inline define:vars={{ csv }}>
     window.v3Csv = window.v3Csv || {};

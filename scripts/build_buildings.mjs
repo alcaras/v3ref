@@ -9,7 +9,7 @@
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { dataRoot, parseFolder, parseFile, asArray, stableStringify } from './lib/pdx.mjs';
+import { dataRoot, parseFolder, parseFile, asArray, stableStringify , idList } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
 import { iconPath } from './lib/icons.mjs';
 import { loadEconomy } from './lib/economy.mjs';
@@ -39,16 +39,15 @@ function landUsage(groupId) {
     const lu = econ.buildingGroups[g]?.land_usage;
     if (lu) return lu;
   }
-  // Groups with no land_usage anywhere (manufacturing) carry a category
-  // urban/rural instead — close enough for the display column.
-  for (const g of groupChain(groupId)) {
-    const cat = econ.buildingGroups[g]?.category;
-    if (cat) return cat;
-  }
+  // Docs in building_groups: "Default no state resource usage. If unspecified,
+  // will return first non-default land usage type found in parent building
+  // group tree." So nothing in the tree means the building consumes neither
+  // Urbanization nor Arable Land. `category` is a DIFFERENT field (its values
+  // include `development`) and must not be substituted here.
   return null;
 }
 
-const names = (ids) => asArray(ids).flat().map((id) => ({ id, name: loc.name(id) }));
+const names = (ids) => idList(ids).map((id) => ({ id, name: loc.name(id) }));
 
 function pmView(pmId) {
   const pm = econ.pms[pmId] ?? {};
@@ -108,7 +107,7 @@ const buildings = Object.entries(econ.buildings)
     .map((pmgId) => ({
       id: pmgId,
       name: loc.name(pmgId),
-      pms: asArray(econ.pmgs[pmgId]?.production_methods).flat().map(pmView),
+      pms: idList(econ.pmgs[pmgId]?.production_methods).map(pmView),
     }));
   const outputGoods = [
     ...new Set(pmGroups.flatMap((g) => g.pms.flatMap((pm) => pm.outputs.map((o) => o.good)))),

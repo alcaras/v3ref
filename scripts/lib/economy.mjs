@@ -11,7 +11,7 @@
 // style); those are kept with kind 'mult' and rendered as percentages.
 
 import { join } from 'node:path';
-import { dataRoot, parseFolder, asArray } from './pdx.mjs';
+import { dataRoot, parseFolder, asArray , idList } from './pdx.mjs';
 
 export async function loadEconomy() {
   const root = join(dataRoot(), 'game/common');
@@ -25,7 +25,7 @@ export async function loadEconomy() {
   // pmg -> buildings that offer it (a pmg can be shared by several buildings)
   const pmgBuildings = new Map();
   for (const [bId, b] of Object.entries(buildings.entries)) {
-    for (const pmgId of asArray(b.production_method_groups).flat()) {
+    for (const pmgId of idList(b.production_method_groups)) {
       if (!pmgBuildings.has(pmgId)) pmgBuildings.set(pmgId, []);
       pmgBuildings.get(pmgId).push(bId);
     }
@@ -34,7 +34,7 @@ export async function loadEconomy() {
   // pm -> [{building, pmg}]
   const pmSites = new Map();
   for (const [pmgId, pmg] of Object.entries(pmgs.entries)) {
-    for (const pmId of asArray(pmg.production_methods).flat()) {
+    for (const pmId of idList(pmg.production_methods)) {
       if (!pmSites.has(pmId)) pmSites.set(pmId, []);
       for (const bId of pmgBuildings.get(pmgId) ?? []) {
         pmSites.get(pmId).push({ building: bId, pmg: pmgId });

@@ -4,7 +4,7 @@
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
+import { dataRoot, parseFolder, asArray, stableStringify , idList } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
 import { iconPath } from './lib/icons.mjs';
 
@@ -41,10 +41,10 @@ writeFileSync(
 
 const goalList = Object.entries(warGoals.entries).map(([id, g]) => ({
   id,
-  name: loc.name(id),
+  name: loc.name(id, ['war_goal_']),
   icon: iconPath(g.icon, 'wargoals'),
-  kind: g.kind ?? null,
-  settings: asArray(g.settings).flat().filter((s) => typeof s === 'string'),
+  kind: g.kind ? loc.name(g.kind, ['war_goal_']) : null,
+  settings: idList(g.settings).filter((s) => typeof s === 'string'),
   plays: [],
 }));
 const goalById = Object.fromEntries(goalList.map((g) => [g.id, g]));
@@ -53,7 +53,7 @@ const playList = Object.entries(plays.entries).map(([id, p]) => {
   goalById[p.war_goal]?.plays.push(id);
   return {
     id,
-    name: loc.name(id),
+    name: loc.name(id, ['dp_']),
     icon: iconPath(p.texture, 'wargoals'),
     warGoal: p.war_goal ? { id: p.war_goal, name: loc.name(p.war_goal) } : null,
     warOnly: yes(p.war_only),

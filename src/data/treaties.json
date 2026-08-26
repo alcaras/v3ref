@@ -657,9 +657,7 @@
   {
    "cost": 25,
    "exclusions": [],
-   "flags": [
-    {}
-   ],
+   "flags": [],
    "icon": "img/treaties/offer_embassy.png",
    "id": "recognize_independence",
    "kind": "directed",

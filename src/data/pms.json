@@ -6270,12 +6270,7 @@
    "laws": [],
    "name": "Dry Process",
    "netAtBase": 1000,
-   "other": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "other": [],
    "outputs": [
     {
      "amount": 20,
@@ -8976,12 +8971,7 @@
      "name": "Services"
     }
    ],
-   "techs": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "techs": [],
    "totalJobs": 250
   },
   {

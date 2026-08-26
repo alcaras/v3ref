@@ -1,17 +1,6 @@
 {
  "plays": [
   {
-   "icon": "img/wargoals/enforce_treaty_article.png",
-   "id": "dp_default_treaty_article",
-   "name": "…",
-   "requiresInterest": false,
-   "warGoal": {
-    "id": "enforce_treaty_article",
-    "name": "Enforce Treaty Article"
-   },
-   "warOnly": false
-  },
-  {
    "icon": "img/wargoals/unification.png",
    "id": "dp_leadership_andes",
    "name": "Andean Leadership",
@@ -74,6 +63,17 @@
    "warGoal": {
     "id": "contain_threat",
     "name": "Contain Threat"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "dp_default_treaty_article",
+   "name": "Dp Default Treaty Article",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "enforce_treaty_article",
+    "name": "Enforce Treaty Article"
    },
    "warOnly": false
   },
@@ -205,7 +205,7 @@
    "requiresInterest": false,
    "warGoal": {
     "id": "leave_power_bloc",
-    "name": "Leave Power Bloc"
+    "name": "Leave"
    },
    "warOnly": false
   },
@@ -326,7 +326,7 @@
    "requiresInterest": false,
    "warGoal": {
     "id": "regime_change",
-    "name": "Regime Change"
+    "name": "Enforces a Regime Change"
    },
    "warOnly": false
   },
@@ -577,7 +577,7 @@
   {
    "icon": "img/wargoals/annex_country.png",
    "id": "annex_country",
-   "kind": "annex_country",
+   "kind": "Annex Country",
    "name": "Annex Country",
    "plays": [
     "dp_annex_subject",
@@ -604,7 +604,7 @@
   {
    "icon": "img/wargoals/ban_slavery.png",
    "id": "ban_slavery",
-   "kind": "ban_slavery",
+   "kind": "Ban Slavery",
    "name": "Ban Slavery",
    "plays": [
     "dp_ban_slavery"
@@ -618,7 +618,7 @@
   {
    "icon": "img/wargoals/colonization_rights.png",
    "id": "colonization_rights",
-   "kind": "colonization_rights",
+   "kind": "Colonization Rights",
    "name": "Colonization Rights",
    "plays": [
     "dp_native_uprising"
@@ -634,7 +634,7 @@
   {
    "icon": "img/wargoals/conquer_state.png",
    "id": "conquer_state",
-   "kind": "conquer_state",
+   "kind": "Conquer State",
    "name": "Conquer State",
    "plays": [
     "dp_conquer_state"
@@ -653,7 +653,7 @@
   {
    "icon": "img/wargoals/contain_threat.png",
    "id": "contain_threat",
-   "kind": "contain_threat",
+   "kind": "Contain Threat",
    "name": "Contain Threat",
    "plays": [
     "dp_contain_threat"
@@ -667,7 +667,7 @@
   {
    "icon": "img/wargoals/enforce_treaty_article.png",
    "id": "demand_no_strait_closure",
-   "kind": "demand_no_strait_closure",
+   "kind": "Demand No Strait Closure",
    "name": "Demand No Strait Closure",
    "plays": [
     "dp_demand_no_strait_closure"
@@ -681,7 +681,7 @@
   {
    "icon": "img/wargoals/enforce_treaty_article.png",
    "id": "demand_no_tolls",
-   "kind": "demand_no_tolls",
+   "kind": "Demand No Tolls",
    "name": "Demand No Tolls",
    "plays": [
     "dp_demand_no_tolls"
@@ -695,7 +695,7 @@
   {
    "icon": "img/wargoals/enforce_treaty_article.png",
    "id": "demand_strait_access",
-   "kind": "demand_strait_access",
+   "kind": "Demand Strait Access",
    "name": "Demand Strait Access",
    "plays": [
     "dp_demand_strait_access"
@@ -709,7 +709,7 @@
   {
    "icon": "img/wargoals/enforce_treaty_article.png",
    "id": "demand_toll_exemption",
-   "kind": "demand_toll_exemption",
+   "kind": "Demand Toll Exemption",
    "name": "Demand Toll Exemption",
    "plays": [
     "dp_demand_toll_exemption"
@@ -723,7 +723,7 @@
   {
    "icon": "img/wargoals/enforce_treaty_article.png",
    "id": "enforce_treaty_article",
-   "kind": "enforce_treaty_article",
+   "kind": "Enforce Treaty Article",
    "name": "Enforce Treaty Article",
    "plays": [
     "dp_default_treaty_article"
@@ -734,9 +734,24 @@
    ]
   },
   {
+   "icon": "img/wargoals/regime_change.png",
+   "id": "regime_change",
+   "kind": "Enforces a Regime Change",
+   "name": "Enforces a Regime Change",
+   "plays": [
+    "dp_regime_change"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "validate_conflicts_war_goals_all",
+    "validate_regime_change",
+    "debug"
+   ]
+  },
+  {
    "icon": "img/wargoals/force_nationalization.png",
    "id": "force_nationalization",
-   "kind": "force_nationalization",
+   "kind": "Force Nationalization",
    "name": "Force Nationalization",
    "plays": [
     "dp_force_nationalization"
@@ -751,7 +766,7 @@
   {
    "icon": "img/wargoals/humiliation.png",
    "id": "humiliation",
-   "kind": "humiliation",
+   "kind": "Humiliation",
    "name": "Humiliation",
    "plays": [
     "dp_humiliation",
@@ -766,7 +781,7 @@
   {
    "icon": "img/wargoals/increase_autonomy.png",
    "id": "increase_autonomy",
-   "kind": "increase_autonomy",
+   "kind": "Increase Autonomy",
    "name": "Increase Autonomy",
    "plays": [
     "dp_increase_autonomy"
@@ -781,7 +796,7 @@
   {
    "icon": "img/wargoals/independence.png",
    "id": "independence",
-   "kind": "independence",
+   "kind": "Independence",
    "name": "Independence",
    "plays": [
     "dp_independence"
@@ -797,7 +812,7 @@
   {
    "icon": "img/wargoals/foreign_investment_rights.png",
    "id": "foreign_investment_rights",
-   "kind": "foreign_investment_rights",
+   "kind": "Investment Rights",
    "name": "Investment Rights",
    "plays": [
     "dp_give_foreign_investment_rights"
@@ -812,7 +827,7 @@
   {
    "icon": "img/wargoals/join_power_bloc.png",
    "id": "join_power_bloc",
-   "kind": "join_power_bloc",
+   "kind": "Join Power Bloc",
    "name": "Join Power Bloc",
    "plays": [
     "dp_join_power_bloc"
@@ -827,7 +842,7 @@
   {
    "icon": "img/wargoals/leave_power_bloc.png",
    "id": "leave_power_bloc",
-   "kind": "leave_power_bloc",
+   "kind": "Leave Power Bloc",
    "name": "Leave Power Bloc",
    "plays": [
     "dp_leave_power_bloc"
@@ -840,7 +855,7 @@
   {
    "icon": "img/wargoals/liberate_country.png",
    "id": "liberate_country",
-   "kind": "liberate_country",
+   "kind": "Liberate Country",
    "name": "Liberate Country",
    "plays": [
     "dp_liberate_country"
@@ -858,7 +873,7 @@
   {
    "icon": "img/wargoals/liberate_subject.png",
    "id": "liberate_subject",
-   "kind": "liberate_subject",
+   "kind": "Liberate Subject",
    "name": "Liberate Subject",
    "plays": [
     "dp_liberate_subject"
@@ -875,7 +890,7 @@
   {
    "icon": "img/wargoals/make_dominion.png",
    "id": "make_dominion",
-   "kind": "make_dominion",
+   "kind": "Make Dominion",
    "name": "Make Dominion",
    "plays": [
     "dp_make_dominion"
@@ -893,7 +908,7 @@
   {
    "icon": "img/wargoals/make_protectorate.png",
    "id": "make_protectorate",
-   "kind": "make_protectorate",
+   "kind": "Make Protectorate",
    "name": "Make Protectorate",
    "plays": [
     "dp_make_protectorate"
@@ -911,7 +926,7 @@
   {
    "icon": "img/wargoals/make_tributary.png",
    "id": "make_tributary",
-   "kind": "make_tributary",
+   "kind": "Make Tributary",
    "name": "Make Tributary",
    "plays": [
     "dp_make_tributary"
@@ -929,7 +944,7 @@
   {
    "icon": "img/wargoals/open_market.png",
    "id": "open_market",
-   "kind": "open_market",
+   "kind": "Open Market",
    "name": "Open Market",
    "plays": [
     "dp_open_market"
@@ -942,7 +957,7 @@
   {
    "icon": "img/wargoals/reduce_autonomy.png",
    "id": "reduce_autonomy",
-   "kind": "reduce_autonomy",
+   "kind": "Reduce Autonomy",
    "name": "Reduce Autonomy",
    "plays": [
     "dp_reduce_autonomy"
@@ -956,25 +971,10 @@
    ]
   },
   {
-   "icon": "img/wargoals/regime_change.png",
-   "id": "regime_change",
-   "kind": "regime_change",
-   "name": "Regime Change",
-   "plays": [
-    "dp_regime_change"
-   ],
-   "settings": [
-    "require_target_be_part_of_war",
-    "validate_conflicts_war_goals_all",
-    "validate_regime_change",
-    "debug"
-   ]
-  },
-  {
    "icon": "img/wargoals/enforce_treaty_article.png",
    "id": "restore_union",
-   "kind": "custom",
-   "name": "Restore Union",
+   "kind": "Custom",
+   "name": "Restore Personal Union",
    "plays": [
     "dp_restore_union"
    ],
@@ -989,7 +989,7 @@
   {
    "icon": "img/wargoals/return_state.png",
    "id": "return_state",
-   "kind": "return_state",
+   "kind": "Return State",
    "name": "Return State",
    "plays": [
     "dp_return_state"
@@ -1008,7 +1008,7 @@
   {
    "icon": "img/wargoals/revoke_claim.png",
    "id": "revoke_all_claims",
-   "kind": "revoke_all_claims",
+   "kind": "Revoke All Claims",
    "name": "Revoke All Claims",
    "plays": [],
    "settings": [
@@ -1022,7 +1022,7 @@
   {
    "icon": "img/wargoals/revoke_claim.png",
    "id": "revoke_claim",
-   "kind": "revoke_claim",
+   "kind": "Revoke Claim",
    "name": "Revoke Claim",
    "plays": [],
    "settings": [
@@ -1035,7 +1035,7 @@
   {
    "icon": "img/wargoals/secession.png",
    "id": "secession",
-   "kind": "secession",
+   "kind": "Secession",
    "name": "Secession",
    "plays": [
     "dp_secession"
@@ -1049,7 +1049,7 @@
   {
    "icon": "img/wargoals/take_treaty_port.png",
    "id": "take_treaty_port",
-   "kind": "take_treaty_port",
+   "kind": "Take Treaty Port",
    "name": "Take Treaty Port",
    "plays": [
     "dp_take_treaty_port"
@@ -1067,7 +1067,7 @@
   {
    "icon": "img/wargoals/transfer_subject.png",
    "id": "transfer_subject",
-   "kind": "transfer_subject",
+   "kind": "Transfer Subject",
    "name": "Transfer Subject",
    "plays": [
     "dp_transfer_subject"
@@ -1085,7 +1085,7 @@
   {
    "icon": "img/wargoals/unification.png",
    "id": "unification",
-   "kind": "unification",
+   "kind": "Unification",
    "name": "Unification",
    "plays": [
     "dp_unify_germany",
@@ -1108,7 +1108,7 @@
   {
    "icon": "img/wargoals/unification.png",
    "id": "unification_leadership",
-   "kind": "unification_leadership",
+   "kind": "Unification Leadership",
    "name": "Unification Leadership",
    "plays": [
     "dp_leadership_germany",

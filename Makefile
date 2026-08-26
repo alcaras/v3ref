@@ -9,6 +9,7 @@ export V3REF
 .PHONY: data art audit changelog snapshot build dev check all patch
 
 data:
+	@rm -f data/invented-labels.json
 	node scripts/build_goods.mjs
 	node scripts/build_buildings.mjs
 	node scripts/build_pops.mjs

@@ -1,47 +1,5 @@
 [
  {
-  "a": "je_indian_famines",
-  "g": "The Administration of India",
-  "n": "…",
-  "t": "journal_entry",
-  "u": "journal-entries#je_indian_famines"
- },
- {
-  "a": "je_spain_provisional_government",
-  "g": "National Agenda",
-  "n": "…",
-  "t": "journal_entry",
-  "u": "journal-entries#je_spain_provisional_government"
- },
- {
-  "a": "je_british_dictate_plantations",
-  "g": "The Administration of India",
-  "n": "… Dictate: Agricultural Production",
-  "t": "journal_entry",
-  "u": "journal-entries#je_british_dictate_plantations"
- },
- {
-  "a": "je_british_dictate_universities",
-  "g": "The Administration of India",
-  "n": "… Dictate: Higher Education",
-  "t": "journal_entry",
-  "u": "journal-entries#je_british_dictate_universities"
- },
- {
-  "a": "je_british_dictate_law",
-  "g": "The Administration of India",
-  "n": "… Dictate: Law Enactment",
-  "t": "journal_entry",
-  "u": "journal-entries#je_british_dictate_law"
- },
- {
-  "a": "je_british_dictate_military",
-  "g": "The Administration of India",
-  "n": "… Dictate: Military Expansion",
-  "t": "journal_entry",
-  "u": "journal-entries#je_british_dictate_military"
- },
- {
   "a": "events:soi_events--00_earn_recognition_events",
   "n": "00 Earn Recognition Events",
   "t": "event_group",
@@ -231,7 +189,10 @@
  {
   "a": "academia",
   "c": "img/techs/academia.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Academia",
   "t": "technology",
   "u": "technology#academia"
@@ -398,7 +359,10 @@
  {
   "a": "admiralty",
   "c": "img/techs/admiralty.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Admiralty",
   "t": "technology",
   "u": "technology#admiralty"
@@ -645,7 +609,10 @@
  {
   "a": "carrier_tech",
   "c": "img/techs/carrier_tech.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Aircraft Carrier",
   "t": "technology",
   "u": "technology#carrier_tech"
@@ -1067,7 +1034,10 @@
  {
   "a": "analytical_philosophy",
   "c": "img/techs/analytical_philosophy.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Analytical Philosophy",
   "t": "technology",
   "u": "technology#analytical_philosophy"
@@ -1082,7 +1052,10 @@
  {
   "a": "anarchism",
   "c": "img/techs/anarchy.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Anarchism",
   "t": "technology",
   "u": "technology#anarchism"
@@ -1182,7 +1155,10 @@
  {
   "a": "aniline",
   "c": "img/techs/aniline.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Aniline",
   "t": "technology",
   "u": "technology#aniline"
@@ -1264,7 +1240,10 @@
  {
   "a": "antibiotics",
   "c": "img/techs/antibiotics.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Antibiotics",
   "t": "technology",
   "u": "technology#antibiotics"
@@ -1436,7 +1415,10 @@
  {
   "a": "arc_welding",
   "c": "img/techs/arc_welding.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Arc Welding",
   "t": "technology",
   "u": "technology#arc_welding"
@@ -1569,7 +1551,10 @@
  {
   "a": "army_reserves",
   "c": "img/techs/army_reserves.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Army Reserves",
   "t": "technology",
   "u": "technology#army_reserves"
@@ -1606,7 +1591,10 @@
  {
   "a": "art_silk",
   "c": "img/techs/art_silk.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Art Silk",
   "t": "technology",
   "u": "technology#art_silk"
@@ -1636,7 +1624,10 @@
  {
   "a": "artillery",
   "c": "img/techs/artillery.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Artillery",
   "t": "technology",
   "u": "technology#artillery"
@@ -1788,7 +1779,10 @@
  {
   "a": "atmospheric_engine",
   "c": "img/techs/atmospheric_engine.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Atmospheric Engine",
   "t": "technology",
   "u": "technology#atmospheric_engine"
@@ -1922,7 +1916,10 @@
  {
   "a": "automatic_bottle_blowers",
   "c": "img/techs/automatic_bottle_blowers.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Automatic Bottle Blowers",
   "t": "technology",
   "u": "technology#automatic_bottle_blowers"
@@ -1930,7 +1927,10 @@
  {
   "a": "automatic_machine_guns",
   "c": "img/techs/machine_gun.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Automatic Machine Guns",
   "t": "technology",
   "u": "technology#automatic_machine_guns"
@@ -2184,7 +2184,10 @@
  {
   "a": "baking_powder",
   "c": "img/techs/baking_powder.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Baking Powder",
   "t": "technology",
   "u": "technology#baking_powder"
@@ -2348,7 +2351,10 @@
  {
   "a": "banking",
   "c": "img/techs/banking.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Banking",
   "t": "technology",
   "u": "technology#banking"
@@ -2584,7 +2590,10 @@
  {
   "a": "behaviorism",
   "c": "img/techs/behaviorism.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Behaviorism",
   "t": "technology",
   "u": "technology#behaviorism"
@@ -2702,7 +2711,10 @@
  {
   "a": "bessemer_process",
   "c": "img/techs/bessemer_process.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Bessemer Process",
   "t": "technology",
   "u": "technology#bessemer_process"
@@ -2937,7 +2949,10 @@
  {
   "a": "bolt_action_rifles",
   "c": "img/techs/bolt_action_rifles.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Bolt-Action Rifle",
   "t": "technology",
   "u": "technology#bolt_action_rifles"
@@ -3118,7 +3133,10 @@
  {
   "a": "breech_loading_artillery",
   "c": "img/techs/breech_loading_artillery.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Breech-Loading Artillery",
   "t": "technology",
   "u": "technology#breech_loading_artillery"
@@ -3339,7 +3357,10 @@
  {
   "a": "tech_bureaucracy",
   "c": "img/techs/bureaucracy.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Bureaucracy",
   "t": "technology",
   "u": "technology#tech_bureaucracy"
@@ -3524,7 +3545,10 @@
  {
   "a": "camera",
   "c": "img/techs/camera.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Camera",
   "t": "technology",
   "u": "technology#camera"
@@ -3597,7 +3621,10 @@
  {
   "a": "canneries",
   "c": "img/techs/canneries.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Canneries",
   "t": "technology",
   "u": "technology#canneries"
@@ -3873,13 +3900,6 @@
   "u": "character-traits#celebrity_commander"
  },
  {
-  "a": "je_cement_the_rightful_dynasty",
-  "g": "Divided Monarchists",
-  "n": "Cement the House of …",
-  "t": "journal_entry",
-  "u": "journal-entries#je_cement_the_rightful_dynasty"
- },
- {
   "a": "law_censorship",
   "c": "img/laws/censorship.png",
   "g": "Free Speech",
@@ -3937,7 +3957,10 @@
  {
   "a": "central_archives",
   "c": "img/techs/central_archives.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Central Archives",
   "t": "technology",
   "u": "technology#central_archives"
@@ -3945,7 +3968,10 @@
  {
   "a": "central_banking",
   "c": "img/techs/central_banking.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Central Banking",
   "t": "technology",
   "u": "technology#central_banking"
@@ -3980,7 +4006,10 @@
  {
   "a": "central_planning",
   "c": "img/techs/central_planning.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Central Planning",
   "t": "technology",
   "u": "technology#central_planning"
@@ -3995,7 +4024,10 @@
  {
   "a": "centralization",
   "c": "img/techs/centralization.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Centralization",
   "t": "technology",
   "u": "technology#centralization"
@@ -4160,7 +4192,10 @@
  {
   "a": "chemical_bleaching",
   "c": "img/techs/chemical_bleaching.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Chemical Bleaching",
   "t": "technology",
   "u": "technology#chemical_bleaching"
@@ -4176,7 +4211,10 @@
  {
   "a": "chemical_warfare",
   "c": "img/techs/chemical_warfare.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Chemical Warfare",
   "t": "technology",
   "u": "technology#chemical_warfare"
@@ -4443,7 +4481,10 @@
  {
   "a": "civilizing_mission",
   "c": "img/techs/civilizing_mission.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Civilizing Mission",
   "t": "technology",
   "u": "technology#civilizing_mission"
@@ -4667,7 +4708,10 @@
  {
   "a": "colonization",
   "c": "img/techs/colonization.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Colonization",
   "t": "technology",
   "u": "technology#colonization"
@@ -4779,7 +4823,10 @@
  {
   "a": "combustion_engine",
   "c": "img/techs/combustion_engine.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Combustion Engine",
   "t": "technology",
   "u": "technology#combustion_engine"
@@ -5040,7 +5087,10 @@
  {
   "a": "compression_ignition",
   "c": "img/techs/compression_ignition.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Compression Ignition",
   "t": "technology",
   "u": "technology#compression_ignition"
@@ -5056,7 +5106,10 @@
  {
   "a": "concrete_dockyards",
   "c": "img/techs/concrete_dockyards.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Concrete Dockyards",
   "t": "technology",
   "u": "technology#concrete_dockyards"
@@ -5064,7 +5117,10 @@
  {
   "a": "concrete_fortifications",
   "c": "img/techs/concrete_fortifications.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Concrete Fortifications",
   "t": "technology",
   "u": "technology#concrete_fortifications"
@@ -5374,7 +5430,10 @@
  {
   "a": "conveyors",
   "c": "img/techs/conveyers.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Conveyors",
   "t": "technology",
   "u": "technology#conveyors"
@@ -5438,7 +5497,10 @@
  {
   "a": "corporate_charters",
   "c": "img/techs/corporate_charters.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Corporate Charters",
   "t": "technology",
   "u": "technology#corporate_charters"
@@ -5446,7 +5508,10 @@
  {
   "a": "corporate_management",
   "c": "img/techs/corporate_management.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Corporate Governance",
   "t": "technology",
   "u": "technology#corporate_management"
@@ -5468,7 +5533,10 @@
  {
   "a": "corporatism",
   "c": "img/techs/corporatism.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Corporatism",
   "t": "technology",
   "u": "technology#corporatism"
@@ -5525,7 +5593,10 @@
  {
   "a": "cotton_gin",
   "c": "img/techs/cotton_gin.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Cotton Gin",
   "t": "technology",
   "u": "technology#cotton_gin"
@@ -5796,7 +5867,10 @@
  {
   "a": "crystal_glass",
   "c": "img/techs/crystal_glass.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Crystal Glass",
   "t": "technology",
   "u": "technology#crystal_glass"
@@ -5901,7 +5975,10 @@
  {
   "a": "currency_standards",
   "c": "img/techs/currency_standards.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Currency Standards",
   "t": "technology",
   "u": "technology#currency_standards"
@@ -6897,7 +6974,10 @@
  {
   "a": "defense_in_depth",
   "c": "img/techs/defense_in_depth.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Defense in Depth",
   "t": "technology",
   "u": "technology#defense_in_depth"
@@ -6989,7 +7069,10 @@
  {
   "a": "democracy",
   "c": "img/techs/democracy.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Democracy",
   "t": "technology",
   "u": "technology#democracy"
@@ -7055,7 +7138,10 @@
  {
   "a": "destroyer",
   "c": "img/techs/destroyers.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Destroyer",
   "t": "technology",
   "u": "technology#destroyer"
@@ -7103,7 +7189,10 @@
  {
   "a": "dialectics",
   "c": "img/techs/dialectics.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Dialectics",
   "t": "technology",
   "u": "technology#dialectics"
@@ -7277,7 +7366,10 @@
  {
   "a": "distillation",
   "c": "img/techs/distillation.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Distillation",
   "t": "technology",
   "u": "technology#distillation"
@@ -7379,7 +7471,10 @@
  {
   "a": "dough_rollers",
   "c": "img/techs/rollers.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Dough Rollers",
   "t": "technology",
   "u": "technology#dough_rollers"
@@ -7415,7 +7510,10 @@
  {
   "a": "dreadnought_tech",
   "c": "img/techs/dreadnought.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Dreadnought",
   "t": "technology",
   "u": "technology#dreadnought_tech"
@@ -7442,7 +7540,10 @@
  {
   "a": "drydocks",
   "c": "img/techs/drydock.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Drydocks",
   "t": "technology",
   "u": "technology#drydocks"
@@ -7494,7 +7595,10 @@
  {
   "a": "dynamite",
   "c": "img/techs/dynamite.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Dynamite",
   "t": "technology",
   "u": "technology#dynamite"
@@ -7839,7 +7943,10 @@
  {
   "a": "egalitarianism",
   "c": "img/techs/egalitarianism.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Egalitarianism",
   "t": "technology",
   "u": "technology#egalitarianism"
@@ -7983,7 +8090,10 @@
  {
   "a": "electric_arc_process",
   "c": "img/techs/electric_arc_process.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Electric Arc Process",
   "t": "technology",
   "u": "technology#electric_arc_process"
@@ -7991,7 +8101,10 @@
  {
   "a": "electric_railway",
   "c": "img/techs/electric_railway.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Electric Railways",
   "t": "technology",
   "u": "technology#electric_railway"
@@ -7999,7 +8112,10 @@
  {
   "a": "electric_telegraph",
   "c": "img/techs/electrical_telegraph.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Electric Telegraph",
   "t": "technology",
   "u": "technology#electric_telegraph"
@@ -8007,7 +8123,10 @@
  {
   "a": "electrical_capacitors",
   "c": "img/techs/electrical_capacitors.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Electrical Capacitors",
   "t": "technology",
   "u": "technology#electrical_capacitors"
@@ -8015,7 +8134,10 @@
  {
   "a": "electrical_generation",
   "c": "img/techs/electrical_generation.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Electrical Generation",
   "t": "technology",
   "u": "technology#electrical_generation"
@@ -8052,7 +8174,10 @@
  {
   "a": "elevator",
   "c": "img/techs/elevator.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Elevators",
   "t": "technology",
   "u": "technology#elevator"
@@ -8122,7 +8247,10 @@
  {
   "a": "empiricism",
   "c": "img/techs/empiricism.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Empiricism",
   "t": "technology",
   "u": "technology#empiricism"
@@ -8180,7 +8308,10 @@
  {
   "a": "enclosure",
   "c": "img/techs/enclosure.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Enclosure",
   "t": "technology",
   "u": "technology#enclosure"
@@ -8295,7 +8426,10 @@
  {
   "a": "enlistment_offices",
   "c": "img/techs/enlistment_offices.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Enlistment Offices",
   "t": "technology",
   "u": "technology#enlistment_offices"
@@ -9094,7 +9228,10 @@
  {
   "a": "feminism",
   "c": "img/techs/feminism.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Feminism",
   "t": "technology",
   "u": "technology#feminism"
@@ -9176,7 +9313,10 @@
  {
   "a": "field_works",
   "c": "img/techs/field_works.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Field Works",
   "t": "technology",
   "u": "technology#field_works"
@@ -9210,7 +9350,10 @@
  {
   "a": "film",
   "c": "img/techs/film.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Film",
   "t": "technology",
   "u": "technology#film"
@@ -9306,7 +9449,10 @@
  {
   "a": "flamethrowers",
   "c": "img/techs/flamethrowers.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Flamethrowers",
   "t": "technology",
   "u": "technology#flamethrowers"
@@ -9328,7 +9474,10 @@
  {
   "a": "flash_freezing",
   "c": "img/techs/flash_freezing.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Flash Freezing",
   "t": "technology",
   "u": "technology#flash_freezing"
@@ -9354,7 +9503,10 @@
  {
   "a": "floating_harbor",
   "c": "img/techs/floating_harbor.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Floating Harbor",
   "t": "technology",
   "u": "technology#floating_harbor"
@@ -9507,7 +9659,10 @@
  {
   "a": "fractional_distillation",
   "c": "img/techs/fractional_distillation.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Fractional Distillation",
   "t": "technology",
   "u": "technology#fractional_distillation"
@@ -9864,7 +10019,10 @@
  {
   "a": "gantry_cranes",
   "c": "img/techs/gantry_crane.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Gantry Cranes",
   "t": "technology",
   "u": "technology#gantry_cranes"
@@ -9969,7 +10127,10 @@
  {
   "a": "general_staff",
   "c": "img/techs/general_staff.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "General Staff",
   "t": "technology",
   "u": "technology#general_staff"
@@ -10734,7 +10895,10 @@
  {
   "a": "gunsmithing",
   "c": "img/techs/gunsmithing.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Gunsmithing",
   "t": "technology",
   "u": "technology#gunsmithing"
@@ -10854,7 +11018,10 @@
  {
   "a": "handcranked_machine_gun",
   "c": "img/techs/handcranked_machine_gun.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Handcranked Machine Gun",
   "t": "technology",
   "u": "technology#handcranked_machine_gun"
@@ -11425,7 +11592,10 @@
  {
   "a": "human_rights",
   "c": "img/techs/human_rights.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Human Rights",
   "t": "technology",
   "u": "technology#human_rights"
@@ -11500,7 +11670,10 @@
  {
   "a": "hydraulic_cranes",
   "c": "img/techs/hydraulic_cranes.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Hydraulic Cranes",
   "t": "technology",
   "u": "technology#hydraulic_cranes"
@@ -11608,7 +11781,10 @@
  {
   "a": "identification_documents",
   "c": "img/techs/identification_documents.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Identification Documents",
   "t": "technology",
   "u": "technology#identification_documents"
@@ -11772,7 +11948,10 @@
  {
   "a": "improved_fertilizer",
   "c": "img/techs/improved_fertilizer.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Improved Fertilizer",
   "t": "technology",
   "u": "technology#improved_fertilizer"
@@ -12192,7 +12371,10 @@
  {
   "a": "intensive_agriculture",
   "c": "img/techs/intensive_agriculture.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Intensive Agriculture",
   "t": "technology",
   "u": "technology#intensive_agriculture"
@@ -12242,7 +12424,10 @@
  {
   "a": "international_exchange_standards",
   "c": "img/techs/international_exchange_standards.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "International Exchange Standards",
   "t": "technology",
   "u": "technology#international_exchange_standards"
@@ -12250,7 +12435,10 @@
  {
   "a": "international_relations",
   "c": "img/techs/international_diplomacy.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "International Relations",
   "t": "technology",
   "u": "technology#international_relations"
@@ -12258,7 +12446,10 @@
  {
   "a": "international_trade",
   "c": "img/techs/international_trade.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "International Trade",
   "t": "technology",
   "u": "technology#international_trade"
@@ -12299,7 +12490,10 @@
  {
   "a": "investment_banks",
   "c": "img/techs/investment_banks.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Investment Banks",
   "t": "technology",
   "u": "technology#investment_banks"
@@ -12486,7 +12680,10 @@
  {
   "a": "ironclad_tech",
   "c": "img/techs/ironclad_tech.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Ironclad",
   "t": "technology",
   "u": "technology#ironclad_tech"
@@ -12705,9 +12902,124 @@
   "u": "cultures#javan"
  },
  {
+  "a": "je_british_dictate_law",
+  "g": "The Administration of India",
+  "n": "Je British Dictate Law",
+  "t": "journal_entry",
+  "u": "journal-entries#je_british_dictate_law"
+ },
+ {
+  "a": "je_british_dictate_military",
+  "g": "The Administration of India",
+  "n": "Je British Dictate Military",
+  "t": "journal_entry",
+  "u": "journal-entries#je_british_dictate_military"
+ },
+ {
+  "a": "je_british_dictate_plantations",
+  "g": "The Administration of India",
+  "n": "Je British Dictate Plantations",
+  "t": "journal_entry",
+  "u": "journal-entries#je_british_dictate_plantations"
+ },
+ {
+  "a": "je_british_dictate_universities",
+  "g": "The Administration of India",
+  "n": "Je British Dictate Universities",
+  "t": "journal_entry",
+  "u": "journal-entries#je_british_dictate_universities"
+ },
+ {
+  "a": "je_cement_the_rightful_dynasty",
+  "g": "Divided Monarchists",
+  "n": "Je Cement The Rightful Dynasty",
+  "t": "journal_entry",
+  "u": "journal-entries#je_cement_the_rightful_dynasty"
+ },
+ {
+  "a": "je_federation_of_india",
+  "g": "The Administration of India",
+  "n": "Je Federation Of India",
+  "t": "journal_entry",
+  "u": "journal-entries#je_federation_of_india"
+ },
+ {
+  "a": "je_indian_famines",
+  "g": "The Administration of India",
+  "n": "Je Indian Famines",
+  "t": "journal_entry",
+  "u": "journal-entries#je_indian_famines"
+ },
+ {
+  "a": "je_iwakura_mission",
+  "g": "National Agenda",
+  "n": "Je Iwakura Mission",
+  "t": "journal_entry",
+  "u": "journal-entries#je_iwakura_mission"
+ },
+ {
+  "a": "je_king_in_parliament",
+  "g": "Domestic Affairs",
+  "n": "Je King In Parliament",
+  "t": "journal_entry",
+  "u": "journal-entries#je_king_in_parliament"
+ },
+ {
+  "a": "je_meiji_main",
+  "g": "The Imperial Restoration",
+  "n": "Je Meiji Main",
+  "t": "journal_entry",
+  "u": "journal-entries#je_meiji_main"
+ },
+ {
+  "a": "je_new_republic",
+  "g": "The Brazilian Nation",
+  "n": "Je New Republic",
+  "t": "journal_entry",
+  "u": "journal-entries#je_new_republic"
+ },
+ {
+  "a": "je_red_summer",
+  "g": "Major Situations",
+  "n": "Je Red Summer",
+  "t": "journal_entry",
+  "u": "journal-entries#je_red_summer"
+ },
+ {
+  "a": "je_south_american_national_identity_emergence",
+  "g": "Domestic Affairs",
+  "n": "Je South American National Identity Emergence",
+  "t": "journal_entry",
+  "u": "journal-entries#je_south_american_national_identity_emergence"
+ },
+ {
+  "a": "je_spain_provisional_government",
+  "g": "National Agenda",
+  "n": "Je Spain Provisional Government",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spain_provisional_government"
+ },
+ {
+  "a": "je_the_hungry_forties",
+  "g": "Major Situations",
+  "n": "Je The Hungry Forties",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_hungry_forties"
+ },
+ {
+  "a": "je_urbanization_events_2",
+  "g": "Development",
+  "n": "Je Urbanization Events 2",
+  "t": "journal_entry",
+  "u": "journal-entries#je_urbanization_events_2"
+ },
+ {
   "a": "jeune_ecole",
   "c": "img/techs/jeune_ecole.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Jeune École",
   "t": "technology",
   "u": "technology#jeune_ecole"
@@ -12824,7 +13136,10 @@
  {
   "a": "joint_stock_companies",
   "c": "img/techs/joint_stock_companies.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Joint-Stock Companies",
   "t": "technology",
   "u": "technology#joint_stock_companies"
@@ -13790,7 +14105,10 @@
  {
   "a": "labor_movement",
   "c": "img/techs/labor_movement.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Labor Movement",
   "t": "technology",
   "u": "technology#labor_movement"
@@ -13907,7 +14225,10 @@
  {
   "a": "landing_craft",
   "c": "img/techs/landing_craft.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Landing Craft",
   "t": "technology",
   "u": "technology#landing_craft"
@@ -13997,7 +14318,10 @@
  {
   "a": "lathe",
   "c": "img/techs/lathe.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Lathe",
   "t": "technology",
   "u": "technology#lathe"
@@ -14046,7 +14370,10 @@
  {
   "a": "law_enforcement",
   "c": "img/techs/law_enforcement.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Law Enforcement",
   "t": "technology",
   "u": "technology#law_enforcement"
@@ -14306,7 +14633,10 @@
  {
   "a": "line_infantry",
   "c": "img/techs/line_infantry.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Line Infantry",
   "t": "technology",
   "u": "technology#line_infantry"
@@ -14487,7 +14817,10 @@
  {
   "a": "logistics",
   "c": "img/techs/logistics_tech.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Logistics",
   "t": "technology",
   "u": "technology#logistics"
@@ -14814,7 +15147,10 @@
  {
   "a": "macroeconomics",
   "c": "img/techs/macroeconomics.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Macroeconomics",
   "t": "technology",
   "u": "technology#macroeconomics"
@@ -15035,7 +15371,10 @@
  {
   "a": "malaria_prevention",
   "c": "img/techs/malaria_prevention.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Malaria Prevention",
   "t": "technology",
   "u": "technology#malaria_prevention"
@@ -15143,7 +15482,10 @@
  {
   "a": "mandatory_service",
   "c": "img/techs/mandatory_service.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Mandatory Service",
   "t": "technology",
   "u": "technology#mandatory_service"
@@ -15292,7 +15634,10 @@
  {
   "a": "manufacturies",
   "c": "img/techs/manufacturies.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Manufacturies",
   "t": "technology",
   "u": "technology#manufacturies"
@@ -15503,7 +15848,10 @@
  {
   "a": "mass_communication",
   "c": "img/techs/mass_communication.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Mass Communication",
   "t": "technology",
   "u": "technology#mass_communication"
@@ -15531,7 +15879,10 @@
  {
   "a": "mass_propaganda",
   "c": "img/techs/mass_propaganda.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Mass Propaganda",
   "t": "technology",
   "u": "technology#mass_propaganda"
@@ -15539,7 +15890,10 @@
  {
   "a": "mass_surveillance",
   "c": "img/techs/mass_surveillance.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Mass Surveillance",
   "t": "technology",
   "u": "technology#mass_surveillance"
@@ -15684,7 +16038,10 @@
  {
   "a": "mechanical_tools",
   "c": "img/techs/mechanical_tools.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Mechanical Tools",
   "t": "technology",
   "u": "technology#mechanical_tools"
@@ -15692,7 +16049,10 @@
  {
   "a": "mechanized_farming",
   "c": "img/techs/mechanized_farming.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Mechanized Farming",
   "t": "technology",
   "u": "technology#mechanized_farming"
@@ -15707,7 +16067,10 @@
  {
   "a": "mechanized_workshops",
   "c": "img/techs/mechanized_workshops.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Mechanized Workshops",
   "t": "technology",
   "u": "technology#mechanized_workshops"
@@ -15736,7 +16099,10 @@
  {
   "a": "medical_degrees",
   "c": "img/techs/medical_degrees.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Medical Degrees",
   "t": "technology",
   "u": "technology#medical_degrees"
@@ -16009,7 +16375,10 @@
  {
   "a": "military_aviation",
   "c": "img/techs/military_aviation.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Military Aviation",
   "t": "technology",
   "u": "technology#military_aviation"
@@ -16023,7 +16392,10 @@
  {
   "a": "military_drill",
   "c": "img/techs/military_drill.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Military Drill",
   "t": "technology",
   "u": "technology#military_drill"
@@ -16057,7 +16429,10 @@
  {
   "a": "military_statistics",
   "c": "img/techs/military_statistics.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Military Statistics",
   "t": "technology",
   "u": "technology#military_statistics"
@@ -16300,7 +16675,10 @@
  {
   "a": "mobile_armor",
   "c": "img/techs/mobile_armor.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Mobile Armor",
   "t": "technology",
   "u": "technology#mobile_armor"
@@ -16354,7 +16732,10 @@
  {
   "a": "battlefleet_tactics",
   "c": "img/techs/battlefleet_tactics.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Modern Battlefleet Tactics",
   "t": "technology",
   "u": "technology#battlefleet_tactics"
@@ -16362,7 +16743,10 @@
  {
   "a": "modern_financial_instruments",
   "c": "img/techs/modern_financial_instruments.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Modern Financial Instruments",
   "t": "technology",
   "u": "technology#modern_financial_instruments"
@@ -16370,7 +16754,10 @@
  {
   "a": "monitor_tech",
   "c": "img/techs/monitor_tech.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Modern Ironclad",
   "t": "technology",
   "u": "technology#monitor_tech"
@@ -16385,7 +16772,10 @@
  {
   "a": "modern_nursing",
   "c": "img/techs/modern_nursing.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Modern Nursing",
   "t": "technology",
   "u": "technology#modern_nursing"
@@ -16393,7 +16783,10 @@
  {
   "a": "modern_sewerage",
   "c": "img/techs/modern_sewerage.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Modern Sewerage",
   "t": "technology",
   "u": "technology#modern_sewerage"
@@ -16713,7 +17106,10 @@
  {
   "a": "multilateral_alliances",
   "c": "img/techs/multilateral_alliances.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Multilateral Alliances",
   "t": "technology",
   "u": "technology#multilateral_alliances"
@@ -16770,7 +17166,10 @@
  {
   "a": "mutual_funds",
   "c": "img/techs/mutual_funds.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Mutual Funds",
   "t": "technology",
   "u": "technology#mutual_funds"
@@ -16877,7 +17276,10 @@
  {
   "a": "napoleonic_warfare",
   "c": "img/techs/napoleonic_warfare.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Napoleonic Warfare",
   "t": "technology",
   "u": "technology#napoleonic_warfare"
@@ -16976,7 +17378,10 @@
  {
   "a": "nationalism",
   "c": "img/techs/nationalism.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Nationalism",
   "t": "technology",
   "u": "technology#nationalism"
@@ -17147,7 +17552,10 @@
  {
   "a": "navigation",
   "c": "img/techs/navigation.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Navigation",
   "t": "technology",
   "u": "technology#navigation"
@@ -17162,7 +17570,10 @@
  {
   "a": "nco_training",
   "c": "img/techs/nco_training.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "NCO Training",
   "t": "technology",
   "u": "technology#nco_training"
@@ -17547,7 +17958,10 @@
  {
   "a": "nitrogen_fixation",
   "c": "img/techs/nitrogen_fixation.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Nitrogen Fixation",
   "t": "technology",
   "u": "technology#nitrogen_fixation"
@@ -17555,7 +17969,10 @@
  {
   "a": "nitroglycerin",
   "c": "img/techs/nitroglycerin.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Nitroglycerin",
   "t": "technology",
   "u": "technology#nitroglycerin"
@@ -18258,7 +18675,10 @@
  {
   "a": "oil_turbine",
   "c": "img/techs/oil_turbines.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Oil Turbine",
   "t": "technology",
   "u": "technology#oil_turbine"
@@ -18366,7 +18786,10 @@
  {
   "a": "open_hearth_process",
   "c": "img/techs/open_hearth_process.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Open Hearth Process",
   "t": "technology",
   "u": "technology#open_hearth_process"
@@ -18499,7 +18922,10 @@
  {
   "a": "organized_sports",
   "c": "img/techs/organized_sports.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Organized Sports",
   "t": "technology",
   "u": "technology#organized_sports"
@@ -18750,7 +19176,10 @@
  {
   "a": "paddle_steamer",
   "c": "img/techs/paddle_steamer.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Paddle Steamer",
   "t": "technology",
   "u": "technology#paddle_steamer"
@@ -18805,7 +19234,10 @@
  {
   "a": "pan-nationalism",
   "c": "img/techs/pan_nationalism.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Pan-nationalism",
   "t": "technology",
   "u": "technology#pan-nationalism"
@@ -19053,7 +19485,10 @@
  {
   "a": "pasteurization",
   "c": "img/techs/pasteurization.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Pasteurization",
   "t": "technology",
   "u": "technology#pasteurization"
@@ -19140,7 +19575,10 @@
  {
   "a": "paved_roads",
   "c": "img/techs/paved_roads.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Paved Roads",
   "t": "technology",
   "u": "technology#paved_roads"
@@ -19269,7 +19707,10 @@
  {
   "a": "percussion_cap",
   "c": "img/techs/percussion_cap.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Percussion Cap",
   "t": "technology",
   "u": "technology#percussion_cap"
@@ -19403,7 +19844,10 @@
  {
   "a": "pharmaceuticals",
   "c": "img/techs/pharmaceuticals.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Pharmaceuticals",
   "t": "technology",
   "u": "technology#pharmaceuticals"
@@ -19439,7 +19883,10 @@
  {
   "a": "philosophical_pragmatism",
   "c": "img/techs/philosophical_pragmatism.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Philosophical Pragmatism",
   "t": "technology",
   "u": "technology#philosophical_pragmatism"
@@ -19510,7 +19957,10 @@
  {
   "a": "plastics",
   "c": "img/techs/plastics.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Plastics",
   "t": "technology",
   "u": "technology#plastics"
@@ -19537,7 +19987,10 @@
  {
   "a": "pneumatic_tools",
   "c": "img/techs/pneumatic_tools.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Pneumatic Tools",
   "t": "technology",
   "u": "technology#pneumatic_tools"
@@ -19578,7 +20031,10 @@
  {
   "a": "political_agitation",
   "c": "img/techs/political_agitation.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Political Agitation",
   "t": "technology",
   "u": "technology#political_agitation"
@@ -19857,7 +20313,10 @@
  {
   "a": "postal_savings",
   "c": "img/techs/postal_savings.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Postal Savings",
   "t": "technology",
   "u": "technology#postal_savings"
@@ -19930,7 +20389,10 @@
  {
   "a": "power_of_the_purse",
   "c": "img/techs/power_of_the_purse.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Power of the Purse",
   "t": "technology",
   "u": "technology#power_of_the_purse"
@@ -19964,7 +20426,10 @@
  {
   "a": "pre_dreadnought_tech",
   "c": "img/techs/pre_dreadnought.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Pre-Dreadnought",
   "t": "technology",
   "u": "technology#pre_dreadnought_tech"
@@ -20324,7 +20789,10 @@
  {
   "a": "prospecting",
   "c": "img/techs/prospecting_tech.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Prospecting",
   "t": "technology",
   "u": "technology#prospecting"
@@ -20414,7 +20882,10 @@
  {
   "a": "psychiatry",
   "c": "img/techs/psychiatry.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Psychiatry",
   "t": "technology",
   "u": "technology#psychiatry"
@@ -20422,7 +20893,10 @@
  {
   "a": "psychoanalysis",
   "c": "img/techs/psychoanalysis.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Psychoanalysis",
   "t": "technology",
   "u": "technology#psychoanalysis"
@@ -20494,7 +20968,10 @@
  {
   "a": "pumpjacks",
   "c": "img/techs/pumpjacks.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Pumpjacks",
   "t": "technology",
   "u": "technology#pumpjacks"
@@ -20624,7 +21101,10 @@
  {
   "a": "quinine",
   "c": "img/techs/quinine.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Quinine",
   "t": "technology",
   "u": "technology#quinine"
@@ -20659,7 +21139,10 @@
  {
   "a": "radio",
   "c": "img/techs/radio.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Radio",
   "t": "technology",
   "u": "technology#radio"
@@ -20709,7 +21192,10 @@
  {
   "a": "railways",
   "c": "img/techs/railways.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Railways",
   "t": "technology",
   "u": "technology#railways"
@@ -20759,7 +21245,10 @@
  {
   "a": "rationalism",
   "c": "img/techs/rationalism.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Rationalism",
   "t": "technology",
   "u": "technology#rationalism"
@@ -20788,7 +21277,10 @@
  {
   "a": "realism",
   "c": "img/techs/realism.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Realism",
   "t": "technology",
   "u": "technology#realism"
@@ -20861,13 +21353,6 @@
   "n": "Recruit and Promote a Commander",
   "t": "journal_entry",
   "u": "journal-entries#je_tutorial_recruit_promote_commander"
- },
- {
-  "a": "je_red_summer",
-  "g": "Major Situations",
-  "n": "Red …",
-  "t": "journal_entry",
-  "u": "journal-entries#je_red_summer"
  },
  {
   "a": "events:red_scare_events",
@@ -21016,7 +21501,10 @@
  {
   "a": "reinforced_concrete",
   "c": "img/techs/reinforced_concrete.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Reinforced Concrete",
   "t": "technology",
   "u": "technology#reinforced_concrete"
@@ -21094,7 +21582,10 @@
  {
   "a": "repeaters",
   "c": "img/techs/repeaters.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Repeaters",
   "t": "technology",
   "u": "technology#repeaters"
@@ -21167,13 +21658,6 @@
   "n": "Restoration: Retire the Samurai",
   "t": "journal_entry",
   "u": "journal-entries#je_meiji_army"
- },
- {
-  "a": "je_iwakura_mission",
-  "g": "National Agenda",
-  "n": "Restoration: The … Mission",
-  "t": "journal_entry",
-  "u": "journal-entries#je_iwakura_mission"
  },
  {
   "a": "decision_restore_kingdom_of_brazil",
@@ -21298,7 +21782,10 @@
  {
   "a": "rifling",
   "c": "img/techs/rifling.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Rifling",
   "t": "technology",
   "u": "technology#rifling"
@@ -21465,7 +21952,10 @@
  {
   "a": "romanticism",
   "c": "img/techs/romanticism.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Romanticism",
   "t": "technology",
   "u": "technology#romanticism"
@@ -21487,7 +21977,10 @@
  {
   "a": "rotary_valve_engine",
   "c": "img/techs/rotary_valve_engine.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Rotary Valve Engine",
   "t": "technology",
   "u": "technology#rotary_valve_engine"
@@ -21521,7 +22014,10 @@
  {
   "a": "rubber_mastication",
   "c": "img/techs/rubber.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Rubber Mastication",
   "t": "technology",
   "u": "technology#rubber_mastication"
@@ -22109,7 +22605,10 @@
  {
   "a": "screw_frigate",
   "c": "img/techs/screw_frigate.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Screw Frigate",
   "t": "technology",
   "u": "technology#screw_frigate"
@@ -22117,7 +22616,10 @@
  {
   "a": "sea_lane_strategies",
   "c": "img/techs/sea_lane_strategies.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Sea Lane Strategies",
   "t": "technology",
   "u": "technology#sea_lane_strategies"
@@ -22241,7 +22743,10 @@
  {
   "a": "self_propelled_torpedoes",
   "c": "img/techs/self_propelled_torpedoes.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Self-Propelled Torpedoes",
   "t": "technology",
   "u": "technology#self_propelled_torpedoes"
@@ -22390,7 +22895,10 @@
  {
   "a": "sericulture",
   "c": "img/techs/sericulture.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Sericulture",
   "t": "technology",
   "u": "technology#sericulture"
@@ -22440,7 +22948,10 @@
  {
   "a": "shaft_mining",
   "c": "img/techs/shaft_mining.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Shaft Mining",
   "t": "technology",
   "u": "technology#shaft_mining"
@@ -22496,7 +23007,10 @@
  {
   "a": "shell_gun",
   "c": "img/techs/shell_gun.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Shell Gun",
   "t": "technology",
   "u": "technology#shell_gun"
@@ -22542,7 +23056,10 @@
  {
   "a": "shift_work",
   "c": "img/techs/shift_work.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Shift Work",
   "t": "technology",
   "u": "technology#shift_work"
@@ -23206,7 +23723,10 @@
  {
   "a": "socialism",
   "c": "img/techs/socialism.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Socialism",
   "t": "technology",
   "u": "technology#socialism"
@@ -23731,7 +24251,10 @@
  {
   "a": "standing_army",
   "c": "img/techs/standing_army.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Standing Army",
   "t": "technology",
   "u": "technology#standing_army"
@@ -23814,7 +24337,10 @@
  {
   "a": "steam_donkey",
   "c": "img/techs/steam_donkey.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Steam Donkey",
   "t": "technology",
   "u": "technology#steam_donkey"
@@ -23822,7 +24348,10 @@
  {
   "a": "steam_turbine",
   "c": "img/techs/steam_turbines.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Steam Turbine",
   "t": "technology",
   "u": "technology#steam_turbine"
@@ -23870,7 +24399,10 @@
  {
   "a": "steel_railway_cars",
   "c": "img/techs/steel_railway_cars.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Steel Railway Cars",
   "t": "technology",
   "u": "technology#steel_railway_cars"
@@ -23878,7 +24410,10 @@
  {
   "a": "steel_frame_buildings",
   "c": "img/techs/steel_frame_buildings.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Steel-Frame Buildings",
   "t": "technology",
   "u": "technology#steel_frame_buildings"
@@ -23886,7 +24421,10 @@
  {
   "a": "steelworking",
   "c": "img/techs/steelworking.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Steelworking",
   "t": "technology",
   "u": "technology#steelworking"
@@ -23894,7 +24432,10 @@
  {
   "a": "stock_exchange",
   "c": "img/techs/stock_exchanges.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Stock Exchange",
   "t": "technology",
   "u": "technology#stock_exchange"
@@ -23909,7 +24450,10 @@
  {
   "a": "stormtroopers",
   "c": "img/techs/stormtroopers.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Stormtroopers",
   "t": "technology",
   "u": "technology#stormtroopers"
@@ -24078,7 +24622,10 @@
  {
   "a": "submarine",
   "c": "img/techs/submarine.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Submarine",
   "t": "technology",
   "u": "technology#submarine"
@@ -24291,7 +24838,10 @@
  {
   "a": "battleship_tech",
   "c": "img/techs/battleship_tech.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Super Dreadnought",
   "t": "technology",
   "u": "technology#battleship_tech"
@@ -24920,7 +25470,10 @@
  {
   "a": "telephone",
   "c": "img/techs/telephone.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Telephone",
   "t": "technology",
   "u": "technology#telephone"
@@ -25062,34 +25615,6 @@
   "n": "Thai",
   "t": "culture",
   "u": "cultures#thai"
- },
- {
-  "a": "je_south_american_national_identity_emergence",
-  "g": "Domestic Affairs",
-  "n": "The … Nation",
-  "t": "journal_entry",
-  "u": "journal-entries#je_south_american_national_identity_emergence"
- },
- {
-  "a": "je_federation_of_india",
-  "g": "The Administration of India",
-  "n": "The … of India",
-  "t": "journal_entry",
-  "u": "journal-entries#je_federation_of_india"
- },
- {
-  "a": "je_meiji_main",
-  "g": "The Imperial Restoration",
-  "n": "The … Restoration",
-  "t": "journal_entry",
-  "u": "journal-entries#je_meiji_main"
- },
- {
-  "a": "je_king_in_parliament",
-  "g": "Domestic Affairs",
-  "n": "The …-in-Parliament",
-  "t": "journal_entry",
-  "u": "journal-entries#je_king_in_parliament"
  },
  {
   "a": "je_alaska",
@@ -25422,13 +25947,6 @@
   "u": "journal-entries#je_ryukyu_rivalry"
  },
  {
-  "a": "je_the_hungry_forties",
-  "g": "Major Situations",
-  "n": "The Hungry …",
-  "t": "journal_entry",
-  "u": "journal-entries#je_the_hungry_forties"
- },
- {
   "a": "je_iberia",
   "g": "Iberian Unification",
   "n": "The Iberian Union",
@@ -25568,13 +26086,6 @@
   "n": "The Natural Borders of France",
   "t": "journal_entry",
   "u": "journal-entries#je_french_natural_borders"
- },
- {
-  "a": "je_new_republic",
-  "g": "The Brazilian Nation",
-  "n": "The New …",
-  "t": "journal_entry",
-  "u": "journal-entries#je_new_republic"
  },
  {
   "a": "je_liberalism_4",
@@ -25962,7 +26473,10 @@
  {
   "a": "threshing_machine",
   "c": "img/techs/threshing_machine.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Threshing Machines",
   "t": "technology",
   "u": "technology#threshing_machine"
@@ -26517,7 +27031,10 @@
  {
   "a": "trench_works",
   "c": "img/techs/trench_works.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Trench Works",
   "t": "technology",
   "u": "technology#trench_works"
@@ -26525,7 +27042,10 @@
  {
   "a": "triage",
   "c": "img/techs/triage.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Triage",
   "t": "technology",
   "u": "technology#triage"
@@ -27166,7 +27686,10 @@
  {
   "a": "urban_planning",
   "c": "img/techs/urban_planning.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Urban Planning",
   "t": "technology",
   "u": "technology#urban_planning"
@@ -27180,7 +27703,10 @@
  {
   "a": "urbanization",
   "c": "img/techs/urbanization.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Urbanization",
   "t": "technology",
   "u": "technology#urbanization"
@@ -27190,13 +27716,6 @@
   "n": "Urbanization Events",
   "t": "event_group",
   "u": "events/urbanization_events"
- },
- {
-  "a": "je_urbanization_events_2",
-  "g": "Development",
-  "n": "Urbanize …",
-  "t": "journal_entry",
-  "u": "journal-entries#je_urbanization_events_2"
  },
  {
   "a": "state_urga",
@@ -27331,7 +27850,10 @@
  {
   "a": "vacuum_canning",
   "c": "img/techs/vacuum_canning.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Vacuum Canning",
   "t": "technology",
   "u": "technology#vacuum_canning"
@@ -27611,7 +28133,10 @@
  {
   "a": "vulcanization",
   "c": "img/techs/vulcanization.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Vulcanization",
   "t": "technology",
   "u": "technology#vulcanization"
@@ -27774,7 +28299,10 @@
  {
   "a": "war_propaganda",
   "c": "img/techs/war_propaganda.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "War Propaganda",
   "t": "technology",
   "u": "technology#war_propaganda"
@@ -27808,7 +28336,10 @@
  {
   "a": "wargaming",
   "c": "img/techs/wargaming.png",
-  "g": "military",
+  "g": {
+   "id": "military",
+   "name": "Military"
+  },
   "n": "Wargaming",
   "t": "technology",
   "u": "technology#wargaming"
@@ -27844,7 +28375,10 @@
  {
   "a": "watertube_boiler",
   "c": "img/techs/watertube_boiler.png",
-  "g": "production",
+  "g": {
+   "id": "production",
+   "name": "Production"
+  },
   "n": "Water-tube Boiler",
   "t": "technology",
   "u": "technology#watertube_boiler"
@@ -28735,7 +29269,10 @@
  {
   "a": "zeppelins",
   "c": "img/techs/zeppelins.png",
-  "g": "society",
+  "g": {
+   "id": "society",
+   "name": "Society"
+  },
   "n": "Zeppelins",
   "t": "technology",
   "u": "technology#zeppelins"

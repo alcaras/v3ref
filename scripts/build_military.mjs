@@ -6,7 +6,7 @@
 
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
+import { dataRoot, parseFolder, asArray, stableStringify , idList } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
 import { iconPath } from './lib/icons.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
@@ -22,7 +22,7 @@ const [unitTypes, unitGroups, mobOptions] = await Promise.all([
 ]);
 
 const bag = (m) => mods.formatBag(Object.assign({}, ...asArray(m)));
-const names = (ids) => asArray(ids).flat().map((id) => ({ id, name: loc.name(id) }));
+const names = (ids) => idList(ids).map((id) => ({ id, name: loc.name(id) }));
 
 // group -> domain: unit groups declare a type (army/navy).
 const domainOf = {};

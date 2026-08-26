@@ -15,7 +15,7 @@
    },
    "icon": "img/buildings/food_industry.png",
    "id": "building_food_industry",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Food Industries",
    "outputGoods": [
     "groceries",
@@ -659,7 +659,7 @@
    },
    "icon": "img/buildings/textile_industry.png",
    "id": "building_textile_mill",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Textile Mills",
    "outputGoods": [
     "clothes",
@@ -1162,7 +1162,7 @@
    },
    "icon": "img/buildings/furniture_manufacturies.png",
    "id": "building_furniture_manufactory",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Furniture Manufacturies",
    "outputGoods": [
     "furniture",
@@ -1665,7 +1665,7 @@
    },
    "icon": "img/buildings/glassworks.png",
    "id": "building_glassworks",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Glassworks",
    "outputGoods": [
     "glass",
@@ -2095,7 +2095,7 @@
    },
    "icon": "img/buildings/tooling_workshops.png",
    "id": "building_tooling_workshop",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Tooling Workshops",
    "outputGoods": [
     "tools"
@@ -2484,7 +2484,7 @@
    },
    "icon": "img/buildings/paper_mills.png",
    "id": "building_paper_mill",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Paper Mills",
    "outputGoods": [
     "paper"
@@ -2788,7 +2788,7 @@
    },
    "icon": "img/buildings/chemicals_industry.png",
    "id": "building_chemical_plant",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Fertilizer Plants",
    "outputGoods": [
     "fertilizer"
@@ -3007,7 +3007,7 @@
    },
    "icon": "img/buildings/explosives_factory.png",
    "id": "building_explosives_factory",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Explosives Factory",
    "outputGoods": [
     "explosives"
@@ -3304,7 +3304,7 @@
    },
    "icon": "img/buildings/synthetics_plants.png",
    "id": "building_synthetics_plant",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Synthetics Plants",
    "outputGoods": [
     "dye",
@@ -3468,7 +3468,7 @@
    },
    "icon": "img/buildings/steel_mills.png",
    "id": "building_steel_mill",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Steel Mills",
    "outputGoods": [
     "steel"
@@ -3843,7 +3843,7 @@
    },
    "icon": "img/buildings/motor_industry.png",
    "id": "building_motor_industry",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Motor Industries",
    "outputGoods": [
     "engines"
@@ -4205,7 +4205,7 @@
    },
    "icon": "img/buildings/shipyards.png",
    "id": "building_shipyard",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Shipyards",
    "outputGoods": [
     "clippers",
@@ -4503,7 +4503,7 @@
    },
    "icon": "img/buildings/vehicles_industry.png",
    "id": "building_automotive_industry",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Automotive Industries",
    "outputGoods": [
     "automobiles",
@@ -4875,7 +4875,7 @@
    },
    "icon": "img/buildings/electrics_industry.png",
    "id": "building_electrics_industry",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Electrics Industries",
    "outputGoods": [
     "telephones",
@@ -5046,7 +5046,7 @@
    },
    "icon": "img/buildings/arms_industry.png",
    "id": "building_arms_industry",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Arms Industries",
    "outputGoods": [
     "small_arms"
@@ -5423,7 +5423,7 @@
    },
    "icon": "img/buildings/artillery_foundry.png",
    "id": "building_artillery_foundry",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Artillery Foundry",
    "outputGoods": [
     "artillery"
@@ -5798,7 +5798,7 @@
    },
    "icon": "img/buildings/munition_plants.png",
    "id": "building_munition_plant",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Munition Plants",
    "outputGoods": [
     "ammunition"
@@ -8919,7 +8919,7 @@
    },
    "icon": "img/buildings/coal_mine.png",
    "id": "building_coal_mine",
-   "landUsage": "rural",
+   "landUsage": null,
    "name": "Coal Mines",
    "outputGoods": [
     "coal"
@@ -9378,7 +9378,7 @@
    },
    "icon": "img/buildings/iron_mine.png",
    "id": "building_iron_mine",
-   "landUsage": "rural",
+   "landUsage": null,
    "name": "Iron Mines",
    "outputGoods": [
     "iron"
@@ -9848,7 +9848,7 @@
    },
    "icon": "img/buildings/lead_mine.png",
    "id": "building_lead_mine",
-   "landUsage": "rural",
+   "landUsage": null,
    "name": "Lead Mines",
    "outputGoods": [
     "lead"
@@ -10318,7 +10318,7 @@
    },
    "icon": "img/buildings/sulfur_mine.png",
    "id": "building_sulfur_mine",
-   "landUsage": "rural",
+   "landUsage": null,
    "name": "Sulfur Mines",
    "outputGoods": [
     "sulfur"
@@ -10788,7 +10788,7 @@
    },
    "icon": "img/buildings/gold_mine.png",
    "id": "building_gold_mine",
-   "landUsage": "rural",
+   "landUsage": null,
    "name": "Gold Mines",
    "outputGoods": [
     "gold"
@@ -11255,7 +11255,7 @@
    },
    "icon": "img/buildings/gold_fields.png",
    "id": "building_gold_field",
-   "landUsage": "rural",
+   "landUsage": null,
    "name": "Gold Fields",
    "outputGoods": [
     "gold"
@@ -11355,12 +11355,7 @@
        "laws": [],
        "name": "Dry Process",
        "netAtBase": 1000,
-       "other": [
-        {
-         "id": {},
-         "name": "[object Object]"
-        }
-       ],
+       "other": [],
        "outputs": [
         {
          "amount": 20,
@@ -14210,7 +14205,7 @@
    },
    "icon": "img/buildings/building_barracks.png",
    "id": "building_barrack",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Barracks",
    "outputGoods": [],
    "pmGroups": [
@@ -14401,7 +14396,7 @@
    },
    "icon": "img/buildings/building_conscription_center.png",
    "id": "building_conscription_center",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Conscription Center",
    "outputGoods": [],
    "pmGroups": [
@@ -14577,7 +14572,7 @@
    },
    "icon": "img/buildings/building_naval_fortification.png",
    "id": "building_naval_fortification",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Naval Fortification",
    "outputGoods": [],
    "pmGroups": [
@@ -14750,7 +14745,7 @@
    },
    "icon": "img/buildings/naval_base.png",
    "id": "building_naval_administration",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Naval Administration",
    "outputGoods": [],
    "pmGroups": [
@@ -14808,7 +14803,7 @@
    },
    "icon": "img/buildings/building_naval_logistics_center.png",
    "id": "building_naval_logistics_center",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Naval Logistics Center",
    "outputGoods": [],
    "pmGroups": [
@@ -14866,7 +14861,7 @@
    },
    "icon": "img/buildings/building_army_logistics_center.png",
    "id": "building_army_logistics_center",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Army Logistics Center",
    "outputGoods": [],
    "pmGroups": [
@@ -15194,12 +15189,7 @@
          "name": "Services"
         }
        ],
-       "techs": [
-        {
-         "id": {},
-         "name": "[object Object]"
-        }
-       ],
+       "techs": [],
        "totalJobs": 250
       },
       {
@@ -15494,7 +15484,7 @@
    },
    "icon": "img/buildings/building_arts_academy.png",
    "id": "building_art_academy",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Arts Academy",
    "outputGoods": [
     "fine_art"
@@ -15840,7 +15830,7 @@
    },
    "icon": "img/buildings/power_plant.png",
    "id": "building_power_plant",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Power Plants",
    "outputGoods": [
     "electricity"
@@ -16044,7 +16034,7 @@
    },
    "icon": "img/buildings/building_government_administration.png",
    "id": "building_government_administration",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Government Administration",
    "outputGoods": [],
    "pmGroups": [
@@ -16336,7 +16326,7 @@
    },
    "icon": "img/buildings/building_university.png",
    "id": "building_university",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "University",
    "outputGoods": [],
    "pmGroups": [
@@ -16587,7 +16577,7 @@
    },
    "icon": "img/buildings/skyscraper.png",
    "id": "building_skyscraper",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Skyscraper",
    "outputGoods": [],
    "pmGroups": [
@@ -16731,7 +16721,7 @@
    },
    "icon": "img/buildings/building_eiffel_tower.png",
    "id": "building_eiffel_tower",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "The Eiffel Tower",
    "outputGoods": [],
    "pmGroups": [
@@ -16815,7 +16805,7 @@
    },
    "icon": "img/buildings/angkor_wat.png",
    "id": "building_angkor_wat",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Angkor Wat",
    "outputGoods": [],
    "pmGroups": [
@@ -16894,7 +16884,7 @@
    },
    "icon": "img/buildings/big_ben.png",
    "id": "building_big_ben",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Big Ben",
    "outputGoods": [],
    "pmGroups": [
@@ -16973,7 +16963,7 @@
    },
    "icon": "img/buildings/forbidden_city.png",
    "id": "building_forbidden_city",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Forbidden City",
    "outputGoods": [],
    "pmGroups": [
@@ -17057,7 +17047,7 @@
    },
    "icon": "img/buildings/hagia_sophia.png",
    "id": "building_hagia_sophia",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Hagia Sophia",
    "outputGoods": [],
    "pmGroups": [
@@ -17136,7 +17126,7 @@
    },
    "icon": "img/buildings/mosque_of_djenne.png",
    "id": "building_mosque_of_djenne",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Mosque of Djenne",
    "outputGoods": [],
    "pmGroups": [
@@ -17215,7 +17205,7 @@
    },
    "icon": "img/buildings/saint_basils_cathedral.png",
    "id": "building_saint_basils_cathedral",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Saint Basil’s Cathedral",
    "outputGoods": [],
    "pmGroups": [
@@ -17294,7 +17284,7 @@
    },
    "icon": "img/buildings/statue_of_liberty.png",
    "id": "building_statue_of_liberty",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Statue of Liberty",
    "outputGoods": [],
    "pmGroups": [
@@ -17378,7 +17368,7 @@
    },
    "icon": "img/buildings/taj_mahal.png",
    "id": "building_taj_mahal",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Taj Mahal",
    "outputGoods": [],
    "pmGroups": [
@@ -17457,7 +17447,7 @@
    },
    "icon": "img/buildings/vatican_city.png",
    "id": "building_vatican_city",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Vatican City",
    "outputGoods": [],
    "pmGroups": [
@@ -17555,7 +17545,7 @@
    },
    "icon": "img/buildings/white_house.png",
    "id": "building_white_house",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "White House",
    "outputGoods": [],
    "pmGroups": [
@@ -17634,7 +17624,7 @@
    },
    "icon": "img/buildings/building_cristo_redentor.png",
    "id": "building_cristo_redentor",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Cristo Redentor",
    "outputGoods": [],
    "pmGroups": [
@@ -17718,7 +17708,7 @@
    },
    "icon": "img/buildings/building_powerblock_statue.png",
    "id": "building_power_bloc_statue",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Power Bloc Statue",
    "outputGoods": [],
    "pmGroups": [
@@ -17902,7 +17892,7 @@
    },
    "icon": "img/buildings/building_victoria_terminus.png",
    "id": "building_victoria_terminus",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Victoria Terminus",
    "outputGoods": [],
    "pmGroups": [
@@ -17996,7 +17986,7 @@
    },
    "icon": "img/buildings/kaiserforum1.png",
    "id": "building_kaiserforum_1",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Kaiserforum",
    "outputGoods": [],
    "pmGroups": [
@@ -18074,7 +18064,7 @@
    },
    "icon": "img/buildings/kaiserforum2.png",
    "id": "building_kaiserforum_2",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Kaiserforum",
    "outputGoods": [],
    "pmGroups": [
@@ -18129,12 +18119,7 @@
    ],
    "port": false,
    "slug": "kaiserforum_2",
-   "techs": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "techs": [],
    "unique": true
   },
   {
@@ -18152,7 +18137,7 @@
    },
    "icon": "img/buildings/kaiserforum3.png",
    "id": "building_kaiserforum_3",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Kaiserforum",
    "outputGoods": [],
    "pmGroups": [
@@ -18241,7 +18226,7 @@
    },
    "icon": "img/buildings/kaiserforum3.png",
    "id": "building_kaiserforum_4",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Kaiserforum",
    "outputGoods": [],
    "pmGroups": [
@@ -18330,7 +18315,7 @@
    },
    "icon": "img/buildings/sagrada_familia_cathedral1.png",
    "id": "building_sagrada_familia_cathedral_1",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Sagrada Família Cathedral",
    "outputGoods": [],
    "pmGroups": [
@@ -18408,7 +18393,7 @@
    },
    "icon": "img/buildings/sagrada_familia_cathedral2.png",
    "id": "building_sagrada_familia_cathedral_2",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Sagrada Família Cathedral",
    "outputGoods": [],
    "pmGroups": [
@@ -18481,7 +18466,7 @@
    },
    "icon": "img/buildings/sagrada_familia_cathedral3.png",
    "id": "building_sagrada_familia_cathedral_3",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Sagrada Família Cathedral",
    "outputGoods": [],
    "pmGroups": [
@@ -18542,12 +18527,7 @@
    ],
    "port": false,
    "slug": "sagrada_familia_cathedral_3",
-   "techs": [
-    {
-     "id": {},
-     "name": "[object Object]"
-    }
-   ],
+   "techs": [],
    "unique": true
   },
   {
@@ -18565,7 +18545,7 @@
    },
    "icon": "img/buildings/pena_palace.png",
    "id": "building_pena_palace",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Pena Palace",
    "outputGoods": [],
    "pmGroups": [
@@ -18654,7 +18634,7 @@
    },
    "icon": "img/buildings/gran_teatro.png",
    "id": "building_gran_teatro_de_la_habana",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Grand Theater of Havana",
    "outputGoods": [
     "fine_art"
@@ -18754,7 +18734,7 @@
    },
    "icon": "img/buildings/estacion_de_madrid_atocha.png",
    "id": "building_estacion_de_madrid_atocha",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Atocha Railway Station",
    "outputGoods": [],
    "pmGroups": [
@@ -18848,7 +18828,7 @@
    },
    "icon": "img/buildings/manila_cathedral.png",
    "id": "building_manila_cathedral_monument",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Manila Cathedral",
    "outputGoods": [],
    "pmGroups": [
@@ -18932,7 +18912,7 @@
    },
    "icon": "img/buildings/logging_camp.png",
    "id": "building_logging_camp",
-   "landUsage": "rural",
+   "landUsage": null,
    "name": "Logging Camps",
    "outputGoods": [
     "wood",
@@ -19385,7 +19365,7 @@
    },
    "icon": "img/buildings/rubber_lodge.png",
    "id": "building_rubber_plantation",
-   "landUsage": "rural",
+   "landUsage": null,
    "name": "Rubber Plantations",
    "outputGoods": [
     "rubber"
@@ -19685,7 +19665,7 @@
    },
    "icon": "img/buildings/fishing_wharf.png",
    "id": "building_fishing_wharf",
-   "landUsage": "rural",
+   "landUsage": null,
    "name": "Fishing Wharves",
    "outputGoods": [
     "fish"
@@ -19982,7 +19962,7 @@
    },
    "icon": "img/buildings/whaling_station.png",
    "id": "building_whaling_station",
-   "landUsage": "rural",
+   "landUsage": null,
    "name": "Whaling Stations",
    "outputGoods": [
     "oil",
@@ -20303,7 +20283,7 @@
    },
    "icon": "img/buildings/oil_rig.png",
    "id": "building_oil_rig",
-   "landUsage": "rural",
+   "landUsage": null,
    "name": "Oil Rigs",
    "outputGoods": [
     "oil"
@@ -20534,7 +20514,7 @@
    },
    "icon": "img/buildings/suez_canal.png",
    "id": "building_suez_canal",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Suez Canal",
    "outputGoods": [],
    "pmGroups": [
@@ -20613,7 +20593,7 @@
    },
    "icon": "img/buildings/panama_canal.png",
    "id": "building_panama_canal",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Panama Canal",
    "outputGoods": [],
    "pmGroups": [
@@ -20692,7 +20672,7 @@
    },
    "icon": "img/buildings/kiel_canal.png",
    "id": "building_kiel_canal",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Kiel Canal",
    "outputGoods": [],
    "pmGroups": [
@@ -20771,7 +20751,7 @@
    },
    "icon": "img/buildings/building_port.png",
    "id": "building_port",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Port",
    "outputGoods": [
     "merchant_marine"
@@ -21008,7 +20988,7 @@
    },
    "icon": "img/buildings/building_railway.png",
    "id": "building_railway",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Railway",
    "outputGoods": [
     "transportation"
@@ -21554,7 +21534,7 @@
    },
    "icon": "img/buildings/building_trade_center.png",
    "id": "building_trade_center",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Trade Center",
    "outputGoods": [],
    "pmGroups": [
@@ -21741,7 +21721,7 @@
    },
    "icon": "img/buildings/building_manor_houses.png",
    "id": "building_manor_house",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Manor Houses",
    "outputGoods": [],
    "pmGroups": [
@@ -21879,7 +21859,7 @@
    },
    "icon": "img/buildings/building_financial_district.png",
    "id": "building_financial_district",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Financial Districts",
    "outputGoods": [],
    "pmGroups": [
@@ -23679,7 +23659,7 @@
    },
    "icon": "img/buildings/construction_camp.png",
    "id": "building_construction_sector",
-   "landUsage": "development",
+   "landUsage": null,
    "name": "Construction Sector",
    "outputGoods": [],
    "pmGroups": [
@@ -23961,7 +23941,7 @@
    },
    "icon": "img/buildings/building_company_hq.png",
    "id": "building_company_headquarter",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Company Headquarter",
    "outputGoods": [],
    "pmGroups": [
@@ -24633,7 +24613,7 @@
    },
    "icon": "img/buildings/building_company_regional_hq.png",
    "id": "building_company_regional_headquarter",
-   "landUsage": "urban",
+   "landUsage": null,
    "name": "Regional Company Headquarter",
    "outputGoods": [],
    "pmGroups": [

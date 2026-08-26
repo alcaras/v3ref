@@ -7,7 +7,7 @@
 
 import { writeFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
+import { dataRoot, parseFolder, asArray, stableStringify , idList } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
 
@@ -72,9 +72,9 @@ const countryList = Object.entries(countries.entries)
     name: loc.name(tag),
     color: toHex(c.color),
     type: c.country_type ?? null,
-    tier: c.tier ?? null,
+    tier: c.tier ? { id: c.tier, name: loc.name(c.tier, ['country_tier_']) } : null,
     capital: c.capital ? { id: c.capital, name: loc.name(c.capital) } : null,
-    cultures: asArray(c.cultures).flat().map((cu) => ({ id: cu, name: loc.name(cu) })),
+    cultures: idList(c.cultures).map((cu) => ({ id: cu, name: loc.name(cu) })),
     religion: c.religion ? { id: c.religion, name: loc.name(c.religion) } : null,
     existsAtStart: startTags.has(tag),
     formable: formableTags.has(tag),
@@ -98,7 +98,7 @@ writeFileSync(
 // ── States ──────────────────────────────────────────────────────────
 const regionOfState = {};
 for (const [rId, r] of Object.entries(strategicRegions.entries)) {
-  for (const s of asArray(r.states).flat()) regionOfState[s] = rId;
+  for (const s of idList(r.states)) regionOfState[s] = rId;
 }
 
 const traitCatalog = Object.entries(stateTraits.entries).map(([id, t]) => ({
@@ -112,7 +112,7 @@ const traitById = Object.fromEntries(traitCatalog.map((t) => [t.id, t]));
 const stateList = Object.entries(stateRegions.entries)
   .filter(([, s]) => s.subsistence_building)
   .map(([id, s]) => {
-    const traits = asArray(s.traits).flat();
+    const traits = idList(s.traits);
     for (const t of traits) traitById[t]?.states.push(id);
     const region = regionOfState[id] ?? null;
     // resource = { type = "bg_x" undiscovered_amount = N depleted_type=... }
@@ -126,7 +126,7 @@ const stateList = Object.entries(stateRegions.entries)
       name: loc.name(id),
       region: region ? { id: region, name: loc.name(region) } : null,
       arableLand: s.arable_land ?? 0,
-      arableResources: asArray(s.arable_resources).flat().map((b) => ({
+      arableResources: idList(s.arable_resources).map((b) => ({
         id: b,
         slug: b.replace(/^building_/, ''),
         name: loc.name(b),

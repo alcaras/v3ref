@@ -1,7 +1,10 @@
 {
  "lawGroups": [
   {
-   "category": "power_structure",
+   "category": {
+    "id": "power_structure",
+    "name": "Power Structure"
+   },
    "enactmentDays": null,
    "id": "lawgroup_army_model",
    "laws": [
@@ -785,7 +788,10 @@
    "name": "Army Model"
   },
   {
-   "category": "power_structure",
+   "category": {
+    "id": "power_structure",
+    "name": "Power Structure"
+   },
    "enactmentDays": null,
    "id": "lawgroup_bureaucracy",
    "laws": [
@@ -1306,7 +1312,10 @@
    "name": "Bureaucracy"
   },
   {
-   "category": "power_structure",
+   "category": {
+    "id": "power_structure",
+    "name": "Power Structure"
+   },
    "enactmentDays": null,
    "id": "lawgroup_caste_hegemony",
    "laws": [
@@ -2126,18 +2135,16 @@
        "stance": "neutral"
       }
      ],
-     "techs": [
-      {
-       "id": {},
-       "name": "[object Object]"
-      }
-     ]
+     "techs": []
     }
    ],
    "name": "Caste Hegemony"
   },
   {
-   "category": "power_structure",
+   "category": {
+    "id": "power_structure",
+    "name": "Power Structure"
+   },
    "enactmentDays": null,
    "id": "lawgroup_church_and_state",
    "laws": [
@@ -3628,7 +3635,10 @@
    "name": "Church and State"
   },
   {
-   "category": "power_structure",
+   "category": {
+    "id": "power_structure",
+    "name": "Power Structure"
+   },
    "enactmentDays": null,
    "id": "lawgroup_citizenship",
    "laws": [
@@ -5781,7 +5791,10 @@
    "name": "Citizenship"
   },
   {
-   "category": "power_structure",
+   "category": {
+    "id": "power_structure",
+    "name": "Power Structure"
+   },
    "enactmentDays": 150,
    "id": "lawgroup_distribution_of_power",
    "laws": [
@@ -9877,7 +9890,10 @@
    "name": "Distribution of Power"
   },
   {
-   "category": "power_structure",
+   "category": {
+    "id": "power_structure",
+    "name": "Power Structure"
+   },
    "enactmentDays": null,
    "id": "lawgroup_edo_social_system",
    "laws": [
@@ -10643,7 +10659,10 @@
    "name": "Edo Status System"
   },
   {
-   "category": "power_structure",
+   "category": {
+    "id": "power_structure",
+    "name": "Power Structure"
+   },
    "enactmentDays": 200,
    "id": "lawgroup_governance_principles",
    "laws": [
@@ -13668,7 +13687,10 @@
    "name": "Governance Principles"
   },
   {
-   "category": "power_structure",
+   "category": {
+    "id": "power_structure",
+    "name": "Power Structure"
+   },
    "enactmentDays": null,
    "id": "lawgroup_internal_security",
    "laws": [
@@ -14192,7 +14214,10 @@
    "name": "Internal Security"
   },
   {
-   "category": "power_structure",
+   "category": {
+    "id": "power_structure",
+    "name": "Power Structure"
+   },
    "enactmentDays": null,
    "id": "lawgroup_navy_model",
    "laws": [
@@ -14684,7 +14709,10 @@
    "name": "Navy Model"
   },
   {
-   "category": "economy",
+   "category": {
+    "id": "economy",
+    "name": "Economy"
+   },
    "enactmentDays": null,
    "id": "lawgroup_colonization",
    "laws": [
@@ -15024,7 +15052,10 @@
    "name": "Colonization"
   },
   {
-   "category": "economy",
+   "category": {
+    "id": "economy",
+    "name": "Economy"
+   },
    "enactmentDays": 150,
    "id": "lawgroup_economic_system",
    "laws": [
@@ -17783,7 +17814,10 @@
    "name": "Economic System"
   },
   {
-   "category": "economy",
+   "category": {
+    "id": "economy",
+    "name": "Economy"
+   },
    "enactmentDays": null,
    "id": "lawgroup_education_system",
    "laws": [
@@ -18354,7 +18388,10 @@
    "name": "Education System"
   },
   {
-   "category": "economy",
+   "category": {
+    "id": "economy",
+    "name": "Economy"
+   },
    "enactmentDays": null,
    "id": "lawgroup_health_system",
    "laws": [
@@ -18614,7 +18651,10 @@
    "name": "Health System"
   },
   {
-   "category": "economy",
+   "category": {
+    "id": "economy",
+    "name": "Economy"
+   },
    "enactmentDays": null,
    "id": "lawgroup_land_reform",
    "laws": [
@@ -19740,7 +19780,10 @@
    "name": "Land Reform"
   },
   {
-   "category": "economy",
+   "category": {
+    "id": "economy",
+    "name": "Economy"
+   },
    "enactmentDays": null,
    "id": "lawgroup_policing",
    "laws": [
@@ -20440,7 +20483,10 @@
    "name": "Policing"
   },
   {
-   "category": "economy",
+   "category": {
+    "id": "economy",
+    "name": "Economy"
+   },
    "enactmentDays": null,
    "id": "lawgroup_taxation",
    "laws": [
@@ -21158,7 +21204,10 @@
    "name": "Taxation"
   },
   {
-   "category": "economy",
+   "category": {
+    "id": "economy",
+    "name": "Economy"
+   },
    "enactmentDays": null,
    "id": "lawgroup_trade_policy",
    "laws": [
@@ -22121,7 +22170,10 @@
    "name": "Trade Policy"
   },
   {
-   "category": "human_rights",
+   "category": {
+    "id": "human_rights",
+    "name": "Human Rights"
+   },
    "enactmentDays": null,
    "id": "lawgroup_childrens_rights",
    "laws": [
@@ -22492,7 +22544,10 @@
    "name": "Children's Rights"
   },
   {
-   "category": "human_rights",
+   "category": {
+    "id": "human_rights",
+    "name": "Human Rights"
+   },
    "enactmentDays": null,
    "id": "lawgroup_free_speech",
    "laws": [
@@ -23364,7 +23419,10 @@
    "name": "Free Speech"
   },
   {
-   "category": "human_rights",
+   "category": {
+    "id": "human_rights",
+    "name": "Human Rights"
+   },
    "enactmentDays": null,
    "id": "lawgroup_labor_rights",
    "laws": [
@@ -23637,7 +23695,10 @@
    "name": "Labor Rights"
   },
   {
-   "category": "human_rights",
+   "category": {
+    "id": "human_rights",
+    "name": "Human Rights"
+   },
    "enactmentDays": null,
    "id": "lawgroup_labour_associations",
    "laws": [
@@ -25031,7 +25092,10 @@
    "name": "Labor Associations"
   },
   {
-   "category": "human_rights",
+   "category": {
+    "id": "human_rights",
+    "name": "Human Rights"
+   },
    "enactmentDays": null,
    "id": "lawgroup_migration",
    "laws": [
@@ -25366,7 +25430,10 @@
    "name": "Migration"
   },
   {
-   "category": "human_rights",
+   "category": {
+    "id": "human_rights",
+    "name": "Human Rights"
+   },
    "enactmentDays": null,
    "id": "lawgroup_rights_of_women",
    "laws": [
@@ -25507,12 +25574,7 @@
      "techs": []
     },
     {
-     "disallowedLaws": [
-      {
-       "id": {},
-       "name": "[object Object]"
-      }
-     ],
+     "disallowedLaws": [],
      "icon": "img/laws/women_in_the_fields.png",
      "id": "law_women_in_the_fields",
      "institution": null,
@@ -26048,7 +26110,10 @@
    "name": "Rights of Women"
   },
   {
-   "category": "human_rights",
+   "category": {
+    "id": "human_rights",
+    "name": "Human Rights"
+   },
    "enactmentDays": 150,
    "id": "lawgroup_slavery",
    "laws": [
@@ -26586,17 +26651,15 @@
    "name": "Slavery"
   },
   {
-   "category": "human_rights",
+   "category": {
+    "id": "human_rights",
+    "name": "Human Rights"
+   },
    "enactmentDays": null,
    "id": "lawgroup_welfare",
    "laws": [
     {
-     "disallowedLaws": [
-      {
-       "id": {},
-       "name": "[object Object]"
-      }
-     ],
+     "disallowedLaws": [],
      "icon": "img/laws/sefs_distribute_funds.png",
      "id": "law_chiefs_distribute_aid",
      "institution": {

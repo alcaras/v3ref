@@ -7,18 +7,13 @@ const countries = (countriesJson as any).countries as any[];
 const base = import.meta.env.BASE_URL;
 const starters = countries.filter((c) => c.existsAtStart);
 const formables = countries.filter((c) => c.formable && !c.existsAtStart);
-const TIER_LABEL: Record<string, string> = {
-  hegemony: 'Hegemony', empire: 'Empire', kingdom: 'Kingdom',
-  grand_principality: 'Grand Principality', principality: 'Principality', city_state: 'City-state',
-};
-
 const csv = {
   header: ['Country', 'Status', 'Tag', 'Type', 'Tier', 'Capital', 'Cultures', 'Religion'],
   rows: countries.map((c) => [
     c.name,
     c.existsAtStart ? 'on the 1836 map' : c.formable ? 'formable' : c.dynamic ? 'dynamic/releasable' : 'unused',
     c.tag,
-    c.type ?? '', c.tier ?? '', c.capital?.name ?? '',
+    c.type ?? '', c.tier?.name ?? '', c.capital?.name ?? '',
     c.cultures.map((x: any) => x.name).join('; '), c.religion?.name ?? '',
   ]),
 };
@@ -66,7 +61,7 @@ const csv = {
               </td>
               <td class="dim" style="font-family: var(--font-mono); font-size: 0.72rem;">{c.tag}</td>
               <td class="dim">{c.type?.replace('_', ' ') ?? <span class="cell__dash">—</span>}</td>
-              <td class="dim">{TIER_LABEL[c.tier] ?? c.tier ?? <span class="cell__dash">—</span>}</td>
+              <td class="dim">{c.tier?.name ?? <span class="cell__dash">—</span>}</td>
               <td class="dim">
                 {c.capital ? <a href={`${base}states#${c.capital.id}`}>{c.capital.name}</a> : <span class="cell__dash">—</span>}
               </td>

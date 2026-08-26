@@ -138,6 +138,49 @@ used the legacy spreadsheet.
 
 ## Source-of-truth rules
 
+**Anchor every claim in the game files. Do not invent mechanisms, labels, or
+numbers, and when you must supply one, make it visible.** Fabrications found
+and fixed the hard way in this repo:
+
+- Asserting a mechanism that isn't there. The profit tools claimed percentage
+  goods modifiers made PM groups interact. There are **zero** `_mult` goods
+  lines in the data — all 723 are flat, and "automation" works through
+  *negative employment*, not multipliers. Before describing how something
+  works, grep for it. `make audit` now fails if a percentage goods line ever
+  appears, so the claim can't rot silently.
+- Guessing at file paths. Unit "icons" were invented (`img/military/<id>.png`);
+  unit art is actually culture-gated `combat_unit_image` illustrations. The
+  audit's missing-icon check caught it.
+- Substituting a lookalike field. `land_usage` was falling back to the group's
+  `category`, which is a *different* field whose values include `development`.
+  Per the building_groups docs, unspecified `land_usage` means the building
+  uses **no** state resource — say that, don't approximate it.
+- Inverting a field's meaning. `unemployment_wealth` was labelled "unemployed
+  wealth"; the game's own comment says it is the wealth level at or below which
+  pops **switch into** that profession.
+- Coining terminology. "Destitution sink" was our phrase, not the game's. Use
+  the game's words, or plainly describe the field.
+- Hand-written label maps. Tiers, law categories, and tech categories were
+  Title-Cased by hand; the game has `country_tier_*`, `POWER_STRUCTURE`, etc.,
+  and spells it "City-State", not "City-state".
+
+Mechanics for staying anchored:
+
+- `loc.name(id, prefixes)` tries the id, the caller's known prefixes, then
+  UPPERCASE. It rejects text containing `…` — an unresolved data function means
+  the string is a runtime sentence (`war_goal_conquer_state` = "Conquer
+  [GetTargetState.GetName]"), not a label. Anything it can't resolve is
+  Title-Cased **and recorded**; the pooled list lands in
+  `data/invented-labels.json` and the audit reports the count. That number is
+  the size of our fiction — keep it small and know what's in it.
+- Read id lists with `idList()`, never `asArray().flat()`. Paradox writes empty
+  blocks as `traditions = { }`, which parses to `{}`; the naive read shipped
+  literal "[object Object]" to 280 culture rows. The audit now fails on it.
+- State the scope of a derived number. The profit tools price goods and jobs
+  only; methods also carry mortality, shares, job attractiveness, minimum wage,
+  and training-rate effects that are not priced, and 33 of 97 buildings move no
+  goods at all. Say so on the page rather than implying completeness.
+
 1. Game files win on facts. No hand-maintained data files; curation lives in
    build scripts with comments.
 2. `v3ref/` is read-only from here — never write into it (its sync script
