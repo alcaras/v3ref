@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
 const base = import.meta.env.BASE_URL;
 ---
 <Base
@@ -42,6 +43,17 @@ const base = import.meta.env.BASE_URL;
         <canvas id="rm-canvas" width="2048" height="904"></canvas>
         <div id="rm-tip" class="rm__tip" hidden></div>
       </div>
+      <h2 class="sect">Every state, ranked</h2>
+      <div class="rm__tablebar">
+        <span id="rm-count" class="rm__hint"></span>
+        <button type="button" id="rm-csv" class="cp__btn tt__csv" data-csv-id="map"
+          data-csv-name="victoria3-resource-map">⤓ Download CSV</button>
+      </div>
+      <TableTools showBar={false} />
+      <div class="grid"><div class="grid__scroll">
+        <table class="vtbl" id="rm-table"><thead></thead><tbody></tbody></table>
+      </div></div>
+
       <p class="caption">
         Two kinds of layer. <b>Deposit</b> layers (mines, wharves, arable land, undiscovered finds)
         come from the game's <code>state_regions</code> caps — the maximum levels a state can ever
@@ -137,7 +149,7 @@ const base = import.meta.env.BASE_URL;
             const k = b.dataset.key, at = selected.indexOf(k);
             if (at >= 0) selected.splice(at, 1);
             else if (selected.length < MAX_LAYERS) selected.push(k);
-            renderLayers(); draw(); syncHash();
+            renderLayers(); draw(); renderTable(); syncHash();
           }));
       }
 
@@ -209,6 +221,77 @@ const base = import.meta.env.BASE_URL;
              </div>`;
       }
 
+      // ── Table under the map ──────────────────────────────────────
+      // Same numbers the map is painted from, so the two can never disagree.
+      const sort = { col: null, dir: -1 };   // null = by total, descending
+
+      function tableRows() {
+        const cols = selected.map((k) => meta.layers.find((l) => l.key === k));
+        const out = [];
+        for (const [i, st] of Object.entries(meta.states)) {
+          const nums = selected.map((k) => meta.values[k]?.[i] ?? 0);
+          const total = nums.reduce((a, b) => a + b, 0);
+          if (!total) continue;
+          out.push({ idx: Number(i), st, nums, total });
+        }
+        const get = (r) =>
+          sort.col === null ? r.total
+            : sort.col === 'name' ? r.st.name
+            : sort.col === 'region' ? (r.st.region ?? '')
+            : r.nums[sort.col];
+        out.sort((a, b) => {
+          const av = get(a), bv = get(b);
+          const c = typeof av === 'number' ? av - bv : String(av).localeCompare(String(bv));
+          return (c || a.st.name.localeCompare(b.st.name)) * (typeof av === 'number' ? sort.dir : -sort.dir);
+        });
+        return { cols, out };
+      }
+
+      function renderTable() {
+        const { cols, out } = tableRows();
+        const table = $('rm-table');
+        if (!cols.length) {
+          table.tHead.innerHTML = '';
+          table.tBodies[0].innerHTML = '';
+          $('rm-count').textContent = 'Choose a layer to list states.';
+          return;
+        }
+        const multi = cols.length > 1;
+        const arrow = (key) => (sort.col === key ? (sort.dir === -1 ? ' ↓' : ' ↑') : '');
+        table.tHead.innerHTML = `<tr>
+          <th class="num" style="width:3.5rem;">#</th>
+          <th style="min-width:12rem;" class="rm__sort" data-col="name">State${arrow('name')}</th>
+          <th style="min-width:10rem;" class="rm__sort" data-col="region">Region${arrow('region')}</th>
+          ${cols.map((c, i) => `<th class="num rm__sort" data-col="${i}" title="${c.unit}">${c.name}${arrow(i)}</th>`).join('')}
+          ${multi ? `<th class="num rm__sort" data-col="total">Total${arrow(null)}</th>` : ''}</tr>`;
+        table.tHead.querySelectorAll('.rm__sort').forEach((th) =>
+          th.addEventListener('click', () => {
+            const raw = th.dataset.col;
+            const col = raw === 'total' ? null : raw === 'name' || raw === 'region' ? raw : Number(raw);
+            if (sort.col === col) sort.dir = -sort.dir;
+            else { sort.col = col; sort.dir = -1; }
+            renderTable();
+          }));
+        table.tBodies[0].innerHTML = out.map((r, n) => `<tr>
+          <td class="num dim">${n + 1}</td>
+          <td class="lead-cell" data-sort="${r.st.name}">
+            <span class="lead"><a href="${base}locations/${r.st.id.replace('STATE_', '').toLowerCase()}">${r.st.name}</a></span></td>
+          <td class="dim">${r.st.region ?? '<span class="cell__dash">—</span>'}</td>
+          ${r.nums.map((n2) => `<td class="num">${n2 ? n2.toLocaleString() : '<span class="cell__dash">—</span>'}</td>`).join('')}
+          ${multi ? `<td class="num"><b>${r.total.toLocaleString()}</b></td>` : ''}</tr>`).join('');
+        table.tBodies[0].querySelectorAll('tr').forEach((tr) => tr.removeAttribute('data-tt-i'));
+        $('rm-count').textContent = `${out.length} state${out.length === 1 ? '' : 's'} with ${
+          cols.map((c) => c.name).join(' or ')}`;
+
+        window.v3Csv = window.v3Csv || {};
+        window.v3Csv.map = () => ({
+          header: ['State', 'Id', 'Region', ...cols.map((c) => `${c.name} (${c.unit})`),
+                   ...(multi ? ['Total'] : [])],
+          rows: out.map((r) => [r.st.name, r.st.id, r.st.region ?? '', ...r.nums,
+                                ...(multi ? [r.total] : [])]),
+        });
+      }
+
       // ── Hover ────────────────────────────────────────────────────
       const tip = $('rm-tip');
       canvas.addEventListener('mousemove', (e) => {
@@ -244,7 +327,9 @@ const base = import.meta.env.BASE_URL;
         history.replaceState(null, '', selected.length ? `#l=${selected.join(',')}` : location.pathname);
       }
       $('rm-sqrt').addEventListener('change', draw);
-      $('rm-clear').addEventListener('click', () => { selected.length = 0; renderLayers(); draw(); syncHash(); });
+      $('rm-clear').addEventListener('click', () => {
+        selected.length = 0; renderLayers(); draw(); renderTable(); syncHash();
+      });
 
       // A map view in the URL, so a layer set can be linked to.
       const fromHash = new URLSearchParams(location.hash.slice(1)).get('l');
@@ -255,6 +340,7 @@ const base = import.meta.env.BASE_URL;
       $('rm-search').addEventListener('input', renderLayers);
       renderLayers();
       draw();
+      renderTable();
     })();
   </script>
 
@@ -294,6 +380,9 @@ const base = import.meta.env.BASE_URL;
     .rm__scale { font-family: var(--font-mono); font-size: 0.62rem; color: var(--text-faint); }
     .rm__hint { font-size: 0.72rem; color: var(--text-faint); }
 
+    .rm__sort { cursor: pointer; user-select: none; }
+    .rm__sort:hover { color: var(--gold); }
+    .rm__tablebar { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
     .rm__tip {
       position: absolute; z-index: 5; pointer-events: none;
       background: var(--bg-elev); border: 1px solid var(--border-strong);

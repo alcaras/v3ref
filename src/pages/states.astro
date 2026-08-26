@@ -12,16 +12,44 @@ const states = ((statesJson as any).states as any[]).map((s) => ({ ...s, loc: by
 const traits = (statesJson as any).traits as any[];
 
 const capText = (s: any) => s.cappedResources.map((r: any) => `${r.name} ${r.cap}`).join('; ');
+
+// One sortable column per resource, so the table can be ordered by any of
+// them. Short header labels: the building names repeat "Mines"/"Camps".
+const resourceCols = [...new Map(
+  states.flatMap((s) => s.cappedResources.map((r: any) => [r.id, r])),
+).values()]
+  .map((r: any) => ({
+    id: r.id,
+    slug: r.slug,
+    name: r.name,
+    short: r.name.replace(/ (Mines?|Camps?|Wharfs?|Wharves|Fields?|Rigs?|Stations?|Plantations?)$/, ''),
+  }))
+  .sort((a, b) => a.short.localeCompare(b.short));
+const capOf = (s: any, id: string) => s.cappedResources.find((r: any) => r.id === id)?.cap ?? 0;
+
+const discoverCols = [...new Map(
+  states.flatMap((s) => s.discoverables.filter((d: any) => d.group).map((d: any) => [d.group, d])),
+).values()]
+  .map((d: any) => ({ group: d.group, name: d.name ?? d.group }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+const findOf = (s: any, group: string) =>
+  s.discoverables.find((d: any) => d.group === group)?.amount ?? 0;
 const csv = {
-  header: ['State', 'Id', 'Region', '1836 owner', 'Population', 'Produces', 'Arable land', 'Arable types', 'Resource caps', 'Discoverables', 'Traits', 'Coastal'],
+  header: [
+    'State', 'Id', 'Region', '1836 owner', 'Population', 'Produces', 'Arable land', 'Arable types',
+    ...resourceCols.map((r) => r.name),
+    ...discoverCols.map((d) => `${d.name} (undiscovered)`),
+    'Traits', 'Coastal',
+  ],
   rows: states.map((s) => [
     s.name, s.id, s.region?.name ?? '',
     s.loc?.owners.map((o: any) => o.name).join('; ') ?? '',
     s.loc?.population ?? '',
     s.loc?.produces.map((g: any) => `${g.name} ${g.amount}`).join('; ') ?? '',
     s.arableLand,
-    s.arableResources.map((r: any) => r.name).join('; '), capText(s),
-    s.discoverables.map((d: any) => `${d.name}${d.amount ? ` ${d.amount}` : ''}`).join('; '),
+    s.arableResources.map((r: any) => r.name).join('; '),
+    ...resourceCols.map((r) => capOf(s, r.id) || ''),
+    ...discoverCols.map((d) => findOf(s, d.group) || ''),
     s.traits.map((t: any) => t.name).join('; '), s.navalExit ? 'yes' : '',
   ]),
 };
@@ -49,8 +77,12 @@ const csv = {
             <th class="num" style="width: 7rem;">Population</th>
             <th class="num" style="width: 5.5rem;" title="Arable land — max total levels of farming/ranching buildings">Arable</th>
             <th style="width: 16rem;">Arable types</th>
-            <th style="min-width: 18rem;">Resource caps</th>
-            <th style="width: 12rem;">Discoverable</th>
+            {resourceCols.map((r) => (
+              <th class="num" style="width: 5rem;" title={`${r.name} — maximum levels this state can hold`}>{r.short}</th>
+            ))}
+            {discoverCols.map((d) => (
+              <th class="num" style="width: 5.5rem;" title={`${d.name} that prospecting can still reveal`}>{d.name.replace(/ (Fields?|Rigs?|Plantations?)$/, '')}<span class="st__und">?</span></th>
+            ))}
             <th style="min-width: 12rem;">Traits</th>
           </tr>
         </thead>
@@ -86,19 +118,14 @@ const csv = {
                   );
                 })}
               </td>
-              <td class="dim">
-                {s.cappedResources.length ? s.cappedResources.map((r: any, i: number) => (
-                  <>
-                    {i > 0 && ', '}
-                    <a href={`${base}buildings/${r.slug}`}>{r.name.replace(/ (Mines?|Camps?|Wharfs?|Wharves|Fields?|Rigs?|Wells)$/, '')}</a> <b>{r.cap}</b>
-                  </>
-                )) : <span class="cell__dash">—</span>}
-              </td>
-              <td class="dim">
-                {s.discoverables.length ? s.discoverables.map((d: any, i: number) => (
-                  <>{i > 0 && ', '}{d.name}{d.amount ? <> <b>{d.amount}</b></> : null}</>
-                )) : <span class="cell__dash">—</span>}
-              </td>
+              {resourceCols.map((r) => {
+                const n = capOf(s, r.id);
+                return <td class="num" data-sort={n || ''}>{n || <span class="cell__dash">—</span>}</td>;
+              })}
+              {discoverCols.map((d) => {
+                const n = findOf(s, d.group);
+                return <td class="num dim" data-sort={n || ''}>{n || <span class="cell__dash">—</span>}</td>;
+              })}
               <td class="dim">
                 {s.traits.length ? s.traits.map((t: any, i: number) => (
                   <>{i > 0 && ', '}<a href={`${base}states#${t.id}`}>{t.name}</a></>
@@ -136,7 +163,8 @@ const csv = {
   </div>
 
   <p class="caption">
-    Every state region, searchable by owner, culture, produced good, and starting building ·
+    Click any resource column to sort by it · every state region, searchable by owner, culture,
+    produced good, and starting building ·
     open one for its 1836 pops, buildings, and output · discoverable amounts are what prospecting
     can reveal · sea regions excluded
   </p>
@@ -156,4 +184,7 @@ const csv = {
       });
     }
   </script>
+  <style is:global>
+    .st__und { color: var(--text-faint); margin-left: 0.15em; }
+  </style>
 </Base>
