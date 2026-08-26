@@ -1,0 +1,294 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Base
+  title="Company Planner"
+  active="company-planner"
+  eyebrow="Tools"
+  description="Plan a Victoria 3 company roster: fill your charter slots and see which buildings get the throughput bonus, which prestige goods you unlock, and where the slots come from."
+>
+  <div class="cp">
+    <aside class="cp__side">
+      <h2 class="sect">Your companies</h2>
+      <div id="cp-slots" class="cp__slots"></div>
+      <div class="cp__actions">
+        <button type="button" id="cp-copy" class="cp__btn">⧉ Copy share link</button>
+        <button type="button" id="cp-clear" class="cp__btn">Clear</button>
+      </div>
+      <p class="cp__slotnote">
+        Slots come from <span id="cp-slotcount">7</span> sources —
+        <button type="button" id="cp-slotsrc" class="cp__link">what grants them?</button>
+      </p>
+      <div id="cp-slotsrc-list" class="cp__srclist" hidden></div>
+
+      <h2 class="sect">Prestige goods</h2>
+      <div id="cp-prestige" class="cp__prestige"></div>
+    </aside>
+
+    <section class="cp__main">
+      <div class="cp__browserhead">
+        <h2 class="sect" style="margin-top:0;">Browse companies</h2>
+        <label class="page-filter cp__search">
+          <span class="page-filter__ico" aria-hidden="true">⌕</span>
+          <input id="cp-filter" type="search" autocomplete="off" spellcheck="false"
+            placeholder="Search company, building, or region…" />
+        </label>
+      </div>
+      <div id="cp-browser" class="cp__browser"></div>
+    </section>
+
+    <section class="cp__matrix">
+      <h2 class="sect" style="margin-top:0;">Building coverage</h2>
+      <p class="cp__hint">
+        <b class="tone-good">■</b> owned by a company (throughput bonus + prestige eligibility) ·
+        <b class="cp__extmark">■</b> available as a charter extension
+      </p>
+      <div id="cp-coverage" class="cp__coverage"></div>
+    </section>
+  </div>
+
+  <p class="caption">
+    Formation requirements (building levels in specific states) are scripted per company — plan the roster here,
+    check each company's conditions in game · <a href={`${base}companies`}>full company table</a>
+  </p>
+
+  <script is:inline define:vars={{ base }}>
+    (async () => {
+      const data = await fetch(`${base}data/company-planner.json`).then((r) => r.json());
+      const $ = (id) => document.getElementById(id);
+      const KEY = 'v3ref-company-plan';
+      const valid = (ids) => ids.filter((id) => data.companies.some((c) => c.id === id));
+
+      // A roster in the URL hash wins over the local one, so shared links open
+      // the sender's plan rather than the viewer's saved draft.
+      let picked = [];
+      const fromHash = new URLSearchParams(location.hash.slice(1)).get('c');
+      if (fromHash) {
+        picked = valid(fromHash.split(',').map((s) => `company_${s}`));
+      } else {
+        try { picked = valid(JSON.parse(localStorage.getItem(KEY) || '[]')); } catch {}
+      }
+
+      const maxSlots = data.slotSources.reduce((s, x) => s + x.slots, 0);
+      $('cp-slotcount').textContent = data.slotSources.length;
+      const byId = Object.fromEntries(data.companies.map((c) => [c.id, c]));
+
+      $('cp-slotsrc-list').innerHTML = data.slotSources
+        .map((s) => `<div class="cp__src"><a href="${base}${s.page}#${s.id}">${s.name}</a> <i>${s.kind}</i> <b>+${s.slots}</b></div>`)
+        .join('');
+      $('cp-slotsrc').addEventListener('click', () => {
+        const el = $('cp-slotsrc-list');
+        el.hidden = !el.hidden;
+      });
+
+      function save() {
+        try { localStorage.setItem(KEY, JSON.stringify(picked)); } catch {}
+        // Keep the hash in step so the address bar is always the shareable link.
+        const short = picked.map((id) => id.replace(/^company_/, '')).join(',');
+        history.replaceState(null, '', short ? `#c=${short}` : location.pathname);
+      }
+
+      function toggle(id) {
+        const i = picked.indexOf(id);
+        if (i >= 0) picked.splice(i, 1);
+        else if (picked.length < maxSlots) picked.push(id);
+        save();
+        render();
+      }
+
+      function renderSlots() {
+        const rows = [];
+        for (let i = 0; i < maxSlots; i++) {
+          const c = byId[picked[i]];
+          rows.push(c
+            ? `<div class="cp__slot is-filled">
+                 <img src="${base}${c.icon}" alt="" loading="lazy" />
+                 <span class="cp__slotname">${c.name}</span>
+                 <button type="button" class="cp__remove" data-id="${c.id}" title="Remove">×</button>
+               </div>`
+            : `<div class="cp__slot"><span class="cp__slotempty">Slot ${i + 1}</span></div>`);
+        }
+        $('cp-slots').innerHTML = rows.join('');
+        $('cp-slots').querySelectorAll('.cp__remove').forEach((b) =>
+          b.addEventListener('click', () => toggle(b.dataset.id)));
+      }
+
+      function renderPrestige() {
+        const goods = [...new Set(picked.flatMap((id) => byId[id].prestige))].sort();
+        $('cp-prestige').innerHTML = goods.length
+          ? goods.map((g) => `<span class="chip cp__pg">${g}</span>`).join('')
+          : '<span class="cp__none">No prestige goods from this roster yet.</span>';
+      }
+
+      function renderCoverage() {
+        const owned = new Map();   // buildingId -> 'own' | 'ext'
+        for (const id of picked) {
+          for (const b of byId[id].buildings) owned.set(b, 'own');
+          for (const b of byId[id].extensions) if (!owned.has(b)) owned.set(b, 'ext');
+        }
+        if (!owned.size) {
+          $('cp-coverage').innerHTML = '<span class="cp__none">Pick companies to see which buildings they cover.</span>';
+          return;
+        }
+        const groups = {};
+        for (const [b, kind] of owned) {
+          const meta = data.buildings[b];
+          if (!meta) continue;
+          (groups[meta.group ?? 'Other'] ??= []).push({ id: b, kind, ...meta });
+        }
+        $('cp-coverage').innerHTML = Object.entries(groups)
+          .sort((a, b) => a[0].localeCompare(b[0]))
+          .map(([g, list]) => `
+            <div class="cp__cgroup">
+              <div class="cp__cglabel">${g}</div>
+              <div class="cp__cgitems">
+                ${list.sort((a, b) => a.name.localeCompare(b.name)).map((b) => `
+                  <a class="cp__cov cp__cov--${b.kind}" href="${base}buildings/${b.id.replace('building_', '')}">
+                    <img src="${base}${b.icon}" alt="" loading="lazy" />${b.name}
+                  </a>`).join('')}
+              </div>
+            </div>`).join('');
+      }
+
+      function renderBrowser() {
+        const q = $('cp-filter').value.trim().toLowerCase();
+        const list = data.companies.filter((c) => {
+          if (!q) return true;
+          const hay = `${c.name} ${c.hq.join(' ')} ${[...c.buildings, ...c.extensions]
+            .map((b) => data.buildings[b]?.name ?? '').join(' ')}`.toLowerCase();
+          return hay.includes(q);
+        });
+        const full = picked.length >= maxSlots;
+        $('cp-browser').innerHTML = list.slice(0, 400).map((c) => {
+          const on = picked.includes(c.id);
+          return `<button type="button" class="cp__co ${on ? 'is-on' : ''}" data-id="${c.id}"
+                    ${!on && full ? 'disabled title="All slots filled"' : ''}>
+            <img src="${base}${c.icon}" alt="" loading="lazy" />
+            <span class="cp__coname">${c.name}</span>
+            <span class="cp__cobuild">${c.buildings.map((b) => data.buildings[b]?.name ?? b).join(', ')}</span>
+            ${c.hq.length ? `<span class="cp__cohq">${c.hq.join(', ')}</span>` : ''}
+          </button>`;
+        }).join('') + (list.length > 400 ? `<div class="cp__none">${list.length - 400} more — refine the search.</div>` : '');
+        $('cp-browser').querySelectorAll('.cp__co').forEach((b) =>
+          b.addEventListener('click', () => toggle(b.dataset.id)));
+      }
+
+      function render() {
+        renderSlots();
+        renderPrestige();
+        renderCoverage();
+        renderBrowser();
+      }
+
+      $('cp-filter').addEventListener('input', renderBrowser);
+      $('cp-clear').addEventListener('click', () => { picked = []; save(); render(); });
+      $('cp-copy').addEventListener('click', async () => {
+        const btn = $('cp-copy');
+        try {
+          await navigator.clipboard.writeText(location.href);
+          btn.textContent = '✓ Link copied';
+        } catch {
+          btn.textContent = 'Copy from the address bar';
+        }
+        setTimeout(() => { btn.textContent = '⧉ Copy share link'; }, 2000);
+      });
+      render();
+    })();
+  </script>
+
+  <style is:global>
+    .cp {
+      display: grid;
+      grid-template-columns: minmax(15rem, 20rem) minmax(20rem, 1fr);
+      grid-template-areas: "side main" "matrix matrix";
+      gap: 1.2rem 2rem;
+      align-items: start;
+    }
+    .cp__side { grid-area: side; position: sticky; top: 7rem; }
+    .cp__main { grid-area: main; }
+    .cp__matrix { grid-area: matrix; }
+    @media (max-width: 900px) {
+      .cp { grid-template-columns: 1fr; grid-template-areas: "side" "main" "matrix"; }
+      .cp__side { position: static; }
+    }
+
+    .cp__slots { display: flex; flex-direction: column; gap: 0.25rem; }
+    .cp__slot {
+      display: flex; align-items: center; gap: 0.5rem;
+      border: 1px dashed var(--border);
+      border-radius: 6px; padding: 0.35rem 0.5rem;
+      min-height: 2.2rem; font-size: 0.82rem;
+    }
+    .cp__slot.is-filled { border-style: solid; border-color: var(--gold-deep); background: var(--bg-elev); }
+    .cp__slot img { width: 20px; height: 20px; object-fit: contain; }
+    .cp__slotname { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .cp__slotempty { color: var(--text-faint); font-family: var(--font-mono); font-size: 0.7rem; }
+    .cp__remove {
+      background: none; border: 0; color: var(--text-faint);
+      font-size: 1.1rem; line-height: 1; cursor: pointer; padding: 0 0.2rem;
+    }
+    .cp__remove:hover { color: var(--tone-bad); }
+    .cp__actions { display: flex; gap: 0.4rem; margin-top: 0.5rem; }
+    .cp__btn {
+      font: inherit; font-size: 0.72rem; cursor: pointer;
+      background: var(--bg-elev); border: 1px solid var(--border-strong);
+      color: var(--text-dim); border-radius: var(--radius); padding: 0.25rem 0.55rem;
+    }
+    .cp__btn:hover { color: var(--gold); border-color: var(--gold-deep); }
+    .cp__slotnote { font-size: 0.72rem; color: var(--text-dim); margin: 0.5rem 0 0; }
+    .cp__link {
+      background: none; border: 0; padding: 0; font: inherit;
+      color: var(--gold-soft); cursor: pointer; text-decoration: underline;
+    }
+    /* display:flex would override the hidden attribute's UA display:none —
+       restate it or the panel never collapses. */
+    .cp__srclist[hidden] { display: none; }
+    .cp__srclist { margin-top: 0.4rem; display: flex; flex-direction: column; gap: 0.15rem; }
+    .cp__src { font-size: 0.74rem; color: var(--text-dim); }
+    .cp__src i { font-style: normal; color: var(--text-faint); font-size: 0.68rem; }
+    .cp__prestige { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+    .cp__pg { border: 1px solid var(--gold-deep); border-radius: 999px; padding: 0.1rem 0.55rem; }
+    .cp__none { font-size: 0.78rem; color: var(--text-faint); }
+
+    .cp__browserhead { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+    .cp__search { flex: 1; min-width: 14rem; }
+    .cp__browser {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+      gap: 0.35rem; max-height: 32rem; overflow-y: auto; padding-right: 0.3rem;
+    }
+    .cp__co {
+      display: grid; grid-template-columns: 24px 1fr; grid-template-areas: "i n" "i b" "i h";
+      gap: 0 0.5rem; text-align: left;
+      background: var(--bg-elev); border: 1px solid var(--border);
+      border-radius: 6px; padding: 0.4rem 0.55rem; cursor: pointer; font: inherit;
+      color: var(--text);
+    }
+    .cp__co:hover:not(:disabled) { border-color: var(--gold-deep); }
+    .cp__co.is-on { border-color: var(--gold); background: var(--bg-elev-2); box-shadow: inset 3px 0 0 var(--gold); }
+    .cp__co:disabled { opacity: 0.4; cursor: not-allowed; }
+    .cp__co img { grid-area: i; width: 24px; height: 24px; object-fit: contain; align-self: center; }
+    .cp__coname { grid-area: n; font-size: 0.8rem; font-weight: 500; }
+    .cp__cobuild { grid-area: b; font-size: 0.68rem; color: var(--text-dim); }
+    .cp__cohq { grid-area: h; font-size: 0.64rem; color: var(--text-faint); font-family: var(--font-mono); }
+
+    .cp__hint { font-size: 0.75rem; color: var(--text-dim); margin: 0 0 0.6rem; }
+    .cp__extmark { color: var(--accent-2); }
+    .cp__coverage { display: flex; flex-direction: column; gap: 0.6rem; }
+    .cp__cglabel {
+      font-family: var(--font-ui); font-size: 0.6rem; text-transform: uppercase;
+      letter-spacing: 0.16em; color: var(--gold-soft); margin-bottom: 0.25rem;
+    }
+    .cp__cgitems { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+    .cp__cov {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.76rem; padding: 0.18rem 0.5rem;
+      border-radius: 5px; border: 1px solid var(--border); color: var(--text);
+      text-decoration: none;
+    }
+    .cp__cov img { width: 17px; height: 17px; object-fit: contain; }
+    .cp__cov:hover { text-decoration: none; border-color: var(--gold); }
+    .cp__cov--own { border-color: color-mix(in srgb, var(--tone-good) 55%, var(--border)); background: color-mix(in srgb, var(--tone-good) 12%, transparent); }
+    .cp__cov--ext { border-color: color-mix(in srgb, var(--accent-2) 45%, var(--border)); background: color-mix(in srgb, var(--accent-2) 10%, transparent); }
+  </style>
+</Base>

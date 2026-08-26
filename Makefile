@@ -25,6 +25,7 @@ data:
 	node scripts/build_journal.mjs
 	node scripts/build_events.mjs
 	node scripts/build_profitcalc.mjs
+	node scripts/build_company_planner.mjs
 	node scripts/build_entities.mjs
 
 art:

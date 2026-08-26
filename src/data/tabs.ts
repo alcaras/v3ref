@@ -183,6 +183,11 @@ export const TABS: Tab[] = [
     summary: 'Pick a building and PMs, set prices, see throughput and profit',
   },
   {
+    slug: 'company-planner', icon: '🏢', label: 'Company Planner', section: 'Tools',
+    status: 'built',
+    summary: 'Fill your charter slots and see building coverage and prestige goods',
+  },
+  {
     slug: 'patch-notes', icon: '🛠', label: 'Patch Notes', section: 'Tools',
     status: 'placeholder',
     summary: 'What each patch changed in the data we track',
