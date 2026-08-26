@@ -18,8 +18,7 @@ const base = import.meta.env.BASE_URL;
         </div>
         <p class="rm__note">
           Pick one for a magnitude map. Pick two or three to compare — each gets its own hue and a
-          state takes the hue of whichever leads there. <b>Produced</b> layers are actual 1836 output;
-          the rest are what the ground can hold.
+          state takes the hue of whichever leads there.
         </p>
         <input id="rm-search" class="rail__select" type="search" placeholder="Find a layer…"
           style="margin-bottom:0.4rem;" />
@@ -130,19 +129,40 @@ const base = import.meta.env.BASE_URL;
         return $('rm-sqrt').checked ? Math.sqrt(v) / Math.sqrt(max) : v / max;
       };
 
+      // Two different questions live in this list, so they get separate
+      // headings: what the ground COULD support, and what is actually being
+      // made on the 1836 map.
+      const GROUPS = [
+        { id: 'deposit', title: 'Can be produced here', sub: 'deposits already on the map',
+          match: (l) => l.kind === 'capped' || l.kind === 'arable' },
+        { id: 'undiscovered', title: 'Could be found here', sub: 'revealed by prospecting',
+          match: (l) => l.kind === 'discoverable' },
+        { id: 'produced', title: 'Produced at game start', sub: 'output of the 1836 buildings',
+          match: (l) => l.kind === 'good' },
+        { id: 'people', title: 'People', sub: '', match: (l) => l.kind === 'pop' },
+      ];
+
       function renderLayers() {
         const q = ($('rm-search').value || '').trim().toLowerCase();
         // Never hide a selected layer, or you cannot switch it off.
         const shown = meta.layers.filter((l) => !q || l.name.toLowerCase().includes(q) || selected.includes(l.key));
-        $('rm-layers').innerHTML = shown.map((l) => {
+        const button = (l) => {
           const at = selected.indexOf(l.key);
           const on = at >= 0;
           const full = selected.length >= MAX_LAYERS && !on;
           return `<button type="button" class="rm__layer ${on ? 'is-on' : ''}" data-key="${l.key}"
                     ${full ? 'disabled title="Three layers is the readable maximum"' : ''}>
             <span class="rm__swatch" style="background:${on ? SERIES[at].hex : 'transparent'}"></span>
-            <span class="rm__lname">${l.name}</span>
+            <span class="rm__lname">${l.name.replace(/ (produced|\(undiscovered\))$/, '')}</span>
           </button>`;
+        };
+        $('rm-layers').innerHTML = GROUPS.map((g) => {
+          const items = shown.filter(g.match);
+          if (!items.length) return '';
+          return `<div class="rm__group">
+            <div class="rm__gtitle">${g.title}${g.sub ? `<i>${g.sub}</i>` : ''}</div>
+            ${items.map(button).join('')}
+          </div>`;
         }).join('');
         $('rm-layers').querySelectorAll('.rm__layer').forEach((b) =>
           b.addEventListener('click', () => {
@@ -349,6 +369,16 @@ const base = import.meta.env.BASE_URL;
     @media (max-width: 900px) { .rm { grid-template-columns: 1fr; } }
     .rm__note { font-size: 0.7rem; color: var(--text-faint); margin: 0.25rem 0 0.5rem; line-height: 1.45; }
     .rm__layers { display: flex; flex-direction: column; gap: 0.1rem; }
+    .rm__group { display: flex; flex-direction: column; gap: 0.05rem; margin-bottom: 0.5rem; }
+    .rm__gtitle {
+      font-family: var(--font-ui); font-size: 0.58rem; text-transform: uppercase;
+      letter-spacing: 0.14em; color: var(--gold-soft); font-weight: 500;
+      border-bottom: 1px solid var(--border); padding-bottom: 0.15rem; margin-bottom: 0.2rem;
+    }
+    .rm__gtitle i {
+      display: block; font-style: normal; text-transform: none; letter-spacing: 0.01em;
+      color: var(--text-faint); font-size: 0.62rem;
+    }
     .rm__layer {
       display: flex; align-items: center; gap: 0.45rem;
       background: none; border: 0; cursor: pointer; font: inherit; font-size: 0.78rem;
