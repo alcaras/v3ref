@@ -45,6 +45,9 @@ convert_dir "$ICONS/institution_icons" "$OUT/institutions"
 convert_dir "$ICONS/invention_icons" "$OUT/techs"
 convert_dir "$ICONS/character_trait_icons" "$OUT/traits"
 convert_dir "$ICONS/decree" "$OUT/decrees"
+convert_dir "$ICONS/diplomatic_treaties_articles_icons" "$OUT/treaties"
+convert_dir "$ICONS/central_identity_pillars_icons" "$OUT/identities"
+convert_dir "$ICONS/principles_icons" "$OUT/principles"
 
 # Site mark + favicon: the gold ingot (32px favicon from the goods icon).
 if [ -f "$OUT/goods/gold.png" ]; then

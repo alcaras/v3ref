@@ -116,7 +116,7 @@ export const TABS: Tab[] = [
   },
   {
     slug: 'treaties', icon: '🤝', label: 'Treaties', section: 'Diplomacy',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Every treaty article — requirements, effects, wargoal potential',
   },
   {
@@ -126,19 +126,19 @@ export const TABS: Tab[] = [
   },
   {
     slug: 'power-blocs', icon: '🌐', label: 'Power Blocs', section: 'Diplomacy',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Identities and principles with per-tier effects',
   },
 
   // ── World ─────────────────────────────────────────────────────────
   {
     slug: 'countries', icon: '🗺️', label: 'Countries', section: 'World',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Every 1836 country — tier, capital, cultures, starting setup',
   },
   {
     slug: 'states', icon: '⛰️', label: 'States', section: 'World',
-    status: 'placeholder',
+    status: 'built',
     summary: 'State regions — arable land, resources, traits, homelands',
   },
   {

@@ -1,0 +1,2816 @@
+{
+ "identities": [
+  {
+   "blocModifiers": [
+    {
+     "key": "power_bloc_customs_union_bool",
+     "label": "Customs Union",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_great_power_member_add",
+     "label": "Mandate Progress per Great Power",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_major_power_member_add",
+     "label": "Mandate Progress per Major Power",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_minor_power_member_add",
+     "label": "Mandate Progress per Minor Power",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_unrecognized_major_power_member_add",
+     "label": "Mandate Progress per Unrecognized Major Power",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_unrecognized_regional_power_member_add",
+     "label": "Mandate Progress per Unrecognized Regional Power",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "power_bloc_cohesion_per_member_add",
+     "label": "Power Bloc Cohesion per Power Bloc Member",
+     "tone": "bad",
+     "value": -1,
+     "valueText": "-1"
+    },
+    {
+     "key": "power_bloc_invite_acceptance_great_power_add",
+     "label": "Great Power Power Bloc Invitation Acceptance Chance",
+     "tone": "bad",
+     "value": -15,
+     "valueText": "-15"
+    }
+   ],
+   "icon": "img/identities/trade_league.png",
+   "id": "identity_trade_league",
+   "leaderModifiers": [
+    {
+     "key": "state_trade_capacity_mult",
+     "label": "Trade Capacity",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "memberModifiers": [],
+   "name": "Trade League",
+   "primaryPrincipleGroup": null
+  },
+  {
+   "blocModifiers": [
+    {
+     "key": "power_bloc_leader_can_make_subjects_bool",
+     "label": "Can Subjugate Power Bloc Member",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_great_power_member_add",
+     "label": "Mandate Progress per Great Power",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_major_power_member_add",
+     "label": "Mandate Progress per Major Power",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_minor_power_member_add",
+     "label": "Mandate Progress per Minor Power",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_unrecognized_major_power_member_add",
+     "label": "Mandate Progress per Unrecognized Major Power",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_unrecognized_regional_power_member_add",
+     "label": "Mandate Progress per Unrecognized Regional Power",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "power_bloc_invite_acceptance_great_power_add",
+     "label": "Great Power Power Bloc Invitation Acceptance Chance",
+     "tone": "bad",
+     "value": -20,
+     "valueText": "-20"
+    },
+    {
+     "key": "power_bloc_invite_acceptance_major_power_add",
+     "label": "Major Power Power Bloc Invitation Acceptance Chance",
+     "tone": "bad",
+     "value": -10,
+     "valueText": "-10"
+    },
+    {
+     "key": "power_bloc_invite_acceptance_unrecognized_major_power_add",
+     "label": "Unrecognized Major Power Power Bloc Invitation Acceptance Chance",
+     "tone": "bad",
+     "value": -10,
+     "valueText": "-10"
+    },
+    {
+     "key": "power_bloc_invite_acceptance_add",
+     "label": "Power Bloc Invitation Acceptance Chance",
+     "tone": "bad",
+     "value": -30,
+     "valueText": "-30"
+    },
+    {
+     "key": "power_bloc_cohesion_per_member_add",
+     "label": "Power Bloc Cohesion per Power Bloc Member",
+     "tone": "bad",
+     "value": -3,
+     "valueText": "-3"
+    }
+   ],
+   "icon": "img/identities/sovereign_empire.png",
+   "id": "identity_sovereign_empire",
+   "leaderModifiers": [
+    {
+     "key": "country_liberty_desire_of_subjects_add",
+     "label": "Weekly Liberty Desire for all Subjects",
+     "tone": "neutral",
+     "value": -0.05,
+     "valueText": "-0.05"
+    }
+   ],
+   "memberModifiers": [],
+   "name": "Sovereign Empire",
+   "primaryPrincipleGroup": null
+  },
+  {
+   "blocModifiers": [
+    {
+     "key": "power_bloc_leader_can_regime_change_bool",
+     "label": "Allows …",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_great_power_member_add",
+     "label": "Mandate Progress per Great Power",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_major_power_member_add",
+     "label": "Mandate Progress per Major Power",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_minor_power_member_add",
+     "label": "Mandate Progress per Minor Power",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_unrecognized_major_power_member_add",
+     "label": "Mandate Progress per Unrecognized Major Power",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_unrecognized_regional_power_member_add",
+     "label": "Mandate Progress per Unrecognized Regional Power",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "power_bloc_cohesion_per_member_add",
+     "label": "Power Bloc Cohesion per Power Bloc Member",
+     "tone": "bad",
+     "value": -2,
+     "valueText": "-2"
+    }
+   ],
+   "icon": "img/identities/ideological_union.png",
+   "id": "identity_ideological_union",
+   "leaderModifiers": [
+    {
+     "key": "country_law_enactment_speed_mult",
+     "label": "Enactment Speed",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool",
+     "label": "Impose same … Law on Bloc Members",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    },
+    {
+     "key": "country_can_impose_same_lawgroup_distribution_of_power_in_power_bloc_bool",
+     "label": "Impose same … Law on Bloc Members",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    }
+   ],
+   "memberModifiers": [],
+   "name": "Ideological Union",
+   "primaryPrincipleGroup": null
+  },
+  {
+   "blocModifiers": [
+    {
+     "key": "power_bloc_leader_can_add_wargoal_bool",
+     "label": "Allows free War Goal",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_great_power_member_add",
+     "label": "Mandate Progress per Great Power",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_major_power_member_add",
+     "label": "Mandate Progress per Major Power",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_minor_power_member_add",
+     "label": "Mandate Progress per Minor Power",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_unrecognized_major_power_member_add",
+     "label": "Mandate Progress per Unrecognized Major Power",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_unrecognized_regional_power_member_add",
+     "label": "Mandate Progress per Unrecognized Regional Power",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "power_bloc_invite_acceptance_great_power_add",
+     "label": "Great Power Power Bloc Invitation Acceptance Chance",
+     "tone": "bad",
+     "value": -15,
+     "valueText": "-15"
+    },
+    {
+     "key": "power_bloc_cohesion_per_member_add",
+     "label": "Power Bloc Cohesion per Power Bloc Member",
+     "tone": "bad",
+     "value": -2,
+     "valueText": "-2"
+    }
+   ],
+   "icon": "img/identities/military_treaty_organization.png",
+   "id": "identity_military_treaty_organization",
+   "leaderModifiers": [
+    {
+     "key": "country_prestige_from_army_power_projection_mult",
+     "label": "Prestige from Army Power Projection",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_prestige_from_navy_power_projection_mult",
+     "label": "Prestige from Navy Power Projection",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "memberModifiers": [
+    {
+     "key": "building_training_rate_mult",
+     "label": "Training Rate",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "Military Treaty",
+   "primaryPrincipleGroup": null
+  },
+  {
+   "blocModifiers": [
+    {
+     "key": "power_bloc_leader_can_force_state_religion_bool",
+     "label": "Allows …",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_great_power_member_add",
+     "label": "Mandate Progress per Great Power",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_major_power_member_add",
+     "label": "Mandate Progress per Major Power",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_minor_power_member_add",
+     "label": "Mandate Progress per Minor Power",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_unrecognized_major_power_member_add",
+     "label": "Mandate Progress per Unrecognized Major Power",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_unrecognized_regional_power_member_add",
+     "label": "Mandate Progress per Unrecognized Regional Power",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "power_bloc_cohesion_per_member_add",
+     "label": "Power Bloc Cohesion per Power Bloc Member",
+     "tone": "bad",
+     "value": -2,
+     "valueText": "-2"
+    }
+   ],
+   "icon": "img/identities/religious.png",
+   "id": "identity_religious",
+   "leaderModifiers": [
+    {
+     "key": "state_clergymen_investment_pool_efficiency_mult",
+     "label": "Clergymen Investment Pool contribution efficiency",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "memberModifiers": [
+    {
+     "key": "state_conversion_mult",
+     "label": "Conversion",
+     "tone": "good",
+     "value": 0.33,
+     "valueText": "+33%"
+    },
+    {
+     "key": "interest_group_ig_devout_pol_str_mult",
+     "label": "… Political Strength",
+     "tone": "neutral",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "state_birth_rate_mult",
+     "label": "Birth Rate",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Religious Convocation",
+   "primaryPrincipleGroup": null
+  },
+  {
+   "blocModifiers": [
+    {
+     "key": "power_bloc_leader_can_spread_culture_to_pb_bool",
+     "label": "Allows … in Power Bloc Members",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_great_power_member_add",
+     "label": "Mandate Progress per Great Power",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_major_power_member_add",
+     "label": "Mandate Progress per Major Power",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_minor_power_member_add",
+     "label": "Mandate Progress per Minor Power",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_unrecognized_major_power_member_add",
+     "label": "Mandate Progress per Unrecognized Major Power",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "power_bloc_mandate_progress_per_unrecognized_regional_power_member_add",
+     "label": "Mandate Progress per Unrecognized Regional Power",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "power_bloc_cohesion_per_member_add",
+     "label": "Power Bloc Cohesion per Power Bloc Member",
+     "tone": "bad",
+     "value": -2,
+     "valueText": "-2"
+    }
+   ],
+   "icon": "img/identities/cultural.png",
+   "id": "identity_cultural",
+   "leaderModifiers": [
+    {
+     "key": "country_can_impose_same_lawgroup_citizenship_in_power_bloc_bool",
+     "label": "Impose same … Law on Bloc Members",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    }
+   ],
+   "memberModifiers": [],
+   "name": "Cultural Commonwealth",
+   "primaryPrincipleGroup": null
+  }
+ ],
+ "principleGroups": [
+  {
+   "id": "principle_group_shared_canon",
+   "name": "Shared Canon",
+   "primaryFor": {
+    "id": "identity_cultural",
+    "name": "Cultural Commonwealth"
+   },
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/shared_canon.png",
+     "id": "principle_shared_canon_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_society_tech_spread_mult",
+       "label": "Technology Spread for Society",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Principle Shared Canon 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/shared_canon.png",
+     "id": "principle_shared_canon_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_society_tech_spread_mult",
+       "label": "Technology Spread for Society",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "state_assimilation_mult",
+       "label": "Assimilation",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Principle Shared Canon 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/shared_canon.png",
+     "id": "principle_shared_canon_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_society_tech_spread_mult",
+       "label": "Technology Spread for Society",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "state_assimilation_mult",
+       "label": "Assimilation",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_radicalism_increases_full_acceptance_mult",
+       "label": "Radicalism increases for the Full Acceptance Status",
+       "tone": "good",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Principle Shared Canon 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_construction",
+   "name": "Construction",
+   "primaryFor": null,
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/construction.png",
+     "id": "principle_construction_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "building_group_bg_construction_infrastructure_usage_mult",
+       "label": "Infrastructure Usage of Construction Sector buildings",
+       "tone": "good",
+       "value": -0.75,
+       "valueText": "-75%"
+      }
+     ],
+     "name": "Principle Construction 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/construction.png",
+     "id": "principle_construction_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "building_group_bg_construction_infrastructure_usage_mult",
+       "label": "Infrastructure Usage of Construction Sector buildings",
+       "tone": "good",
+       "value": -0.75,
+       "valueText": "-75%"
+      },
+      {
+       "key": "state_construction_mult",
+       "label": "State Construction Efficiency",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Principle Construction 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/construction.png",
+     "id": "principle_construction_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_construction_mult",
+       "label": "State Construction Efficiency",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_group_bg_construction_infrastructure_usage_mult",
+       "label": "Infrastructure Usage of Construction Sector buildings",
+       "tone": "good",
+       "value": -0.75,
+       "valueText": "-75%"
+      }
+     ],
+     "name": "Principle Construction 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_internal_trade",
+   "name": "Internal Trade",
+   "primaryFor": {
+    "id": "identity_trade_league",
+    "name": "Trade League"
+   },
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/internal_trade.png",
+     "id": "principle_internal_trade_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "building_port_throughput_add",
+       "label": "Port building Throughput",
+       "tone": "good",
+       "value": 0.05,
+       "valueText": "+5%"
+      },
+      {
+       "key": "state_infrastructure_mult",
+       "label": "Infrastructure",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Principle Internal Trade 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/internal_trade.png",
+     "id": "principle_internal_trade_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_infrastructure_mult",
+       "label": "Infrastructure",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_port_throughput_add",
+       "label": "Port building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_company_throughput_bonus_add",
+       "label": "Company Throughput Bonus",
+       "tone": "good",
+       "value": 0.05,
+       "valueText": "+5%"
+      }
+     ],
+     "name": "Principle Internal Trade 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/internal_trade.png",
+     "id": "principle_internal_trade_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_infrastructure_mult",
+       "label": "Infrastructure",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_port_throughput_add",
+       "label": "Port building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_company_throughput_bonus_add",
+       "label": "Company Throughput Bonus",
+       "tone": "good",
+       "value": 0.05,
+       "valueText": "+5%"
+      },
+      {
+       "key": "country_port_connection_cost_mult",
+       "label": "…Merchant Marine Cost of Port Connections",
+       "tone": "good",
+       "value": -0.25,
+       "valueText": "-25%"
+      }
+     ],
+     "name": "Principle Internal Trade 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_market_unification",
+   "name": "Market Unification",
+   "primaryFor": null,
+   "principles": [
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_disallow_embargo_bool",
+       "label": "Cannot place Embargo on another Power Bloc member",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      },
+      {
+       "key": "power_bloc_trade_advantage_add",
+       "label": "Trade Advantage within Power Bloc",
+       "tone": "good",
+       "value": 100,
+       "valueText": "+100"
+      }
+     ],
+     "icon": "img/principles/market_unification.png",
+     "id": "principle_market_unification_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_infrastructure_mult",
+       "label": "Infrastructure",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Principle Market Unification 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_customs_union_bool",
+       "label": "Customs Union",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "icon": "img/principles/market_unification.png",
+     "id": "principle_market_unification_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_infrastructure_mult",
+       "label": "Infrastructure",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Principle Market Unification 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_customs_union_bool",
+       "label": "Customs Union",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "icon": "img/principles/market_unification.png",
+     "id": "principle_market_unification_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_infrastructure_mult",
+       "label": "Infrastructure",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_ship_group_supply_ships_construction_efficiency_add",
+       "label": "Supply Ships Construction Efficiency",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Principle Market Unification 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_vassalization",
+   "name": "Vassalization",
+   "primaryFor": {
+    "id": "identity_sovereign_empire",
+    "name": "Sovereign Empire"
+   },
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/vassals_subjects.png",
+     "id": "principle_vassalization_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_authority_per_subject_add",
+       "label": "…Authority per Subject",
+       "tone": "good",
+       "value": 10,
+       "valueText": "+10"
+      }
+     ],
+     "name": "Principle Vassalization 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/vassals_subjects.png",
+     "id": "principle_vassalization_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_authority_per_subject_add",
+       "label": "…Authority per Subject",
+       "tone": "good",
+       "value": 15,
+       "valueText": "+15"
+      },
+      {
+       "key": "country_subject_income_transfer_mult",
+       "label": "Income transfer from Subjects",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      }
+     ],
+     "name": "Principle Vassalization 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/vassals_subjects.png",
+     "id": "principle_vassalization_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_authority_per_subject_add",
+       "label": "…Authority per Subject",
+       "tone": "good",
+       "value": 20,
+       "valueText": "+20"
+      },
+      {
+       "key": "country_subject_income_transfer_mult",
+       "label": "Income transfer from Subjects",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "country_allow_enacting_decrees_in_subject_bool",
+       "label": "Allow enacting Decrees on Subject States",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Vassalization 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_advanced_research",
+   "name": "Advanced Research",
+   "primaryFor": null,
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/advanced_research.png",
+     "id": "principle_advanced_research_1",
+     "institution": {
+      "id": "institution_schools",
+      "name": "Education"
+     },
+     "leaderModifiers": [
+      {
+       "key": "country_can_impose_same_lawgroup_education_system_in_power_bloc_bool",
+       "label": "Impose same … Law on Bloc Members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "memberModifiers": [
+      {
+       "key": "country_institution_size_change_speed_institution_schools_mult",
+       "label": "Institution Size Change Speed for …",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "country_institution_cost_institution_schools_mult",
+       "label": "…Bureaucracy Cost of …",
+       "tone": "good",
+       "value": -0.1,
+       "valueText": "-10%"
+      },
+      {
+       "key": "country_disallow_law_no_schools_bool",
+       "label": "Disallow …",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Advanced Research 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/advanced_research.png",
+     "id": "principle_advanced_research_2",
+     "institution": {
+      "id": "institution_schools",
+      "name": "Education"
+     },
+     "leaderModifiers": [
+      {
+       "key": "country_can_impose_same_lawgroup_education_system_in_power_bloc_bool",
+       "label": "Impose same … Law on Bloc Members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "memberModifiers": [
+      {
+       "key": "country_institution_size_change_speed_institution_schools_mult",
+       "label": "Institution Size Change Speed for …",
+       "tone": "good",
+       "value": 0.4,
+       "valueText": "+40%"
+      },
+      {
+       "key": "country_institution_cost_institution_schools_mult",
+       "label": "…Bureaucracy Cost of …",
+       "tone": "good",
+       "value": -0.25,
+       "valueText": "-25%"
+      },
+      {
+       "key": "country_disallow_law_no_schools_bool",
+       "label": "Disallow …",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Advanced Research 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/advanced_research.png",
+     "id": "principle_advanced_research_3",
+     "institution": {
+      "id": "institution_schools",
+      "name": "Education"
+     },
+     "leaderModifiers": [
+      {
+       "key": "country_can_impose_same_lawgroup_education_system_in_power_bloc_bool",
+       "label": "Impose same … Law on Bloc Members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "memberModifiers": [
+      {
+       "key": "country_institution_size_change_speed_institution_schools_mult",
+       "label": "Institution Size Change Speed for …",
+       "tone": "good",
+       "value": 0.5,
+       "valueText": "+50%"
+      },
+      {
+       "key": "country_institution_cost_institution_schools_mult",
+       "label": "…Bureaucracy Cost of …",
+       "tone": "good",
+       "value": -0.5,
+       "valueText": "-50%"
+      },
+      {
+       "key": "country_disallow_law_no_schools_bool",
+       "label": "Disallow …",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Advanced Research 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_defensive_cooperation",
+   "name": "Defensive Cooperation",
+   "primaryFor": {
+    "id": "identity_military_treaty_organization",
+    "name": "Military Treaty"
+   },
+   "principles": [
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_disallow_war_bool",
+       "label": "Cannot start or join wars amongst Power Bloc members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "icon": "img/principles/defensive_coorperation.png",
+     "id": "principle_defensive_cooperation_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [],
+     "name": "Principle Defensive Cooperation 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_disallow_war_bool",
+       "label": "Cannot start or join wars amongst Power Bloc members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      },
+      {
+       "key": "power_bloc_target_sway_cost_mult",
+       "label": "Sway Maneuver cost for the Diplomatic Play Target",
+       "tone": "good",
+       "value": -0.5,
+       "valueText": "-50%"
+      }
+     ],
+     "icon": "img/principles/defensive_coorperation.png",
+     "id": "principle_defensive_cooperation_2",
+     "institution": null,
+     "leaderModifiers": [
+      {
+       "key": "country_can_impose_same_lawgroup_army_model_in_power_bloc_bool",
+       "label": "Impose same … Law on Bloc Members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "memberModifiers": [],
+     "name": "Principle Defensive Cooperation 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_disallow_war_bool",
+       "label": "Cannot start or join wars amongst Power Bloc members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      },
+      {
+       "key": "power_bloc_target_sway_cost_mult",
+       "label": "Sway Maneuver cost for the Diplomatic Play Target",
+       "tone": "good",
+       "value": -0.5,
+       "valueText": "-50%"
+      }
+     ],
+     "icon": "img/principles/defensive_coorperation.png",
+     "id": "principle_defensive_cooperation_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_join_power_bloc_member_in_defensive_plays_bool",
+       "label": "Can call Power Bloc members with the Call Ally Sway in defensive Diplomatic Plays",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Defensive Cooperation 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_aggressive_coordination",
+   "name": "Aggressive Coordination",
+   "primaryFor": {
+    "id": "identity_military_treaty_organization",
+    "name": "Military Treaty"
+   },
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/aggressive_coordination.png",
+     "id": "principle_aggressive_coordination_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_initiator_war_goal_maneuver_cost_mult",
+       "label": "War Goal Maneuver cost for the Diplomatic Play Initiator",
+       "tone": "good",
+       "value": -0.3,
+       "valueText": "-30%"
+      }
+     ],
+     "name": "Principle Aggressive Coordination 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/aggressive_coordination.png",
+     "id": "principle_aggressive_coordination_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_initiator_war_goal_maneuver_cost_mult",
+       "label": "War Goal Maneuver cost for the Diplomatic Play Initiator",
+       "tone": "good",
+       "value": -0.3,
+       "valueText": "-30%"
+      },
+      {
+       "key": "country_war_exhaustion_casualties_mult",
+       "label": "War Exhaustion from Casualties",
+       "tone": "good",
+       "value": -0.15,
+       "valueText": "-15%"
+      }
+     ],
+     "name": "Principle Aggressive Coordination 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_cohesion_add",
+       "label": "Power Bloc Cohesion",
+       "tone": "bad",
+       "value": -10,
+       "valueText": "-10"
+      }
+     ],
+     "icon": "img/principles/aggressive_coordination.png",
+     "id": "principle_aggressive_coordination_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_initiator_war_goal_maneuver_cost_mult",
+       "label": "War Goal Maneuver cost for the Diplomatic Play Initiator",
+       "tone": "good",
+       "value": -0.3,
+       "valueText": "-30%"
+      },
+      {
+       "key": "country_war_exhaustion_casualties_mult",
+       "label": "War Exhaustion from Casualties",
+       "tone": "good",
+       "value": -0.15,
+       "valueText": "-15%"
+      },
+      {
+       "key": "country_join_power_bloc_member_in_plays_bool",
+       "label": "Can call Power Bloc members with the Call Ally Sway in all Diplomatic Plays",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      },
+      {
+       "key": "country_infamy_generation_mult",
+       "label": "Infamy Generation",
+       "tone": "bad",
+       "value": 0.15,
+       "valueText": "+15%"
+      }
+     ],
+     "name": "Principle Aggressive Coordination 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_external_trade",
+   "name": "External Trade",
+   "primaryFor": {
+    "id": "identity_trade_league",
+    "name": "Trade League"
+   },
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/external_trade.png",
+     "id": "principle_external_trade_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_trade_capacity_mult",
+       "label": "Trade Capacity",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "state_trade_advantage_mult",
+       "label": "Trade Advantage",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      }
+     ],
+     "name": "Principle External Trade 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/external_trade.png",
+     "id": "principle_external_trade_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_trade_capacity_mult",
+       "label": "Trade Capacity",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "state_trade_advantage_mult",
+       "label": "Trade Advantage",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      }
+     ],
+     "name": "Principle External Trade 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/external_trade.png",
+     "id": "principle_external_trade_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_trade_capacity_mult",
+       "label": "Trade Capacity",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "state_trade_advantage_mult",
+       "label": "Trade Advantage",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "country_no_advantage_loss_from_lack_of_interest_bool",
+       "label": "Ignores Trade Advantage penalty from Interests",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle External Trade 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_food_standardization",
+   "name": "Food Standardization",
+   "primaryFor": null,
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/food_standardization.png",
+     "id": "principle_food_standardization_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "building_group_bg_agriculture_throughput_add",
+       "label": "Agriculture Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Principle Food Standardization 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/food_standardization.png",
+     "id": "principle_food_standardization_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "building_group_bg_agriculture_throughput_add",
+       "label": "Agriculture Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "state_mortality_mult",
+       "label": "Mortality",
+       "tone": "good",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Principle Food Standardization 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/food_standardization.png",
+     "id": "principle_food_standardization_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "building_group_bg_agriculture_throughput_add",
+       "label": "Agriculture Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "state_mortality_mult",
+       "label": "Mortality",
+       "tone": "good",
+       "value": -0.1,
+       "valueText": "-10%"
+      },
+      {
+       "key": "state_standard_of_living_add",
+       "label": "Standard of Living",
+       "tone": "good",
+       "value": 1,
+       "valueText": "+1"
+      }
+     ],
+     "name": "Principle Food Standardization 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_police_coordination",
+   "name": "Police Coordination",
+   "primaryFor": null,
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/dedicated_police.png",
+     "id": "principle_police_coordination_1",
+     "institution": null,
+     "leaderModifiers": [
+      {
+       "key": "country_can_impose_same_lawgroup_policing_in_power_bloc_bool",
+       "label": "Impose same … Law on Bloc Members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "memberModifiers": [
+      {
+       "key": "country_institution_size_change_speed_institution_police_mult",
+       "label": "Institution Size Change Speed for …",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "country_institution_cost_institution_police_mult",
+       "label": "…Bureaucracy Cost of …",
+       "tone": "good",
+       "value": -0.1,
+       "valueText": "-10%"
+      },
+      {
+       "key": "country_disallow_law_no_police_bool",
+       "label": "Disallow …",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Police Coordination 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/dedicated_police.png",
+     "id": "principle_police_coordination_2",
+     "institution": {
+      "id": "institution_police",
+      "name": "Law Enforcement"
+     },
+     "leaderModifiers": [
+      {
+       "key": "country_can_impose_same_lawgroup_policing_in_power_bloc_bool",
+       "label": "Impose same … Law on Bloc Members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "memberModifiers": [
+      {
+       "key": "country_institution_size_change_speed_institution_police_mult",
+       "label": "Institution Size Change Speed for …",
+       "tone": "good",
+       "value": 0.4,
+       "valueText": "+40%"
+      },
+      {
+       "key": "country_institution_cost_institution_police_mult",
+       "label": "…Bureaucracy Cost of …",
+       "tone": "good",
+       "value": -0.25,
+       "valueText": "-25%"
+      },
+      {
+       "key": "country_disallow_law_no_police_bool",
+       "label": "Disallow …",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Police Coordination 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/dedicated_police.png",
+     "id": "principle_police_coordination_3",
+     "institution": {
+      "id": "institution_police",
+      "name": "Law Enforcement"
+     },
+     "leaderModifiers": [
+      {
+       "key": "country_can_impose_same_lawgroup_policing_in_power_bloc_bool",
+       "label": "Impose same … Law on Bloc Members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "memberModifiers": [
+      {
+       "key": "country_institution_size_change_speed_institution_police_mult",
+       "label": "Institution Size Change Speed for …",
+       "tone": "good",
+       "value": 0.5,
+       "valueText": "+50%"
+      },
+      {
+       "key": "country_institution_cost_institution_police_mult",
+       "label": "…Bureaucracy Cost of …",
+       "tone": "good",
+       "value": -0.5,
+       "valueText": "-50%"
+      },
+      {
+       "key": "country_disallow_law_no_police_bool",
+       "label": "Disallow …",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Police Coordination 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_transport",
+   "name": "Transportation Infrastructure",
+   "primaryFor": null,
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/transport.png",
+     "id": "principle_transport_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_infrastructure_from_population_mult",
+       "label": "Infrastructure per … Population",
+       "tone": "good",
+       "value": 0.33,
+       "valueText": "+33%"
+      },
+      {
+       "key": "state_infrastructure_from_population_max_mult",
+       "label": "Maximum Infrastructure from Population",
+       "tone": "good",
+       "value": 0.33,
+       "valueText": "+33%"
+      }
+     ],
+     "name": "Principle Transport 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/transport.png",
+     "id": "principle_transport_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_infrastructure_from_population_mult",
+       "label": "Infrastructure per … Population",
+       "tone": "good",
+       "value": 0.33,
+       "valueText": "+33%"
+      },
+      {
+       "key": "state_infrastructure_from_population_max_mult",
+       "label": "Maximum Infrastructure from Population",
+       "tone": "good",
+       "value": 0.33,
+       "valueText": "+33%"
+      },
+      {
+       "key": "building_port_throughput_add",
+       "label": "Port building Throughput",
+       "tone": "good",
+       "value": 0.2,
+       "valueText": "+20%"
+      }
+     ],
+     "name": "Principle Transport 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/transport.png",
+     "id": "principle_transport_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "building_port_throughput_add",
+       "label": "Port building Throughput",
+       "tone": "good",
+       "value": 0.2,
+       "valueText": "+20%"
+      },
+      {
+       "key": "state_infrastructure_from_population_mult",
+       "label": "Infrastructure per … Population",
+       "tone": "good",
+       "value": 0.33,
+       "valueText": "+33%"
+      },
+      {
+       "key": "state_infrastructure_from_population_max_mult",
+       "label": "Maximum Infrastructure from Population",
+       "tone": "good",
+       "value": 0.33,
+       "valueText": "+33%"
+      },
+      {
+       "key": "building_economy_of_scale_level_cap_add",
+       "label": "Economy of Scale Building Level Cap",
+       "tone": "good",
+       "value": 10,
+       "valueText": "+10"
+      }
+     ],
+     "name": "Principle Transport 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_military_industry",
+   "name": "Militarized Industry",
+   "primaryFor": null,
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/military_industry.png",
+     "id": "principle_military_industry_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "building_automotive_industry_throughput_add",
+       "label": "Automotive Industries building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_arms_industry_throughput_add",
+       "label": "Arms Industries building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_artillery_foundry_throughput_add",
+       "label": "Artillery Foundry building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_shipyard_throughput_add",
+       "label": "Shipyards building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Principle Military Industry 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/military_industry.png",
+     "id": "principle_military_industry_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "building_automotive_industry_throughput_add",
+       "label": "Automotive Industries building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_arms_industry_throughput_add",
+       "label": "Arms Industries building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_artillery_foundry_throughput_add",
+       "label": "Artillery Foundry building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_shipyard_throughput_add",
+       "label": "Shipyards building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_military_goods_cost_mult",
+       "label": "Military Goods Cost",
+       "tone": "good",
+       "value": -0.15,
+       "valueText": "-15%"
+      }
+     ],
+     "name": "Principle Military Industry 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/military_industry.png",
+     "id": "principle_military_industry_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "building_automotive_industry_throughput_add",
+       "label": "Automotive Industries building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_arms_industry_throughput_add",
+       "label": "Arms Industries building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_artillery_foundry_throughput_add",
+       "label": "Artillery Foundry building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_shipyard_throughput_add",
+       "label": "Shipyards building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_military_goods_cost_mult",
+       "label": "Military Goods Cost",
+       "tone": "good",
+       "value": -0.15,
+       "valueText": "-15%"
+      }
+     ],
+     "name": "Principle Military Industry 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_colonial_offices",
+   "name": "Colonial Offices",
+   "primaryFor": null,
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/colonial_offices.png",
+     "id": "principle_colonial_offices_1",
+     "institution": null,
+     "leaderModifiers": [
+      {
+       "key": "country_can_impose_same_lawgroup_colonization_in_power_bloc_bool",
+       "label": "Impose same … Law on Bloc Members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "memberModifiers": [
+      {
+       "key": "country_institution_size_change_speed_institution_colonial_affairs_mult",
+       "label": "Institution Size Change Speed for …",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "country_institution_cost_institution_colonial_affairs_mult",
+       "label": "…Bureaucracy Cost of …",
+       "tone": "good",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Principle Colonial Offices 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/colonial_offices.png",
+     "id": "principle_colonial_offices_2",
+     "institution": {
+      "id": "institution_colonial_affairs",
+      "name": "Colonial Affairs"
+     },
+     "leaderModifiers": [
+      {
+       "key": "country_can_impose_same_lawgroup_colonization_in_power_bloc_bool",
+       "label": "Impose same … Law on Bloc Members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "memberModifiers": [
+      {
+       "key": "country_institution_size_change_speed_institution_colonial_affairs_mult",
+       "label": "Institution Size Change Speed for …",
+       "tone": "good",
+       "value": 0.4,
+       "valueText": "+40%"
+      },
+      {
+       "key": "country_institution_cost_institution_colonial_affairs_mult",
+       "label": "…Bureaucracy Cost of …",
+       "tone": "good",
+       "value": -0.25,
+       "valueText": "-25%"
+      }
+     ],
+     "name": "Principle Colonial Offices 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/colonial_offices.png",
+     "id": "principle_colonial_offices_3",
+     "institution": {
+      "id": "institution_colonial_affairs",
+      "name": "Colonial Affairs"
+     },
+     "leaderModifiers": [
+      {
+       "key": "country_can_impose_same_lawgroup_colonization_in_power_bloc_bool",
+       "label": "Impose same … Law on Bloc Members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "memberModifiers": [
+      {
+       "key": "country_institution_size_change_speed_institution_colonial_affairs_mult",
+       "label": "Institution Size Change Speed for …",
+       "tone": "good",
+       "value": 0.5,
+       "valueText": "+50%"
+      },
+      {
+       "key": "country_institution_cost_institution_colonial_affairs_mult",
+       "label": "…Bureaucracy Cost of …",
+       "tone": "good",
+       "value": -0.5,
+       "valueText": "-50%"
+      }
+     ],
+     "name": "Principle Colonial Offices 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_foreign_investment",
+   "name": "Foreign Investment",
+   "primaryFor": null,
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/foreign_investment.png",
+     "id": "principle_foreign_investment_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_higher_leverage_from_economic_dependence_bool",
+       "label": "Increased Leverage from Economic Dependence",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Foreign Investment 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/foreign_investment.png",
+     "id": "principle_foreign_investment_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_nationalization_cost_non_members_mult",
+       "label": "Cost for Nationalization",
+       "tone": "good",
+       "value": -0.5,
+       "valueText": "-50%"
+      },
+      {
+       "key": "country_higher_leverage_from_economic_dependence_bool",
+       "label": "Increased Leverage from Economic Dependence",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Foreign Investment 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_allow_foreign_investment_lower_rank_bool",
+       "label": "Foreign Investment Rights in Power Bloc Member with lower Rank",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "icon": "img/principles/foreign_investment.png",
+     "id": "principle_foreign_investment_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_nationalization_cost_non_members_mult",
+       "label": "Cost for Nationalization",
+       "tone": "good",
+       "value": -0.5,
+       "valueText": "-50%"
+      },
+      {
+       "key": "country_higher_leverage_from_economic_dependence_bool",
+       "label": "Increased Leverage from Economic Dependence",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Foreign Investment 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_creative_legislature",
+   "name": "Creative Legislature",
+   "primaryFor": {
+    "id": "identity_ideological_union",
+    "name": "Ideological Union"
+   },
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/creative_legislature.png",
+     "id": "principle_creative_legislature_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_law_enactment_stall_mult",
+       "label": "Enactment Stall Chance",
+       "tone": "good",
+       "value": -0.33,
+       "valueText": "-33%"
+      }
+     ],
+     "name": "Principle Creative Legislature 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/creative_legislature.png",
+     "id": "principle_creative_legislature_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_law_enactment_stall_mult",
+       "label": "Enactment Stall Chance",
+       "tone": "good",
+       "value": -0.33,
+       "valueText": "-33%"
+      },
+      {
+       "key": "political_movement_radicalism_from_enactment_disapproval_mult",
+       "label": "Political Movement Activism Increase from Disapproved Enactment",
+       "tone": "good",
+       "value": -0.25,
+       "valueText": "-25%"
+      },
+      {
+       "key": "political_movement_radicalism_from_enactment_approval_mult",
+       "label": "Political Movement Activism Reduction from Approved Enactment",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      }
+     ],
+     "name": "Principle Creative Legislature 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/creative_legislature.png",
+     "id": "principle_creative_legislature_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_law_enactment_stall_mult",
+       "label": "Enactment Stall Chance",
+       "tone": "good",
+       "value": -0.33,
+       "valueText": "-33%"
+      },
+      {
+       "key": "political_movement_radicalism_from_enactment_disapproval_mult",
+       "label": "Political Movement Activism Increase from Disapproved Enactment",
+       "tone": "good",
+       "value": -0.25,
+       "valueText": "-25%"
+      },
+      {
+       "key": "political_movement_radicalism_from_enactment_approval_mult",
+       "label": "Political Movement Activism Reduction from Approved Enactment",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "country_law_enactment_max_setbacks_add",
+       "label": "Maximum Law Enactment Setbacks",
+       "tone": "good",
+       "value": 1,
+       "valueText": "+1"
+      }
+     ],
+     "name": "Principle Creative Legislature 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_freedom_of_movement",
+   "name": "Freedom of Movement",
+   "primaryFor": {
+    "id": "identity_cultural",
+    "name": "Cultural Commonwealth"
+   },
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/freedom_of_movement.png",
+     "id": "principle_freedom_of_movement_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_migration_quota_mult",
+       "label": "Migration Quota",
+       "tone": "neutral",
+       "value": 0.25,
+       "valueText": "+25%"
+      }
+     ],
+     "name": "Principle Freedom Of Movement 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/freedom_of_movement.png",
+     "id": "principle_freedom_of_movement_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_migration_quota_mult",
+       "label": "Migration Quota",
+       "tone": "neutral",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "country_mass_migration_attraction_mult",
+       "label": "Mass Migration Attraction",
+       "tone": "good",
+       "value": 0.5,
+       "valueText": "+50%"
+      }
+     ],
+     "name": "Principle Freedom Of Movement 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_allow_wider_migration_area_bool",
+       "label": "Allow Migration within a Power Bloc",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "icon": "img/principles/freedom_of_movement.png",
+     "id": "principle_freedom_of_movement_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_migration_quota_mult",
+       "label": "Migration Quota",
+       "tone": "neutral",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "country_mass_migration_attraction_mult",
+       "label": "Mass Migration Attraction",
+       "tone": "good",
+       "value": 0.5,
+       "valueText": "+50%"
+      }
+     ],
+     "name": "Principle Freedom Of Movement 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_divine_economics",
+   "name": "Divine Economics",
+   "primaryFor": {
+    "id": "identity_religious",
+    "name": "Religious Convocation"
+   },
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/divine_economy.png",
+     "id": "principle_divine_economics_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_trade_advantage_same_religion_add",
+       "label": "Trade Advantage with Co-Religionists",
+       "tone": "good",
+       "value": 50,
+       "valueText": "+50"
+      },
+      {
+       "key": "country_subject_income_transfer_heathen_mult",
+       "label": "Income transfer from Heathen Subjects",
+       "tone": "good",
+       "value": 0.5,
+       "valueText": "+50%"
+      }
+     ],
+     "name": "Principle Divine Economics 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/divine_economy.png",
+     "id": "principle_divine_economics_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_trade_advantage_same_religion_add",
+       "label": "Trade Advantage with Co-Religionists",
+       "tone": "good",
+       "value": 50,
+       "valueText": "+50"
+      },
+      {
+       "key": "country_subject_income_transfer_heathen_mult",
+       "label": "Income transfer from Heathen Subjects",
+       "tone": "good",
+       "value": 0.5,
+       "valueText": "+50%"
+      }
+     ],
+     "name": "Principle Divine Economics 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/divine_economy.png",
+     "id": "principle_divine_economics_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "state_trade_advantage_same_religion_add",
+       "label": "Trade Advantage with Co-Religionists",
+       "tone": "good",
+       "value": 50,
+       "valueText": "+50"
+      },
+      {
+       "key": "country_subject_income_transfer_heathen_mult",
+       "label": "Income transfer from Heathen Subjects",
+       "tone": "good",
+       "value": 0.5,
+       "valueText": "+50%"
+      },
+      {
+       "key": "country_state_religion_wages_mult",
+       "label": "Wages for State Religion Pops",
+       "tone": "neutral",
+       "value": 0.25,
+       "valueText": "+25%"
+      }
+     ],
+     "name": "Principle Divine Economics 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_exploit_members",
+   "name": "Exploitation of Members",
+   "primaryFor": {
+    "id": "identity_sovereign_empire",
+    "name": "Sovereign Empire"
+   },
+   "principles": [
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_cohesion_add",
+       "label": "Power Bloc Cohesion",
+       "tone": "bad",
+       "value": -5,
+       "valueText": "-5"
+      }
+     ],
+     "icon": "img/principles/exploitation_of_members.png",
+     "id": "principle_exploit_members_1",
+     "institution": null,
+     "leaderModifiers": [
+      {
+       "key": "country_authority_mult",
+       "label": "…Authority",
+       "tone": "good",
+       "value": 0.2,
+       "valueText": "+20%"
+      }
+     ],
+     "memberModifiers": [],
+     "name": "Principle Exploit Members 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_cohesion_add",
+       "label": "Power Bloc Cohesion",
+       "tone": "bad",
+       "value": -10,
+       "valueText": "-10"
+      }
+     ],
+     "icon": "img/principles/exploitation_of_members.png",
+     "id": "principle_exploit_members_2",
+     "institution": null,
+     "leaderModifiers": [
+      {
+       "key": "country_authority_mult",
+       "label": "…Authority",
+       "tone": "good",
+       "value": 0.2,
+       "valueText": "+20%"
+      },
+      {
+       "key": "country_influence_mult",
+       "label": "…Influence",
+       "tone": "good",
+       "value": 0.2,
+       "valueText": "+20%"
+      }
+     ],
+     "memberModifiers": [],
+     "name": "Principle Exploit Members 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_cohesion_add",
+       "label": "Power Bloc Cohesion",
+       "tone": "bad",
+       "value": -20,
+       "valueText": "-20"
+      },
+      {
+       "key": "power_bloc_income_transfer_to_leader_factor",
+       "label": "Income Transfer to Power Bloc Leader",
+       "tone": "neutral",
+       "value": 0.05,
+       "valueText": "+0.05"
+      }
+     ],
+     "icon": "img/principles/exploitation_of_members.png",
+     "id": "principle_exploit_members_3",
+     "institution": null,
+     "leaderModifiers": [
+      {
+       "key": "country_authority_mult",
+       "label": "…Authority",
+       "tone": "good",
+       "value": 0.2,
+       "valueText": "+20%"
+      },
+      {
+       "key": "country_influence_mult",
+       "label": "…Influence",
+       "tone": "good",
+       "value": 0.2,
+       "valueText": "+20%"
+      }
+     ],
+     "memberModifiers": [],
+     "name": "Principle Exploit Members 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_sacred_civics",
+   "name": "Sacred Civics",
+   "primaryFor": {
+    "id": "identity_religious",
+    "name": "Religious Convocation"
+   },
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/sacred_civics.png",
+     "id": "principle_sacred_civics_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_higher_diplomatic_acceptance_same_religion_bool",
+       "label": "Higher Diplomatic Proposal Acceptance for Countries with same Religion",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Sacred Civics 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/sacred_civics.png",
+     "id": "principle_sacred_civics_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_higher_diplomatic_acceptance_same_religion_bool",
+       "label": "Higher Diplomatic Proposal Acceptance for Countries with same Religion",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      },
+      {
+       "key": "country_reduced_liberty_desire_same_religion_bool",
+       "label": "Reduced Liberty Desire for Same Religion",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Sacred Civics 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/sacred_civics.png",
+     "id": "principle_sacred_civics_3",
+     "institution": null,
+     "leaderModifiers": [
+      {
+       "key": "country_can_impose_same_lawgroup_church_and_state_in_power_bloc_bool",
+       "label": "Impose same … Law on Bloc Members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "memberModifiers": [
+      {
+       "key": "country_higher_diplomatic_acceptance_same_religion_bool",
+       "label": "Higher Diplomatic Proposal Acceptance for Countries with same Religion",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      },
+      {
+       "key": "country_reduced_liberty_desire_same_religion_bool",
+       "label": "Reduced Liberty Desire for Same Religion",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "name": "Principle Sacred Civics 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_ideological_truth",
+   "name": "Ideological Truth",
+   "primaryFor": {
+    "id": "identity_ideological_union",
+    "name": "Ideological Union"
+   },
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/ideological_truth.png",
+     "id": "principle_ideological_truth_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "interest_group_in_opposition_agitator_popularity_add",
+       "label": "Popularity of Agitators In Opposition",
+       "tone": "bad",
+       "value": -33,
+       "valueText": "-33"
+      },
+      {
+       "key": "country_bolster_cost_mult",
+       "label": "Bolstering cost",
+       "tone": "good",
+       "value": -0.25,
+       "valueText": "-25%"
+      },
+      {
+       "key": "country_suppression_cost_mult",
+       "label": "Suppression cost",
+       "tone": "good",
+       "value": -0.25,
+       "valueText": "-25%"
+      }
+     ],
+     "name": "Principle Ideological Truth 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/ideological_truth.png",
+     "id": "principle_ideological_truth_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "interest_group_in_opposition_agitator_popularity_add",
+       "label": "Popularity of Agitators In Opposition",
+       "tone": "bad",
+       "value": -33,
+       "valueText": "-33"
+      },
+      {
+       "key": "country_bolster_cost_mult",
+       "label": "Bolstering cost",
+       "tone": "good",
+       "value": -0.25,
+       "valueText": "-25%"
+      },
+      {
+       "key": "country_suppression_cost_mult",
+       "label": "Suppression cost",
+       "tone": "good",
+       "value": -0.25,
+       "valueText": "-25%"
+      },
+      {
+       "key": "country_party_whip_impact_add",
+       "label": "Party Whip Impact on Ideological Incoherence",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Principle Ideological Truth 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/ideological_truth.png",
+     "id": "principle_ideological_truth_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "interest_group_in_opposition_agitator_popularity_add",
+       "label": "Popularity of Agitators In Opposition",
+       "tone": "bad",
+       "value": -33,
+       "valueText": "-33"
+      },
+      {
+       "key": "country_bolster_cost_mult",
+       "label": "Bolstering cost",
+       "tone": "good",
+       "value": -0.25,
+       "valueText": "-25%"
+      },
+      {
+       "key": "country_suppression_cost_mult",
+       "label": "Suppression cost",
+       "tone": "good",
+       "value": -0.25,
+       "valueText": "-25%"
+      },
+      {
+       "key": "country_party_whip_impact_add",
+       "label": "Party Whip Impact on Ideological Incoherence",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_legitimacy_min_add",
+       "label": "Minimum Legitimacy",
+       "tone": "neutral",
+       "value": 25,
+       "valueText": "+25"
+      }
+     ],
+     "name": "Principle Ideological Truth 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_companies",
+   "name": "Companies",
+   "primaryFor": null,
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/companies.png",
+     "id": "principle_companies_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_company_throughput_bonus_add",
+       "label": "Company Throughput Bonus",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Principle Companies 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/companies.png",
+     "id": "principle_companies_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_company_throughput_bonus_add",
+       "label": "Company Throughput Bonus",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_free_charters_add",
+       "label": "Free Company Charters",
+       "tone": "good",
+       "value": 1,
+       "valueText": "+1"
+      }
+     ],
+     "name": "Principle Companies 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/companies.png",
+     "id": "principle_companies_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "country_company_throughput_bonus_add",
+       "label": "Company Throughput Bonus",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_free_charters_add",
+       "label": "Free Company Charters",
+       "tone": "good",
+       "value": 1,
+       "valueText": "+1"
+      },
+      {
+       "key": "country_max_companies_add",
+       "label": "Max Number of Companies",
+       "tone": "good",
+       "value": 1,
+       "valueText": "+1"
+      }
+     ],
+     "name": "Principle Companies 3",
+     "tier": 3
+    }
+   ]
+  },
+  {
+   "id": "principle_group_navy",
+   "name": "Maritime Supremacy",
+   "primaryFor": null,
+   "principles": [
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/fleet_unification.png",
+     "id": "principle_navy_1",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "ship_interest_gain_mult",
+       "label": "Ship Involvement Generation",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_flagship_interest_gain_mult",
+       "label": "Flagship Involvement Gain",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Principle Navy 1",
+     "tier": 1
+    },
+    {
+     "blocModifiers": [],
+     "icon": "img/principles/fleet_unification.png",
+     "id": "principle_navy_2",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "ship_interest_gain_mult",
+       "label": "Ship Involvement Generation",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_flagship_interest_gain_mult",
+       "label": "Flagship Involvement Gain",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_ship_construction_progress_max_add",
+       "label": "Max Ship Construction Progress",
+       "tone": "good",
+       "value": 5,
+       "valueText": "+5"
+      }
+     ],
+     "name": "Principle Navy 2",
+     "tier": 2
+    },
+    {
+     "blocModifiers": [
+      {
+       "key": "power_bloc_allow_port_access_bool",
+       "label": "Allows port access between Power Bloc members",
+       "tone": "neutral",
+       "value": true,
+       "valueText": "yes"
+      }
+     ],
+     "icon": "img/principles/fleet_unification.png",
+     "id": "principle_navy_3",
+     "institution": null,
+     "leaderModifiers": [],
+     "memberModifiers": [
+      {
+       "key": "ship_interest_gain_mult",
+       "label": "Ship Involvement Generation",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_flagship_interest_gain_mult",
+       "label": "Flagship Involvement Gain",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_ship_construction_progress_max_add",
+       "label": "Max Ship Construction Progress",
+       "tone": "good",
+       "value": 5,
+       "valueText": "+5"
+      },
+      {
+       "key": "country_navy_goods_cost_mult",
+       "label": "Navy Goods Cost",
+       "tone": "good",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Principle Navy 3",
+     "tier": 3
+    }
+   ]
+  }
+ ]
+}

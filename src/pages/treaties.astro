@@ -1,0 +1,94 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import ModifierList from '../components/ModifierList.astro';
+import treatiesJson from '../data/treaties.json';
+
+const base = import.meta.env.BASE_URL;
+const treaties = (treatiesJson as any).treaties as any[];
+
+const csv = {
+  header: ['Article', 'Id', 'Kind', 'Cost', 'Usage', 'Requires tech', 'Flags', 'Exclusive with', 'Effects'],
+  rows: treaties.map((t) => [
+    t.name, t.id, t.kind ?? '', t.cost ?? '', t.usageLimit ?? '',
+    t.techs.map((x: any) => x.name).join('; '), t.flags.join('; '),
+    t.exclusions.map((x: any) => x.name).join('; '),
+    [...t.mutual, ...t.source, ...t.target].map((m: any) => `${m.valueText} ${m.label}`).join('; '),
+  ]),
+};
+---
+<Base
+  title="Treaties"
+  active="treaties"
+  eyebrow="Diplomacy"
+  pageFilter="Filter treaty articles…"
+  pageStats={[{ value: treaties.length, label: 'treaty articles' }]}
+>
+  <TableTools csvId="treaties" csvName="victoria3-treaty-articles" />
+
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl" id="treaties-table" data-sortable>
+        <thead>
+          <tr>
+            <th style="min-width: 13rem;">Article</th>
+            <th style="width: 6rem;" title="mutual = binds both sides; directed = one side gives, one receives">Kind</th>
+            <th class="num" style="width: 5rem;" title="Base value for treaty balance haggling">Cost</th>
+            <th style="width: 12rem;">Requires</th>
+            <th style="min-width: 14rem;">Effects</th>
+            <th style="width: 14rem;">Exclusive with</th>
+            <th style="min-width: 12rem;">Flags</th>
+          </tr>
+        </thead>
+        <tbody>
+          {treaties.map((t) => (
+            <tr id={t.id} data-name={`${t.name} ${t.id} ${t.flags.join(' ')}`.toLowerCase()}>
+              <td class="lead-cell" data-sort={t.name}>
+                <span class="lead">
+                  <img class="lead__icon" src={`${base}${t.icon}`} alt="" loading="lazy" />
+                  {t.name}
+                </span>
+              </td>
+              <td class="dim">{t.kind ?? <span class="cell__dash">—</span>}</td>
+              <td class="num" data-sort={t.cost ?? ''}>{t.cost ?? <span class="cell__dash">—</span>}</td>
+              <td class="dim">{t.techs.length ? t.techs.map((x: any) => x.name).join(', ') : <span class="cell__dash">—</span>}</td>
+              <td>
+                {t.mutual.length > 0 && <div><span class="tscope">both</span> <ModifierList mods={t.mutual} inline /></div>}
+                {t.source.length > 0 && <div><span class="tscope">giver</span> <ModifierList mods={t.source} inline /></div>}
+                {t.target.length > 0 && <div><span class="tscope">receiver</span> <ModifierList mods={t.target} inline /></div>}
+                {!t.mutual.length && !t.source.length && !t.target.length && <span class="cell__dash">—</span>}
+              </td>
+              <td class="dim">{t.exclusions.length ? t.exclusions.map((x: any) => x.name).join(', ') : <span class="cell__dash">—</span>}</td>
+              <td class="dim" style="font-size: 0.72rem;">{t.flags.join(', ') || <span class="cell__dash">—</span>}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="caption">Scripted article behavior (wargoal validity, AI acceptance) lives in triggers not shown here</p>
+
+  <script is:inline define:vars={{ csv }}>
+    window.v3Csv = window.v3Csv || {};
+    window.v3Csv.treaties = () => csv;
+  </script>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const rows = [...document.querySelectorAll('#treaties-table tbody tr')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const r of rows) r.classList.toggle('is-hidden', !!q && !r.dataset.name.includes(q));
+      });
+    }
+  </script>
+
+  <style is:global>
+    .tscope {
+      font-family: var(--font-mono); font-size: 0.58rem; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--gold-soft); margin-right: 0.25rem;
+    }
+  </style>
+</Base>

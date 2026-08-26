@@ -78,6 +78,24 @@ for (const t of gen('character_traits.json').traits) {
 for (const d of gen('decrees.json').decrees) {
   entities.push({ id: d.id, type: 'decree', slug: d.id, name: d.name, icon: d.icon, page: `decrees#${d.id}` });
 }
+for (const c of gen('countries.json').countries) {
+  entities.push({
+    id: c.tag, type: 'country', slug: c.tag, name: c.name, icon: null,
+    page: `countries#${c.tag}`, group: c.dynamic ? 'formable' : (c.type ?? null),
+  });
+}
+for (const s of gen('states.json').states) {
+  entities.push({
+    id: s.id, type: 'state', slug: s.id, name: s.name, icon: null,
+    page: `states#${s.id}`, group: s.region?.name ?? null,
+  });
+}
+for (const t of gen('treaties.json').treaties) {
+  entities.push({ id: t.id, type: 'treaty_article', slug: t.id, name: t.name, icon: t.icon, page: `treaties#${t.id}` });
+}
+for (const i of gen('power_blocs.json').identities) {
+  entities.push({ id: i.id, type: 'bloc_identity', slug: i.id, name: i.name, icon: i.icon, page: `power-blocs#${i.id}` });
+}
 
 entities.sort((a, b) => a.id.localeCompare(b.id));
 writeFileSync(

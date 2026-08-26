@@ -1,0 +1,917 @@
+{
+ "treaties": [
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "is_abandon_piracy",
+    "can_be_enforced",
+    "ai_consider_threaten_naval_hostilities",
+    "can_be_renegotiated",
+    "giftable"
+   ],
+   "icon": "img/treaties/abandon_piracy.png",
+   "id": "abandon_piracy",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Abandon Piracy",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 0,
+   "exclusions": [],
+   "flags": [
+    "can_be_renegotiated"
+   ],
+   "icon": "img/treaties/diplomatic_treaties.png",
+   "id": "free_text",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Addendum",
+   "source": [],
+   "target": [],
+   "techs": [],
+   "usageLimit": "once_per_side_with_same_inputs"
+  },
+  {
+   "cost": 150,
+   "exclusions": [
+    {
+     "id": "alliance",
+     "name": "Alliance"
+    },
+    {
+     "id": "defensive_pact",
+     "name": "Defensive Pact"
+    },
+    {
+     "id": "guarantee_independence",
+     "name": "Guarantee Independence"
+    }
+   ],
+   "flags": [
+    "is_alliance",
+    "can_be_renegotiated",
+    "is_military_access",
+    "friendly"
+   ],
+   "icon": "img/treaties/alliance_treaties.png",
+   "id": "alliance",
+   "kind": "mutual",
+   "mutual": [
+    {
+     "key": "country_treaty_leverage_generation_add",
+     "label": "Leverage Generation from Treaty",
+     "tone": "good",
+     "value": 400,
+     "valueText": "+400"
+    }
+   ],
+   "name": "Alliance",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_treaty"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "can_be_renegotiated",
+    "can_be_enforced"
+   ],
+   "icon": "img/treaties/law_commitment_treaties.png",
+   "id": "amend_succession",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Amend Succession Laws",
+   "source": [],
+   "target": [],
+   "techs": [],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "can_be_enforced",
+    "can_be_renegotiated",
+    "is_monopoly_for_company",
+    "ai_consider_threaten_naval_hostilities"
+   ],
+   "icon": "img/treaties/acquire_monopoly_for_company_treaties.png",
+   "id": "acquire_monopoly_for_company",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Company Monopoly",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "corporate_charters",
+     "name": "Corporate Charters"
+    }
+   ],
+   "usageLimit": "once_per_side_with_same_inputs"
+  },
+  {
+   "cost": 100,
+   "exclusions": [
+    {
+     "id": "alliance",
+     "name": "Alliance"
+    },
+    {
+     "id": "defensive_pact",
+     "name": "Defensive Pact"
+    },
+    {
+     "id": "guarantee_independence",
+     "name": "Guarantee Independence"
+    }
+   ],
+   "flags": [
+    "is_defensive_pact",
+    "can_be_renegotiated",
+    "friendly"
+   ],
+   "icon": "img/treaties/defensive_pact_treaties.png",
+   "id": "defensive_pact",
+   "kind": "mutual",
+   "mutual": [
+    {
+     "key": "country_treaty_leverage_generation_add",
+     "label": "Leverage Generation from Treaty",
+     "tone": "good",
+     "value": 300,
+     "valueText": "+300"
+    }
+   ],
+   "name": "Defensive Pact",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_treaty"
+  },
+  {
+   "cost": 10,
+   "exclusions": [],
+   "flags": [
+    "is_goods_transfer",
+    "can_be_enforced",
+    "can_be_renegotiated"
+   ],
+   "icon": "img/treaties/goods_transfer_treaties.png",
+   "id": "goods_transfer",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Goods Transfer",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_trade",
+     "name": "International Trade"
+    }
+   ],
+   "usageLimit": null
+  },
+  {
+   "cost": 50,
+   "exclusions": [
+    {
+     "id": "alliance",
+     "name": "Alliance"
+    },
+    {
+     "id": "defensive_pact",
+     "name": "Defensive Pact"
+    }
+   ],
+   "flags": [
+    "is_guarantee_independence",
+    "can_be_renegotiated",
+    "giftable",
+    "friendly"
+   ],
+   "icon": "img/treaties/guarantee_independence_treaties.png",
+   "id": "guarantee_independence",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Guarantee Independence",
+   "source": [],
+   "target": [
+    {
+     "key": "country_treaty_leverage_generation_add",
+     "label": "Leverage Generation from Treaty",
+     "tone": "good",
+     "value": 300,
+     "valueText": "+300"
+    }
+   ],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "is_investment_rights",
+    "can_be_enforced",
+    "can_be_renegotiated",
+    "giftable",
+    "friendly",
+    "ai_consider_threaten_naval_hostilities"
+   ],
+   "icon": "img/treaties/foreign_investment_agreement_treaties.png",
+   "id": "foreign_investment_rights",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Investment Rights",
+   "source": [
+    {
+     "key": "country_treaty_leverage_generation_add",
+     "label": "Leverage Generation from Treaty",
+     "tone": "good",
+     "value": 300,
+     "valueText": "+300"
+    }
+   ],
+   "target": [],
+   "techs": [
+    {
+     "id": "stock_exchange",
+     "name": "Stock Exchange"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 0,
+   "exclusions": [],
+   "flags": [
+    "ai_consider_threaten_naval_hostilities"
+   ],
+   "icon": "img/treaties/invite_to_power_bloc_treaties.png",
+   "id": "join_power_bloc",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Join Power Bloc",
+   "source": [],
+   "target": [],
+   "techs": [],
+   "usageLimit": "once_per_treaty"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "is_law_commitment",
+    "can_be_enforced",
+    "ai_consider_threaten_naval_hostilities"
+   ],
+   "icon": "img/treaties/law_commitment_treaties.png",
+   "id": "law_commitment",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Law Commitment",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "is_military_access",
+    "can_be_enforced",
+    "ai_consider_threaten_naval_hostilities",
+    "can_be_renegotiated",
+    "giftable",
+    "friendly"
+   ],
+   "icon": "img/treaties/military_access_treaties.png",
+   "id": "military_access",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Military Access",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "can_be_renegotiated",
+    "giftable",
+    "friendly"
+   ],
+   "icon": "img/treaties/military_assistance_treaties.png",
+   "id": "military_assistance",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Military Assistance",
+   "source": [
+    {
+     "key": "unit_experience_gain_mult",
+     "label": "Weekly Experience Gain for Armies",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "country_military_goods_cost_mult",
+     "label": "Military Goods Cost",
+     "tone": "bad",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "target": [
+    {
+     "key": "country_treaty_leverage_generation_add",
+     "label": "Leverage Generation from Treaty",
+     "tone": "good",
+     "value": 300,
+     "valueText": "+300"
+    },
+    {
+     "key": "unit_experience_gain_mult",
+     "label": "Weekly Experience Gain for Armies",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "building_training_rate_mult",
+     "label": "Training Rate",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "country_military_goods_cost_mult",
+     "label": "Military Goods Cost",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "country_military_tech_spread_mult",
+     "label": "Technology Spread for Military",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "techs": [
+    {
+     "id": "general_staff",
+     "name": "General Staff"
+    }
+   ],
+   "usageLimit": "once_per_treaty"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "is_money_transfer",
+    "can_be_enforced",
+    "can_be_renegotiated",
+    "giftable",
+    "ai_consider_threaten_naval_hostilities"
+   ],
+   "icon": "img/treaties/bankroll_treaties.png",
+   "id": "money_transfer",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Money Transfer",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "central_banking",
+     "name": "Central Banking"
+    }
+   ],
+   "usageLimit": "once_per_treaty"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "is_no_strait_closure",
+    "can_be_enforced",
+    "ai_consider_threaten_naval_hostilities",
+    "can_be_renegotiated",
+    "giftable"
+   ],
+   "icon": "img/treaties/no_strait_closure_treaties.png",
+   "id": "no_strait_closure",
+   "kind": "directed",
+   "mutual": [],
+   "name": "No Strait Closure",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 10,
+   "exclusions": [],
+   "flags": [
+    "is_no_subventions",
+    "can_be_renegotiated",
+    "can_be_enforced",
+    "hostile"
+   ],
+   "icon": "img/treaties/no_subventions_treaties.png",
+   "id": "no_subventions",
+   "kind": "directed",
+   "mutual": [],
+   "name": "No Subventions",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_trade",
+     "name": "International Trade"
+    }
+   ],
+   "usageLimit": "once_per_side_with_same_inputs"
+  },
+  {
+   "cost": 10,
+   "exclusions": [],
+   "flags": [
+    "is_no_tariffs",
+    "can_be_enforced",
+    "can_be_renegotiated",
+    "can_be_renegotiated",
+    "hostile"
+   ],
+   "icon": "img/treaties/no_trade_tariffs_treaties.png",
+   "id": "no_tariffs",
+   "kind": "directed",
+   "mutual": [],
+   "name": "No Tariffs",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_trade",
+     "name": "International Trade"
+    }
+   ],
+   "usageLimit": "once_per_side_with_same_inputs"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "is_no_tolls",
+    "can_be_enforced",
+    "ai_consider_threaten_naval_hostilities",
+    "can_be_renegotiated",
+    "giftable"
+   ],
+   "icon": "img/treaties/no_tolls_treaties.png",
+   "id": "no_tolls",
+   "kind": "directed",
+   "mutual": [],
+   "name": "No Tolls",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 10,
+   "exclusions": [],
+   "flags": [
+    "is_non_colonization_agreement",
+    "can_be_enforced",
+    "can_be_renegotiated",
+    "hostile",
+    "ai_consider_threaten_naval_hostilities"
+   ],
+   "icon": "img/treaties/non_colonization_agreement_treaties.png",
+   "id": "non_colonization_agreement",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Non-Colonization Agreement",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "civilizing_mission",
+     "name": "Civilizing Mission"
+    }
+   ],
+   "usageLimit": "once_per_side_with_same_inputs"
+  },
+  {
+   "cost": 10,
+   "exclusions": [],
+   "flags": [
+    "is_non_piracy_agreement",
+    "can_be_enforced",
+    "ai_consider_threaten_naval_hostilities",
+    "can_be_renegotiated",
+    "giftable"
+   ],
+   "icon": "img/treaties/non_piracy_agreement.png",
+   "id": "non_piracy_agreement",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Non-Piracy Agreement",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "can_be_renegotiated",
+    "friendly"
+   ],
+   "icon": "img/treaties/offer_embassy.png",
+   "id": "offer_embassy",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Offer Embassy",
+   "source": [],
+   "target": [],
+   "techs": [],
+   "usageLimit": "once_per_treaty"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "can_be_renegotiated",
+    "friendly",
+    "ai_consider_threaten_naval_hostilities"
+   ],
+   "icon": "img/treaties/power_bloc_embassy_treaties.png",
+   "id": "host_power_bloc_embassy",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Power Bloc Embassy",
+   "source": [
+    {
+     "key": "country_treaty_leverage_generation_add",
+     "label": "Leverage Generation from Treaty",
+     "tone": "good",
+     "value": 300,
+     "valueText": "+300"
+    }
+   ],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_treaty"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    "is_prohibit_goods_trade_with_world_market",
+    "can_be_enforced",
+    "can_be_renegotiated",
+    "hostile"
+   ],
+   "icon": "img/treaties/prohibit_trade_global_market_treaties.png",
+   "id": "prohibit_trade_with_global_market",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Prohibit Trade with World Market",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_trade",
+     "name": "International Trade"
+    }
+   ],
+   "usageLimit": "once_per_side_with_same_inputs"
+  },
+  {
+   "cost": 25,
+   "exclusions": [],
+   "flags": [
+    {}
+   ],
+   "icon": "img/treaties/offer_embassy.png",
+   "id": "recognize_independence",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Recognize Independence",
+   "source": [],
+   "target": [],
+   "techs": [],
+   "usageLimit": "once_per_treaty"
+  },
+  {
+   "cost": 0,
+   "exclusions": [],
+   "flags": [
+    "can_be_enforced",
+    "giftable",
+    "is_ship_transfer"
+   ],
+   "icon": "img/treaties/ship_transfer_treaties.png",
+   "id": "ship_transfer",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Ship Transfer",
+   "source": [],
+   "target": [],
+   "techs": [],
+   "usageLimit": "once_per_side_with_same_inputs"
+  },
+  {
+   "cost": 0,
+   "exclusions": [],
+   "flags": [
+    "causes_state_transfer",
+    "giftable",
+    "exclude_from_make_this_work",
+    "ai_consider_threaten_naval_hostilities"
+   ],
+   "icon": "img/treaties/transfer_state.png",
+   "id": "state_transfer",
+   "kind": "directed",
+   "mutual": [],
+   "name": "State Transfer",
+   "source": [],
+   "target": [],
+   "techs": [],
+   "usageLimit": "once_per_side_with_same_inputs"
+  },
+  {
+   "cost": 10,
+   "exclusions": [],
+   "flags": [
+    "is_strait_access",
+    "can_be_enforced",
+    "ai_consider_threaten_naval_hostilities",
+    "can_be_renegotiated",
+    "giftable",
+    "friendly"
+   ],
+   "icon": "img/treaties/strait_access_treaties.png",
+   "id": "strait_access",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Strait Access",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 50,
+   "exclusions": [],
+   "flags": [
+    "is_support_independence",
+    "can_be_renegotiated",
+    "giftable",
+    "friendly"
+   ],
+   "icon": "img/treaties/support_independence_treaties.png",
+   "id": "support_independence",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Support Independence",
+   "source": [],
+   "target": [
+    {
+     "key": "country_treaty_leverage_generation_add",
+     "label": "Leverage Generation from Treaty",
+     "tone": "good",
+     "value": 300,
+     "valueText": "+300"
+    }
+   ],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 0,
+   "exclusions": [],
+   "flags": [
+    "giftable"
+   ],
+   "icon": "img/treaties/take_on_debt_treaties.png",
+   "id": "take_on_debt",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Take on Debt",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "central_banking",
+     "name": "Central Banking"
+    }
+   ],
+   "usageLimit": "once_per_treaty"
+  },
+  {
+   "cost": 10,
+   "exclusions": [],
+   "flags": [
+    "is_toll_exemption",
+    "can_be_enforced",
+    "ai_consider_threaten_naval_hostilities",
+    "can_be_renegotiated",
+    "giftable",
+    "friendly"
+   ],
+   "icon": "img/treaties/toll_exemption_treaties.png",
+   "id": "toll_exemption",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Toll Exemption",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 50,
+   "exclusions": [],
+   "flags": [
+    "is_trade_privilege",
+    "can_be_enforced",
+    "ai_consider_threaten_naval_hostilities",
+    "can_be_renegotiated",
+    "giftable",
+    "friendly"
+   ],
+   "icon": "img/treaties/trade_agreement_treaties.png",
+   "id": "trade_privilege",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Trade Privileges",
+   "source": [
+    {
+     "key": "country_treaty_leverage_generation_add",
+     "label": "Leverage Generation from Treaty",
+     "tone": "good",
+     "value": 300,
+     "valueText": "+300"
+    }
+   ],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 0,
+   "exclusions": [],
+   "flags": [
+    "giftable",
+    "target_subjects_as_input"
+   ],
+   "icon": "img/treaties/transfer_subject_treaties.png",
+   "id": "transfer_subject",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Transfer Subject",
+   "source": [],
+   "target": [],
+   "techs": [],
+   "usageLimit": "once_per_side_with_same_inputs"
+  },
+  {
+   "cost": 50,
+   "exclusions": [],
+   "flags": [
+    "is_transit_rights",
+    "can_be_enforced",
+    "can_be_renegotiated",
+    "giftable",
+    "friendly"
+   ],
+   "icon": "img/treaties/transit_rights_treaties.png",
+   "id": "transit_rights",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Transit Rights",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "usageLimit": "once_per_side"
+  },
+  {
+   "cost": 50,
+   "exclusions": [],
+   "flags": [
+    "is_treaty_port",
+    "can_be_enforced",
+    "ai_consider_threaten_naval_hostilities",
+    "giftable",
+    "hostile"
+   ],
+   "icon": "img/treaties/treaty_port_treaties.png",
+   "id": "treaty_port",
+   "kind": "directed",
+   "mutual": [],
+   "name": "Treaty Port",
+   "source": [],
+   "target": [],
+   "techs": [
+    {
+     "id": "colonization",
+     "name": "Colonization"
+    }
+   ],
+   "usageLimit": "once_per_side_with_same_inputs"
+  }
+ ]
+}

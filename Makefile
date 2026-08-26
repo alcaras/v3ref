@@ -15,6 +15,8 @@ data:
 	node scripts/build_politics.mjs
 	node scripts/build_techs.mjs
 	node scripts/build_characters.mjs
+	node scripts/build_world.mjs
+	node scripts/build_diplomacy.mjs
 	node scripts/build_entities.mjs
 
 art:
