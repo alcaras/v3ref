@@ -47,8 +47,8 @@ const base = import.meta.env.BASE_URL;
       <div class="rm__canvaswrap">
         <div id="rm-pan" class="rm__pan">
           <canvas id="rm-canvas" width="2048" height="904"></canvas>
-          <div id="rm-labels" class="rm__labels"></div>
         </div>
+        <div id="rm-labels" class="rm__labels"></div>
         <div class="rm__zoom">
           <button type="button" id="rm-zin" title="Zoom in">+</button>
           <button type="button" id="rm-zout" title="Zoom out">−</button>
@@ -308,7 +308,8 @@ const base = import.meta.env.BASE_URL;
         for (const v of vals) for (const n of Object.values(v)) if (n > max) max = n;
 
         // Screen pixels per map pixel, so the fit test is in real pixels.
-        const perPx = (wrap.clientWidth / W) * view.z;
+        const wrapW = wrap.clientWidth, wrapH = wrap.clientHeight;
+        const perPx = (wrapW / W) * view.z;
         const MIN_PT = 8, MAX_PT = 19;
         let drawn = 0, skipped = 0;
         const html = [];
@@ -322,13 +323,21 @@ const base = import.meta.env.BASE_URL;
           // Monospace runs about 0.6em wide per character.
           const needW = text.length * pt * 0.6 + 3;
           if ((b.x1 - b.x0) * perPx < needW || (b.y1 - b.y0) * perPx < pt) { skipped++; continue; }
+
+          // The label layer is NOT inside the transformed element — text scaled
+          // by a CSS transform is rasterised once and stretched, which is what
+          // made numbers mushy when zoomed. Apply the transform to the POSITION
+          // and let the browser draw the glyphs at their real size.
+          const sx = (b.cx / W) * wrapW * view.z + view.x;
+          const sy = (b.cy / H) * wrapH * view.z + view.y;
+          if (sx < -40 || sy < -20 || sx > wrapW + 40 || sy > wrapH + 20) continue; // off-screen
           drawn++;
-          html.push(`<span class="rm__lab" style="left:${(b.cx / W) * 100}%;top:${
-            (b.cy / H) * 100}%;font-size:${(pt / view.z).toFixed(2)}px">${text}</span>`);
+          html.push(`<span class="rm__lab" style="left:${sx.toFixed(1)}px;top:${
+            sy.toFixed(1)}px;font-size:${pt.toFixed(1)}px">${text}</span>`);
         }
         layer.innerHTML = html.join('');
         $('rm-labnote').textContent = skipped
-          ? `${drawn} shown, ${skipped} too small at this zoom — use + to fit more.`
+          ? `${drawn} shown, ${skipped} too small to fit — zoom in for more.`
           : `${drawn} shown.`;
       }
       const showLabels = () => $('rm-labels-cb').checked;
@@ -423,9 +432,14 @@ const base = import.meta.env.BASE_URL;
             ? `<table>${rows.map((r) => `<tr><td>${r.l.name}</td><td>${r.n.toLocaleString()}</td>` +
                 `<td class="rm__unit">${r.l.unit}</td></tr>`).join('')}</table>`
             : '<span class="rm__hint">no mapped resources</span>'}`;
+        // r is the CANVAS rect, which moves and scales with the transform; the
+        // tooltip is a child of the untransformed wrapper, so it must be placed
+        // against the wrapper or it drifts off as you zoom and pan.
+        const wr = wrap.getBoundingClientRect();
         tip.hidden = false;
-        tip.style.left = `${e.clientX - r.left + 14}px`;
-        tip.style.top = `${e.clientY - r.top + 14}px`;
+        const tx = e.clientX - wr.left, ty = e.clientY - wr.top;
+        tip.style.left = `${Math.min(tx + 14, wr.width - 210)}px`;
+        tip.style.top = `${Math.min(ty + 14, wr.height - 40)}px`;
       });
       canvas.addEventListener('mouseleave', () => { tip.hidden = true; });
       canvas.addEventListener('click', (e) => {
@@ -560,7 +574,7 @@ const base = import.meta.env.BASE_URL;
       overflow: hidden; touch-action: none;
     }
     .rm__pan { transform-origin: 0 0; position: relative; will-change: transform; }
-    .rm__labels { position: absolute; inset: 0; pointer-events: none; }
+    .rm__labels { position: absolute; inset: 0; pointer-events: none; z-index: 3; overflow: hidden; }
     .rm__lab {
       position: absolute; transform: translate(-50%, -50%);
       font-family: var(--font-mono); font-weight: 500; line-height: 1;

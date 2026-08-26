@@ -31,6 +31,14 @@ const base = import.meta.env.BASE_URL;
         other, use <a href={`${base}profit-calculator`}>Building Profit →</a>
       </p>
       <div class="mc__bar">
+        <label class="mc__field mc__field--opt">
+          <span class="rail__label" style="margin-right:0.4rem;">Optimise for</span>
+          <select id="mc-opt" class="rail__select" style="min-width:15rem;">
+            <option value="net">Total profit (£ / level)</option>
+            <option value="worker">Profit per worker</option>
+            <option value="constr">Profit per construction point</option>
+          </select>
+        </label>
         <label class="mc__field">
           <input id="mc-filter" type="search" class="rail__select" style="min-width:18rem;"
             placeholder="Filter by building, method, or good…" />
@@ -129,6 +137,16 @@ const base = import.meta.env.BASE_URL;
       const money = (lines, sign) =>
         lines.reduce((s, l) => s + sign * l.a * priceOf(l.g), 0);
 
+      // The control and the clickable headers drive the same sort, so the two
+      // can never disagree: choosing a target just sets that column's header.
+      const OPT_COL = { net: 2, worker: 4, constr: 6 };
+      function applyOpt() {
+        const want = OPT_COL[$('mc-opt').value];
+        [...$('mc-table').tHead.rows[0].cells].forEach((th, i) =>
+          th.setAttribute('aria-sort', i === want ? 'descending' : 'none'));
+        renderTable();
+      }
+
       function renderTable() {
         const q = $('mc-filter').value.trim().toLowerCase();
         const onlyPositive = $('mc-positive').checked;
@@ -180,11 +198,12 @@ const base = import.meta.env.BASE_URL;
       }
 
       $('mc-goodfilter').addEventListener('input', renderPrices);
+      $('mc-opt').addEventListener('change', applyOpt);
       $('mc-filter').addEventListener('input', renderTable);
       $('mc-positive').addEventListener('change', renderTable);
       $('mc-reset').addEventListener('click', () => { P.reset(); renderPrices(); renderTable(); });
       renderPrices();
-      renderTable();
+      applyOpt();   // open on total profit, ranked
     })();
   </script>
 
@@ -192,7 +211,8 @@ const base = import.meta.env.BASE_URL;
     .mc { display: grid; grid-template-columns: minmax(14rem, 17rem) 1fr; gap: 1.6rem; align-items: start; }
     @media (max-width: 900px) { .mc { grid-template-columns: 1fr; } }
     .mc__bar { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
-    .mc__field { display: inline-flex; }
+    .mc__field { display: inline-flex; align-items: center; }
+    .mc__field--opt .rail__label { white-space: nowrap; }
     .mc__toggle {
       display: inline-flex; align-items: center; gap: 0.35rem;
       font-size: 0.78rem; color: var(--text-dim); cursor: pointer;
