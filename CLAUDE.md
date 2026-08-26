@@ -4,7 +4,7 @@ Sibling of [owreference](https://github.com/alcaras/owreference) (Old World), sa
 philosophy for Victoria 3: an Astro static site that is a **deterministic
 projection of the game's own files**, re-generated each patch.
 
-**Live:** https://alcaras.github.io/v3reference/ · **Source:** https://github.com/alcaras/v3reference
+**Live:** https://alcaras.github.io/v3ref/ · **Source:** https://github.com/alcaras/v3ref
 
 ---
 

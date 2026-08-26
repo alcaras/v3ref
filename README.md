@@ -3,7 +3,7 @@
 A reference site for Paradox's Victoria 3, generated directly from the game's
 own script files and updated each patch.
 
-**Live:** https://alcaras.github.io/v3reference/
+**Live:** https://alcaras.github.io/v3ref/
 
 Every number on the site is parsed from the game's data (`game/common/**`,
 localization, modifier definitions) — no hand-maintained tables. The build
