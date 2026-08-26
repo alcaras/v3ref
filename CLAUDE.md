@@ -162,14 +162,20 @@ used the legacy spreadsheet.
 
 - **Stage 0 (done)**: scaffold, parse/loc/modifier/economy libs, entity
   registry + search, Goods list + detail pages, icon extraction, deploy.
-- **Stage 1**: Buildings (flagship page: PM matrix with `formatBag`), PM
-  explorer, pop types/needs. Extend `economy.mjs` edges as needed.
-- **Stage 2**: Laws, interest groups, ideologies, institutions, technology
-  (unlocks reverse-index over the graph).
-- **Stage 3**: World/diplomacy (countries, states, treaties, power blocs).
-- **Stage 4**: Journal entries / decisions / events via a generic
-  trigger-effect pretty-printer (readable scriptese, loc-resolved, entity-
-  linked) — curate phrasing case-by-case afterwards.
-- **Stage 5**: Tools (building profit calculator, tech path planner), audit
-  gate (`make audit`: every modifier key used must resolve; every loc ref
-  resolves; every icon exists), per-patch changelog diffing.
+- **Stage 1 (done)**: Buildings (flagship PM matrix), PM explorer, pop
+  types/needs.
+- **Stage 2 (done)**: Laws, interest groups, ideology stance matrices,
+  institutions, technology (reverse-unlock index), character traits, decrees.
+- **Stage 3 (done)**: Countries, states + state traits, treaty articles,
+  power blocs.
+- **Stage 4 (done)**: Companies, army units, mobilization, subjects, war
+  goals, cultures & religions, concepts encyclopedia, defines browser.
+- **Stage 5 (done)**: Ships + modifications; journal entries, decisions, and
+  events — surfaced via the game's own player-facing loc text plus statically
+  extracted `add_modifier` rewards (resolved from static_modifiers). A full
+  trigger/effect pretty-printer remains open work if deeper rendering is
+  wanted.
+- **Open**: tools (building profit calculator, shareable tech planner — see
+  the session design notes), audit gate (`make audit`: every modifier key
+  resolves; every loc ref resolves; every icon exists), per-patch changelog
+  diffing + patch-notes page, states↔homelands join, event trigger rendering.

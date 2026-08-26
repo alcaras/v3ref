@@ -1,5 +1,178 @@
 [
  {
+  "a": "je_indian_famines",
+  "g": "The Administration of India",
+  "n": "…",
+  "t": "journal_entry",
+  "u": "journal-entries#je_indian_famines"
+ },
+ {
+  "a": "je_spain_provisional_government",
+  "g": "National Agenda",
+  "n": "…",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spain_provisional_government"
+ },
+ {
+  "a": "je_british_dictate_plantations",
+  "g": "The Administration of India",
+  "n": "… Dictate: Agricultural Production",
+  "t": "journal_entry",
+  "u": "journal-entries#je_british_dictate_plantations"
+ },
+ {
+  "a": "je_british_dictate_universities",
+  "g": "The Administration of India",
+  "n": "… Dictate: Higher Education",
+  "t": "journal_entry",
+  "u": "journal-entries#je_british_dictate_universities"
+ },
+ {
+  "a": "je_british_dictate_law",
+  "g": "The Administration of India",
+  "n": "… Dictate: Law Enactment",
+  "t": "journal_entry",
+  "u": "journal-entries#je_british_dictate_law"
+ },
+ {
+  "a": "je_british_dictate_military",
+  "g": "The Administration of India",
+  "n": "… Dictate: Military Expansion",
+  "t": "journal_entry",
+  "u": "journal-entries#je_british_dictate_military"
+ },
+ {
+  "a": "events:soi_events--00_earn_recognition_events",
+  "n": "00 Earn Recognition Events",
+  "t": "event_group",
+  "u": "events/soi_events--00_earn_recognition_events"
+ },
+ {
+  "a": "events:soi_events--00_ep1_afghanistan_events",
+  "n": "00 Ep1 Afghanistan Events",
+  "t": "event_group",
+  "u": "events/soi_events--00_ep1_afghanistan_events"
+ },
+ {
+  "a": "events:soi_events--00_ep1_caucasus_events",
+  "n": "00 Ep1 Caucasus Events",
+  "t": "event_group",
+  "u": "events/soi_events--00_ep1_caucasus_events"
+ },
+ {
+  "a": "events:soi_events--00_ep1_great_game_events",
+  "n": "00 Ep1 Great Game Events",
+  "t": "event_group",
+  "u": "events/soi_events--00_ep1_great_game_events"
+ },
+ {
+  "a": "events:soi_events--00_ep1_kazakh_events",
+  "n": "00 Ep1 Kazakh Events",
+  "t": "event_group",
+  "u": "events/soi_events--00_ep1_kazakh_events"
+ },
+ {
+  "a": "events:soi_events--00_ep1_korea_events",
+  "n": "00 Ep1 Korea Events",
+  "t": "event_group",
+  "u": "events/soi_events--00_ep1_korea_events"
+ },
+ {
+  "a": "events:soi_events--00_ep1_persia_events",
+  "n": "00 Ep1 Persia Events",
+  "t": "event_group",
+  "u": "events/soi_events--00_ep1_persia_events"
+ },
+ {
+  "a": "events:american_civil_war--00_fsa_events",
+  "n": "00 Fsa Events",
+  "t": "event_group",
+  "u": "events/american_civil_war--00_fsa_events"
+ },
+ {
+  "a": "events:balkans_events--00_ip3_austria_events",
+  "n": "00 Ip3 Austria Events",
+  "t": "event_group",
+  "u": "events/balkans_events--00_ip3_austria_events"
+ },
+ {
+  "a": "events:balkans_events--00_ip3_hungary_events",
+  "n": "00 Ip3 Hungary Events",
+  "t": "event_group",
+  "u": "events/balkans_events--00_ip3_hungary_events"
+ },
+ {
+  "a": "events:soi_events--00_lobbies_events_01",
+  "n": "00 Lobbies Events",
+  "t": "event_group",
+  "u": "events/soi_events--00_lobbies_events_01"
+ },
+ {
+  "a": "events:soi_events--00_lobbies_events_03",
+  "n": "00 Lobbies Events",
+  "t": "event_group",
+  "u": "events/soi_events--00_lobbies_events_03"
+ },
+ {
+  "a": "events:soi_events--00_lobbies_events_04",
+  "n": "00 Lobbies Events",
+  "t": "event_group",
+  "u": "events/soi_events--00_lobbies_events_04"
+ },
+ {
+  "a": "events:balkans_events--03_ip3_austria_events",
+  "n": "03 Ip3 Austria Events",
+  "t": "event_group",
+  "u": "events/balkans_events--03_ip3_austria_events"
+ },
+ {
+  "a": "events:balkans_events--04_ip3_austria_events",
+  "n": "04 Ip3 Austria Events",
+  "t": "event_group",
+  "u": "events/balkans_events--04_ip3_austria_events"
+ },
+ {
+  "a": "events:1848",
+  "n": "1848 Events",
+  "t": "event_group",
+  "u": "events/1848"
+ },
+ {
+  "a": "je_colonization_laws",
+  "g": "Objectives",
+  "n": "A Colonial Power",
+  "t": "journal_entry",
+  "u": "journal-entries#je_colonization_laws"
+ },
+ {
+  "a": "je_greater_power",
+  "g": "Objectives",
+  "n": "A Great Power",
+  "t": "journal_entry",
+  "u": "journal-entries#je_greater_power"
+ },
+ {
+  "a": "je_south_american_national_identity",
+  "g": "Domestic Affairs",
+  "n": "A New National Identity",
+  "t": "journal_entry",
+  "u": "journal-entries#je_south_american_national_identity"
+ },
+ {
+  "a": "je_western_saharan_conquest",
+  "g": "National Agenda",
+  "n": "A Saharan Twilight",
+  "t": "journal_entry",
+  "u": "journal-entries#je_western_saharan_conquest"
+ },
+ {
+  "a": "je_serbian_throne",
+  "g": "National Agenda",
+  "n": "A Throne of Thorns",
+  "t": "journal_entry",
+  "u": "journal-entries#je_serbian_throne"
+ },
+ {
   "a": "company_a_markwald_and_company",
   "c": "img/companies/company_a_markwald_and_company.png",
   "g": "historical",
@@ -28,6 +201,12 @@
   "n": "Abkhazia",
   "t": "country",
   "u": "countries#ABK"
+ },
+ {
+  "a": "abolish_tangena_ordeal",
+  "n": "Abolish the Tangena Ordeal",
+  "t": "decision",
+  "u": "decisions#abolish_tangena_ordeal"
  },
  {
   "a": "aborigine",
@@ -71,6 +250,12 @@
   "u": "concepts#concept_acceptance"
  },
  {
+  "a": "events:acceptance_events",
+  "n": "Acceptance Events",
+  "t": "event_group",
+  "u": "events/acceptance_events"
+ },
+ {
   "a": "concept_acceptance_status",
   "n": "Acceptance Status",
   "t": "concept",
@@ -109,6 +294,13 @@
   "u": "states#STATE_ACEH"
  },
  {
+  "a": "je_achieve_sovereignty",
+  "g": "Objectives",
+  "n": "Achieve Sovereignty",
+  "t": "journal_entry",
+  "u": "journal-entries#je_achieve_sovereignty"
+ },
+ {
   "a": "ach",
   "g": "decentralized",
   "n": "Acholi",
@@ -116,11 +308,60 @@
   "u": "countries#ACH"
  },
  {
+  "a": "panama_canal_purchase",
+  "n": "Acquire Land in Panama",
+  "t": "decision",
+  "u": "decisions#panama_canal_purchase"
+ },
+ {
+  "a": "suez_canal_purchase",
+  "n": "Acquire Land in the Sinai",
+  "t": "decision",
+  "u": "decisions#suez_canal_purchase"
+ },
+ {
+  "a": "je_chinese_concessions",
+  "g": "Objectives",
+  "n": "Acquire Manchurian Concessions",
+  "t": "journal_entry",
+  "u": "journal-entries#je_chinese_concessions"
+ },
+ {
   "a": "state_acre",
   "g": "The Andes",
   "n": "Acre",
   "t": "state",
   "u": "states#STATE_ACRE"
+ },
+ {
+  "a": "events:brazil--acre_dispute",
+  "n": "Acre Dispute Events",
+  "t": "event_group",
+  "u": "events/brazil--acre_dispute"
+ },
+ {
+  "a": "events:american_civil_war--acw_events",
+  "n": "Acw Events",
+  "t": "event_group",
+  "u": "events/american_civil_war--acw_events"
+ },
+ {
+  "a": "events:american_civil_war--acw_followup_events",
+  "n": "Acw Followup Events",
+  "t": "event_group",
+  "u": "events/american_civil_war--acw_followup_events"
+ },
+ {
+  "a": "events:american_civil_war--acw_je_events",
+  "n": "Acw Je Events",
+  "t": "event_group",
+  "u": "events/american_civil_war--acw_je_events"
+ },
+ {
+  "a": "events:american_civil_war--acw_wild_west_events",
+  "n": "Acw Wild West Events",
+  "t": "event_group",
+  "u": "events/american_civil_war--acw_wild_west_events"
  },
  {
   "a": "state_adana",
@@ -163,6 +404,12 @@
   "u": "technology#admiralty"
  },
  {
+  "a": "shinto_decision",
+  "n": "Adopt State Shinto",
+  "t": "decision",
+  "u": "decisions#shinto_decision"
+ },
+ {
   "a": "adr",
   "g": "decentralized",
   "n": "Adrar",
@@ -196,6 +443,13 @@
   "u": "concepts#concept_advancement_speed"
  },
  {
+  "a": "je_philippines_development",
+  "g": "Development",
+  "n": "Advancements in the Archipelago",
+  "t": "journal_entry",
+  "u": "journal-entries#je_philippines_development"
+ },
+ {
   "a": "aeroplanes",
   "c": "img/goods/aeroplanes.png",
   "g": "military",
@@ -226,11 +480,43 @@
   "u": "laws#law_affirmative_action"
  },
  {
+  "a": "je_unify_afghanistan",
+  "g": "Foreign Affairs",
+  "n": "Afghan Reunification",
+  "t": "journal_entry",
+  "u": "journal-entries#je_unify_afghanistan"
+ },
+ {
   "a": "afg",
   "g": "unrecognized",
   "n": "Afghanistan",
   "t": "country",
   "u": "countries#AFG"
+ },
+ {
+  "a": "events:africa_colonial_events",
+  "n": "Africa Colonial Events",
+  "t": "event_group",
+  "u": "events/africa_colonial_events"
+ },
+ {
+  "a": "events:africa_colonial_events_02",
+  "n": "Africa Colonial Events",
+  "t": "event_group",
+  "u": "events/africa_colonial_events_02"
+ },
+ {
+  "a": "events:africa_colonial_events_03",
+  "n": "Africa Colonial Events",
+  "t": "event_group",
+  "u": "events/africa_colonial_events_03"
+ },
+ {
+  "a": "je_african_colonies",
+  "g": "Objectives",
+  "n": "African Colonies",
+  "t": "journal_entry",
+  "u": "journal-entries#je_african_colonies"
  },
  {
   "a": "afro_american",
@@ -263,6 +549,12 @@
   "u": "cultures#afro_caribeno"
  },
  {
+  "a": "events:iberia_events--after_revolution_technical",
+  "n": "After Revolution Technical Events",
+  "t": "event_group",
+  "u": "events/iberia_events--after_revolution_technical"
+ },
+ {
   "a": "special_character_agent_of_the_sovereign",
   "c": "img/traits/special_character_agent_of_the_sovereign.png",
   "g": "personality",
@@ -283,6 +575,24 @@
   "n": "Agitator",
   "t": "concept",
   "u": "concepts#concept_agitator"
+ },
+ {
+  "a": "events:agitators_events--agitator_law_events_2",
+  "n": "Agitator Law Events",
+  "t": "event_group",
+  "u": "events/agitators_events--agitator_law_events_2"
+ },
+ {
+  "a": "events:agitators_events--agitators_election_events",
+  "n": "Agitators Election Events",
+  "t": "event_group",
+  "u": "events/agitators_events--agitators_election_events"
+ },
+ {
+  "a": "events:agitators_events--agitators_law_events",
+  "n": "Agitators Law Events",
+  "t": "event_group",
+  "u": "events/agitators_events--agitators_law_events"
  },
  {
   "a": "state_agra",
@@ -339,6 +649,13 @@
   "n": "Aircraft Carrier",
   "t": "technology",
   "u": "technology#carrier_tech"
+ },
+ {
+  "a": "ship_type_aircraft_carrier",
+  "g": "Cruisers",
+  "n": "Aircraft Carrier",
+  "t": "ship",
+  "u": "ships#ship_type_aircraft_carrier"
  },
  {
   "a": "ait",
@@ -410,6 +727,12 @@
   "u": "states#STATE_ALASKA"
  },
  {
+  "a": "events:alaska_events",
+  "n": "Alaska Events",
+  "t": "event_group",
+  "u": "events/alaska_events"
+ },
+ {
   "a": "ala",
   "g": "recognized",
   "n": "Alba",
@@ -459,6 +782,13 @@
   "u": "states#STATE_TAURIDA"
  },
  {
+  "a": "je_portuguese_colonialism",
+  "g": "National Agenda",
+  "n": "Além-mar Africano",
+  "t": "journal_entry",
+  "u": "journal-entries#je_portuguese_colonialism"
+ },
+ {
   "a": "alemannic",
   "n": "Alemannic",
   "t": "culture",
@@ -492,6 +822,12 @@
   "u": "countries#ALD"
  },
  {
+  "a": "events:agitators_events--algeria_events",
+  "n": "Algeria Events",
+  "t": "event_group",
+  "u": "events/agitators_events--algeria_events"
+ },
+ {
   "a": "state_algiers",
   "g": "North Africa",
   "n": "Algiers",
@@ -503,6 +839,13 @@
   "n": "Algonquian",
   "t": "culture",
   "u": "cultures#algonquian"
+ },
+ {
+  "a": "je_all_for_one",
+  "g": "National Agenda",
+  "n": "All for One",
+  "t": "journal_entry",
+  "u": "journal-entries#je_all_for_one"
  },
  {
   "a": "company_allatini_mills",
@@ -602,11 +945,23 @@
   "u": "cultures#berber"
  },
  {
+  "a": "events:amazon_events",
+  "n": "Amazon Events",
+  "t": "event_group",
+  "u": "events/amazon_events"
+ },
+ {
   "a": "state_amazonas",
   "g": "Brazil",
   "n": "Amazonas",
   "t": "state",
   "u": "states#STATE_AMAZONAS"
+ },
+ {
+  "a": "events:brazil--amazonas",
+  "n": "Amazonas Events",
+  "t": "event_group",
+  "u": "events/brazil--amazonas"
  },
  {
   "a": "amz",
@@ -689,6 +1044,20 @@
   "u": "goods/ammunition"
  },
  {
+  "a": "je_egalitarian_society",
+  "g": "Objectives",
+  "n": "An Egalitarian Society",
+  "t": "journal_entry",
+  "u": "journal-entries#je_egalitarian_society"
+ },
+ {
+  "a": "je_haitian_debt",
+  "g": "National Agenda",
+  "n": "An Odious Debt",
+  "t": "journal_entry",
+  "u": "journal-entries#je_haitian_debt"
+ },
+ {
   "a": "nah",
   "g": "unrecognized",
   "n": "Anahuac",
@@ -725,6 +1094,12 @@
   "n": "Anarchy",
   "t": "law",
   "u": "laws#law_anarchy"
+ },
+ {
+  "a": "events:law_events--anarchy_law",
+  "n": "Anarchy Law Events",
+  "t": "event_group",
+  "u": "events/law_events--anarchy_law"
  },
  {
   "a": "anl",
@@ -839,6 +1214,44 @@
   "n": "Annam",
   "t": "state",
   "u": "states#STATE_ANNAM"
+ },
+ {
+  "a": "je_conquer_oregon",
+  "g": "Manifest Destiny",
+  "n": "Annex Oregon",
+  "t": "journal_entry",
+  "u": "journal-entries#je_conquer_oregon"
+ },
+ {
+  "a": "transfer_ionian_islands_decision",
+  "n": "Annex the Ionian Islands",
+  "t": "decision",
+  "u": "decisions#transfer_ionian_islands_decision"
+ },
+ {
+  "a": "antarctica_expedition",
+  "n": "Antarctic Expedition",
+  "t": "decision",
+  "u": "decisions#antarctica_expedition"
+ },
+ {
+  "a": "je_antarctica",
+  "g": "Expeditions",
+  "n": "Antarctic Expedition",
+  "t": "journal_entry",
+  "u": "journal-entries#je_antarctica"
+ },
+ {
+  "a": "events:expedition_events--antarctic_expedition_events",
+  "n": "Antarctic Expedition Events",
+  "t": "event_group",
+  "u": "events/expedition_events--antarctic_expedition_events"
+ },
+ {
+  "a": "events:law_events--anti_state_religion_law_events",
+  "n": "Anti State Religion Law Events",
+  "t": "event_group",
+  "u": "events/law_events--anti_state_religion_law_events"
  },
  {
   "a": "law_anti_strike_laws",
@@ -1029,6 +1442,13 @@
   "u": "technology#arc_welding"
  },
  {
+  "a": "je_filipino_ethnogenesis",
+  "g": "National Agenda",
+  "n": "Archipelagic Ethnogenesis",
+  "t": "journal_entry",
+  "u": "journal-entries#je_filipino_ethnogenesis"
+ },
+ {
   "a": "state_arequipa",
   "g": "The Andes",
   "n": "Arequipa",
@@ -1110,6 +1530,13 @@
   "n": "Armenian",
   "t": "culture",
   "u": "cultures#armenian"
+ },
+ {
+  "a": "ship_type_armored_cruiser",
+  "g": "Cruisers",
+  "n": "Armored Cruiser",
+  "t": "ship",
+  "u": "ships#ship_type_armored_cruiser"
  },
  {
   "a": "building_arms_industry",
@@ -1280,6 +1707,12 @@
   "u": "cultures#assamese"
  },
  {
+  "a": "events:assassination_events",
+  "n": "Assassination Events",
+  "t": "event_group",
+  "u": "events/assassination_events"
+ },
+ {
   "a": "combat_unit_type_high_tier_marines",
   "g": "army",
   "n": "Assault Marines",
@@ -1369,6 +1802,13 @@
   "u": "buildings/estacion_de_madrid_atocha"
  },
  {
+  "a": "je_atocha_railway",
+  "g": "Development",
+  "n": "Atocha Railway Station",
+  "t": "journal_entry",
+  "u": "journal-entries#je_atocha_railway"
+ },
+ {
   "a": "concept_attack_damage",
   "n": "Attack Damage",
   "t": "concept",
@@ -1415,6 +1855,12 @@
   "u": "countries#AST"
  },
  {
+  "a": "events:australia_events",
+  "n": "Australia Events",
+  "t": "event_group",
+  "u": "events/australia_events"
+ },
+ {
   "a": "australian",
   "n": "Australian",
   "t": "culture",
@@ -1435,6 +1881,18 @@
   "u": "states#STATE_AUSTRIA"
  },
  {
+  "a": "events:balkans_events--austria_federalism",
+  "n": "Austria Federalism Events",
+  "t": "event_group",
+  "u": "events/balkans_events--austria_federalism"
+ },
+ {
+  "a": "events:balkans_events--austria_germany_events",
+  "n": "Austria Germany Events",
+  "t": "event_group",
+  "u": "events/balkans_events--austria_germany_events"
+ },
+ {
   "a": "concept_authority",
   "n": "Authority",
   "t": "concept",
@@ -1447,6 +1905,19 @@
   "n": "Autocracy",
   "t": "law",
   "u": "laws#law_autocracy"
+ },
+ {
+  "a": "events:autocracy_events",
+  "n": "Autocracy Events",
+  "t": "event_group",
+  "u": "events/autocracy_events"
+ },
+ {
+  "a": "je_austrian_neo_absolutism",
+  "g": "National Agenda",
+  "n": "Autocracy in the Age of Liberty",
+  "t": "journal_entry",
+  "u": "journal-entries#je_austrian_neo_absolutism"
  },
  {
   "a": "automatic_bottle_blowers",
@@ -1512,11 +1983,24 @@
   "u": "concepts#concept_average_wage"
  },
  {
+  "a": "events:tech_events--aviation",
+  "n": "Aviation Events",
+  "t": "event_group",
+  "u": "events/tech_events--aviation"
+ },
+ {
   "a": "awa",
   "g": "unrecognized",
   "n": "Awadh",
   "t": "country",
   "u": "countries#AWA"
+ },
+ {
+  "a": "je_grand_exhibition",
+  "g": "Major Situations",
+  "n": "Awaiting the Grand Exhibition",
+  "t": "journal_entry",
+  "u": "journal-entries#je_grand_exhibition"
  },
  {
   "a": "state_aydin",
@@ -1759,6 +2243,12 @@
   "u": "concepts#concept_balkan_culture"
  },
  {
+  "a": "events:balkans_events--balkan_wars_events",
+  "n": "Balkan Wars Events",
+  "t": "event_group",
+  "u": "events/balkans_events--balkan_wars_events"
+ },
+ {
   "a": "baluchi",
   "n": "Baluchi",
   "t": "culture",
@@ -1797,6 +2287,12 @@
   "n": "Bamum",
   "t": "country",
   "u": "countries#BMM"
+ },
+ {
+  "a": "ban_liquor",
+  "n": "Ban Liquor",
+  "t": "decision",
+  "u": "decisions#ban_liquor"
  },
  {
   "a": "building_banana_plantation",
@@ -2046,6 +2542,19 @@
   "u": "states#STATE_BAVARIA"
  },
  {
+  "a": "je_bavarocracy",
+  "g": "National Agenda",
+  "n": "Bavarocracy",
+  "t": "journal_entry",
+  "u": "journal-entries#je_bavarocracy"
+ },
+ {
+  "a": "events:balkans_events--bavarocracy",
+  "n": "Bavarocracy Events",
+  "t": "event_group",
+  "u": "events/balkans_events--bavarocracy"
+ },
+ {
   "a": "concept_bavarocratic_ire",
   "n": "Bavarocratic Ire",
   "t": "concept",
@@ -2127,6 +2636,12 @@
   "n": "Belgium",
   "t": "country",
   "u": "countries#BEL"
+ },
+ {
+  "a": "events:belle_epoque_events",
+  "n": "Belle Epoque Events",
+  "t": "event_group",
+  "u": "events/belle_epoque_events"
  },
  {
   "a": "bmb",
@@ -2214,6 +2729,12 @@
   "u": "countries#BHU"
  },
  {
+  "a": "events:bic_breakup",
+  "n": "Bic Breakup Events",
+  "t": "event_group",
+  "u": "events/bic_breakup"
+ },
+ {
   "a": "bidan",
   "n": "Bidan",
   "t": "culture",
@@ -2261,6 +2782,13 @@
   "n": "Bikaner",
   "t": "country",
   "u": "countries#BIK"
+ },
+ {
+  "a": "je_lands_of_anarchy",
+  "g": "National Agenda",
+  "n": "Bilaad al-Siba",
+  "t": "journal_entry",
+  "u": "journal-entries#je_lands_of_anarchy"
  },
  {
   "a": "bla",
@@ -2367,6 +2895,13 @@
   "u": "states#STATE_BOLIVAR"
  },
  {
+  "a": "je_andean_federation",
+  "g": "Foreign Affairs",
+  "n": "Bolívar's Ambition",
+  "t": "journal_entry",
+  "u": "journal-entries#je_andean_federation"
+ },
+ {
   "a": "bol",
   "g": "recognized",
   "n": "Bolivia",
@@ -2384,6 +2919,20 @@
   "n": "Bolster",
   "t": "concept",
   "u": "concepts#concept_bolster"
+ },
+ {
+  "a": "je_tutorial_promote_movement",
+  "g": "Tutorial",
+  "n": "Bolster a Political Movement",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_promote_movement"
+ },
+ {
+  "a": "je_expand_navy_and_army",
+  "g": "Objectives",
+  "n": "Bolstering the Military",
+  "t": "journal_entry",
+  "u": "journal-entries#je_expand_navy_and_army"
  },
  {
   "a": "bolt_action_rifles",
@@ -2493,6 +3042,12 @@
   "u": "states#STATE_BOUGAINVILLE"
  },
  {
+  "a": "events:boxer_rebellion_events",
+  "n": "Boxer Rebellion Events",
+  "t": "event_group",
+  "u": "events/boxer_rebellion_events"
+ },
+ {
   "a": "brk",
   "g": "decentralized",
   "n": "Brakna",
@@ -2530,10 +3085,35 @@
   "u": "countries#BRZ"
  },
  {
+  "a": "events:brazil--brazil_navy",
+  "n": "Brazil Navy Events",
+  "t": "event_group",
+  "u": "events/brazil--brazil_navy"
+ },
+ {
   "a": "brazilian",
   "n": "Brazilian",
   "t": "culture",
   "u": "cultures#brazilian"
+ },
+ {
+  "a": "events:brazil--brazilian_minors",
+  "n": "Brazilian Minors Events",
+  "t": "event_group",
+  "u": "events/brazil--brazilian_minors"
+ },
+ {
+  "a": "je_brazil_navy",
+  "g": "The Brazilian Nation",
+  "n": "Brazilian Naval Power",
+  "t": "journal_entry",
+  "u": "journal-entries#je_brazil_navy"
+ },
+ {
+  "a": "events:brazil--brazilian_slavery",
+  "n": "Brazilian Slavery Events",
+  "t": "event_group",
+  "u": "events/brazil--brazilian_slavery"
  },
  {
   "a": "breech_loading_artillery",
@@ -2555,6 +3135,18 @@
   "n": "Breton",
   "t": "culture",
   "u": "cultures#breton"
+ },
+ {
+  "a": "events:india_events--british_dictates",
+  "n": "British Dictates Events",
+  "t": "event_group",
+  "u": "events/india_events--british_dictates"
+ },
+ {
+  "a": "events:british_raj_events",
+  "n": "British Raj Events",
+  "t": "event_group",
+  "u": "events/british_raj_events"
  },
  {
   "a": "bri",
@@ -2600,6 +3192,12 @@
   "u": "states#STATE_BRUNSWICK"
  },
  {
+  "a": "decision_found_budapest",
+  "n": "Budapest Unification Law",
+  "t": "decision",
+  "u": "decisions#decision_found_budapest"
+ },
+ {
   "a": "state_buenos_aires",
   "g": "La Plata",
   "n": "Buenos Aires",
@@ -2612,6 +3210,19 @@
   "n": "Buganda",
   "t": "country",
   "u": "countries#BUG"
+ },
+ {
+  "a": "je_build_local_arms_industry",
+  "g": "Domestic Affairs",
+  "n": "Build Local Arms Industry",
+  "t": "journal_entry",
+  "u": "journal-entries#je_build_local_arms_industry"
+ },
+ {
+  "a": "mon_build_biljarda",
+  "n": "Build the Biljarda",
+  "t": "decision",
+  "u": "decisions#mon_build_biljarda"
  },
  {
   "a": "concept_building",
@@ -2664,6 +3275,12 @@
   "n": "Bulgaria",
   "t": "state",
   "u": "states#STATE_BULGARIA"
+ },
+ {
+  "a": "events:bulgaria_events",
+  "n": "Bulgaria Events",
+  "t": "event_group",
+  "u": "events/bulgaria_events"
  },
  {
   "a": "bulgarian",
@@ -2726,6 +3343,12 @@
   "n": "Bureaucracy",
   "t": "technology",
   "u": "technology#tech_bureaucracy"
+ },
+ {
+  "a": "events:law_events--bureaucracy",
+  "n": "Bureaucracy Events",
+  "t": "event_group",
+  "u": "events/law_events--bureaucracy"
  },
  {
   "a": "bureaucrats",
@@ -2878,6 +3501,13 @@
   "u": "states#STATE_CALIFORNIA"
  },
  {
+  "a": "je_suffragists",
+  "g": "Domestic Affairs",
+  "n": "Call for Women’s Suffrage",
+  "t": "journal_entry",
+  "u": "journal-entries#je_suffragists"
+ },
+ {
   "a": "cam",
   "g": "unrecognized",
   "n": "Cambodia",
@@ -2900,6 +3530,12 @@
   "u": "technology#camera"
  },
  {
+  "a": "events:tech_events--camera_film_pm_events",
+  "n": "Camera Film Pm Events",
+  "t": "event_group",
+  "u": "events/tech_events--camera_film_pm_events"
+ },
+ {
   "a": "state_campania",
   "g": "Southern Europe",
   "n": "Campania",
@@ -2914,10 +3550,22 @@
   "u": "countries#CAN"
  },
  {
+  "a": "events:canada_australia_events",
+  "n": "Canada Australia Events",
+  "t": "event_group",
+  "u": "events/canada_australia_events"
+ },
+ {
   "a": "concept_canal",
   "n": "Canal",
   "t": "concept",
   "u": "concepts#concept_canal"
+ },
+ {
+  "a": "events:canal_events",
+  "n": "Canal Events",
+  "t": "event_group",
+  "u": "events/canal_events"
  },
  {
   "a": "state_canary_islands",
@@ -2925,6 +3573,18 @@
   "n": "Canary Islands",
   "t": "state",
   "u": "states#STATE_CANARY_ISLANDS"
+ },
+ {
+  "a": "stop_panama_survey_decision",
+  "n": "Cancel the Panama Survey",
+  "t": "decision",
+  "u": "decisions#stop_panama_survey_decision"
+ },
+ {
+  "a": "stop_suez_survey_decision",
+  "n": "Cancel the Suez Survey",
+  "t": "decision",
+  "u": "decisions#stop_suez_survey_decision"
  },
  {
   "a": "cancer",
@@ -3032,6 +3692,12 @@
   "u": "countries#SPC"
  },
  {
+  "a": "events:iberia_events--carlist_war_events",
+  "n": "Carlist War Events",
+  "t": "event_group",
+  "u": "events/iberia_events--carlist_war_events"
+ },
+ {
   "a": "car",
   "g": "unrecognized",
   "n": "Carnatic",
@@ -3078,6 +3744,12 @@
   "n": "Cash Reserves",
   "t": "concept",
   "u": "concepts#concept_cash_reserves"
+ },
+ {
+  "a": "events:india_events--caste_conflict",
+  "n": "Caste Conflict Events",
+  "t": "event_group",
+  "u": "events/india_events--caste_conflict"
  },
  {
   "a": "law_hindu_caste_not_enforced",
@@ -3151,6 +3823,12 @@
   "u": "states#STATE_CAUCA"
  },
  {
+  "a": "events:brazil--caudillo",
+  "n": "Caudillo Events",
+  "t": "event_group",
+  "u": "events/brazil--caudillo"
+ },
+ {
   "a": "cautious",
   "c": "img/traits/cautious.png",
   "g": "personality",
@@ -3195,6 +3873,13 @@
   "u": "character-traits#celebrity_commander"
  },
  {
+  "a": "je_cement_the_rightful_dynasty",
+  "g": "Divided Monarchists",
+  "n": "Cement the House of …",
+  "t": "journal_entry",
+  "u": "journal-entries#je_cement_the_rightful_dynasty"
+ },
+ {
   "a": "law_censorship",
   "c": "img/laws/censorship.png",
   "g": "Free Speech",
@@ -3211,6 +3896,12 @@
   "u": "laws#law_census_voting"
  },
  {
+  "a": "events:expedition_events--central_africa_expedition_events",
+  "n": "Central Africa Expedition Events",
+  "t": "event_group",
+  "u": "events/expedition_events--central_africa_expedition_events"
+ },
+ {
   "a": "uca",
   "g": "recognized",
   "n": "Central America",
@@ -3218,10 +3909,30 @@
   "u": "countries#UCA"
  },
  {
+  "a": "events:central_america_events",
+  "n": "Central America Events",
+  "t": "event_group",
+  "u": "events/central_america_events"
+ },
+ {
   "a": "central_american",
   "n": "Central American",
   "t": "culture",
   "u": "cultures#central_american"
+ },
+ {
+  "a": "central_america_falls_apart",
+  "g": "National Agenda",
+  "n": "Central American Dissolution",
+  "t": "journal_entry",
+  "u": "journal-entries#central_america_falls_apart"
+ },
+ {
+  "a": "je_reunify_central_america",
+  "g": "Foreign Affairs",
+  "n": "Central American Reunification",
+  "t": "journal_entry",
+  "u": "journal-entries#je_reunify_central_america"
  },
  {
   "a": "central_archives",
@@ -3353,6 +4064,27 @@
   "u": "countries#CHP"
  },
  {
+  "a": "je_tutorial_convoy_raiding",
+  "g": "Tutorial",
+  "n": "Change Commander Order",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_convoy_raiding"
+ },
+ {
+  "a": "je_mon_austria_alliance",
+  "g": "National Agenda",
+  "n": "Change of Tack",
+  "t": "journal_entry",
+  "u": "journal-entries#je_mon_austria_alliance"
+ },
+ {
+  "a": "je_tutorial_change_production_method",
+  "g": "Tutorial",
+  "n": "Change Production Method",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_change_production_method"
+ },
+ {
   "a": "concept_change_rate_scaling",
   "n": "Change Rate Scaling",
   "t": "concept",
@@ -3363,6 +4095,12 @@
   "n": "Character",
   "t": "concept",
   "u": "concepts#concept_character"
+ },
+ {
+  "a": "events:character_events",
+  "n": "Character Events",
+  "t": "event_group",
+  "u": "events/character_events"
  },
  {
   "a": "concept_character_trait",
@@ -3543,6 +4281,12 @@
   "u": "laws#law_child_labor_allowed"
  },
  {
+  "a": "events:law_events--children_rights_events",
+  "n": "Children Rights Events",
+  "t": "event_group",
+  "u": "events/law_events--children_rights_events"
+ },
+ {
   "a": "chl",
   "g": "recognized",
   "n": "Chile",
@@ -3590,6 +4334,12 @@
   "u": "countries#CHK"
  },
  {
+  "a": "events:cholera",
+  "n": "Cholera Events",
+  "t": "event_group",
+  "u": "events/cholera"
+ },
+ {
   "a": "state_chongqing",
   "g": "South China",
   "n": "Chongqing",
@@ -3610,6 +4360,20 @@
   "n": "Chr. Hansen",
   "t": "company",
   "u": "companies#company_chr_hansens"
+ },
+ {
+  "a": "je_christ_of_nations",
+  "g": "The Polish Nation",
+  "n": "Christ of Nations",
+  "t": "journal_entry",
+  "u": "journal-entries#je_christ_of_nations"
+ },
+ {
+  "a": "je_cristo_redentor",
+  "g": "The Brazilian Nation",
+  "n": "Christ the Redeemer",
+  "t": "journal_entry",
+  "u": "journal-entries#je_cristo_redentor"
  },
  {
   "a": "state_chugoku",
@@ -3659,10 +4423,22 @@
   "u": "cultures#circassian"
  },
  {
+  "a": "events:law_events--citizenship_laws",
+  "n": "Citizenship Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--citizenship_laws"
+ },
+ {
   "a": "concept_civil_war",
   "n": "Civil War",
   "t": "concept",
   "u": "concepts#concept_civil_war"
+ },
+ {
+  "a": "events:civil_war_events",
+  "n": "Civil War Events",
+  "t": "event_group",
+  "u": "events/civil_war_events"
  },
  {
   "a": "civilizing_mission",
@@ -3745,6 +4521,13 @@
   "u": "concepts#concept_coastal_building"
  },
  {
+  "a": "ship_type_coastal_defense_ship",
+  "g": "Capital Ships",
+  "n": "Coastal Defense Ship",
+  "t": "ship",
+  "u": "ships#ship_type_coastal_defense_ship"
+ },
+ {
   "a": "cocaine_addiction",
   "c": "img/traits/cocaine_addiction.png",
   "g": "condition",
@@ -3758,6 +4541,13 @@
   "n": "Cochin",
   "t": "country",
   "u": "countries#COC"
+ },
+ {
+  "a": "je_codify_chinese_border",
+  "g": "Objectives",
+  "n": "Codify the Chinese Border",
+  "t": "journal_entry",
+  "u": "journal-entries#je_codify_chinese_border"
  },
  {
   "a": "coffee",
@@ -3774,6 +4564,19 @@
   "n": "Coffee Plantations",
   "t": "building",
   "u": "buildings/coffee_plantation"
+ },
+ {
+  "a": "je_coffee_with_milk",
+  "g": "The Brazilian Nation",
+  "n": "Coffee with Milk",
+  "t": "journal_entry",
+  "u": "journal-entries#je_coffee_with_milk"
+ },
+ {
+  "a": "events:brazil--coffee_with_milk",
+  "n": "Coffee With Milk Events",
+  "t": "event_group",
+  "u": "events/brazil--coffee_with_milk"
  },
  {
   "a": "concept_power_bloc_cohesion",
@@ -3809,6 +4612,12 @@
   "n": "Colonial Administration",
   "t": "law",
   "u": "laws#law_colonial_administration"
+ },
+ {
+  "a": "events:colonial_administration_events",
+  "n": "Colonial Administration Events",
+  "t": "event_group",
+  "u": "events/colonial_administration_events"
  },
  {
   "a": "basic_colonial_administrator",
@@ -3864,10 +4673,23 @@
   "u": "technology#colonization"
  },
  {
+  "a": "events:law_events--colonization_laws",
+  "n": "Colonization Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--colonization_laws"
+ },
+ {
   "a": "concept_colonization_rights",
   "n": "Colonization Rights",
   "t": "concept",
   "u": "concepts#concept_colonization_rights"
+ },
+ {
+  "a": "je_tutorial_colonize_state",
+  "g": "Tutorial",
+  "n": "Colonize State",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_colonize_state"
  },
  {
   "a": "concept_colony",
@@ -3983,6 +4805,12 @@
   "u": "concepts#concept_commander"
  },
  {
+  "a": "events:commander_events",
+  "n": "Commander Events",
+  "t": "event_group",
+  "u": "events/commander_events"
+ },
+ {
   "a": "concept_commander_rank",
   "n": "Commander Rank",
   "t": "concept",
@@ -3995,6 +4823,80 @@
   "n": "Commercialized Agriculture",
   "t": "law",
   "u": "laws#law_commercialized_agriculture"
+ },
+ {
+  "a": "je_negotiate_building_group",
+  "g": "Domestic Affairs",
+  "n": "Commitment: Economic Initiative",
+  "t": "journal_entry",
+  "u": "journal-entries#je_negotiate_building_group"
+ },
+ {
+  "a": "je_negotiate_army_quest",
+  "g": "Domestic Affairs",
+  "n": "Commitment: Enlarge the Army",
+  "t": "journal_entry",
+  "u": "journal-entries#je_negotiate_army_quest"
+ },
+ {
+  "a": "je_government_petition_negotiation_version",
+  "g": "Domestic Affairs",
+  "n": "Commitment: Promised Enactment",
+  "t": "journal_entry",
+  "u": "journal-entries#je_government_petition_negotiation_version"
+ },
+ {
+  "a": "je_government_petition_negotiation_version_b",
+  "g": "Domestic Affairs",
+  "n": "Commitment: Promised Enactment",
+  "t": "journal_entry",
+  "u": "journal-entries#je_government_petition_negotiation_version_b"
+ },
+ {
+  "a": "je_negotiate_taxes",
+  "g": "Domestic Affairs",
+  "n": "Commitment: Tax Cuts",
+  "t": "journal_entry",
+  "u": "journal-entries#je_negotiate_taxes"
+ },
+ {
+  "a": "je_negotiate_sol",
+  "g": "Domestic Affairs",
+  "n": "Commitment: The Common People",
+  "t": "journal_entry",
+  "u": "journal-entries#je_negotiate_sol"
+ },
+ {
+  "a": "je_negotiate_buildings",
+  "g": "Domestic Affairs",
+  "n": "Commitment: Valued Investments",
+  "t": "journal_entry",
+  "u": "journal-entries#je_negotiate_buildings"
+ },
+ {
+  "a": "je_communal_divides",
+  "g": "The Administration of India",
+  "n": "Communal Divides",
+  "t": "journal_entry",
+  "u": "journal-entries#je_communal_divides"
+ },
+ {
+  "a": "events:india_events--communal_divides_events",
+  "n": "Communal Divides Events",
+  "t": "event_group",
+  "u": "events/india_events--communal_divides_events"
+ },
+ {
+  "a": "events:communism",
+  "n": "Communism Events",
+  "t": "event_group",
+  "u": "events/communism"
+ },
+ {
+  "a": "events:election_events--communist_fascist_election_events",
+  "n": "Communist Fascist Election Events",
+  "t": "event_group",
+  "u": "events/election_events--communist_fascist_election_events"
  },
  {
   "a": "company_mines_anzin",
@@ -4122,6 +5024,12 @@
   "u": "concepts#concept_company_monopoly"
  },
  {
+  "a": "rom_annex_trs",
+  "n": "Complete the Great Union",
+  "t": "decision",
+  "u": "decisions#rom_annex_trs"
+ },
+ {
   "a": "compliant",
   "c": "img/traits/compliant.png",
   "g": "personality",
@@ -4160,6 +5068,20 @@
   "n": "Concrete Fortifications",
   "t": "technology",
   "u": "technology#concrete_fortifications"
+ },
+ {
+  "a": "je_canada_can",
+  "g": "National Agenda",
+  "n": "Confederate Canada",
+  "t": "journal_entry",
+  "u": "journal-entries#je_canada_can"
+ },
+ {
+  "a": "je_canada_gbr",
+  "g": "National Agenda",
+  "n": "Confederate Canada",
+  "t": "journal_entry",
+  "u": "journal-entries#je_canada_gbr"
  },
  {
   "a": "csa",
@@ -4211,6 +5133,31 @@
   "u": "states#STATE_CONGO"
  },
  {
+  "a": "events:congo_free_state_events",
+  "n": "Congo Free State Events",
+  "t": "event_group",
+  "u": "events/congo_free_state_events"
+ },
+ {
+  "a": "congo_river_expedition",
+  "n": "Congo River Expedition",
+  "t": "decision",
+  "u": "decisions#congo_river_expedition"
+ },
+ {
+  "a": "je_congo_expedition",
+  "g": "Expeditions",
+  "n": "Congo River Expedition",
+  "t": "journal_entry",
+  "u": "journal-entries#je_congo_expedition"
+ },
+ {
+  "a": "events:expedition_events--congo_river_expedition_events",
+  "n": "Congo River Expedition Events",
+  "t": "event_group",
+  "u": "events/expedition_events--congo_river_expedition_events"
+ },
+ {
   "a": "state_connaught",
   "g": "Western Europe",
   "n": "Connaught",
@@ -4245,10 +5192,44 @@
   "u": "concepts#concept_conscription_center"
  },
  {
+  "a": "events:law_events--conscription_laws",
+  "n": "Conscription Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--conscription_laws"
+ },
+ {
   "a": "concept_conscription_limit",
   "n": "Conscription Limit",
   "t": "concept",
   "u": "concepts#concept_conscription_limit"
+ },
+ {
+  "a": "je_consolidate_afghanistan_objective",
+  "g": "Objectives",
+  "n": "Consolidate Afghanistan",
+  "t": "journal_entry",
+  "u": "journal-entries#je_consolidate_afghanistan_objective"
+ },
+ {
+  "a": "je_consolidate_central_asia",
+  "g": "Objectives",
+  "n": "Consolidate Central Asian Holdings",
+  "t": "journal_entry",
+  "u": "journal-entries#je_consolidate_central_asia"
+ },
+ {
+  "a": "je_consolidate_colonial_rule",
+  "g": "The Administration of India",
+  "n": "Consolidate Colonial Rule",
+  "t": "journal_entry",
+  "u": "journal-entries#je_consolidate_colonial_rule"
+ },
+ {
+  "a": "je_consolidate_persia",
+  "g": "Objectives",
+  "n": "Consolidate Persia",
+  "t": "journal_entry",
+  "u": "journal-entries#je_consolidate_persia"
  },
  {
   "a": "company_basic_oil",
@@ -4285,6 +5266,27 @@
   "n": "Constitutional Pressure",
   "t": "concept",
   "u": "concepts#concept_austrian_constitutional_pressure"
+ },
+ {
+  "a": "je_skyscraper_construction",
+  "g": "Development",
+  "n": "Construct a Skyscraper",
+  "t": "journal_entry",
+  "u": "journal-entries#je_skyscraper_construction"
+ },
+ {
+  "a": "je_panama_canal",
+  "g": "Development",
+  "n": "Construct the Panama Canal",
+  "t": "journal_entry",
+  "u": "journal-entries#je_panama_canal"
+ },
+ {
+  "a": "je_suez_canal",
+  "g": "Development",
+  "n": "Construct the Suez Canal",
+  "t": "journal_entry",
+  "u": "journal-entries#je_suez_canal"
  },
  {
   "a": "concept_construction",
@@ -4337,6 +5339,13 @@
   "n": "Consumption-Based Taxation",
   "t": "law",
   "u": "laws#law_consumption_based_taxation"
+ },
+ {
+  "a": "je_pamir_expedition_objective",
+  "g": "Objectives",
+  "n": "Contest the Russian Pamirs",
+  "t": "journal_entry",
+  "u": "journal-entries#je_pamir_expedition_objective"
  },
  {
   "a": "concept_contravention",
@@ -4407,6 +5416,19 @@
   "u": "concepts#concept_core_movement_ideology"
  },
  {
+  "a": "je_corn_laws",
+  "g": "Domestic Affairs",
+  "n": "Corn Laws",
+  "t": "journal_entry",
+  "u": "journal-entries#je_corn_laws"
+ },
+ {
+  "a": "events:corn_laws_events",
+  "n": "Corn Laws Events",
+  "t": "event_group",
+  "u": "events/corn_laws_events"
+ },
+ {
   "a": "cnw",
   "g": "recognized",
   "n": "Cornwall",
@@ -4436,6 +5458,12 @@
   "n": "Corporate State",
   "t": "law",
   "u": "laws#law_corporate_state"
+ },
+ {
+  "a": "events:law_events--corporate_state_events",
+  "n": "Corporate State Events",
+  "t": "event_group",
+  "u": "events/law_events--corporate_state_events"
  },
  {
   "a": "corporatism",
@@ -4526,10 +5554,23 @@
   "u": "laws#law_council_republic"
  },
  {
+  "a": "events:law_events--council_republic_law_events",
+  "n": "Council Republic Law Events",
+  "t": "event_group",
+  "u": "events/law_events--council_republic_law_events"
+ },
+ {
   "a": "concept_countdown_to_war",
   "n": "Countdown to War",
   "t": "concept",
   "u": "concepts#concept_countdown_to_war"
+ },
+ {
+  "a": "je_counter_russian_pacific_influence",
+  "g": "Objectives",
+  "n": "Counter Russian Pacific Influence",
+  "t": "journal_entry",
+  "u": "journal-entries#je_counter_russian_pacific_influence"
  },
  {
   "a": "concept_country",
@@ -4562,6 +5603,12 @@
   "u": "concepts#concept_coup"
  },
  {
+  "a": "events:agitators_events--coup_events",
+  "n": "Coup Events",
+  "t": "event_group",
+  "u": "events/agitators_events--coup_events"
+ },
+ {
   "a": "concept_coup_resistance",
   "n": "Coup Resistance",
   "t": "concept",
@@ -4572,6 +5619,13 @@
   "n": "Coup Strength",
   "t": "concept",
   "u": "concepts#concept_coup_strength"
+ },
+ {
+  "a": "je_ip4_coup",
+  "g": "Major Situations",
+  "n": "Coup!",
+  "t": "journal_entry",
+  "u": "journal-entries#je_ip4_coup"
  },
  {
   "a": "state_courland",
@@ -4585,6 +5639,20 @@
   "n": "Court Intrigue",
   "t": "concept",
   "u": "concepts#concept_court_intrigue"
+ },
+ {
+  "a": "je_prestige_goods_paper",
+  "g": "Development",
+  "n": "Craft Paper",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_paper"
+ },
+ {
+  "a": "je_tutorial_create_formation",
+  "g": "Tutorial",
+  "n": "Create Formation",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_create_formation"
  },
  {
   "a": "concept_credit",
@@ -4625,6 +5693,12 @@
   "u": "concepts#concept_crew_casualties"
  },
  {
+  "a": "events:crime_events",
+  "n": "Crime Events",
+  "t": "event_group",
+  "u": "events/crime_events"
+ },
+ {
   "a": "cri",
   "g": "unrecognized",
   "n": "Crimea",
@@ -4639,12 +5713,25 @@
   "u": "states#STATE_CRIMEA"
  },
  {
+  "a": "je_eastern_question_russia",
+  "g": "Foreign Affairs",
+  "n": "Crisis and Opportunity",
+  "t": "journal_entry",
+  "u": "journal-entries#je_eastern_question_russia"
+ },
+ {
   "a": "building_cristo_redentor",
   "c": "img/buildings/building_cristo_redentor.png",
   "g": "Monuments",
   "n": "Cristo Redentor",
   "t": "building",
   "u": "buildings/cristo_redentor"
+ },
+ {
+  "a": "events:brazil--cristo_redentor",
+  "n": "Cristo Redentor Events",
+  "t": "event_group",
+  "u": "events/brazil--cristo_redentor"
  },
  {
   "a": "concept_critical_hit_chance",
@@ -4722,6 +5809,25 @@
   "u": "countries#CUB"
  },
  {
+  "a": "je_cuba_espanol",
+  "g": "National Agenda",
+  "n": "Cuba es España",
+  "t": "journal_entry",
+  "u": "journal-entries#je_cuba_espanol"
+ },
+ {
+  "a": "events:iberia_events--cuba_events",
+  "n": "Cuba Events",
+  "t": "event_group",
+  "u": "events/iberia_events--cuba_events"
+ },
+ {
+  "a": "events:iberia_events--cuba_eventos",
+  "n": "Cuba Os Events",
+  "t": "event_group",
+  "u": "events/iberia_events--cuba_eventos"
+ },
+ {
   "a": "combat_unit_type_cuirassiers",
   "g": "army",
   "n": "Cuirassiers",
@@ -4750,6 +5856,12 @@
   "u": "laws#law_cultural_exclusion"
  },
  {
+  "a": "events:cultural_homeland_events",
+  "n": "Cultural Homeland Events",
+  "t": "event_group",
+  "u": "events/cultural_homeland_events"
+ },
+ {
   "a": "concept_cultural_movement",
   "n": "Cultural Movement",
   "t": "concept",
@@ -4766,6 +5878,18 @@
   "n": "Culture",
   "t": "concept",
   "u": "concepts#concept_culture"
+ },
+ {
+  "a": "events:brazil--culture_brazil_events",
+  "n": "Culture Brazil Events",
+  "t": "event_group",
+  "u": "events/brazil--culture_brazil_events"
+ },
+ {
+  "a": "events:brazil--culture_south_america",
+  "n": "Culture South America Events",
+  "t": "event_group",
+  "u": "events/brazil--culture_south_america"
  },
  {
   "a": "state_cundinamarca",
@@ -5691,6 +6815,12 @@
   "u": "laws#law_debt_slavery"
  },
  {
+  "a": "events:debug_events",
+  "n": "Debug Events",
+  "t": "event_group",
+  "u": "events/debug_events"
+ },
+ {
   "a": "concept_decay",
   "n": "Decay",
   "t": "concept",
@@ -5719,6 +6849,18 @@
   "n": "Decree",
   "t": "concept",
   "u": "concepts#concept_decree"
+ },
+ {
+  "a": "events:decree_events",
+  "n": "Decree Events",
+  "t": "event_group",
+  "u": "events/decree_events"
+ },
+ {
+  "a": "events:decree_events_02",
+  "n": "Decree Events",
+  "t": "event_group",
+  "u": "events/decree_events_02"
  },
  {
   "a": "law_dedicated_police",
@@ -5797,6 +6939,12 @@
   "u": "countries#DGR"
  },
  {
+  "a": "events:dei_breakup",
+  "n": "Dei Breakup Events",
+  "t": "event_group",
+  "u": "events/dei_breakup"
+ },
+ {
   "a": "state_deir_ez_zor",
   "g": "Near East",
   "n": "Deir-Ez-Zor",
@@ -5833,6 +6981,12 @@
   "u": "character-traits#demagogue"
  },
  {
+  "a": "demand_return_of_koh_i_noor",
+  "n": "Demand Return of the Koh-i-Noor",
+  "t": "decision",
+  "u": "decisions#demand_return_of_koh_i_noor"
+ },
+ {
   "a": "democracy",
   "c": "img/techs/democracy.png",
   "g": "society",
@@ -5866,11 +7020,37 @@
   "u": "concepts#concept_dependents"
  },
  {
+  "a": "decision_depose_ruling_dynasty",
+  "n": "Depose Ruling Dynasty",
+  "t": "decision",
+  "u": "decisions#decision_depose_ruling_dynasty"
+ },
+ {
   "a": "des",
   "g": "recognized",
   "n": "Deseret",
   "t": "country",
   "u": "countries#DES"
+ },
+ {
+  "a": "decision_move_capital_to_buda",
+  "n": "Designate Buda as Capital",
+  "t": "decision",
+  "u": "decisions#decision_move_capital_to_buda"
+ },
+ {
+  "a": "je_prestige_goods_clothes",
+  "g": "Development",
+  "n": "Designer Clothes",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_clothes"
+ },
+ {
+  "a": "je_taiping",
+  "g": "The Qing Dynasty",
+  "n": "Destroy the Heavenly Kingdom",
+  "t": "journal_entry",
+  "u": "journal-entries#je_taiping"
  },
  {
   "a": "destroyer",
@@ -5879,6 +7059,13 @@
   "n": "Destroyer",
   "t": "technology",
   "u": "technology#destroyer"
+ },
+ {
+  "a": "ship_type_destroyer",
+  "g": "Torpedo Craft",
+  "n": "Destroyer",
+  "t": "ship",
+  "u": "ships#ship_type_destroyer"
  },
  {
   "a": "concept_detection",
@@ -5968,12 +7155,24 @@
   "u": "concepts#concept_diplomatic_demand"
  },
  {
+  "a": "events:diplomatic_events",
+  "n": "Diplomatic Events",
+  "t": "event_group",
+  "u": "events/diplomatic_events"
+ },
+ {
   "a": "law_diplomatic_navy",
   "c": "img/laws/diplomatic_interest.png",
   "g": "Navy Model",
   "n": "Diplomatic Fleet",
   "t": "law",
   "u": "laws#law_diplomatic_navy"
+ },
+ {
+  "a": "events:diplomatic_friction_events",
+  "n": "Diplomatic Friction Events",
+  "t": "event_group",
+  "u": "events/diplomatic_friction_events"
  },
  {
   "a": "concept_diplomatic_incident",
@@ -6039,6 +7238,12 @@
   "u": "concepts#concept_discrimination"
  },
  {
+  "a": "events:discrimination_events",
+  "n": "Discrimination Events",
+  "t": "event_group",
+  "u": "events/discrimination_events"
+ },
+ {
   "a": "concept_discrimination_trait",
   "n": "Discrimination Trait",
   "t": "concept",
@@ -6063,6 +7268,13 @@
   "u": "concepts#concept_disqualified_culture"
  },
  {
+  "a": "je_disrupt_russian_caucasus",
+  "g": "Objectives",
+  "n": "Disrupt the Russian Caucasus",
+  "t": "journal_entry",
+  "u": "journal-entries#je_disrupt_russian_caucasus"
+ },
+ {
   "a": "distillation",
   "c": "img/techs/distillation.png",
   "g": "production",
@@ -6071,11 +7283,24 @@
   "u": "technology#distillation"
  },
  {
+  "a": "events:law_events--distribution_of_power_laws",
+  "n": "Distribution Of Power Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--distribution_of_power_laws"
+ },
+ {
   "a": "state_district_of_columbia",
   "g": "Atlantic Coast",
   "n": "District of Columbia",
   "t": "state",
   "u": "states#STATE_DISTRICT_OF_COLUMBIA"
+ },
+ {
+  "a": "je_divided_monarchists",
+  "g": "Divided Monarchists",
+  "n": "Divided Monarchists",
+  "t": "journal_entry",
+  "u": "journal-entries#je_divided_monarchists"
  },
  {
   "a": "concept_dividends",
@@ -6124,6 +7349,12 @@
   "n": "Dollfus-Mieg et Cie",
   "t": "company",
   "u": "companies#company_dmc"
+ },
+ {
+  "a": "events:iberia_events--dominican_events",
+  "n": "Dominican Events",
+  "t": "event_group",
+  "u": "events/iberia_events--dominican_events"
  },
  {
   "a": "concept_dominion",
@@ -6175,12 +7406,38 @@
   "u": "countries#DRA"
  },
  {
+  "a": "je_dravidian_movement",
+  "g": "The Administration of India",
+  "n": "Dravidian Movement",
+  "t": "journal_entry",
+  "u": "journal-entries#je_dravidian_movement"
+ },
+ {
   "a": "dreadnought_tech",
   "c": "img/techs/dreadnought.png",
   "g": "military",
   "n": "Dreadnought",
   "t": "technology",
   "u": "technology#dreadnought_tech"
+ },
+ {
+  "a": "ship_type_dreadnought",
+  "g": "Capital Ships",
+  "n": "Dreadnought",
+  "t": "ship",
+  "u": "ships#ship_type_dreadnought"
+ },
+ {
+  "a": "events:dreadnought_hoax",
+  "n": "Dreadnought Hoax Events",
+  "t": "event_group",
+  "u": "events/dreadnought_hoax"
+ },
+ {
+  "a": "events:agitators_events--dreyfus_events",
+  "n": "Dreyfus Events",
+  "t": "event_group",
+  "u": "events/agitators_events--dreyfus_events"
  },
  {
   "a": "drydocks",
@@ -6269,6 +7526,27 @@
   "u": "states#STATE_DZUNGARIA"
  },
  {
+  "a": "ship_type_early_ironclad",
+  "g": "Capital Ships",
+  "n": "Early Ironclad",
+  "t": "ship",
+  "u": "ships#ship_type_early_ironclad"
+ },
+ {
+  "a": "je_tutorial_earn_obligation",
+  "g": "Tutorial",
+  "n": "Earn Obligation",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_earn_obligation"
+ },
+ {
+  "a": "je_earn_recognition",
+  "g": "Foreign Affairs",
+  "n": "Earning Recognition",
+  "t": "journal_entry",
+  "u": "journal-entries#je_earn_recognition"
+ },
+ {
   "a": "state_east_aegean_islands",
   "g": "Near East",
   "n": "East Aegean Islands",
@@ -6340,6 +7618,12 @@
   "u": "countries#DEI"
  },
  {
+  "a": "events:east_indies_je_events",
+  "n": "East Indies Je Events",
+  "t": "event_group",
+  "u": "events/east_indies_je_events"
+ },
+ {
   "a": "state_east_java",
   "g": "Indonesia",
   "n": "East Java",
@@ -6387,6 +7671,12 @@
   "n": "Eastern Cape",
   "t": "state",
   "u": "states#STATE_EASTERN_CAPE"
+ },
+ {
+  "a": "events:balkans_events--eastern_crisis",
+  "n": "Eastern Crisis Events",
+  "t": "event_group",
+  "u": "events/balkans_events--eastern_crisis"
  },
  {
   "a": "state_eastern_cuba",
@@ -6444,6 +7734,12 @@
   "u": "states#STATE_EASTERN_NORWAY"
  },
  {
+  "a": "events:balkans_events--eastern_question",
+  "n": "Eastern Question Events",
+  "t": "event_group",
+  "u": "events/balkans_events--eastern_question"
+ },
+ {
   "a": "state_eastern_serbia",
   "g": "Balkans",
   "n": "Eastern Serbia",
@@ -6464,10 +7760,23 @@
   "u": "concepts#concept_economic_dependence"
  },
  {
+  "a": "je_spa_economic_regeneration_master",
+  "g": "Economic Regeneration",
+  "n": "Economic Regeneration",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spa_economic_regeneration_master"
+ },
+ {
   "a": "concept_economy_health",
   "n": "Economy Health",
   "t": "concept",
   "u": "concepts#concept_economy_health"
+ },
+ {
+  "a": "events:law_events--economy_laws",
+  "n": "Economy Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--economy_laws"
  },
  {
   "a": "concept_economy_of_scale",
@@ -6522,6 +7831,12 @@
   "u": "concepts#concept_education_access"
  },
  {
+  "a": "events:law_events--education_laws",
+  "n": "Education Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--education_laws"
+ },
+ {
   "a": "egalitarianism",
   "c": "img/techs/egalitarianism.png",
   "g": "society",
@@ -6535,6 +7850,12 @@
   "n": "Egypt",
   "t": "country",
   "u": "countries#EGY"
+ },
+ {
+  "a": "events:egyptian_crisis_events",
+  "n": "Egyptian Crisis Events",
+  "t": "event_group",
+  "u": "events/egyptian_crisis_events"
  },
  {
   "a": "state_egyptian_desert",
@@ -6612,6 +7933,48 @@
   "u": "concepts#concept_election"
  },
  {
+  "a": "events:election_events--election_conservative_events",
+  "n": "Election Conservative Events",
+  "t": "event_group",
+  "u": "events/election_events--election_conservative_events"
+ },
+ {
+  "a": "events:election_events--election_contextual_events",
+  "n": "Election Contextual Events",
+  "t": "event_group",
+  "u": "events/election_events--election_contextual_events"
+ },
+ {
+  "a": "events:election_events--election_generic_events",
+  "n": "Election Generic Events",
+  "t": "event_group",
+  "u": "events/election_events--election_generic_events"
+ },
+ {
+  "a": "events:election_events--election_liberal_events",
+  "n": "Election Liberal Events",
+  "t": "event_group",
+  "u": "events/election_events--election_liberal_events"
+ },
+ {
+  "a": "events:election_events--election_moderate_events",
+  "n": "Election Moderate Events",
+  "t": "event_group",
+  "u": "events/election_events--election_moderate_events"
+ },
+ {
+  "a": "events:election_events--election_neutral_events",
+  "n": "Election Neutral Events",
+  "t": "event_group",
+  "u": "events/election_events--election_neutral_events"
+ },
+ {
+  "a": "events:election_events--election_other_parties_events",
+  "n": "Election Other Parties Events",
+  "t": "event_group",
+  "u": "events/election_events--election_other_parties_events"
+ },
+ {
   "a": "concept_electoral_confidence",
   "n": "Electoral Confidence",
   "t": "concept",
@@ -6672,6 +8035,19 @@
   "n": "Electrics Industries",
   "t": "building",
   "u": "buildings/electrics_industry"
+ },
+ {
+  "a": "elevate_buddhism_decision",
+  "n": "Elevate Buddhism",
+  "t": "decision",
+  "u": "decisions#elevate_buddhism_decision"
+ },
+ {
+  "a": "je_elevate_buddhism",
+  "g": "National Agenda",
+  "n": "Elevate Buddhism",
+  "t": "journal_entry",
+  "u": "journal-entries#je_elevate_buddhism"
  },
  {
   "a": "elevator",
@@ -6817,6 +8193,13 @@
   "u": "decrees#decree_encourage_agricultural_industry"
  },
  {
+  "a": "je_objective_encourage_liberal_ideas",
+  "g": "Objectives",
+  "n": "Encourage Liberal Thought",
+  "t": "journal_entry",
+  "u": "journal-entries#je_objective_encourage_liberal_ideas"
+ },
+ {
   "a": "decree_encourage_manufacturing_industry",
   "c": "img/decrees/decree_encourage_manufacturing_industry.png",
   "n": "Encourage Manufacturing Industry",
@@ -6829,6 +8212,24 @@
   "n": "Encourage Resource Industry",
   "t": "decree",
   "u": "decrees#decree_encourage_resource_industry"
+ },
+ {
+  "a": "bic_end_company_rule",
+  "n": "End Company Rule",
+  "t": "decision",
+  "u": "decisions#bic_end_company_rule"
+ },
+ {
+  "a": "bht_end_privy_purse_payments",
+  "n": "End Privy Purse Payments",
+  "t": "decision",
+  "u": "decisions#bht_end_privy_purse_payments"
+ },
+ {
+  "a": "jap_abolish_edo_system",
+  "n": "End the Edo Status System",
+  "t": "decision",
+  "u": "decisions#jap_abolish_edo_system"
  },
  {
   "a": "concept_end_of_discussion_factor",
@@ -6900,11 +8301,109 @@
   "u": "technology#enlistment_offices"
  },
  {
+  "a": "je_prestige_goods_fertilizer",
+  "g": "Development",
+  "n": "Enriched Fertilizer",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_fertilizer"
+ },
+ {
   "a": "state_entre_douro_e_minho",
   "g": "Southern Europe",
   "n": "Entre Douro and Minho",
   "t": "state",
   "u": "states#STATE_ENTRE_DOURO_E_MINHO"
+ },
+ {
+  "a": "events:japan_events--ep2_ezo_republic",
+  "n": "Ep2 Ezo Republic Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_ezo_republic"
+ },
+ {
+  "a": "events:japan_events--ep2_hokkaido_events",
+  "n": "Ep2 Hokkaido Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_hokkaido_events"
+ },
+ {
+  "a": "events:japan_events--ep2_imperial_events",
+  "n": "Ep2 Imperial Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_imperial_events"
+ },
+ {
+  "a": "events:japan_events--ep2_iwakura_events",
+  "n": "Ep2 Iwakura Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_iwakura_events"
+ },
+ {
+  "a": "events:japan_events--ep2_japan_earthquake_events",
+  "n": "Ep2 Japan Earthquake Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_japan_earthquake_events"
+ },
+ {
+  "a": "events:japan_events--ep2_japan_events",
+  "n": "Ep2 Japan Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_japan_events"
+ },
+ {
+  "a": "events:japan_events--ep2_japan_events_03",
+  "n": "Ep2 Japan Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_japan_events_03"
+ },
+ {
+  "a": "events:japan_events--ep2_japan_political_events",
+  "n": "Ep2 Japan Political Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_japan_political_events"
+ },
+ {
+  "a": "events:japan_events--ep2_korea_colonization",
+  "n": "Ep2 Korea Colonization Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_korea_colonization"
+ },
+ {
+  "a": "events:japan_events--ep2_meiji_restoration",
+  "n": "Ep2 Meiji Restoration Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_meiji_restoration"
+ },
+ {
+  "a": "events:japan_events--ep2_sakoku_events",
+  "n": "Ep2 Sakoku Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_sakoku_events"
+ },
+ {
+  "a": "events:japan_events--ep2_shogunate_events",
+  "n": "Ep2 Shogunate Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_shogunate_events"
+ },
+ {
+  "a": "events:japan_events--ep2_tenpo_events",
+  "n": "Ep2 Tenpo Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_tenpo_events"
+ },
+ {
+  "a": "events:japan_events--ep2_zaibatsu_events",
+  "n": "Ep2 Zaibatsu Events",
+  "t": "event_group",
+  "u": "events/japan_events--ep2_zaibatsu_events"
+ },
+ {
+  "a": "je_acw_equality",
+  "g": "The Slavery Debate",
+  "n": "Equality for All",
+  "t": "journal_entry",
+  "u": "journal-entries#je_acw_equality"
  },
  {
   "a": "state_equateur",
@@ -6932,6 +8431,13 @@
   "n": "Equatorial Bantu",
   "t": "culture",
   "u": "cultures#equatorial_bantu"
+ },
+ {
+  "a": "je_guinean_conquest",
+  "g": "National Agenda",
+  "n": "Equatorial Foothold",
+  "t": "journal_entry",
+  "u": "journal-entries#je_guinean_conquest"
  },
  {
   "a": "company_ericsson",
@@ -6985,11 +8491,59 @@
   "u": "concepts#concept_escalation"
  },
  {
+  "a": "establish_pact_with_nafusis",
+  "n": "Establish a pact with the Nafusis",
+  "t": "decision",
+  "u": "decisions#establish_pact_with_nafusis"
+ },
+ {
+  "a": "je_tutorial_declare_an_interest",
+  "g": "Tutorial",
+  "n": "Establish an Interest",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_declare_an_interest"
+ },
+ {
+  "a": "je_colonial_administration",
+  "g": "Foreign Affairs",
+  "n": "Establish Colonial Administration",
+  "t": "journal_entry",
+  "u": "journal-entries#je_colonial_administration"
+ },
+ {
+  "a": "je_tutorial_establish_company",
+  "g": "Tutorial",
+  "n": "Establish Company",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_establish_company"
+ },
+ {
   "a": "decree_establish_missions",
   "c": "img/decrees/decree_establish_missions.png",
   "n": "Establish Missions",
   "t": "decree",
   "u": "decrees#decree_establish_missions"
+ },
+ {
+  "a": "je_film",
+  "g": "Development",
+  "n": "Establish the Film Arts",
+  "t": "journal_entry",
+  "u": "journal-entries#je_film"
+ },
+ {
+  "a": "je_camera",
+  "g": "Development",
+  "n": "Establish the Photographic Arts",
+  "t": "journal_entry",
+  "u": "journal-entries#je_camera"
+ },
+ {
+  "a": "je_yugoslavia",
+  "g": "National Agenda",
+  "n": "Establishing Yugoslavia",
+  "t": "journal_entry",
+  "u": "journal-entries#je_yugoslavia"
  },
  {
   "a": "company_estaleiro_maua",
@@ -7025,6 +8579,12 @@
   "n": "Ethiopia",
   "t": "country",
   "u": "countries#ETH"
+ },
+ {
+  "a": "events:ethiopia",
+  "n": "Ethiopia Events",
+  "t": "event_group",
+  "u": "events/ethiopia"
  },
  {
   "a": "law_ethnostate",
@@ -7079,12 +8639,86 @@
   "u": "concepts#concept_exiled_army"
  },
  {
+  "a": "events:agitators_events--exiles_events",
+  "n": "Exiles Events",
+  "t": "event_group",
+  "u": "events/agitators_events--exiles_events"
+ },
+ {
+  "a": "events:agitators_events--exiles_events_02",
+  "n": "Exiles Events",
+  "t": "event_group",
+  "u": "events/agitators_events--exiles_events_02"
+ },
+ {
+  "a": "je_tutorial_expand_basic_building",
+  "g": "Tutorial",
+  "n": "Expand a basic Building",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_expand_basic_building"
+ },
+ {
+  "a": "je_tutorial_expand_productive_building",
+  "g": "Tutorial",
+  "n": "Expand a Productive Building",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_expand_productive_building"
+ },
+ {
+  "a": "je_consolidate_british_india",
+  "g": "Objectives",
+  "n": "Expand British India",
+  "t": "journal_entry",
+  "u": "journal-entries#je_consolidate_british_india"
+ },
+ {
+  "a": "je_objective_expand_goods_production",
+  "g": "Objectives",
+  "n": "Expand our Mining Industries",
+  "t": "journal_entry",
+  "u": "journal-entries#je_objective_expand_goods_production"
+ },
+ {
+  "a": "je_tutorial_expand_military",
+  "g": "Tutorial",
+  "n": "Expand The Military",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_expand_military"
+ },
+ {
   "a": "law_expanded_latifundias",
   "c": "img/laws/tenant_farmers.png",
   "g": "Land Reform",
   "n": "Expanded Latifundias",
   "t": "law",
   "u": "laws#law_expanded_latifundias"
+ },
+ {
+  "a": "je_expanding_the_market",
+  "g": "Objectives",
+  "n": "Expanding our Market",
+  "t": "journal_entry",
+  "u": "journal-entries#je_expanding_the_market"
+ },
+ {
+  "a": "je_poland_lithuania",
+  "g": "The Polish Nation",
+  "n": "Expanding the Commonwealth",
+  "t": "journal_entry",
+  "u": "journal-entries#je_poland_lithuania"
+ },
+ {
+  "a": "central_africa_expedition",
+  "n": "Expedition to Find the Source of the Nile",
+  "t": "decision",
+  "u": "decisions#central_africa_expedition"
+ },
+ {
+  "a": "je_tibet_expedition",
+  "g": "Objectives",
+  "n": "Expedition to Tibet",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tibet_expedition"
  },
  {
   "a": "expensive_tastes",
@@ -7245,6 +8879,13 @@
   "u": "character-traits#expert_political_operator"
  },
  {
+  "a": "je_amazonas",
+  "g": "National Agenda",
+  "n": "Exploiting the Amazon",
+  "t": "journal_entry",
+  "u": "journal-entries#je_amazonas"
+ },
+ {
   "a": "explorer",
   "c": "img/traits/explorer.png",
   "g": "skill",
@@ -7275,6 +8916,20 @@
   "u": "concepts#concept_export_price"
  },
  {
+  "a": "je_exporting_profits",
+  "g": "Objectives",
+  "n": "Exporting Our Profits",
+  "t": "journal_entry",
+  "u": "journal-entries#je_exporting_profits"
+ },
+ {
+  "a": "je_circassian_expulsions",
+  "g": "The Ruler of the East",
+  "n": "Expulsion of Circassians",
+  "t": "journal_entry",
+  "u": "journal-entries#je_circassian_expulsions"
+ },
+ {
   "a": "law_extraction_economy",
   "c": "img/laws/extraction_economy.png",
   "g": "Economic System",
@@ -7288,6 +8943,13 @@
   "n": "Extremadura",
   "t": "state",
   "u": "states#STATE_EXTREMADURA"
+ },
+ {
+  "a": "je_conquest_of_tetouan",
+  "g": "National Agenda",
+  "n": "Eye for an Eye",
+  "t": "journal_entry",
+  "u": "journal-entries#je_conquest_of_tetouan"
  },
  {
   "a": "ezo",
@@ -7343,6 +9005,12 @@
   "u": "concepts#concept_famine"
  },
  {
+  "a": "events:famine_political_events",
+  "n": "Famine Political Events",
+  "t": "event_group",
+  "u": "events/famine_political_events"
+ },
+ {
   "a": "fang",
   "n": "Fang",
   "t": "culture",
@@ -7375,6 +9043,32 @@
   "n": "Fars",
   "t": "state",
   "u": "states#STATE_FARS"
+ },
+ {
+  "a": "events:fascism_events",
+  "n": "Fascism Events",
+  "t": "event_group",
+  "u": "events/fascism_events"
+ },
+ {
+  "a": "je_australia_aus",
+  "g": "National Agenda",
+  "n": "Federate Australia",
+  "t": "journal_entry",
+  "u": "journal-entries#je_australia_aus"
+ },
+ {
+  "a": "je_australia_gbr",
+  "g": "National Agenda",
+  "n": "Federate Australia",
+  "t": "journal_entry",
+  "u": "journal-entries#je_australia_gbr"
+ },
+ {
+  "a": "events:india_events--federation_of_india",
+  "n": "Federation Of India Events",
+  "t": "event_group",
+  "u": "events/india_events--federation_of_india"
  },
  {
   "a": "fnd",
@@ -7546,6 +9240,13 @@
   "u": "companies#company_basic_textiles"
  },
  {
+  "a": "je_prestige_goods_grain",
+  "g": "Development",
+  "n": "Fine Grain",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_grain"
+ },
+ {
   "a": "fin",
   "g": "recognized",
   "n": "Finland",
@@ -7581,6 +9282,20 @@
   "n": "Fishing Wharves",
   "t": "building",
   "u": "buildings/fishing_wharf"
+ },
+ {
+  "a": "je_tutorial_capacity_deficit",
+  "g": "Tutorial",
+  "n": "Fix Capacity Deficit",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_capacity_deficit"
+ },
+ {
+  "a": "je_tutorial_fix_unproductive_building",
+  "g": "Tutorial",
+  "n": "Fix Unproductive Building",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_fix_unproductive_building"
  },
  {
   "a": "concept_flagship",
@@ -7659,6 +9374,13 @@
   "u": "states#STATE_FLORIDA"
  },
  {
+  "a": "je_spanish_flu",
+  "g": "Major Situations",
+  "n": "Flu Pandemic",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spanish_flu"
+ },
+ {
   "a": "fluvian_bantu",
   "n": "Fluvial Bantu",
   "t": "culture",
@@ -7709,6 +9431,13 @@
   "u": "companies#company_ford_motor"
  },
  {
+  "a": "je_hawaii",
+  "g": "National Agenda",
+  "n": "Foreign Interests",
+  "t": "journal_entry",
+  "u": "journal-entries#je_hawaii"
+ },
+ {
   "a": "concept_foreign_investment",
   "n": "Foreign Investment",
   "t": "concept",
@@ -7721,12 +9450,33 @@
   "u": "concepts#concept_foreign_investment_rights"
  },
  {
+  "a": "je_law_imposition",
+  "g": "Foreign Affairs",
+  "n": "Foreign Legal Imposition",
+  "t": "journal_entry",
+  "u": "journal-entries#je_law_imposition"
+ },
+ {
   "a": "company_fcm",
   "c": "img/companies/france_forges_et_chantiers_de_la_méditerranée.png",
   "g": "historical",
   "n": "Forges et Chantiers de la Méditerranée",
   "t": "company",
   "u": "companies#company_fcm"
+ },
+ {
+  "a": "je_form_alliance",
+  "g": "Objectives",
+  "n": "Form Alliances",
+  "t": "journal_entry",
+  "u": "journal-entries#je_form_alliance"
+ },
+ {
+  "a": "je_tutorial_form_power_bloc",
+  "g": "Tutorial",
+  "n": "Form Power Bloc",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_form_power_bloc"
  },
  {
   "a": "concept_military_formation",
@@ -7749,12 +9499,32 @@
   "u": "states#STATE_FORMOSA"
  },
  {
+  "a": "make_delhi_capital",
+  "n": "Found New Delhi",
+  "t": "decision",
+  "u": "decisions#make_delhi_capital"
+ },
+ {
   "a": "fractional_distillation",
   "c": "img/techs/fractional_distillation.png",
   "g": "production",
   "n": "Fractional Distillation",
   "t": "technology",
   "u": "technology#fractional_distillation"
+ },
+ {
+  "a": "je_splitting_oman",
+  "g": "National Agenda",
+  "n": "Fracturing Oman",
+  "t": "journal_entry",
+  "u": "journal-entries#je_splitting_oman"
+ },
+ {
+  "a": "je_warlord_china",
+  "g": "The Qing Dynasty",
+  "n": "Fragile Unity",
+  "t": "journal_entry",
+  "u": "journal-entries#je_warlord_china"
  },
  {
   "a": "fra",
@@ -7805,11 +9575,24 @@
   "u": "countries#FRM"
  },
  {
+  "a": "events:law_events--free_speech_laws",
+  "n": "Free Speech Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--free_speech_laws"
+ },
+ {
   "a": "afs",
   "g": "colonial",
   "n": "Free State",
   "t": "country",
   "u": "countries#AFS"
+ },
+ {
+  "a": "je_free_state",
+  "g": "Foreign Affairs",
+  "n": "Free State Question",
+  "t": "journal_entry",
+  "u": "journal-entries#je_free_state"
  },
  {
   "a": "fsa",
@@ -7835,6 +9618,20 @@
   "u": "laws#law_freedom_of_conscience"
  },
  {
+  "a": "je_liberalism_3",
+  "g": "Domestic Affairs",
+  "n": "Freedom of Thought",
+  "t": "journal_entry",
+  "u": "journal-entries#je_liberalism_3"
+ },
+ {
+  "a": "je_liberalism_2",
+  "g": "Domestic Affairs",
+  "n": "Freedom of Trade",
+  "t": "journal_entry",
+  "u": "journal-entries#je_liberalism_2"
+ },
+ {
   "a": "french",
   "n": "French",
   "t": "culture",
@@ -7846,6 +9643,18 @@
   "n": "French Low Countries",
   "t": "state",
   "u": "states#STATE_FRENCH_LOW_COUNTRIES"
+ },
+ {
+  "a": "events:french_pretenders",
+  "n": "French Pretenders Events",
+  "t": "event_group",
+  "u": "events/french_pretenders"
+ },
+ {
+  "a": "events:french_pretenders_pulse",
+  "n": "French Pretenders Pulse Events",
+  "t": "event_group",
+  "u": "events/french_pretenders_pulse"
  },
  {
   "a": "company_krupp",
@@ -7861,6 +9670,27 @@
   "n": "Friesland",
   "t": "state",
   "u": "states#STATE_FRIESLAND"
+ },
+ {
+  "a": "ship_type_frigate",
+  "g": "Cruisers",
+  "n": "Frigate",
+  "t": "ship",
+  "u": "ships#ship_type_frigate"
+ },
+ {
+  "a": "je_urbanization_events_1",
+  "g": "Development",
+  "n": "From Farms to Factories",
+  "t": "journal_entry",
+  "u": "journal-entries#je_urbanization_events_1"
+ },
+ {
+  "a": "je_mon_state_formation",
+  "g": "National Agenda",
+  "n": "From Rebels to Nation",
+  "t": "journal_entry",
+  "u": "journal-entries#je_mon_state_formation"
  },
  {
   "a": "concept_front",
@@ -8061,6 +9891,12 @@
   "u": "countries#GAR"
  },
  {
+  "a": "events:agitators_events--garibaldi_events",
+  "n": "Garibaldi Events",
+  "t": "event_group",
+  "u": "events/agitators_events--garibaldi_events"
+ },
+ {
   "a": "gza",
   "g": "unrecognized",
   "n": "Gaza",
@@ -8115,6 +9951,12 @@
   "n": "General Electric",
   "t": "company",
   "u": "companies#company_general_electric"
+ },
+ {
+  "a": "events:general_events",
+  "n": "General Events",
+  "t": "event_group",
+  "u": "events/general_events"
  },
  {
   "a": "special_character_general_revanche",
@@ -8172,6 +10014,26 @@
   "u": "cultures#georgian"
  },
  {
+  "a": "je_german_unification_idea",
+  "g": "German Unification",
+  "n": "German National Identity",
+  "t": "journal_entry",
+  "u": "journal-entries#je_german_unification_idea"
+ },
+ {
+  "a": "je_german_unification",
+  "g": "German Unification",
+  "n": "German Unification",
+  "t": "journal_entry",
+  "u": "journal-entries#je_german_unification"
+ },
+ {
+  "a": "events:german_unification",
+  "n": "German Unification Events",
+  "t": "event_group",
+  "u": "events/german_unification"
+ },
+ {
   "a": "special_character_german_unifier_ruler",
   "c": "img/traits/special_character_german_unifier_ruler.png",
   "g": "personality",
@@ -8225,6 +10087,13 @@
   "n": "Glassworks",
   "t": "building",
   "u": "buildings/glassworks"
+ },
+ {
+  "a": "je_pena_palace",
+  "g": "Development",
+  "n": "Glorious Eden",
+  "t": "journal_entry",
+  "u": "journal-entries#je_pena_palace"
  },
  {
   "a": "hau",
@@ -8290,6 +10159,12 @@
   "n": "Gold Reserves",
   "t": "concept",
   "u": "concepts#concept_gold_reserves"
+ },
+ {
+  "a": "events:gold_rush",
+  "n": "Gold Rush Events",
+  "t": "event_group",
+  "u": "events/gold_rush"
  },
  {
   "a": "state_gonder",
@@ -8370,6 +10245,13 @@
   "u": "states#STATE_GOTLAND"
  },
  {
+  "a": "je_prestige_goods_groceries",
+  "g": "Development",
+  "n": "Gourmet Groceries",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_groceries"
+ },
+ {
   "a": "concept_government",
   "n": "Government",
   "t": "concept",
@@ -8388,6 +10270,12 @@
   "n": "Government Building",
   "t": "concept",
   "u": "concepts#concept_government_building"
+ },
+ {
+  "a": "events:government_conflicts_events",
+  "n": "Government Conflicts Events",
+  "t": "event_group",
+  "u": "events/government_conflicts_events"
  },
  {
   "a": "concept_government_construction",
@@ -8412,6 +10300,19 @@
   "n": "Government Good",
   "t": "concept",
   "u": "concepts#concept_government_good"
+ },
+ {
+  "a": "je_government_petition",
+  "g": "Domestic Affairs",
+  "n": "Government Petition",
+  "t": "journal_entry",
+  "u": "journal-entries#je_government_petition"
+ },
+ {
+  "a": "events:agitators_events--government_petition_events",
+  "n": "Government Petition Events",
+  "t": "event_group",
+  "u": "events/agitators_events--government_petition_events"
  },
  {
   "a": "concept_government_premium",
@@ -8480,12 +10381,38 @@
   "u": "countries#GCO"
  },
  {
+  "a": "je_gran_colombia",
+  "g": "Foreign Affairs",
+  "n": "Gran Colombia",
+  "t": "journal_entry",
+  "u": "journal-entries#je_gran_colombia"
+ },
+ {
+  "a": "events:brazil--gran_colombia",
+  "n": "Gran Colombia Events",
+  "t": "event_group",
+  "u": "events/brazil--gran_colombia"
+ },
+ {
+  "a": "je_gran_teatro",
+  "g": "Development",
+  "n": "Gran Teatro",
+  "t": "journal_entry",
+  "u": "journal-entries#je_gran_teatro"
+ },
+ {
   "a": "company_basic_colonial_plantations_1",
   "c": "img/companies/basic_colonial_plantations_1.png",
   "g": "basic",
   "n": "Grand East Plantations Ltd.",
   "t": "company",
   "u": "companies#company_basic_colonial_plantations_1"
+ },
+ {
+  "a": "events:grand_exhibition_events",
+  "n": "Grand Exhibition Events",
+  "t": "event_group",
+  "u": "events/grand_exhibition_events"
  },
  {
   "a": "building_gran_teatro_de_la_habana",
@@ -8510,6 +10437,13 @@
   "u": "countries#GBR"
  },
  {
+  "a": "je_great_eastern_crisis",
+  "g": "International Situations",
+  "n": "Great Eastern Crisis",
+  "t": "journal_entry",
+  "u": "journal-entries#je_great_eastern_crisis"
+ },
+ {
   "a": "state_central_hungary",
   "g": "Balkans",
   "n": "Great Hungarian Plain",
@@ -8531,6 +10465,27 @@
   "u": "concepts#concept_great_power"
  },
  {
+  "a": "je_great_reforms_bureaucratic",
+  "g": "The Great Reformer",
+  "n": "Great Reforms: Bureaucratic Reform",
+  "t": "journal_entry",
+  "u": "journal-entries#je_great_reforms_bureaucratic"
+ },
+ {
+  "a": "je_great_reforms_military",
+  "g": "The Great Reformer",
+  "n": "Great Reforms: Military Reform",
+  "t": "journal_entry",
+  "u": "journal-entries#je_great_reforms_military"
+ },
+ {
+  "a": "je_great_reforms_serfdom",
+  "g": "The Great Reformer",
+  "n": "Great Reforms: Peasant Reform",
+  "t": "journal_entry",
+  "u": "journal-entries#je_great_reforms_serfdom"
+ },
+ {
   "a": "company_gwr",
   "c": "img/companies/gb_great_western_railway.png",
   "g": "historical",
@@ -8544,6 +10499,12 @@
   "n": "Greece",
   "t": "country",
   "u": "countries#GRE"
+ },
+ {
+  "a": "events:greece_events",
+  "n": "Greece Events",
+  "t": "event_group",
+  "u": "events/greece_events"
  },
  {
   "a": "greek",
@@ -8612,6 +10573,26 @@
   "n": "Gross Domestic Product per Capita",
   "t": "concept",
   "u": "concepts#concept_gdp_per_capita"
+ },
+ {
+  "a": "je_tutorial_grow_gdp",
+  "g": "Tutorial",
+  "n": "Grow GDP",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_grow_gdp"
+ },
+ {
+  "a": "je_grunderzeit",
+  "g": "International Situations",
+  "n": "Gründerzeit",
+  "t": "journal_entry",
+  "u": "journal-entries#je_grunderzeit"
+ },
+ {
+  "a": "events:balkans_events--grunderzeit",
+  "n": "Grunderzeit Events",
+  "t": "event_group",
+  "u": "events/balkans_events--grunderzeit"
  },
  {
   "a": "guajiro",
@@ -8802,6 +10783,13 @@
   "u": "states#STATE_SEOUL"
  },
  {
+  "a": "je_gyojo_shinwon",
+  "g": "Major Situations",
+  "n": "Gyojo Shinwon",
+  "t": "journal_entry",
+  "u": "journal-entries#je_gyojo_shinwon"
+ },
+ {
   "a": "hdy",
   "g": "unrecognized",
   "n": "Hadiya",
@@ -8969,6 +10957,12 @@
   "u": "countries#HAW"
  },
  {
+  "a": "events:hawaii_events",
+  "n": "Hawaii Events",
+  "t": "event_group",
+  "u": "events/hawaii_events"
+ },
+ {
   "a": "hawaiian",
   "n": "Hawaiian",
   "t": "culture",
@@ -9015,6 +11009,12 @@
   "u": "institutions#institution_health_system"
  },
  {
+  "a": "events:law_events--healthcare_laws",
+  "n": "Healthcare Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--healthcare_laws"
+ },
+ {
   "a": "concept_budget_heathen_taxes",
   "n": "Heathen Taxes",
   "t": "concept",
@@ -9026,6 +11026,12 @@
   "n": "Heavenly Kingdom",
   "t": "country",
   "u": "countries#TPG"
+ },
+ {
+  "a": "events:heavenly_kingdom_events",
+  "n": "Heavenly Kingdom Events",
+  "t": "event_group",
+  "u": "events/heavenly_kingdom_events"
  },
  {
   "a": "combat_unit_type_heavy_tank",
@@ -9160,6 +11166,20 @@
   "u": "countries#HEK"
  },
  {
+  "a": "je_prestige_goods_explosives",
+  "g": "Development",
+  "n": "High-grade Explosives",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_explosives"
+ },
+ {
+  "a": "je_prestige_goods_small_arms",
+  "g": "Development",
+  "n": "High-powered Small Arms",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_small_arms"
+ },
+ {
   "a": "state_highlands",
   "g": "Western Europe",
   "n": "Highlands",
@@ -9187,6 +11207,31 @@
   "u": "cultures#hindustani"
  },
  {
+  "a": "events:hispaniola_events",
+  "n": "Hispaniola Events",
+  "t": "event_group",
+  "u": "events/hispaniola_events"
+ },
+ {
+  "a": "je_hispanoamerica",
+  "g": "National Agenda",
+  "n": "Hispanoamerica",
+  "t": "journal_entry",
+  "u": "journal-entries#je_hispanoamerica"
+ },
+ {
+  "a": "events:agitators_events--historic_agitator_events",
+  "n": "Historic Agitator Events",
+  "t": "event_group",
+  "u": "events/agitators_events--historic_agitator_events"
+ },
+ {
+  "a": "events:historical_events",
+  "n": "Historical Events",
+  "t": "event_group",
+  "u": "events/historical_events"
+ },
+ {
   "a": "hob",
   "g": "unrecognized",
   "n": "Hobyo",
@@ -9212,6 +11257,12 @@
   "n": "Hokushin'etsu",
   "t": "state",
   "u": "states#STATE_HOKUSHINETSU"
+ },
+ {
+  "a": "grand_exhibition_decision",
+  "n": "Hold a Grand Exhibition",
+  "t": "decision",
+  "u": "decisions#grand_exhibition_decision"
  },
  {
   "a": "concept_holding",
@@ -9290,12 +11341,26 @@
   "u": "states#STATE_HONDURAS"
  },
  {
+  "a": "je_caucasian_war_circassia",
+  "g": "The Ruler of the East",
+  "n": "Honor Before Life",
+  "t": "journal_entry",
+  "u": "journal-entries#je_caucasian_war_circassia"
+ },
+ {
   "a": "honorable",
   "c": "img/traits/honorable.png",
   "g": "personality",
   "n": "Honorable",
   "t": "character_trait",
   "u": "character-traits#honorable"
+ },
+ {
+  "a": "je_meiji_restoration",
+  "g": "The Imperial Restoration",
+  "n": "Honorable Restoration",
+  "t": "journal_entry",
+  "u": "journal-entries#je_meiji_restoration"
  },
  {
   "a": "state_laristan",
@@ -9392,11 +11457,24 @@
   "u": "cultures#hungarian"
  },
  {
+  "a": "je_hungarian_revolution",
+  "g": "National Agenda",
+  "n": "Hungarian Revolution",
+  "t": "journal_entry",
+  "u": "journal-entries#je_hungarian_revolution"
+ },
+ {
   "a": "hun",
   "g": "recognized",
   "n": "Hungary",
   "t": "country",
   "u": "countries#HUN"
+ },
+ {
+  "a": "events:balkans_events--hungry_forties",
+  "n": "Hungry Forties Events",
+  "t": "event_group",
+  "u": "events/balkans_events--hungry_forties"
  },
  {
   "a": "combat_unit_type_hussars",
@@ -9428,6 +11506,13 @@
   "u": "technology#hydraulic_cranes"
  },
  {
+  "a": "je_francocracia",
+  "g": "National Agenda",
+  "n": "I, the Supreme",
+  "t": "journal_entry",
+  "u": "journal-entries#je_francocracia"
+ },
+ {
   "a": "ibadi",
   "c": "img/religions/ibadi.png",
   "n": "Ibadi",
@@ -9446,6 +11531,12 @@
   "n": "Iberian",
   "t": "culture",
   "u": "cultures#iberian"
+ },
+ {
+  "a": "events:iberia_events--iberian_union_events",
+  "n": "Iberian Union Events",
+  "t": "event_group",
+  "u": "events/iberia_events--iberian_union_events"
  },
  {
   "a": "ibibio",
@@ -9542,6 +11633,30 @@
   "u": "concepts#concept_ideology"
  },
  {
+  "a": "events:ig_leaders",
+  "n": "Ig Leaders Events",
+  "t": "event_group",
+  "u": "events/ig_leaders"
+ },
+ {
+  "a": "events:ig_petitions",
+  "n": "Ig Petitions Events",
+  "t": "event_group",
+  "u": "events/ig_petitions"
+ },
+ {
+  "a": "events:ig_revolutions",
+  "n": "Ig Revolutions Events",
+  "t": "event_group",
+  "u": "events/ig_revolutions"
+ },
+ {
+  "a": "events:ig_suppression_events",
+  "n": "Ig Suppression Events",
+  "t": "event_group",
+  "u": "events/ig_suppression_events"
+ },
+ {
   "a": "ibo",
   "g": "decentralized",
   "n": "Igbo",
@@ -9600,6 +11715,13 @@
   "u": "companies#company_imperial_tobacco"
  },
  {
+  "a": "je_imperialism_of_promise",
+  "g": "The Administration of India",
+  "n": "Imperialism of Promise",
+  "t": "journal_entry",
+  "u": "journal-entries#je_imperialism_of_promise"
+ },
+ {
   "a": "imperious",
   "c": "img/traits/imperious.png",
   "g": "personality",
@@ -9628,12 +11750,39 @@
   "u": "character-traits#imposing"
  },
  {
+  "a": "events:law_imposition_events",
+  "n": "Imposition Events",
+  "t": "event_group",
+  "u": "events/law_imposition_events"
+ },
+ {
+  "a": "je_tutorial_improve_consumer_goods_access",
+  "g": "Tutorial",
+  "n": "Improve Access to Consumer Goods",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_improve_consumer_goods_access"
+ },
+ {
+  "a": "je_tutorial_improve_supply_network",
+  "g": "Tutorial",
+  "n": "Improve Supply Network",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_improve_supply_network"
+ },
+ {
   "a": "improved_fertilizer",
   "c": "img/techs/improved_fertilizer.png",
   "g": "production",
   "n": "Improved Fertilizer",
   "t": "technology",
   "u": "technology#improved_fertilizer"
+ },
+ {
+  "a": "je_specialized_inputs",
+  "g": "Objectives",
+  "n": "Improving Production",
+  "t": "journal_entry",
+  "u": "journal-entries#je_specialized_inputs"
  },
  {
   "a": "concept_in_government",
@@ -9654,10 +11803,78 @@
   "u": "concepts#concept_budget_income_taxes"
  },
  {
+  "a": "goa_decision",
+  "n": "Incorporate Goa",
+  "t": "decision",
+  "u": "decisions#goa_decision"
+ },
+ {
+  "a": "je_tutorial_incorporate_state",
+  "g": "Tutorial",
+  "n": "Incorporate State",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_incorporate_state"
+ },
+ {
   "a": "concept_incorporated_state",
   "n": "Incorporated State",
   "t": "concept",
   "u": "concepts#concept_incorporated_state"
+ },
+ {
+  "a": "je_tutorial_increase_immigration",
+  "g": "Tutorial",
+  "n": "Increase Immigration",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_increase_immigration"
+ },
+ {
+  "a": "je_tutorial_improve_market_access_with_railways",
+  "g": "Tutorial",
+  "n": "Increase Infrastructure by Railways",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_improve_market_access_with_railways"
+ },
+ {
+  "a": "je_tutorial_increase_market_access_by_decree",
+  "g": "Tutorial",
+  "n": "Increase Market Access by Decree",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_increase_market_access_by_decree"
+ },
+ {
+  "a": "je_tutorial_foreign_investment",
+  "g": "Tutorial",
+  "n": "Increase our Foreign Investment",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_foreign_investment"
+ },
+ {
+  "a": "je_tutorial_increase_relations",
+  "g": "Tutorial",
+  "n": "Increase Relations",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_increase_relations"
+ },
+ {
+  "a": "je_raise_exports_value",
+  "g": "Objectives",
+  "n": "Increasing Export Value",
+  "t": "journal_entry",
+  "u": "journal-entries#je_raise_exports_value"
+ },
+ {
+  "a": "events:iberia_events--independence",
+  "n": "Independence Events",
+  "t": "event_group",
+  "u": "events/iberia_events--independence"
+ },
+ {
+  "a": "je_cuba_independencia",
+  "g": "National Agenda",
+  "n": "Independencia",
+  "t": "journal_entry",
+  "u": "journal-entries#je_cuba_independencia"
  },
  {
   "a": "bht",
@@ -9672,6 +11889,49 @@
   "n": "India",
   "t": "country",
   "u": "countries#HND"
+ },
+ {
+  "a": "events:india_events--india_home_rule_events",
+  "n": "India Home Rule Events",
+  "t": "event_group",
+  "u": "events/india_events--india_home_rule_events"
+ },
+ {
+  "a": "events:india_events--india_misc_events",
+  "n": "India Misc Events",
+  "t": "event_group",
+  "u": "events/india_events--india_misc_events"
+ },
+ {
+  "a": "events:india_events--india_nationalism_events",
+  "n": "India Nationalism Events",
+  "t": "event_group",
+  "u": "events/india_events--india_nationalism_events"
+ },
+ {
+  "a": "events:india_events--india_non_cooperation",
+  "n": "India Non Cooperation Events",
+  "t": "event_group",
+  "u": "events/india_events--india_non_cooperation"
+ },
+ {
+  "a": "events:india_events--india_railway",
+  "n": "India Railway Events",
+  "t": "event_group",
+  "u": "events/india_events--india_railway"
+ },
+ {
+  "a": "events:india_events--indian_famines",
+  "n": "Indian Famines Events",
+  "t": "event_group",
+  "u": "events/india_events--indian_famines"
+ },
+ {
+  "a": "je_india_home_rule",
+  "g": "The Administration of India",
+  "n": "Indian Home Rule",
+  "t": "journal_entry",
+  "u": "journal-entries#je_india_home_rule"
  },
  {
   "a": "state_indian_ocean_territory",
@@ -9701,6 +11961,12 @@
   "u": "concepts#concept_individual"
  },
  {
+  "a": "events:indochina",
+  "n": "Indochina Events",
+  "t": "event_group",
+  "u": "events/indochina"
+ },
+ {
   "a": "idn",
   "g": "recognized",
   "n": "Indonesia",
@@ -9720,6 +11986,12 @@
   "n": "Indusstan",
   "t": "country",
   "u": "countries#IDS"
+ },
+ {
+  "a": "events:industrial_accidents_events",
+  "n": "Industrial Accidents Events",
+  "t": "event_group",
+  "u": "events/industrial_accidents_events"
  },
  {
   "a": "ig_industrialists",
@@ -9765,6 +12037,13 @@
   "u": "concepts#concept_influence"
  },
  {
+  "a": "je_hawaiian_interest",
+  "g": "National Agenda",
+  "n": "Influencing Hawaii",
+  "t": "journal_entry",
+  "u": "journal-entries#je_hawaiian_interest"
+ },
+ {
   "a": "concept_influential",
   "n": "Influential",
   "t": "concept",
@@ -9798,6 +12077,13 @@
   "u": "states#STATE_INGRIA"
  },
  {
+  "a": "je_the_grand_collapse",
+  "g": "National Agenda",
+  "n": "İnhidam-ı Azîm",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_grand_collapse"
+ },
+ {
   "a": "concept_initiator",
   "n": "Initiator",
   "t": "concept",
@@ -9823,6 +12109,13 @@
   "n": "Inner Morocco",
   "t": "state",
   "u": "states#STATE_INNER_MOROCCO"
+ },
+ {
+  "a": "je_kaiserforum",
+  "g": "Development",
+  "n": "Innere Stadt",
+  "t": "journal_entry",
+  "u": "journal-entries#je_kaiserforum"
  },
  {
   "a": "concept_innovation",
@@ -9871,10 +12164,23 @@
   "u": "concepts#concept_insurrection"
  },
  {
+  "a": "aus_integrate_crown_lands_decision",
+  "n": "Integrate the Crown Lands",
+  "t": "decision",
+  "u": "decisions#aus_integrate_crown_lands_decision"
+ },
+ {
   "a": "concept_integrated_culture",
   "n": "Integrated Culture",
   "t": "concept",
   "u": "concepts#concept_integrated_culture"
+ },
+ {
+  "a": "je_brazilian_nation_building",
+  "g": "The Brazilian Nation",
+  "n": "Integrating the Brazilian Nation",
+  "t": "journal_entry",
+  "u": "journal-entries#je_brazilian_nation_building"
  },
  {
   "a": "ig_intelligentsia",
@@ -9928,6 +12234,12 @@
   "u": "concepts#concept_interest_tier"
  },
  {
+  "a": "events:law_events--internal_security_events",
+  "n": "Internal Security Events",
+  "t": "event_group",
+  "u": "events/law_events--internal_security_events"
+ },
+ {
   "a": "international_exchange_standards",
   "c": "img/techs/international_exchange_standards.png",
   "g": "society",
@@ -9970,6 +12282,19 @@
   "n": "Invasion",
   "t": "concept",
   "u": "concepts#concept_invasion"
+ },
+ {
+  "a": "macao_decision",
+  "n": "Invest in Macao",
+  "t": "decision",
+  "u": "decisions#macao_decision"
+ },
+ {
+  "a": "je_tutorial_invest_into_an_institution",
+  "g": "Tutorial",
+  "n": "Invest into an Institution",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_invest_into_an_institution"
  },
  {
   "a": "investment_banks",
@@ -10030,6 +12355,54 @@
   "n": "Iowa",
   "t": "state",
   "u": "states#STATE_IOWA"
+ },
+ {
+  "a": "events:iberia_events--ip4_anarchism_events",
+  "n": "Ip4 Anarchism Events",
+  "t": "event_group",
+  "u": "events/iberia_events--ip4_anarchism_events"
+ },
+ {
+  "a": "events:iberia_events--ip4_coup_events",
+  "n": "Ip4 Coup Events",
+  "t": "event_group",
+  "u": "events/iberia_events--ip4_coup_events"
+ },
+ {
+  "a": "events:iberia_events--ip4_economic_regeneration_events",
+  "n": "Ip4 Economic Regeneration Events",
+  "t": "event_group",
+  "u": "events/iberia_events--ip4_economic_regeneration_events"
+ },
+ {
+  "a": "events:iberia_events--ip4_election_rigging",
+  "n": "Ip4 Election Rigging Events",
+  "t": "event_group",
+  "u": "events/iberia_events--ip4_election_rigging"
+ },
+ {
+  "a": "events:iberia_events--ip4_lusosphere_events",
+  "n": "Ip4 Lusosphere Events",
+  "t": "event_group",
+  "u": "events/iberia_events--ip4_lusosphere_events"
+ },
+ {
+  "a": "events:iberia_events--ip4_monument_events",
+  "n": "Ip4 Monument Events",
+  "t": "event_group",
+  "u": "events/iberia_events--ip4_monument_events"
+ },
+ {
+  "a": "events:iberia_events--ip4_portuguese_political_events",
+  "n": "Ip4 Portuguese Political Events",
+  "t": "event_group",
+  "u": "events/iberia_events--ip4_portuguese_political_events"
+ },
+ {
+  "a": "events:iberia_events--ip4_spanish_political_events",
+  "n": "Ip4 Spanish Political Events",
+  "t": "event_group",
+  "u": "events/iberia_events--ip4_spanish_political_events"
  },
  {
   "a": "iqu",
@@ -10094,6 +12467,13 @@
   "n": "Iron Confederacy",
   "t": "country",
   "u": "countries#IRC"
+ },
+ {
+  "a": "ship_type_iron_frigate",
+  "g": "Cruisers",
+  "n": "Iron Frigate",
+  "t": "ship",
+  "u": "ships#ship_type_iron_frigate"
  },
  {
   "a": "building_iron_mine",
@@ -10161,6 +12541,12 @@
   "u": "laws#law_isolationism"
  },
  {
+  "a": "events:law_events--isolationism_law",
+  "n": "Isolationism Law Events",
+  "t": "event_group",
+  "u": "events/law_events--isolationism_law"
+ },
+ {
   "a": "isr",
   "g": "colonial",
   "n": "Israel",
@@ -10168,11 +12554,23 @@
   "u": "countries#ISR"
  },
  {
+  "a": "aus_organise_trialism",
+  "n": "Issue a Trialist Manifesto",
+  "t": "decision",
+  "u": "decisions#aus_organise_trialism"
+ },
+ {
   "a": "state_istria",
   "g": "Southern Europe",
   "n": "Istria",
   "t": "state",
   "u": "states#STATE_ISTRIA"
+ },
+ {
+  "a": "events:italian_unification",
+  "n": "Italian Unification Events",
+  "t": "event_group",
+  "u": "events/italian_unification"
  },
  {
   "a": "ita",
@@ -10210,6 +12608,12 @@
   "n": "Jabal Shammar",
   "t": "country",
   "u": "countries#JAB"
+ },
+ {
+  "a": "events:india_events--jail",
+  "n": "Jail Events",
+  "t": "event_group",
+  "u": "events/india_events--jail"
  },
  {
   "a": "jas",
@@ -10267,6 +12671,12 @@
   "n": "Japan",
   "t": "country",
   "u": "countries#JAP"
+ },
+ {
+  "a": "events:japan_events--japan_religion_events",
+  "n": "Japan Religion Events",
+  "t": "event_group",
+  "u": "events/japan_events--japan_religion_events"
  },
  {
   "a": "japanese",
@@ -10711,6 +13121,12 @@
   "u": "countries#KRN"
  },
  {
+  "a": "events:karl_marx_events",
+  "n": "Karl Marx Events",
+  "t": "event_group",
+  "u": "events/karl_marx_events"
+ },
+ {
   "a": "knc",
   "g": "decentralized",
   "n": "Karna",
@@ -11143,6 +13559,12 @@
   "u": "countries#KOR"
  },
  {
+  "a": "events:korea_events",
+  "n": "Korea Events",
+  "t": "event_group",
+  "u": "events/korea_events"
+ },
+ {
   "a": "korean",
   "n": "Korean",
   "t": "culture",
@@ -11171,11 +13593,23 @@
   "u": "companies#company_kouppas"
  },
  {
+  "a": "events:krakatoa_events",
+  "n": "Krakatoa Events",
+  "t": "event_group",
+  "u": "events/krakatoa_events"
+ },
+ {
   "a": "kra",
   "g": "recognized",
   "n": "Krakow",
   "t": "country",
   "u": "countries#KRA"
+ },
+ {
+  "a": "events:krakow_events",
+  "n": "Krakow Events",
+  "t": "event_group",
+  "u": "events/krakow_events"
  },
  {
   "a": "state_krasnoyarsk",
@@ -11347,6 +13781,13 @@
   "u": "companies#company_la_rosada"
  },
  {
+  "a": "je_cuba_la_vida_dulce",
+  "g": "National Agenda",
+  "n": "La Vida Dulce",
+  "t": "journal_entry",
+  "u": "journal-entries#je_cuba_la_vida_dulce"
+ },
+ {
   "a": "labor_movement",
   "c": "img/techs/labor_movement.png",
   "g": "society",
@@ -11355,11 +13796,23 @@
   "u": "technology#labor_movement"
  },
  {
+  "a": "events:law_events--labor_rights_laws",
+  "n": "Labor Rights Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--labor_rights_laws"
+ },
+ {
   "a": "laborers",
   "c": "img/pops/laborers.png",
   "n": "Laborers",
   "t": "pop_type",
   "u": "pop-types#laborers"
+ },
+ {
+  "a": "events:law_events--labour_associations_events",
+  "n": "Labour Associations Events",
+  "t": "event_group",
+  "u": "events/law_events--labour_associations_events"
  },
  {
   "a": "lacustrine_bantu",
@@ -11409,6 +13862,25 @@
   "n": "Lancers",
   "t": "unit",
   "u": "units#combat_unit_type_lancers"
+ },
+ {
+  "a": "events:agitators_events--land_ownership_law_events",
+  "n": "Land Ownership Law Events",
+  "t": "event_group",
+  "u": "events/agitators_events--land_ownership_law_events"
+ },
+ {
+  "a": "je_land_reclamation",
+  "g": "Domestic Affairs",
+  "n": "Land Reclamation",
+  "t": "journal_entry",
+  "u": "journal-entries#je_land_reclamation"
+ },
+ {
+  "a": "events:land_reclamation",
+  "n": "Land Reclamation Events",
+  "t": "event_group",
+  "u": "events/land_reclamation"
  },
  {
   "a": "concept_budget_land_taxes",
@@ -11580,10 +14052,34 @@
   "u": "technology#law_enforcement"
  },
  {
+  "a": "events:law_events--law_events",
+  "n": "Law Events",
+  "t": "event_group",
+  "u": "events/law_events--law_events"
+ },
+ {
+  "a": "events:law_events--law_events_01",
+  "n": "Law Events",
+  "t": "event_group",
+  "u": "events/law_events--law_events_01"
+ },
+ {
   "a": "concept_law_group",
   "n": "Law Group",
   "t": "concept",
   "u": "concepts#concept_law_group"
+ },
+ {
+  "a": "events:law_events--laws",
+  "n": "Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--laws"
+ },
+ {
+  "a": "events:law_events--laws_police",
+  "n": "Laws Police Events",
+  "t": "event_group",
+  "u": "events/law_events--laws_police"
  },
  {
   "a": "law_lax_edo_system",
@@ -11621,6 +14117,12 @@
   "n": "Leader",
   "t": "concept",
   "u": "concepts#concept_leader"
+ },
+ {
+  "a": "pressure_to_sell_berar_province",
+  "n": "Lease Hyderabadi Berar",
+  "t": "decision",
+  "u": "decisions#pressure_to_sell_berar_province"
  },
  {
   "a": "leb",
@@ -11720,6 +14222,19 @@
   "u": "states#STATE_LHASA"
  },
  {
+  "a": "events:liberalism",
+  "n": "Liberalism Events",
+  "t": "event_group",
+  "u": "events/liberalism"
+ },
+ {
+  "a": "je_liberate_the_slaves",
+  "g": "Objectives",
+  "n": "Liberate the Slaves",
+  "t": "journal_entry",
+  "u": "journal-entries#je_liberate_the_slaves"
+ },
+ {
   "a": "lib",
   "g": "unrecognized",
   "n": "Liberia",
@@ -11744,6 +14259,13 @@
   "n": "Life Experience",
   "t": "concept",
   "u": "concepts#concept_life_experience"
+ },
+ {
+  "a": "ship_type_light_cruiser",
+  "g": "Cruisers",
+  "n": "Light Cruiser",
+  "t": "ship",
+  "u": "ships#ship_type_light_cruiser"
  },
  {
   "a": "combat_unit_type_light_tanks",
@@ -11868,16 +14390,51 @@
   "u": "concepts#concept_loans"
  },
  {
+  "a": "je_tutorial_lobbies",
+  "g": "Tutorial",
+  "n": "Lobby Appeasement",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_lobbies"
+ },
+ {
   "a": "concept_political_lobby_demand",
   "n": "Lobby Demand",
   "t": "concept",
   "u": "concepts#concept_political_lobby_demand"
  },
  {
+  "a": "je_anti_lobby_demand",
+  "g": "Major Situations",
+  "n": "Lobby Demand",
+  "t": "journal_entry",
+  "u": "journal-entries#je_anti_lobby_demand"
+ },
+ {
+  "a": "je_pro_lobby_demand",
+  "g": "Major Situations",
+  "n": "Lobby Demand",
+  "t": "journal_entry",
+  "u": "journal-entries#je_pro_lobby_demand"
+ },
+ {
   "a": "concept_political_lobby_opportunity",
   "n": "Lobby Opportunity",
   "t": "concept",
   "u": "concepts#concept_political_lobby_opportunity"
+ },
+ {
+  "a": "je_anti_lobby_opportunity",
+  "g": "Major Situations",
+  "n": "Lobby Opportunity",
+  "t": "journal_entry",
+  "u": "journal-entries#je_anti_lobby_opportunity"
+ },
+ {
+  "a": "je_pro_lobby_opportunity",
+  "g": "Major Situations",
+  "n": "Lobby Opportunity",
+  "t": "journal_entry",
+  "u": "journal-entries#je_pro_lobby_opportunity"
  },
  {
   "a": "special_character_colonial_local",
@@ -11963,12 +14520,26 @@
   "u": "cultures#lomwe"
  },
  {
+  "a": "je_conference_of_london",
+  "g": "National Agenda",
+  "n": "London Conference",
+  "t": "journal_entry",
+  "u": "journal-entries#je_conference_of_london"
+ },
+ {
   "a": "law_intermediate_edo_system",
   "c": "img/laws/social_hierarchy_codified.png",
   "g": "Edo Status System",
   "n": "Loosened Status Order",
   "t": "law",
   "u": "laws#law_intermediate_edo_system"
+ },
+ {
+  "a": "je_lion_of_the_zanj",
+  "g": "National Agenda",
+  "n": "Lords of the Zanj",
+  "t": "journal_entry",
+  "u": "journal-entries#je_lion_of_the_zanj"
  },
  {
   "a": "state_lorraine",
@@ -12047,11 +14618,24 @@
   "u": "concepts#concept_lower_strata"
  },
  {
+  "a": "je_lower_production_costs",
+  "g": "Objectives",
+  "n": "Lowering Consumption Prices",
+  "t": "journal_entry",
+  "u": "journal-entries#je_lower_production_costs"
+ },
+ {
   "a": "state_lowlands",
   "g": "Western Europe",
   "n": "Lowlands",
   "t": "state",
   "u": "states#STATE_LOWLANDS"
+ },
+ {
+  "a": "lowlands_land_reclamation",
+  "n": "Lowlands Land Reclamation",
+  "t": "decision",
+  "u": "decisions#lowlands_land_reclamation"
  },
  {
   "a": "concept_loyalist",
@@ -12112,6 +14696,12 @@
   "n": "Lucca",
   "t": "country",
   "u": "countries#LUC"
+ },
+ {
+  "a": "events:agitators_events--luddite_law_events",
+  "n": "Luddite Law Events",
+  "t": "event_group",
+  "u": "events/agitators_events--luddite_law_events"
  },
  {
   "a": "lumad",
@@ -12259,6 +14849,13 @@
   "u": "countries#MGB"
  },
  {
+  "a": "je_moroccan_conquest",
+  "g": "National Agenda",
+  "n": "Maghreb's Garden",
+  "t": "journal_entry",
+  "u": "journal-entries#je_moroccan_conquest"
+ },
+ {
   "a": "maghrebi",
   "n": "Maghrebi",
   "t": "culture",
@@ -12270,6 +14867,13 @@
   "n": "Magiliow",
   "t": "state",
   "u": "states#STATE_MOGILEV"
+ },
+ {
+  "a": "je_pedro_brazil",
+  "g": "The Reign of Pedro II",
+  "n": "Magnanimous Monarch",
+  "t": "journal_entry",
+  "u": "journal-entries#je_pedro_brazil"
  },
  {
   "a": "concept_magnate",
@@ -12327,6 +14931,13 @@
   "u": "states#STATE_MAINE_ANJOU"
  },
  {
+  "a": "je_take_subject",
+  "g": "Objectives",
+  "n": "Maintain Subjects",
+  "t": "journal_entry",
+  "u": "journal-entries#je_take_subject"
+ },
+ {
   "a": "company_maison_worth",
   "c": "img/companies/company_maison_worth.png",
   "g": "historical",
@@ -12350,10 +14961,43 @@
   "u": "countries#MJT"
  },
  {
+  "a": "events:major_famine_events",
+  "n": "Major Famine Events",
+  "t": "event_group",
+  "u": "events/major_famine_events"
+ },
+ {
   "a": "concept_major_power",
   "n": "Major Power",
   "t": "concept",
   "u": "concepts#concept_major_power"
+ },
+ {
+  "a": "je_great_power",
+  "g": "Objectives",
+  "n": "Major Power",
+  "t": "journal_entry",
+  "u": "journal-entries#je_great_power"
+ },
+ {
+  "a": "events:major_railways",
+  "n": "Major Railways Events",
+  "t": "event_group",
+  "u": "events/major_railways"
+ },
+ {
+  "a": "je_tutorial_make_interest_group_happy",
+  "g": "Tutorial",
+  "n": "Make Interest Group Happy",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_make_interest_group_happy"
+ },
+ {
+  "a": "je_tutorial_make_peace",
+  "g": "Tutorial",
+  "n": "Make Peace",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_make_peace"
  },
  {
   "a": "mak",
@@ -12546,6 +15190,32 @@
   "u": "countries#MNC"
  },
  {
+  "a": "manifest_destiny",
+  "n": "Manifest Destiny",
+  "t": "decision",
+  "u": "decisions#manifest_destiny"
+ },
+ {
+  "a": "events:manifest_destiny_events",
+  "n": "Manifest Destiny Events",
+  "t": "event_group",
+  "u": "events/manifest_destiny_events"
+ },
+ {
+  "a": "je_manifest_destiny_frontier_wars",
+  "g": "Manifest Destiny",
+  "n": "Manifest Destiny: Frontier Wars",
+  "t": "journal_entry",
+  "u": "journal-entries#je_manifest_destiny_frontier_wars"
+ },
+ {
+  "a": "je_manifest_destiny_mexico",
+  "g": "Manifest Destiny",
+  "n": "Manifest Destiny: Mexican Cession",
+  "t": "journal_entry",
+  "u": "journal-entries#je_manifest_destiny_mexico"
+ },
+ {
   "a": "building_manila_cathedral_monument",
   "c": "img/buildings/manila_cathedral.png",
   "g": "Monuments",
@@ -12632,6 +15302,12 @@
   "n": "Māori",
   "t": "culture",
   "u": "cultures#maori"
+ },
+ {
+  "a": "west_america_expedition",
+  "n": "Map the American Western Frontier",
+  "t": "decision",
+  "u": "decisions#west_america_expedition"
  },
  {
   "a": "company_maple_and_co",
@@ -12929,6 +15605,13 @@
   "u": "states#STATE_MATRUH"
  },
  {
+  "a": "je_matter_of_hungary",
+  "g": "National Agenda",
+  "n": "Matter of Hungary",
+  "t": "journal_entry",
+  "u": "journal-entries#je_matter_of_hungary"
+ },
+ {
   "a": "state_mauritania",
   "g": "West Africa",
   "n": "Mauritania",
@@ -13059,6 +15742,12 @@
   "u": "technology#medical_degrees"
  },
  {
+  "a": "events:meiji_restoration",
+  "n": "Meiji Restoration Events",
+  "t": "event_group",
+  "u": "events/meiji_restoration"
+ },
+ {
   "a": "state_mekong",
   "g": "Indochina",
   "n": "Mekong",
@@ -13070,6 +15759,13 @@
   "n": "Melanesian",
   "t": "culture",
   "u": "cultures#melanesian"
+ },
+ {
+  "a": "je_spanish_new_world_dummy",
+  "g": "National Agenda",
+  "n": "Memories of the Indies",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spanish_new_world_dummy"
  },
  {
   "a": "state_rio_negro",
@@ -13137,6 +15833,18 @@
   "n": "Métis",
   "t": "country",
   "u": "countries#MTC"
+ },
+ {
+  "a": "events:metro_events",
+  "n": "Metro Events",
+  "t": "event_group",
+  "u": "events/metro_events"
+ },
+ {
+  "a": "events:balkans_events--metternich",
+  "n": "Metternich Events",
+  "t": "event_group",
+  "u": "events/balkans_events--metternich"
  },
  {
   "a": "mew",
@@ -13246,6 +15954,12 @@
   "u": "laws#law_migration_controls"
  },
  {
+  "a": "events:law_events--migration_laws",
+  "n": "Migration Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--migration_laws"
+ },
+ {
   "a": "concept_migration_target",
   "n": "Migration Target",
   "t": "concept",
@@ -13347,6 +16061,12 @@
   "n": "Military Statistics",
   "t": "technology",
   "u": "technology#military_statistics"
+ },
+ {
+  "a": "events:tech_events--military_tech_events",
+  "n": "Military Tech Events",
+  "t": "event_group",
+  "u": "events/tech_events--military_tech_events"
  },
  {
   "a": "identity_military_treaty_organization",
@@ -13489,6 +16209,18 @@
   "u": "countries#MRN"
  },
  {
+  "a": "events:brazil--misc_events",
+  "n": "Misc Events",
+  "t": "event_group",
+  "u": "events/brazil--misc_events"
+ },
+ {
+  "a": "events:misc_unifications",
+  "n": "Misc Unifications Events",
+  "t": "event_group",
+  "u": "events/misc_unifications"
+ },
+ {
   "a": "mkt",
   "g": "unrecognized",
   "n": "Miskitia",
@@ -13587,6 +16319,13 @@
   "u": "concepts#concept_mobilization_option"
  },
  {
+  "a": "je_tutorial_mobilize_army",
+  "g": "Tutorial",
+  "n": "Mobilize A Formation",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_mobilize_army"
+ },
+ {
   "a": "concept_mobilize_army",
   "n": "Mobilize Army",
   "t": "concept",
@@ -13635,6 +16374,13 @@
   "n": "Modern Ironclad",
   "t": "technology",
   "u": "technology#monitor_tech"
+ },
+ {
+  "a": "ship_type_modern_ironclad",
+  "g": "Capital Ships",
+  "n": "Modern Ironclad",
+  "t": "ship",
+  "u": "ships#ship_type_modern_ironclad"
  },
  {
   "a": "modern_nursing",
@@ -13713,6 +16459,12 @@
   "u": "laws#law_monarchy"
  },
  {
+  "a": "events:law_events--monarchy_laws",
+  "n": "Monarchy Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--monarchy_laws"
+ },
+ {
   "a": "concept_money",
   "n": "Money",
   "t": "concept",
@@ -13745,6 +16497,13 @@
   "u": "countries#MGL"
  },
  {
+  "a": "ship_type_monitor",
+  "g": "Capital Ships",
+  "n": "Monitor",
+  "t": "ship",
+  "u": "ships#ship_type_monitor"
+ },
+ {
   "a": "concept_monopoly",
   "n": "Monopoly",
   "t": "concept",
@@ -13770,6 +16529,12 @@
   "n": "Montenegro",
   "t": "state",
   "u": "states#STATE_MONTENEGRO"
+ },
+ {
+  "a": "events:balkans_events--montenegro_events",
+  "n": "Montenegro Events",
+  "t": "event_group",
+  "u": "events/balkans_events--montenegro_events"
  },
  {
   "a": "concept_monument",
@@ -13814,6 +16579,12 @@
   "n": "Morocco",
   "t": "country",
   "u": "countries#MOR"
+ },
+ {
+  "a": "events:iberia_events--morocco_makhzen_events",
+  "n": "Morocco Makhzen Events",
+  "t": "event_group",
+  "u": "events/iberia_events--morocco_makhzen_events"
  },
  {
   "a": "state_moscow",
@@ -13882,10 +16653,22 @@
   "u": "countries#NCA"
  },
  {
+  "a": "italy_move_capital_to_rome",
+  "n": "Move Capital to Rome",
+  "t": "decision",
+  "u": "decisions#italy_move_capital_to_rome"
+ },
+ {
   "a": "concept_activism",
   "n": "Movement Activism",
   "t": "concept",
   "u": "concepts#concept_activism"
+ },
+ {
+  "a": "events:movement_events",
+  "n": "Movement Events",
+  "t": "event_group",
+  "u": "events/movement_events"
  },
  {
   "a": "concept_political_movement_pressure",
@@ -13899,6 +16682,12 @@
   "n": "Muang Phuan",
   "t": "country",
   "u": "countries#MPH"
+ },
+ {
+  "a": "events:india_events--mughal_events",
+  "n": "Mughal Events",
+  "t": "event_group",
+  "u": "events/india_events--mughal_events"
  },
  {
   "a": "mui",
@@ -13970,6 +16759,13 @@
   "n": "Mutapa",
   "t": "country",
   "u": "countries#MTP"
+ },
+ {
+  "a": "je_anarchy",
+  "g": "Domestic Affairs",
+  "n": "Mutual Aid",
+  "t": "journal_entry",
+  "u": "journal-entries#je_anarchy"
  },
  {
   "a": "mutual_funds",
@@ -14108,6 +16904,13 @@
   "u": "countries#NAL"
  },
  {
+  "a": "je_fascism_2",
+  "g": "Domestic Affairs",
+  "n": "Nation Above Self",
+  "t": "journal_entry",
+  "u": "journal-entries#je_fascism_2"
+ },
+ {
   "a": "concept_nation_formation",
   "n": "Nation Formation",
   "t": "concept",
@@ -14118,6 +16921,19 @@
   "n": "National Awakening",
   "t": "concept",
   "u": "concepts#concept_national_awakening"
+ },
+ {
+  "a": "je_balkan_national_awakenings",
+  "g": "Domestic Affairs",
+  "n": "National Awakening",
+  "t": "journal_entry",
+  "u": "journal-entries#je_balkan_national_awakenings"
+ },
+ {
+  "a": "events:balkans_events--national_awakening",
+  "n": "National Awakening Events",
+  "t": "event_group",
+  "u": "events/balkans_events--national_awakening"
  },
  {
   "a": "law_national_guard",
@@ -14178,10 +16994,28 @@
   "u": "concepts#concept_nationally_owned"
  },
  {
+  "a": "events:native_resettlement",
+  "n": "Native Resettlement Events",
+  "t": "event_group",
+  "u": "events/native_resettlement"
+ },
+ {
   "a": "concept_native_uprising",
   "n": "Native Uprising",
   "t": "concept",
   "u": "concepts#concept_native_uprising"
+ },
+ {
+  "a": "events:agitators_events--natural_borders",
+  "n": "Natural Borders Events",
+  "t": "event_group",
+  "u": "events/agitators_events--natural_borders"
+ },
+ {
+  "a": "events:natural_disasters_events",
+  "n": "Natural Disasters Events",
+  "t": "event_group",
+  "u": "events/natural_disasters_events"
  },
  {
   "a": "nru",
@@ -14298,6 +17132,12 @@
   "u": "concepts#concept_naval_power_projection"
  },
  {
+  "a": "events:tech_events--naval_tech_events",
+  "n": "Naval Tech Events",
+  "t": "event_group",
+  "u": "events/tech_events--naval_tech_events"
+ },
+ {
   "a": "nav",
   "g": "recognized",
   "n": "Navarra",
@@ -14362,6 +17202,18 @@
   "n": "Negotiation",
   "t": "concept",
   "u": "concepts#concept_negotiation"
+ },
+ {
+  "a": "events:iberia_events--negotiation_events",
+  "n": "Negotiation Events",
+  "t": "event_group",
+  "u": "events/iberia_events--negotiation_events"
+ },
+ {
+  "a": "events:neighbor_events",
+  "n": "Neighbor Events",
+  "t": "event_group",
+  "u": "events/neighbor_events"
  },
  {
   "a": "concept_neighbors",
@@ -14619,6 +17471,25 @@
   "u": "states#STATE_NIGER_DELTA"
  },
  {
+  "a": "je_niger_river_expedition",
+  "g": "Expeditions",
+  "n": "Niger River Expedition",
+  "t": "journal_entry",
+  "u": "journal-entries#je_niger_river_expedition"
+ },
+ {
+  "a": "niger_river_expedition",
+  "n": "Niger River Expedition",
+  "t": "decision",
+  "u": "decisions#niger_river_expedition"
+ },
+ {
+  "a": "events:expedition_events--niger_river_expedition_events",
+  "n": "Niger River Expedition Events",
+  "t": "event_group",
+  "u": "events/expedition_events--niger_river_expedition_events"
+ },
+ {
   "a": "state_nigeria",
   "g": "West Africa",
   "n": "Nigeria",
@@ -14634,11 +17505,24 @@
   "u": "character-traits#special_character_nightingale_popularity"
  },
  {
+  "a": "events:nihilism",
+  "n": "Nihilism Events",
+  "t": "event_group",
+  "u": "events/nihilism"
+ },
+ {
   "a": "blf",
   "g": "decentralized",
   "n": "Niitsitapi",
   "t": "country",
   "u": "countries#BLF"
+ },
+ {
+  "a": "je_central_africa_expedition",
+  "g": "Expeditions",
+  "n": "Nile River Expedition",
+  "t": "journal_entry",
+  "u": "journal-entries#je_central_africa_expedition"
  },
  {
   "a": "nilotic",
@@ -14932,6 +17816,13 @@
   "u": "cultures#north_german"
  },
  {
+  "a": "je_north_german_unification",
+  "g": "German Unification",
+  "n": "North German Confederation",
+  "t": "journal_entry",
+  "u": "journal-entries#je_north_german_unification"
+ },
+ {
   "a": "ngf",
   "g": "recognized",
   "n": "North German Federation",
@@ -15084,6 +17975,12 @@
   "u": "cultures#norwegian"
  },
  {
+  "a": "events:law_events--law_notification",
+  "n": "Notification Events",
+  "t": "event_group",
+  "u": "events/law_events--law_notification"
+ },
+ {
   "a": "nvs",
   "g": "colonial",
   "n": "Nova Scotia",
@@ -15152,6 +18049,12 @@
   "u": "states#STATE_NUNAVUT"
  },
  {
+  "a": "events:tech_events--nursing_events",
+  "n": "Nursing Events",
+  "t": "event_group",
+  "u": "events/tech_events--nursing_events"
+ },
+ {
   "a": "nyamwezi",
   "n": "Nyamwezi",
   "t": "culture",
@@ -15203,6 +18106,12 @@
   "n": "Obligation",
   "t": "concept",
   "u": "concepts#concept_obligation"
+ },
+ {
+  "a": "events:obligation_events",
+  "n": "Obligation Events",
+  "t": "event_group",
+  "u": "events/obligation_events"
  },
  {
   "a": "concept_observer_mode",
@@ -15277,6 +18186,12 @@
   "u": "character-traits#basic_offensive_planner"
  },
  {
+  "a": "russia_offer_circassia_recognition",
+  "n": "Offer Circassia Recognition",
+  "t": "decision",
+  "u": "decisions#russia_offer_circassia_recognition"
+ },
+ {
   "a": "offer_embassy",
   "c": "img/treaties/offer_embassy.png",
   "n": "Offer Embassy",
@@ -15333,6 +18248,12 @@
   "n": "Oil Rigs",
   "t": "building",
   "u": "buildings/oil_rig"
+ },
+ {
+  "a": "events:oil_rush_events",
+  "n": "Oil Rush Events",
+  "t": "event_group",
+  "u": "events/oil_rush_events"
  },
  {
   "a": "oil_turbine",
@@ -15408,6 +18329,13 @@
   "u": "countries#OMO"
  },
  {
+  "a": "je_la_trinitaria",
+  "g": "National Agenda",
+  "n": "One and Indivisible",
+  "t": "journal_entry",
+  "u": "journal-entries#je_la_trinitaria"
+ },
+ {
   "a": "company_ong_lung_sheng_tea_company",
   "c": "img/companies/company_ong_lung_sheng_tea_company.png",
   "g": "historical",
@@ -15474,12 +18402,38 @@
   "u": "character-traits#opium_addiction"
  },
  {
+  "a": "je_opium_obsession",
+  "g": "Domestic Affairs",
+  "n": "Opium Crisis",
+  "t": "journal_entry",
+  "u": "journal-entries#je_opium_obsession"
+ },
+ {
+  "a": "events:opium_events",
+  "n": "Opium Events",
+  "t": "event_group",
+  "u": "events/opium_events"
+ },
+ {
   "a": "building_opium_plantation",
   "c": "img/buildings/opium_plantation.png",
   "g": "Plantations",
   "n": "Opium Plantations",
   "t": "building",
   "u": "buildings/opium_plantation"
+ },
+ {
+  "a": "je_opium_wars",
+  "g": "Foreign Affairs",
+  "n": "Opium Wars",
+  "t": "journal_entry",
+  "u": "journal-entries#je_opium_wars"
+ },
+ {
+  "a": "events:opium_wars_events",
+  "n": "Opium Wars Events",
+  "t": "event_group",
+  "u": "events/opium_wars_events"
  },
  {
   "a": "state_oran",
@@ -15521,6 +18475,12 @@
   "n": "Oregon",
   "t": "state",
   "u": "states#STATE_OREGON"
+ },
+ {
+  "a": "events:oregon_events",
+  "n": "Oregon Events",
+  "t": "event_group",
+  "u": "events/oregon_events"
  },
  {
   "a": "law_organic_regulation",
@@ -15643,6 +18603,12 @@
   "u": "states#STATE_KANSAI"
  },
  {
+  "a": "events:oscar_wilde",
+  "n": "Oscar Wilde Events",
+  "t": "event_group",
+  "u": "events/oscar_wilde"
+ },
+ {
   "a": "company_oevg",
   "c": "img/companies/oevg.png",
   "g": "historical",
@@ -15656,6 +18622,12 @@
   "n": "Ostrobothnia",
   "t": "state",
   "u": "states#STATE_OSTROBOTHNIA"
+ },
+ {
+  "a": "events:balkans_events--ottoman_events",
+  "n": "Ottoman Events",
+  "t": "event_group",
+  "u": "events/balkans_events--ottoman_events"
  },
  {
   "a": "company_ottoman_tobacco_regie",
@@ -15678,6 +18650,27 @@
   "n": "Oulu",
   "t": "state",
   "u": "states#STATE_OULU"
+ },
+ {
+  "a": "je_portugal_regeneration",
+  "g": "National Agenda",
+  "n": "Our Fortunate Regeneration",
+  "t": "journal_entry",
+  "u": "journal-entries#je_portugal_regeneration"
+ },
+ {
+  "a": "je_ethno_nationalist",
+  "g": "Domestic Affairs",
+  "n": "Our Nation, Our Culture",
+  "t": "journal_entry",
+  "u": "journal-entries#je_ethno_nationalist"
+ },
+ {
+  "a": "je_communist_welfare",
+  "g": "Domestic Affairs",
+  "n": "Our Revolution",
+  "t": "journal_entry",
+  "u": "journal-entries#je_communist_welfare"
  },
  {
   "a": "state_outer_hausaland",
@@ -15739,6 +18732,20 @@
   "n": "Paakintyi",
   "t": "country",
   "u": "countries#PAA"
+ },
+ {
+  "a": "je_pacify_the_steppes",
+  "g": "The Ruler of the East",
+  "n": "Pacification of the Steppes",
+  "t": "journal_entry",
+  "u": "journal-entries#je_pacify_the_steppes"
+ },
+ {
+  "a": "je_pacify_kazakh_steppes",
+  "g": "Objectives",
+  "n": "Pacify the Kazakh Steppe",
+  "t": "journal_entry",
+  "u": "journal-entries#je_pacify_kazakh_steppes"
  },
  {
   "a": "paddle_steamer",
@@ -15834,6 +18841,12 @@
   "u": "companies#company_panama_company"
  },
  {
+  "a": "spanish_flu_response",
+  "n": "Pandemic Response",
+  "t": "decision",
+  "u": "decisions#spanish_flu_response"
+ },
+ {
   "a": "bnn",
   "g": "decentralized",
   "n": "Pannakwati",
@@ -15886,6 +18899,12 @@
   "u": "countries#PRG"
  },
  {
+  "a": "events:brazil--paraguay",
+  "n": "Paraguay Events",
+  "t": "event_group",
+  "u": "events/brazil--paraguay"
+ },
+ {
   "a": "paraguayan",
   "n": "Paraguayan",
   "t": "culture",
@@ -15899,11 +18918,24 @@
   "u": "states#STATE_PARAIBA"
  },
  {
+  "a": "events:paralegal_discrimination_events",
+  "n": "Paralegal Discrimination Events",
+  "t": "event_group",
+  "u": "events/paralegal_discrimination_events"
+ },
+ {
   "a": "state_parana",
   "g": "Brazil",
   "n": "Paraná",
   "t": "state",
   "u": "states#STATE_PARANA"
+ },
+ {
+  "a": "slave_owner_paranoia",
+  "g": "Domestic Affairs",
+  "n": "Paranoid Slave Owners",
+  "t": "journal_entry",
+  "u": "journal-entries#slave_owner_paranoia"
  },
  {
   "a": "concept_parent_law",
@@ -15917,6 +18949,18 @@
   "n": "Paris Commune",
   "t": "country",
   "u": "countries#PRC"
+ },
+ {
+  "a": "events:agitators_events--paris_commune_events",
+  "n": "Paris Commune Events",
+  "t": "event_group",
+  "u": "events/agitators_events--paris_commune_events"
+ },
+ {
+  "a": "events:agitators_events--paris_commune_pulse_events",
+  "n": "Paris Commune Pulse Events",
+  "t": "event_group",
+  "u": "events/agitators_events--paris_commune_pulse_events"
  },
  {
   "a": "law_parliamentary_republic",
@@ -15978,6 +19022,20 @@
   "u": "states#STATE_PASHTUNISTAN"
  },
  {
+  "a": "je_tutorial_enact_institution_law",
+  "g": "Tutorial",
+  "n": "Passing an Institutional Law",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_enact_institution_law"
+ },
+ {
+  "a": "je_pass_laws",
+  "g": "Objectives",
+  "n": "Passing Laws",
+  "t": "journal_entry",
+  "u": "journal-entries#je_pass_laws"
+ },
+ {
   "a": "special_character_passionate_academic",
   "c": "img/traits/special_character_passionate_academic.png",
   "g": "personality",
@@ -16008,10 +19066,29 @@
   "u": "states#STATE_PATAGONIA"
  },
  {
+  "a": "events:brazil--patagonia_events",
+  "n": "Patagonia Events",
+  "t": "event_group",
+  "u": "events/brazil--patagonia_events"
+ },
+ {
+  "a": "events:patagonia",
+  "n": "Patagonia Events",
+  "t": "event_group",
+  "u": "events/patagonia"
+ },
+ {
   "a": "patagonian",
   "n": "Patagonian",
   "t": "culture",
   "u": "cultures#patagonian"
+ },
+ {
+  "a": "je_liberalism_1",
+  "g": "Domestic Affairs",
+  "n": "Path to Liberalism",
+  "t": "journal_entry",
+  "u": "journal-entries#je_liberalism_1"
  },
  {
   "a": "pathan",
@@ -16032,6 +19109,20 @@
   "n": "Patna",
   "t": "country",
   "u": "countries#PTN"
+ },
+ {
+  "a": "je_realism",
+  "g": "Development",
+  "n": "Patronize Realist Art",
+  "t": "journal_entry",
+  "u": "journal-entries#je_realism"
+ },
+ {
+  "a": "je_romanticism",
+  "g": "Development",
+  "n": "Patronize Romanticism",
+  "t": "journal_entry",
+  "u": "journal-entries#je_romanticism"
  },
  {
   "a": "paulista",
@@ -16098,6 +19189,12 @@
   "u": "countries#PDI"
  },
  {
+  "a": "events:brazil--pedro_brazil_events",
+  "n": "Pedro Brazil Events",
+  "t": "event_group",
+  "u": "events/brazil--pedro_brazil_events"
+ },
+ {
   "a": "company_pedro_domecq",
   "c": "img/companies/company_pedro_domecq.png",
   "g": "historical",
@@ -16143,6 +19240,12 @@
   "u": "laws#law_people_of_the_book"
  },
  {
+  "a": "events:peoples_springtime",
+  "n": "Peoples Springtime Events",
+  "t": "event_group",
+  "u": "events/peoples_springtime"
+ },
+ {
   "a": "concept_budget_per_capita_taxes",
   "n": "Per Capita Taxes",
   "t": "concept",
@@ -16170,6 +19273,13 @@
   "n": "Percussion Cap",
   "t": "technology",
   "u": "technology#percussion_cap"
+ },
+ {
+  "a": "je_philippines_main",
+  "g": "National Agenda",
+  "n": "Perla del Mar de Oriente",
+  "t": "journal_entry",
+  "u": "journal-entries#je_philippines_main"
  },
  {
   "a": "prm",
@@ -16257,6 +19367,12 @@
   "u": "countries#SC3"
  },
  {
+  "a": "events:brazil--peru_bolivia",
+  "n": "Peru Bolivia Events",
+  "t": "event_group",
+  "u": "events/brazil--peru_bolivia"
+ },
+ {
   "a": "pbc",
   "g": "recognized",
   "n": "Peru-Bolivia",
@@ -16298,6 +19414,12 @@
   "n": "Philippines",
   "t": "country",
   "u": "countries#PHI"
+ },
+ {
+  "a": "events:iberia_events--philippines_events",
+  "n": "Philippines Events",
+  "t": "event_group",
+  "u": "events/iberia_events--philippines_events"
  },
  {
   "a": "phl",
@@ -16407,6 +19529,12 @@
   "u": "states#STATE_MAZOVIA"
  },
  {
+  "a": "events:pm_events",
+  "n": "Pm Events",
+  "t": "event_group",
+  "u": "events/pm_events"
+ },
+ {
   "a": "pneumatic_tools",
   "c": "img/techs/pneumatic_tools.png",
   "g": "production",
@@ -16427,6 +19555,12 @@
   "n": "Poland",
   "t": "country",
   "u": "countries#POL"
+ },
+ {
+  "a": "events:poland_events",
+  "n": "Poland Events",
+  "t": "event_group",
+  "u": "events/poland_events"
  },
  {
   "a": "plc",
@@ -16614,6 +19748,34 @@
   "u": "concepts#concept_popularity"
  },
  {
+  "a": "je_central_america_migration",
+  "g": "Foreign Affairs",
+  "n": "Populating Central America",
+  "t": "journal_entry",
+  "u": "journal-entries#je_central_america_migration"
+ },
+ {
+  "a": "je_american_west_migration",
+  "g": "Foreign Affairs",
+  "n": "Populating the American West",
+  "t": "journal_entry",
+  "u": "journal-entries#je_american_west_migration"
+ },
+ {
+  "a": "je_south_america_migration",
+  "g": "Foreign Affairs",
+  "n": "Populating the Americas",
+  "t": "journal_entry",
+  "u": "journal-entries#je_south_america_migration"
+ },
+ {
+  "a": "je_populist_unrest",
+  "g": "The Brazilian Nation",
+  "n": "Populist Unrest",
+  "t": "journal_entry",
+  "u": "journal-entries#je_populist_unrest"
+ },
+ {
   "a": "concept_message_settings_popup",
   "n": "Popup",
   "t": "concept",
@@ -16656,10 +19818,28 @@
   "u": "countries#POR"
  },
  {
+  "a": "events:iberia_events--portugal_single_fire_events_1",
+  "n": "Portugal Single Fire Events",
+  "t": "event_group",
+  "u": "events/iberia_events--portugal_single_fire_events_1"
+ },
+ {
   "a": "portuguese",
   "n": "Portuguese",
   "t": "culture",
   "u": "cultures#portuguese"
+ },
+ {
+  "a": "events:iberia_events--portuguese_colonialism_events",
+  "n": "Portuguese Colonialism Events",
+  "t": "event_group",
+  "u": "events/iberia_events--portuguese_colonialism_events"
+ },
+ {
+  "a": "events:iberia_events--portuguese_monarchy_events",
+  "n": "Portuguese Monarchy Events",
+  "t": "event_group",
+  "u": "events/iberia_events--portuguese_monarchy_events"
  },
  {
   "a": "state_posen",
@@ -16667,6 +19847,12 @@
   "n": "Posen",
   "t": "state",
   "u": "states#STATE_POSEN"
+ },
+ {
+  "a": "events:brazil--positivism",
+  "n": "Positivism Events",
+  "t": "event_group",
+  "u": "events/brazil--positivism"
  },
  {
   "a": "postal_savings",
@@ -16688,6 +19874,13 @@
   "n": "Potosí",
   "t": "state",
   "u": "states#STATE_POTOSI"
+ },
+ {
+  "a": "je_sol_1",
+  "g": "Major Situations",
+  "n": "Poverty Crisis",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sol_1"
  },
  {
   "a": "concept_power_bloc",
@@ -16777,12 +19970,26 @@
   "u": "technology#pre_dreadnought_tech"
  },
  {
+  "a": "ship_type_pre_dreadnought",
+  "g": "Capital Ships",
+  "n": "Pre-Dreadnought",
+  "t": "ship",
+  "u": "ships#ship_type_pre_dreadnought"
+ },
+ {
   "a": "company_basic_gold_mining",
   "c": "img/companies/basic_gold_mining.png",
   "g": "basic",
   "n": "Precious Metals Syndicate",
   "t": "company",
   "u": "companies#company_basic_gold_mining"
+ },
+ {
+  "a": "je_prestige_goods_tools",
+  "g": "Development",
+  "n": "Precision Tools",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_tools"
  },
  {
   "a": "company_basic_food",
@@ -16855,6 +20062,13 @@
   "u": "companies#company_prussian_state_railways"
  },
  {
+  "a": "je_assassination",
+  "g": "Major Situations",
+  "n": "Prevent the Assassination Plot",
+  "t": "journal_entry",
+  "u": "journal-entries#je_assassination"
+ },
+ {
   "a": "concept_primary_cultures",
   "n": "Primary Cultures",
   "t": "concept",
@@ -16873,10 +20087,29 @@
   "u": "concepts#concept_power_bloc_primary_principle_group"
  },
  {
+  "a": "je_prestige_goods_meat",
+  "g": "Development",
+  "n": "Prime Meat",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_meat"
+ },
+ {
   "a": "concept_princely_state",
   "n": "Princely State",
   "t": "concept",
   "u": "concepts#concept_princely_state"
+ },
+ {
+  "a": "events:india_events--princely_state_creation",
+  "n": "Princely State Creation Events",
+  "t": "event_group",
+  "u": "events/india_events--princely_state_creation"
+ },
+ {
+  "a": "events:india_events--princely_states",
+  "n": "Princely States Events",
+  "t": "event_group",
+  "u": "events/india_events--princely_states"
  },
  {
   "a": "concept_principal",
@@ -16895,6 +20128,13 @@
   "n": "Principle Group",
   "t": "concept",
   "u": "concepts#concept_power_bloc_principle_group"
+ },
+ {
+  "a": "je_mughal_hindustan",
+  "g": "National Agenda",
+  "n": "Prisoner of the Red Fort",
+  "t": "journal_entry",
+  "u": "journal-entries#je_mughal_hindustan"
  },
  {
   "a": "concept_private_construction",
@@ -16937,6 +20177,24 @@
   "u": "concepts#concept_privy_purse"
  },
  {
+  "a": "bulgaria_proclaim_empire",
+  "n": "Proclaim Bulgarian Empire",
+  "t": "decision",
+  "u": "decisions#bulgaria_proclaim_empire"
+ },
+ {
+  "a": "british_raj_decision",
+  "n": "Proclaim the British Raj",
+  "t": "decision",
+  "u": "decisions#british_raj_decision"
+ },
+ {
+  "a": "kor_declare_korean_empire",
+  "n": "Proclaim the Empire of Korea",
+  "t": "decision",
+  "u": "decisions#KOR_declare_korean_empire"
+ },
+ {
   "a": "concept_good_production",
   "n": "Production",
   "t": "concept",
@@ -16953,6 +20211,12 @@
   "n": "Production Method",
   "t": "concept",
   "u": "concepts#concept_production_method"
+ },
+ {
+  "a": "events:tech_events--production_tech_events",
+  "n": "Production Tech Events",
+  "t": "event_group",
+  "u": "events/tech_events--production_tech_events"
  },
  {
   "a": "concept_productivity",
@@ -16988,6 +20252,12 @@
   "n": "Prohibit Trade with World Market",
   "t": "treaty_article",
   "u": "treaties#prohibit_trade_with_global_market"
+ },
+ {
+  "a": "events:prohibition_events",
+  "n": "Prohibition Events",
+  "t": "event_group",
+  "u": "events/prohibition_events"
  },
  {
   "a": "promethean",
@@ -17046,6 +20316,12 @@
   "u": "laws#law_proportional_taxation"
  },
  {
+  "a": "pink_map",
+  "n": "Propose the Pink Map",
+  "t": "decision",
+  "u": "decisions#pink_map"
+ },
+ {
   "a": "prospecting",
   "c": "img/techs/prospecting_tech.png",
   "g": "production",
@@ -17058,6 +20334,19 @@
   "n": "Prosperity",
   "t": "concept",
   "u": "concepts#concept_prosperity"
+ },
+ {
+  "a": "events:prostitution_events",
+  "n": "Prostitution Events",
+  "t": "event_group",
+  "u": "events/prostitution_events"
+ },
+ {
+  "a": "ship_type_protected_cruiser",
+  "g": "Cruisers",
+  "n": "Protected Cruiser",
+  "t": "ship",
+  "u": "ships#ship_type_protected_cruiser"
  },
  {
   "a": "law_protected_speech",
@@ -17109,6 +20398,13 @@
   "u": "countries#PRU"
  },
  {
+  "a": "je_prussia_of_the_balkans",
+  "g": "National Agenda",
+  "n": "Prussia of the Balkans",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prussia_of_the_balkans"
+ },
+ {
   "a": "state_pskov",
   "g": "Russia",
   "n": "Pskov",
@@ -17140,6 +20436,12 @@
   "u": "character-traits#psychological_affliction"
  },
  {
+  "a": "events:psychology_events",
+  "n": "Psychology Events",
+  "t": "event_group",
+  "u": "events/psychology_events"
+ },
+ {
   "a": "law_public_health_insurance",
   "c": "img/laws/public_health_insurance.png",
   "g": "Health System",
@@ -17154,6 +20456,13 @@
   "n": "Public Schools",
   "t": "law",
   "u": "laws#law_public_schools"
+ },
+ {
+  "a": "je_public_services",
+  "g": "Objectives",
+  "n": "Public Services",
+  "t": "journal_entry",
+  "u": "journal-entries#je_public_services"
  },
  {
   "a": "pud",
@@ -17224,6 +20533,26 @@
   "u": "concepts#concept_puppet"
  },
  {
+  "a": "france_annex_luxembourg",
+  "n": "Purchase Luxembourg",
+  "t": "decision",
+  "u": "decisions#france_annex_luxembourg"
+ },
+ {
+  "a": "je_prestige_goods_opium",
+  "g": "Development",
+  "n": "Pure Opium",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_opium"
+ },
+ {
+  "a": "je_india_railway",
+  "g": "The Administration of India",
+  "n": "Purveyor of Progress",
+  "t": "journal_entry",
+  "u": "journal-entries#je_india_railway"
+ },
+ {
   "a": "qia",
   "g": "unrecognized",
   "n": "Qian",
@@ -17286,6 +20615,13 @@
   "u": "states#STATE_QUETTA"
  },
  {
+  "a": "je_prestige_goods_artillery",
+  "g": "Development",
+  "n": "Quick-fire Artillery",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_artillery"
+ },
+ {
   "a": "quinine",
   "c": "img/techs/quinine.png",
   "g": "society",
@@ -17337,10 +20673,24 @@
   "u": "goods/radios"
  },
  {
+  "a": "ragamuffin_war",
+  "g": "The Brazilian Nation",
+  "n": "Ragamuffin War",
+  "t": "journal_entry",
+  "u": "journal-entries#ragamuffin_war"
+ },
+ {
   "a": "concept_raiding",
   "n": "Raiding",
   "t": "concept",
   "u": "concepts#concept_raiding"
+ },
+ {
+  "a": "je_montenegrin_raiding",
+  "g": "National Agenda",
+  "n": "Raiding",
+  "t": "journal_entry",
+  "u": "journal-entries#je_montenegrin_raiding"
  },
  {
   "a": "concept_raiding_frequency",
@@ -17429,12 +20779,26 @@
   "u": "concepts#concept_readiness"
  },
  {
+  "a": "je_acw_reincorporate",
+  "g": "The Slavery Debate",
+  "n": "Readmit the Secessionist States",
+  "t": "journal_entry",
+  "u": "journal-entries#je_acw_reincorporate"
+ },
+ {
   "a": "realism",
   "c": "img/techs/realism.png",
   "g": "society",
   "n": "Realism",
   "t": "technology",
   "u": "technology#realism"
+ },
+ {
+  "a": "je_manila_cathedral",
+  "g": "Development",
+  "n": "Rebuilding the Manila Cathedral",
+  "t": "journal_entry",
+  "u": "journal-entries#je_manila_cathedral"
  },
  {
   "a": "reckless",
@@ -17458,10 +20822,161 @@
   "u": "concepts#concept_recognized_power"
  },
  {
+  "a": "je_unrecognized_power",
+  "g": "Objectives",
+  "n": "Recognized Power",
+  "t": "journal_entry",
+  "u": "journal-entries#je_unrecognized_power"
+ },
+ {
+  "a": "je_reconquista",
+  "g": "National Agenda",
+  "n": "Reconquista",
+  "t": "journal_entry",
+  "u": "journal-entries#je_reconquista"
+ },
+ {
+  "a": "je_acw_reconstruction",
+  "g": "The Slavery Debate",
+  "n": "Reconstruction",
+  "t": "journal_entry",
+  "u": "journal-entries#je_acw_reconstruction"
+ },
+ {
+  "a": "je_tutorial_recover_from_default",
+  "g": "Tutorial",
+  "n": "Recover From Default",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_recover_from_default"
+ },
+ {
   "a": "concept_recovery_rate",
   "n": "Recovery Rate",
   "t": "concept",
   "u": "concepts#concept_recovery_rate"
+ },
+ {
+  "a": "je_tutorial_recruit_promote_commander",
+  "g": "Tutorial",
+  "n": "Recruit and Promote a Commander",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_recruit_promote_commander"
+ },
+ {
+  "a": "je_red_summer",
+  "g": "Major Situations",
+  "n": "Red …",
+  "t": "journal_entry",
+  "u": "journal-entries#je_red_summer"
+ },
+ {
+  "a": "events:red_scare_events",
+  "n": "Red Scare Events",
+  "t": "event_group",
+  "u": "events/red_scare_events"
+ },
+ {
+  "a": "je_prestige_goods_steel",
+  "g": "Development",
+  "n": "Refined Steel",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_steel"
+ },
+ {
+  "a": "je_refining_goods",
+  "g": "Objectives",
+  "n": "Refining our Production",
+  "t": "journal_entry",
+  "u": "journal-entries#je_refining_goods"
+ },
+ {
+  "a": "je_tutorial_reform_government",
+  "g": "Tutorial",
+  "n": "Reform the Government",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_reform_government"
+ },
+ {
+  "a": "je_reform_indies",
+  "g": "Domestic Affairs",
+  "n": "Reform the Indies",
+  "t": "journal_entry",
+  "u": "journal-entries#je_reform_indies"
+ },
+ {
+  "a": "jap_upgrade_the_shinsengumi",
+  "n": "Reform the Shinsengumi",
+  "t": "decision",
+  "u": "decisions#jap_upgrade_the_shinsengumi"
+ },
+ {
+  "a": "events:iberia_events--regency_events",
+  "n": "Regency Events",
+  "t": "event_group",
+  "u": "events/iberia_events--regency_events"
+ },
+ {
+  "a": "je_spa_economic_regeneration_modernise_agriculture",
+  "g": "Economic Regeneration",
+  "n": "Regeneration: Agriculture",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spa_economic_regeneration_modernise_agriculture"
+ },
+ {
+  "a": "je_spa_economic_regeneration_ultramar",
+  "g": "Economic Regeneration",
+  "n": "Regeneration: Colonial",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spa_economic_regeneration_ultramar"
+ },
+ {
+  "a": "je_spa_economic_regeneration_light_industry",
+  "g": "Economic Regeneration",
+  "n": "Regeneration: Industry",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spa_economic_regeneration_light_industry"
+ },
+ {
+  "a": "je_spa_economic_regeneration_land_reform",
+  "g": "Economic Regeneration",
+  "n": "Regeneration: Land Reform",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spa_economic_regeneration_land_reform"
+ },
+ {
+  "a": "je_spa_economic_regeneration_mining",
+  "g": "Economic Regeneration",
+  "n": "Regeneration: Mining",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spa_economic_regeneration_mining"
+ },
+ {
+  "a": "je_portugal_regeneration_institutions",
+  "g": "National Agenda",
+  "n": "Regeneration: National Institutions",
+  "t": "journal_entry",
+  "u": "journal-entries#je_portugal_regeneration_institutions"
+ },
+ {
+  "a": "je_portugal_regeneration_public_works",
+  "g": "National Agenda",
+  "n": "Regeneration: Public Works",
+  "t": "journal_entry",
+  "u": "journal-entries#je_portugal_regeneration_public_works"
+ },
+ {
+  "a": "je_spa_economic_regeneration_railways",
+  "g": "Economic Regeneration",
+  "n": "Regeneration: Railways",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spa_economic_regeneration_railways"
+ },
+ {
+  "a": "je_portugal_regeneration_agriculture",
+  "g": "National Agenda",
+  "n": "Regeneration: The Countryside",
+  "t": "journal_entry",
+  "u": "journal-entries#je_portugal_regeneration_agriculture"
  },
  {
   "a": "concept_regime_change",
@@ -17525,6 +21040,13 @@
   "u": "concepts#concept_religion"
  },
  {
+  "a": "je_autocracy",
+  "g": "Domestic Affairs",
+  "n": "Religion, Autocracy, Nationality",
+  "t": "journal_entry",
+  "u": "journal-entries#je_autocracy"
+ },
+ {
   "a": "identity_religious",
   "c": "img/identities/religious.png",
   "n": "Religious Convocation",
@@ -17546,6 +21068,30 @@
   "u": "laws#law_religious_schools"
  },
  {
+  "a": "remove_opium_ban",
+  "n": "Remove the Ban on Opium",
+  "t": "decision",
+  "u": "decisions#remove_opium_ban"
+ },
+ {
+  "a": "remove_liquor_ban",
+  "n": "Remove the Liquor Ban",
+  "t": "decision",
+  "u": "decisions#remove_liquor_ban"
+ },
+ {
+  "a": "decision_reorganize_iberian_crowns",
+  "n": "Reorganize Iberian Crowns",
+  "t": "decision",
+  "u": "decisions#decision_reorganize_iberian_crowns"
+ },
+ {
+  "a": "decision_revoke_banishment_law",
+  "n": "Repeal the Banishment Law",
+  "t": "decision",
+  "u": "decisions#decision_revoke_banishment_law"
+ },
+ {
   "a": "repeaters",
   "c": "img/techs/repeaters.png",
   "g": "military",
@@ -17554,12 +21100,38 @@
   "u": "technology#repeaters"
  },
  {
+  "a": "events:law_events--republic_laws",
+  "n": "Republic Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--republic_laws"
+ },
+ {
+  "a": "je_tutorial_research_technology",
+  "g": "Tutorial",
+  "n": "Research a Technology",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_research_technology"
+ },
+ {
+  "a": "je_prestige_goods_coffee",
+  "g": "Development",
+  "n": "Reserve Coffee",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_coffee"
+ },
+ {
   "a": "reserved",
   "c": "img/traits/reserved.png",
   "g": "personality",
   "n": "Reserved",
   "t": "character_trait",
   "u": "character-traits#reserved"
+ },
+ {
+  "a": "events:resignation",
+  "n": "Resignation Events",
+  "t": "event_group",
+  "u": "events/resignation"
  },
  {
   "a": "concept_resource_potential",
@@ -17576,6 +21148,47 @@
   "u": "character-traits#special_character_restitutor_orbis"
  },
  {
+  "a": "je_meiji_diplomacy",
+  "g": "The Imperial Restoration",
+  "n": "Restoration: Achieve Recognition",
+  "t": "journal_entry",
+  "u": "journal-entries#je_meiji_diplomacy"
+ },
+ {
+  "a": "je_meiji_economy",
+  "g": "The Imperial Restoration",
+  "n": "Restoration: Industrialize Japan",
+  "t": "journal_entry",
+  "u": "journal-entries#je_meiji_economy"
+ },
+ {
+  "a": "je_meiji_army",
+  "g": "The Imperial Restoration",
+  "n": "Restoration: Retire the Samurai",
+  "t": "journal_entry",
+  "u": "journal-entries#je_meiji_army"
+ },
+ {
+  "a": "je_iwakura_mission",
+  "g": "National Agenda",
+  "n": "Restoration: The … Mission",
+  "t": "journal_entry",
+  "u": "journal-entries#je_iwakura_mission"
+ },
+ {
+  "a": "decision_restore_kingdom_of_brazil",
+  "n": "Restore Kingdom of Brazil",
+  "t": "decision",
+  "u": "decisions#decision_restore_kingdom_of_brazil"
+ },
+ {
+  "a": "je_secret_police",
+  "g": "Domestic Affairs",
+  "n": "Restore Order",
+  "t": "journal_entry",
+  "u": "journal-entries#je_secret_police"
+ },
+ {
   "a": "law_restricted_child_labor",
   "c": "img/laws/restricted_child_labor.png",
   "g": "Children's Rights",
@@ -17590,10 +21203,46 @@
   "u": "concepts#concept_revenue"
  },
  {
+  "a": "aus_revisit_federation_proposal",
+  "n": "Revisit the Federal Solution",
+  "t": "decision",
+  "u": "decisions#aus_revisit_federation_proposal"
+ },
+ {
+  "a": "revive_olympic_games_decision",
+  "n": "Revive the Olympic Games",
+  "t": "decision",
+  "u": "decisions#revive_olympic_games_decision"
+ },
+ {
+  "a": "revoke_fernando_po",
+  "n": "Revoke the Lease of Fernando Po",
+  "t": "decision",
+  "u": "decisions#revoke_fernando_po"
+ },
+ {
   "a": "concept_revolution",
   "n": "Revolution",
   "t": "concept",
   "u": "concepts#concept_revolution"
+ },
+ {
+  "a": "events:agitators_events--revolution_events_01",
+  "n": "Revolution Events",
+  "t": "event_group",
+  "u": "events/agitators_events--revolution_events_01"
+ },
+ {
+  "a": "events:agitators_events--revolution_events_02",
+  "n": "Revolution Events",
+  "t": "event_group",
+  "u": "events/agitators_events--revolution_events_02"
+ },
+ {
+  "a": "events:agitators_events--revolution_events_03",
+  "n": "Revolution Events",
+  "t": "event_group",
+  "u": "events/agitators_events--revolution_events_03"
  },
  {
   "a": "bag",
@@ -17678,6 +21327,12 @@
   "u": "laws#law_right_to_associate"
  },
  {
+  "a": "events:law_events--rights_of_women_laws",
+  "n": "Rights Of Women Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--rights_of_women_laws"
+ },
+ {
   "a": "law_strict_edo_system",
   "c": "img/laws/social_hierarchy_enforced.png",
   "g": "Edo Status System",
@@ -17691,6 +21346,13 @@
   "n": "Rio de Janeiro",
   "t": "state",
   "u": "states#STATE_RIO_DE_JANEIRO"
+ },
+ {
+  "a": "je_la_plata",
+  "g": "Foreign Affairs",
+  "n": "Rio de la Plata",
+  "t": "journal_entry",
+  "u": "journal-entries#je_la_plata"
  },
  {
   "a": "plt",
@@ -17741,6 +21403,13 @@
   "u": "concepts#concept_risk"
  },
  {
+  "a": "je_risorgimento",
+  "g": "National Agenda",
+  "n": "Risorgimento",
+  "t": "journal_entry",
+  "u": "journal-entries#je_risorgimento"
+ },
+ {
   "a": "concept_rivalry",
   "n": "Rivalry",
   "t": "concept",
@@ -17772,6 +21441,12 @@
   "n": "Romania",
   "t": "country",
   "u": "countries#ROM"
+ },
+ {
+  "a": "events:romania_events",
+  "n": "Romania Events",
+  "t": "event_group",
+  "u": "events/romania_events"
  },
  {
   "a": "romanian",
@@ -17818,6 +21493,12 @@
   "u": "technology#rotary_valve_engine"
  },
  {
+  "a": "events:royal_wedding",
+  "n": "Royal Wedding Events",
+  "t": "event_group",
+  "u": "events/royal_wedding"
+ },
+ {
   "a": "ruanda",
   "n": "Ruanda",
   "t": "culture",
@@ -17830,6 +21511,12 @@
   "n": "Rubber",
   "t": "good",
   "u": "goods/rubber"
+ },
+ {
+  "a": "events:tech_events--rubber_events",
+  "n": "Rubber Events",
+  "t": "event_group",
+  "u": "events/tech_events--rubber_events"
  },
  {
   "a": "rubber_mastication",
@@ -17894,6 +21581,12 @@
   "u": "countries#RUS"
  },
  {
+  "a": "events:russia_events",
+  "n": "Russia Events",
+  "t": "event_group",
+  "u": "events/russia_events"
+ },
+ {
   "a": "russian",
   "n": "Russian",
   "t": "culture",
@@ -17912,6 +21605,12 @@
   "n": "Russian-American Company",
   "t": "company",
   "u": "companies#company_russian_american_company"
+ },
+ {
+  "a": "events:russo_chinese_events",
+  "n": "Russo Chinese Events",
+  "t": "event_group",
+  "u": "events/russo_chinese_events"
  },
  {
   "a": "state_ruthenia",
@@ -17965,6 +21664,12 @@
   "u": "states#STATE_RYUKYU_ISLANDS"
  },
  {
+  "a": "events:japan_events--ryukyu_rivalry_events",
+  "n": "Ryukyu Rivalry Events",
+  "t": "event_group",
+  "u": "events/japan_events--ryukyu_rivalry_events"
+ },
+ {
   "a": "ryukyuan",
   "n": "Ryukyuan",
   "t": "culture",
@@ -18008,6 +21713,13 @@
   "n": "Sagrada Família Cathedral",
   "t": "building",
   "u": "buildings/sagrada_familia_cathedral_3"
+ },
+ {
+  "a": "je_sagrada_familia",
+  "g": "Development",
+  "n": "Sagrada Família Cathedral",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sagrada_familia"
  },
  {
   "a": "state_sahara",
@@ -18370,10 +22082,23 @@
   "u": "countries#SCO"
  },
  {
+  "a": "events:scotland_yard",
+  "n": "Scotland Yard Events",
+  "t": "event_group",
+  "u": "events/scotland_yard"
+ },
+ {
   "a": "scottish",
   "n": "Scottish",
   "t": "culture",
   "u": "cultures#scottish"
+ },
+ {
+  "a": "je_scramble_for_africa",
+  "g": "Foreign Affairs",
+  "n": "Scramble For Africa",
+  "t": "journal_entry",
+  "u": "journal-entries#je_scramble_for_africa"
  },
  {
   "a": "concept_screening",
@@ -18404,10 +22129,30 @@
   "u": "concepts#concept_sea_node"
  },
  {
+  "a": "ship_type_seaplane_tender",
+  "g": "Cruisers",
+  "n": "Seaplane Tender",
+  "t": "ship",
+  "u": "ships#ship_type_seaplane_tender"
+ },
+ {
   "a": "concept_secession",
   "n": "Secession",
   "t": "concept",
   "u": "concepts#concept_secession"
+ },
+ {
+  "a": "events:secession_situations",
+  "n": "Secession Situations Events",
+  "t": "event_group",
+  "u": "events/secession_situations"
+ },
+ {
+  "a": "je_second_liberalism",
+  "g": "National Agenda",
+  "n": "Second Liberalism",
+  "t": "journal_entry",
+  "u": "journal-entries#je_second_liberalism"
  },
  {
   "a": "concept_secondary_demand",
@@ -18422,6 +22167,47 @@
   "n": "Secret Police",
   "t": "law",
   "u": "laws#law_secret_police"
+ },
+ {
+  "a": "je_acquire_korean_protectorate",
+  "g": "Objectives",
+  "n": "Secure a Korean Protectorate",
+  "t": "journal_entry",
+  "u": "journal-entries#je_acquire_korean_protectorate"
+ },
+ {
+  "a": "je_maintain_afghan_protectorate",
+  "g": "Objectives",
+  "n": "Secure Afghan Protectorate",
+  "t": "journal_entry",
+  "u": "journal-entries#je_maintain_afghan_protectorate"
+ },
+ {
+  "a": "je_secure_influence_over_persia",
+  "g": "Objectives",
+  "n": "Secure Influence over Persia",
+  "t": "journal_entry",
+  "u": "journal-entries#je_secure_influence_over_persia"
+ },
+ {
+  "a": "je_secure_persian_border",
+  "g": "Objectives",
+  "n": "Secure the Persian Border",
+  "t": "journal_entry",
+  "u": "journal-entries#je_secure_persian_border"
+ },
+ {
+  "a": "je_ig_suppression_1",
+  "g": "Domestic Affairs",
+  "n": "Securing the Power",
+  "t": "journal_entry",
+  "u": "journal-entries#je_ig_suppression_1"
+ },
+ {
+  "a": "princely_state_decision",
+  "n": "Seek Sovereignty",
+  "t": "decision",
+  "u": "decisions#princely_state_decision"
  },
  {
   "a": "law_chiefs_distribute_aid",
@@ -18444,6 +22230,13 @@
   "n": "Selangor",
   "t": "country",
   "u": "countries#SEL"
+ },
+ {
+  "a": "je_prestige_goods_fish",
+  "g": "Development",
+  "n": "Select Fish",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_fish"
  },
  {
   "a": "self_propelled_torpedoes",
@@ -18501,6 +22294,13 @@
   "u": "countries#SNA"
  },
  {
+  "a": "je_tutorial_send_general_to_front",
+  "g": "Tutorial",
+  "n": "Send Formation To The Front",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_send_general_to_front"
+ },
+ {
   "a": "state_senegal",
   "g": "West Africa",
   "n": "Senegal",
@@ -18534,11 +22334,37 @@
   "u": "cultures#sephardic"
  },
  {
+  "a": "je_sepoy_mutiny",
+  "g": "The Administration of India",
+  "n": "Sepoy Mutiny",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sepoy_mutiny"
+ },
+ {
+  "a": "events:india_events--sepoy_mutiny_events",
+  "n": "Sepoy Mutiny Events",
+  "t": "event_group",
+  "u": "events/india_events--sepoy_mutiny_events"
+ },
+ {
   "a": "ser",
   "g": "recognized",
   "n": "Serbia",
   "t": "country",
   "u": "countries#SER"
+ },
+ {
+  "a": "je_mon_serb_unity",
+  "g": "National Agenda",
+  "n": "Serbia and Montenegro",
+  "t": "journal_entry",
+  "u": "journal-entries#je_mon_serb_unity"
+ },
+ {
+  "a": "events:balkans_events--serbia_events",
+  "n": "Serbia Events",
+  "t": "event_group",
+  "u": "events/balkans_events--serbia_events"
  },
  {
   "a": "serb",
@@ -18583,6 +22409,33 @@
   "n": "Services",
   "t": "good",
   "u": "goods/services"
+ },
+ {
+  "a": "events:india_events--set_hierarchy_events",
+  "n": "Set Hierarchy Events",
+  "t": "event_group",
+  "u": "events/india_events--set_hierarchy_events"
+ },
+ {
+  "a": "je_set_up_grain_import",
+  "g": "Foreign Affairs",
+  "n": "Set Up Grain Import",
+  "t": "journal_entry",
+  "u": "journal-entries#je_set_up_grain_import"
+ },
+ {
+  "a": "je_set_up_paper_import",
+  "g": "Foreign Affairs",
+  "n": "Set Up Paper Import",
+  "t": "journal_entry",
+  "u": "journal-entries#je_set_up_paper_import"
+ },
+ {
+  "a": "je_set_up_steel_import",
+  "g": "Foreign Affairs",
+  "n": "Set Up Steel Import",
+  "t": "journal_entry",
+  "u": "journal-entries#je_set_up_steel_import"
  },
  {
   "a": "shaft_mining",
@@ -18709,6 +22562,19 @@
   "u": "states#STATE_SHIKOKU"
  },
  {
+  "a": "je_shinbutsu_bunri",
+  "g": "National Agenda",
+  "n": "Shinbutsu Bunri",
+  "t": "journal_entry",
+  "u": "journal-entries#je_shinbutsu_bunri"
+ },
+ {
+  "a": "shinbutsu_bunri_decision",
+  "n": "Shinbutsu Bunri",
+  "t": "decision",
+  "u": "decisions#shinbutsu_bunri_decision"
+ },
+ {
   "a": "law_shinsengumi",
   "c": "img/laws/shinsengumi.png",
   "g": "Internal Security",
@@ -18782,6 +22648,13 @@
   "n": "Ship Modification",
   "t": "concept",
   "u": "concepts#concept_ship_modification"
+ },
+ {
+  "a": "ship_type_ship_of_the_line",
+  "g": "Capital Ships",
+  "n": "Ship of the Line",
+  "t": "ship",
+  "u": "ships#ship_type_ship_of_the_line"
  },
  {
   "a": "concept_ship_retrofit",
@@ -18880,6 +22753,13 @@
   "u": "units#combat_unit_type_shrapnel_artillery"
  },
  {
+  "a": "je_expanding_paraguay",
+  "g": "National Agenda",
+  "n": "Si Vis Pacem, Fac Bellum",
+  "t": "journal_entry",
+  "u": "journal-entries#je_expanding_paraguay"
+ },
+ {
   "a": "sak",
   "g": "unrecognized",
   "n": "Siak",
@@ -18934,6 +22814,12 @@
   "n": "Sicily",
   "t": "state",
   "u": "states#STATE_SICILY"
+ },
+ {
+  "a": "events:sick_man_events",
+  "n": "Sick Man Events",
+  "t": "event_group",
+  "u": "events/sick_man_events"
  },
  {
   "a": "sickly",
@@ -18993,6 +22879,19 @@
   "u": "cultures#sikh"
  },
  {
+  "a": "events:india_events--sikh_empire",
+  "n": "Sikh Empire Events",
+  "t": "event_group",
+  "u": "events/india_events--sikh_empire"
+ },
+ {
+  "a": "je_sikh_sovereignty",
+  "g": "National Agenda",
+  "n": "Sikh Sovereignty",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sikh_sovereignty"
+ },
+ {
   "a": "sik",
   "g": "unrecognized",
   "n": "Sikkim",
@@ -19022,6 +22921,12 @@
   "n": "Silk Plantations",
   "t": "building",
   "u": "buildings/silk_plantation"
+ },
+ {
+  "a": "events:agitators_events--silkworm_diseases",
+  "n": "Silkworm Diseases Events",
+  "t": "event_group",
+  "u": "events/agitators_events--silkworm_diseases"
  },
  {
   "a": "state_sinai",
@@ -19056,6 +22961,12 @@
   "n": "Sindi",
   "t": "culture",
   "u": "cultures#sindi"
+ },
+ {
+  "a": "events:law_events--single_party_state_laws",
+  "n": "Single Party State Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--single_party_state_laws"
  },
  {
   "a": "law_single_party_state",
@@ -19130,6 +23041,37 @@
   "u": "buildings/skyscraper"
  },
  {
+  "a": "events:skyscraper_events",
+  "n": "Skyscraper Events",
+  "t": "event_group",
+  "u": "events/skyscraper_events"
+ },
+ {
+  "a": "je_skyscraper_site",
+  "g": "Development",
+  "n": "Skyscraper Survey",
+  "t": "journal_entry",
+  "u": "journal-entries#je_skyscraper_site"
+ },
+ {
+  "a": "events:slave_owner_paranoia_events",
+  "n": "Slave Owner Paranoia Events",
+  "t": "event_group",
+  "u": "events/slave_owner_paranoia_events"
+ },
+ {
+  "a": "events:agitators_events--slave_revolt_events",
+  "n": "Slave Revolt Events",
+  "t": "event_group",
+  "u": "events/agitators_events--slave_revolt_events"
+ },
+ {
+  "a": "events:slave_revolts",
+  "n": "Slave Revolts Events",
+  "t": "event_group",
+  "u": "events/slave_revolts"
+ },
+ {
   "a": "law_slave_trade",
   "c": "img/laws/slave_trade.png",
   "g": "Slavery",
@@ -19150,6 +23092,12 @@
   "n": "Slavery Banned",
   "t": "law",
   "u": "laws#law_slavery_banned"
+ },
+ {
+  "a": "events:law_events--slavery_laws",
+  "n": "Slavery Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--slavery_laws"
  },
  {
   "a": "slaves",
@@ -19320,6 +23268,12 @@
   "u": "companies#company_putilov_company"
  },
  {
+  "a": "events:tech_events--society_tech_events",
+  "n": "Society Tech Events",
+  "t": "event_group",
+  "u": "events/tech_events--society_tech_events"
+ },
+ {
   "a": "sok",
   "g": "unrecognized",
   "n": "Sokoto",
@@ -19327,11 +23281,32 @@
   "u": "countries#SOK"
  },
  {
+  "a": "je_increase_technology",
+  "g": "Objectives",
+  "n": "Solidify Our Technological Advantage",
+  "t": "journal_entry",
+  "u": "journal-entries#je_increase_technology"
+ },
+ {
+  "a": "je_tutorial_improve_rank",
+  "g": "Tutorial",
+  "n": "Solidifying our Position",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_improve_rank"
+ },
+ {
   "a": "state_solomon_islands",
   "g": "Oceania",
   "n": "Solomon Islands",
   "t": "state",
   "u": "states#STATE_SOLOMON_ISLANDS"
+ },
+ {
+  "a": "je_tutorial_fix_budget_deficit",
+  "g": "Tutorial",
+  "n": "Solve Budget Deficit",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_fix_budget_deficit"
  },
  {
   "a": "somali",
@@ -19384,6 +23359,18 @@
   "n": "South Africa",
   "t": "country",
   "u": "countries#SAF"
+ },
+ {
+  "a": "events:south_america_events",
+  "n": "South America Events",
+  "t": "event_group",
+  "u": "events/south_america_events"
+ },
+ {
+  "a": "events:brazil--south_america_migration",
+  "n": "South America Migration Events",
+  "t": "event_group",
+  "u": "events/brazil--south_america_migration"
  },
  {
   "a": "south_andean",
@@ -19452,6 +23439,13 @@
   "n": "South German",
   "t": "culture",
   "u": "cultures#south_german"
+ },
+ {
+  "a": "je_south_german_unification",
+  "g": "German Unification",
+  "n": "South German Federation",
+  "t": "journal_entry",
+  "u": "journal-entries#je_south_german_unification"
  },
  {
   "a": "sgf",
@@ -19577,16 +23571,67 @@
   "u": "cultures#spanish"
  },
  {
+  "a": "events:iberia_events--spanish_africa_events",
+  "n": "Spanish Africa Events",
+  "t": "event_group",
+  "u": "events/iberia_events--spanish_africa_events"
+ },
+ {
+  "a": "events:iberia_events--spanish_events",
+  "n": "Spanish Events",
+  "t": "event_group",
+  "u": "events/iberia_events--spanish_events"
+ },
+ {
+  "a": "events:spanish_flu_events",
+  "n": "Spanish Flu Events",
+  "t": "event_group",
+  "u": "events/spanish_flu_events"
+ },
+ {
+  "a": "events:iberia_events--spanish_new_world_events",
+  "n": "Spanish New World Events",
+  "t": "event_group",
+  "u": "events/iberia_events--spanish_new_world_events"
+ },
+ {
   "a": "concept_special_unit",
   "n": "Special Unit",
   "t": "concept",
   "u": "concepts#concept_special_unit"
  },
  {
+  "a": "je_specialized_goods",
+  "g": "Objectives",
+  "n": "Specialized Goods Production",
+  "t": "journal_entry",
+  "u": "journal-entries#je_specialized_goods"
+ },
+ {
   "a": "concept_split_state",
   "n": "Split State",
   "t": "concept",
   "u": "concepts#concept_split_state"
+ },
+ {
+  "a": "je_spoils_of_war",
+  "g": "National Agenda",
+  "n": "Spoils of War",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spoils_of_war"
+ },
+ {
+  "a": "events:spooky_halloween_events",
+  "n": "Spooky Halloween Events",
+  "t": "event_group",
+  "u": "events/spooky_halloween_events"
+ },
+ {
+  "a": "je_springtime_of_the_peoples",
+  "g": "International Situations",
+  "n": "Springtime of the Peoples",
+  "t": "journal_entry",
+  "u": "journal-entries#je_springtime_of_the_peoples"
  },
  {
   "a": "combat_unit_type_squad_infantry",
@@ -19633,6 +23678,13 @@
   "u": "character-traits#stalwart_defender"
  },
  {
+  "a": "je_abolish_monarchy",
+  "g": "Domestic Affairs",
+  "n": "Stamp Out Monarchism",
+  "t": "journal_entry",
+  "u": "journal-entries#je_abolish_monarchy"
+ },
+ {
   "a": "company_basic_colonial_plantations_2",
   "c": "img/companies/basic_colonial_plantations_2.png",
   "g": "basic",
@@ -19663,6 +23715,12 @@
   "u": "concepts#concept_sol"
  },
  {
+  "a": "events:standard_of_living_events",
+  "n": "Standard Of Living Events",
+  "t": "event_group",
+  "u": "events/standard_of_living_events"
+ },
+ {
   "a": "company_standard_oil",
   "c": "img/companies/american_standard_oil.png",
   "g": "historical",
@@ -19677,6 +23735,13 @@
   "n": "Standing Army",
   "t": "technology",
   "u": "technology#standing_army"
+ },
+ {
+  "a": "je_tutorial_start_diplomatic_play",
+  "g": "Tutorial",
+  "n": "Start Diplomatic Play",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_start_diplomatic_play"
  },
  {
   "a": "concept_starvation",
@@ -19697,6 +23762,12 @@
   "n": "State Atheism",
   "t": "law",
   "u": "laws#law_state_atheism"
+ },
+ {
+  "a": "events:law_events--state_atheism",
+  "n": "State Atheism Events",
+  "t": "event_group",
+  "u": "events/law_events--state_atheism"
  },
  {
   "a": "concept_state_region",
@@ -19829,6 +23900,13 @@
   "u": "technology#stock_exchange"
  },
  {
+  "a": "je_tutorial_prevent_revolution",
+  "g": "Tutorial",
+  "n": "Stop the Revolution",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_prevent_revolution"
+ },
+ {
   "a": "stormtroopers",
   "c": "img/techs/stormtroopers.png",
   "g": "military",
@@ -19892,6 +23970,53 @@
   "u": "concepts#concept_ai_strategy"
  },
  {
+  "a": "events:strike_events",
+  "n": "Strike Events",
+  "t": "event_group",
+  "u": "events/strike_events"
+ },
+ {
+  "a": "je_strike",
+  "g": "Major Situations",
+  "n": "Strike!",
+  "t": "journal_entry",
+  "u": "journal-entries#je_strike"
+ },
+ {
+  "a": "ragamuffin_war_minors",
+  "g": "National Agenda",
+  "n": "Struggle for Independence",
+  "t": "journal_entry",
+  "u": "journal-entries#ragamuffin_war_minors"
+ },
+ {
+  "a": "je_princely_states",
+  "g": "National Agenda",
+  "n": "Struggle for Sovereignty",
+  "t": "journal_entry",
+  "u": "journal-entries#je_princely_states"
+ },
+ {
+  "a": "je_struggle_for_the_highveld",
+  "g": "National Agenda",
+  "n": "Struggle for the Highveld",
+  "t": "journal_entry",
+  "u": "journal-entries#je_struggle_for_the_highveld"
+ },
+ {
+  "a": "events:iberia_events--struggle_for_the_highveld_events",
+  "n": "Struggle For The Highveld Events",
+  "t": "event_group",
+  "u": "events/iberia_events--struggle_for_the_highveld_events"
+ },
+ {
+  "a": "je_prestige_goods_furniture",
+  "g": "Development",
+  "n": "Stylish Furniture",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_furniture"
+ },
+ {
   "a": "state_styria",
   "g": "Central Europe",
   "n": "Styria",
@@ -19911,6 +24036,19 @@
   "u": "concepts#concept_subject_action"
  },
  {
+  "a": "events:iberia_events--subject_interaction_evts",
+  "n": "Subject Interaction Evts Events",
+  "t": "event_group",
+  "u": "events/iberia_events--subject_interaction_evts"
+ },
+ {
+  "a": "je_subject_liberty",
+  "g": "Tutorial",
+  "n": "Subject Liberty Desire",
+  "t": "journal_entry",
+  "u": "journal-entries#je_subject_liberty"
+ },
+ {
   "a": "concept_subject_type",
   "n": "Subject Type",
   "t": "concept",
@@ -19923,6 +24061,19 @@
   "n": "Subjecthood",
   "t": "law",
   "u": "laws#law_subjecthood"
+ },
+ {
+  "a": "events:balkans_events--subjecthood_events",
+  "n": "Subjecthood Events",
+  "t": "event_group",
+  "u": "events/balkans_events--subjecthood_events"
+ },
+ {
+  "a": "ship_type_submarine",
+  "g": "Torpedo Craft",
+  "n": "Submarine",
+  "t": "ship",
+  "u": "ships#ship_type_submarine"
  },
  {
   "a": "submarine",
@@ -20030,6 +24181,12 @@
   "n": "Suez Canal Company",
   "t": "company",
   "u": "companies#company_suez_company"
+ },
+ {
+  "a": "events:suffragist_events",
+  "n": "Suffragist Events",
+  "t": "event_group",
+  "u": "events/suffragist_events"
  },
  {
   "a": "sugar",
@@ -20140,6 +24297,13 @@
   "u": "technology#battleship_tech"
  },
  {
+  "a": "ship_type_super_dreadnought",
+  "g": "Capital Ships",
+  "n": "Super Dreadnought",
+  "t": "ship",
+  "u": "ships#ship_type_super_dreadnought"
+ },
+ {
   "a": "concept_supply",
   "n": "Supply",
   "t": "concept",
@@ -20190,6 +24354,13 @@
   "u": "concepts#concept_supply_ship"
  },
  {
+  "a": "ship_type_supply_ship",
+  "g": "Supply Ships",
+  "n": "Supply Ship",
+  "t": "ship",
+  "u": "ships#ship_type_supply_ship"
+ },
+ {
   "a": "support_independence",
   "c": "img/treaties/support_independence_treaties.png",
   "n": "Support Independence",
@@ -20222,6 +24393,24 @@
   "n": "Surgut",
   "t": "state",
   "u": "states#STATE_SURGUT"
+ },
+ {
+  "a": "skyscraper_decision",
+  "n": "Survey a Skyscraper Site",
+  "t": "decision",
+  "u": "decisions#skyscraper_decision"
+ },
+ {
+  "a": "panama_survey_decision",
+  "n": "Survey the Panama Isthmus",
+  "t": "decision",
+  "u": "decisions#panama_survey_decision"
+ },
+ {
+  "a": "suez_survey_decision",
+  "n": "Survey the Suez Isthmus",
+  "t": "decision",
+  "u": "decisions#suez_survey_decision"
  },
  {
   "a": "surveyor",
@@ -20286,10 +24475,23 @@
   "u": "countries#SWE"
  },
  {
+  "a": "events:sweden_events",
+  "n": "Sweden Events",
+  "t": "event_group",
+  "u": "events/sweden_events"
+ },
+ {
   "a": "swedish",
   "n": "Swedish",
   "t": "culture",
   "u": "cultures#swedish"
+ },
+ {
+  "a": "je_prestige_goods_merchant_marine",
+  "g": "Development",
+  "n": "Swift Merchant Marine",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prestige_goods_merchant_marine"
  },
  {
   "a": "swi",
@@ -20451,6 +24653,13 @@
   "u": "cultures#tamil"
  },
  {
+  "a": "je_taming_the_north",
+  "g": "National Agenda",
+  "n": "Taming the North",
+  "t": "journal_entry",
+  "u": "journal-entries#je_taming_the_north"
+ },
+ {
   "a": "state_tanganyika",
   "g": "East Africa",
   "n": "Tanganyika",
@@ -20464,6 +24673,61 @@
   "n": "Tanks",
   "t": "good",
   "u": "goods/tanks"
+ },
+ {
+  "a": "events:tanzimat_events",
+  "n": "Tanzimat Events",
+  "t": "event_group",
+  "u": "events/tanzimat_events"
+ },
+ {
+  "a": "je_sick_man_army",
+  "g": "Tanzimat",
+  "n": "Tanzimat: Army Modernization",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sick_man_army"
+ },
+ {
+  "a": "je_sick_man_bureaucracy",
+  "g": "Tanzimat",
+  "n": "Tanzimat: Bureaucratic Reform",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sick_man_bureaucracy"
+ },
+ {
+  "a": "je_sick_man_education",
+  "g": "Tanzimat",
+  "n": "Tanzimat: Education Reform",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sick_man_education"
+ },
+ {
+  "a": "je_sick_man_egypt",
+  "g": "Tanzimat",
+  "n": "Tanzimat: Reclaim Egypt",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sick_man_egypt"
+ },
+ {
+  "a": "je_sick_man_syria",
+  "g": "Tanzimat",
+  "n": "Tanzimat: Reclaim Syria",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sick_man_syria"
+ },
+ {
+  "a": "je_sick_man_separatism",
+  "g": "Tanzimat",
+  "n": "Tanzimat: Suppress Separatism",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sick_man_separatism"
+ },
+ {
+  "a": "je_sick_man_economy",
+  "g": "Tanzimat",
+  "n": "Tanzimat: Urbanization",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sick_man_economy"
  },
  {
   "a": "state_tarapaca",
@@ -20483,6 +24747,13 @@
   "n": "Target",
   "t": "concept",
   "u": "concepts#concept_target"
+ },
+ {
+  "a": "je_tutorial_is_play_target",
+  "g": "Tutorial",
+  "n": "Target In Diplomatic Play",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tutorial_is_play_target"
  },
  {
   "a": "concept_tariffs",
@@ -20548,6 +24819,12 @@
   "u": "countries#TWT"
  },
  {
+  "a": "events:law_events--tax_laws",
+  "n": "Tax Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--tax_laws"
+ },
+ {
   "a": "concept_tax_waste",
   "n": "Tax Waste",
   "t": "concept",
@@ -20590,6 +24867,12 @@
   "u": "laws#law_technocracy"
  },
  {
+  "a": "events:law_events--technocracy_law",
+  "n": "Technocracy Law Events",
+  "t": "event_group",
+  "u": "events/law_events--technocracy_law"
+ },
+ {
   "a": "concept_technology",
   "n": "Technology",
   "t": "concept",
@@ -20600,6 +24883,12 @@
   "n": "Technology Era",
   "t": "concept",
   "u": "concepts#concept_technology_era"
+ },
+ {
+  "a": "events:technology_events",
+  "n": "Technology Events",
+  "t": "event_group",
+  "u": "events/technology_events"
  },
  {
   "a": "concept_technology_spread",
@@ -20680,6 +24969,13 @@
   "u": "states#STATE_TENNESSEE"
  },
  {
+  "a": "je_tenpo_crisis",
+  "g": "National Agenda",
+  "n": "Tenpō Crisis",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tenpo_crisis"
+ },
+ {
   "a": "concept_tension",
   "n": "Tension",
   "t": "concept",
@@ -20714,6 +25010,32 @@
   "u": "companies#company_imperial_arsenal"
  },
  {
+  "a": "events:test_events",
+  "n": "Test Events",
+  "t": "event_group",
+  "u": "events/test_events"
+ },
+ {
+  "a": "je_texas_tex",
+  "g": "National Agenda",
+  "n": "Texan Independence",
+  "t": "journal_entry",
+  "u": "journal-entries#je_texas_tex"
+ },
+ {
+  "a": "je_texas_usa",
+  "g": "Manifest Destiny",
+  "n": "Texan Statehood",
+  "t": "journal_entry",
+  "u": "journal-entries#je_texas_usa"
+ },
+ {
+  "a": "events:texan_war_of_independence_events",
+  "n": "Texan War Of Independence Events",
+  "t": "event_group",
+  "u": "events/texan_war_of_independence_events"
+ },
+ {
   "a": "state_texas",
   "g": "Great Plains",
   "n": "Texas",
@@ -20742,12 +25064,222 @@
   "u": "cultures#thai"
  },
  {
+  "a": "je_south_american_national_identity_emergence",
+  "g": "Domestic Affairs",
+  "n": "The … Nation",
+  "t": "journal_entry",
+  "u": "journal-entries#je_south_american_national_identity_emergence"
+ },
+ {
+  "a": "je_federation_of_india",
+  "g": "The Administration of India",
+  "n": "The … of India",
+  "t": "journal_entry",
+  "u": "journal-entries#je_federation_of_india"
+ },
+ {
+  "a": "je_meiji_main",
+  "g": "The Imperial Restoration",
+  "n": "The … Restoration",
+  "t": "journal_entry",
+  "u": "journal-entries#je_meiji_main"
+ },
+ {
+  "a": "je_king_in_parliament",
+  "g": "Domestic Affairs",
+  "n": "The …-in-Parliament",
+  "t": "journal_entry",
+  "u": "journal-entries#je_king_in_parliament"
+ },
+ {
+  "a": "je_alaska",
+  "g": "Foreign Affairs",
+  "n": "The Acquisition of Alaska",
+  "t": "journal_entry",
+  "u": "journal-entries#je_alaska"
+ },
+ {
+  "a": "je_acre_dispute",
+  "g": "National Agenda",
+  "n": "The Acre Dispute",
+  "t": "journal_entry",
+  "u": "journal-entries#je_acre_dispute"
+ },
+ {
+  "a": "je_caudillo",
+  "g": "Domestic Affairs",
+  "n": "The Age of Caudillos",
+  "t": "journal_entry",
+  "u": "journal-entries#je_caudillo"
+ },
+ {
+  "a": "je_metternich",
+  "g": "National Agenda",
+  "n": "The Age of Metternich",
+  "t": "journal_entry",
+  "u": "journal-entries#je_metternich"
+ },
+ {
+  "a": "je_age_of_princes",
+  "g": "National Agenda",
+  "n": "The Age of Princes",
+  "t": "journal_entry",
+  "u": "journal-entries#je_age_of_princes"
+ },
+ {
+  "a": "je_the_algerian_departements",
+  "g": "The Natural Borders of France",
+  "n": "The Algerian Departments",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_algerian_departements"
+ },
+ {
+  "a": "je_reconquest_of_algeria",
+  "g": "National Agenda",
+  "n": "The Algerian War of Resistance",
+  "t": "journal_entry",
+  "u": "journal-entries#je_reconquest_of_algeria"
+ },
+ {
+  "a": "je_acw_war",
+  "g": "The Slavery Debate",
+  "n": "The American Civil War",
+  "t": "journal_entry",
+  "u": "journal-entries#je_acw_war"
+ },
+ {
+  "a": "je_the_balkan_league",
+  "g": "National Agenda",
+  "n": "The Balkan League",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_balkan_league"
+ },
+ {
+  "a": "je_belle_epoque",
+  "g": "Major Situations",
+  "n": "The Belle Époque",
+  "t": "journal_entry",
+  "u": "journal-entries#je_belle_epoque"
+ },
+ {
+  "a": "je_eastern_question_austria",
+  "g": "Foreign Affairs",
+  "n": "The Bosnian Question",
+  "t": "journal_entry",
+  "u": "journal-entries#je_eastern_question_austria"
+ },
+ {
+  "a": "je_boxer_rebellion",
+  "g": "The Qing Dynasty",
+  "n": "The Boxer Rebellion",
+  "t": "journal_entry",
+  "u": "journal-entries#je_boxer_rebellion"
+ },
+ {
+  "a": "je_isabel",
+  "g": "The Reign of Pedro II",
+  "n": "The Brazilian Succession",
+  "t": "journal_entry",
+  "u": "journal-entries#je_isabel"
+ },
+ {
+  "a": "je_canada_pacific_railway",
+  "g": "National Agenda",
+  "n": "The Canadian Pacific Railway",
+  "t": "journal_entry",
+  "u": "journal-entries#je_canada_pacific_railway"
+ },
+ {
+  "a": "je_the_first_carlist_war",
+  "g": "International Situations",
+  "n": "The Carlist War",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_first_carlist_war"
+ },
+ {
+  "a": "je_caucasian_war",
+  "g": "The Ruler of the East",
+  "n": "The Caucasian War",
+  "t": "journal_entry",
+  "u": "journal-entries#je_caucasian_war"
+ },
+ {
+  "a": "je_chinese_missions",
+  "g": "The Qing Dynasty",
+  "n": "The Chinese Missions",
+  "t": "journal_entry",
+  "u": "journal-entries#je_chinese_missions"
+ },
+ {
+  "a": "je_confederation_of_the_rhine",
+  "g": "The Natural Borders of France",
+  "n": "The Confederation of the Rhine",
+  "t": "journal_entry",
+  "u": "journal-entries#je_confederation_of_the_rhine"
+ },
+ {
+  "a": "je_conquest_of_algeria",
+  "g": "The Natural Borders of France",
+  "n": "The Conquest of Algeria",
+  "t": "journal_entry",
+  "u": "journal-entries#je_conquest_of_algeria"
+ },
+ {
+  "a": "je_patagonia",
+  "g": "National Agenda",
+  "n": "The Conquest of the Desert",
+  "t": "journal_entry",
+  "u": "journal-entries#je_patagonia"
+ },
+ {
+  "a": "je_conquest_of_central_asia",
+  "g": "The Ruler of the East",
+  "n": "The Conquest of Turkestan",
+  "t": "journal_entry",
+  "u": "journal-entries#je_conquest_of_central_asia"
+ },
+ {
+  "a": "je_zaibatsu",
+  "g": "National Agenda",
+  "n": "The Corporate Empire",
+  "t": "journal_entry",
+  "u": "journal-entries#je_zaibatsu"
+ },
+ {
   "a": "special_character_curly_haired_orpheus",
   "c": "img/traits/special_character_curly_haired_orpheus.png",
   "g": "personality",
   "n": "The Curly-Haired Orpheuse",
   "t": "character_trait",
   "u": "character-traits#special_character_curly_haired_orpheus"
+ },
+ {
+  "a": "je_tur_raided",
+  "g": "National Agenda",
+  "n": "The Disobedient Mountain",
+  "t": "journal_entry",
+  "u": "journal-entries#je_tur_raided"
+ },
+ {
+  "a": "je_donghak_movement",
+  "g": "National Agenda",
+  "n": "The Donghak Movement",
+  "t": "journal_entry",
+  "u": "journal-entries#je_donghak_movement"
+ },
+ {
+  "a": "je_dreyfus_affair",
+  "g": "National Agenda",
+  "n": "The Dreyfus Affair",
+  "t": "journal_entry",
+  "u": "journal-entries#je_dreyfus_affair"
+ },
+ {
+  "a": "je_eastern_frontier",
+  "g": "Objectives",
+  "n": "The Eastern Frontier",
+  "t": "journal_entry",
+  "u": "journal-entries#je_eastern_frontier"
  },
  {
   "a": "building_eiffel_tower",
@@ -20758,6 +25290,236 @@
   "u": "buildings/eiffel_tower"
  },
  {
+  "a": "je_ethical_policy",
+  "g": "Domestic Affairs",
+  "n": "The Ethical Policy",
+  "t": "journal_entry",
+  "u": "journal-entries#je_ethical_policy"
+ },
+ {
+  "a": "je_danubian_federation_observer",
+  "g": "National Agenda",
+  "n": "The Federal Project",
+  "t": "journal_entry",
+  "u": "journal-entries#je_danubian_federation_observer"
+ },
+ {
+  "a": "je_danubian_federation",
+  "g": "National Agenda",
+  "n": "The Federal Solution",
+  "t": "journal_entry",
+  "u": "journal-entries#je_danubian_federation"
+ },
+ {
+  "a": "je_trans_continental_railway",
+  "g": "Manifest Destiny",
+  "n": "The First Transcontinental Railway",
+  "t": "journal_entry",
+  "u": "journal-entries#je_trans_continental_railway"
+ },
+ {
+  "a": "je_5_year_plan",
+  "g": "Domestic Affairs",
+  "n": "The Five-Year Plans",
+  "t": "journal_entry",
+  "u": "journal-entries#je_5_year_plan"
+ },
+ {
+  "a": "je_french_foreign_legion",
+  "g": "The Natural Borders of France",
+  "n": "The French Foreign Legion",
+  "t": "journal_entry",
+  "u": "journal-entries#je_french_foreign_legion"
+ },
+ {
+  "a": "je_caucasian_war_imamate",
+  "g": "The Ruler of the East",
+  "n": "The Gazawat",
+  "t": "journal_entry",
+  "u": "journal-entries#je_caucasian_war_imamate"
+ },
+ {
+  "a": "je_spain_glorious_revolution_dummy",
+  "g": "National Agenda",
+  "n": "The Glorious Revolution",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spain_glorious_revolution_dummy"
+ },
+ {
+  "a": "je_colonize_korea",
+  "g": "National Agenda",
+  "n": "The Government of Chōsen",
+  "t": "journal_entry",
+  "u": "journal-entries#je_colonize_korea"
+ },
+ {
+  "a": "events:balkans_events--the_grand_collapse_events",
+  "n": "The Grand Collapse Events",
+  "t": "event_group",
+  "u": "events/balkans_events--the_grand_collapse_events"
+ },
+ {
+  "a": "je_great_game_control",
+  "g": "Objectives",
+  "n": "The Great Game",
+  "t": "journal_entry",
+  "u": "journal-entries#je_great_game_control"
+ },
+ {
+  "a": "je_great_reformer",
+  "g": "The Great Reformer",
+  "n": "The Great Reformer",
+  "t": "journal_entry",
+  "u": "journal-entries#je_great_reformer"
+ },
+ {
+  "a": "je_greatest_power",
+  "g": "Objectives",
+  "n": "The Greatest Power",
+  "t": "journal_entry",
+  "u": "journal-entries#je_greatest_power"
+ },
+ {
+  "a": "je_victoria",
+  "g": "National Agenda",
+  "n": "The Hanoverian Succession",
+  "t": "journal_entry",
+  "u": "journal-entries#je_victoria"
+ },
+ {
+  "a": "je_modernizing_paraguay",
+  "g": "National Agenda",
+  "n": "The Heart of America",
+  "t": "journal_entry",
+  "u": "journal-entries#je_modernizing_paraguay"
+ },
+ {
+  "a": "je_heavenly_kingdom_main",
+  "g": "The Qing Dynasty",
+  "n": "The Heavenly Kingdom",
+  "t": "journal_entry",
+  "u": "journal-entries#je_heavenly_kingdom_main"
+ },
+ {
+  "a": "je_taiping_revolution",
+  "g": "National Agenda",
+  "n": "The Heavenly Revolution",
+  "t": "journal_entry",
+  "u": "journal-entries#je_taiping_revolution"
+ },
+ {
+  "a": "je_the_hegemon",
+  "g": "Objectives",
+  "n": "The Hegemon",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_hegemon"
+ },
+ {
+  "a": "je_ryukyu_rivalry",
+  "g": "International Situations",
+  "n": "The Hidden Domain",
+  "t": "journal_entry",
+  "u": "journal-entries#je_ryukyu_rivalry"
+ },
+ {
+  "a": "je_the_hungry_forties",
+  "g": "Major Situations",
+  "n": "The Hungry …",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_hungry_forties"
+ },
+ {
+  "a": "je_iberia",
+  "g": "Iberian Unification",
+  "n": "The Iberian Union",
+  "t": "journal_entry",
+  "u": "journal-entries#je_iberia"
+ },
+ {
+  "a": "je_meiji_imperial_marriage",
+  "g": "The Imperial Restoration",
+  "n": "The Imperial Marriage",
+  "t": "journal_entry",
+  "u": "journal-entries#je_meiji_imperial_marriage"
+ },
+ {
+  "a": "je_india_nationalism",
+  "g": "The Administration of India",
+  "n": "The Indian Nation",
+  "t": "journal_entry",
+  "u": "journal-entries#je_india_nationalism"
+ },
+ {
+  "a": "je_india_nationalism_britain",
+  "g": "The Administration of India",
+  "n": "The Indian National Movement",
+  "t": "journal_entry",
+  "u": "journal-entries#je_india_nationalism_britain"
+ },
+ {
+  "a": "je_indian_removal",
+  "g": "Manifest Destiny",
+  "n": "The Indian Removal",
+  "t": "journal_entry",
+  "u": "journal-entries#je_indian_removal"
+ },
+ {
+  "a": "je_indochina",
+  "g": "Foreign Affairs",
+  "n": "The Indochina Campaign",
+  "t": "journal_entry",
+  "u": "journal-entries#je_indochina"
+ },
+ {
+  "a": "je_spanish_anarchism",
+  "g": "National Agenda",
+  "n": "The Internacionalistas",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spanish_anarchism"
+ },
+ {
+  "a": "je_korean_rebellion",
+  "g": "International Situations",
+  "n": "The Korean Rebellion",
+  "t": "journal_entry",
+  "u": "journal-entries#je_korean_rebellion"
+ },
+ {
+  "a": "je_krakatoa",
+  "g": "Major Situations",
+  "n": "The Krakatoa Eruption",
+  "t": "journal_entry",
+  "u": "journal-entries#je_krakatoa"
+ },
+ {
+  "a": "je_the_krakow_uprising",
+  "g": "National Agenda",
+  "n": "The Kraków Uprising",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_krakow_uprising"
+ },
+ {
+  "a": "je_the_last_kazakh_khan",
+  "g": "The Ruler of the East",
+  "n": "The Last Kazakh Khan",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_last_kazakh_khan"
+ },
+ {
+  "a": "je_global_test",
+  "g": "Too Many Lippes",
+  "n": "The Lippe Crisis",
+  "t": "journal_entry",
+  "u": "journal-entries#je_global_test"
+ },
+ {
+  "a": "je_sakoku",
+  "g": "National Agenda",
+  "n": "The Locked Country",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sakoku"
+ },
+ {
   "a": "special_character_lenin_popularity",
   "c": "img/traits/special_character_lenin_popularity.png",
   "g": "personality",
@@ -20766,12 +25528,394 @@
   "u": "character-traits#special_character_lenin_popularity"
  },
  {
+  "a": "je_matter_of_slavery",
+  "g": "The Brazilian Nation",
+  "n": "The Matter of Slavery",
+  "t": "journal_entry",
+  "u": "journal-entries#je_matter_of_slavery"
+ },
+ {
+  "a": "je_greek_nationalism",
+  "g": "National Agenda",
+  "n": "The Megali Idea",
+  "t": "journal_entry",
+  "u": "journal-entries#je_greek_nationalism"
+ },
+ {
+  "a": "je_scotland_yard",
+  "g": "Domestic Affairs",
+  "n": "The Metropolitan Police",
+  "t": "journal_entry",
+  "u": "journal-entries#je_scotland_yard"
+ },
+ {
+  "a": "je_modernization_program",
+  "g": "Domestic Affairs",
+  "n": "The Modernization Program",
+  "t": "journal_entry",
+  "u": "journal-entries#je_modernization_program"
+ },
+ {
+  "a": "je_unite_the_nations",
+  "g": "Foreign Affairs",
+  "n": "The Nations of Turtle Island",
+  "t": "journal_entry",
+  "u": "journal-entries#je_unite_the_nations"
+ },
+ {
+  "a": "je_french_natural_borders",
+  "g": "The Natural Borders of France",
+  "n": "The Natural Borders of France",
+  "t": "journal_entry",
+  "u": "journal-entries#je_french_natural_borders"
+ },
+ {
+  "a": "je_new_republic",
+  "g": "The Brazilian Nation",
+  "n": "The New …",
+  "t": "journal_entry",
+  "u": "journal-entries#je_new_republic"
+ },
+ {
+  "a": "je_liberalism_4",
+  "g": "Domestic Affairs",
+  "n": "The New Colossus",
+  "t": "journal_entry",
+  "u": "journal-entries#je_liberalism_4"
+ },
+ {
+  "a": "je_technocracy",
+  "g": "Domestic Affairs",
+  "n": "The New Machine",
+  "t": "journal_entry",
+  "u": "journal-entries#je_technocracy"
+ },
+ {
+  "a": "je_nihilist_movement",
+  "g": "Domestic Affairs",
+  "n": "The Nihilist Movement",
+  "t": "journal_entry",
+  "u": "journal-entries#je_nihilist_movement"
+ },
+ {
+  "a": "je_india_non_cooperation_movement",
+  "g": "The Administration of India",
+  "n": "The Non-Cooperation Movement",
+  "t": "journal_entry",
+  "u": "journal-entries#je_india_non_cooperation_movement"
+ },
+ {
+  "a": "je_portugal_and_brazil",
+  "g": "National Agenda",
+  "n": "The Old Empire",
+  "t": "journal_entry",
+  "u": "journal-entries#je_portugal_and_brazil"
+ },
+ {
+  "a": "je_spanish_american_independence",
+  "g": "National Agenda",
+  "n": "The Old Metropole",
+  "t": "journal_entry",
+  "u": "journal-entries#je_spanish_american_independence"
+ },
+ {
+  "a": "je_opium",
+  "g": "Foreign Affairs",
+  "n": "The Opium Trade",
+  "t": "journal_entry",
+  "u": "journal-entries#je_opium"
+ },
+ {
+  "a": "je_oregon",
+  "g": "Manifest Destiny",
+  "n": "The Oregon Border Dispute",
+  "t": "journal_entry",
+  "u": "journal-entries#je_oregon"
+ },
+ {
+  "a": "je_consolidate_afghanistan",
+  "g": "Foreign Affairs",
+  "n": "The Pamir Delimitation",
+  "t": "journal_entry",
+  "u": "journal-entries#je_consolidate_afghanistan"
+ },
+ {
+  "a": "je_panama_survey",
+  "g": "Development",
+  "n": "The Panama Survey",
+  "t": "journal_entry",
+  "u": "journal-entries#je_panama_survey"
+ },
+ {
+  "a": "je_paraguayan_war",
+  "g": "National Agenda",
+  "n": "The Paraguayan War",
+  "t": "journal_entry",
+  "u": "journal-entries#je_paraguayan_war"
+ },
+ {
+  "a": "je_the_paris_commune_communards",
+  "g": "National Agenda",
+  "n": "The Paris Commune",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_paris_commune_communards"
+ },
+ {
+  "a": "je_the_paris_commune_display",
+  "g": "National Agenda",
+  "n": "The Paris Commune",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_paris_commune_display"
+ },
+ {
+  "a": "je_the_paris_commune_france",
+  "g": "National Agenda",
+  "n": "The Paris Commune",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_paris_commune_france"
+ },
+ {
+  "a": "je_silkworm_diseases",
+  "g": "Major Situations",
+  "n": "The Pébrine Epidemic",
+  "t": "journal_entry",
+  "u": "journal-entries#je_silkworm_diseases"
+ },
+ {
+  "a": "je_communism_2",
+  "g": "Domestic Affairs",
+  "n": "The People's Revolution",
+  "t": "journal_entry",
+  "u": "journal-entries#je_communism_2"
+ },
+ {
+  "a": "je_peru_bolivia",
+  "g": "International Situations",
+  "n": "The Peru-Bolivian Confederation",
+  "t": "journal_entry",
+  "u": "journal-entries#je_peru_bolivia"
+ },
+ {
+  "a": "je_the_pink_map",
+  "g": "National Agenda",
+  "n": "The Pink Map",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_pink_map"
+ },
+ {
+  "a": "je_positivist_movement",
+  "g": "Domestic Affairs",
+  "n": "The Positive Stage",
+  "t": "journal_entry",
+  "u": "journal-entries#je_positivist_movement"
+ },
+ {
+  "a": "je_the_red_scare",
+  "g": "Major Situations",
+  "n": "The Red Scare",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_red_scare"
+ },
+ {
+  "a": "je_devorismo",
+  "g": "National Agenda",
+  "n": "The Reign of the Devourers",
+  "t": "journal_entry",
+  "u": "journal-entries#je_devorismo"
+ },
+ {
+  "a": "je_pedro_republic",
+  "g": "The Reign of Pedro II",
+  "n": "The Republican Proposal",
+  "t": "journal_entry",
+  "u": "journal-entries#je_pedro_republic"
+ },
+ {
+  "a": "france_retour_des_cendres",
+  "n": "The Return of the Ashes",
+  "t": "decision",
+  "u": "decisions#france_retour_des_cendres"
+ },
+ {
+  "a": "je_serial_killer",
+  "g": "Major Situations",
+  "n": "The Ripper: Murderer at Large",
+  "t": "journal_entry",
+  "u": "journal-entries#je_serial_killer"
+ },
+ {
+  "a": "je_agricultural_development",
+  "g": "The Brazilian Nation",
+  "n": "The River of Coffee",
+  "t": "journal_entry",
+  "u": "journal-entries#je_agricultural_development"
+ },
+ {
+  "a": "je_the_eastern_border",
+  "g": "The Ruler of the East",
+  "n": "The Ruler of the East",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_eastern_border"
+ },
+ {
+  "a": "je_sale_of_alaska",
+  "g": "Foreign Affairs",
+  "n": "The Sale of Alaska",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sale_of_alaska"
+ },
+ {
+  "a": "je_schleswig_holstein_question",
+  "g": "German Unification",
+  "n": "The Schleswig-Holstein Question",
+  "t": "journal_entry",
+  "u": "journal-entries#je_schleswig_holstein_question"
+ },
+ {
+  "a": "je_seminole_wars",
+  "g": "Manifest Destiny",
+  "n": "The Seminole Wars",
+  "t": "journal_entry",
+  "u": "journal-entries#je_seminole_wars"
+ },
+ {
+  "a": "je_sick_man_main",
+  "g": "Tanzimat",
+  "n": "The Sick Man of Europe",
+  "t": "journal_entry",
+  "u": "journal-entries#je_sick_man_main"
+ },
+ {
+  "a": "je_acw_countdown",
+  "g": "The Slavery Debate",
+  "n": "The Slavery Debate",
+  "t": "journal_entry",
+  "u": "journal-entries#je_acw_countdown"
+ },
+ {
+  "a": "je_aberdeen_act",
+  "g": "National Agenda",
+  "n": "The South Atlantic Slave Trade",
+  "t": "journal_entry",
+  "u": "journal-entries#je_aberdeen_act"
+ },
+ {
+  "a": "je_communism_1",
+  "g": "Domestic Affairs",
+  "n": "The Spectre Haunting the World",
+  "t": "journal_entry",
+  "u": "journal-entries#je_communism_1"
+ },
+ {
   "a": "special_character_emperor_norton_popularity",
   "c": "img/traits/special_character_emperor_norton_popularity.png",
   "g": "personality",
   "n": "The Spirit of San Francisco",
   "t": "character_trait",
   "u": "character-traits#special_character_emperor_norton_popularity"
+ },
+ {
+  "a": "je_standestaat",
+  "g": "National Agenda",
+  "n": "The Ständestaat",
+  "t": "journal_entry",
+  "u": "journal-entries#je_standestaat"
+ },
+ {
+  "a": "je_vanguard",
+  "g": "Domestic Affairs",
+  "n": "The State and Revolution",
+  "t": "journal_entry",
+  "u": "journal-entries#je_vanguard"
+ },
+ {
+  "a": "je_vernacular_policy",
+  "g": "National Agenda",
+  "n": "The Status of the Vernacular",
+  "t": "journal_entry",
+  "u": "journal-entries#je_vernacular_policy"
+ },
+ {
+  "a": "je_strong_market",
+  "g": "Objectives",
+  "n": "The Strong Market",
+  "t": "journal_entry",
+  "u": "journal-entries#je_strong_market"
+ },
+ {
+  "a": "je_suez_survey",
+  "g": "Development",
+  "n": "The Suez Survey",
+  "t": "journal_entry",
+  "u": "journal-entries#je_suez_survey"
+ },
+ {
+  "a": "je_prohibition",
+  "g": "Domestic Affairs",
+  "n": "The Temperance Movement",
+  "t": "journal_entry",
+  "u": "journal-entries#je_prohibition"
+ },
+ {
+  "a": "je_trans_siberian_railway",
+  "g": "The Ruler of the East",
+  "n": "The Trans-Siberian Railway",
+  "t": "journal_entry",
+  "u": "journal-entries#je_trans_siberian_railway"
+ },
+ {
+  "a": "france_annex_savoy",
+  "n": "The Treaty of Turin",
+  "t": "decision",
+  "u": "decisions#france_annex_savoy"
+ },
+ {
+  "a": "sell_savoy",
+  "n": "The Treaty of Turin",
+  "t": "decision",
+  "u": "decisions#sell_savoy"
+ },
+ {
+  "a": "je_the_two_spains",
+  "g": "National Agenda",
+  "n": "The Two Spains",
+  "t": "journal_entry",
+  "u": "journal-entries#je_the_two_spains"
+ },
+ {
+  "a": "je_portugal_united_kingdom",
+  "g": "National Agenda",
+  "n": "The United Kingdom",
+  "t": "journal_entry",
+  "u": "journal-entries#je_portugal_united_kingdom"
+ },
+ {
+  "a": "je_uneasy_raj",
+  "g": "International Situations",
+  "n": "The Unstable Raj",
+  "t": "journal_entry",
+  "u": "journal-entries#je_uneasy_raj"
+ },
+ {
+  "a": "je_veiled_protectorate",
+  "g": "Foreign Affairs",
+  "n": "The Veiled Protectorate",
+  "t": "journal_entry",
+  "u": "journal-entries#je_veiled_protectorate"
+ },
+ {
+  "a": "je_reunify_china",
+  "g": "Foreign Affairs",
+  "n": "The Warlord Era",
+  "t": "journal_entry",
+  "u": "journal-entries#je_reunify_china"
+ },
+ {
+  "a": "je_acw_wild_wild_west",
+  "g": "The Slavery Debate",
+  "n": "The Wild, Wild West",
+  "t": "journal_entry",
+  "u": "journal-entries#je_acw_wild_wild_west"
  },
  {
   "a": "concept_theater",
@@ -20786,6 +25930,12 @@
   "n": "Theocracy",
   "t": "law",
   "u": "laws#law_theocracy"
+ },
+ {
+  "a": "events:law_events--theocracy",
+  "n": "Theocracy Events",
+  "t": "event_group",
+  "u": "events/law_events--theocracy"
  },
  {
   "a": "theravada",
@@ -20835,6 +25985,18 @@
   "n": "Tibetan",
   "t": "culture",
   "u": "cultures#tibetan"
+ },
+ {
+  "a": "tibet_expedition",
+  "n": "Tibetan Expedition",
+  "t": "decision",
+  "u": "decisions#tibet_expedition"
+ },
+ {
+  "a": "events:tibetan_expedition",
+  "n": "Tibetan Expedition Events",
+  "t": "event_group",
+  "u": "events/tibetan_expedition"
  },
  {
   "a": "tid",
@@ -20889,6 +26051,12 @@
   "n": "Tiris",
   "t": "country",
   "u": "countries#TIR"
+ },
+ {
+  "a": "events:titanic_events",
+  "n": "Titanic Events",
+  "t": "event_group",
+  "u": "events/titanic_events"
  },
  {
   "a": "tiv",
@@ -21045,6 +26213,20 @@
   "u": "countries#TPS"
  },
  {
+  "a": "ship_type_torpedo_boat",
+  "g": "Torpedo Craft",
+  "n": "Torpedo Boat",
+  "t": "ship",
+  "u": "ships#ship_type_torpedo_boat"
+ },
+ {
+  "a": "ship_type_torpedo_boat_destroyer",
+  "g": "Torpedo Craft",
+  "n": "Torpedo Boat Destroyer",
+  "t": "ship",
+  "u": "ships#ship_type_torpedo_boat_destroyer"
+ },
+ {
   "a": "law_total_separation",
   "c": "img/laws/total_separation.png",
   "g": "Church and State",
@@ -21125,6 +26307,12 @@
   "u": "concepts#concept_trade_revenue"
  },
  {
+  "a": "events:trade_route_events",
+  "n": "Trade Route Events",
+  "t": "event_group",
+  "u": "events/trade_route_events"
+ },
+ {
   "a": "ig_trade_unions",
   "c": "img/igs/trade_unions.png",
   "n": "Trade Unions",
@@ -21158,6 +26346,12 @@
   "n": "Traditionalist Commander",
   "t": "character_trait",
   "u": "character-traits#traditionalist_commander"
+ },
+ {
+  "a": "events:train_events",
+  "n": "Train Events",
+  "t": "event_group",
+  "u": "events/train_events"
  },
  {
   "a": "concept_training_rate",
@@ -21275,6 +26469,12 @@
   "u": "concepts#concept_treaty"
  },
  {
+  "a": "events:treaty_of_london_events",
+  "n": "Treaty Of London Events",
+  "t": "event_group",
+  "u": "events/treaty_of_london_events"
+ },
+ {
   "a": "concept_treaty_port",
   "n": "Treaty Port",
   "t": "concept",
@@ -21286,6 +26486,12 @@
   "n": "Treaty Port",
   "t": "treaty_article",
   "u": "treaties#treaty_port"
+ },
+ {
+  "a": "events:treaty_port_inheritance_events",
+  "n": "Treaty Port Inheritance Events",
+  "t": "event_group",
+  "u": "events/treaty_port_inheritance_events"
  },
  {
   "a": "combat_unit_type_trench_infantry",
@@ -21301,6 +26507,12 @@
   "n": "Trench Rat",
   "t": "character_trait",
   "u": "character-traits#trench_rat"
+ },
+ {
+  "a": "events:tech_events--trench_warfare",
+  "n": "Trench Warfare Events",
+  "t": "event_group",
+  "u": "events/tech_events--trench_warfare"
  },
  {
   "a": "trench_works",
@@ -21344,6 +26556,13 @@
   "n": "Tripolitania",
   "t": "country",
   "u": "countries#TRI"
+ },
+ {
+  "a": "ship_type_troop_ship",
+  "g": "Cruisers",
+  "n": "Troopship",
+  "t": "ship",
+  "u": "ships#ship_type_troop_ship"
  },
  {
   "a": "concept_truce",
@@ -21447,6 +26666,12 @@
   "n": "Tungus",
   "t": "country",
   "u": "countries#TNS"
+ },
+ {
+  "a": "events:tunguska",
+  "n": "Tunguska Events",
+  "t": "event_group",
+  "u": "events/tunguska"
  },
  {
   "a": "tun",
@@ -21599,6 +26824,12 @@
   "u": "countries#SIC"
  },
  {
+  "a": "events:iberia_events--two_spains_events",
+  "n": "Two Spains Events",
+  "t": "event_group",
+  "u": "events/iberia_events--two_spains_events"
+ },
+ {
   "a": "state_tyrol",
   "g": "Central Europe",
   "n": "Tyrol",
@@ -21714,6 +26945,12 @@
   "u": "states#STATE_UMBRIA"
  },
  {
+  "a": "events:law_events--unable_to_enact_events",
+  "n": "Unable To Enact Events",
+  "t": "event_group",
+  "u": "events/law_events--unable_to_enact_events"
+ },
+ {
   "a": "concept_power_bloc_unclaimed_leverage",
   "n": "Unclaimed Leverage",
   "t": "concept",
@@ -21744,10 +26981,30 @@
   "u": "concepts#concept_unification_supporter"
  },
  {
+  "a": "je_unify_afghanistan_objective",
+  "g": "Objectives",
+  "n": "Unify Afghanistan",
+  "t": "journal_entry",
+  "u": "journal-entries#je_unify_afghanistan_objective"
+ },
+ {
+  "a": "decision_demand_hungary_revoke_laws",
+  "n": "Unilaterally Revoke Hungarian Reforms",
+  "t": "decision",
+  "u": "decisions#decision_demand_hungary_revoke_laws"
+ },
+ {
   "a": "concept_unincorporated_state",
   "n": "Unincorporated State",
   "t": "concept",
   "u": "concepts#concept_unincorporated_state"
+ },
+ {
+  "a": "je_unite_the_principalities",
+  "g": "National Agenda",
+  "n": "Unite the Principalities",
+  "t": "journal_entry",
+  "u": "journal-entries#je_unite_the_principalities"
  },
  {
   "a": "ubd",
@@ -21929,6 +27186,19 @@
   "u": "technology#urbanization"
  },
  {
+  "a": "events:urbanization_events",
+  "n": "Urbanization Events",
+  "t": "event_group",
+  "u": "events/urbanization_events"
+ },
+ {
+  "a": "je_urbanization_events_2",
+  "g": "Development",
+  "n": "Urbanize …",
+  "t": "journal_entry",
+  "u": "journal-entries#je_urbanization_events_2"
+ },
+ {
   "a": "state_urga",
   "g": "North China",
   "n": "Urga",
@@ -21999,6 +27269,25 @@
   "u": "countries#UTR"
  },
  {
+  "a": "events:india_events--utilitarian",
+  "n": "Utilitarian Events",
+  "t": "event_group",
+  "u": "events/india_events--utilitarian"
+ },
+ {
+  "a": "je_utilizing_our_strength",
+  "g": "Objectives",
+  "n": "Utilizing Our Strength",
+  "t": "journal_entry",
+  "u": "journal-entries#je_utilizing_our_strength"
+ },
+ {
+  "a": "events:utopians",
+  "n": "Utopians Events",
+  "t": "event_group",
+  "u": "events/utopians"
+ },
+ {
   "a": "state_uusimaa",
   "g": "Northern Europe",
   "n": "Uusimaa",
@@ -22055,6 +27344,12 @@
   "u": "states#STATE_VALENCIA"
  },
  {
+  "a": "events:vampire_panic_events",
+  "n": "Vampire Panic Events",
+  "t": "event_group",
+  "u": "events/vampire_panic_events"
+ },
+ {
   "a": "company_van_vlissingen_en_dudok_van_heel",
   "c": "img/companies/company_van_vlissingen_en_dudok_van_heel.png",
   "g": "historical",
@@ -22077,6 +27372,12 @@
   "u": "countries#VNT"
  },
  {
+  "a": "events:brazil--vargas",
+  "n": "Vargas Events",
+  "t": "event_group",
+  "u": "events/brazil--vargas"
+ },
+ {
   "a": "concept_vassal",
   "n": "Vassal",
   "t": "concept",
@@ -22089,6 +27390,12 @@
   "n": "Vatican City",
   "t": "building",
   "u": "buildings/vatican_city"
+ },
+ {
+  "a": "events:veiled_protectorate_events",
+  "n": "Veiled Protectorate Events",
+  "t": "event_group",
+  "u": "events/veiled_protectorate_events"
  },
  {
   "a": "vnd",
@@ -22139,6 +27446,12 @@
   "u": "states#STATE_VERMONT"
  },
  {
+  "a": "events:iberia_events--vernacular_events",
+  "n": "Vernacular Events",
+  "t": "event_group",
+  "u": "events/iberia_events--vernacular_events"
+ },
+ {
   "a": "concept_veterancy_level",
   "n": "Veterancy Rank",
   "t": "concept",
@@ -22152,12 +27465,31 @@
   "u": "states#STATE_VICTORIA"
  },
  {
+  "a": "events:victoria_events",
+  "n": "Victoria Events",
+  "t": "event_group",
+  "u": "events/victoria_events"
+ },
+ {
   "a": "building_victoria_terminus",
   "c": "img/buildings/building_victoria_terminus.png",
   "g": "Monuments",
   "n": "Victoria Terminus",
   "t": "building",
   "u": "buildings/victoria_terminus"
+ },
+ {
+  "a": "je_victoria_terminus",
+  "g": "The Administration of India",
+  "n": "Victoria Terminus",
+  "t": "journal_entry",
+  "u": "journal-entries#je_victoria_terminus"
+ },
+ {
+  "a": "events:india_events--victoria_terminus",
+  "n": "Victoria Terminus Events",
+  "t": "event_group",
+  "u": "events/india_events--victoria_terminus"
  },
  {
   "a": "vie",
@@ -22171,6 +27503,13 @@
   "n": "Vietnamese",
   "t": "culture",
   "u": "cultures#vietnamese"
+ },
+ {
+  "a": "je_fascism_1",
+  "g": "Domestic Affairs",
+  "n": "Vigor and Greatness",
+  "t": "journal_entry",
+  "u": "journal-entries#je_fascism_1"
  },
  {
   "a": "state_vilnius",
@@ -22401,6 +27740,12 @@
   "u": "concepts#concept_war"
  },
  {
+  "a": "events:tech_events--war_crimes_events",
+  "n": "War Crimes Events",
+  "t": "event_group",
+  "u": "events/tech_events--war_crimes_events"
+ },
+ {
   "a": "war_criminal",
   "c": "img/traits/wrathful.png",
   "g": "condition",
@@ -22447,6 +27792,13 @@
   "u": "concepts#concept_war_support"
  },
  {
+  "a": "je_war_nursing",
+  "g": "Development",
+  "n": "War Wounded",
+  "t": "journal_entry",
+  "u": "journal-entries#je_war_nursing"
+ },
+ {
   "a": "wrd",
   "g": "decentralized",
   "n": "Wardaman",
@@ -22460,6 +27812,12 @@
   "n": "Wargaming",
   "t": "technology",
   "u": "technology#wargaming"
+ },
+ {
+  "a": "events:warlord_china_events",
+  "n": "Warlord China Events",
+  "t": "event_group",
+  "u": "events/warlord_china_events"
  },
  {
   "a": "law_warrior_caste",
@@ -22520,6 +27878,12 @@
   "u": "countries#WLG"
  },
  {
+  "a": "events:law_events--welfare_laws_events",
+  "n": "Welfare Laws Events",
+  "t": "event_group",
+  "u": "events/law_events--welfare_laws_events"
+ },
+ {
   "a": "concept_welfare_payments",
   "n": "Welfare Payments",
   "t": "concept",
@@ -22544,6 +27908,12 @@
   "n": "West Aegean Islands",
   "t": "state",
   "u": "states#STATE_WEST_AEGEAN_ISLANDS"
+ },
+ {
+  "a": "events:expedition_events--west_america_expedition_events",
+  "n": "West America Expedition Events",
+  "t": "event_group",
+  "u": "events/expedition_events--west_america_expedition_events"
  },
  {
   "a": "state_west_bengal",
@@ -22664,6 +28034,13 @@
   "n": "Western Cuba",
   "t": "state",
   "u": "states#STATE_WESTERN_CUBA"
+ },
+ {
+  "a": "je_west_america_expedition",
+  "g": "Expeditions",
+  "n": "Western Frontier Expedition",
+  "t": "journal_entry",
+  "u": "journal-entries#je_west_america_expedition"
  },
  {
   "a": "state_guangdong",
@@ -22853,6 +28230,13 @@
   "n": "Wolof",
   "t": "culture",
   "u": "cultures#wolof"
+ },
+ {
+  "a": "je_women_and_children",
+  "g": "Objectives",
+  "n": "Women and Children",
+  "t": "journal_entry",
+  "u": "journal-entries#je_women_and_children"
  },
  {
   "a": "law_women_in_the_fields",
@@ -23098,6 +28482,12 @@
   "u": "countries#SML"
  },
  {
+  "a": "events:agitators_events--yeet_agitator_events",
+  "n": "Yeet Agitator Events",
+  "t": "event_group",
+  "u": "events/agitators_events--yeet_agitator_events"
+ },
+ {
   "a": "state_yemen",
   "g": "Arabia",
   "n": "Yemen",
@@ -23234,6 +28624,12 @@
   "u": "countries#YUG"
  },
  {
+  "a": "events:balkans_events--yugoslavia_events",
+  "n": "Yugoslavia Events",
+  "t": "event_group",
+  "u": "events/balkans_events--yugoslavia_events"
+ },
+ {
   "a": "state_yukon_territory",
   "g": "Pacific Coast",
   "n": "Yukon Territory",
@@ -23308,6 +28704,12 @@
   "n": "Zanzibar",
   "t": "country",
   "u": "countries#ZAN"
+ },
+ {
+  "a": "events:zanzibar_events",
+  "n": "Zanzibar Events",
+  "t": "event_group",
+  "u": "events/zanzibar_events"
  },
  {
   "a": "zapotec",

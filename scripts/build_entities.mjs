@@ -114,6 +114,19 @@ for (const r of gen('religions.json').religions) {
 for (const c of gen('cultures.json').cultures) {
   entities.push({ id: c.id, type: 'culture', slug: c.id, name: c.name, icon: null, page: `cultures#${c.id}` });
 }
+for (const s of gen('ships.json').shipTypes) {
+  entities.push({ id: s.id, type: 'ship', slug: s.id, name: s.name, icon: null, page: `ships#${s.id}`, group: s.group?.name ?? null });
+}
+for (const j of gen('journal_entries.json').journalEntries) {
+  entities.push({ id: j.id, type: 'journal_entry', slug: j.id, name: j.name, icon: null, page: `journal-entries#${j.id}`, group: j.group?.name ?? null });
+}
+for (const d of gen('decisions.json').decisions) {
+  entities.push({ id: d.id, type: 'decision', slug: d.id, name: d.name, icon: null, page: `decisions#${d.id}` });
+}
+// Individual events stay out of search (volume); their groups are findable.
+for (const g of gen('events.json').groups) {
+  entities.push({ id: `events:${g.slug}`, type: 'event_group', slug: g.slug, name: `${g.name} Events`, icon: null, page: `events/${g.slug}` });
+}
 
 entities.sort((a, b) => a.id.localeCompare(b.id));
 writeFileSync(

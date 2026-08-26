@@ -1,0 +1,132 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import ModifierList from '../components/ModifierList.astro';
+import shipsJson from '../data/ships.json';
+
+const base = import.meta.env.BASE_URL;
+const shipTypes = (shipsJson as any).shipTypes as any[];
+const modifications = (shipsJson as any).modifications as any[];
+const groups = [...new Set(shipTypes.map((s) => s.group?.name ?? 'Other'))];
+const slots = [...new Set(modifications.map((m) => m.slot?.name ?? 'Other'))];
+
+const csv = {
+  header: ['Ship type', 'Id', 'Group', 'HP', 'Crew', 'Speed', 'Armor', 'Hull dmg', 'Crew dmg', 'Supply', 'Unlocked by', 'Obsolete at', 'Other stats'],
+  rows: shipTypes.map((s) => [
+    s.name, s.id, s.group?.name ?? '', s.hp ?? '', s.crew ?? '', s.speed ?? '', s.armor ?? '',
+    s.hullDamage ?? '', s.crewDamage ?? '', s.supply ?? '',
+    s.techs.map((t: any) => t.name).join('; '), s.obsoleteAt.map((t: any) => t.name).join('; '),
+    s.other.map((m: any) => `${m.valueText} ${m.label}`).join('; '),
+  ]),
+};
+---
+<Base
+  title="Ships"
+  active="ships"
+  eyebrow="Military"
+  pageFilter="Filter ships and modifications…"
+  pageStats={[
+    { value: shipTypes.length, label: 'ship types' },
+    { value: modifications.length, label: 'modifications' },
+  ]}
+>
+  <TableTools csvId="ships" csvName="victoria3-ships" />
+
+  {groups.map((g) => (
+    <div data-shipgroup>
+      <h2 class="sect">{g}</h2>
+      <div class="grid"><div class="grid__scroll">
+        <table class="vtbl">
+          <thead>
+            <tr>
+              <th style="min-width: 11rem;">Ship type</th>
+              <th class="num">HP</th>
+              <th class="num">Crew</th>
+              <th class="num">Speed</th>
+              <th class="num">Armor</th>
+              <th class="num" title="Hull attack damage">Hull dmg</th>
+              <th class="num" title="Crew attack damage">Crew dmg</th>
+              <th class="num">Supply</th>
+              <th style="width: 10rem;">Unlocked by</th>
+              <th style="width: 10rem;">Obsolete at</th>
+            </tr>
+          </thead>
+          <tbody>
+            {shipTypes.filter((s) => (s.group?.name ?? 'Other') === g).map((s) => (
+              <tr id={s.id} data-name={`${s.name} ${s.id} ${g}`.toLowerCase()}>
+                <td class="lead-cell">
+                  <span class="lead">
+                    {s.name}
+                    {s.flagship && <span class="chip" title="Can carry the fleet's flagship">· flagship</span>}
+                  </span>
+                </td>
+                <td class="num">{s.hp ?? <span class="cell__dash">—</span>}</td>
+                <td class="num">{s.crew ?? <span class="cell__dash">—</span>}</td>
+                <td class="num">{s.speed ?? <span class="cell__dash">—</span>}</td>
+                <td class="num">{s.armor ?? <span class="cell__dash">—</span>}</td>
+                <td class="num">{s.hullDamage ?? <span class="cell__dash">—</span>}</td>
+                <td class="num">{s.crewDamage ?? <span class="cell__dash">—</span>}</td>
+                <td class="num">{s.supply ?? <span class="cell__dash">—</span>}</td>
+                <td class="dim">{s.techs.length ? s.techs.map((t: any, i: number) => (
+                  <>{i > 0 && ', '}<a href={`${base}technology#${t.id}`}>{t.name}</a></>
+                )) : <span class="cell__dash">—</span>}</td>
+                <td class="dim">{s.obsoleteAt.length ? s.obsoleteAt.map((t: any) => t.name).join(', ') : <span class="cell__dash">—</span>}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+  ))}
+
+  <h2 class="sect">Modifications</h2>
+  {slots.map((slot) => (
+    <div data-shipgroup>
+      <h3 class="lawgroup">{slot}</h3>
+      <div class="grid"><div class="grid__scroll">
+        <table class="vtbl">
+          <thead>
+            <tr>
+              <th style="min-width: 14rem;">Modification</th>
+              <th style="width: 11rem;">Unlocked by</th>
+              <th>Effects</th>
+            </tr>
+          </thead>
+          <tbody>
+            {modifications.filter((m) => (m.slot?.name ?? 'Other') === slot).map((m) => (
+              <tr id={m.id} data-name={`${m.name} ${m.id} ${slot}`.toLowerCase()}>
+                <td class="lead-cell"><span class="lead">{m.name}</span></td>
+                <td class="dim">{m.techs.length ? m.techs.map((t: any, i: number) => (
+                  <>{i > 0 && ', '}<a href={`${base}technology#${t.id}`}>{t.name}</a></>
+                )) : <span class="cell__dash">—</span>}</td>
+                <td><ModifierList mods={m.modifiers} inline /></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+  ))}
+
+  <p class="caption">Base hull stats per type · modifications add on top in the ship designer · full per-type stat list in the CSV</p>
+
+  <script is:inline define:vars={{ csv }}>
+    window.v3Csv = window.v3Csv || {};
+    window.v3Csv.ships = () => csv;
+  </script>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const rows = [...document.querySelectorAll('tbody tr[data-name]')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const r of rows) r.classList.toggle('is-hidden', !!q && !r.dataset.name.includes(q));
+        document.querySelectorAll('[data-shipgroup]').forEach((wrap) => {
+          const any = [...wrap.querySelectorAll('tbody tr[data-name]')].some((r) => !r.classList.contains('is-hidden'));
+          wrap.classList.toggle('is-hidden', !any);
+        });
+      });
+    }
+  </script>
+</Base>

@@ -1,0 +1,57 @@
+---
+import Base from '../layouts/Base.astro';
+import ModifierList from '../components/ModifierList.astro';
+import decisionsJson from '../data/decisions.json';
+
+const decisions = (decisionsJson as any).decisions as any[];
+---
+<Base
+  title="Decisions"
+  active="decisions"
+  eyebrow="Journal & Events"
+  pageFilter="Filter decisions…"
+  pageStats={[{ value: decisions.length, label: 'decisions' }]}
+>
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl">
+        <thead>
+          <tr>
+            <th style="min-width: 15rem;">Decision</th>
+            <th style="min-width: 24rem;">Description</th>
+            <th style="min-width: 14rem;">Grants</th>
+          </tr>
+        </thead>
+        <tbody>
+          {decisions.map((d) => (
+            <tr id={d.id} data-name={`${d.name} ${d.id} ${d.desc ?? ''}`.toLowerCase()}>
+              <td class="lead-cell"><span class="lead">{d.name}</span></td>
+              <td class="dim" style="font-size: 0.76rem; white-space: normal;">{d.desc ?? <span class="cell__dash">—</span>}</td>
+              <td>
+                {d.rewards.length ? d.rewards.map((r: any) => (
+                  <div style="margin-bottom: 0.2rem;">
+                    <span class="dim">{r.name}</span>
+                    {r.modifiers.length > 0 && <>: <ModifierList mods={r.modifiers} inline /></>}
+                  </div>
+                )) : <span class="cell__dash">—</span>}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="caption">Availability conditions are scripted per decision · grants are the named modifiers where statically extractable</p>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const rows = [...document.querySelectorAll('tbody tr[data-name]')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const r of rows) r.classList.toggle('is-hidden', !!q && !r.dataset.name.includes(q));
+      });
+    }
+  </script>
+</Base>

@@ -1,0 +1,90 @@
+---
+import Base from '../../layouts/Base.astro';
+import ModifierList from '../../components/ModifierList.astro';
+import eventsJson from '../../data/events.json';
+
+export function getStaticPaths() {
+  return (eventsJson as any).groups.map((g: any) => ({ params: { slug: g.slug }, props: { group: g } }));
+}
+
+const { group } = Astro.props as { group: any };
+const base = import.meta.env.BASE_URL;
+---
+<Base
+  title={`${group.name} Events`}
+  active="events"
+  eyebrow="Journal & Events"
+  pageFilter="Filter these events…"
+  pageStats={[{ value: group.events.length, label: 'events' }]}
+>
+  {group.events.map((ev: any) => (
+    <div class="event" id={ev.id} data-name={`${ev.title} ${ev.id} ${ev.desc ?? ''}`.toLowerCase()}>
+      <h2 class="event__title">
+        {ev.title}
+        <span class="event__id">{ev.id}</span>
+        {ev.dlc && <span class="chip">· {ev.dlc}</span>}
+      </h2>
+      {ev.desc && <p class="event__desc">{ev.desc}</p>}
+      {ev.flavor && <p class="event__flavor">{ev.flavor}</p>}
+      {ev.options.length > 0 && (
+        <div class="event__options">
+          {ev.options.map((o: any) => (
+            <div class="event__option">
+              <span class="event__optname">{o.name}</span>
+              {o.rewards.map((r: any) => (
+                <span class="event__reward">
+                  {r.name}{r.modifiers.length > 0 && <>: <ModifierList mods={r.modifiers} inline /></>}
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  ))}
+
+  <p class="caption">
+    Dynamic text (names, places) shows as … · option effects beyond named modifiers are scripted ·
+    <a href={`${base}events`}>all event groups</a>
+  </p>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const cards = [...document.querySelectorAll('.event')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const c of cards) c.classList.toggle('is-hidden', !!q && !c.dataset.name.includes(q));
+      });
+    }
+  </script>
+
+  <style is:global>
+    .event {
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.85rem 1.1rem;
+      margin-bottom: 0.9rem;
+      max-width: 70rem;
+    }
+    .event__title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;
+      margin-bottom: 0.3rem;
+    }
+    .event__id { font-family: var(--font-mono); font-size: 0.6rem; color: var(--text-faint); }
+    .event__desc { margin: 0 0 0.3rem; font-size: 0.82rem; color: var(--text-soft); line-height: 1.5; white-space: pre-line; }
+    .event__flavor { margin: 0 0 0.3rem; font-size: 0.78rem; color: var(--text-dim); font-style: italic; line-height: 1.45; white-space: pre-line; }
+    .event__options { display: flex; flex-direction: column; gap: 0.3rem; margin-top: 0.5rem; }
+    .event__option {
+      border-left: 3px solid var(--gold-deep);
+      padding-left: 0.7rem;
+      font-size: 0.8rem;
+      display: flex; flex-direction: column; gap: 0.1rem;
+    }
+    .event__optname { color: var(--text); font-weight: 500; }
+    .event__reward { color: var(--text-dim); font-size: 0.75rem; }
+  </style>
+</Base>

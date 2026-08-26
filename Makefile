@@ -21,6 +21,10 @@ data:
 	node scripts/build_military.mjs
 	node scripts/build_diplomacy2.mjs
 	node scripts/build_culture.mjs
+	node scripts/build_ships.mjs
+	node scripts/build_journal.mjs
+	node scripts/build_events.mjs
+	node scripts/build_profitcalc.mjs
 	node scripts/build_entities.mjs
 
 art:

@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import eventsJson from '../data/events.json';
+
+const base = import.meta.env.BASE_URL;
+const groups = (eventsJson as any).groups as any[];
+const total = groups.reduce((s: number, g: any) => s + g.events.length, 0);
+---
+<Base
+  title="Events"
+  active="events"
+  eyebrow="Journal & Events"
+  pageFilter="Filter event groups…"
+  pageStats={[
+    { value: total, label: 'events' },
+    { value: groups.length, label: 'groups' },
+  ]}
+>
+  <div class="cards">
+    {groups.map((g) => (
+      <a class="card" href={`${base}events/${g.slug}`} data-name={`${g.name} ${g.source}`.toLowerCase()}>
+        <span class="card__title">{g.name}</span>
+        <span class="card__sum">{g.events.length} event{g.events.length > 1 ? 's' : ''} · {g.source}</span>
+      </a>
+    ))}
+  </div>
+
+  <p class="caption">Grouped by the game's own event files · titles with dynamic text show …</p>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const cards = [...document.querySelectorAll('.card[data-name]')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const c of cards) c.classList.toggle('is-hidden', !!q && !c.dataset.name.includes(q));
+      });
+    }
+  </script>
+</Base>

@@ -104,7 +104,7 @@ export const TABS: Tab[] = [
   },
   {
     slug: 'ships', icon: '🚢', label: 'Ships', section: 'Military',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Ship types and modifications',
   },
 
@@ -150,17 +150,17 @@ export const TABS: Tab[] = [
   // ── Journal & Events ──────────────────────────────────────────────
   {
     slug: 'journal-entries', icon: '📖', label: 'Journal Entries', section: 'Journal & Events',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Journal entries — goals, timers, rewards',
   },
   {
     slug: 'decisions', icon: '❗', label: 'Decisions', section: 'Journal & Events',
-    status: 'placeholder',
+    status: 'built',
     summary: 'All decisions with requirements and effects',
   },
   {
     slug: 'events', icon: '✉️', label: 'Events', section: 'Journal & Events',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Event browser — triggers, options, outcomes',
   },
 
@@ -179,7 +179,7 @@ export const TABS: Tab[] = [
   // ── Tools ─────────────────────────────────────────────────────────
   {
     slug: 'profit-calculator', icon: '🧮', label: 'Profit Calculator', section: 'Tools',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Pick a building and PMs, set prices, see throughput and profit',
   },
   {

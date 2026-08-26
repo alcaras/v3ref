@@ -1,0 +1,186 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Base
+  title="Profit Calculator"
+  active="profit-calculator"
+  eyebrow="Tools"
+  pageStats={[{ value: 'per level', label: 'at full employment' }]}
+>
+  <div class="pc">
+    <div class="pc__controls">
+      <label class="pc__field">
+        <span class="pc__label">Building</span>
+        <select id="pc-building" class="pc__select"><option>Loading…</option></select>
+      </label>
+      <div id="pc-pmgroups" class="pc__pmgroups"></div>
+    </div>
+
+    <div class="pc__results">
+      <h2 class="sect">Prices</h2>
+      <p class="pc__hint">Market prices range ±75% of base. Drag to model your market.</p>
+      <div id="pc-prices"></div>
+
+      <h2 class="sect">Result per building level</h2>
+      <div id="pc-summary" class="pc__summary"></div>
+    </div>
+  </div>
+
+  <p class="caption">
+    Revenue − input costs at your prices, per level at full employment · wages, throughput bonuses,
+    and economy-of-scale not modeled — this is the production margin, not final profitability
+  </p>
+
+  <script is:inline define:vars={{ base }}>
+    (async () => {
+      const data = await fetch(`${base}data/profit-calc.json`).then((r) => r.json());
+      const $ = (id) => document.getElementById(id);
+      const buildingSel = $('pc-building');
+      const state = { building: null, choice: {}, price: {} };
+
+      buildingSel.innerHTML = '';
+      let lastGroup = null;
+      let optgroup = null;
+      for (const b of data.buildings) {
+        if (b.group !== lastGroup) {
+          optgroup = document.createElement('optgroup');
+          optgroup.label = b.group ?? 'Other';
+          buildingSel.appendChild(optgroup);
+          lastGroup = b.group;
+        }
+        const o = document.createElement('option');
+        o.value = b.id;
+        o.textContent = b.name;
+        optgroup.appendChild(o);
+      }
+
+      function pickBuilding(id) {
+        state.building = data.buildings.find((b) => b.id === id);
+        state.choice = {};
+        const wrap = $('pc-pmgroups');
+        wrap.innerHTML = '';
+        state.building.pmGroups.forEach((g, gi) => {
+          if (!g.pms.length) return;
+          state.choice[gi] = 0;
+          const label = document.createElement('label');
+          label.className = 'pc__field';
+          label.innerHTML = `<span class="pc__label">${g.name}</span>`;
+          const sel = document.createElement('select');
+          sel.className = 'pc__select';
+          g.pms.forEach((pm, pi) => {
+            const o = document.createElement('option');
+            o.value = pi;
+            o.textContent = pm.name;
+            sel.appendChild(o);
+          });
+          sel.addEventListener('change', () => { state.choice[gi] = Number(sel.value); render(); });
+          label.appendChild(sel);
+          wrap.appendChild(label);
+        });
+        render();
+      }
+
+      function activePMs() {
+        return Object.entries(state.choice).map(([gi, pi]) => state.building.pmGroups[gi].pms[pi]);
+      }
+
+      function render() {
+        // Aggregate flows: add-lines sum; mult-lines apply to that good's add total.
+        const flow = {}; // good -> net units (output positive)
+        const mult = {}; // good -> {in, out} percentage adjustments
+        const jobs = {};
+        for (const pm of activePMs()) {
+          for (const l of pm.inputs) {
+            if (l.k === 'add') flow[l.g] = (flow[l.g] ?? 0) - l.a;
+            else (mult[l.g] ??= { in: 0, out: 0 }).in += l.a;
+          }
+          for (const l of pm.outputs) {
+            if (l.k === 'add') flow[l.g] = (flow[l.g] ?? 0) + l.a;
+            else (mult[l.g] ??= { in: 0, out: 0 }).out += l.a;
+          }
+          for (const j of pm.jobs) jobs[j.p] = (jobs[j.p] ?? 0) + j.a;
+        }
+        for (const [g, m] of Object.entries(mult)) {
+          if (flow[g] != null) flow[g] *= 1 + (flow[g] > 0 ? m.out : m.in);
+        }
+
+        // Price rows for every good involved.
+        const prices = $('pc-prices');
+        prices.innerHTML = '';
+        const involved = Object.keys(flow).filter((g) => flow[g] !== 0);
+        for (const g of involved) {
+          if (state.price[g] == null) state.price[g] = 0; // % offset from base
+          const good = data.goods[g];
+          const row = document.createElement('div');
+          row.className = 'pc__price';
+          const pct = state.price[g];
+          const price = good.cost * (1 + pct / 100);
+          row.innerHTML = `
+            <img src="${base}${good.icon}" alt="" loading="lazy" />
+            <span class="pc__pname">${good.name}</span>
+            <input type="range" min="-75" max="75" step="5" value="${pct}" data-good="${g}" />
+            <span class="pc__pval">£${price.toFixed(1)} <i>(${pct >= 0 ? '+' : ''}${pct}%)</i></span>`;
+          row.querySelector('input').addEventListener('input', (e) => {
+            state.price[g] = Number(e.target.value);
+            render();
+          });
+          prices.appendChild(row);
+        }
+
+        // Summary.
+        let revenue = 0, cost = 0;
+        const lines = involved.map((g) => {
+          const good = data.goods[g];
+          const price = good.cost * (1 + (state.price[g] ?? 0) / 100);
+          const value = flow[g] * price;
+          if (value >= 0) revenue += value; else cost -= value;
+          return { name: good.name, icon: good.icon, units: flow[g], value };
+        }).sort((a, b) => b.value - a.value);
+        const totalJobs = Object.values(jobs).reduce((s, a) => s + a, 0);
+        const net = revenue - cost;
+        $('pc-summary').innerHTML = `
+          <div class="pc__net ${net >= 0 ? 'tone-good' : 'tone-bad'}">£${net.toFixed(0)} <span>net / level</span></div>
+          <table class="vtbl pc__table"><tbody>
+            ${lines.map((l) => `<tr>
+              <td class="lead-cell"><span class="lead"><img class="lead__icon" src="${base}${l.icon}" alt="" />${l.name}</span></td>
+              <td class="num">${l.units > 0 ? '+' : ''}${Number(l.units.toFixed(1))}</td>
+              <td class="num ${l.value >= 0 ? 'tone-good' : 'tone-bad'}">£${l.value.toFixed(0)}</td>
+            </tr>`).join('')}
+            <tr><td class="lead-cell"><span class="lead">Employment</span></td>
+              <td class="num" colspan="2">${Object.entries(jobs).map(([p, a]) => `${p} ${a}`).join(' · ') || '—'} (${totalJobs})</td></tr>
+          </tbody></table>`;
+      }
+
+      buildingSel.addEventListener('change', () => pickBuilding(buildingSel.value));
+      pickBuilding(data.buildings[0].id);
+    })();
+  </script>
+
+  <style is:global>
+    .pc { display: grid; grid-template-columns: minmax(16rem, 22rem) 1fr; gap: 2rem; align-items: start; }
+    @media (max-width: 900px) { .pc { grid-template-columns: 1fr; } }
+    .pc__field { display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 0.8rem; }
+    .pc__label {
+      font-family: var(--font-ui); font-size: 0.62rem; text-transform: uppercase;
+      letter-spacing: 0.16em; color: var(--gold-soft); font-weight: 500;
+    }
+    .pc__select {
+      background: var(--bg-elev); color: var(--text);
+      border: 1px solid var(--border); border-radius: 6px;
+      font: inherit; font-size: 0.85rem; padding: 0.4rem 0.5rem;
+    }
+    .pc__hint { font-size: 0.72rem; color: var(--text-faint); margin: 0.2rem 0 0.6rem; }
+    .pc__price {
+      display: grid; grid-template-columns: 22px 9rem 1fr 8rem;
+      gap: 0.6rem; align-items: center; margin-bottom: 0.35rem; font-size: 0.82rem;
+    }
+    .pc__price img { width: 20px; height: 20px; object-fit: contain; }
+    .pc__price input { accent-color: var(--gold); }
+    .pc__pval { font-variant-numeric: tabular-nums; }
+    .pc__pval i { color: var(--text-faint); font-style: normal; font-size: 0.72rem; }
+    .pc__net { font-family: var(--font-display); font-size: 2rem; margin: 0.3rem 0 0.6rem; }
+    .pc__net span { font-size: 0.9rem; color: var(--text-dim); font-family: var(--font-ui); }
+    .pc__table { max-width: 34rem; }
+  </style>
+</Base>

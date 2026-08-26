@@ -1,0 +1,907 @@
+{
+ "decisions": [
+  {
+   "desc": "The Tangena Ordeal consists of consuming poison to prove one's innocence. Regardless of the veracity of the practice, it claims a significant number of lives every year and should be abolished.",
+   "id": "abolish_tangena_ordeal",
+   "name": "Abolish the Tangena Ordeal",
+   "rewards": []
+  },
+  {
+   "desc": "Begin discussions regarding the possibility of acquiring land in Panama to begin construction of a canal.",
+   "id": "panama_canal_purchase",
+   "name": "Acquire Land in Panama",
+   "rewards": [
+    {
+     "id": "panama_sale",
+     "modifiers": [
+      {
+       "key": "country_tax_income_add",
+       "label": "Tax Income",
+       "tone": "good",
+       "value": 30000,
+       "valueText": "+30000"
+      }
+     ],
+     "name": "The Panama Sale"
+    },
+    {
+     "id": "panama_purchase",
+     "modifiers": [
+      {
+       "key": "country_expenses_add",
+       "label": "Government Expenses",
+       "tone": "bad",
+       "value": 30000,
+       "valueText": "+30000"
+      }
+     ],
+     "name": "The Panama Purchase"
+    }
+   ]
+  },
+  {
+   "desc": "Initiate talks to discuss the possiblity of acquiring land in the Sinai to begin construction of a canal.",
+   "id": "suez_canal_purchase",
+   "name": "Acquire Land in the Sinai",
+   "rewards": [
+    {
+     "id": "suez_sale",
+     "modifiers": [
+      {
+       "key": "country_tax_income_add",
+       "label": "Tax Income",
+       "tone": "good",
+       "value": 30000,
+       "valueText": "+30000"
+      }
+     ],
+     "name": "The Suez Sale"
+    },
+    {
+     "id": "suez_purchase",
+     "modifiers": [
+      {
+       "key": "country_expenses_add",
+       "label": "Government Expenses",
+       "tone": "bad",
+       "value": 30000,
+       "valueText": "+30000"
+      }
+     ],
+     "name": "The Suez Purchase"
+    }
+   ]
+  },
+  {
+   "desc": "With the restoration of the imperial household to political power, it would be wise to integrate local beliefs into an official state religion emphasizing the Emperor's divinity.",
+   "id": "shinto_decision",
+   "name": "Adopt State Shinto",
+   "rewards": []
+  },
+  {
+   "desc": "The Ionian Islands changed hands multiple times throughout the Napoleonic Wars, and were not integrated into the Greek state upon its independence. If we can obtain the consent of both the Ionian people and the government of their protectors, we may be able to negotiate a peaceful transition of power.",
+   "id": "transfer_ionian_islands_decision",
+   "name": "Annex the Ionian Islands",
+   "rewards": []
+  },
+  {
+   "desc": "Through the wonders of technology and the heroism of our explorers, the interior of the Antarctic Continent may finally be accessible. The race is on, and we must be first to the Pole!",
+   "id": "antarctica_expedition",
+   "name": "Antarctic Expedition",
+   "rewards": []
+  },
+  {
+   "desc": "The consumption of liquor is reducing our citizens to their base urges. Liquor must be banned to ensure a moral and civilized society.",
+   "id": "ban_liquor",
+   "name": "Ban Liquor",
+   "rewards": [
+    {
+     "id": "liqour_ban_authority",
+     "modifiers": [
+      {
+       "key": "country_authority_mult",
+       "label": "…Authority",
+       "tone": "bad",
+       "value": -0.2,
+       "valueText": "-20%"
+      }
+     ],
+     "name": "Liquor Ban"
+    }
+   ]
+  },
+  {
+   "desc": "By uniting the historical Hungarian capital of Buda with the rapidly developing city of Pest, we will create a single prosperous metropolis spanning both banks of the Danube.",
+   "id": "decision_found_budapest",
+   "name": "Budapest Unification Law",
+   "rewards": [
+    {
+     "id": "modifier_budapest_steam_mills",
+     "modifiers": [
+      {
+       "key": "building_wheat_farm_throughput_add",
+       "label": "Wheat Farms building Throughput",
+       "tone": "good",
+       "value": 0.2,
+       "valueText": "+20%"
+      },
+      {
+       "key": "building_group_bg_light_industry_throughput_add",
+       "label": "Light Industries Throughput",
+       "tone": "good",
+       "value": 0.05,
+       "valueText": "+5%"
+      }
+     ],
+     "name": "Budapest Steam Mill Boom"
+    },
+    {
+     "id": "modifier_budapest_paris_of_the_east",
+     "modifiers": [
+      {
+       "key": "building_art_academy_throughput_add",
+       "label": "Arts Academy building Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_tech_spread_mult",
+       "label": "Technology Spread",
+       "tone": "good",
+       "value": 0.05,
+       "valueText": "+5%"
+      }
+     ],
+     "name": "Paris of the East"
+    }
+   ]
+  },
+  {
+   "desc": "Construct a palace worthy of our independent nation.",
+   "id": "mon_build_biljarda",
+   "name": "Build the Biljarda",
+   "rewards": [
+    {
+     "id": "biljarda_modifier",
+     "modifiers": [
+      {
+       "key": "country_prestige_add",
+       "label": "Prestige",
+       "tone": "good",
+       "value": 5,
+       "valueText": "+5"
+      }
+     ],
+     "name": "The Biljarda"
+    },
+    {
+     "id": "newly_built_biljarda_modifier",
+     "modifiers": [
+      {
+       "key": "country_legitimacy_base_add",
+       "label": "Legitimacy",
+       "tone": "good",
+       "value": 5,
+       "valueText": "+5"
+      }
+     ],
+     "name": "Place to Rule From"
+    }
+   ]
+  },
+  {
+   "desc": "The Immense cost of conducting our survey of Panama may become an unacceptable burden. Should we cancel the project, we would have to start again from scratch if we make another attempt.",
+   "id": "stop_panama_survey_decision",
+   "name": "Cancel the Panama Survey",
+   "rewards": []
+  },
+  {
+   "desc": "The Immense cost of conducting our survey of the Suez may become an unacceptable burden. Should we cancel the project, we would have to start again from scratch if we make another attempt.",
+   "id": "stop_suez_survey_decision",
+   "name": "Cancel the Suez Survey",
+   "rewards": []
+  },
+  {
+   "desc": "The Romanian nation is not complete without the inclusion of Transylvania. If this land were at all in our sphere, we should—we must!—move to bring it fully into the fold.",
+   "id": "rom_annex_trs",
+   "name": "Complete the Great Union",
+   "rewards": []
+  },
+  {
+   "desc": "The heart of the African continent remains a mystery for many. We shall launch an expedition to plot the course of the Congo River.",
+   "id": "congo_river_expedition",
+   "name": "Congo River Expedition",
+   "rewards": []
+  },
+  {
+   "desc": "Our former colonial masters removed the legendary Koh-i-Noor diamond from India during the period of their rule, and placed it within their own vaults. We will issue a demand to have our nation's stolen property returned to us.",
+   "id": "demand_return_of_koh_i_noor",
+   "name": "Demand Return of the Koh-i-Noor",
+   "rewards": []
+  },
+  {
+   "desc": "The legitimacy of the dynasty currently occupying the throne is disputed by certain elements within the military. Given assurance of their success, they may act to replace it.",
+   "id": "decision_depose_ruling_dynasty",
+   "name": "Depose Ruling Dynasty",
+   "rewards": [
+    {
+     "id": "modifier_dynastic_coup",
+     "modifiers": [
+      {
+       "key": "character_coup_strength_mult",
+       "label": "Coup Strength",
+       "tone": "neutral",
+       "value": 0.25,
+       "valueText": "+25%"
+      }
+     ],
+     "name": "Orchestrating Dynastic Coup"
+    }
+   ]
+  },
+  {
+   "desc": "While Hungary has known many capitals, none surpass Buda in prestige and glory. We must relocate the Hungarian diet there.",
+   "id": "decision_move_capital_to_buda",
+   "name": "Designate Buda as Capital",
+   "rewards": [
+    {
+     "id": "modifier_buda_made_capital",
+     "modifiers": [
+      {
+       "key": "state_migration_pull_mult",
+       "label": "Migration Attraction",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Growth of Pest"
+    }
+   ]
+  },
+  {
+   "desc": "The Buddhist religious institutions in Japan have strong historical ties to the administrative arm of the Shogunate. Having averted the end of the Shogunate once, strengthening these institutions could help us maintain its power and strengthen religious traditions for Japan not focused on Emperor worship.",
+   "id": "elevate_buddhism_decision",
+   "name": "Elevate Buddhism",
+   "rewards": []
+  },
+  {
+   "desc": "The experiment of rule by private corporation has run its course. If we are to normalize our relations with our subjects, we must place India under the direct rule of Parliament and ….",
+   "id": "bic_end_company_rule",
+   "name": "End Company Rule",
+   "rewards": [
+    {
+     "id": "modifier_india_crown_rule",
+     "modifiers": [
+      {
+       "key": "interest_group_ig_industrialists_pol_str_mult",
+       "label": "… Political Strength",
+       "tone": "neutral",
+       "value": 2,
+       "valueText": "+200%"
+      },
+      {
+       "key": "country_bureaucrats_pol_str_mult",
+       "label": "Political Strength of Bureaucrats",
+       "tone": "neutral",
+       "value": 2.5,
+       "valueText": "+250%"
+      },
+      {
+       "key": "country_aristocrats_pol_str_mult",
+       "label": "Political Strength of Aristocrats",
+       "tone": "neutral",
+       "value": -0.9,
+       "valueText": "-90%"
+      },
+      {
+       "key": "country_legitimacy_base_add",
+       "label": "Legitimacy",
+       "tone": "bad",
+       "value": -35,
+       "valueText": "-35"
+      },
+      {
+       "key": "country_legitimacy_headofstate_add",
+       "label": "Legitimacy from including the Head of State In Government",
+       "tone": "good",
+       "value": 50,
+       "valueText": "+50"
+      }
+     ],
+     "name": "Crown Rule"
+    }
+   ]
+  },
+  {
+   "desc": "The Privy Purse Payments we are paying to the former ruling families of the Princely States we have annexed add up to a sizable percentage of our budget. We may end these payments prematurely, at the cost of angering the Aristocrats that have come to depend upon them.",
+   "id": "bht_end_privy_purse_payments",
+   "name": "End Privy Purse Payments",
+   "rewards": [
+    {
+     "id": "modifier_ended_privy_purse_payments",
+     "modifiers": [
+      {
+       "key": "interest_group_approval_add",
+       "label": "Interest Group Approval",
+       "tone": "bad",
+       "value": -5,
+       "valueText": "-5"
+      }
+     ],
+     "name": "Ended Privy Purse Payments"
+    }
+   ]
+  },
+  {
+   "desc": "The caste system of old stands in the way of the social mobility necessary for a modern economy. Every citizen can be a valuable part of the state, no matter their station in life.",
+   "id": "jap_abolish_edo_system",
+   "name": "End the Edo Status System",
+   "rewards": [
+    {
+     "id": "modifier_abolished_edo_system_positive",
+     "modifiers": [
+      {
+       "key": "interest_group_approval_add",
+       "label": "Interest Group Approval",
+       "tone": "good",
+       "value": 3,
+       "valueText": "+3"
+      }
+     ],
+     "name": "Abolished Edo System"
+    },
+    {
+     "id": "modifier_abolished_edo_system_negative",
+     "modifiers": [
+      {
+       "key": "interest_group_approval_add",
+       "label": "Interest Group Approval",
+       "tone": "bad",
+       "value": -3,
+       "valueText": "-3"
+      }
+     ],
+     "name": "Abolished Edo System"
+    }
+   ]
+  },
+  {
+   "desc": "The Nafusis, the predominantly Berber inhabitants of the highlands of western Tripoli, have been in a struggle against the Ottoman governorate for years now, establishing a proper alliance with them by embracing their faith and calling in their men might be the key to victory.",
+   "id": "establish_pact_with_nafusis",
+   "name": "Establish a pact with the Nafusis",
+   "rewards": [
+    {
+     "id": "fzn_mountain_tribes_mobilized",
+     "modifiers": [
+      {
+       "key": "state_conscription_rate_add",
+       "label": "Conscription Rate",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "state_conscription_rate_mult",
+       "label": "Conscriptable Battalions",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "building_training_rate_mult",
+       "label": "Training Rate",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "unit_morale_recovery_mult",
+       "label": "Morale Recovery",
+       "tone": "good",
+       "value": 0.15,
+       "valueText": "+15%"
+      },
+      {
+       "key": "unit_morale_loss_mult",
+       "label": "Morale Loss",
+       "tone": "good",
+       "value": -0.15,
+       "valueText": "-15%"
+      }
+     ],
+     "name": "Mobilized Mountain Tribes"
+    }
+   ]
+  },
+  {
+   "desc": "The center of the African continent holds the secret to the source of the Nile.",
+   "id": "central_africa_expedition",
+   "name": "Expedition to Find the Source of the Nile",
+   "rewards": []
+  },
+  {
+   "desc": "While our current capital has served its role well, recent nationalist agitation has revealed its vulnerabity to anti-social movements. We should establish a new government district in Delhi and relocate our government apparatus there.",
+   "id": "make_delhi_capital",
+   "name": "Found New Delhi",
+   "rewards": [
+    {
+     "id": "delhi_made_capital_modifier",
+     "modifiers": [
+      {
+       "key": "political_movement_radicalism_add",
+       "label": "Political Movement Activism",
+       "tone": "good",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Government Offices Safeguarded"
+    },
+    {
+     "id": "new_delhi_modifier",
+     "modifiers": [
+      {
+       "key": "state_pop_pol_str_mult",
+       "label": "Universal Pop Political Strength",
+       "tone": "neutral",
+       "value": 0.25,
+       "valueText": "+25%"
+      }
+     ],
+     "name": "Viceroy’s House"
+    },
+    {
+     "id": "new_delhi_cost_modifier",
+     "modifiers": [
+      {
+       "key": "country_expenses_add",
+       "label": "Government Expenses",
+       "tone": "bad",
+       "value": 1,
+       "valueText": "+1"
+      }
+     ],
+     "name": "Construction of New Delhi"
+    }
+   ]
+  },
+  {
+   "desc": "Hold a Grand Exhibition to show all the world your wonders. The more technologies you have to show, the more successful the exhibition will be.",
+   "id": "grand_exhibition_decision",
+   "name": "Hold a Grand Exhibition",
+   "rewards": []
+  },
+  {
+   "desc": "Having enough reasons to be considered a real Portuguese state, Goa deserves an official declaration of incorporation.",
+   "id": "goa_decision",
+   "name": "Incorporate Goa",
+   "rewards": []
+  },
+  {
+   "desc": "With the matter of Hungary resolved, it is clear that our remaining autonomous Crown Lands have long outlived their usefulness. For the sake of the prosperity of our great empire, these regions must be fully integrated into the Austrian administration.",
+   "id": "aus_integrate_crown_lands_decision",
+   "name": "Integrate the Crown Lands",
+   "rewards": [
+    {
+     "id": "modifier_streamline_crown_lands",
+     "modifiers": [
+      {
+       "key": "country_authority_mult",
+       "label": "…Authority",
+       "tone": "bad",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Reduced Crownland Autonomy"
+    }
+   ]
+  },
+  {
+   "desc": "The treaty port of Macao has great potential, and is increasingly crucial to our trade network. We should consider an investment plan to capitalize on its development.",
+   "id": "macao_decision",
+   "name": "Invest in Macao",
+   "rewards": []
+  },
+  {
+   "desc": "The degree of influence that ever-rebellious Hungary possesses within our Empire has become alarming. By creating a loyal and co-equal South Slavic kingdom, we may both erode Hungarian power and open the way for further expansion into the Balkans.",
+   "id": "aus_organise_trialism",
+   "name": "Issue a Trialist Manifesto",
+   "rewards": []
+  },
+  {
+   "desc": "Hyderabad has long neglected to properly enforce its rule in Berar, leaving the province prone to banditry and general lawlessness. The interior office advise that we assume direct control in Berar, in exchange for an annual payment made to its current ruler.",
+   "id": "pressure_to_sell_berar_province",
+   "name": "Lease Hyderabadi Berar",
+   "rewards": [
+    {
+     "id": "lease_of_berar_costs",
+     "modifiers": [
+      {
+       "key": "country_expenses_add",
+       "label": "Government Expenses",
+       "tone": "bad",
+       "value": 1200,
+       "valueText": "+1200"
+      }
+     ],
+     "name": "Berar Lease Payments"
+    },
+    {
+     "id": "lease_of_berar_income",
+     "modifiers": [
+      {
+       "key": "country_tax_income_add",
+       "label": "Tax Income",
+       "tone": "good",
+       "value": 1200,
+       "valueText": "+1200"
+      }
+     ],
+     "name": "Berar Lease Income"
+    }
+   ]
+  },
+  {
+   "desc": "Through a combination of techniques, it is possible to drain certain areas of the lowlands, turning the sea into workable land.",
+   "id": "lowlands_land_reclamation",
+   "name": "Lowlands Land Reclamation",
+   "rewards": [
+    {
+     "id": "modifier_reclaiming_land",
+     "modifiers": [
+      {
+       "key": "country_bureaucracy_cost_add",
+       "label": "…Bureaucracy Cost",
+       "tone": "bad",
+       "value": 200,
+       "valueText": "+200"
+      }
+     ],
+     "name": "Reclaiming Land"
+    }
+   ]
+  },
+  {
+   "desc": "Our great nation is fated to spread across the continent.",
+   "id": "manifest_destiny",
+   "name": "Manifest Destiny",
+   "rewards": [
+    {
+     "id": "ig_manifest_destiny",
+     "modifiers": [
+      {
+       "key": "interest_group_approval_add",
+       "label": "Interest Group Approval",
+       "tone": "good",
+       "value": 3,
+       "valueText": "+3"
+      }
+     ],
+     "name": "Manifest Destiny"
+    }
+   ]
+  },
+  {
+   "desc": "Launch an expedition to map out the unknown regions and geography of the North American Western Frontier.",
+   "id": "west_america_expedition",
+   "name": "Map the American Western Frontier",
+   "rewards": []
+  },
+  {
+   "desc": "Rome has always been the traditional center of Italy. With our nation reunified, we may restore the city to its rightful status as the capital.",
+   "id": "italy_move_capital_to_rome",
+   "name": "Move Capital to Rome",
+   "rewards": [
+    {
+     "id": "modifier_restored_capital_to_rome",
+     "modifiers": [
+      {
+       "key": "state_migration_pull_mult",
+       "label": "Migration Attraction",
+       "tone": "good",
+       "value": 0.25,
+       "valueText": "+25%"
+      },
+      {
+       "key": "building_group_bg_government_throughput_add",
+       "label": "Government Structures Throughput",
+       "tone": "good",
+       "value": 0.05,
+       "valueText": "+5%"
+      }
+     ],
+     "name": "Restored Rome"
+    }
+   ]
+  },
+  {
+   "desc": "Launch an expedition to plot the Niger River.",
+   "id": "niger_river_expedition",
+   "name": "Niger River Expedition",
+   "rewards": []
+  },
+  {
+   "desc": "The requests for international support that the fledgling Circassian nation have sent to us represent an excellent opportunity to expand our sphere of influence in the Caucasus.",
+   "id": "russia_offer_circassia_recognition",
+   "name": "Offer Circassia Recognition",
+   "rewards": []
+  },
+  {
+   "desc": "With a deadly flu ravaging the land, we must act to protect our citizens.",
+   "id": "spanish_flu_response",
+   "name": "Pandemic Response",
+   "rewards": []
+  },
+  {
+   "desc": "With the capture of the Constantinople, the imperial Roman capital, we will be able to finally cement the legitimacy and place of the Bulgarian Tsardom atop the nations of eastern Christianity.",
+   "id": "bulgaria_proclaim_empire",
+   "name": "Proclaim Bulgarian Empire",
+   "rewards": []
+  },
+  {
+   "desc": "Mismanagement by the East India Company has gone on far too long. We must secure our rule over the subcontinent through more direct means.",
+   "id": "british_raj_decision",
+   "name": "Proclaim the British Raj",
+   "rewards": []
+  },
+  {
+   "desc": "Korea is surrounded by the realms of two Emperors. In order to safeguard our sovereignty, we must elevate ourselves to become their equal.",
+   "id": "KOR_declare_korean_empire",
+   "name": "Proclaim the Empire of Korea",
+   "rewards": []
+  },
+  {
+   "desc": "Send a delegation of diplomats to Britain to negotiate our ambitions for the Pink Map. Also referred to as the Rose-Coloured Map, this campaign strives to establish a land connection between our colonies of … and ….",
+   "id": "pink_map",
+   "name": "Propose the Pink Map",
+   "rewards": []
+  },
+  {
+   "desc": "Luxembourg lies within our natural borders, and should be part of France. Perhaps a generous offer would persuade their overlord to accept a sale.",
+   "id": "france_annex_luxembourg",
+   "name": "Purchase Luxembourg",
+   "rewards": [
+    {
+     "id": "luxembourg_payment",
+     "modifiers": [
+      {
+       "key": "country_expenses_add",
+       "label": "Government Expenses",
+       "tone": "bad",
+       "value": 1,
+       "valueText": "+1"
+      }
+     ],
+     "name": "Luxembourg Payments"
+    }
+   ]
+  },
+  {
+   "desc": "The Shinsengumi have proven their usefulness in suppressing seditious activity in the capital. With recent improvements to the bureaucratic apparatus, the unit may now serve as a template for an all-Japanese force similarly dedicated to the preservation of order.",
+   "id": "jap_upgrade_the_shinsengumi",
+   "name": "Reform the Shinsengumi",
+   "rewards": [
+    {
+     "id": "modifier_expanded_shinsengumi_positive",
+     "modifiers": [
+      {
+       "key": "interest_group_approval_add",
+       "label": "Interest Group Approval",
+       "tone": "good",
+       "value": 3,
+       "valueText": "+3"
+      }
+     ],
+     "name": "Reformed Shinsengumi"
+    },
+    {
+     "id": "modifier_expanded_shinsengumi_negative",
+     "modifiers": [
+      {
+       "key": "interest_group_approval_add",
+       "label": "Interest Group Approval",
+       "tone": "bad",
+       "value": -3,
+       "valueText": "-3"
+      }
+     ],
+     "name": "Reformed Shinsengumi"
+    }
+   ]
+  },
+  {
+   "desc": "It may be pertinent to remove the ban on opium should the diplomatic or economic situation warrant it.",
+   "id": "remove_opium_ban",
+   "name": "Remove the Ban on Opium",
+   "rewards": []
+  },
+  {
+   "desc": "Political or economic circumstances may require that we lift the liquor ban.",
+   "id": "remove_liquor_ban",
+   "name": "Remove the Liquor Ban",
+   "rewards": []
+  },
+  {
+   "desc": "With the former crown of Castile under our control, we have the opportunity to determine the future shape of …. One option before us is to place a … on the throne of Spain, establishing a co-equal Kingdom of Spain in union with Portugal.",
+   "id": "decision_reorganize_iberian_crowns",
+   "name": "Reorganize Iberian Crowns",
+   "rewards": []
+  },
+  {
+   "desc": "In 1834, in response to the deposed King Miguel's revocation of his capitulation in the Liberal Wars, Queen Maria II promulgated an act which exiled him and his descendants from Portugal forever. With a government sympathetic to the deposed King's cause, we may revoke this act and welcome him back to our shores.",
+   "id": "decision_revoke_banishment_law",
+   "name": "Repeal the Banishment Law",
+   "rewards": [
+    {
+     "id": "modifier_banishment_law_repealed",
+     "modifiers": [
+      {
+       "key": "interest_group_approval_add",
+       "label": "Interest Group Approval",
+       "tone": "bad",
+       "value": -4,
+       "valueText": "-4"
+      }
+     ],
+     "name": "Banishment Law Repealed"
+    }
+   ]
+  },
+  {
+   "desc": "Once more, Brazil has come under Portuguese suzerainty. To reduce the strain of transoceanic administration, and appease those who desire Brazilian autonomy, we may re-establish a co-equal Kingdom of Brazil in union with Portugal.",
+   "id": "decision_restore_kingdom_of_brazil",
+   "name": "Restore Kingdom of Brazil",
+   "rewards": []
+  },
+  {
+   "desc": "Various proposals to re-organize the Empire into a multi-ethnic, federal state have come and gone over the years. With a resurgence of interest in federalization, these proposals may be adopted as official state policy.",
+   "id": "aus_revisit_federation_proposal",
+   "name": "Revisit the Federal Solution",
+   "rewards": []
+  },
+  {
+   "desc": "Revive the ancient Olympic games for a new era.",
+   "id": "revive_olympic_games_decision",
+   "name": "Revive the Olympic Games",
+   "rewards": [
+    {
+     "id": "modifier_olympic_games",
+     "modifiers": [
+      {
+       "key": "country_prestige_add",
+       "label": "Prestige",
+       "tone": "good",
+       "value": 100,
+       "valueText": "+100"
+      }
+     ],
+     "name": "Olympic Games"
+    },
+    {
+     "id": "modifier_olympic_games_bureaucracy",
+     "modifiers": [
+      {
+       "key": "country_bureaucracy_mult",
+       "label": "…Bureaucracy",
+       "tone": "bad",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Reviving the Olympic Games"
+    }
+   ]
+  },
+  {
+   "desc": "Having officially claimed the island in 1778, we have the right to demand Great Britain to abandon its hold over it. We shall send an envoy, and hear their response.",
+   "id": "revoke_fernando_po",
+   "name": "Revoke the Lease of Fernando Po",
+   "rewards": []
+  },
+  {
+   "desc": "For far too long, the British have underestimated and undermined our authority. Launch a campaign to secure independence",
+   "id": "princely_state_decision",
+   "name": "Seek Sovereignty",
+   "rewards": []
+  },
+  {
+   "desc": "With the power of the Emperor restored, we need to distinguish and uplift the native religious traditions which hold the imperial line sacred. To accomplish this, they need to be separated from the foreign influence of Buddhism, which has been inextricably linked with kami worship for hundreds of years through syncretic traditions. Leveraging discontent with Buddhist institutions from its connections with the Shogunate, we can make way for Shinto as the higher guiding principle.",
+   "id": "shinbutsu_bunri_decision",
+   "name": "Shinbutsu Bunri",
+   "rewards": []
+  },
+  {
+   "desc": "Our architects believe that innovations involving steel frames and concrete would allow the construction of buildings taller than ever conceived before. They urge us to authorize a survey to identify the best possible site to lay the foundations.",
+   "id": "skyscraper_decision",
+   "name": "Survey a Skyscraper Site",
+   "rewards": [
+    {
+     "id": "skyscraper_survey",
+     "modifiers": [
+      {
+       "key": "country_bureaucracy_cost_add",
+       "label": "…Bureaucracy Cost",
+       "tone": "bad",
+       "value": 500,
+       "valueText": "+500"
+      }
+     ],
+     "name": "Skyscraper Survey"
+    }
+   ]
+  },
+  {
+   "desc": "Authorize a survey to map the potential of building a canal across the Panama Isthmus",
+   "id": "panama_survey_decision",
+   "name": "Survey the Panama Isthmus",
+   "rewards": [
+    {
+     "id": "modifier_surveying_panama",
+     "modifiers": [
+      {
+       "key": "country_bureaucracy_cost_add",
+       "label": "…Bureaucracy Cost",
+       "tone": "bad",
+       "value": 1000,
+       "valueText": "+1000"
+      }
+     ],
+     "name": "Surveying Panama Isthmus"
+    }
+   ]
+  },
+  {
+   "desc": "Authorize a survey to map the potential of building a canal across the Suez Isthmus",
+   "id": "suez_survey_decision",
+   "name": "Survey the Suez Isthmus",
+   "rewards": [
+    {
+     "id": "modifier_surveying_suez",
+     "modifiers": [
+      {
+       "key": "country_bureaucracy_cost_add",
+       "label": "…Bureaucracy Cost",
+       "tone": "bad",
+       "value": 1000,
+       "valueText": "+1000"
+      }
+     ],
+     "name": "Surveying Suez Isthmus"
+    }
+   ]
+  },
+  {
+   "desc": "Claim the body of Napoleon from Saint Helena, and rebury the Emperor's body on the banks of the Seine.",
+   "id": "france_retour_des_cendres",
+   "name": "The Return of the Ashes",
+   "rewards": []
+  },
+  {
+   "desc": "The province of Savoy is a natural part of the French nation, and home to many who already consider themselves French. It may be possible, through diplomatic means, to convince their occupiers to cede the territory.",
+   "id": "france_annex_savoy",
+   "name": "The Treaty of Turin",
+   "rewards": []
+  },
+  {
+   "desc": "The province of Savoy has become a matter of contention between our nation and France. If we are willing to cede Savoy, France would surely consider themselves to be in our debt.",
+   "id": "sell_savoy",
+   "name": "The Treaty of Turin",
+   "rewards": []
+  },
+  {
+   "desc": "Launch an expedition to secure control of the Tibetan Plateau.",
+   "id": "tibet_expedition",
+   "name": "Tibetan Expedition",
+   "rewards": []
+  },
+  {
+   "desc": "For whatever reason, our government at the time folded to the demands of the upstart Hungarian Diet. We must undo that mistake.",
+   "id": "decision_demand_hungary_revoke_laws",
+   "name": "Unilaterally Revoke Hungarian Reforms",
+   "rewards": []
+  }
+ ]
+}

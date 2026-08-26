@@ -104,8 +104,21 @@ export class Modifiers {
     return { key, label: this.name(key), value, valueText, tone };
   }
 
-  /** Format a whole { key: value } bag, dropping unknown-and-zero entries. */
+  /** Format a whole { key: value } bag, dropping unknown-and-zero entries.
+   *  Meta keys that ride along in modifier blocks (icon paths, multiplier
+   *  hints) are skipped — a modifier value is a number or yes/no. */
   formatBag(bag) {
-    return Object.entries(bag ?? {}).map(([k, v]) => this.format(k, v));
+    return Object.entries(bag ?? {})
+      .filter(
+        ([k, v]) =>
+          k !== 'icon' &&
+          k !== 'multiplier' &&
+          (typeof v === 'number' ||
+            typeof v === 'boolean' ||
+            v === 'yes' ||
+            v === 'no' ||
+            (typeof v === 'string' && !Number.isNaN(Number(v)))),
+      )
+      .map(([k, v]) => this.format(k, v));
   }
 }
