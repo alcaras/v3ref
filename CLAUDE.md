@@ -19,10 +19,23 @@ generated JSON is committed so GitHub Actions only runs `astro build`.
 Point the pipeline at the mirror with `V3REF` (defaults to `../v3ref`):
 
 ```
-make data    node scripts/build_*.mjs → src/data/*.json (+ public/data/search-index.json)
-make art     scripts/extract_art.sh   → DDS→PNG from a local game install (VIC3_APP)
-make build   npx astro build          → dist/
+make data       node scripts/build_*.mjs → src/data/*.json (+ public/data/*.json)
+make art        scripts/extract_art.sh   → DDS→PNG from a local install (VIC3_APP)
+make audit      scripts/audit.mjs        → HARD GATE (see below)
+make changelog  scripts/changelog.mjs    → diff vs last snapshot → CHANGELOG.md
+make build      npx astro build          → dist/
 ```
+
+**Per-patch flow:** sync `../v3ref` → `make art` (if icons changed) →
+`make patch` (= data, audit, changelog, build) → review CHANGELOG.md →
+commit and push (Actions deploys) → `make snapshot` to rebaseline the diff.
+
+**The audit is the tripwire that makes a patch safe.** It fails the build when
+(1) a modifier key we render isn't in the game's `modifier_type_definitions`
+and isn't matched by `matchDynamic()` — i.e. a new patch field we'd label with
+a guessed name, (2) an icon path has no file, (3) an entity link points at no
+route, or (4) loc markup leaked into rendered text (warning). Never silence it
+by deleting data — teach `modifiers.mjs`/`extract_art.sh` about the new thing.
 
 ---
 
@@ -47,6 +60,10 @@ Paradox's own docs — read them when a field is unclear; never parse them.
   `building_employment_<pop>_add`) are reconstructed by `matchDynamic()`.
   **Every "what does it do" line on the site should go through this** — never
   hand-format a modifier.
+
+`scripts/lib/icons.mjs` — `iconPath(texture, dir)` is the ONLY way to build an
+icon path. It returns null when an entry has no texture, so pages degrade
+instead of linking `img/dir/.png` (which the audit would then fail on).
 
 **3. View layer** — `scripts/build_<thing>.mjs` emits page-shaped JSON
 (deterministic: `stableStringify`), Astro pages render it. Shared domain
@@ -155,27 +172,36 @@ used the legacy spreadsheet.
   modifiers/` and `jomini/` — filter to `_l_english` (loc.mjs does).
 - **Dropbox hydration**: the v3ref mirror may be online-only; the first
   `make data` after a patch is slow while files download. Not a bug.
+- **Not every entry has art.** Combat unit types have no flat icon (their art
+  is a set of culture-gated `combat_unit_image` illustrations); `pm_dummy` has
+  no texture; special character traits and leader ideologies live in
+  *subfolders* of their icon dirs. Use `iconPath()` and extract the subfolder.
+- **`bg_monuments_hidden`** holds 13 decorative dummies (Machu Picchu et al.)
+  whose loc name resolves to a dev note — excluded from buildings/entities.
+- **Warships are not `combat_unit_types`** — since the naval rework they live
+  in `ship_types` with their own designer modifications.
+- **Ideology count is a trap**: 172 exist, but ~135 are country-flavored/event
+  variants (multiple "Carlist"s). Matrix displays use the 37 the base interest
+  groups actually reference (`core: true` in ideologies.json).
+- **Modifier blocks carry meta keys** (`icon`, `multiplier`) that are not
+  modifiers — `formatBag` filters to numeric/boolean values only.
 
 ---
 
-## Roadmap (stage numbering)
+## Roadmap
 
-- **Stage 0 (done)**: scaffold, parse/loc/modifier/economy libs, entity
-  registry + search, Goods list + detail pages, icon extraction, deploy.
-- **Stage 1 (done)**: Buildings (flagship PM matrix), PM explorer, pop
-  types/needs.
-- **Stage 2 (done)**: Laws, interest groups, ideology stance matrices,
-  institutions, technology (reverse-unlock index), character traits, decrees.
-- **Stage 3 (done)**: Countries, states + state traits, treaty articles,
-  power blocs.
-- **Stage 4 (done)**: Companies, army units, mobilization, subjects, war
-  goals, cultures & religions, concepts encyclopedia, defines browser.
-- **Stage 5 (done)**: Ships + modifications; journal entries, decisions, and
-  events — surfaced via the game's own player-facing loc text plus statically
-  extracted `add_modifier` rewards (resolved from static_modifiers). A full
-  trigger/effect pretty-printer remains open work if deeper rendering is
-  wanted.
-- **Open**: tools (building profit calculator, shareable tech planner — see
-  the session design notes), audit gate (`make audit`: every modifier key
-  resolves; every loc ref resolves; every icon exists), per-patch changelog
-  diffing + patch-notes page, states↔homelands join, event trigger rendering.
+- **Stages 0-5 (done)**: every planned reference page — economy (goods,
+  buildings, PMs, pops, needs, companies), politics (laws, IGs, ideologies,
+  institutions, traits, decrees), technology, military (units, mobilization,
+  ships), diplomacy (treaties, power blocs, subjects, war goals), world
+  (countries, states, cultures), journal/events/decisions, concepts, defines.
+- **Tools (done)**: profit calculator, company planner (shareable via URL
+  hash), patch notes.
+- **Infrastructure (done)**: `make audit` gate, per-patch changelog with
+  gzipped snapshots.
+- **Open**: a shareable tech-tree planner (owtt-style: era columns, click a
+  tech to pull in its prereq closure, nation picker seeded from the tier
+  bundles in `scripted_effects/00_starting_inventions.txt` + per-country
+  history files, plan in the URL hash). Deeper event trigger/effect rendering
+  (a generic Paradox-script pretty-printer) if the loc text proves not enough.
+  States↔cultural-homelands join. Country flags (procedural coats of arms).
