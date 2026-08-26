@@ -27,6 +27,7 @@ data:
 	node scripts/build_events.mjs
 	node scripts/build_profitcalc.mjs
 	node scripts/build_company_planner.mjs
+	node scripts/build_map.mjs
 	node scripts/build_entities.mjs
 
 audit:

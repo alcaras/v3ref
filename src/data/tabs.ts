@@ -183,6 +183,11 @@ export const TABS: Tab[] = [
     summary: 'One building at your prices — every method in every group ranked in place',
   },
   {
+    slug: 'resource-map', icon: '🗺️', label: 'Resource Map', section: 'Tools',
+    status: 'built',
+    summary: 'Interactive map of every state resource — switch layers or overlay up to three',
+  },
+  {
     slug: 'method-comparison', icon: '⚖️', label: 'Compare Methods', section: 'Tools',
     status: 'built',
     summary: 'Every production method priced at your market — sort by profit, per worker, or per construction',

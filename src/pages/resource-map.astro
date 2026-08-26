@@ -1,0 +1,299 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Base
+  title="Resource Map"
+  active="resource-map"
+  eyebrow="Tools"
+  description="Interactive Victoria 3 resource map: switch between every state resource, or overlay up to three at once to see which dominates and how much is there."
+>
+  <div class="rm">
+    <aside class="rail rm__rail">
+      <div>
+        <div class="rail__label">
+          <span>Layers</span>
+          <button type="button" id="rm-clear" class="rail__btn">clear</button>
+        </div>
+        <p class="rm__note">
+          Pick one for a magnitude map. Pick two or three to compare — each gets its own hue and a
+          state takes the hue of whichever leads there.
+        </p>
+        <div id="rm-layers" class="rm__layers"></div>
+      </div>
+      <div>
+        <div class="rail__label">Scale</div>
+        <label class="rm__toggle">
+          <input type="checkbox" id="rm-sqrt" checked /> compress large deposits
+        </label>
+        <p class="rm__note" style="margin-top:0.3rem;">
+          A few states dwarf the rest, so shading uses a square-root scale by default; uncheck for
+          strictly linear.
+        </p>
+      </div>
+    </aside>
+
+    <div class="rm__main">
+      <div id="rm-legend" class="rm__legend"></div>
+      <div class="rm__canvaswrap">
+        <canvas id="rm-canvas" width="2048" height="904"></canvas>
+        <div id="rm-tip" class="rm__tip" hidden></div>
+      </div>
+      <p class="caption">
+        State regions coloured from the game's own <code>state_regions</code> resource caps — the
+        maximum levels of each extraction building a state can hold. Undiscovered deposits are what
+        prospecting can still reveal. Sea, lakes, and the 106 water regions carry no data.
+        Built by recolouring a state-index map derived from <code>provinces.png</code>.
+      </p>
+    </div>
+  </div>
+
+  <script is:inline define:vars={{ base }}>
+    (async () => {
+      const $ = (id) => document.getElementById(id);
+      const [meta, idx] = await Promise.all([
+        fetch(`${base}data/map.json`).then((r) => r.json()),
+        new Promise((res, rej) => {
+          const im = new Image();
+          im.onload = () => res(im);
+          im.onerror = rej;
+          im.src = `${base}img/map/states.png`;
+        }),
+      ]);
+
+      const W = meta.width, H = meta.height;
+
+      // Read the index image once into a plain array of state indices.
+      const off = document.createElement('canvas');
+      off.width = W; off.height = H;
+      const octx = off.getContext('2d', { willReadFrequently: true });
+      octx.drawImage(idx, 0, 0);
+      const src = octx.getImageData(0, 0, W, H).data;
+      const stateAt = new Uint16Array(W * H);
+      for (let i = 0, p = 0; i < stateAt.length; i++, p += 4) {
+        stateAt[i] = src[p] | (src[p + 1] << 8);
+      }
+
+      const canvas = $('rm-canvas');
+      const ctx = canvas.getContext('2d');
+      const outImg = ctx.createImageData(W, H);
+
+      // ── Palette ──────────────────────────────────────────────────
+      // Choropleths compare any two regions, not just neighbours in a legend,
+      // so the categorical palette is capped at its three all-pairs-safe slots
+      // (validated for this dark surface). Hence: at most three overlays.
+      const SERIES = [
+        { hex: '#3987e5', name: 'blue' },
+        { hex: '#d95926', name: 'orange' },
+        { hex: '#199e70', name: 'aqua' },
+      ];
+      const MAX_LAYERS = SERIES.length;
+      // Sequential blue, near-zero closest to the surface (dark) through to
+      // bright at the maximum — monotonic lightness on a dark ground.
+      const SEQ = ['#0d366b', '#184f95', '#256abf', '#3987e5', '#6da7ec', '#9ec5f4', '#cde2fb'];
+      const hexToRgb = (h) => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
+      const SEQ_RGB = SEQ.map(hexToRgb);
+      const SERIES_RGB = SERIES.map((s) => hexToRgb(s.hex));
+      const WATER = [16, 18, 22];
+      const NODATA = [42, 42, 40];
+
+      function ramp(t) {
+        const x = Math.max(0, Math.min(1, t)) * (SEQ_RGB.length - 1);
+        const i = Math.floor(x), f = x - i;
+        const a = SEQ_RGB[i], b = SEQ_RGB[Math.min(i + 1, SEQ_RGB.length - 1)];
+        return [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f, a[2] + (b[2] - a[2]) * f];
+      }
+
+      // ── Selection ────────────────────────────────────────────────
+      const selected = [];
+      const scale = (v, max) => {
+        if (max <= 0) return 0;
+        return $('rm-sqrt').checked ? Math.sqrt(v) / Math.sqrt(max) : v / max;
+      };
+
+      function renderLayers() {
+        $('rm-layers').innerHTML = meta.layers.map((l) => {
+          const at = selected.indexOf(l.key);
+          const on = at >= 0;
+          const full = selected.length >= MAX_LAYERS && !on;
+          return `<button type="button" class="rm__layer ${on ? 'is-on' : ''}" data-key="${l.key}"
+                    ${full ? 'disabled title="Three layers is the readable maximum"' : ''}>
+            <span class="rm__swatch" style="background:${on ? SERIES[at].hex : 'transparent'}"></span>
+            <span class="rm__lname">${l.name}</span>
+          </button>`;
+        }).join('');
+        $('rm-layers').querySelectorAll('.rm__layer').forEach((b) =>
+          b.addEventListener('click', () => {
+            const k = b.dataset.key, at = selected.indexOf(k);
+            if (at >= 0) selected.splice(at, 1);
+            else if (selected.length < MAX_LAYERS) selected.push(k);
+            renderLayers(); draw(); syncHash();
+          }));
+      }
+
+      function draw() {
+        const data = outImg.data;
+        if (!selected.length) {
+          for (let i = 0, p = 0; i < stateAt.length; i++, p += 4) {
+            const c = stateAt[i] ? NODATA : WATER;
+            data[p] = c[0]; data[p + 1] = c[1]; data[p + 2] = c[2]; data[p + 3] = 255;
+          }
+          ctx.putImageData(outImg, 0, 0);
+          $('rm-legend').innerHTML = '<span class="rm__hint">Choose a layer to colour the map.</span>';
+          return;
+        }
+
+        const vals = selected.map((k) => meta.values[k] ?? {});
+        // One shared maximum across the chosen layers keeps their intensities
+        // comparable — a state that leads in a small resource should not look
+        // as loaded as one sitting on a huge deposit.
+        let max = 0;
+        for (const v of vals) for (const n of Object.values(v)) if (n > max) max = n;
+
+        // Per-state: which layer leads, and the total across the selection.
+        const lead = new Uint8Array(676 * 1);
+        const total = new Float32Array(700);
+        const leadIdx = new Int8Array(700).fill(-1);
+        for (let s = 1; s < 700; s++) {
+          let best = 0, bestI = -1, sum = 0;
+          for (let li = 0; li < vals.length; li++) {
+            const n = vals[li][s] ?? 0;
+            sum += n;
+            if (n > best) { best = n; bestI = li; }
+          }
+          total[s] = sum; leadIdx[s] = bestI;
+        }
+
+        const single = selected.length === 1;
+        for (let i = 0, p = 0; i < stateAt.length; i++, p += 4) {
+          const s = stateAt[i];
+          let c;
+          if (!s) c = WATER;
+          else if (leadIdx[s] < 0) c = NODATA;
+          else if (single) {
+            c = ramp(scale(total[s], max));
+          } else {
+            // Hue says who leads; lightness says how much is there.
+            const base = SERIES_RGB[leadIdx[s]];
+            const t = 0.25 + 0.75 * scale(total[s], max);
+            c = [base[0] * t + NODATA[0] * (1 - t),
+                 base[1] * t + NODATA[1] * (1 - t),
+                 base[2] * t + NODATA[2] * (1 - t)];
+          }
+          data[p] = c[0]; data[p + 1] = c[1]; data[p + 2] = c[2]; data[p + 3] = 255;
+        }
+        ctx.putImageData(outImg, 0, 0);
+
+        $('rm-legend').innerHTML = single
+          ? `<div class="rm__lg">
+               <span class="rm__lgname">${meta.layers.find((l) => l.key === selected[0]).name}</span>
+               <span class="rm__scale">0</span>
+               <span class="rm__bar" style="background:linear-gradient(90deg,${SEQ.join(',')})"></span>
+               <span class="rm__scale">${max} ${meta.layers.find((l) => l.key === selected[0]).unit}</span>
+             </div>`
+          : `<div class="rm__lg">
+               ${selected.map((k, i) => `<span class="rm__key">
+                  <span class="rm__swatch" style="background:${SERIES[i].hex}"></span>
+                  ${meta.layers.find((l) => l.key === k).name}</span>`).join('')}
+               <span class="rm__hint">hue = largest here · brightness = total, up to ${max}</span>
+             </div>`;
+      }
+
+      // ── Hover ────────────────────────────────────────────────────
+      const tip = $('rm-tip');
+      canvas.addEventListener('mousemove', (e) => {
+        const r = canvas.getBoundingClientRect();
+        const x = Math.floor((e.clientX - r.left) / r.width * W);
+        const y = Math.floor((e.clientY - r.top) / r.height * H);
+        if (x < 0 || y < 0 || x >= W || y >= H) return;
+        const s = stateAt[y * W + x];
+        const st = meta.states[s];
+        if (!st) { tip.hidden = true; return; }
+        const rows = meta.layers
+          .map((l) => ({ l, n: meta.values[l.key]?.[s] ?? 0 }))
+          .filter((r) => r.n > 0)
+          .sort((a, b) => b.n - a.n);
+        tip.innerHTML = `<b>${st.name}</b>${st.region ? `<i>${st.region}</i>` : ''}
+          ${rows.length
+            ? `<table>${rows.map((r) => `<tr><td>${r.l.name}</td><td>${r.n}</td></tr>`).join('')}</table>`
+            : '<span class="rm__hint">no mapped resources</span>'}`;
+        tip.hidden = false;
+        tip.style.left = `${e.clientX - r.left + 14}px`;
+        tip.style.top = `${e.clientY - r.top + 14}px`;
+      });
+      canvas.addEventListener('mouseleave', () => { tip.hidden = true; });
+      canvas.addEventListener('click', (e) => {
+        const r = canvas.getBoundingClientRect();
+        const x = Math.floor((e.clientX - r.left) / r.width * W);
+        const y = Math.floor((e.clientY - r.top) / r.height * H);
+        const st = meta.states[stateAt[y * W + x]];
+        if (st) location.href = `${base}states#${st.id}`;
+      });
+
+      function syncHash() {
+        history.replaceState(null, '', selected.length ? `#l=${selected.join(',')}` : location.pathname);
+      }
+      $('rm-sqrt').addEventListener('change', draw);
+      $('rm-clear').addEventListener('click', () => { selected.length = 0; renderLayers(); draw(); syncHash(); });
+
+      // A map view in the URL, so a layer set can be linked to.
+      const fromHash = new URLSearchParams(location.hash.slice(1)).get('l');
+      const wanted = fromHash
+        ? fromHash.split(',').filter((k) => meta.layers.some((l) => l.key === k)).slice(0, MAX_LAYERS)
+        : [(meta.layers.find((l) => /iron/i.test(l.name)) ?? meta.layers[0]).key];
+      selected.push(...wanted);
+      renderLayers();
+      draw();
+    })();
+  </script>
+
+  <style is:global>
+    .rm { display: grid; grid-template-columns: minmax(13rem, 16rem) 1fr; gap: 1.4rem; align-items: start; }
+    @media (max-width: 900px) { .rm { grid-template-columns: 1fr; } }
+    .rm__note { font-size: 0.7rem; color: var(--text-faint); margin: 0.25rem 0 0.5rem; line-height: 1.45; }
+    .rm__layers { display: flex; flex-direction: column; gap: 0.1rem; }
+    .rm__layer {
+      display: flex; align-items: center; gap: 0.45rem;
+      background: none; border: 0; cursor: pointer; font: inherit; font-size: 0.78rem;
+      color: var(--text-dim); text-align: left; padding: 0.22rem 0.3rem; border-radius: 4px;
+    }
+    .rm__layer:hover:not(:disabled) { background: var(--bg-elev); color: var(--text); }
+    .rm__layer.is-on { color: var(--text); background: var(--bg-elev); }
+    .rm__layer:disabled { opacity: 0.35; cursor: not-allowed; }
+    .rm__swatch {
+      width: 11px; height: 11px; border-radius: 3px; flex-shrink: 0;
+      border: 1px solid var(--border-strong);
+    }
+    .rm__toggle {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.76rem; color: var(--text-dim); cursor: pointer;
+    }
+    .rm__toggle input { accent-color: var(--gold); margin: 0; }
+
+    .rm__canvaswrap { position: relative; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .rm__canvaswrap canvas {
+      display: block; width: 100%; height: auto;
+      image-rendering: auto; cursor: crosshair; background: #101216;
+    }
+    .rm__legend { margin-bottom: 0.5rem; min-height: 1.6rem; }
+    .rm__lg { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; font-size: 0.76rem; }
+    .rm__lgname { color: var(--text); font-weight: 500; }
+    .rm__key { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--text-soft); }
+    .rm__bar { width: 12rem; height: 9px; border-radius: 3px; display: inline-block; }
+    .rm__scale { font-family: var(--font-mono); font-size: 0.62rem; color: var(--text-faint); }
+    .rm__hint { font-size: 0.72rem; color: var(--text-faint); }
+
+    .rm__tip {
+      position: absolute; z-index: 5; pointer-events: none;
+      background: var(--bg-elev); border: 1px solid var(--border-strong);
+      border-radius: 6px; padding: 0.4rem 0.55rem; font-size: 0.75rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5); max-width: 16rem;
+    }
+    .rm__tip[hidden] { display: none; }
+    .rm__tip b { display: block; font-size: 0.82rem; }
+    .rm__tip i { display: block; font-style: normal; color: var(--text-faint); font-size: 0.66rem; margin-bottom: 0.2rem; }
+    .rm__tip table { border-collapse: collapse; margin-top: 0.15rem; }
+    .rm__tip td { padding: 0.04rem 0; color: var(--text-soft); }
+    .rm__tip td:last-child { text-align: right; padding-left: 0.8rem; font-variant-numeric: tabular-nums; color: var(--text); }
+  </style>
+</Base>
