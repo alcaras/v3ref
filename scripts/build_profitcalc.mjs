@@ -26,6 +26,7 @@ const buildingsOut = buildings
       pms: g.pms.map((pm) => ({
         id: pm.id,
         name: pm.name,
+        icon: pm.icon,
         inputs: pm.inputs.map((l) => ({ g: l.good, a: l.amount, k: l.kind })),
         outputs: pm.outputs.map((l) => ({ g: l.good, a: l.amount, k: l.kind })),
         jobs: pm.jobs.map((j) => ({ p: j.name, a: j.amount })),

@@ -7,39 +7,42 @@ const base = import.meta.env.BASE_URL;
   title="Profit Calculator"
   active="profit-calculator"
   eyebrow="Tools"
+  description="Compare every Victoria 3 production method at your own market prices: per building, per group, ranked, with per-worker and per-construction returns."
   pageStats={[{ value: 'per level', label: 'at full employment' }]}
 >
-  <div class="pc">
-    <div class="pc__controls">
-      <label class="pc__field">
-        <span class="pc__label">Building</span>
-        <select id="pc-building" class="pc__select"><option>Loading…</option></select>
-      </label>
-      <div id="pc-pmgroups" class="pc__pmgroups"></div>
-    </div>
-
-    <div class="pc__results">
-      <h2 class="sect">Prices</h2>
-      <p class="pc__hint">Market prices range ±75% of base. Drag to model your market.</p>
+  <div class="pc__top">
+    <label class="pc__field">
+      <span class="pc__label">Building</span>
+      <select id="pc-building" class="pc__select"><option>Loading…</option></select>
+    </label>
+    <div class="pc__pricebox">
+      <span class="pc__label">Market prices — drag to model your market (±75% of base)</span>
       <div id="pc-prices"></div>
-
-      <h2 class="sect">Result per building level</h2>
-      <div id="pc-summary" class="pc__summary"></div>
     </div>
   </div>
 
+  <div id="pc-summary" class="pc__summary"></div>
+
+  <h2 class="sect">Every method, ranked at these prices</h2>
+  <p class="pc__hint">
+    One block per production-method group — you run one method from each. Every option shows what the
+    <em>whole building</em> would earn if you picked it, holding your other groups fixed, so percentage
+    methods (throughput, automation) are valued in context. <b class="tone-good">Best</b> is marked;
+    the delta is what switching to it would gain or cost you. Click a row to select it.
+  </p>
+  <div id="pc-groups" class="pc__groups"></div>
+
   <p class="caption">
-    Revenue − input costs at your prices, per level at full employment · wages, throughput bonuses,
-    and economy-of-scale not modeled — this is the production margin, not final profitability
+    Revenue − input costs at your prices, per level at full employment · wages, economy-of-scale, and
+    state throughput bonuses are not modeled — this is the production margin, not final profitability
   </p>
 
   <TableTools showBar={false} />
 
-  <h2 class="sect" id="compare">Compare every production method</h2>
+  <h2 class="sect" id="compare">Compare across all buildings</h2>
   <p class="pc__hint">
-    Each row is one production method's own goods flow, valued at the prices set above, so a method you
-    have not selected is still priced with your market. Sort by the per-worker or per-construction column
-    to find where a pound of wages or a point of construction buys the most output.
+    Each row is one method's own goods flow at the prices above. Sort by per-worker or per-construction
+    to find where a wage or a point of construction buys the most output.
   </p>
   <div class="pc__cmpbar">
     <label class="pc__field pc__field--inline">
@@ -59,7 +62,7 @@ const base = import.meta.env.BASE_URL;
           <th style="min-width: 12rem;">Production method</th>
           <th class="num" title="Revenue − input cost at your prices, per building level">Net £/level</th>
           <th class="num" title="Jobs this method adds per level">Workers</th>
-          <th class="num" title="Net £ per worker employed — how much output each job carries">£/worker</th>
+          <th class="num" title="Net £ per worker employed">£/worker</th>
           <th class="num" title="Construction points the building costs">Construction</th>
           <th class="num" title="Net £ per point of construction — the payback on building it">£/construction</th>
         </tr>
@@ -68,20 +71,51 @@ const base = import.meta.env.BASE_URL;
     </table>
   </div></div>
   <p class="caption">
-    Per-method marginal values: only that method's own inputs, outputs, and jobs — a building's total is the
-    sum of its selected methods · percentage-based methods (throughput, automation) have no goods of their own
-    and show as —</p>
+    Per-method marginal values here: only that method's own inputs, outputs, and jobs, so percentage-only
+    methods are omitted — for those, use the in-context ranking above
+  </p>
 
   <script is:inline define:vars={{ base }}>
     (async () => {
       const data = await fetch(`${base}data/profit-calc.json`).then((r) => r.json());
       const $ = (id) => document.getElementById(id);
-      const buildingSel = $('pc-building');
       const state = { building: null, choice: {}, price: {} };
+      const priceOf = (g) => (data.goods[g]?.cost ?? 0) * (1 + (state.price[g] ?? 0) / 100);
 
+      // ── Core model ─────────────────────────────────────────────────
+      // Aggregate a building's flows for a given set of PM choices.
+      // `add` lines sum; `mult` lines scale that good's total, which is why a
+      // method's worth can only be judged alongside the rest of the building.
+      function evaluate(choice) {
+        const flow = {}, mult = {}, jobs = {};
+        for (const [gi, pi] of Object.entries(choice)) {
+          const pm = state.building.pmGroups[gi]?.pms[pi];
+          if (!pm) continue;
+          for (const l of pm.inputs) {
+            if (l.k === 'add') flow[l.g] = (flow[l.g] ?? 0) - l.a;
+            else (mult[l.g] ??= { in: 0, out: 0 }).in += l.a;
+          }
+          for (const l of pm.outputs) {
+            if (l.k === 'add') flow[l.g] = (flow[l.g] ?? 0) + l.a;
+            else (mult[l.g] ??= { in: 0, out: 0 }).out += l.a;
+          }
+          for (const j of pm.jobs) jobs[j.p] = (jobs[j.p] ?? 0) + j.a;
+        }
+        for (const [g, m] of Object.entries(mult)) {
+          if (flow[g] != null) flow[g] *= 1 + (flow[g] > 0 ? m.out : m.in);
+        }
+        let net = 0;
+        for (const [g, units] of Object.entries(flow)) net += units * priceOf(g);
+        return { flow, jobs, net, totalJobs: Object.values(jobs).reduce((s, a) => s + a, 0) };
+      }
+
+      // What the building would earn with one group switched to `pi`.
+      const evaluateWith = (gi, pi) => evaluate({ ...state.choice, [gi]: pi });
+
+      // ── Building picker ────────────────────────────────────────────
+      const buildingSel = $('pc-building');
       buildingSel.innerHTML = '';
-      let lastGroup = null;
-      let optgroup = null;
+      let lastGroup = null, optgroup = null;
       for (const b of data.buildings) {
         if (b.group !== lastGroup) {
           optgroup = document.createElement('optgroup');
@@ -98,108 +132,68 @@ const base = import.meta.env.BASE_URL;
       function pickBuilding(id) {
         state.building = data.buildings.find((b) => b.id === id);
         state.choice = {};
-        const wrap = $('pc-pmgroups');
-        wrap.innerHTML = '';
-        state.building.pmGroups.forEach((g, gi) => {
-          if (!g.pms.length) return;
-          state.choice[gi] = 0;
-          const label = document.createElement('label');
-          label.className = 'pc__field';
-          label.innerHTML = `<span class="pc__label">${g.name}</span>`;
-          const sel = document.createElement('select');
-          sel.className = 'pc__select';
-          g.pms.forEach((pm, pi) => {
-            const o = document.createElement('option');
-            o.value = pi;
-            o.textContent = pm.name;
-            sel.appendChild(o);
-          });
-          sel.addEventListener('change', () => { state.choice[gi] = Number(sel.value); render(); });
-          label.appendChild(sel);
-          wrap.appendChild(label);
-        });
+        state.building.pmGroups.forEach((g, gi) => { if (g.pms.length) state.choice[gi] = 0; });
+        state.priceRowsFor = null; // force the price rows to rebuild for this building
         render();
       }
 
-      function activePMs() {
-        return Object.entries(state.choice).map(([gi, pi]) => state.building.pmGroups[gi].pms[pi]);
-      }
-
-      function render() {
-        // Aggregate flows: add-lines sum; mult-lines apply to that good's add total.
-        const flow = {}; // good -> net units (output positive)
-        const mult = {}; // good -> {in, out} percentage adjustments
-        const jobs = {};
-        for (const pm of activePMs()) {
-          for (const l of pm.inputs) {
-            if (l.k === 'add') flow[l.g] = (flow[l.g] ?? 0) - l.a;
-            else (mult[l.g] ??= { in: 0, out: 0 }).in += l.a;
-          }
-          for (const l of pm.outputs) {
-            if (l.k === 'add') flow[l.g] = (flow[l.g] ?? 0) + l.a;
-            else (mult[l.g] ??= { in: 0, out: 0 }).out += l.a;
-          }
-          for (const j of pm.jobs) jobs[j.p] = (jobs[j.p] ?? 0) + j.a;
-        }
-        for (const [g, m] of Object.entries(mult)) {
-          if (flow[g] != null) flow[g] *= 1 + (flow[g] > 0 ? m.out : m.in);
-        }
-        state.flow = flow;
-        state.jobs = jobs;
-
-        // Price rows for every good involved. Rebuild the ROWS only when the
-        // set of goods changes — re-creating a slider mid-drag destroys the
-        // element the browser is tracking, which reads as "click to step"
-        // instead of dragging. Price moves only update labels + summary.
-        const involved = Object.keys(flow).filter((g) => flow[g] !== 0);
-        const signature = involved.join('|');
-        if (signature !== state.priceRowsFor) {
-          state.priceRowsFor = signature;
-          const prices = $('pc-prices');
-          prices.innerHTML = '';
-          for (const g of involved) {
-            if (state.price[g] == null) state.price[g] = 0; // % offset from base
-            const good = data.goods[g];
-            const row = document.createElement('div');
-            row.className = 'pc__price';
-            row.innerHTML = `
-              <img src="${base}${good.icon}" alt="" loading="lazy" />
-              <span class="pc__pname">${good.name}</span>
-              <input type="range" min="-75" max="75" step="5" value="${state.price[g]}" data-good="${g}" />
-              <span class="pc__pval" data-val="${g}"></span>`;
-            row.querySelector('input').addEventListener('input', (e) => {
-              state.price[g] = Number(e.target.value);
-              renderValues();
-              renderCompare();
-            });
-            prices.appendChild(row);
+      // ── Prices ─────────────────────────────────────────────────────
+      // Rebuild the ROWS only when the set of goods changes: re-creating a
+      // slider mid-drag destroys the element the browser is tracking, which
+      // reads as "click to step" instead of dragging.
+      function renderPriceRows() {
+        // Every good the building could touch under ANY choice, so the slider
+        // set stays put while you compare options.
+        const involved = new Set();
+        for (const g of state.building.pmGroups) {
+          for (const pm of g.pms) {
+            for (const l of [...pm.inputs, ...pm.outputs]) if (l.k === 'add') involved.add(l.g);
           }
         }
-        renderValues();
-      }
+        const list = [...involved].sort((a, b) => data.goods[a].name.localeCompare(data.goods[b].name));
+        const signature = list.join('|');
+        if (signature === state.priceRowsFor) return;
+        state.priceRowsFor = signature;
 
-      // Everything that depends on prices but not on which goods are involved.
-      function renderValues() {
-        const flow = state.flow, jobs = state.jobs;
-        const involved = Object.keys(flow).filter((g) => flow[g] !== 0);
-        for (const g of involved) {
+        const prices = $('pc-prices');
+        prices.innerHTML = '';
+        for (const g of list) {
+          if (state.price[g] == null) state.price[g] = 0; // % offset from base
           const good = data.goods[g];
+          const row = document.createElement('div');
+          row.className = 'pc__price';
+          row.innerHTML = `
+            <img src="${base}${good.icon}" alt="" loading="lazy" />
+            <span class="pc__pname">${good.name}</span>
+            <input type="range" min="-75" max="75" step="5" value="${state.price[g]}" data-good="${g}" />
+            <span class="pc__pval" data-val="${g}"></span>`;
+          row.querySelector('input').addEventListener('input', (e) => {
+            state.price[g] = Number(e.target.value);
+            renderPriceLabels();
+            renderSummary();
+            renderGroups();
+            renderCompare();
+          });
+          prices.appendChild(row);
+        }
+        renderPriceLabels();
+      }
+
+      function renderPriceLabels() {
+        for (const el of document.querySelectorAll('[data-val]')) {
+          const g = el.dataset.val;
           const pct = state.price[g] ?? 0;
-          const el = document.querySelector(`[data-val="${g}"]`);
-          if (el) el.innerHTML = `£${(good.cost * (1 + pct / 100)).toFixed(1)} <i>(${pct >= 0 ? '+' : ''}${pct}%)</i>`;
+          el.innerHTML = `£${priceOf(g).toFixed(1)} <i>(${pct >= 0 ? '+' : ''}${pct}%)</i>`;
         }
+      }
 
-        // Summary.
-        let revenue = 0, cost = 0;
-        const lines = involved.map((g) => {
-          const good = data.goods[g];
-          const price = good.cost * (1 + (state.price[g] ?? 0) / 100);
-          const value = flow[g] * price;
-          if (value >= 0) revenue += value; else cost -= value;
-          return { name: good.name, icon: good.icon, units: flow[g], value };
-        }).sort((a, b) => b.value - a.value);
-        const totalJobs = Object.values(jobs).reduce((s, a) => s + a, 0);
-        const net = revenue - cost;
+      // ── Summary ────────────────────────────────────────────────────
+      function renderSummary() {
+        const { flow, jobs, net, totalJobs } = evaluate(state.choice);
+        const lines = Object.entries(flow)
+          .filter(([, u]) => u !== 0)
+          .map(([g, units]) => ({ name: data.goods[g].name, icon: data.goods[g].icon, units, value: units * priceOf(g) }))
+          .sort((a, b) => b.value - a.value);
         $('pc-summary').innerHTML = `
           <div class="pc__net ${net >= 0 ? 'tone-good' : 'tone-bad'}">£${net.toFixed(0)} <span>net / level</span></div>
           <table class="vtbl pc__table"><tbody>
@@ -213,17 +207,86 @@ const base = import.meta.env.BASE_URL;
           </tbody></table>`;
       }
 
-      // ── Compare-all table ───────────────────────────────────────────
-      // Flatten every (building, PM) pair once; only the money is recomputed
-      // when prices move.
+      // ── Ranked options, one block per PM group ─────────────────────
+      function renderGroups() {
+        const wrap = $('pc-groups');
+        wrap.innerHTML = '';
+        state.building.pmGroups.forEach((g, gi) => {
+          if (!g.pms.length) return;
+          const current = state.choice[gi];
+          const currentNet = evaluateWith(gi, current).net;
+          const options = g.pms.map((pm, pi) => {
+            const r = evaluateWith(gi, pi);
+            return {
+              pi, pm, net: r.net, jobs: r.totalJobs, delta: r.net - currentNet,
+              // Why an automation option can be right despite a lower net: it
+              // buys the same output with fewer workers.
+              perWorker: r.totalJobs > 0 ? r.net / r.totalJobs : null,
+            };
+          });
+          const best = Math.max(...options.map((o) => o.net));
+          // Rank by value, but keep it stable so equal options don't jump around.
+          const ranked = [...options].sort((a, b) => b.net - a.net || a.pi - b.pi);
+
+          const block = document.createElement('div');
+          block.className = 'pc__group';
+          block.innerHTML = `
+            <div class="pc__gname">${g.name}</div>
+            <table class="vtbl pc__gtable">
+              <thead><tr>
+                <th>Method</th><th class="num">Net £</th><th class="num">vs current</th>
+                <th class="num" title="Total jobs in the building with this option">Jobs</th>
+                <th class="num" title="Net £ per worker with this option">£/wkr</th>
+              </tr></thead>
+              <tbody>
+              ${ranked.map((o) => `
+                <tr class="pc__opt ${o.pi === current ? 'is-current' : ''} ${o.net === best ? 'is-best' : ''}"
+                    data-gi="${gi}" data-pi="${o.pi}">
+                  <td class="pc__optname">
+                    <img src="${base}${o.pm.icon ?? ''}" alt="" loading="lazy"
+                         onerror="this.style.visibility='hidden'" />
+                    ${o.pm.name}
+                    ${o.net === best ? '<span class="pc__badge">best</span>' : ''}
+                  </td>
+                  <td class="num"><b class="${o.net >= 0 ? 'tone-good' : 'tone-bad'}">£${o.net.toFixed(0)}</b></td>
+                  <td class="num pc__delta">${
+                    o.pi === current
+                      ? '<span class="pc__cur">current</span>'
+                      : `<span class="${o.delta > 0 ? 'tone-good' : o.delta < 0 ? 'tone-bad' : 'tone-neutral'}">${
+                          o.delta > 0 ? '+' : ''}£${o.delta.toFixed(0)}</span>`
+                  }</td>
+                  <td class="num dim" title="Total jobs in the building with this option">${o.jobs}</td>
+                  <td class="num dim" title="Net £ per worker — how much each job carries with this option">${
+                    o.perWorker == null ? '<span class="cell__dash">—</span>' : o.perWorker.toFixed(2)
+                  }</td>
+                </tr>`).join('')}
+            </tbody></table>`;
+          wrap.appendChild(block);
+        });
+
+        wrap.querySelectorAll('.pc__opt').forEach((tr) =>
+          tr.addEventListener('click', () => {
+            state.choice[tr.dataset.gi] = Number(tr.dataset.pi);
+            renderSummary();
+            renderGroups();
+          }));
+      }
+
+      function render() {
+        renderPriceRows();
+        renderSummary();
+        renderGroups();
+        renderCompare();
+      }
+
+      // ── Compare across all buildings ───────────────────────────────
       const rows = [];
       for (const b of data.buildings) {
         for (const g of b.pmGroups) {
           for (const pm of g.pms) {
             if (!pm.inputs.length && !pm.outputs.length) continue; // pure % methods
             rows.push({
-              b,
-              pm,
+              b, pm,
               jobs: pm.jobs.reduce((s, j) => s + j.a, 0),
               search: `${b.name} ${g.name} ${pm.name} ${[...pm.inputs, ...pm.outputs]
                 .map((l) => data.goods[l.g]?.name ?? l.g).join(' ')}`.toLowerCase(),
@@ -231,8 +294,6 @@ const base = import.meta.env.BASE_URL;
           }
         }
       }
-
-      const priceOf = (g) => (data.goods[g]?.cost ?? 0) * (1 + (state.price[g] ?? 0) / 100);
       const money = (lines, sign) =>
         lines.filter((l) => l.k === 'add').reduce((s, l) => s + sign * l.a * priceOf(l.g), 0);
 
@@ -241,20 +302,16 @@ const base = import.meta.env.BASE_URL;
         const onlyPositive = $('pc-cmp-positive').checked;
         const body = $('pc-cmp').tBodies[0];
         const out = [];
-        let shown = 0;
         for (const r of rows) {
           if (q && !r.search.includes(q)) continue;
           const net = money(r.pm.outputs, 1) + money(r.pm.inputs, -1);
           if (onlyPositive && net <= 0) continue;
-          // Automation methods REMOVE jobs (negative employment). Dividing a
-          // negative net by negative workers yields a cheerful positive ratio
-          // that means nothing, so per-worker only applies where jobs are added.
+          // Automation methods REMOVE jobs; a negative net over negative workers
+          // yields a cheerful positive ratio that means nothing.
           const perWorker = r.jobs > 0 ? net / r.jobs : null;
           const perConstruction = r.b.construction ? net / r.b.construction : null;
-          shown++;
           const tone = (v) => (v > 0 ? 'tone-good' : v < 0 ? 'tone-bad' : 'tone-neutral');
-          const num = (v, digits = 0) =>
-            v == null ? '<span class="cell__dash">—</span>' : v.toFixed(digits);
+          const num = (v, d = 0) => (v == null ? '<span class="cell__dash">—</span>' : v.toFixed(d));
           out.push({ sort: [r.b.name, r.pm.name, net, r.jobs, perWorker, r.b.construction, perConstruction], html: `<tr>
             <td class="lead-cell" data-sort="${r.b.name}">
               <span class="lead"><img class="lead__icon" src="${base}${r.b.icon}" alt="" loading="lazy" />
@@ -268,9 +325,9 @@ const base = import.meta.env.BASE_URL;
           </tr>` });
         }
 
-        // Re-applying the table's active sort ourselves: TableTools sorts the
-        // live DOM, and we just replaced every row, so a price nudge would
-        // otherwise silently drop the user back to build order.
+        // Re-apply the table's active sort: TableTools sorts the live DOM, and
+        // we just replaced every row, so a price nudge would otherwise drop the
+        // user back to build order.
         const heads = [...$('pc-cmp').tHead.rows[0].cells];
         const col = heads.findIndex((th) => (th.getAttribute('aria-sort') ?? 'none') !== 'none');
         if (col >= 0) {
@@ -278,31 +335,30 @@ const base = import.meta.env.BASE_URL;
           out.sort((a, b) => {
             const av = a.sort[col], bv = b.sort[col];
             if (av == null && bv == null) return 0;
-            if (av == null) return 1;   // blanks sink, both directions
+            if (av == null) return 1;   // blanks sink in both directions
             if (bv == null) return -1;
             return (typeof av === 'number' ? av - bv : String(av).localeCompare(String(bv))) * dir;
           });
         }
         body.innerHTML = out.map((r) => r.html).join('');
-        $('pc-cmp-count').textContent = `${shown} of ${rows.length} methods`;
-        // Re-wire sorting: TableTools binds once on load, and we just replaced
-        // every row, so any frozen build order is stale.
+        $('pc-cmp-count').textContent = `${out.length} of ${rows.length} methods`;
         body.querySelectorAll('tr').forEach((tr) => tr.removeAttribute('data-tt-i'));
       }
 
       $('pc-cmp-filter').addEventListener('input', renderCompare);
       $('pc-cmp-positive').addEventListener('change', renderCompare);
-
       buildingSel.addEventListener('change', () => pickBuilding(buildingSel.value));
       pickBuilding(data.buildings[0].id);
-      renderCompare();
     })();
   </script>
 
   <style is:global>
-    .pc { display: grid; grid-template-columns: minmax(16rem, 22rem) 1fr; gap: 2rem; align-items: start; }
-    @media (max-width: 900px) { .pc { grid-template-columns: 1fr; } }
-    .pc__field { display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 0.8rem; }
+    .pc__top {
+      display: grid; grid-template-columns: minmax(14rem, 20rem) 1fr;
+      gap: 1.5rem; align-items: start; margin-bottom: 1rem;
+    }
+    @media (max-width: 900px) { .pc__top { grid-template-columns: 1fr; } }
+    .pc__field { display: flex; flex-direction: column; gap: 0.25rem; }
     .pc__label {
       font-family: var(--font-ui); font-size: 0.62rem; text-transform: uppercase;
       letter-spacing: 0.16em; color: var(--gold-soft); font-weight: 500;
@@ -312,18 +368,56 @@ const base = import.meta.env.BASE_URL;
       border: 1px solid var(--border); border-radius: 6px;
       font: inherit; font-size: 0.85rem; padding: 0.4rem 0.5rem;
     }
-    .pc__hint { font-size: 0.72rem; color: var(--text-faint); margin: 0.2rem 0 0.6rem; }
+    .pc__pricebox { display: flex; flex-direction: column; gap: 0.3rem; }
+    .pc__hint { font-size: 0.76rem; color: var(--text-dim); margin: 0 0 0.7rem; max-width: 62rem; line-height: 1.5; }
     .pc__price {
-      display: grid; grid-template-columns: 22px 9rem 1fr 8rem;
-      gap: 0.6rem; align-items: center; margin-bottom: 0.35rem; font-size: 0.82rem;
+      display: grid; grid-template-columns: 20px 8rem minmax(6rem, 22rem) 8rem;
+      gap: 0.6rem; align-items: center; font-size: 0.8rem;
     }
-    .pc__price img { width: 20px; height: 20px; object-fit: contain; }
+    .pc__price img { width: 18px; height: 18px; object-fit: contain; }
     .pc__price input { accent-color: var(--gold); }
     .pc__pval { font-variant-numeric: tabular-nums; }
     .pc__pval i { color: var(--text-faint); font-style: normal; font-size: 0.72rem; }
-    .pc__net { font-family: var(--font-display); font-size: 2rem; margin: 0.3rem 0 0.6rem; }
+
+    .pc__net { font-family: var(--font-display); font-size: 2rem; margin: 0.2rem 0 0.5rem; }
     .pc__net span { font-size: 0.9rem; color: var(--text-dim); font-family: var(--font-ui); }
     .pc__table { max-width: 34rem; }
+
+    .pc__groups {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+      gap: 0.5rem 1.5rem; align-items: start;
+    }
+    .pc__gname {
+      font-family: var(--font-ui); font-size: 0.62rem; text-transform: uppercase;
+      letter-spacing: 0.16em; color: var(--gold-soft); font-weight: 500;
+      border-bottom: 1px solid var(--border); padding-bottom: 0.2rem; margin-bottom: 0.1rem;
+    }
+    .pc__gtable { margin-bottom: 0.8rem; }
+    .pc__gtable thead th {
+      position: static; border-bottom: 1px solid var(--border);
+      font-size: 0.55rem; letter-spacing: 0.1em; padding: 0.2rem 0.5rem;
+    }
+    .pc__opt { cursor: pointer; }
+    .pc__opt:hover td { background: oklch(0.30 0.04 80 / 0.3); }
+    .pc__opt td { padding: 0.24rem 0.5rem; }
+    .pc__optname {
+      display: flex; align-items: center; gap: 0.4rem;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .pc__optname img { width: 18px; height: 18px; object-fit: contain; flex-shrink: 0; }
+    .pc__opt.is-best td { box-shadow: inset 0 0 0 0 transparent; }
+    .pc__opt.is-best .pc__optname { color: var(--text); }
+    .pc__opt.is-current td:first-child { box-shadow: inset 3px 0 0 var(--gold); }
+    .pc__opt.is-current { background: var(--bg-elev); }
+    .pc__badge {
+      font-family: var(--font-mono); font-size: 0.54rem; text-transform: uppercase;
+      letter-spacing: 0.1em; color: var(--tone-good);
+      border: 1px solid color-mix(in srgb, var(--tone-good) 45%, transparent);
+      border-radius: 999px; padding: 0.02rem 0.35rem; flex-shrink: 0;
+    }
+    .pc__cur { font-family: var(--font-mono); font-size: 0.58rem; color: var(--text-faint); letter-spacing: 0.08em; }
+    .pc__delta { font-variant-numeric: tabular-nums; }
+
     .pc__cmpbar { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
     .pc__field--inline { flex-direction: row; align-items: center; gap: 0.5rem; margin: 0; }
     .pc__field--inline .pc__select { min-width: 18rem; }
