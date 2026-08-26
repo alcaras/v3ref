@@ -1,0 +1,133 @@
+---
+import Base from '../../layouts/Base.astro';
+import goodsJson from '../../data/goods.json';
+import { getEntity } from '../../lib/entities';
+
+export function getStaticPaths() {
+  return (goodsJson as any).goods.map((g: any) => ({ params: { slug: g.slug }, props: { good: g } }));
+}
+
+const { good } = Astro.props as { good: any };
+const base = import.meta.env.BASE_URL;
+const allGoods = (goodsJson as any).goods as any[];
+const goodName = (id: string) => allGoods.find((g) => g.id === id)?.name ?? id;
+
+// Group producer/consumer PM lines by building so each building reads as one
+// row with its PM options. A PM shared by several buildings appears under each.
+function byBuilding(lines: any[]) {
+  const map = new Map<string, { id: string; name: string; pms: any[] }>();
+  for (const line of lines) {
+    const targets = line.buildings.length ? line.buildings : [{ id: '_none', name: '(no building)' }];
+    for (const b of targets) {
+      if (!map.has(b.id)) map.set(b.id, { id: b.id, name: b.name, pms: [] });
+      map.get(b.id)!.pms.push(line);
+    }
+  }
+  return [...map.values()].sort(
+    (a, b) => Math.max(...b.pms.map((p) => p.amount)) - Math.max(...a.pms.map((p) => p.amount)),
+  );
+}
+const producers = byBuilding(good.producers);
+const consumers = byBuilding(good.consumers);
+const amount = (p: any) => (p.kind === 'mult' ? `${p.amount > 0 ? '+' : ''}${Math.round(p.amount * 100)}%` : p.amount);
+---
+<Base
+  title={good.name}
+  active="goods"
+  eyebrow={`Goods · ${good.category}`}
+  pageIcon={good.icon}
+  description={`Victoria 3 ${good.name}: base price £${good.cost}, every building and production method that produces or consumes it, and the pop needs it satisfies.`}
+  ogImage={good.icon}
+  pageStats={[
+    { value: `£${good.cost}`, label: 'base price' },
+    { value: producers.length, label: 'producing buildings' },
+    { value: consumers.length, label: 'consuming buildings' },
+  ]}
+>
+  <div class="legends" style="margin-bottom: 0.5rem;">
+    <div class="legend">
+      <span class={`catchip cat-${good.category}`}>{good.category}</span>
+      {good.obsessionChance > 0 && <span class="chip">Obsession chance {Math.round(good.obsessionChance * 100)}%</span>}
+      {good.prestigeFactor > 0 && <span class="chip">Prestige factor {good.prestigeFactor}</span>}
+      {good.tradedQuantity != null && <span class="chip">Trade quantity {good.tradedQuantity}</span>}
+      {good.convoyCostMultiplier != null && <span class="chip">Convoy cost ×{good.convoyCostMultiplier}</span>}
+      {good.unused && <span class="chip">Legacy — nothing in the current game produces or wants it</span>}
+    </div>
+  </div>
+
+  <h2 class="sect">Produced by</h2>
+  {producers.length ? (
+    <div class="grid"><div class="grid__scroll">
+      <table class="vtbl">
+        <thead><tr><th>Building</th><th>Production method</th><th class="num">Output / level</th></tr></thead>
+        <tbody>
+          {producers.map((b) => b.pms.map((p, i) => (
+            <tr>
+              {i === 0 && <td rowspan={b.pms.length} class="lead-cell">
+                <span class="lead">
+                  {getEntity(b.id)?.icon && <img class="lead__icon" src={`${base}${getEntity(b.id)!.icon}`} alt="" loading="lazy" />}
+                  {b.name}
+                </span>
+              </td>}
+              <td>{p.pmName}</td>
+              <td class="num tone-good">{amount(p)}</td>
+            </tr>
+          )))}
+        </tbody>
+      </table>
+    </div></div>
+  ) : (
+    <p class="dim" style="color: var(--text-dim);">No production method outputs {good.name}.</p>
+  )}
+
+  <h2 class="sect">Used by</h2>
+  {consumers.length ? (
+    <div class="grid"><div class="grid__scroll">
+      <table class="vtbl">
+        <thead><tr><th>Building</th><th>Production method</th><th class="num">Input / level</th></tr></thead>
+        <tbody>
+          {consumers.map((b) => b.pms.map((p, i) => (
+            <tr>
+              {i === 0 && <td rowspan={b.pms.length} class="lead-cell">
+                <span class="lead">
+                  {getEntity(b.id)?.icon && <img class="lead__icon" src={`${base}${getEntity(b.id)!.icon}`} alt="" loading="lazy" />}
+                  {b.name}
+                </span>
+              </td>}
+              <td>{p.pmName}</td>
+              <td class="num tone-bad">{amount(p)}</td>
+            </tr>
+          )))}
+        </tbody>
+      </table>
+    </div></div>
+  ) : (
+    <p style="color: var(--text-dim);">No production method consumes {good.name}.</p>
+  )}
+
+  <h2 class="sect">Pop demand</h2>
+  {good.needs.length ? (
+    <div class="grid"><div class="grid__scroll">
+      <table class="vtbl">
+        <thead><tr><th>Need</th><th class="num">Weight</th><th>Competing goods (weight)</th></tr></thead>
+        <tbody>
+          {good.needs.map((n: any) => (
+            <tr>
+              <td>{n.name}{n.isDefault && <span class="chip" title="Fallback good when the market has no supply"> · default</span>}</td>
+              <td class="num">{n.weight}</td>
+              <td class="dim">
+                {n.rivals.map((r: any, i: number) => (
+                  <>{i > 0 && ', '}<a href={`${base}goods/${r.good}`}>{goodName(r.good)}</a> ({r.weight})</>
+                ))}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div></div>
+  ) : (
+    <p style="color: var(--text-dim);">Pops never buy {good.name} directly — demand comes only from buildings.</p>
+  )}
+
+  <p class="caption">Quantities are per building level at full employment · weights steer pop spending between substitute goods</p>
+</Base>

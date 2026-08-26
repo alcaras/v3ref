@@ -1,0 +1,26 @@
+---
+// A linked entity reference: icon + name, linking to the entity's page.
+// Entities without a page (not built yet) render as plain text — safe to use
+// everywhere from day one.
+import { getEntity, type Entity } from '../lib/entities';
+
+interface Props {
+  id?: string;
+  entity?: Entity;
+  label?: string;
+  showIcon?: boolean;
+}
+const { id, entity: entityProp, label, showIcon = true } = Astro.props;
+const entity = entityProp ?? (id ? getEntity(id) : undefined);
+const base = import.meta.env.BASE_URL;
+const text = label ?? entity?.name ?? id ?? '?';
+---
+{entity?.page ? (
+  <a class="term" href={`${base}${entity.page}`}>
+    {showIcon && entity.icon && <img class="term__icon" src={`${base}${entity.icon}`} alt="" loading="lazy" />}{text}
+  </a>
+) : (
+  <span class="term">
+    {showIcon && entity?.icon && <img class="term__icon" src={`${base}${entity.icon}`} alt="" loading="lazy" />}{text}
+  </span>
+)}

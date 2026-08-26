@@ -1,0 +1,426 @@
+[
+ {
+  "a": "aeroplanes",
+  "c": "img/goods/aeroplanes.png",
+  "g": "military",
+  "n": "Aeroplanes",
+  "t": "good",
+  "u": "goods/aeroplanes"
+ },
+ {
+  "a": "ammunition",
+  "c": "img/goods/ammunition.png",
+  "g": "military",
+  "n": "Ammunition",
+  "t": "good",
+  "u": "goods/ammunition"
+ },
+ {
+  "a": "artillery",
+  "c": "img/goods/artillery.png",
+  "g": "military",
+  "n": "Artillery",
+  "t": "good",
+  "u": "goods/artillery"
+ },
+ {
+  "a": "automobiles",
+  "c": "img/goods/automobiles.png",
+  "g": "luxury",
+  "n": "Automobiles",
+  "t": "good",
+  "u": "goods/automobiles"
+ },
+ {
+  "a": "clippers",
+  "c": "img/goods/clippers.png",
+  "g": "industrial",
+  "n": "Clippers",
+  "t": "good",
+  "u": "goods/clippers"
+ },
+ {
+  "a": "clothes",
+  "c": "img/goods/clothes.png",
+  "g": "staple",
+  "n": "Clothes",
+  "t": "good",
+  "u": "goods/clothes"
+ },
+ {
+  "a": "coal",
+  "c": "img/goods/coal.png",
+  "g": "industrial",
+  "n": "Coal",
+  "t": "good",
+  "u": "goods/coal"
+ },
+ {
+  "a": "coffee",
+  "c": "img/goods/coffee.png",
+  "g": "luxury",
+  "n": "Coffee",
+  "t": "good",
+  "u": "goods/coffee"
+ },
+ {
+  "a": "dye",
+  "c": "img/goods/dye.png",
+  "g": "industrial",
+  "n": "Dye",
+  "t": "good",
+  "u": "goods/dye"
+ },
+ {
+  "a": "electricity",
+  "c": "img/goods/electricity.png",
+  "g": "staple",
+  "n": "Electricity",
+  "t": "good",
+  "u": "goods/electricity"
+ },
+ {
+  "a": "engines",
+  "c": "img/goods/locomotives.png",
+  "g": "industrial",
+  "n": "Engines",
+  "t": "good",
+  "u": "goods/engines"
+ },
+ {
+  "a": "explosives",
+  "c": "img/goods/explosives.png",
+  "g": "industrial",
+  "n": "Explosives",
+  "t": "good",
+  "u": "goods/explosives"
+ },
+ {
+  "a": "fabric",
+  "c": "img/goods/fabric.png",
+  "g": "staple",
+  "n": "Fabric",
+  "t": "good",
+  "u": "goods/fabric"
+ },
+ {
+  "a": "fertilizer",
+  "c": "img/goods/fertilizer.png",
+  "g": "industrial",
+  "n": "Fertilizer",
+  "t": "good",
+  "u": "goods/fertilizer"
+ },
+ {
+  "a": "fine_art",
+  "c": "img/goods/fine_art.png",
+  "g": "luxury",
+  "n": "Fine Art",
+  "t": "good",
+  "u": "goods/fine_art"
+ },
+ {
+  "a": "fish",
+  "c": "img/goods/fish.png",
+  "g": "staple",
+  "n": "Fish",
+  "t": "good",
+  "u": "goods/fish"
+ },
+ {
+  "a": "fruit",
+  "c": "img/goods/fruit.png",
+  "g": "luxury",
+  "n": "Fruit",
+  "t": "good",
+  "u": "goods/fruit"
+ },
+ {
+  "a": "furniture",
+  "c": "img/goods/furniture.png",
+  "g": "staple",
+  "n": "Furniture",
+  "t": "good",
+  "u": "goods/furniture"
+ },
+ {
+  "a": "glass",
+  "c": "img/goods/glass.png",
+  "g": "industrial",
+  "n": "Glass",
+  "t": "good",
+  "u": "goods/glass"
+ },
+ {
+  "a": "gold",
+  "c": "img/goods/gold.png",
+  "g": "luxury",
+  "n": "Gold",
+  "t": "good",
+  "u": "goods/gold"
+ },
+ {
+  "a": "grain",
+  "c": "img/goods/grain.png",
+  "g": "staple",
+  "n": "Grain",
+  "t": "good",
+  "u": "goods/grain"
+ },
+ {
+  "a": "groceries",
+  "c": "img/goods/groceries.png",
+  "g": "staple",
+  "n": "Groceries",
+  "t": "good",
+  "u": "goods/groceries"
+ },
+ {
+  "a": "hardwood",
+  "c": "img/goods/hardwood.png",
+  "g": "industrial",
+  "n": "Hardwood",
+  "t": "good",
+  "u": "goods/hardwood"
+ },
+ {
+  "a": "iron",
+  "c": "img/goods/iron.png",
+  "g": "industrial",
+  "n": "Iron",
+  "t": "good",
+  "u": "goods/iron"
+ },
+ {
+  "a": "ironclads",
+  "c": "img/goods/ironclads.png",
+  "g": "military",
+  "n": "Ironclads",
+  "t": "good",
+  "u": "goods/ironclads"
+ },
+ {
+  "a": "lead",
+  "c": "img/goods/lead.png",
+  "g": "industrial",
+  "n": "Lead",
+  "t": "good",
+  "u": "goods/lead"
+ },
+ {
+  "a": "liquor",
+  "c": "img/goods/liquor.png",
+  "g": "luxury",
+  "n": "Liquor",
+  "t": "good",
+  "u": "goods/liquor"
+ },
+ {
+  "a": "luxury_clothes",
+  "c": "img/goods/luxury_clothes.png",
+  "g": "luxury",
+  "n": "Luxury Clothes",
+  "t": "good",
+  "u": "goods/luxury_clothes"
+ },
+ {
+  "a": "luxury_furniture",
+  "c": "img/goods/luxury_furniture.png",
+  "g": "luxury",
+  "n": "Luxury Furniture",
+  "t": "good",
+  "u": "goods/luxury_furniture"
+ },
+ {
+  "a": "manowars",
+  "c": "img/goods/man_o_wars.png",
+  "g": "military",
+  "n": "Man-o-Wars",
+  "t": "good",
+  "u": "goods/manowars"
+ },
+ {
+  "a": "meat",
+  "c": "img/goods/meat.png",
+  "g": "luxury",
+  "n": "Meat",
+  "t": "good",
+  "u": "goods/meat"
+ },
+ {
+  "a": "merchant_marine",
+  "c": "img/goods/merchant_marine.png",
+  "g": "staple",
+  "n": "Merchant Marine",
+  "t": "good",
+  "u": "goods/merchant_marine"
+ },
+ {
+  "a": "oil",
+  "c": "img/goods/oil.png",
+  "g": "industrial",
+  "n": "Oil",
+  "t": "good",
+  "u": "goods/oil"
+ },
+ {
+  "a": "opium",
+  "c": "img/goods/opium.png",
+  "g": "luxury",
+  "n": "Opium",
+  "t": "good",
+  "u": "goods/opium"
+ },
+ {
+  "a": "paper",
+  "c": "img/goods/paper.png",
+  "g": "staple",
+  "n": "Paper",
+  "t": "good",
+  "u": "goods/paper"
+ },
+ {
+  "a": "porcelain",
+  "c": "img/goods/porcelain.png",
+  "g": "luxury",
+  "n": "Porcelain",
+  "t": "good",
+  "u": "goods/porcelain"
+ },
+ {
+  "a": "radios",
+  "c": "img/goods/radios.png",
+  "g": "luxury",
+  "n": "Radios",
+  "t": "good",
+  "u": "goods/radios"
+ },
+ {
+  "a": "rubber",
+  "c": "img/goods/rubber.png",
+  "g": "industrial",
+  "n": "Rubber",
+  "t": "good",
+  "u": "goods/rubber"
+ },
+ {
+  "a": "services",
+  "c": "img/goods/services.png",
+  "g": "staple",
+  "n": "Services",
+  "t": "good",
+  "u": "goods/services"
+ },
+ {
+  "a": "silk",
+  "c": "img/goods/silk.png",
+  "g": "industrial",
+  "n": "Silk",
+  "t": "good",
+  "u": "goods/silk"
+ },
+ {
+  "a": "small_arms",
+  "c": "img/goods/small_arms.png",
+  "g": "military",
+  "n": "Small Arms",
+  "t": "good",
+  "u": "goods/small_arms"
+ },
+ {
+  "a": "steamers",
+  "c": "img/goods/steamers.png",
+  "g": "industrial",
+  "n": "Steamers",
+  "t": "good",
+  "u": "goods/steamers"
+ },
+ {
+  "a": "steel",
+  "c": "img/goods/steel.png",
+  "g": "industrial",
+  "n": "Steel",
+  "t": "good",
+  "u": "goods/steel"
+ },
+ {
+  "a": "sugar",
+  "c": "img/goods/sugar.png",
+  "g": "luxury",
+  "n": "Sugar",
+  "t": "good",
+  "u": "goods/sugar"
+ },
+ {
+  "a": "sulfur",
+  "c": "img/goods/sulfur.png",
+  "g": "industrial",
+  "n": "Sulfur",
+  "t": "good",
+  "u": "goods/sulfur"
+ },
+ {
+  "a": "tanks",
+  "c": "img/goods/tanks.png",
+  "g": "military",
+  "n": "Tanks",
+  "t": "good",
+  "u": "goods/tanks"
+ },
+ {
+  "a": "tea",
+  "c": "img/goods/tea.png",
+  "g": "luxury",
+  "n": "Tea",
+  "t": "good",
+  "u": "goods/tea"
+ },
+ {
+  "a": "telephones",
+  "c": "img/goods/telephones.png",
+  "g": "luxury",
+  "n": "Telephones",
+  "t": "good",
+  "u": "goods/telephones"
+ },
+ {
+  "a": "tobacco",
+  "c": "img/goods/tobacco.png",
+  "g": "luxury",
+  "n": "Tobacco",
+  "t": "good",
+  "u": "goods/tobacco"
+ },
+ {
+  "a": "tools",
+  "c": "img/goods/tools.png",
+  "g": "industrial",
+  "n": "Tools",
+  "t": "good",
+  "u": "goods/tools"
+ },
+ {
+  "a": "transportation",
+  "c": "img/goods/transportation.png",
+  "g": "staple",
+  "n": "Transportation",
+  "t": "good",
+  "u": "goods/transportation"
+ },
+ {
+  "a": "wine",
+  "c": "img/goods/wine.png",
+  "g": "luxury",
+  "n": "Wine",
+  "t": "good",
+  "u": "goods/wine"
+ },
+ {
+  "a": "wood",
+  "c": "img/goods/wood.png",
+  "g": "staple",
+  "n": "Wood",
+  "t": "good",
+  "u": "goods/wood"
+ }
+]

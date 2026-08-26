@@ -1,0 +1,304 @@
+---
+import '../styles/theme.css';
+import patch from '../../data/patch.json';
+import { TABS, SECTIONS } from '../data/tabs';
+
+interface Props {
+  title: string;
+  active?: string;
+  pageStats?: { label: string; value: string | number }[];
+  // Per-page row filter (the header box is global search only). Pass a string
+  // to override the placeholder; hook #page-filter from the page's script.
+  pageFilter?: boolean | string;
+  pageMark?: string;
+  pageIcon?: string;       // img path (relative to base) shown before the title
+  eyebrow?: string;
+  description?: string;
+  ogImage?: string;
+}
+const { title, active, pageStats, pageMark, pageIcon, eyebrow, description, ogImage, pageFilter } = Astro.props;
+const filterPlaceholder = typeof pageFilter === 'string' ? pageFilter : 'Filter this page…';
+const base = import.meta.env.BASE_URL;
+
+const SITE_NAME = 'Victoria 3 Reference';
+const DEFAULT_DESC =
+  "Reference for Paradox's Victoria 3 — goods, buildings, production methods, laws, technologies, and game mechanics, pulled directly from the game's own data files and updated each patch.";
+
+const pageDesc = description || DEFAULT_DESC;
+const fullTitle = `${title} · ${SITE_NAME}`;
+
+const siteOrigin = Astro.site?.origin || 'https://alcaras.github.io';
+const canonicalUrl = new URL(Astro.url.pathname, siteOrigin).href;
+const ogImageUrl = ogImage
+  ? new URL(base + ogImage, siteOrigin).href
+  : new URL(base + 'img/goods/gold.png', siteOrigin).href;
+
+const navSections = SECTIONS
+  .map(section => ({
+    section,
+    items: TABS.filter(t => t.section === section && t.status === 'built'),
+  }))
+  .filter(s => s.items.length > 0);
+const activeSection = navSections.find(s => s.items.some(t => t.slug === active))?.section;
+
+const syncedDate = new Date(patch.syncedAt);
+const syncedLabel = syncedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={pageDesc} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <link rel="icon" type="image/png" href={`${base}img/favicon.png`} />
+    <meta name="theme-color" content="#141310" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={pageDesc} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={pageDesc} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <meta name="keywords" content="Victoria 3, Paradox, grand strategy, game reference, goods, buildings, production methods, laws, technologies, Victoria 3 wiki" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hdr">
+      <div class="hdr__inner">
+        <a class="hdr__brand" href={base}>
+          <span class="hdr__mark" aria-hidden="true">
+            <img src={`${base}img/goods/gold.png`} alt="" />
+          </span>
+          <span class="hdr__title-wrap">
+            <span class="hdr__sub">Victoria 3</span>
+            <span class="hdr__title">Reference</span>
+          </span>
+        </a>
+        <nav class="hdr__nav" aria-label="Site sections">
+          {navSections.map(({ section, items }) => (
+            items.length === 1 ? (
+              <a
+                href={`${base}${items[0].slug}`}
+                class={`hdr__navlink ${active === items[0].slug ? 'is-active' : ''}`}
+              >{items[0].label}</a>
+            ) : (
+            <details class="hdr__menu" data-section={section}>
+              <summary class={`hdr__navlink ${activeSection === section ? 'is-active' : ''}`}>
+                {section}<span class="hdr__caret" aria-hidden="true">▾</span>
+              </summary>
+              <div class="hdr__panel">
+                {items.map(t => (
+                  <a
+                    href={`${base}${t.slug}`}
+                    class={`hdr__panellink ${active === t.slug ? 'is-active' : ''}`}
+                  >
+                    <span class="hdr__panelicon" aria-hidden="true">{t.icon}</span>
+                    {t.label}
+                  </a>
+                ))}
+              </div>
+            </details>
+            )
+          ))}
+        </nav>
+        <script is:inline>
+          // Only one header menu open at a time; close on outside click / Esc.
+          document.addEventListener('click', (e) => {
+            const open = document.querySelectorAll('details.hdr__menu[open]');
+            for (const d of open) {
+              if (!d.contains(e.target)) d.removeAttribute('open');
+            }
+            const hit = e.target.closest?.('details.hdr__menu');
+            if (hit) {
+              for (const d of open) if (d !== hit) d.removeAttribute('open');
+            }
+          });
+          document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+              document.querySelectorAll('details.hdr__menu[open]')
+                .forEach(d => d.removeAttribute('open'));
+            }
+          });
+          // Flip panels near the right edge. `toggle` doesn't bubble — capture.
+          document.addEventListener('toggle', (e) => {
+            const d = e.target;
+            if (!d.classList?.contains('hdr__menu') || !d.open) return;
+            const panel = d.querySelector('.hdr__panel');
+            if (!panel) return;
+            panel.classList.remove('is-right');
+            if (panel.getBoundingClientRect().right > window.innerWidth - 8) {
+              panel.classList.add('is-right');
+            }
+          }, true);
+        </script>
+        <details class="hdr__mobilemenu">
+          <summary class="hdr__navlink">Menu<span class="hdr__caret" aria-hidden="true">▾</span></summary>
+          <nav class="hdr__mobilepanel" aria-label="All pages">
+            {navSections.map(({ section, items }) => (
+              <div class="hdr__mgroup">
+                {items.length > 1 && <div class="hdr__mgroup-label">{section}</div>}
+                {items.map(t => (
+                  <a
+                    href={`${base}${t.slug}`}
+                    class={`hdr__panellink ${active === t.slug ? 'is-active' : ''}`}
+                  >
+                    <span class="hdr__panelicon" aria-hidden="true">{t.icon}</span>
+                    {t.label}
+                  </a>
+                ))}
+              </div>
+            ))}
+          </nav>
+        </details>
+        <span class="hdr__spacer" aria-hidden="true"></span>
+        <label class="hdr__search">
+          <span class="hdr__search-ico" aria-hidden="true">⌕</span>
+          <input
+            id="global-search"
+            type="search"
+            placeholder="Search…"
+            aria-label="Search the whole site"
+            autocomplete="off"
+          />
+          <kbd>/</kbd>
+          <div id="site-search-results" class="hdr__sresults" hidden></div>
+        </label>
+        <script is:inline define:vars={{ base }}>
+          // "/" focuses the search (unless already typing somewhere)
+          document.addEventListener('keydown', (e) => {
+            if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey) return;
+            const t = e.target;
+            if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+            const s = document.getElementById('global-search');
+            if (s) { e.preventDefault(); s.focus(); }
+          });
+
+          // Site-wide search: a light index lazy-fetched on first focus.
+          (() => {
+            const input = document.getElementById('global-search');
+            const panel = document.getElementById('site-search-results');
+            if (!input || !panel) return;
+            let idx = null, sel = -1, rows = [];
+
+            function load() {
+              if (idx) return;
+              idx = [];
+              fetch(`${base}data/search-index.json`)
+                .then((r) => r.json())
+                .then((d) => { idx = d; update(); })
+                .catch(() => {});
+            }
+
+            const escapeHtml = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+
+            function update() {
+              const q = input.value.trim().toLowerCase();
+              sel = -1;
+              if (!q || !idx || !idx.length) { panel.hidden = true; return; }
+              const starts = [], words = [], contains = [];
+              for (const e of idx) {
+                const n = e.n.toLowerCase();
+                if (n.startsWith(q)) starts.push(e);
+                else if (n.includes(q)) (n.includes(' ' + q) ? words : contains).push(e);
+                else if (e.a && e.a.includes(q)) contains.push(e);
+                if (starts.length > 40) break;
+              }
+              const byLen = (a, b) => a.n.length - b.n.length;
+              rows = starts.sort(byLen).concat(words.sort(byLen), contains.sort(byLen)).slice(0, 10);
+              if (!rows.length) { panel.hidden = true; return; }
+              panel.innerHTML = rows.map((e, i) => `
+                <a class="hdr__sres${i === sel ? ' is-sel' : ''}" href="${base}${e.u}">
+                  ${e.c ? `<img src="${base}${e.c}" alt="" loading="lazy" />` : '<span class="hdr__sres-blank"></span>'}
+                  <span class="hdr__sres-txt"><b>${escapeHtml(e.n)}</b><i>${escapeHtml(e.g ? `${e.t} · ${e.g}` : e.t)}</i></span>
+                </a>`).join('');
+              panel.hidden = false;
+            }
+
+            input.addEventListener('focus', load);
+            input.addEventListener('input', update);
+            input.addEventListener('keydown', (e) => {
+              if (panel.hidden) return;
+              if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+                e.preventDefault();
+                sel = (sel + (e.key === 'ArrowDown' ? 1 : -1) + rows.length) % rows.length;
+                panel.querySelectorAll('.hdr__sres').forEach((el, i) =>
+                  el.classList.toggle('is-sel', i === sel));
+              } else if (e.key === 'Enter' && rows.length) {
+                e.preventDefault();
+                location.href = `${base}${rows[sel >= 0 ? sel : 0].u}`;
+              } else if (e.key === 'Escape') {
+                panel.hidden = true;
+              }
+            });
+            document.addEventListener('click', (e) => {
+              if (!panel.contains(e.target) && e.target !== input) panel.hidden = true;
+            });
+          })();
+        </script>
+      </div>
+    </header>
+
+    <main class="main">
+      {(pageStats || pageFilter || eyebrow) && (
+        <div class="page-meta">
+          <div>
+            {eyebrow && <div class="page-eyebrow">{eyebrow}</div>}
+            <h1 class="page-title">
+              {pageIcon && <img class="page-title__icon" src={`${base}${pageIcon}`} alt="" />}
+              {pageMark && <span class="page-title__mark">{pageMark}</span>}
+              {title}
+            </h1>
+          </div>
+          <div class="page-meta__right">
+            {pageFilter && (
+              <label class="page-filter">
+                <span class="page-filter__ico" aria-hidden="true">⌕</span>
+                <input id="page-filter" type="search" autocomplete="off" spellcheck="false"
+                  placeholder={filterPlaceholder} aria-label={filterPlaceholder} />
+              </label>
+            )}
+            {pageStats && (
+              <div class="page-stats">
+                {pageStats.map(s => (
+                  <span class="stat"><b>{s.value}</b> {s.label}</span>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      <slot />
+
+      <footer class="foot">
+        <div class="foot__col">
+          <span class="foot__label">Game</span>
+          <span class="foot__val">{patch.version}</span>
+          <span class="foot__dot">·</span>
+          <span class="foot__val foot__val--dim">synced {syncedLabel}</span>
+        </div>
+        <div class="foot__col foot__col--right">
+          <a href="https://github.com/alcaras/v3reference">Source</a>
+          <span class="foot__dot">·</span>
+          <a href="https://www.paradoxinteractive.com/games/victoria-3" rel="noopener" target="_blank">Victoria 3</a>
+        </div>
+      </footer>
+    </main>
+
+  </body>
+</html>

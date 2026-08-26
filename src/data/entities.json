@@ -1,0 +1,1636 @@
+{
+ "entities": [
+  {
+   "icon": null,
+   "id": "academics",
+   "name": "@academics! Academics",
+   "page": null,
+   "slug": "academics",
+   "type": "pop_type"
+  },
+  {
+   "group": "military",
+   "icon": "img/goods/aeroplanes.png",
+   "id": "aeroplanes",
+   "name": "Aeroplanes",
+   "page": "goods/aeroplanes",
+   "slug": "aeroplanes",
+   "type": "good"
+  },
+  {
+   "group": "military",
+   "icon": "img/goods/ammunition.png",
+   "id": "ammunition",
+   "name": "Ammunition",
+   "page": "goods/ammunition",
+   "slug": "ammunition",
+   "type": "good"
+  },
+  {
+   "icon": null,
+   "id": "aristocrats",
+   "name": "@aristocrats! Aristocrats",
+   "page": null,
+   "slug": "aristocrats",
+   "type": "pop_type"
+  },
+  {
+   "group": "military",
+   "icon": "img/goods/artillery.png",
+   "id": "artillery",
+   "name": "Artillery",
+   "page": "goods/artillery",
+   "slug": "artillery",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/automobiles.png",
+   "id": "automobiles",
+   "name": "Automobiles",
+   "page": "goods/automobiles",
+   "slug": "automobiles",
+   "type": "good"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/angkor_wat.png",
+   "id": "building_angkor_wat",
+   "name": "Angkor Wat",
+   "page": null,
+   "slug": "angkor_wat",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_argebam",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "argebam",
+   "type": "building"
+  },
+  {
+   "group": "bg_military_industry",
+   "icon": "img/buildings/arms_industry.png",
+   "id": "building_arms_industry",
+   "name": "Arms Industries",
+   "page": null,
+   "slug": "arms_industry",
+   "type": "building"
+  },
+  {
+   "group": "bg_army_logistics_center",
+   "icon": "img/buildings/building_army_logistics_center.png",
+   "id": "building_army_logistics_center",
+   "name": "Army Logistics Center",
+   "page": null,
+   "slug": "army_logistics_center",
+   "type": "building"
+  },
+  {
+   "group": "bg_arts",
+   "icon": "img/buildings/building_arts_academy.png",
+   "id": "building_art_academy",
+   "name": "Arts Academy",
+   "page": null,
+   "slug": "art_academy",
+   "type": "building"
+  },
+  {
+   "group": "bg_military_industry",
+   "icon": "img/buildings/artillery_foundry.png",
+   "id": "building_artillery_foundry",
+   "name": "Artillery Foundry",
+   "page": null,
+   "slug": "artillery_foundry",
+   "type": "building"
+  },
+  {
+   "group": "bg_heavy_industry",
+   "icon": "img/buildings/vehicles_industry.png",
+   "id": "building_automotive_industry",
+   "name": "Automotive Industries",
+   "page": null,
+   "slug": "automotive_industry",
+   "type": "building"
+  },
+  {
+   "group": "bg_plantations",
+   "icon": "img/buildings/banana_plantation.png",
+   "id": "building_banana_plantation",
+   "name": "Banana Plantations",
+   "page": null,
+   "slug": "banana_plantation",
+   "type": "building"
+  },
+  {
+   "group": "bg_army",
+   "icon": "img/buildings/building_barracks.png",
+   "id": "building_barrack",
+   "name": "Barracks",
+   "page": null,
+   "slug": "barrack",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/big_ben.png",
+   "id": "building_big_ben",
+   "name": "Big Ben",
+   "page": null,
+   "slug": "big_ben",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_capitol_hill",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "capitol_hill",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_central_park",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "central_park",
+   "type": "building"
+  },
+  {
+   "group": "bg_heavy_industry",
+   "icon": "img/buildings/chemicals_industry.png",
+   "id": "building_chemical_plant",
+   "name": "Fertilizer Plants",
+   "page": null,
+   "slug": "chemical_plant",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_chichen_itza",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "chichen_itza",
+   "type": "building"
+  },
+  {
+   "group": "bg_mining",
+   "icon": "img/buildings/coal_mine.png",
+   "id": "building_coal_mine",
+   "name": "Coal Mines",
+   "page": null,
+   "slug": "coal_mine",
+   "type": "building"
+  },
+  {
+   "group": "bg_plantations",
+   "icon": "img/buildings/coffee_plantation.png",
+   "id": "building_coffee_plantation",
+   "name": "Coffee Plantations",
+   "page": null,
+   "slug": "coffee_plantation",
+   "type": "building"
+  },
+  {
+   "group": "bg_company_headquarter",
+   "icon": "img/buildings/building_company_hq.png",
+   "id": "building_company_headquarter",
+   "name": "Company Headquarter",
+   "page": null,
+   "slug": "company_headquarter",
+   "type": "building"
+  },
+  {
+   "group": "bg_company_regional_headquarter",
+   "icon": "img/buildings/building_company_regional_hq.png",
+   "id": "building_company_regional_headquarter",
+   "name": "Regional Company Headquarter",
+   "page": null,
+   "slug": "company_regional_headquarter",
+   "type": "building"
+  },
+  {
+   "group": "bg_conscription",
+   "icon": "img/buildings/building_conscription_center.png",
+   "id": "building_conscription_center",
+   "name": "Conscription Center",
+   "page": null,
+   "slug": "conscription_center",
+   "type": "building"
+  },
+  {
+   "group": "bg_construction",
+   "icon": "img/buildings/construction_camp.png",
+   "id": "building_construction_sector",
+   "name": "Construction Sector",
+   "page": null,
+   "slug": "construction_sector",
+   "type": "building"
+  },
+  {
+   "group": "bg_plantations",
+   "icon": "img/buildings/cotton_plantation.png",
+   "id": "building_cotton_plantation",
+   "name": "Cotton Plantations",
+   "page": null,
+   "slug": "cotton_plantation",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/building_cristo_redentor.png",
+   "id": "building_cristo_redentor",
+   "name": "Cristo Redentor",
+   "page": null,
+   "slug": "cristo_redentor",
+   "type": "building"
+  },
+  {
+   "group": "bg_plantations",
+   "icon": "img/buildings/dye_plantation.png",
+   "id": "building_dye_plantation",
+   "name": "Dye Plantations",
+   "page": null,
+   "slug": "dye_plantation",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_easter_island_heads",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "easter_island_heads",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/building_eiffel_tower.png",
+   "id": "building_eiffel_tower",
+   "name": "The Eiffel Tower",
+   "page": null,
+   "slug": "eiffel_tower",
+   "type": "building"
+  },
+  {
+   "group": "bg_heavy_industry",
+   "icon": "img/buildings/electrics_industry.png",
+   "id": "building_electrics_industry",
+   "name": "Electrics Industries",
+   "page": null,
+   "slug": "electrics_industry",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/estacion_de_madrid_atocha.png",
+   "id": "building_estacion_de_madrid_atocha",
+   "name": "Atocha Railway Station",
+   "page": null,
+   "slug": "estacion_de_madrid_atocha",
+   "type": "building"
+  },
+  {
+   "group": "bg_heavy_industry",
+   "icon": "img/buildings/explosives_factory.png",
+   "id": "building_explosives_factory",
+   "name": "Explosives Factory",
+   "page": null,
+   "slug": "explosives_factory",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_eye_of_sahara",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "eye_of_sahara",
+   "type": "building"
+  },
+  {
+   "group": "bg_financial_districts",
+   "icon": "img/buildings/building_financial_district.png",
+   "id": "building_financial_district",
+   "name": "Financial Districts",
+   "page": null,
+   "slug": "financial_district",
+   "type": "building"
+  },
+  {
+   "group": "bg_fishing",
+   "icon": "img/buildings/fishing_wharf.png",
+   "id": "building_fishing_wharf",
+   "name": "Fishing Wharves",
+   "page": null,
+   "slug": "fishing_wharf",
+   "type": "building"
+  },
+  {
+   "group": "bg_light_industry",
+   "icon": "img/buildings/food_industry.png",
+   "id": "building_food_industry",
+   "name": "Food Industries",
+   "page": null,
+   "slug": "food_industry",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/forbidden_city.png",
+   "id": "building_forbidden_city",
+   "name": "Forbidden City",
+   "page": null,
+   "slug": "forbidden_city",
+   "type": "building"
+  },
+  {
+   "group": "bg_light_industry",
+   "icon": "img/buildings/furniture_manufacturies.png",
+   "id": "building_furniture_manufactory",
+   "name": "Furniture Manufacturies",
+   "page": null,
+   "slug": "furniture_manufactory",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_giza_necropolis",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "giza_necropolis",
+   "type": "building"
+  },
+  {
+   "group": "bg_light_industry",
+   "icon": "img/buildings/glassworks.png",
+   "id": "building_glassworks",
+   "name": "Glassworks",
+   "page": null,
+   "slug": "glassworks",
+   "type": "building"
+  },
+  {
+   "group": "bg_gold_fields",
+   "icon": "img/buildings/gold_fields.png",
+   "id": "building_gold_field",
+   "name": "Gold Fields",
+   "page": null,
+   "slug": "gold_field",
+   "type": "building"
+  },
+  {
+   "group": "bg_mining",
+   "icon": "img/buildings/gold_mine.png",
+   "id": "building_gold_mine",
+   "name": "Gold Mines",
+   "page": null,
+   "slug": "gold_mine",
+   "type": "building"
+  },
+  {
+   "group": "bg_bureaucracy",
+   "icon": "img/buildings/building_government_administration.png",
+   "id": "building_government_administration",
+   "name": "Government Administration",
+   "page": null,
+   "slug": "government_administration",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/gran_teatro.png",
+   "id": "building_gran_teatro_de_la_habana",
+   "name": "Grand Theater of Havana",
+   "page": null,
+   "slug": "gran_teatro_de_la_habana",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/hagia_sophia.png",
+   "id": "building_hagia_sophia",
+   "name": "Hagia Sophia",
+   "page": null,
+   "slug": "hagia_sophia",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_halloween_castledracula",
+   "name": "Castle Dracula",
+   "page": null,
+   "slug": "halloween_castledracula",
+   "type": "building"
+  },
+  {
+   "group": "bg_mining",
+   "icon": "img/buildings/iron_mine.png",
+   "id": "building_iron_mine",
+   "name": "Iron Mines",
+   "page": null,
+   "slug": "iron_mine",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/kaiserforum1.png",
+   "id": "building_kaiserforum_1",
+   "name": "Kaiserforum",
+   "page": null,
+   "slug": "kaiserforum_1",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/kaiserforum2.png",
+   "id": "building_kaiserforum_2",
+   "name": "Kaiserforum",
+   "page": null,
+   "slug": "kaiserforum_2",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/kaiserforum3.png",
+   "id": "building_kaiserforum_3",
+   "name": "Kaiserforum",
+   "page": null,
+   "slug": "kaiserforum_3",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/kaiserforum3.png",
+   "id": "building_kaiserforum_4",
+   "name": "Kaiserforum",
+   "page": null,
+   "slug": "kaiserforum_4",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_khaju_bridge",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "khaju_bridge",
+   "type": "building"
+  },
+  {
+   "group": "bg_canals",
+   "icon": "img/buildings/kiel_canal.png",
+   "id": "building_kiel_canal",
+   "name": "Kiel Canal",
+   "page": null,
+   "slug": "kiel_canal",
+   "type": "building"
+  },
+  {
+   "group": "bg_mining",
+   "icon": "img/buildings/lead_mine.png",
+   "id": "building_lead_mine",
+   "name": "Lead Mines",
+   "page": null,
+   "slug": "lead_mine",
+   "type": "building"
+  },
+  {
+   "group": "bg_ranching",
+   "icon": "img/buildings/cattle_ranch.png",
+   "id": "building_livestock_ranch",
+   "name": "Livestock Ranches",
+   "page": null,
+   "slug": "livestock_ranch",
+   "type": "building"
+  },
+  {
+   "group": "bg_logging",
+   "icon": "img/buildings/logging_camp.png",
+   "id": "building_logging_camp",
+   "name": "Logging Camps",
+   "page": null,
+   "slug": "logging_camp",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/machu_picchu.png",
+   "id": "building_machu_picchu",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "machu_picchu",
+   "type": "building"
+  },
+  {
+   "group": "bg_staple_crops",
+   "icon": "img/buildings/maize_farm.png",
+   "id": "building_maize_farm",
+   "name": "Maize Farms",
+   "page": null,
+   "slug": "maize_farm",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/manila_cathedral.png",
+   "id": "building_manila_cathedral_monument",
+   "name": "Manila Cathedral",
+   "page": null,
+   "slug": "manila_cathedral_monument",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/manila_cathedral.png",
+   "id": "building_manila_cathedral_original",
+   "name": "Manila Cathedral",
+   "page": null,
+   "slug": "manila_cathedral_original",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/manila_cathedral.png",
+   "id": "building_manila_cathedral_ruins",
+   "name": "Manila Cathedral Ruins",
+   "page": null,
+   "slug": "manila_cathedral_ruins",
+   "type": "building"
+  },
+  {
+   "group": "bg_manor_houses",
+   "icon": "img/buildings/building_manor_houses.png",
+   "id": "building_manor_house",
+   "name": "Manor Houses",
+   "page": null,
+   "slug": "manor_house",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_martandsuntemple",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "martandsuntemple",
+   "type": "building"
+  },
+  {
+   "group": "bg_staple_crops",
+   "icon": "img/buildings/millet_farm.png",
+   "id": "building_millet_farm",
+   "name": "Millet Farms",
+   "page": null,
+   "slug": "millet_farm",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/mosque_of_djenne.png",
+   "id": "building_mosque_of_djenne",
+   "name": "Mosque of Djenne",
+   "page": null,
+   "slug": "mosque_of_djenne",
+   "type": "building"
+  },
+  {
+   "group": "bg_heavy_industry",
+   "icon": "img/buildings/motor_industry.png",
+   "id": "building_motor_industry",
+   "name": "Motor Industries",
+   "page": null,
+   "slug": "motor_industry",
+   "type": "building"
+  },
+  {
+   "group": "bg_military_industry",
+   "icon": "img/buildings/munition_plants.png",
+   "id": "building_munition_plant",
+   "name": "Munition Plants",
+   "page": null,
+   "slug": "munition_plant",
+   "type": "building"
+  },
+  {
+   "group": "bg_naval_administration",
+   "icon": "img/buildings/naval_base.png",
+   "id": "building_naval_administration",
+   "name": "Naval Administration",
+   "page": null,
+   "slug": "naval_administration",
+   "type": "building"
+  },
+  {
+   "group": "bg_naval_fortification",
+   "icon": "img/buildings/building_naval_fortification.png",
+   "id": "building_naval_fortification",
+   "name": "Naval Fortification",
+   "page": null,
+   "slug": "naval_fortification",
+   "type": "building"
+  },
+  {
+   "group": "bg_naval_logistics_center",
+   "icon": "img/buildings/building_naval_logistics_center.png",
+   "id": "building_naval_logistics_center",
+   "name": "Naval Logistics Center",
+   "page": null,
+   "slug": "naval_logistics_center",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_observatorygreenwich",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "observatorygreenwich",
+   "type": "building"
+  },
+  {
+   "group": "bg_oil_extraction",
+   "icon": "img/buildings/oil_rig.png",
+   "id": "building_oil_rig",
+   "name": "Oil Rigs",
+   "page": null,
+   "slug": "oil_rig",
+   "type": "building"
+  },
+  {
+   "group": "bg_plantations",
+   "icon": "img/buildings/opium_plantation.png",
+   "id": "building_opium_plantation",
+   "name": "Opium Plantations",
+   "page": null,
+   "slug": "opium_plantation",
+   "type": "building"
+  },
+  {
+   "group": "bg_canals",
+   "icon": "img/buildings/panama_canal.png",
+   "id": "building_panama_canal",
+   "name": "Panama Canal",
+   "page": null,
+   "slug": "panama_canal",
+   "type": "building"
+  },
+  {
+   "group": "bg_light_industry",
+   "icon": "img/buildings/paper_mills.png",
+   "id": "building_paper_mill",
+   "name": "Paper Mills",
+   "page": null,
+   "slug": "paper_mill",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/pena_palace.png",
+   "id": "building_pena_convent",
+   "name": "Pena Convent",
+   "page": null,
+   "slug": "pena_convent",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/pena_palace.png",
+   "id": "building_pena_palace",
+   "name": "Pena Palace",
+   "page": null,
+   "slug": "pena_palace",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_petra",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "petra",
+   "type": "building"
+  },
+  {
+   "group": "bg_private_infrastructure",
+   "icon": "img/buildings/building_port.png",
+   "id": "building_port",
+   "name": "Port",
+   "page": null,
+   "slug": "port",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/building_powerblock_statue.png",
+   "id": "building_power_bloc_statue",
+   "name": "Power Bloc Statue",
+   "page": null,
+   "slug": "power_bloc_statue",
+   "type": "building"
+  },
+  {
+   "group": "bg_power",
+   "icon": "img/buildings/power_plant.png",
+   "id": "building_power_plant",
+   "name": "Power Plants",
+   "page": null,
+   "slug": "power_plant",
+   "type": "building"
+  },
+  {
+   "group": "bg_private_infrastructure",
+   "icon": "img/buildings/building_railway.png",
+   "id": "building_railway",
+   "name": "Railway",
+   "page": null,
+   "slug": "railway",
+   "type": "building"
+  },
+  {
+   "group": "bg_staple_crops",
+   "icon": "img/buildings/rice_farm.png",
+   "id": "building_rice_farm",
+   "name": "Rice Farms",
+   "page": null,
+   "slug": "rice_farm",
+   "type": "building"
+  },
+  {
+   "group": "bg_rubber",
+   "icon": "img/buildings/rubber_lodge.png",
+   "id": "building_rubber_plantation",
+   "name": "Rubber Plantations",
+   "page": null,
+   "slug": "rubber_plantation",
+   "type": "building"
+  },
+  {
+   "group": "bg_staple_crops",
+   "icon": "img/buildings/rye_farm.png",
+   "id": "building_rye_farm",
+   "name": "Rye Farms",
+   "page": null,
+   "slug": "rye_farm",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/sagrada_familia_cathedral1.png",
+   "id": "building_sagrada_familia_cathedral_1",
+   "name": "Sagrada Família Cathedral",
+   "page": null,
+   "slug": "sagrada_familia_cathedral_1",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/sagrada_familia_cathedral2.png",
+   "id": "building_sagrada_familia_cathedral_2",
+   "name": "Sagrada Família Cathedral",
+   "page": null,
+   "slug": "sagrada_familia_cathedral_2",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/sagrada_familia_cathedral3.png",
+   "id": "building_sagrada_familia_cathedral_3",
+   "name": "Sagrada Família Cathedral",
+   "page": null,
+   "slug": "sagrada_familia_cathedral_3",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/saint_basils_cathedral.png",
+   "id": "building_saint_basils_cathedral",
+   "name": "Saint Basil’s Cathedral",
+   "page": null,
+   "slug": "saint_basils_cathedral",
+   "type": "building"
+  },
+  {
+   "group": "bg_ship_construction",
+   "icon": "img/buildings/shipyards.png",
+   "id": "building_shipyard",
+   "name": "Shipyards",
+   "page": null,
+   "slug": "shipyard",
+   "type": "building"
+  },
+  {
+   "group": "bg_plantations",
+   "icon": "img/buildings/silk_plantation.png",
+   "id": "building_silk_plantation",
+   "name": "Silk Plantations",
+   "page": null,
+   "slug": "silk_plantation",
+   "type": "building"
+  },
+  {
+   "group": "bg_skyscraper",
+   "icon": "img/buildings/skyscraper.png",
+   "id": "building_skyscraper",
+   "name": "Skyscraper",
+   "page": null,
+   "slug": "skyscraper",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/statue_of_liberty.png",
+   "id": "building_statue_of_liberty",
+   "name": "Statue of Liberty",
+   "page": null,
+   "slug": "statue_of_liberty",
+   "type": "building"
+  },
+  {
+   "group": "bg_heavy_industry",
+   "icon": "img/buildings/steel_mills.png",
+   "id": "building_steel_mill",
+   "name": "Steel Mills",
+   "page": null,
+   "slug": "steel_mill",
+   "type": "building"
+  },
+  {
+   "group": "bg_subsistence_agriculture",
+   "icon": "img/buildings/building_subsistence_farm_grain.png",
+   "id": "building_subsistence_farm",
+   "name": "Subsistence Farms",
+   "page": null,
+   "slug": "subsistence_farm",
+   "type": "building"
+  },
+  {
+   "group": "bg_subsistence_agriculture",
+   "icon": "img/buildings/building_subsistence_farm_fish.png",
+   "id": "building_subsistence_fishing_village",
+   "name": "Subsistence Fishing Villages",
+   "page": null,
+   "slug": "subsistence_fishing_village",
+   "type": "building"
+  },
+  {
+   "group": "bg_subsistence_agriculture",
+   "icon": "img/buildings/building_subsistence_farm_fruit.png",
+   "id": "building_subsistence_orchard",
+   "name": "Subsistence Orchards",
+   "page": null,
+   "slug": "subsistence_orchard",
+   "type": "building"
+  },
+  {
+   "group": "bg_subsistence_ranching",
+   "icon": "img/buildings/building_subsistence_farm_meat.png",
+   "id": "building_subsistence_pasture",
+   "name": "Subsistence Pastures",
+   "page": null,
+   "slug": "subsistence_pasture",
+   "type": "building"
+  },
+  {
+   "group": "bg_subsistence_agriculture",
+   "icon": "img/buildings/building_subsistence_farm_rice.png",
+   "id": "building_subsistence_rice_farm",
+   "name": "Subsistence Rice Paddies",
+   "page": null,
+   "slug": "subsistence_rice_farm",
+   "type": "building"
+  },
+  {
+   "group": "bg_canals",
+   "icon": "img/buildings/suez_canal.png",
+   "id": "building_suez_canal",
+   "name": "Suez Canal",
+   "page": null,
+   "slug": "suez_canal",
+   "type": "building"
+  },
+  {
+   "group": "bg_plantations",
+   "icon": "img/buildings/sugar_plantation.png",
+   "id": "building_sugar_plantation",
+   "name": "Sugar Plantations",
+   "page": null,
+   "slug": "sugar_plantation",
+   "type": "building"
+  },
+  {
+   "group": "bg_mining",
+   "icon": "img/buildings/sulfur_mine.png",
+   "id": "building_sulfur_mine",
+   "name": "Sulfur Mines",
+   "page": null,
+   "slug": "sulfur_mine",
+   "type": "building"
+  },
+  {
+   "group": "bg_heavy_industry",
+   "icon": "img/buildings/synthetics_plants.png",
+   "id": "building_synthetics_plant",
+   "name": "Synthetics Plants",
+   "page": null,
+   "slug": "synthetics_plant",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/taj_mahal.png",
+   "id": "building_taj_mahal",
+   "name": "Taj Mahal",
+   "page": null,
+   "slug": "taj_mahal",
+   "type": "building"
+  },
+  {
+   "group": "bg_plantations",
+   "icon": "img/buildings/tea_plantation.png",
+   "id": "building_tea_plantation",
+   "name": "Tea Plantations",
+   "page": null,
+   "slug": "tea_plantation",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_temple_of_poseidon",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "temple_of_poseidon",
+   "type": "building"
+  },
+  {
+   "group": "bg_light_industry",
+   "icon": "img/buildings/textile_industry.png",
+   "id": "building_textile_mill",
+   "name": "Textile Mills",
+   "page": null,
+   "slug": "textile_mill",
+   "type": "building"
+  },
+  {
+   "group": "bg_plantations",
+   "icon": "img/buildings/tobacco_plantation.png",
+   "id": "building_tobacco_plantation",
+   "name": "Tobacco Plantations",
+   "page": null,
+   "slug": "tobacco_plantation",
+   "type": "building"
+  },
+  {
+   "group": "bg_light_industry",
+   "icon": "img/buildings/tooling_workshops.png",
+   "id": "building_tooling_workshop",
+   "name": "Tooling Workshops",
+   "page": null,
+   "slug": "tooling_workshop",
+   "type": "building"
+  },
+  {
+   "group": "bg_trade",
+   "icon": "img/buildings/building_trade_center.png",
+   "id": "building_trade_center",
+   "name": "Trade Center",
+   "page": null,
+   "slug": "trade_center",
+   "type": "building"
+  },
+  {
+   "group": "bg_technology",
+   "icon": "img/buildings/building_university.png",
+   "id": "building_university",
+   "name": "University",
+   "page": null,
+   "slug": "university",
+   "type": "building"
+  },
+  {
+   "group": "bg_service",
+   "icon": "img/buildings/urban_center.png",
+   "id": "building_urban_center",
+   "name": "Urban Center",
+   "page": null,
+   "slug": "urban_center",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/vatican_city.png",
+   "id": "building_vatican_city",
+   "name": "Vatican City",
+   "page": null,
+   "slug": "vatican_city",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/building_victoria_terminus.png",
+   "id": "building_victoria_terminus",
+   "name": "Victoria Terminus",
+   "page": null,
+   "slug": "victoria_terminus",
+   "type": "building"
+  },
+  {
+   "group": "bg_agriculture",
+   "icon": "img/buildings/vineyards.png",
+   "id": "building_vineyard",
+   "name": "Vineyards",
+   "page": null,
+   "slug": "vineyard",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments_hidden",
+   "icon": "img/buildings/.png",
+   "id": "building_wat_arun",
+   "name": "is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI",
+   "page": null,
+   "slug": "wat_arun",
+   "type": "building"
+  },
+  {
+   "group": "bg_whaling",
+   "icon": "img/buildings/whaling_station.png",
+   "id": "building_whaling_station",
+   "name": "Whaling Stations",
+   "page": null,
+   "slug": "whaling_station",
+   "type": "building"
+  },
+  {
+   "group": "bg_staple_crops",
+   "icon": "img/buildings/wheat_farm.png",
+   "id": "building_wheat_farm",
+   "name": "Wheat Farms",
+   "page": null,
+   "slug": "wheat_farm",
+   "type": "building"
+  },
+  {
+   "group": "bg_monuments",
+   "icon": "img/buildings/white_house.png",
+   "id": "building_white_house",
+   "name": "White House",
+   "page": null,
+   "slug": "white_house",
+   "type": "building"
+  },
+  {
+   "icon": null,
+   "id": "bureaucrats",
+   "name": "@bureaucrats! Bureaucrats",
+   "page": null,
+   "slug": "bureaucrats",
+   "type": "pop_type"
+  },
+  {
+   "icon": null,
+   "id": "capitalists",
+   "name": "@capitalists! Capitalists",
+   "page": null,
+   "slug": "capitalists",
+   "type": "pop_type"
+  },
+  {
+   "icon": null,
+   "id": "clergymen",
+   "name": "@clergymen! Clergymen",
+   "page": null,
+   "slug": "clergymen",
+   "type": "pop_type"
+  },
+  {
+   "icon": null,
+   "id": "clerks",
+   "name": "@clerks! Clerks",
+   "page": null,
+   "slug": "clerks",
+   "type": "pop_type"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/clippers.png",
+   "id": "clippers",
+   "name": "Clippers",
+   "page": "goods/clippers",
+   "slug": "clippers",
+   "type": "good"
+  },
+  {
+   "group": "staple",
+   "icon": "img/goods/clothes.png",
+   "id": "clothes",
+   "name": "Clothes",
+   "page": "goods/clothes",
+   "slug": "clothes",
+   "type": "good"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/coal.png",
+   "id": "coal",
+   "name": "Coal",
+   "page": "goods/coal",
+   "slug": "coal",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/coffee.png",
+   "id": "coffee",
+   "name": "Coffee",
+   "page": "goods/coffee",
+   "slug": "coffee",
+   "type": "good"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/dye.png",
+   "id": "dye",
+   "name": "Dye",
+   "page": "goods/dye",
+   "slug": "dye",
+   "type": "good"
+  },
+  {
+   "group": "staple",
+   "icon": "img/goods/electricity.png",
+   "id": "electricity",
+   "name": "Electricity",
+   "page": "goods/electricity",
+   "slug": "electricity",
+   "type": "good"
+  },
+  {
+   "icon": null,
+   "id": "engineers",
+   "name": "@engineers! Engineers",
+   "page": null,
+   "slug": "engineers",
+   "type": "pop_type"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/locomotives.png",
+   "id": "engines",
+   "name": "Engines",
+   "page": "goods/engines",
+   "slug": "engines",
+   "type": "good"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/explosives.png",
+   "id": "explosives",
+   "name": "Explosives",
+   "page": "goods/explosives",
+   "slug": "explosives",
+   "type": "good"
+  },
+  {
+   "group": "staple",
+   "icon": "img/goods/fabric.png",
+   "id": "fabric",
+   "name": "Fabric",
+   "page": "goods/fabric",
+   "slug": "fabric",
+   "type": "good"
+  },
+  {
+   "icon": null,
+   "id": "farmers",
+   "name": "@farmers! Farmers",
+   "page": null,
+   "slug": "farmers",
+   "type": "pop_type"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/fertilizer.png",
+   "id": "fertilizer",
+   "name": "Fertilizer",
+   "page": "goods/fertilizer",
+   "slug": "fertilizer",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/fine_art.png",
+   "id": "fine_art",
+   "name": "Fine Art",
+   "page": "goods/fine_art",
+   "slug": "fine_art",
+   "type": "good"
+  },
+  {
+   "group": "staple",
+   "icon": "img/goods/fish.png",
+   "id": "fish",
+   "name": "Fish",
+   "page": "goods/fish",
+   "slug": "fish",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/fruit.png",
+   "id": "fruit",
+   "name": "Fruit",
+   "page": "goods/fruit",
+   "slug": "fruit",
+   "type": "good"
+  },
+  {
+   "group": "staple",
+   "icon": "img/goods/furniture.png",
+   "id": "furniture",
+   "name": "Furniture",
+   "page": "goods/furniture",
+   "slug": "furniture",
+   "type": "good"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/glass.png",
+   "id": "glass",
+   "name": "Glass",
+   "page": "goods/glass",
+   "slug": "glass",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/gold.png",
+   "id": "gold",
+   "name": "Gold",
+   "page": "goods/gold",
+   "slug": "gold",
+   "type": "good"
+  },
+  {
+   "group": "staple",
+   "icon": "img/goods/grain.png",
+   "id": "grain",
+   "name": "Grain",
+   "page": "goods/grain",
+   "slug": "grain",
+   "type": "good"
+  },
+  {
+   "group": "staple",
+   "icon": "img/goods/groceries.png",
+   "id": "groceries",
+   "name": "Groceries",
+   "page": "goods/groceries",
+   "slug": "groceries",
+   "type": "good"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/hardwood.png",
+   "id": "hardwood",
+   "name": "Hardwood",
+   "page": "goods/hardwood",
+   "slug": "hardwood",
+   "type": "good"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/iron.png",
+   "id": "iron",
+   "name": "Iron",
+   "page": "goods/iron",
+   "slug": "iron",
+   "type": "good"
+  },
+  {
+   "group": "military",
+   "icon": "img/goods/ironclads.png",
+   "id": "ironclads",
+   "name": "Ironclads",
+   "page": "goods/ironclads",
+   "slug": "ironclads",
+   "type": "good"
+  },
+  {
+   "icon": null,
+   "id": "laborers",
+   "name": "@laborers! Laborers",
+   "page": null,
+   "slug": "laborers",
+   "type": "pop_type"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/lead.png",
+   "id": "lead",
+   "name": "Lead",
+   "page": "goods/lead",
+   "slug": "lead",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/liquor.png",
+   "id": "liquor",
+   "name": "Liquor",
+   "page": "goods/liquor",
+   "slug": "liquor",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/luxury_clothes.png",
+   "id": "luxury_clothes",
+   "name": "Luxury Clothes",
+   "page": "goods/luxury_clothes",
+   "slug": "luxury_clothes",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/luxury_furniture.png",
+   "id": "luxury_furniture",
+   "name": "Luxury Furniture",
+   "page": "goods/luxury_furniture",
+   "slug": "luxury_furniture",
+   "type": "good"
+  },
+  {
+   "icon": null,
+   "id": "machinists",
+   "name": "@machinists! Machinists",
+   "page": null,
+   "slug": "machinists",
+   "type": "pop_type"
+  },
+  {
+   "group": "military",
+   "icon": "img/goods/man_o_wars.png",
+   "id": "manowars",
+   "name": "Man-o-Wars",
+   "page": "goods/manowars",
+   "slug": "manowars",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/meat.png",
+   "id": "meat",
+   "name": "Meat",
+   "page": "goods/meat",
+   "slug": "meat",
+   "type": "good"
+  },
+  {
+   "group": "staple",
+   "icon": "img/goods/merchant_marine.png",
+   "id": "merchant_marine",
+   "name": "Merchant Marine",
+   "page": "goods/merchant_marine",
+   "slug": "merchant_marine",
+   "type": "good"
+  },
+  {
+   "icon": null,
+   "id": "officers",
+   "name": "@officers! Officers",
+   "page": null,
+   "slug": "officers",
+   "type": "pop_type"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/oil.png",
+   "id": "oil",
+   "name": "Oil",
+   "page": "goods/oil",
+   "slug": "oil",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/opium.png",
+   "id": "opium",
+   "name": "Opium",
+   "page": "goods/opium",
+   "slug": "opium",
+   "type": "good"
+  },
+  {
+   "group": "staple",
+   "icon": "img/goods/paper.png",
+   "id": "paper",
+   "name": "Paper",
+   "page": "goods/paper",
+   "slug": "paper",
+   "type": "good"
+  },
+  {
+   "icon": null,
+   "id": "peasants",
+   "name": "@peasants! Peasants",
+   "page": null,
+   "slug": "peasants",
+   "type": "pop_type"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/porcelain.png",
+   "id": "porcelain",
+   "name": "Porcelain",
+   "page": "goods/porcelain",
+   "slug": "porcelain",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/radios.png",
+   "id": "radios",
+   "name": "Radios",
+   "page": "goods/radios",
+   "slug": "radios",
+   "type": "good"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/rubber.png",
+   "id": "rubber",
+   "name": "Rubber",
+   "page": "goods/rubber",
+   "slug": "rubber",
+   "type": "good"
+  },
+  {
+   "group": "staple",
+   "icon": "img/goods/services.png",
+   "id": "services",
+   "name": "Services",
+   "page": "goods/services",
+   "slug": "services",
+   "type": "good"
+  },
+  {
+   "icon": null,
+   "id": "shopkeepers",
+   "name": "@shopkeepers! Shopkeepers",
+   "page": null,
+   "slug": "shopkeepers",
+   "type": "pop_type"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/silk.png",
+   "id": "silk",
+   "name": "Silk",
+   "page": "goods/silk",
+   "slug": "silk",
+   "type": "good"
+  },
+  {
+   "icon": null,
+   "id": "slaves",
+   "name": "@slaves! Slaves",
+   "page": null,
+   "slug": "slaves",
+   "type": "pop_type"
+  },
+  {
+   "group": "military",
+   "icon": "img/goods/small_arms.png",
+   "id": "small_arms",
+   "name": "Small Arms",
+   "page": "goods/small_arms",
+   "slug": "small_arms",
+   "type": "good"
+  },
+  {
+   "icon": null,
+   "id": "soldiers",
+   "name": "@soldiers! Servicemen",
+   "page": null,
+   "slug": "soldiers",
+   "type": "pop_type"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/steamers.png",
+   "id": "steamers",
+   "name": "Steamers",
+   "page": "goods/steamers",
+   "slug": "steamers",
+   "type": "good"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/steel.png",
+   "id": "steel",
+   "name": "Steel",
+   "page": "goods/steel",
+   "slug": "steel",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/sugar.png",
+   "id": "sugar",
+   "name": "Sugar",
+   "page": "goods/sugar",
+   "slug": "sugar",
+   "type": "good"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/sulfur.png",
+   "id": "sulfur",
+   "name": "Sulfur",
+   "page": "goods/sulfur",
+   "slug": "sulfur",
+   "type": "good"
+  },
+  {
+   "group": "military",
+   "icon": "img/goods/tanks.png",
+   "id": "tanks",
+   "name": "Tanks",
+   "page": "goods/tanks",
+   "slug": "tanks",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/tea.png",
+   "id": "tea",
+   "name": "Tea",
+   "page": "goods/tea",
+   "slug": "tea",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/telephones.png",
+   "id": "telephones",
+   "name": "Telephones",
+   "page": "goods/telephones",
+   "slug": "telephones",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/tobacco.png",
+   "id": "tobacco",
+   "name": "Tobacco",
+   "page": "goods/tobacco",
+   "slug": "tobacco",
+   "type": "good"
+  },
+  {
+   "group": "industrial",
+   "icon": "img/goods/tools.png",
+   "id": "tools",
+   "name": "Tools",
+   "page": "goods/tools",
+   "slug": "tools",
+   "type": "good"
+  },
+  {
+   "group": "staple",
+   "icon": "img/goods/transportation.png",
+   "id": "transportation",
+   "name": "Transportation",
+   "page": "goods/transportation",
+   "slug": "transportation",
+   "type": "good"
+  },
+  {
+   "group": "luxury",
+   "icon": "img/goods/wine.png",
+   "id": "wine",
+   "name": "Wine",
+   "page": "goods/wine",
+   "slug": "wine",
+   "type": "good"
+  },
+  {
+   "group": "staple",
+   "icon": "img/goods/wood.png",
+   "id": "wood",
+   "name": "Wood",
+   "page": "goods/wood",
+   "slug": "wood",
+   "type": "good"
+  }
+ ]
+}

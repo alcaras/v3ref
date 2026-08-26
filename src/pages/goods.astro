@@ -1,0 +1,85 @@
+---
+import Base from '../layouts/Base.astro';
+import goodsJson from '../data/goods.json';
+
+const base = import.meta.env.BASE_URL;
+const goods = (goodsJson as any).goods as any[];
+const categories = [...new Set(goods.map((g) => g.category))];
+
+// One-line "top maker / top user" summary per good — full lists on its page.
+const top = (list: any[]) =>
+  list.length
+    ? `${list[0].buildings[0]?.name ?? list[0].pmName}${list.length > 1 ? ` +${list.length - 1}` : ''}`
+    : null;
+---
+<Base
+  title="Goods"
+  active="goods"
+  eyebrow="Economy"
+  pageFilter="Filter goods…"
+  pageStats={[
+    { value: goods.length, label: 'goods' },
+    { value: categories.length, label: 'categories' },
+  ]}
+>
+  <div class="legends" style="margin: 0 0 0.75rem;">
+    <div class="legend">
+      <span class="legend__label">Category</span>
+      {categories.map((c) => (
+        <span class={`chip cat-${c}`}><span class="chip__glyph">●</span>{c}</span>
+      ))}
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl" id="goods-table">
+        <thead>
+          <tr>
+            <th>Good</th>
+            <th>Category</th>
+            <th class="num">Base price</th>
+            <th class="num">Obsession</th>
+            <th class="num">Prestige</th>
+            <th>Produced by</th>
+            <th>Used by</th>
+            <th>Pop need</th>
+          </tr>
+        </thead>
+        <tbody>
+          {goods.map((g) => (
+            <tr data-name={`${g.name} ${g.id} ${g.category}`.toLowerCase()}>
+              <td class={`lead-cell cat-${g.category}`}>
+                <span class="lead">
+                  <img class="lead__icon" src={`${base}${g.icon}`} alt="" loading="lazy" />
+                  <a href={`${base}goods/${g.slug}`}>{g.name}</a>
+                  {g.unused && <span class="chip" title="No production method or pop need references this good">· legacy</span>}
+                </span>
+              </td>
+              <td class="dim">{g.category}</td>
+              <td class="num">£{g.cost}</td>
+              <td class="num">{g.obsessionChance ? `${Math.round(g.obsessionChance * 100)}%` : <span class="cell__dash">—</span>}</td>
+              <td class="num">{g.prestigeFactor || <span class="cell__dash">—</span>}</td>
+              <td>{top(g.producers) ?? <span class="cell__dash">—</span>}</td>
+              <td>{top(g.consumers) ?? <span class="cell__dash">—</span>}</td>
+              <td>{g.needs.length ? g.needs.map((n: any) => n.name).join(', ') : <span class="cell__dash">—</span>}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="caption">Base price from goods.txt · producer/consumer counts span every production method</p>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const rows = [...document.querySelectorAll('#goods-table tbody tr')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const r of rows) r.classList.toggle('is-hidden', !!q && !r.dataset.name.includes(q));
+      });
+    }
+  </script>
+</Base>
