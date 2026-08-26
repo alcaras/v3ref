@@ -240,13 +240,13 @@ const base = import.meta.env.BASE_URL;
                <span class="rm__lgname">${meta.layers.find((l) => l.key === selected[0]).name}</span>
                <span class="rm__scale">0</span>
                <span class="rm__bar" style="background:linear-gradient(90deg,${SEQ.join(',')})"></span>
-               <span class="rm__scale">${max} ${meta.layers.find((l) => l.key === selected[0]).unit}</span>
+               <span class="rm__scale">${max.toLocaleString()} ${meta.layers.find((l) => l.key === selected[0]).unit}</span>
              </div>`
           : `<div class="rm__lg">
                ${selected.map((k, i) => `<span class="rm__key">
                   <span class="rm__swatch" style="background:${SERIES[i].hex}"></span>
                   ${meta.layers.find((l) => l.key === k).name}</span>`).join('')}
-               <span class="rm__hint">hue = largest here · brightness = total, up to ${max}</span>
+               <span class="rm__hint">hue = largest here · brightness = total, up to ${max.toLocaleString()}</span>
              </div>`;
       }
 
@@ -407,7 +407,8 @@ const base = import.meta.env.BASE_URL;
           .sort((a, b) => b.n - a.n);
         tip.innerHTML = `<b>${st.name}</b>${st.region ? `<i>${st.region}</i>` : ''}
           ${rows.length
-            ? `<table>${rows.map((r) => `<tr><td>${r.l.name}</td><td>${r.n}</td></tr>`).join('')}</table>`
+            ? `<table>${rows.map((r) => `<tr><td>${r.l.name}</td><td>${r.n.toLocaleString()}</td>` +
+                `<td class="rm__unit">${r.l.unit}</td></tr>`).join('')}</table>`
             : '<span class="rm__hint">no mapped resources</span>'}`;
         tip.hidden = false;
         tip.style.left = `${e.clientX - r.left + 14}px`;
@@ -591,6 +592,10 @@ const base = import.meta.env.BASE_URL;
     .rm__tip i { display: block; font-style: normal; color: var(--text-faint); font-size: 0.66rem; margin-bottom: 0.2rem; }
     .rm__tip table { border-collapse: collapse; margin-top: 0.15rem; }
     .rm__tip td { padding: 0.04rem 0; color: var(--text-soft); }
-    .rm__tip td:last-child { text-align: right; padding-left: 0.8rem; font-variant-numeric: tabular-nums; color: var(--text); }
+    .rm__tip .rm__unit {
+      color: var(--text-faint); font-size: 0.62rem; padding-left: 0.4rem;
+      text-align: left; font-variant-numeric: normal;
+    }
+    .rm__tip td:nth-child(2) { text-align: right; padding-left: 0.8rem; font-variant-numeric: tabular-nums; color: var(--text); }
   </style>
 </Base>

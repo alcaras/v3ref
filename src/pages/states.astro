@@ -103,7 +103,11 @@ const csv = {
                 </span>
               </td>
               <td class="dim">{s.region?.name ?? <span class="cell__dash">—</span>}</td>
-              <td class="dim">{s.loc?.owners.map((o: any) => o.name).join(', ') || <span class="cell__dash">—</span>}</td>
+              <td class="dim" title={s.loc?.split ? s.loc.owners.map((o: any) => `${o.name} ${o.population.toLocaleString()}`).join(' · ') : undefined}>
+                {s.loc?.owners.length
+                  ? <>{s.loc.owners[0].name}{s.loc.split && <span class="st__und"> +{s.loc.owners.length - 1}</span>}</>
+                  : <span class="cell__dash">—</span>}
+              </td>
               <td class="num" data-sort={s.loc?.population ?? ''}>{s.loc?.population ? s.loc.population.toLocaleString() : <span class="cell__dash">—</span>}</td>
               <td class="num" data-sort={s.arableLand}>{s.arableLand}</td>
               <td class="dim">

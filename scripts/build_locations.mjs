@@ -178,11 +178,16 @@ const locations = states.map((s) => {
 
   const byCulture = new Map();
   const byReligion = new Map();
+  // 218 of 675 states are split between two or more countries, and the setup
+  // records every pop under the country that holds it — so a state's people
+  // belong to specific owners, not to the state as a whole.
+  const byOwner = new Map();
   let population = 0;
   for (const p of pops) {
     population += p.size;
     if (p.culture) byCulture.set(p.culture, (byCulture.get(p.culture) ?? 0) + p.size);
     if (p.religion) byReligion.set(p.religion, (byReligion.get(p.religion) ?? 0) + p.size);
+    if (p.owner) byOwner.set(p.owner, (byOwner.get(p.owner) ?? 0) + p.size);
   }
   const share = (m) =>
     [...m.entries()]
@@ -200,9 +205,14 @@ const locations = states.map((s) => {
     slug: s.id.replace(/^STATE_/, '').toLowerCase(),
     name: s.name,
     region: s.region,
-    owners: (owners.get(s.id) ?? []).map((tag) => ({
-      tag, name: countryByTag.get(tag)?.name ?? tag,
-    })),
+    owners: (owners.get(s.id) ?? [])
+      .map((tag) => ({
+        tag,
+        name: countryByTag.get(tag)?.name ?? tag,
+        population: byOwner.get(tag) ?? 0,
+      }))
+      .sort((a, b) => b.population - a.population),
+    split: (owners.get(s.id) ?? []).length > 1,
     homelands: (homelands.get(s.id) ?? []).map((id) => ({ id, name: loc.name(id) })),
     population,
     cultures: share(byCulture),

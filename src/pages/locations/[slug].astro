@@ -31,9 +31,16 @@ const num = (n: number) => n.toLocaleString();
       <div class="loc__facts">
         {loc.owners.length > 0 && (
           <span class="loc__fact">
-            <span class="loc__fkey">1836 owner</span>
+            <span class="loc__fkey">{loc.split ? 'Split in 1836 between' : '1836 owner'}</span>
             {loc.owners.map((o: any, i: number) => (
-              <>{i > 0 && ', '}<a href={`${base}countries#${o.tag}`}>{o.name}</a></>
+              <>
+                {i > 0 && ' · '}
+                <a href={`${base}countries#${o.tag}`}>{o.name}</a>
+                {loc.split && o.population > 0 && (
+                  <span class="loc__oshare"> {num(o.population)}{loc.population
+                    ? ` (${Math.round((o.population / loc.population) * 100)}%)` : ''}</span>
+                )}
+              </>
             ))}
           </span>
         )}
@@ -279,6 +286,7 @@ const num = (n: number) => n.toLocaleString();
       font-family: var(--font-ui); font-size: 0.6rem; text-transform: uppercase;
       letter-spacing: 0.14em; color: var(--gold-soft); margin-right: 0.5rem;
     }
+    .loc__oshare { color: var(--text-faint); font-size: 0.72rem; font-variant-numeric: tabular-nums; }
     .loc__note { font-size: 0.72rem; color: var(--text-faint); margin: 0.35rem 0 0; line-height: 1.5; max-width: 46rem; }
     .loc__sub {
       font-family: var(--font-ui); font-size: 0.6rem; text-transform: uppercase;
