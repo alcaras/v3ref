@@ -194,11 +194,6 @@ export const TABS: Tab[] = [
     summary: 'Every building at its best production set for your prices — by profit, per worker, or per construction',
   },
   {
-    slug: 'company-planner', icon: '🏢', label: 'Company Planner', section: 'Tools',
-    status: 'built',
-    summary: 'Fill your charter slots and see building coverage and prestige goods',
-  },
-  {
     slug: 'patch-notes', icon: '🛠', label: 'Patch Notes', section: 'Tools',
     status: 'built',
     summary: 'What each patch changed in the data we track',

@@ -33,6 +33,12 @@ const sections = [section(flavored, 'Historical companies'), section(basic, 'Bas
     { value: basic.length, label: 'basic' },
   ]}
 >
+  <p class="moved">
+    Planning which companies to run? The
+    <a href="https://alcaras.github.io/v3co/">Company Analysis Tool</a> has a coverage matrix,
+    a seven-slot optimiser and prestige-good filters. This page is the reference data behind it.
+  </p>
+
   <TableTools csvId="companies" csvName="victoria3-companies" />
 
   {sections.map(({ list, title }) => (
@@ -105,4 +111,11 @@ const sections = [section(flavored, 'Historical companies'), section(basic, 'Bas
       });
     }
   </script>
+  <style is:global>
+    .moved {
+      font-size: 0.82rem; line-height: 1.5; max-width: 46rem; margin: 0 0 0.8rem;
+      padding: 0.5rem 0.8rem; border-left: 3px solid var(--gold-deep);
+      background: var(--bg-elev); border-radius: 0 6px 6px 0; color: var(--text-soft);
+    }
+  </style>
 </Base>
