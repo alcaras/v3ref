@@ -178,9 +178,14 @@ export const TABS: Tab[] = [
 
   // ── Tools ─────────────────────────────────────────────────────────
   {
-    slug: 'profit-calculator', icon: '🧮', label: 'Profit Calculator', section: 'Tools',
+    slug: 'profit-calculator', icon: '🧮', label: 'Building Profit', section: 'Tools',
     status: 'built',
-    summary: 'Pick a building and PMs, set prices, see throughput and profit',
+    summary: 'One building at your prices — every method in every group ranked in place',
+  },
+  {
+    slug: 'method-comparison', icon: '⚖️', label: 'Compare Methods', section: 'Tools',
+    status: 'built',
+    summary: 'Every production method priced at your market — sort by profit, per worker, or per construction',
   },
   {
     slug: 'company-planner', icon: '🏢', label: 'Company Planner', section: 'Tools',

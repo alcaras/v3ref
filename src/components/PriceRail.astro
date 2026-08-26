@@ -1,0 +1,76 @@
+---
+// Shared market-price state for the profit tools.
+//
+// Both tools ask the same question — "at MY prices, what pays?" — so the
+// market you set on one page carries to the other via localStorage. Prices are
+// stored as a percentage offset from each good's base cost, which is how the
+// game's own price bands work (±75%).
+---
+<script is:inline>
+  window.v3Prices = (() => {
+    const KEY = 'v3ref-market-prices';
+    let offsets = {};
+    try { offsets = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch {}
+    return {
+      offsets,
+      get(g) { return offsets[g] ?? 0; },
+      set(g, pct) {
+        if (pct === 0) delete offsets[g]; else offsets[g] = pct;
+        try { localStorage.setItem(KEY, JSON.stringify(offsets)); } catch {}
+      },
+      reset() {
+        offsets = {};
+        try { localStorage.removeItem(KEY); } catch {}
+      },
+      /** Price of a good at the current market. */
+      of(goods, g) { return (goods[g]?.cost ?? 0) * (1 + this.get(g) / 100); },
+      /** True when nothing has been moved off base. */
+      isBase() { return Object.keys(offsets).length === 0; },
+    };
+  })();
+</script>
+
+<style is:global>
+  /* The rail that holds the building picker and the price sliders. Sticky so
+     the inputs stay beside the results instead of scrolling away from them. */
+  .rail {
+    position: sticky;
+    top: 6.5rem;
+    display: flex; flex-direction: column; gap: 0.7rem;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    padding-right: 0.4rem;
+  }
+  @media (max-width: 900px) { .rail { position: static; max-height: none; } }
+
+  .rail__label {
+    font-family: var(--font-ui); font-size: 0.6rem; text-transform: uppercase;
+    letter-spacing: 0.16em; color: var(--gold-soft); font-weight: 500;
+    display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem;
+  }
+  .rail__select {
+    background: var(--bg-elev); color: var(--text);
+    border: 1px solid var(--border); border-radius: 6px;
+    font: inherit; font-size: 0.85rem; padding: 0.4rem 0.5rem; width: 100%;
+  }
+  .rail__btn {
+    font: inherit; font-size: 0.68rem; cursor: pointer;
+    background: none; border: 0; padding: 0;
+    color: var(--gold-soft); text-decoration: underline;
+    letter-spacing: 0; text-transform: none;
+  }
+  .rail__btn:hover { color: var(--gold); }
+
+  /* Two-line price row: name + value, then a full-width slider. Keeps every
+     slider usable at rail width instead of squeezing four columns. */
+  .prow { display: flex; flex-direction: column; gap: 0.05rem; margin-bottom: 0.3rem; }
+  .prow__head {
+    display: flex; align-items: center; gap: 0.35rem;
+    font-size: 0.76rem; line-height: 1.2;
+  }
+  .prow__head img { width: 16px; height: 16px; object-fit: contain; flex-shrink: 0; }
+  .prow__name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .prow__val { font-variant-numeric: tabular-nums; color: var(--text); }
+  .prow__val.is-off { color: var(--gold); }
+  .prow input { width: 100%; accent-color: var(--gold); margin: 0; height: 1rem; }
+</style>

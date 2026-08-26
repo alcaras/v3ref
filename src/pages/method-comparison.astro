@@ -1,0 +1,199 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import PriceRail from '../components/PriceRail.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Base
+  title="Compare Methods"
+  active="method-comparison"
+  eyebrow="Tools"
+  description="Every Victoria 3 production method priced at your market, sortable by profit, profit per worker, and profit per point of construction."
+>
+  <PriceRail />
+
+  <div class="mc">
+    <aside class="rail">
+      <div>
+        <div class="rail__label">
+          <span>Market prices</span>
+          <button type="button" id="mc-reset" class="rail__btn">reset</button>
+        </div>
+        <input id="mc-goodfilter" class="rail__select" type="search" placeholder="Find a good…"
+          style="margin-bottom:0.5rem;" />
+        <div id="mc-prices"></div>
+      </div>
+    </aside>
+
+    <div class="mc__main">
+      <div class="mc__bar">
+        <label class="mc__field">
+          <input id="mc-filter" type="search" class="rail__select" style="min-width:18rem;"
+            placeholder="Filter by building, method, or good…" />
+        </label>
+        <label class="mc__toggle"><input type="checkbox" id="mc-positive" /> only profitable</label>
+        <span id="mc-count" class="mc__hint"></span>
+      </div>
+
+      <TableTools showBar={false} />
+      <div class="grid"><div class="grid__scroll">
+        <table class="vtbl" id="mc-table" data-sortable>
+          <thead>
+            <tr>
+              <th style="min-width: 12rem;">Building</th>
+              <th style="min-width: 12rem;">Production method</th>
+              <th class="num" title="Revenue − input cost at your prices, per building level">Net £</th>
+              <th class="num" title="Jobs this method adds per level">Workers</th>
+              <th class="num" title="Net £ per worker employed">£/worker</th>
+              <th class="num" title="Construction points the building costs">Constr.</th>
+              <th class="num" title="Net £ per point of construction — payback on building it">£/constr.</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div></div>
+
+      <p class="caption">
+        Each row is one method's own goods and jobs, independent of the rest of its building — methods
+        that move no goods are omitted. Automation methods remove jobs, so they carry no per-worker
+        figure. Construction is the building's cost in construction points, so £/constr. compares where
+        a point of construction capacity buys the most output. Prices are shared with
+        <a href={`${base}profit-calculator`}>Building Profit</a>.
+      </p>
+    </div>
+  </div>
+
+  <script is:inline define:vars={{ base }}>
+    (async () => {
+      const data = await fetch(`${base}data/profit-calc.json`).then((r) => r.json());
+      const $ = (id) => document.getElementById(id);
+      const P = window.v3Prices;
+      const priceOf = (g) => P.of(data.goods, g);
+
+      // One row per (building, method) that actually moves goods.
+      const rows = [];
+      const usedGoods = new Set();
+      for (const b of data.buildings) {
+        for (const g of b.pmGroups) {
+          for (const pm of g.pms) {
+            if (!pm.inputs.length && !pm.outputs.length) continue;
+            for (const l of [...pm.inputs, ...pm.outputs]) usedGoods.add(l.g);
+            rows.push({
+              b, pm,
+              jobs: pm.jobs.reduce((s, j) => s + j.a, 0),
+              search: `${b.name} ${g.name} ${pm.name} ${[...pm.inputs, ...pm.outputs]
+                .map((l) => data.goods[l.g]?.name ?? l.g).join(' ')}`.toLowerCase(),
+            });
+          }
+        }
+      }
+
+      // ── Price rail: every good any method touches ──────────────────
+      const goodList = [...usedGoods].sort((a, b) =>
+        data.goods[a].name.localeCompare(data.goods[b].name));
+
+      function renderPrices() {
+        const q = $('mc-goodfilter').value.trim().toLowerCase();
+        const list = goodList.filter((g) => !q || data.goods[g].name.toLowerCase().includes(q));
+        $('mc-prices').innerHTML = list.map((g) => `
+          <div class="prow">
+            <div class="prow__head">
+              <img src="${base}${data.goods[g].icon}" alt="" loading="lazy" />
+              <span class="prow__name">${data.goods[g].name}</span>
+              <span class="prow__val" data-val="${g}"></span>
+            </div>
+            <input type="range" min="-75" max="75" step="5" value="${P.get(g)}" data-good="${g}" />
+          </div>`).join('');
+        $('mc-prices').querySelectorAll('input[data-good]').forEach((input) =>
+          input.addEventListener('input', () => {
+            P.set(input.dataset.good, Number(input.value));
+            renderPriceLabels();
+            renderTable();
+          }));
+        renderPriceLabels();
+      }
+
+      function renderPriceLabels() {
+        for (const el of $('mc-prices').querySelectorAll('[data-val]')) {
+          const g = el.dataset.val, pct = P.get(g);
+          el.textContent = `£${priceOf(g).toFixed(0)}${pct ? ` (${pct > 0 ? '+' : ''}${pct}%)` : ''}`;
+          el.classList.toggle('is-off', pct !== 0);
+        }
+      }
+
+      // ── Table ──────────────────────────────────────────────────────
+      const money = (lines, sign) =>
+        lines.reduce((s, l) => s + sign * l.a * priceOf(l.g), 0);
+
+      function renderTable() {
+        const q = $('mc-filter').value.trim().toLowerCase();
+        const onlyPositive = $('mc-positive').checked;
+        const out = [];
+        for (const r of rows) {
+          if (q && !r.search.includes(q)) continue;
+          const net = money(r.pm.outputs, 1) + money(r.pm.inputs, -1);
+          if (onlyPositive && net <= 0) continue;
+          // Automation methods REMOVE jobs; a negative net over negative workers
+          // yields a cheerful positive ratio that means nothing.
+          const perWorker = r.jobs > 0 ? net / r.jobs : null;
+          const perConstruction = r.b.construction ? net / r.b.construction : null;
+          const tone = (v) => (v > 0 ? 'tone-good' : v < 0 ? 'tone-bad' : 'tone-neutral');
+          const num = (v, d = 0) => (v == null ? '<span class="cell__dash">—</span>' : v.toFixed(d));
+          out.push({
+            sort: [r.b.name, r.pm.name, net, r.jobs, perWorker, r.b.construction, perConstruction],
+            html: `<tr>
+              <td class="lead-cell" data-sort="${r.b.name}">
+                <span class="lead"><img class="lead__icon" src="${base}${r.b.icon}" alt="" loading="lazy" />
+                <a href="${base}buildings/${r.b.id.replace('building_', '')}">${r.b.name}</a></span></td>
+              <td>${r.pm.name}</td>
+              <td class="num" data-sort="${net.toFixed(2)}"><b class="${tone(net)}">£${net.toFixed(0)}</b></td>
+              <td class="num" data-sort="${r.jobs || ''}">${r.jobs || '<span class="cell__dash">—</span>'}</td>
+              <td class="num" data-sort="${perWorker ?? ''}"><span class="${perWorker == null ? '' : tone(perWorker)}">${num(perWorker, 3)}</span></td>
+              <td class="num dim" data-sort="${r.b.construction ?? ''}">${r.b.construction ?? '<span class="cell__dash">—</span>'}</td>
+              <td class="num" data-sort="${perConstruction ?? ''}"><span class="${perConstruction == null ? '' : tone(perConstruction)}">${num(perConstruction, 2)}</span></td>
+            </tr>`,
+          });
+        }
+
+        // Re-apply the active sort: TableTools sorts the live DOM, and we just
+        // replaced every row, so a price nudge would otherwise drop the user
+        // back to build order.
+        const heads = [...$('mc-table').tHead.rows[0].cells];
+        const col = heads.findIndex((th) => (th.getAttribute('aria-sort') ?? 'none') !== 'none');
+        if (col >= 0) {
+          const dir = heads[col].getAttribute('aria-sort') === 'ascending' ? 1 : -1;
+          out.sort((a, b) => {
+            const av = a.sort[col], bv = b.sort[col];
+            if (av == null && bv == null) return 0;
+            if (av == null) return 1;   // blanks sink in both directions
+            if (bv == null) return -1;
+            return (typeof av === 'number' ? av - bv : String(av).localeCompare(String(bv))) * dir;
+          });
+        }
+        $('mc-table').tBodies[0].innerHTML = out.map((r) => r.html).join('');
+        $('mc-count').textContent = `${out.length} of ${rows.length} methods`;
+        $('mc-table').tBodies[0].querySelectorAll('tr').forEach((tr) => tr.removeAttribute('data-tt-i'));
+      }
+
+      $('mc-goodfilter').addEventListener('input', renderPrices);
+      $('mc-filter').addEventListener('input', renderTable);
+      $('mc-positive').addEventListener('change', renderTable);
+      $('mc-reset').addEventListener('click', () => { P.reset(); renderPrices(); renderTable(); });
+      renderPrices();
+      renderTable();
+    })();
+  </script>
+
+  <style is:global>
+    .mc { display: grid; grid-template-columns: minmax(14rem, 17rem) 1fr; gap: 1.6rem; align-items: start; }
+    @media (max-width: 900px) { .mc { grid-template-columns: 1fr; } }
+    .mc__bar { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
+    .mc__field { display: inline-flex; }
+    .mc__toggle {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.78rem; color: var(--text-dim); cursor: pointer;
+    }
+    .mc__toggle input { accent-color: var(--gold); margin: 0; }
+    .mc__hint { font-size: 0.76rem; color: var(--text-faint); }
+  </style>
+</Base>

@@ -1,525 +1,357 @@
 ---
 import Base from '../layouts/Base.astro';
-import TableTools from '../components/TableTools.astro';
+import PriceRail from '../components/PriceRail.astro';
 const base = import.meta.env.BASE_URL;
 ---
 <Base
-  title="Profit Calculator"
+  title="Building Profit"
   active="profit-calculator"
   eyebrow="Tools"
-  description="Compare every Victoria 3 production method at your own market prices: per building, per group, ranked, with per-worker and per-construction returns."
-  pageStats={[{ value: 'per level', label: 'at full employment' }]}
+  description="What one Victoria 3 building earns per level at your market prices, with every production method in every group ranked in place."
 >
-  <div class="pc__top">
-    <label class="pc__field">
-      <span class="pc__label">Building</span>
-      <select id="pc-building" class="pc__select"><option>Loading…</option></select>
-    </label>
-    <div class="pc__pricebox">
-      <span class="pc__label">Market prices — drag to model your market (±75% of base)</span>
-      <div id="pc-prices"></div>
+  <PriceRail />
+
+  <div class="bp">
+    <aside class="rail">
+      <div>
+        <div class="rail__label">Building</div>
+        <select id="bp-building" class="rail__select"><option>Loading…</option></select>
+      </div>
+      <div>
+        <div class="rail__label">
+          <span>Market prices</span>
+          <button type="button" id="bp-reset" class="rail__btn">reset</button>
+        </div>
+        <div id="bp-prices"></div>
+      </div>
+    </aside>
+
+    <div class="bp__main">
+      <div id="bp-head" class="bp__head"></div>
+      <div id="bp-groups" class="bp__groups"></div>
+
+      <details class="bp__all">
+        <summary>Every combination, ranked</summary>
+        <p class="bp__hint">
+          Every goods line in the game data is a flat amount — there are no percentage goods
+          modifiers — so groups do not interact and the best option in each group always combines
+          into the best overall set (checked against 19,200 building × random-market cases). This
+          list is here to show the spread, not to correct the blocks above.
+        </p>
+        <div class="grid"><div class="grid__scroll">
+          <table class="vtbl" id="bp-combos"><thead></thead><tbody></tbody></table>
+        </div></div>
+      </details>
+
+      <p class="caption">
+        Revenue − input costs at your prices, per building level at full employment. This is the
+        goods margin: it counts every goods line and every employment line in the game's production
+        methods, and nothing else. Methods also carry effects this cannot price — mortality, shares,
+        job attractiveness, minimum wage, training rate — and wages, economy of scale, and state
+        throughput bonuses are not modeled. 64 of the game's 97 buildings appear here; the rest
+        (monuments, financial districts, ownership-only buildings) move no goods.
+        To rank methods across every building, use <a href={`${base}method-comparison`}>Compare Methods</a>.
+      </p>
     </div>
   </div>
-
-  <div id="pc-summary" class="pc__summary"></div>
-
-  <h2 class="sect">Every combination, ranked at these prices</h2>
-  <p class="pc__hint">
-    Every combination the building can run, ranked. In the current game data every goods line is a flat
-    amount — there are no percentage goods modifiers — so the groups do not interact and the best option
-    in each group always combines into the best overall set (checked exhaustively against 19,200
-    building × random-market cases). This view is here to show the whole trade-off space, not to correct
-    the per-group one. Click a row to load it.
-  </p>
-  <div class="pc__cmbbar">
-    <span id="pc-cmb-count" class="pc__hint" style="margin:0;"></span>
-    <label class="pc__toggle"><input type="checkbox" id="pc-cmb-all" /> show all</label>
-  </div>
-  <div class="grid"><div class="grid__scroll">
-    <table class="vtbl" id="pc-cmb"><thead></thead><tbody></tbody></table>
-  </div></div>
-  <p class="caption">
-    Ranked on production margin only. Wages scale with employment and are not modeled, so a
-    higher-net combination that employs far more people is not automatically better — read the
-    £/worker column alongside the net.
-  </p>
-
-  <h2 class="sect">Each group on its own</h2>
-  <p class="pc__hint">
-    One block per production-method group — you run one method from each. Every option shows what the
-    <em>whole building</em> would earn if you picked it, holding your other groups fixed.
-    <b class="tone-good">Best</b> is marked; the delta is what switching to it would gain or cost you.
-    Automation methods read as a lower net because they buy the same output with fewer workers — the
-    saving is in wages, which this does not price. Click a row to select it.
-  </p>
-  <div id="pc-groups" class="pc__groups"></div>
-
-  <p class="caption">
-    Revenue − input costs at your prices, per building level at full employment. This is the goods
-    margin: it counts every goods line and every employment line in the game's production methods, and
-    nothing else. Methods also carry effects this cannot price — mortality, shares, job attractiveness,
-    minimum wage, training rate — and wages, economy of scale, and state throughput bonuses are not
-    modeled. 64 of the game's 97 buildings appear here; the rest (monuments, financial districts,
-    ownership-only buildings) move no goods.
-  </p>
-
-  <TableTools showBar={false} />
-
-  <h2 class="sect" id="compare">Compare across all buildings</h2>
-  <p class="pc__hint">
-    Each row is one method's own goods flow at the prices above. Sort by per-worker or per-construction
-    to find where a wage or a point of construction buys the most output.
-  </p>
-  <div class="pc__cmpbar">
-    <label class="pc__field pc__field--inline">
-      <span class="pc__label">Filter</span>
-      <input id="pc-cmp-filter" type="search" class="pc__select" placeholder="Building, method, or good…" />
-    </label>
-    <label class="pc__toggle">
-      <input type="checkbox" id="pc-cmp-positive" /> only profitable
-    </label>
-    <span id="pc-cmp-count" class="pc__hint" style="margin:0;"></span>
-  </div>
-  <div class="grid"><div class="grid__scroll">
-    <table class="vtbl" id="pc-cmp" data-sortable>
-      <thead>
-        <tr>
-          <th style="min-width: 12rem;">Building</th>
-          <th style="min-width: 12rem;">Production method</th>
-          <th class="num" title="Revenue − input cost at your prices, per building level">Net £/level</th>
-          <th class="num" title="Jobs this method adds per level">Workers</th>
-          <th class="num" title="Net £ per worker employed">£/worker</th>
-          <th class="num" title="Construction points the building costs">Construction</th>
-          <th class="num" title="Net £ per point of construction — the payback on building it">£/construction</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div></div>
-  <p class="caption">
-    Per-method values here: that method's own goods and jobs, independent of the rest of the building
-  </p>
 
   <script is:inline define:vars={{ base }}>
     (async () => {
       const data = await fetch(`${base}data/profit-calc.json`).then((r) => r.json());
       const $ = (id) => document.getElementById(id);
-      const state = { building: null, choice: {}, price: {} };
-      const priceOf = (g) => (data.goods[g]?.cost ?? 0) * (1 + (state.price[g] ?? 0) / 100);
+      const P = window.v3Prices;
+      const state = { building: null, choice: {} };
+      const priceOf = (g) => P.of(data.goods, g);
 
-      // ── Core model ─────────────────────────────────────────────────
-      // Aggregate a building's flows for a given set of PM choices.
-      // `add` lines sum; `mult` lines scale that good's total, which is why a
-      // method's worth can only be judged alongside the rest of the building.
+      // Aggregate a building's goods and jobs for a set of PM choices.
       function evaluate(choice) {
-        const flow = {}, mult = {}, jobs = {};
+        const flow = {}, jobs = {};
         for (const [gi, pi] of Object.entries(choice)) {
           const pm = state.building.pmGroups[gi]?.pms[pi];
           if (!pm) continue;
-          for (const l of pm.inputs) {
-            if (l.k === 'add') flow[l.g] = (flow[l.g] ?? 0) - l.a;
-            else (mult[l.g] ??= { in: 0, out: 0 }).in += l.a;
-          }
-          for (const l of pm.outputs) {
-            if (l.k === 'add') flow[l.g] = (flow[l.g] ?? 0) + l.a;
-            else (mult[l.g] ??= { in: 0, out: 0 }).out += l.a;
-          }
+          for (const l of pm.inputs) flow[l.g] = (flow[l.g] ?? 0) - l.a;
+          for (const l of pm.outputs) flow[l.g] = (flow[l.g] ?? 0) + l.a;
           for (const j of pm.jobs) jobs[j.p] = (jobs[j.p] ?? 0) + j.a;
-        }
-        for (const [g, m] of Object.entries(mult)) {
-          if (flow[g] != null) flow[g] *= 1 + (flow[g] > 0 ? m.out : m.in);
         }
         let net = 0;
         for (const [g, units] of Object.entries(flow)) net += units * priceOf(g);
         return { flow, jobs, net, totalJobs: Object.values(jobs).reduce((s, a) => s + a, 0) };
       }
-
-      // What the building would earn with one group switched to `pi`.
       const evaluateWith = (gi, pi) => evaluate({ ...state.choice, [gi]: pi });
 
+      const liveGroups = () =>
+        state.building.pmGroups.map((g, gi) => ({ gi, g })).filter(({ g }) => g.pms.length);
+
+      function allCombinations() {
+        let combos = [{}];
+        for (const { gi, g } of liveGroups()) {
+          const next = [];
+          for (const c of combos) for (let pi = 0; pi < g.pms.length; pi++) next.push({ ...c, [gi]: pi });
+          combos = next;
+        }
+        return combos;
+      }
+
       // ── Building picker ────────────────────────────────────────────
-      const buildingSel = $('pc-building');
-      buildingSel.innerHTML = '';
+      const sel = $('bp-building');
+      sel.innerHTML = '';
       let lastGroup = null, optgroup = null;
       for (const b of data.buildings) {
         if (b.group !== lastGroup) {
           optgroup = document.createElement('optgroup');
           optgroup.label = b.group ?? 'Other';
-          buildingSel.appendChild(optgroup);
+          sel.appendChild(optgroup);
           lastGroup = b.group;
         }
         const o = document.createElement('option');
-        o.value = b.id;
-        o.textContent = b.name;
+        o.value = b.id; o.textContent = b.name;
         optgroup.appendChild(o);
       }
 
       function pickBuilding(id) {
         state.building = data.buildings.find((b) => b.id === id);
         state.choice = {};
-        state.building.pmGroups.forEach((g, gi) => { if (g.pms.length) state.choice[gi] = 0; });
-        state.priceRowsFor = null; // force the price rows to rebuild for this building
-        render();
+        for (const { gi } of liveGroups()) state.choice[gi] = 0;
+        renderPrices();
+        renderAll();
       }
 
-      // ── Prices ─────────────────────────────────────────────────────
-      // Rebuild the ROWS only when the set of goods changes: re-creating a
-      // slider mid-drag destroys the element the browser is tracking, which
-      // reads as "click to step" instead of dragging.
-      function renderPriceRows() {
-        // Every good the building could touch under ANY choice, so the slider
-        // set stays put while you compare options.
-        const involved = new Set();
-        for (const g of state.building.pmGroups) {
-          for (const pm of g.pms) {
-            for (const l of [...pm.inputs, ...pm.outputs]) if (l.k === 'add') involved.add(l.g);
-          }
-        }
-        const list = [...involved].sort((a, b) => data.goods[a].name.localeCompare(data.goods[b].name));
-        const signature = list.join('|');
-        if (signature === state.priceRowsFor) return;
-        state.priceRowsFor = signature;
+      // ── Prices (rail) ──────────────────────────────────────────────
+      // Only the goods this building can touch, so the rail stays short and
+      // every slider on screen is one that moves this building's number.
+      function renderPrices() {
+        const goods = new Set();
+        for (const g of state.building.pmGroups)
+          for (const pm of g.pms)
+            for (const l of [...pm.inputs, ...pm.outputs]) goods.add(l.g);
+        const list = [...goods].sort((a, b) => data.goods[a].name.localeCompare(data.goods[b].name));
 
-        const prices = $('pc-prices');
-        prices.innerHTML = '';
-        for (const g of list) {
-          if (state.price[g] == null) state.price[g] = 0; // % offset from base
-          const good = data.goods[g];
-          const row = document.createElement('div');
-          row.className = 'pc__price';
-          row.innerHTML = `
-            <img src="${base}${good.icon}" alt="" loading="lazy" />
-            <span class="pc__pname">${good.name}</span>
-            <input type="range" min="-75" max="75" step="5" value="${state.price[g]}" data-good="${g}" />
-            <span class="pc__pval" data-val="${g}"></span>`;
-          row.querySelector('input').addEventListener('input', (e) => {
-            state.price[g] = Number(e.target.value);
+        $('bp-prices').innerHTML = list.map((g) => `
+          <div class="prow">
+            <div class="prow__head">
+              <img src="${base}${data.goods[g].icon}" alt="" loading="lazy" />
+              <span class="prow__name">${data.goods[g].name}</span>
+              <span class="prow__val" data-val="${g}"></span>
+            </div>
+            <input type="range" min="-75" max="75" step="5" value="${P.get(g)}" data-good="${g}" />
+          </div>`).join('');
+
+        $('bp-prices').querySelectorAll('input[data-good]').forEach((input) =>
+          input.addEventListener('input', () => {
+            P.set(input.dataset.good, Number(input.value));
             renderPriceLabels();
-            renderSummary();
-            renderGroups();
-            renderCombinations();
-            renderCompare();
-          });
-          prices.appendChild(row);
-        }
+            renderAll();      // results sit beside the rail, so they update in view
+          }));
         renderPriceLabels();
       }
 
       function renderPriceLabels() {
-        for (const el of document.querySelectorAll('[data-val]')) {
-          const g = el.dataset.val;
-          const pct = state.price[g] ?? 0;
-          el.innerHTML = `£${priceOf(g).toFixed(1)} <i>(${pct >= 0 ? '+' : ''}${pct}%)</i>`;
+        for (const el of $('bp-prices').querySelectorAll('[data-val]')) {
+          const g = el.dataset.val, pct = P.get(g);
+          el.textContent = `£${priceOf(g).toFixed(0)}${pct ? ` (${pct > 0 ? '+' : ''}${pct}%)` : ''}`;
+          el.classList.toggle('is-off', pct !== 0);
         }
       }
 
-      // ── Summary ────────────────────────────────────────────────────
-      function renderSummary() {
+      // ── Results ────────────────────────────────────────────────────
+      function renderHead() {
         const { flow, jobs, net, totalJobs } = evaluate(state.choice);
         const lines = Object.entries(flow)
           .filter(([, u]) => u !== 0)
-          .map(([g, units]) => ({ name: data.goods[g].name, icon: data.goods[g].icon, units, value: units * priceOf(g) }))
+          .map(([g, u]) => ({ g, u, value: u * priceOf(g) }))
           .sort((a, b) => b.value - a.value);
-        $('pc-summary').innerHTML = `
-          <div class="pc__net ${net >= 0 ? 'tone-good' : 'tone-bad'}">£${net.toFixed(0)} <span>net / level</span></div>
-          <table class="vtbl pc__table"><tbody>
-            ${lines.map((l) => `<tr>
-              <td class="lead-cell"><span class="lead"><img class="lead__icon" src="${base}${l.icon}" alt="" />${l.name}</span></td>
-              <td class="num">${l.units > 0 ? '+' : ''}${Number(l.units.toFixed(1))}</td>
-              <td class="num ${l.value >= 0 ? 'tone-good' : 'tone-bad'}">£${l.value.toFixed(0)}</td>
-            </tr>`).join('')}
-            <tr><td class="lead-cell"><span class="lead">Employment</span></td>
-              <td class="num" colspan="2">${Object.entries(jobs).map(([p, a]) => `${p} ${a}`).join(' · ') || '—'} (${totalJobs})</td></tr>
-          </tbody></table>`;
+        const best = Math.max(...allCombinations().map((c) => evaluate(c).net));
+        const atBest = net >= best - 0.5;
+
+        $('bp-head').innerHTML = `
+          <div class="bp__netrow">
+            <div class="bp__net ${net >= 0 ? 'tone-good' : 'tone-bad'}">£${net.toFixed(0)}<span>net / level</span></div>
+            <div class="bp__jobs">${totalJobs.toLocaleString()}<span>workers</span></div>
+            <div class="bp__perw">${totalJobs > 0 ? '£' + (net / totalJobs).toFixed(2) : '—'}<span>per worker</span></div>
+            ${atBest
+              ? '<span class="bp__atbest">best set at these prices</span>'
+              : `<button type="button" id="bp-loadbest" class="bp__bestbtn">load best set (£${best.toFixed(0)})</button>`}
+          </div>
+          <div class="bp__flow">
+            ${lines.map((l) => `<span class="bp__fl">
+              <img src="${base}${data.goods[l.g].icon}" alt="" loading="lazy" />
+              ${data.goods[l.g].name}
+              <b class="${l.u > 0 ? 'tone-good' : 'tone-bad'}">${l.u > 0 ? '+' : ''}${l.u}</b>
+              <i>£${l.value.toFixed(0)}</i></span>`).join('')}
+            ${Object.entries(jobs).map(([p, a]) => `<span class="bp__fl bp__fl--job">${p} <b>${a}</b></span>`).join('')}
+          </div>`;
+
+        const btn = $('bp-loadbest');
+        if (btn) btn.addEventListener('click', () => {
+          const bestCombo = allCombinations()
+            .map((c) => ({ c, net: evaluate(c).net }))
+            .sort((a, b) => b.net - a.net)[0];
+          state.choice = { ...bestCombo.c };
+          renderAll();
+        });
       }
 
-      // ── Ranked options, one block per PM group ─────────────────────
       function renderGroups() {
-        const wrap = $('pc-groups');
-        wrap.innerHTML = '';
-        state.building.pmGroups.forEach((g, gi) => {
-          if (!g.pms.length) return;
+        $('bp-groups').innerHTML = liveGroups().map(({ gi, g }) => {
           const current = state.choice[gi];
           const currentNet = evaluateWith(gi, current).net;
           const options = g.pms.map((pm, pi) => {
             const r = evaluateWith(gi, pi);
             return {
               pi, pm, net: r.net, jobs: r.totalJobs, delta: r.net - currentNet,
-              // Why an automation option can be right despite a lower net: it
-              // buys the same output with fewer workers.
               perWorker: r.totalJobs > 0 ? r.net / r.totalJobs : null,
             };
           });
           const best = Math.max(...options.map((o) => o.net));
-          // Rank by value, but keep it stable so equal options don't jump around.
           const ranked = [...options].sort((a, b) => b.net - a.net || a.pi - b.pi);
-
-          const block = document.createElement('div');
-          block.className = 'pc__group';
-          block.innerHTML = `
-            <div class="pc__gname">${g.name}</div>
-            <table class="vtbl pc__gtable">
-              <thead><tr>
-                <th>Method</th><th class="num">Net £</th><th class="num">vs current</th>
-                <th class="num" title="Total jobs in the building with this option">Jobs</th>
-                <th class="num" title="Net £ per worker with this option">£/wkr</th>
-              </tr></thead>
-              <tbody>
-              ${ranked.map((o) => `
-                <tr class="pc__opt ${o.pi === current ? 'is-current' : ''} ${o.net === best ? 'is-best' : ''}"
-                    data-gi="${gi}" data-pi="${o.pi}">
-                  <td class="pc__optname">
-                    <img src="${base}${o.pm.icon ?? ''}" alt="" loading="lazy"
-                         onerror="this.style.visibility='hidden'" />
-                    ${o.pm.name}
-                    ${o.net === best ? '<span class="pc__badge">best</span>' : ''}
-                  </td>
-                  <td class="num"><b class="${o.net >= 0 ? 'tone-good' : 'tone-bad'}">£${o.net.toFixed(0)}</b></td>
-                  <td class="num pc__delta">${
-                    o.pi === current
-                      ? '<span class="pc__cur">current</span>'
+          return `
+            <div class="bp__group">
+              <div class="bp__gname">${g.name}</div>
+              <table class="vtbl bp__gtable">
+                <thead><tr>
+                  <th>Method</th><th class="num">Net £</th><th class="num">vs now</th>
+                  <th class="num">Jobs</th><th class="num">£/wkr</th>
+                </tr></thead>
+                <tbody>${ranked.map((o) => `
+                  <tr class="bp__opt ${o.pi === current ? 'is-current' : ''}" data-gi="${gi}" data-pi="${o.pi}">
+                    <td class="bp__optname">
+                      <img src="${base}${o.pm.icon ?? ''}" alt="" loading="lazy"
+                           onerror="this.style.visibility='hidden'" />
+                      ${o.pm.name}
+                      ${o.net === best ? '<span class="bp__badge">best</span>' : ''}
+                    </td>
+                    <td class="num"><b class="${o.net >= 0 ? 'tone-good' : 'tone-bad'}">£${o.net.toFixed(0)}</b></td>
+                    <td class="num">${o.pi === current ? '<span class="bp__cur">—</span>'
                       : `<span class="${o.delta > 0 ? 'tone-good' : o.delta < 0 ? 'tone-bad' : 'tone-neutral'}">${
-                          o.delta > 0 ? '+' : ''}£${o.delta.toFixed(0)}</span>`
-                  }</td>
-                  <td class="num dim" title="Total jobs in the building with this option">${o.jobs}</td>
-                  <td class="num dim" title="Net £ per worker — how much each job carries with this option">${
-                    o.perWorker == null ? '<span class="cell__dash">—</span>' : o.perWorker.toFixed(2)
-                  }</td>
-                </tr>`).join('')}
-            </tbody></table>`;
-          wrap.appendChild(block);
-        });
+                          o.delta > 0 ? '+' : ''}£${o.delta.toFixed(0)}</span>`}</td>
+                    <td class="num dim">${o.jobs}</td>
+                    <td class="num dim">${o.perWorker == null ? '—' : o.perWorker.toFixed(2)}</td>
+                  </tr>`).join('')}
+                </tbody>
+              </table>
+            </div>`;
+        }).join('');
 
-        wrap.querySelectorAll('.pc__opt').forEach((tr) =>
+        $('bp-groups').querySelectorAll('.bp__opt').forEach((tr) =>
           tr.addEventListener('click', () => {
             state.choice[tr.dataset.gi] = Number(tr.dataset.pi);
-            renderSummary();
-            renderGroups();
-            renderCombinations();
+            renderAll();
           }));
       }
 
-      // ── Every combination the building can run ─────────────────────
-      // The cartesian product over PM groups. The space is small (108 at the
-      // widest, Livestock Ranches), so rank exhaustively rather than assuming
-      // the per-group winners combine into the best set — with percentage
-      // methods in play they often do not.
-      function allCombinations() {
-        const groups = state.building.pmGroups
-          .map((g, gi) => ({ gi, g }))
-          .filter(({ g }) => g.pms.length);
-        let combos = [{}];
-        for (const { gi, g } of groups) {
-          const next = [];
-          for (const c of combos) for (let pi = 0; pi < g.pms.length; pi++) next.push({ ...c, [gi]: pi });
-          combos = next;
-        }
-        return { groups, combos };
-      }
-
-      function renderCombinations() {
-        const { groups, combos } = allCombinations();
-        const scored = combos.map((choice) => {
+      function renderCombos() {
+        if (!$('bp-combos').closest('details').open) return; // only when opened
+        const groups = liveGroups();
+        const scored = allCombinations().map((choice) => {
           const r = evaluate(choice);
-          return {
-            choice,
-            net: r.net,
-            jobs: r.totalJobs,
-            perWorker: r.totalJobs > 0 ? r.net / r.totalJobs : null,
-          };
+          return { choice, net: r.net, jobs: r.totalJobs,
+                   perWorker: r.totalJobs > 0 ? r.net / r.totalJobs : null };
         }).sort((a, b) => b.net - a.net);
-
-        const showAll = $('pc-cmb-all').checked;
-        const shown = showAll ? scored : scored.slice(0, 12);
         const same = (c) => groups.every(({ gi }) => c[gi] === state.choice[gi]);
 
-        $('pc-cmb').tHead.innerHTML = `<tr>
-          <th class="num" style="width:3rem;">#</th>
+        $('bp-combos').tHead.innerHTML = `<tr><th class="num" style="width:3rem;">#</th>
           ${groups.map(({ g }) => `<th>${g.name}</th>`).join('')}
           <th class="num">Net £</th><th class="num">Jobs</th><th class="num">£/wkr</th></tr>`;
-        $('pc-cmb').tBodies[0].innerHTML = shown.map((r, i) => {
-          const rank = scored.indexOf(r) + 1;
-          return `<tr class="pc__opt ${same(r.choice) ? 'is-current' : ''}" data-combo="${
-            groups.map(({ gi }) => `${gi}:${r.choice[gi]}`).join(',')}">
-            <td class="num dim">${rank}</td>
+        $('bp-combos').tBodies[0].innerHTML = scored.map((r, i) => `
+          <tr class="bp__opt ${same(r.choice) ? 'is-current' : ''}"
+              data-combo="${groups.map(({ gi }) => `${gi}:${r.choice[gi]}`).join(',')}">
+            <td class="num dim">${i + 1}</td>
             ${groups.map(({ gi, g }) => `<td>${g.pms[r.choice[gi]].name}</td>`).join('')}
             <td class="num"><b class="${r.net >= 0 ? 'tone-good' : 'tone-bad'}">£${r.net.toFixed(0)}</b></td>
             <td class="num dim">${r.jobs}</td>
-            <td class="num dim">${r.perWorker == null ? '<span class="cell__dash">—</span>' : r.perWorker.toFixed(2)}</td>
-          </tr>`;
-        }).join('');
-        $('pc-cmb-count').textContent = showAll
-          ? `all ${scored.length} combinations`
-          : `top 12 of ${scored.length} combinations`;
+            <td class="num dim">${r.perWorker == null ? '—' : r.perWorker.toFixed(2)}</td>
+          </tr>`).join('');
 
-        $('pc-cmb').tBodies[0].querySelectorAll('tr').forEach((tr) =>
+        $('bp-combos').tBodies[0].querySelectorAll('tr').forEach((tr) =>
           tr.addEventListener('click', () => {
             for (const part of tr.dataset.combo.split(',')) {
               const [gi, pi] = part.split(':');
               state.choice[gi] = Number(pi);
             }
-            renderSummary();
-            renderGroups();
-            renderCombinations();
+            renderAll();
           }));
       }
 
-      function render() {
-        renderPriceRows();
-        renderSummary();
-        renderGroups();
-        renderCombinations();
-        renderCompare();
-      }
+      function renderAll() { renderHead(); renderGroups(); renderCombos(); }
 
-      // ── Compare across all buildings ───────────────────────────────
-      const rows = [];
-      for (const b of data.buildings) {
-        for (const g of b.pmGroups) {
-          for (const pm of g.pms) {
-            if (!pm.inputs.length && !pm.outputs.length) continue; // pure % methods
-            rows.push({
-              b, pm,
-              jobs: pm.jobs.reduce((s, j) => s + j.a, 0),
-              search: `${b.name} ${g.name} ${pm.name} ${[...pm.inputs, ...pm.outputs]
-                .map((l) => data.goods[l.g]?.name ?? l.g).join(' ')}`.toLowerCase(),
-            });
-          }
-        }
-      }
-      const money = (lines, sign) =>
-        lines.filter((l) => l.k === 'add').reduce((s, l) => s + sign * l.a * priceOf(l.g), 0);
-
-      function renderCompare() {
-        const q = $('pc-cmp-filter').value.trim().toLowerCase();
-        const onlyPositive = $('pc-cmp-positive').checked;
-        const body = $('pc-cmp').tBodies[0];
-        const out = [];
-        for (const r of rows) {
-          if (q && !r.search.includes(q)) continue;
-          const net = money(r.pm.outputs, 1) + money(r.pm.inputs, -1);
-          if (onlyPositive && net <= 0) continue;
-          // Automation methods REMOVE jobs; a negative net over negative workers
-          // yields a cheerful positive ratio that means nothing.
-          const perWorker = r.jobs > 0 ? net / r.jobs : null;
-          const perConstruction = r.b.construction ? net / r.b.construction : null;
-          const tone = (v) => (v > 0 ? 'tone-good' : v < 0 ? 'tone-bad' : 'tone-neutral');
-          const num = (v, d = 0) => (v == null ? '<span class="cell__dash">—</span>' : v.toFixed(d));
-          out.push({ sort: [r.b.name, r.pm.name, net, r.jobs, perWorker, r.b.construction, perConstruction], html: `<tr>
-            <td class="lead-cell" data-sort="${r.b.name}">
-              <span class="lead"><img class="lead__icon" src="${base}${r.b.icon}" alt="" loading="lazy" />
-              <a href="${base}buildings/${r.b.id.replace('building_', '')}">${r.b.name}</a></span></td>
-            <td>${r.pm.name}</td>
-            <td class="num" data-sort="${net.toFixed(2)}"><b class="${tone(net)}">£${net.toFixed(0)}</b></td>
-            <td class="num" data-sort="${r.jobs || ''}">${r.jobs || '<span class="cell__dash">—</span>'}</td>
-            <td class="num" data-sort="${perWorker ?? ''}"><span class="${perWorker == null ? '' : tone(perWorker)}">${num(perWorker, 3)}</span></td>
-            <td class="num dim" data-sort="${r.b.construction ?? ''}">${r.b.construction ?? '<span class="cell__dash">—</span>'}</td>
-            <td class="num" data-sort="${perConstruction ?? ''}"><span class="${perConstruction == null ? '' : tone(perConstruction)}">${num(perConstruction, 2)}</span></td>
-          </tr>` });
-        }
-
-        // Re-apply the table's active sort: TableTools sorts the live DOM, and
-        // we just replaced every row, so a price nudge would otherwise drop the
-        // user back to build order.
-        const heads = [...$('pc-cmp').tHead.rows[0].cells];
-        const col = heads.findIndex((th) => (th.getAttribute('aria-sort') ?? 'none') !== 'none');
-        if (col >= 0) {
-          const dir = heads[col].getAttribute('aria-sort') === 'ascending' ? 1 : -1;
-          out.sort((a, b) => {
-            const av = a.sort[col], bv = b.sort[col];
-            if (av == null && bv == null) return 0;
-            if (av == null) return 1;   // blanks sink in both directions
-            if (bv == null) return -1;
-            return (typeof av === 'number' ? av - bv : String(av).localeCompare(String(bv))) * dir;
-          });
-        }
-        body.innerHTML = out.map((r) => r.html).join('');
-        $('pc-cmp-count').textContent = `${out.length} of ${rows.length} methods`;
-        body.querySelectorAll('tr').forEach((tr) => tr.removeAttribute('data-tt-i'));
-      }
-
-      $('pc-cmb-all').addEventListener('change', renderCombinations);
-      $('pc-cmp-filter').addEventListener('input', renderCompare);
-      $('pc-cmp-positive').addEventListener('change', renderCompare);
-      buildingSel.addEventListener('change', () => pickBuilding(buildingSel.value));
+      $('bp-combos').closest('details').addEventListener('toggle', renderCombos);
+      $('bp-reset').addEventListener('click', () => { P.reset(); renderPrices(); renderAll(); });
+      sel.addEventListener('change', () => pickBuilding(sel.value));
       pickBuilding(data.buildings[0].id);
     })();
   </script>
 
   <style is:global>
-    .pc__top {
-      display: grid; grid-template-columns: minmax(14rem, 20rem) 1fr;
-      gap: 1.5rem; align-items: start; margin-bottom: 1rem;
-    }
-    @media (max-width: 900px) { .pc__top { grid-template-columns: 1fr; } }
-    .pc__field { display: flex; flex-direction: column; gap: 0.25rem; }
-    .pc__label {
-      font-family: var(--font-ui); font-size: 0.62rem; text-transform: uppercase;
-      letter-spacing: 0.16em; color: var(--gold-soft); font-weight: 500;
-    }
-    .pc__select {
-      background: var(--bg-elev); color: var(--text);
-      border: 1px solid var(--border); border-radius: 6px;
-      font: inherit; font-size: 0.85rem; padding: 0.4rem 0.5rem;
-    }
-    .pc__pricebox { display: flex; flex-direction: column; gap: 0.3rem; }
-    .pc__hint { font-size: 0.76rem; color: var(--text-dim); margin: 0 0 0.7rem; max-width: 62rem; line-height: 1.5; }
-    .pc__price {
-      display: grid; grid-template-columns: 20px 8rem minmax(6rem, 22rem) 8rem;
-      gap: 0.6rem; align-items: center; font-size: 0.8rem;
-    }
-    .pc__price img { width: 18px; height: 18px; object-fit: contain; }
-    .pc__price input { accent-color: var(--gold); }
-    .pc__pval { font-variant-numeric: tabular-nums; }
-    .pc__pval i { color: var(--text-faint); font-style: normal; font-size: 0.72rem; }
+    .bp { display: grid; grid-template-columns: minmax(14rem, 17rem) 1fr; gap: 1.6rem; align-items: start; }
+    @media (max-width: 900px) { .bp { grid-template-columns: 1fr; } }
 
-    .pc__net { font-family: var(--font-display); font-size: 2rem; margin: 0.2rem 0 0.5rem; }
-    .pc__net span { font-size: 0.9rem; color: var(--text-dim); font-family: var(--font-ui); }
-    .pc__table { max-width: 34rem; }
-
-    .pc__groups {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-      gap: 0.5rem 1.5rem; align-items: start;
+    .bp__netrow {
+      display: flex; align-items: baseline; gap: 1.6rem; flex-wrap: wrap;
+      padding-bottom: 0.5rem; border-bottom: 3px double var(--gold-deep); margin-bottom: 0.9rem;
     }
-    .pc__gname {
+    .bp__net { font-family: var(--font-display); font-size: 2.2rem; line-height: 1; }
+    .bp__jobs, .bp__perw {
+      font-family: var(--font-display); font-size: 1.25rem; color: var(--text-soft); line-height: 1;
+    }
+    .bp__net span, .bp__jobs span, .bp__perw span {
       font-family: var(--font-ui); font-size: 0.62rem; text-transform: uppercase;
-      letter-spacing: 0.16em; color: var(--gold-soft); font-weight: 500;
-      border-bottom: 1px solid var(--border); padding-bottom: 0.2rem; margin-bottom: 0.1rem;
+      letter-spacing: 0.14em; color: var(--text-dim); margin-left: 0.45rem;
     }
-    .pc__gtable { margin-bottom: 0.8rem; }
-    .pc__gtable thead th {
+    .bp__atbest {
+      font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--tone-good);
+      border: 1px solid color-mix(in srgb, var(--tone-good) 40%, transparent);
+      border-radius: 999px; padding: 0.12rem 0.5rem; margin-left: auto;
+    }
+    .bp__bestbtn {
+      margin-left: auto; font: inherit; font-size: 0.72rem; cursor: pointer;
+      background: var(--bg-elev); border: 1px solid var(--gold-deep);
+      color: var(--gold); border-radius: 6px; padding: 0.3rem 0.7rem;
+    }
+    .bp__bestbtn:hover { background: var(--bg-elev-2); }
+
+    .bp__flow { display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; margin-bottom: 1.1rem; }
+    .bp__fl { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; white-space: nowrap; }
+    .bp__fl img { width: 17px; height: 17px; object-fit: contain; }
+    .bp__fl b { font-variant-numeric: tabular-nums; }
+    .bp__fl i { font-style: normal; color: var(--text-dim); font-size: 0.75rem; }
+    .bp__fl--job { color: var(--text-dim); }
+
+    .bp__groups {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+      gap: 0.4rem 1.5rem; align-items: start;
+    }
+    .bp__gname {
+      font-family: var(--font-ui); font-size: 0.6rem; text-transform: uppercase;
+      letter-spacing: 0.16em; color: var(--gold-soft); font-weight: 500;
+      border-bottom: 1px solid var(--border); padding-bottom: 0.2rem;
+    }
+    .bp__gtable { margin-bottom: 0.9rem; }
+    .bp__gtable thead th {
       position: static; border-bottom: 1px solid var(--border);
-      font-size: 0.55rem; letter-spacing: 0.1em; padding: 0.2rem 0.5rem;
+      font-size: 0.54rem; letter-spacing: 0.1em; padding: 0.2rem 0.45rem;
     }
-    .pc__opt { cursor: pointer; }
-    .pc__opt:hover td { background: oklch(0.30 0.04 80 / 0.3); }
-    .pc__opt td { padding: 0.24rem 0.5rem; }
-    .pc__optname {
-      display: flex; align-items: center; gap: 0.4rem;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    }
-    .pc__optname img { width: 18px; height: 18px; object-fit: contain; flex-shrink: 0; }
-    .pc__opt.is-best td { box-shadow: inset 0 0 0 0 transparent; }
-    .pc__opt.is-best .pc__optname { color: var(--text); }
-    .pc__opt.is-current td:first-child { box-shadow: inset 3px 0 0 var(--gold); }
-    .pc__opt.is-current { background: var(--bg-elev); }
-    .pc__badge {
-      font-family: var(--font-mono); font-size: 0.54rem; text-transform: uppercase;
+    .bp__opt { cursor: pointer; }
+    .bp__opt td { padding: 0.24rem 0.45rem; }
+    .bp__opt:hover td { background: oklch(0.30 0.04 80 / 0.3); }
+    .bp__opt.is-current { background: var(--bg-elev); }
+    .bp__opt.is-current td:first-child { box-shadow: inset 3px 0 0 var(--gold); }
+    .bp__optname { display: flex; align-items: center; gap: 0.4rem; white-space: nowrap; }
+    .bp__optname img { width: 17px; height: 17px; object-fit: contain; flex-shrink: 0; }
+    .bp__badge {
+      font-family: var(--font-mono); font-size: 0.52rem; text-transform: uppercase;
       letter-spacing: 0.1em; color: var(--tone-good);
       border: 1px solid color-mix(in srgb, var(--tone-good) 45%, transparent);
-      border-radius: 999px; padding: 0.02rem 0.35rem; flex-shrink: 0;
+      border-radius: 999px; padding: 0.02rem 0.3rem;
     }
-    .pc__cur { font-family: var(--font-mono); font-size: 0.58rem; color: var(--text-faint); letter-spacing: 0.08em; }
-    .pc__delta { font-variant-numeric: tabular-nums; }
+    .bp__cur { color: var(--text-faint); }
 
-    .pc__cmbbar { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
-    .pc__cmpbar { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
-    .pc__field--inline { flex-direction: row; align-items: center; gap: 0.5rem; margin: 0; }
-    .pc__field--inline .pc__select { min-width: 18rem; }
-    .pc__toggle {
-      display: inline-flex; align-items: center; gap: 0.35rem;
-      font-size: 0.78rem; color: var(--text-dim); cursor: pointer;
+    .bp__all { margin: 0.6rem 0 1rem; }
+    .bp__all > summary {
+      cursor: pointer; font-family: var(--font-ui); font-size: 0.62rem;
+      text-transform: uppercase; letter-spacing: 0.16em; color: var(--gold-soft);
+      padding: 0.3rem 0;
     }
-    .pc__toggle input { accent-color: var(--gold); margin: 0; }
+    .bp__hint { font-size: 0.76rem; color: var(--text-dim); margin: 0.3rem 0 0.6rem; max-width: 58rem; line-height: 1.5; }
   </style>
 </Base>
