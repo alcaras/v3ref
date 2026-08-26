@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import popsJson from '../data/pops.json';
+
+const base = import.meta.env.BASE_URL;
+const pops = (popsJson as any).pops as any[];
+
+const csv = {
+  header: [
+    'Pop type', 'Id', 'Strata', 'Wage weight', 'Dependent wage', 'Political engagement',
+    'Unemployment wealth', 'Starting QoL', 'Qualifications', 'PMs employing',
+  ],
+  rows: pops.map((p) => [
+    p.name, p.id, p.strata ?? '', p.wageWeight ?? '', p.dependentWage ?? '',
+    p.engagementBase ?? '', p.unemployment ? p.unemploymentWealth ?? '' : '',
+    p.startQualityOfLife ?? '', p.hasQualifications ? 'yes' : '', p.pmsEmploying || '',
+  ]),
+};
+---
+<Base
+  title="Pop Types"
+  active="pop-types"
+  eyebrow="Economy"
+  pageStats={[{ value: pops.length, label: 'pop types' }]}
+>
+  <TableTools csvId="pops" csvName="victoria3-pop-types" />
+
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl" data-sortable>
+        <thead>
+          <tr>
+            <th>Pop type</th>
+            <th>Strata</th>
+            <th class="num" title="Relative share of the building's wage budget">Wage weight</th>
+            <th class="num" title="Wage paid per dependent, per year">Dependent wage</th>
+            <th class="num" title="Base share politically engaged (before literacy)">Engagement</th>
+            <th class="num" title="Wealth level while unemployed">Unemployed wealth</th>
+            <th class="num" title="Quality of life at game start">Start QoL</th>
+            <th>Qualifications</th>
+            <th class="num" title="Production methods that employ this profession">PMs</th>
+          </tr>
+        </thead>
+        <tbody>
+          {pops.map((p) => (
+            <tr id={p.id}>
+              <td class="lead-cell" data-sort={p.name}>
+                <span class="lead">
+                  <img class="lead__icon" src={`${base}${p.icon}`} alt="" loading="lazy" />
+                  {p.name}
+                  {p.isSlave && <span class="chip">· unpaid</span>}
+                </span>
+              </td>
+              <td class="dim">{p.strata ?? <span class="cell__dash">—</span>}</td>
+              <td class="num" data-sort={p.wageWeight ?? ''}>{p.wageWeight ?? <span class="cell__dash">—</span>}</td>
+              <td class="num" data-sort={p.dependentWage ?? ''}>{p.dependentWage ?? <span class="cell__dash">—</span>}</td>
+              <td class="num" data-sort={p.engagementBase ?? ''}>
+                {p.engagementBase != null ? `${Math.round(p.engagementBase * 100)}%` : <span class="cell__dash">—</span>}
+              </td>
+              <td class="num" data-sort={p.unemployment ? p.unemploymentWealth ?? '' : ''}>
+                {p.unemployment ? p.unemploymentWealth : <span class="cell__dash">—</span>}
+              </td>
+              <td class="num" data-sort={p.startQualityOfLife ?? ''}>{p.startQualityOfLife ?? <span class="cell__dash">—</span>}</td>
+              <td class="dim">{p.hasQualifications ? 'required' : <span class="cell__dash">—</span>}</td>
+              <td class="num" data-sort={p.pmsEmploying || ''}>{p.pmsEmploying || <span class="cell__dash">—</span>}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="caption">
+    Engagement shown before literacy and modifiers · qualification formulas are scripted per pop type (education access, existing pops)
+  </p>
+
+  <script is:inline define:vars={{ csv }}>
+    window.v3Csv = window.v3Csv || {};
+    window.v3Csv.pops = () => csv;
+  </script>
+</Base>

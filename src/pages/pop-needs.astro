@@ -1,0 +1,90 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import needsJson from '../data/pop_needs.json';
+import { getEntity } from '../lib/entities';
+
+const base = import.meta.env.BASE_URL;
+const needs = (needsJson as any).needs as any[];
+
+const csv = {
+  header: [
+    'Need', 'Id', 'Good', 'Weight', 'Max supply share', 'Default good',
+    'In buy packages (wealth)', 'Amount range',
+  ],
+  rows: needs.flatMap((n) =>
+    n.entries.map((e: any) => [
+      n.name, n.id, e.name, e.weight, e.maxSupplyShare ?? '',
+      n.default === e.good ? 'yes' : '',
+      n.buyPackages ? `${n.buyPackages.minWealth}–${n.buyPackages.maxWealth}` : '',
+      n.buyPackages ? `${n.buyPackages.minAmount}–${n.buyPackages.maxAmount}` : '',
+    ]),
+  ),
+};
+---
+<Base
+  title="Pop Needs"
+  active="pop-needs"
+  eyebrow="Economy"
+  pageStats={[
+    { value: needs.length, label: 'needs' },
+    { value: needs.reduce((s, n) => s + n.entries.length, 0), label: 'goods entries' },
+  ]}
+>
+  <TableTools csvId="needs" csvName="victoria3-pop-needs" />
+
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl">
+        <thead>
+          <tr>
+            <th>Need</th>
+            <th title="Wealth levels whose buy packages include this need, and the units bought">In buy packages</th>
+            <th>Good</th>
+            <th class="num" title="Base preference weight; actual spending shifts with market supply">Weight</th>
+            <th class="num" title="Cap on how much of the need one good can satisfy">Max share</th>
+          </tr>
+        </thead>
+        <tbody>
+          {needs.map((n) => n.entries.map((e: any, i: number) => {
+            const ent = getEntity(e.good);
+            return (
+              <tr>
+                {i === 0 && (
+                  <td rowspan={n.entries.length} class="lead-cell">
+                    <span class="lead">{n.name}</span>
+                  </td>
+                )}
+                {i === 0 && (
+                  <td rowspan={n.entries.length} class="dim">
+                    {n.buyPackages
+                      ? `wealth ${n.buyPackages.minWealth}–${n.buyPackages.maxWealth} · ${n.buyPackages.minAmount}→${n.buyPackages.maxAmount}`
+                      : '—'}
+                  </td>
+                )}
+                <td>
+                  <span class="lead">
+                    {ent?.icon && <img class="lead__icon" src={`${base}${ent.icon}`} alt="" loading="lazy" />}
+                    {ent?.page ? <a href={`${base}${ent.page}`}>{e.name}</a> : e.name}
+                    {n.default === e.good && <span class="chip" title="Fallback good when the market has no supply">· default</span>}
+                  </span>
+                </td>
+                <td class="num">{e.weight}</td>
+                <td class="num">{e.maxSupplyShare ?? <span class="cell__dash">—</span>}</td>
+              </tr>
+            );
+          }))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="caption">
+    Weights steer spending between substitutes, scaled by market supply · buy-package amounts are units per wealth level (1–99)
+  </p>
+
+  <script is:inline define:vars={{ csv }}>
+    window.v3Csv = window.v3Csv || {};
+    window.v3Csv.needs = () => csv;
+  </script>
+</Base>

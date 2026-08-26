@@ -1,0 +1,105 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import IOList from '../components/IOList.astro';
+import pmsJson from '../data/pms.json';
+
+const base = import.meta.env.BASE_URL;
+const pms = (pmsJson as any).pms as any[];
+
+const lineText = (list: any[]) =>
+  list.map((l) => `${l.name} ${l.kind === 'mult' ? `${Math.round(l.amount * 100)}%` : l.amount}`).join('; ');
+const reqText = (pm: any) =>
+  [
+    ...pm.techs.map((t: any) => t.name),
+    ...pm.laws.map((l: any) => l.name),
+    ...pm.other.map((o: any) => o.name),
+    ...pm.blockedByLaws.map((l: any) => `not ${l.name}`),
+  ].join('; ');
+
+const csv = {
+  header: ['Production method', 'Id', 'Buildings', 'Requires', 'Inputs', 'Outputs', 'Jobs', 'Total jobs', 'Net £ / level'],
+  rows: pms.map((pm) => [
+    pm.name, pm.id, pm.buildings.map((b: any) => b.name).join('; '), reqText(pm),
+    lineText(pm.inputs), lineText(pm.outputs),
+    pm.jobs.map((j: any) => `${j.name} ${j.amount}`).join('; '),
+    pm.totalJobs || '', pm.inputs.length || pm.outputs.length ? pm.netAtBase : '',
+  ]),
+};
+---
+<Base
+  title="Production Methods"
+  active="production-methods"
+  eyebrow="Economy"
+  pageFilter="Filter production methods…"
+  pageStats={[{ value: pms.length, label: 'production methods' }]}
+>
+  <TableTools csvId="pms" csvName="victoria3-production-methods" />
+
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl" id="pms-table" data-sortable>
+        <thead>
+          <tr>
+            <th style="min-width: 13rem;">Production method</th>
+            <th>Buildings</th>
+            <th>Inputs</th>
+            <th>Outputs</th>
+            <th class="num">Jobs</th>
+            <th class="num" title="Σ outputs × base price − Σ inputs × base price, per building level">Net £</th>
+          </tr>
+        </thead>
+        <tbody>
+          {pms.map((pm) => (
+            <tr data-name={`${pm.name} ${pm.id} ${pm.buildings.map((b: any) => b.name).join(' ')}`.toLowerCase()}>
+              <td class="lead-cell" data-sort={pm.name}>
+                <span class="lead">
+                  <img class="lead__icon" src={`${base}${pm.icon}`} alt="" loading="lazy" />
+                  {pm.name}
+                </span>
+              </td>
+              <td class="dim">
+                {pm.buildings.map((b: any, i: number) => (
+                  <>
+                    {i > 0 && ', '}
+                    <a href={`${base}buildings/${b.slug}`}>{b.name}</a>
+                  </>
+                ))}
+              </td>
+              <td><IOList lines={pm.inputs} tone="bad" /></td>
+              <td><IOList lines={pm.outputs} tone="good" /></td>
+              <td class="num" data-sort={pm.totalJobs || ''}>{pm.totalJobs || <span class="cell__dash">—</span>}</td>
+              <td class="num" data-sort={pm.inputs.length || pm.outputs.length ? pm.netAtBase : ''}>
+                {pm.inputs.length || pm.outputs.length ? (
+                  <b class={pm.netAtBase > 0 ? 'tone-good' : pm.netAtBase < 0 ? 'tone-bad' : 'tone-neutral'}>
+                    {pm.netAtBase > 0 ? '+' : ''}{pm.netAtBase}
+                  </b>
+                ) : <span class="cell__dash">—</span>}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="caption">
+    Per building level at full employment · net uses base prices, flat lines only · requirements are on each building's page
+  </p>
+
+  <script is:inline define:vars={{ csv }}>
+    window.v3Csv = window.v3Csv || {};
+    window.v3Csv.pms = () => csv;
+  </script>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const rows = [...document.querySelectorAll('#pms-table tbody tr')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const r of rows) r.classList.toggle('is-hidden', !!q && !r.dataset.name.includes(q));
+      });
+    }
+  </script>
+</Base>

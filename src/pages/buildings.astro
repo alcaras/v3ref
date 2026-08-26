@@ -1,0 +1,105 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import buildingsJson from '../data/buildings.json';
+import { getEntity } from '../lib/entities';
+
+const base = import.meta.env.BASE_URL;
+const buildings = (buildingsJson as any).buildings as any[];
+const pmCount = (b: any) => b.pmGroups.reduce((s: number, g: any) => s + g.pms.length, 0);
+
+const csv = {
+  header: [
+    'Building', 'Id', 'Group', 'Subgroup', 'Land use', 'Construction',
+    'Unlock techs', 'PM groups', 'PMs', 'Output goods', 'Unique',
+  ],
+  rows: buildings.map((b) => [
+    b.name, b.id, b.groupRoot?.name ?? '', b.group?.name ?? '', b.landUsage ?? '',
+    b.construction?.value ?? '', b.techs.map((t: any) => t.name).join('; '),
+    b.pmGroups.length, pmCount(b),
+    b.outputGoods.map((g: string) => getEntity(g)?.name ?? g).join('; '),
+    b.unique ? 'yes' : '',
+  ]),
+};
+---
+<Base
+  title="Buildings"
+  active="buildings"
+  eyebrow="Economy"
+  pageFilter="Filter buildings…"
+  pageStats={[
+    { value: buildings.length, label: 'buildings' },
+    { value: buildings.reduce((s, b) => s + pmCount(b), 0), label: 'production methods' },
+  ]}
+>
+  <TableTools csvId="buildings" csvName="victoria3-buildings" />
+
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl" id="buildings-table" data-sortable>
+        <thead>
+          <tr>
+            <th>Building</th>
+            <th>Group</th>
+            <th>Land</th>
+            <th class="num">Construction</th>
+            <th>Unlocked by</th>
+            <th class="num">PMs</th>
+            <th>Makes</th>
+          </tr>
+        </thead>
+        <tbody>
+          {buildings.map((b) => (
+            <tr data-name={`${b.name} ${b.id} ${b.groupRoot?.name ?? ''} ${b.group?.name ?? ''}`.toLowerCase()}>
+              <td class="lead-cell" data-sort={b.name}>
+                <span class="lead">
+                  <img class="lead__icon" src={`${base}${b.icon}`} alt="" loading="lazy" />
+                  <a href={`${base}buildings/${b.slug}`}>{b.name}</a>
+                  {b.unique && <span class="chip" title="Only one can exist in the world">· unique</span>}
+                </span>
+              </td>
+              <td class="dim" data-sort={`${b.groupRoot?.name ?? ''} / ${b.group?.name ?? ''}`}>
+                {b.groupRoot?.name}{b.group && b.group.id !== b.groupRoot?.id ? ` · ${b.group.name}` : ''}
+              </td>
+              <td class="dim">{b.landUsage ?? <span class="cell__dash">—</span>}</td>
+              <td class="num" data-sort={b.construction?.value ?? ''}>
+                {b.construction?.value ?? <span class="cell__dash">—</span>}
+              </td>
+              <td class="dim">{b.techs.length ? b.techs.map((t: any) => t.name).join(', ') : <span class="cell__dash">—</span>}</td>
+              <td class="num" data-sort={pmCount(b)}>{pmCount(b)}</td>
+              <td>
+                {b.outputGoods.length ? b.outputGoods.map((g: string, i: number) => {
+                  const e = getEntity(g);
+                  return (
+                    <>
+                      {i > 0 && ', '}
+                      {e?.page ? <a href={`${base}${e.page}`}>{e.name}</a> : g}
+                    </>
+                  );
+                }) : <span class="cell__dash">—</span>}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="caption">Construction is points of construction capacity · unlock techs from the building itself (PMs gate separately)</p>
+
+  <script is:inline define:vars={{ csv }}>
+    window.v3Csv = window.v3Csv || {};
+    window.v3Csv.buildings = () => csv;
+  </script>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const rows = [...document.querySelectorAll('#buildings-table tbody tr')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const r of rows) r.classList.toggle('is-hidden', !!q && !r.dataset.name.includes(q));
+      });
+    }
+  </script>
+</Base>

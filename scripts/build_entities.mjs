@@ -30,19 +30,28 @@ for (const [id, g] of Object.entries(goodsRaw)) {
 }
 
 for (const [id, b] of Object.entries(econ.buildings)) {
+  if (b.building_group === 'bg_monuments_hidden') continue; // decorative dummies
+  const slug = id.replace(/^building_/, '');
   entities.push({
     id,
     type: 'building',
-    slug: id.replace(/^building_/, ''),
+    slug,
     name: loc.name(id),
     icon: `img/buildings/${String(b.icon ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
-    page: null, // stage 1
-    group: b.building_group ?? null,
+    page: `buildings/${slug}`,
+    group: b.building_group ? loc.name(b.building_group) : null,
   });
 }
 
-for (const id of Object.keys(popTypesRaw)) {
-  entities.push({ id, type: 'pop_type', slug: id, name: loc.name(id), icon: null, page: null });
+for (const [id, p] of Object.entries(popTypesRaw)) {
+  entities.push({
+    id,
+    type: 'pop_type',
+    slug: id,
+    name: loc.name(id),
+    icon: `img/pops/${String(p.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+    page: `pop-types#${id}`,
+  });
 }
 
 entities.sort((a, b) => a.id.localeCompare(b.id));

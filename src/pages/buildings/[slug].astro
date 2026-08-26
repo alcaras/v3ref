@@ -1,0 +1,120 @@
+---
+import Base from '../../layouts/Base.astro';
+import IOList from '../../components/IOList.astro';
+import buildingsJson from '../../data/buildings.json';
+import { getEntity } from '../../lib/entities';
+
+export function getStaticPaths() {
+  return (buildingsJson as any).buildings.map((b: any) => ({
+    params: { slug: b.slug },
+    props: { building: b },
+  }));
+}
+
+const { building: b } = Astro.props as { building: any };
+const base = import.meta.env.BASE_URL;
+const pmCount = b.pmGroups.reduce((s: number, g: any) => s + g.pms.length, 0);
+
+// One "Requires" cell per PM: techs, laws, blocking laws, everything else.
+const reqParts = (pm: any) => {
+  const parts: { text: string; blocked?: boolean }[] = [];
+  for (const t of pm.techs) parts.push({ text: t.name });
+  for (const l of pm.laws) parts.push({ text: l.name });
+  for (const o of pm.other) parts.push({ text: o.name });
+  for (const l of pm.blockedByLaws) parts.push({ text: `not ${l.name}`, blocked: true });
+  return parts;
+};
+---
+<Base
+  title={b.name}
+  active="buildings"
+  eyebrow={`Buildings · ${b.groupRoot?.name ?? ''}`}
+  pageIcon={b.icon}
+  description={`Victoria 3 ${b.name}: every production method with inputs, outputs, employment, and requirements.`}
+  ogImage={b.icon}
+  pageStats={[
+    ...(b.construction?.value ? [{ value: b.construction.value, label: 'construction' }] : []),
+    { value: b.pmGroups.length, label: 'PM groups' },
+    { value: pmCount, label: 'production methods' },
+  ]}
+>
+  <div class="legends" style="margin-bottom: 0.5rem;">
+    <div class="legend">
+      {b.group && <span class="chip">{b.groupRoot && b.group.id !== b.groupRoot.id ? `${b.groupRoot.name} · ${b.group.name}` : b.group.name}</span>}
+      {b.landUsage && <span class="chip">{b.landUsage}</span>}
+      {b.unique && <span class="chip">Unique — only one in the world</span>}
+      {b.port && <span class="chip">Port</span>}
+      {b.techs.length > 0 && <span class="chip">Requires {b.techs.map((t: any) => t.name).join(', ')}</span>}
+    </div>
+  </div>
+
+  {b.pmGroups.map((pmg: any) => (
+    <>
+      <h2 class="sect">{pmg.name}</h2>
+      <div class="grid"><div class="grid__scroll">
+        <table class="vtbl">
+          <thead>
+            <tr>
+              <th style="width: 16rem;">Production method</th>
+              <th>Requires</th>
+              <th>Inputs</th>
+              <th>Outputs</th>
+              <th>Jobs</th>
+              <th class="num" title="Σ outputs × base price − Σ inputs × base price, per building level">Net £ / level</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pmg.pms.map((pm: any) => (
+              <tr>
+                <td class="lead-cell">
+                  <span class="lead">
+                    <img class="lead__icon" src={`${base}${pm.icon}`} alt="" loading="lazy" />
+                    {pm.name}
+                  </span>
+                </td>
+                <td class="dim">
+                  {reqParts(pm).length ? reqParts(pm).map((r, i) => (
+                    <>
+                      {i > 0 && ', '}
+                      <span class={r.blocked ? 'tone-bad' : ''}>{r.text}</span>
+                    </>
+                  )) : <span class="cell__dash">—</span>}
+                </td>
+                <td><IOList lines={pm.inputs} tone="bad" /></td>
+                <td><IOList lines={pm.outputs} tone="good" /></td>
+                <td>
+                  {pm.jobs.length ? (
+                    <span class="iol">
+                      {pm.jobs.map((j: any) => {
+                        const e = getEntity(j.popType);
+                        return (
+                          <span class="iol__item">
+                            {e?.icon && <img class="iol__icon" src={`${base}${e.icon}`} alt="" loading="lazy" />}
+                            {e?.page ? <a href={`${base}${e.page}`}>{j.name}</a> : j.name}
+                            <b class="tone-neutral">{j.amount}</b>
+                          </span>
+                        );
+                      })}
+                    </span>
+                  ) : <span class="cell__dash">—</span>}
+                </td>
+                <td class="num">
+                  {pm.inputs.length || pm.outputs.length ? (
+                    <b class={pm.netAtBase > 0 ? 'tone-good' : pm.netAtBase < 0 ? 'tone-bad' : 'tone-neutral'}>
+                      {pm.netAtBase > 0 ? '+' : ''}{pm.netAtBase}
+                    </b>
+                  ) : <span class="cell__dash">—</span>}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div></div>
+    </>
+  ))}
+
+  <p class="caption">
+    Quantities are per building level at full employment · net uses base prices and counts flat lines only
+    (percentage lines depend on the building's other methods)
+  </p>
+</Base>

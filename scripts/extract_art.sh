@@ -35,6 +35,8 @@ convert_dir() {
 
 convert_dir "$ICONS/goods_icons" "$OUT/goods"
 convert_dir "$ICONS/building_icons" "$OUT/buildings"
+convert_dir "$ICONS/production_method_icons" "$OUT/pms"
+convert_dir "$ICONS/pops_icons" "$OUT/pops"
 
 # Site mark + favicon: the gold ingot (32px favicon from the goods icon).
 if [ -f "$OUT/goods/gold.png" ]; then

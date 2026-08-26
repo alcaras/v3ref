@@ -66,7 +66,7 @@ const amount = (p: any) => (p.kind === 'mult' ? `${p.amount > 0 ? '+' : ''}${Mat
               {i === 0 && <td rowspan={b.pms.length} class="lead-cell">
                 <span class="lead">
                   {getEntity(b.id)?.icon && <img class="lead__icon" src={`${base}${getEntity(b.id)!.icon}`} alt="" loading="lazy" />}
-                  {b.name}
+                  {getEntity(b.id)?.page ? <a href={`${base}${getEntity(b.id)!.page}`}>{b.name}</a> : b.name}
                 </span>
               </td>}
               <td>{p.pmName}</td>
@@ -91,7 +91,7 @@ const amount = (p: any) => (p.kind === 'mult' ? `${p.amount > 0 ? '+' : ''}${Mat
               {i === 0 && <td rowspan={b.pms.length} class="lead-cell">
                 <span class="lead">
                   {getEntity(b.id)?.icon && <img class="lead__icon" src={`${base}${getEntity(b.id)!.icon}`} alt="" loading="lazy" />}
-                  {b.name}
+                  {getEntity(b.id)?.page ? <a href={`${base}${getEntity(b.id)!.page}`}>{b.name}</a> : b.name}
                 </span>
               </td>}
               <td>{p.pmName}</td>

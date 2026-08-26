@@ -1,0 +1,45 @@
+---
+// A run of goods chips (icon + linked name + amount) for PM inputs/outputs.
+// `kind: 'mult'` lines render as percentages. Amounts are per building level
+// at full employment; tone marks direction (inputs cost, outputs earn).
+import { getEntity } from '../lib/entities';
+
+interface Line {
+  good: string;
+  name: string;
+  amount: number;
+  kind: 'add' | 'mult';
+}
+interface Props {
+  lines: Line[];
+  tone?: 'good' | 'bad' | 'neutral';
+}
+const { lines, tone = 'neutral' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const fmt = (l: Line) =>
+  l.kind === 'mult' ? `${l.amount > 0 ? '+' : ''}${Math.round(l.amount * 100)}%` : `${l.amount}`;
+---
+{lines.length ? (
+  <span class="iol">
+    {lines.map((l) => {
+      const e = getEntity(l.good);
+      return (
+        <span class="iol__item">
+          {e?.icon && <img class="iol__icon" src={`${base}${e.icon}`} alt="" loading="lazy" />}
+          {e?.page ? <a href={`${base}${e.page}`}>{l.name}</a> : l.name}
+          <b class={`tone-${tone}`}>{fmt(l)}</b>
+        </span>
+      );
+    })}
+  </span>
+) : (
+  <span class="cell__dash">—</span>
+)}
+
+<style is:global>
+  .iol { display: flex; flex-wrap: wrap; gap: 0.15rem 0.8rem; }
+  .iol__item { display: inline-flex; align-items: center; gap: 0.3rem; white-space: nowrap; }
+  .iol__icon { width: 1.1em; height: 1.1em; object-fit: contain; }
+  .iol__item a { color: inherit; }
+  .iol__item b { font-weight: 600; font-variant-numeric: tabular-nums; }
+</style>

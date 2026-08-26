@@ -1,5 +1,12 @@
 [
  {
+  "a": "academics",
+  "c": "img/pops/academics.png",
+  "n": "Academics",
+  "t": "pop_type",
+  "u": "pop-types#academics"
+ },
+ {
   "a": "aeroplanes",
   "c": "img/goods/aeroplanes.png",
   "g": "military",
@@ -16,6 +23,37 @@
   "u": "goods/ammunition"
  },
  {
+  "a": "building_angkor_wat",
+  "c": "img/buildings/angkor_wat.png",
+  "g": "Monuments",
+  "n": "Angkor Wat",
+  "t": "building",
+  "u": "buildings/angkor_wat"
+ },
+ {
+  "a": "aristocrats",
+  "c": "img/pops/aristocrats.png",
+  "n": "Aristocrats",
+  "t": "pop_type",
+  "u": "pop-types#aristocrats"
+ },
+ {
+  "a": "building_arms_industry",
+  "c": "img/buildings/arms_industry.png",
+  "g": "Military Industries",
+  "n": "Arms Industries",
+  "t": "building",
+  "u": "buildings/arms_industry"
+ },
+ {
+  "a": "building_army_logistics_center",
+  "c": "img/buildings/building_army_logistics_center.png",
+  "g": "Army Logistics Centers",
+  "n": "Army Logistics Center",
+  "t": "building",
+  "u": "buildings/army_logistics_center"
+ },
+ {
   "a": "artillery",
   "c": "img/goods/artillery.png",
   "g": "military",
@@ -24,12 +62,96 @@
   "u": "goods/artillery"
  },
  {
+  "a": "building_artillery_foundry",
+  "c": "img/buildings/artillery_foundry.png",
+  "g": "Military Industries",
+  "n": "Artillery Foundry",
+  "t": "building",
+  "u": "buildings/artillery_foundry"
+ },
+ {
+  "a": "building_art_academy",
+  "c": "img/buildings/building_arts_academy.png",
+  "g": "Arts Buildings",
+  "n": "Arts Academy",
+  "t": "building",
+  "u": "buildings/art_academy"
+ },
+ {
+  "a": "building_estacion_de_madrid_atocha",
+  "c": "img/buildings/estacion_de_madrid_atocha.png",
+  "g": "Monuments",
+  "n": "Atocha Railway Station",
+  "t": "building",
+  "u": "buildings/estacion_de_madrid_atocha"
+ },
+ {
   "a": "automobiles",
   "c": "img/goods/automobiles.png",
   "g": "luxury",
   "n": "Automobiles",
   "t": "good",
   "u": "goods/automobiles"
+ },
+ {
+  "a": "building_automotive_industry",
+  "c": "img/buildings/vehicles_industry.png",
+  "g": "Heavy Industries",
+  "n": "Automotive Industries",
+  "t": "building",
+  "u": "buildings/automotive_industry"
+ },
+ {
+  "a": "building_banana_plantation",
+  "c": "img/buildings/banana_plantation.png",
+  "g": "Plantations",
+  "n": "Banana Plantations",
+  "t": "building",
+  "u": "buildings/banana_plantation"
+ },
+ {
+  "a": "building_barrack",
+  "c": "img/buildings/building_barracks.png",
+  "g": "Army Buildings",
+  "n": "Barracks",
+  "t": "building",
+  "u": "buildings/barrack"
+ },
+ {
+  "a": "building_big_ben",
+  "c": "img/buildings/big_ben.png",
+  "g": "Monuments",
+  "n": "Big Ben",
+  "t": "building",
+  "u": "buildings/big_ben"
+ },
+ {
+  "a": "bureaucrats",
+  "c": "img/pops/bureaucrats.png",
+  "n": "Bureaucrats",
+  "t": "pop_type",
+  "u": "pop-types#bureaucrats"
+ },
+ {
+  "a": "capitalists",
+  "c": "img/pops/capitalists.png",
+  "n": "Capitalists",
+  "t": "pop_type",
+  "u": "pop-types#capitalists"
+ },
+ {
+  "a": "clergymen",
+  "c": "img/pops/clergymen.png",
+  "n": "Clergymen",
+  "t": "pop_type",
+  "u": "pop-types#clergymen"
+ },
+ {
+  "a": "clerks",
+  "c": "img/pops/clerks.png",
+  "n": "Clerks",
+  "t": "pop_type",
+  "u": "pop-types#clerks"
  },
  {
   "a": "clippers",
@@ -56,12 +178,68 @@
   "u": "goods/coal"
  },
  {
+  "a": "building_coal_mine",
+  "c": "img/buildings/coal_mine.png",
+  "g": "Mines",
+  "n": "Coal Mines",
+  "t": "building",
+  "u": "buildings/coal_mine"
+ },
+ {
   "a": "coffee",
   "c": "img/goods/coffee.png",
   "g": "luxury",
   "n": "Coffee",
   "t": "good",
   "u": "goods/coffee"
+ },
+ {
+  "a": "building_coffee_plantation",
+  "c": "img/buildings/coffee_plantation.png",
+  "g": "Plantations",
+  "n": "Coffee Plantations",
+  "t": "building",
+  "u": "buildings/coffee_plantation"
+ },
+ {
+  "a": "building_company_headquarter",
+  "c": "img/buildings/building_company_hq.png",
+  "g": "Company Headquarters",
+  "n": "Company Headquarter",
+  "t": "building",
+  "u": "buildings/company_headquarter"
+ },
+ {
+  "a": "building_conscription_center",
+  "c": "img/buildings/building_conscription_center.png",
+  "g": "Conscription Buildings",
+  "n": "Conscription Center",
+  "t": "building",
+  "u": "buildings/conscription_center"
+ },
+ {
+  "a": "building_construction_sector",
+  "c": "img/buildings/construction_camp.png",
+  "g": "Construction",
+  "n": "Construction Sector",
+  "t": "building",
+  "u": "buildings/construction_sector"
+ },
+ {
+  "a": "building_cotton_plantation",
+  "c": "img/buildings/cotton_plantation.png",
+  "g": "Plantations",
+  "n": "Cotton Plantations",
+  "t": "building",
+  "u": "buildings/cotton_plantation"
+ },
+ {
+  "a": "building_cristo_redentor",
+  "c": "img/buildings/building_cristo_redentor.png",
+  "g": "Monuments",
+  "n": "Cristo Redentor",
+  "t": "building",
+  "u": "buildings/cristo_redentor"
  },
  {
   "a": "dye",
@@ -72,12 +250,35 @@
   "u": "goods/dye"
  },
  {
+  "a": "building_dye_plantation",
+  "c": "img/buildings/dye_plantation.png",
+  "g": "Plantations",
+  "n": "Dye Plantations",
+  "t": "building",
+  "u": "buildings/dye_plantation"
+ },
+ {
   "a": "electricity",
   "c": "img/goods/electricity.png",
   "g": "staple",
   "n": "Electricity",
   "t": "good",
   "u": "goods/electricity"
+ },
+ {
+  "a": "building_electrics_industry",
+  "c": "img/buildings/electrics_industry.png",
+  "g": "Heavy Industries",
+  "n": "Electrics Industries",
+  "t": "building",
+  "u": "buildings/electrics_industry"
+ },
+ {
+  "a": "engineers",
+  "c": "img/pops/engineers.png",
+  "n": "Engineers",
+  "t": "pop_type",
+  "u": "pop-types#engineers"
  },
  {
   "a": "engines",
@@ -96,6 +297,14 @@
   "u": "goods/explosives"
  },
  {
+  "a": "building_explosives_factory",
+  "c": "img/buildings/explosives_factory.png",
+  "g": "Heavy Industries",
+  "n": "Explosives Factory",
+  "t": "building",
+  "u": "buildings/explosives_factory"
+ },
+ {
   "a": "fabric",
   "c": "img/goods/fabric.png",
   "g": "staple",
@@ -104,12 +313,35 @@
   "u": "goods/fabric"
  },
  {
+  "a": "farmers",
+  "c": "img/pops/farmers.png",
+  "n": "Farmers",
+  "t": "pop_type",
+  "u": "pop-types#farmers"
+ },
+ {
   "a": "fertilizer",
   "c": "img/goods/fertilizer.png",
   "g": "industrial",
   "n": "Fertilizer",
   "t": "good",
   "u": "goods/fertilizer"
+ },
+ {
+  "a": "building_chemical_plant",
+  "c": "img/buildings/chemicals_industry.png",
+  "g": "Heavy Industries",
+  "n": "Fertilizer Plants",
+  "t": "building",
+  "u": "buildings/chemical_plant"
+ },
+ {
+  "a": "building_financial_district",
+  "c": "img/buildings/building_financial_district.png",
+  "g": "Financial Districts",
+  "n": "Financial Districts",
+  "t": "building",
+  "u": "buildings/financial_district"
  },
  {
   "a": "fine_art",
@@ -128,6 +360,30 @@
   "u": "goods/fish"
  },
  {
+  "a": "building_fishing_wharf",
+  "c": "img/buildings/fishing_wharf.png",
+  "g": "Fisheries",
+  "n": "Fishing Wharves",
+  "t": "building",
+  "u": "buildings/fishing_wharf"
+ },
+ {
+  "a": "building_food_industry",
+  "c": "img/buildings/food_industry.png",
+  "g": "Light Industries",
+  "n": "Food Industries",
+  "t": "building",
+  "u": "buildings/food_industry"
+ },
+ {
+  "a": "building_forbidden_city",
+  "c": "img/buildings/forbidden_city.png",
+  "g": "Monuments",
+  "n": "Forbidden City",
+  "t": "building",
+  "u": "buildings/forbidden_city"
+ },
+ {
   "a": "fruit",
   "c": "img/goods/fruit.png",
   "g": "luxury",
@@ -144,12 +400,28 @@
   "u": "goods/furniture"
  },
  {
+  "a": "building_furniture_manufactory",
+  "c": "img/buildings/furniture_manufacturies.png",
+  "g": "Light Industries",
+  "n": "Furniture Manufacturies",
+  "t": "building",
+  "u": "buildings/furniture_manufactory"
+ },
+ {
   "a": "glass",
   "c": "img/goods/glass.png",
   "g": "industrial",
   "n": "Glass",
   "t": "good",
   "u": "goods/glass"
+ },
+ {
+  "a": "building_glassworks",
+  "c": "img/buildings/glassworks.png",
+  "g": "Light Industries",
+  "n": "Glassworks",
+  "t": "building",
+  "u": "buildings/glassworks"
  },
  {
   "a": "gold",
@@ -160,6 +432,30 @@
   "u": "goods/gold"
  },
  {
+  "a": "building_gold_field",
+  "c": "img/buildings/gold_fields.png",
+  "g": "Gold Fields",
+  "n": "Gold Fields",
+  "t": "building",
+  "u": "buildings/gold_field"
+ },
+ {
+  "a": "building_gold_mine",
+  "c": "img/buildings/gold_mine.png",
+  "g": "Mines",
+  "n": "Gold Mines",
+  "t": "building",
+  "u": "buildings/gold_mine"
+ },
+ {
+  "a": "building_government_administration",
+  "c": "img/buildings/building_government_administration.png",
+  "g": "Bureaucratic Institutions",
+  "n": "Government Administration",
+  "t": "building",
+  "u": "buildings/government_administration"
+ },
+ {
   "a": "grain",
   "c": "img/goods/grain.png",
   "g": "staple",
@@ -168,12 +464,28 @@
   "u": "goods/grain"
  },
  {
+  "a": "building_gran_teatro_de_la_habana",
+  "c": "img/buildings/gran_teatro.png",
+  "g": "Monuments",
+  "n": "Grand Theater of Havana",
+  "t": "building",
+  "u": "buildings/gran_teatro_de_la_habana"
+ },
+ {
   "a": "groceries",
   "c": "img/goods/groceries.png",
   "g": "staple",
   "n": "Groceries",
   "t": "good",
   "u": "goods/groceries"
+ },
+ {
+  "a": "building_hagia_sophia",
+  "c": "img/buildings/hagia_sophia.png",
+  "g": "Monuments",
+  "n": "Hagia Sophia",
+  "t": "building",
+  "u": "buildings/hagia_sophia"
  },
  {
   "a": "hardwood",
@@ -192,12 +504,67 @@
   "u": "goods/iron"
  },
  {
+  "a": "building_iron_mine",
+  "c": "img/buildings/iron_mine.png",
+  "g": "Mines",
+  "n": "Iron Mines",
+  "t": "building",
+  "u": "buildings/iron_mine"
+ },
+ {
   "a": "ironclads",
   "c": "img/goods/ironclads.png",
   "g": "military",
   "n": "Ironclads",
   "t": "good",
   "u": "goods/ironclads"
+ },
+ {
+  "a": "building_kaiserforum_1",
+  "c": "img/buildings/kaiserforum1.png",
+  "g": "Monuments",
+  "n": "Kaiserforum",
+  "t": "building",
+  "u": "buildings/kaiserforum_1"
+ },
+ {
+  "a": "building_kaiserforum_2",
+  "c": "img/buildings/kaiserforum2.png",
+  "g": "Monuments",
+  "n": "Kaiserforum",
+  "t": "building",
+  "u": "buildings/kaiserforum_2"
+ },
+ {
+  "a": "building_kaiserforum_3",
+  "c": "img/buildings/kaiserforum3.png",
+  "g": "Monuments",
+  "n": "Kaiserforum",
+  "t": "building",
+  "u": "buildings/kaiserforum_3"
+ },
+ {
+  "a": "building_kaiserforum_4",
+  "c": "img/buildings/kaiserforum3.png",
+  "g": "Monuments",
+  "n": "Kaiserforum",
+  "t": "building",
+  "u": "buildings/kaiserforum_4"
+ },
+ {
+  "a": "building_kiel_canal",
+  "c": "img/buildings/kiel_canal.png",
+  "g": "Canals",
+  "n": "Kiel Canal",
+  "t": "building",
+  "u": "buildings/kiel_canal"
+ },
+ {
+  "a": "laborers",
+  "c": "img/pops/laborers.png",
+  "n": "Laborers",
+  "t": "pop_type",
+  "u": "pop-types#laborers"
  },
  {
   "a": "lead",
@@ -208,12 +575,36 @@
   "u": "goods/lead"
  },
  {
+  "a": "building_lead_mine",
+  "c": "img/buildings/lead_mine.png",
+  "g": "Mines",
+  "n": "Lead Mines",
+  "t": "building",
+  "u": "buildings/lead_mine"
+ },
+ {
   "a": "liquor",
   "c": "img/goods/liquor.png",
   "g": "luxury",
   "n": "Liquor",
   "t": "good",
   "u": "goods/liquor"
+ },
+ {
+  "a": "building_livestock_ranch",
+  "c": "img/buildings/cattle_ranch.png",
+  "g": "Ranches",
+  "n": "Livestock Ranches",
+  "t": "building",
+  "u": "buildings/livestock_ranch"
+ },
+ {
+  "a": "building_logging_camp",
+  "c": "img/buildings/logging_camp.png",
+  "g": "Forestries",
+  "n": "Logging Camps",
+  "t": "building",
+  "u": "buildings/logging_camp"
  },
  {
   "a": "luxury_clothes",
@@ -232,12 +623,43 @@
   "u": "goods/luxury_furniture"
  },
  {
+  "a": "machinists",
+  "c": "img/pops/machinists.png",
+  "n": "Machinists",
+  "t": "pop_type",
+  "u": "pop-types#machinists"
+ },
+ {
+  "a": "building_maize_farm",
+  "c": "img/buildings/maize_farm.png",
+  "g": "Staple Crops",
+  "n": "Maize Farms",
+  "t": "building",
+  "u": "buildings/maize_farm"
+ },
+ {
   "a": "manowars",
   "c": "img/goods/man_o_wars.png",
   "g": "military",
   "n": "Man-o-Wars",
   "t": "good",
   "u": "goods/manowars"
+ },
+ {
+  "a": "building_manila_cathedral_monument",
+  "c": "img/buildings/manila_cathedral.png",
+  "g": "Monuments",
+  "n": "Manila Cathedral",
+  "t": "building",
+  "u": "buildings/manila_cathedral_monument"
+ },
+ {
+  "a": "building_manor_house",
+  "c": "img/buildings/building_manor_houses.png",
+  "g": "Manor Houses",
+  "n": "Manor Houses",
+  "t": "building",
+  "u": "buildings/manor_house"
  },
  {
   "a": "meat",
@@ -256,12 +678,83 @@
   "u": "goods/merchant_marine"
  },
  {
+  "a": "building_millet_farm",
+  "c": "img/buildings/millet_farm.png",
+  "g": "Staple Crops",
+  "n": "Millet Farms",
+  "t": "building",
+  "u": "buildings/millet_farm"
+ },
+ {
+  "a": "building_mosque_of_djenne",
+  "c": "img/buildings/mosque_of_djenne.png",
+  "g": "Monuments",
+  "n": "Mosque of Djenne",
+  "t": "building",
+  "u": "buildings/mosque_of_djenne"
+ },
+ {
+  "a": "building_motor_industry",
+  "c": "img/buildings/motor_industry.png",
+  "g": "Heavy Industries",
+  "n": "Motor Industries",
+  "t": "building",
+  "u": "buildings/motor_industry"
+ },
+ {
+  "a": "building_munition_plant",
+  "c": "img/buildings/munition_plants.png",
+  "g": "Military Industries",
+  "n": "Munition Plants",
+  "t": "building",
+  "u": "buildings/munition_plant"
+ },
+ {
+  "a": "building_naval_administration",
+  "c": "img/buildings/naval_base.png",
+  "g": "Naval Administrations",
+  "n": "Naval Administration",
+  "t": "building",
+  "u": "buildings/naval_administration"
+ },
+ {
+  "a": "building_naval_fortification",
+  "c": "img/buildings/building_naval_fortification.png",
+  "g": "Naval Fortifications",
+  "n": "Naval Fortification",
+  "t": "building",
+  "u": "buildings/naval_fortification"
+ },
+ {
+  "a": "building_naval_logistics_center",
+  "c": "img/buildings/building_naval_logistics_center.png",
+  "g": "Naval Logistics Centers",
+  "n": "Naval Logistics Center",
+  "t": "building",
+  "u": "buildings/naval_logistics_center"
+ },
+ {
+  "a": "officers",
+  "c": "img/pops/officers.png",
+  "n": "Officers",
+  "t": "pop_type",
+  "u": "pop-types#officers"
+ },
+ {
   "a": "oil",
   "c": "img/goods/oil.png",
   "g": "industrial",
   "n": "Oil",
   "t": "good",
   "u": "goods/oil"
+ },
+ {
+  "a": "building_oil_rig",
+  "c": "img/buildings/oil_rig.png",
+  "g": "Oil Extractors",
+  "n": "Oil Rigs",
+  "t": "building",
+  "u": "buildings/oil_rig"
  },
  {
   "a": "opium",
@@ -272,12 +765,51 @@
   "u": "goods/opium"
  },
  {
+  "a": "building_opium_plantation",
+  "c": "img/buildings/opium_plantation.png",
+  "g": "Plantations",
+  "n": "Opium Plantations",
+  "t": "building",
+  "u": "buildings/opium_plantation"
+ },
+ {
+  "a": "building_panama_canal",
+  "c": "img/buildings/panama_canal.png",
+  "g": "Canals",
+  "n": "Panama Canal",
+  "t": "building",
+  "u": "buildings/panama_canal"
+ },
+ {
   "a": "paper",
   "c": "img/goods/paper.png",
   "g": "staple",
   "n": "Paper",
   "t": "good",
   "u": "goods/paper"
+ },
+ {
+  "a": "building_paper_mill",
+  "c": "img/buildings/paper_mills.png",
+  "g": "Light Industries",
+  "n": "Paper Mills",
+  "t": "building",
+  "u": "buildings/paper_mill"
+ },
+ {
+  "a": "peasants",
+  "c": "img/pops/peasants.png",
+  "n": "Peasants",
+  "t": "pop_type",
+  "u": "pop-types#peasants"
+ },
+ {
+  "a": "building_pena_palace",
+  "c": "img/buildings/pena_palace.png",
+  "g": "Monuments",
+  "n": "Pena Palace",
+  "t": "building",
+  "u": "buildings/pena_palace"
  },
  {
   "a": "porcelain",
@@ -288,12 +820,60 @@
   "u": "goods/porcelain"
  },
  {
+  "a": "building_port",
+  "c": "img/buildings/building_port.png",
+  "g": "Private Infrastructure",
+  "n": "Port",
+  "t": "building",
+  "u": "buildings/port"
+ },
+ {
+  "a": "building_power_bloc_statue",
+  "c": "img/buildings/building_powerblock_statue.png",
+  "g": "Monuments",
+  "n": "Power Bloc Statue",
+  "t": "building",
+  "u": "buildings/power_bloc_statue"
+ },
+ {
+  "a": "building_power_plant",
+  "c": "img/buildings/power_plant.png",
+  "g": "Power Plants",
+  "n": "Power Plants",
+  "t": "building",
+  "u": "buildings/power_plant"
+ },
+ {
   "a": "radios",
   "c": "img/goods/radios.png",
   "g": "luxury",
   "n": "Radios",
   "t": "good",
   "u": "goods/radios"
+ },
+ {
+  "a": "building_railway",
+  "c": "img/buildings/building_railway.png",
+  "g": "Private Infrastructure",
+  "n": "Railway",
+  "t": "building",
+  "u": "buildings/railway"
+ },
+ {
+  "a": "building_company_regional_headquarter",
+  "c": "img/buildings/building_company_regional_hq.png",
+  "g": "Regional Company Headquarters",
+  "n": "Regional Company Headquarter",
+  "t": "building",
+  "u": "buildings/company_regional_headquarter"
+ },
+ {
+  "a": "building_rice_farm",
+  "c": "img/buildings/rice_farm.png",
+  "g": "Staple Crops",
+  "n": "Rice Farms",
+  "t": "building",
+  "u": "buildings/rice_farm"
  },
  {
   "a": "rubber",
@@ -304,12 +884,82 @@
   "u": "goods/rubber"
  },
  {
+  "a": "building_rubber_plantation",
+  "c": "img/buildings/rubber_lodge.png",
+  "g": "Rubber Plantations",
+  "n": "Rubber Plantations",
+  "t": "building",
+  "u": "buildings/rubber_plantation"
+ },
+ {
+  "a": "building_rye_farm",
+  "c": "img/buildings/rye_farm.png",
+  "g": "Staple Crops",
+  "n": "Rye Farms",
+  "t": "building",
+  "u": "buildings/rye_farm"
+ },
+ {
+  "a": "building_sagrada_familia_cathedral_1",
+  "c": "img/buildings/sagrada_familia_cathedral1.png",
+  "g": "Monuments",
+  "n": "Sagrada Família Cathedral",
+  "t": "building",
+  "u": "buildings/sagrada_familia_cathedral_1"
+ },
+ {
+  "a": "building_sagrada_familia_cathedral_2",
+  "c": "img/buildings/sagrada_familia_cathedral2.png",
+  "g": "Monuments",
+  "n": "Sagrada Família Cathedral",
+  "t": "building",
+  "u": "buildings/sagrada_familia_cathedral_2"
+ },
+ {
+  "a": "building_sagrada_familia_cathedral_3",
+  "c": "img/buildings/sagrada_familia_cathedral3.png",
+  "g": "Monuments",
+  "n": "Sagrada Família Cathedral",
+  "t": "building",
+  "u": "buildings/sagrada_familia_cathedral_3"
+ },
+ {
+  "a": "building_saint_basils_cathedral",
+  "c": "img/buildings/saint_basils_cathedral.png",
+  "g": "Monuments",
+  "n": "Saint Basil’s Cathedral",
+  "t": "building",
+  "u": "buildings/saint_basils_cathedral"
+ },
+ {
+  "a": "soldiers",
+  "c": "img/pops/soldiers.png",
+  "n": "Servicemen",
+  "t": "pop_type",
+  "u": "pop-types#soldiers"
+ },
+ {
   "a": "services",
   "c": "img/goods/services.png",
   "g": "staple",
   "n": "Services",
   "t": "good",
   "u": "goods/services"
+ },
+ {
+  "a": "building_shipyard",
+  "c": "img/buildings/shipyards.png",
+  "g": "Ship Construction",
+  "n": "Shipyards",
+  "t": "building",
+  "u": "buildings/shipyard"
+ },
+ {
+  "a": "shopkeepers",
+  "c": "img/pops/shopkeepers.png",
+  "n": "Shopkeepers",
+  "t": "pop_type",
+  "u": "pop-types#shopkeepers"
  },
  {
   "a": "silk",
@@ -320,12 +970,43 @@
   "u": "goods/silk"
  },
  {
+  "a": "building_silk_plantation",
+  "c": "img/buildings/silk_plantation.png",
+  "g": "Plantations",
+  "n": "Silk Plantations",
+  "t": "building",
+  "u": "buildings/silk_plantation"
+ },
+ {
+  "a": "building_skyscraper",
+  "c": "img/buildings/skyscraper.png",
+  "g": "Skyscrapers",
+  "n": "Skyscraper",
+  "t": "building",
+  "u": "buildings/skyscraper"
+ },
+ {
+  "a": "slaves",
+  "c": "img/pops/slaves.png",
+  "n": "Slaves",
+  "t": "pop_type",
+  "u": "pop-types#slaves"
+ },
+ {
   "a": "small_arms",
   "c": "img/goods/small_arms.png",
   "g": "military",
   "n": "Small Arms",
   "t": "good",
   "u": "goods/small_arms"
+ },
+ {
+  "a": "building_statue_of_liberty",
+  "c": "img/buildings/statue_of_liberty.png",
+  "g": "Monuments",
+  "n": "Statue of Liberty",
+  "t": "building",
+  "u": "buildings/statue_of_liberty"
  },
  {
   "a": "steamers",
@@ -344,6 +1025,62 @@
   "u": "goods/steel"
  },
  {
+  "a": "building_steel_mill",
+  "c": "img/buildings/steel_mills.png",
+  "g": "Heavy Industries",
+  "n": "Steel Mills",
+  "t": "building",
+  "u": "buildings/steel_mill"
+ },
+ {
+  "a": "building_subsistence_farm",
+  "c": "img/buildings/building_subsistence_farm_grain.png",
+  "g": "Subsistence Agriculture",
+  "n": "Subsistence Farms",
+  "t": "building",
+  "u": "buildings/subsistence_farm"
+ },
+ {
+  "a": "building_subsistence_fishing_village",
+  "c": "img/buildings/building_subsistence_farm_fish.png",
+  "g": "Subsistence Agriculture",
+  "n": "Subsistence Fishing Villages",
+  "t": "building",
+  "u": "buildings/subsistence_fishing_village"
+ },
+ {
+  "a": "building_subsistence_orchard",
+  "c": "img/buildings/building_subsistence_farm_fruit.png",
+  "g": "Subsistence Agriculture",
+  "n": "Subsistence Orchards",
+  "t": "building",
+  "u": "buildings/subsistence_orchard"
+ },
+ {
+  "a": "building_subsistence_pasture",
+  "c": "img/buildings/building_subsistence_farm_meat.png",
+  "g": "Subsistence Ranching",
+  "n": "Subsistence Pastures",
+  "t": "building",
+  "u": "buildings/subsistence_pasture"
+ },
+ {
+  "a": "building_subsistence_rice_farm",
+  "c": "img/buildings/building_subsistence_farm_rice.png",
+  "g": "Subsistence Agriculture",
+  "n": "Subsistence Rice Paddies",
+  "t": "building",
+  "u": "buildings/subsistence_rice_farm"
+ },
+ {
+  "a": "building_suez_canal",
+  "c": "img/buildings/suez_canal.png",
+  "g": "Canals",
+  "n": "Suez Canal",
+  "t": "building",
+  "u": "buildings/suez_canal"
+ },
+ {
   "a": "sugar",
   "c": "img/goods/sugar.png",
   "g": "luxury",
@@ -352,12 +1089,44 @@
   "u": "goods/sugar"
  },
  {
+  "a": "building_sugar_plantation",
+  "c": "img/buildings/sugar_plantation.png",
+  "g": "Plantations",
+  "n": "Sugar Plantations",
+  "t": "building",
+  "u": "buildings/sugar_plantation"
+ },
+ {
   "a": "sulfur",
   "c": "img/goods/sulfur.png",
   "g": "industrial",
   "n": "Sulfur",
   "t": "good",
   "u": "goods/sulfur"
+ },
+ {
+  "a": "building_sulfur_mine",
+  "c": "img/buildings/sulfur_mine.png",
+  "g": "Mines",
+  "n": "Sulfur Mines",
+  "t": "building",
+  "u": "buildings/sulfur_mine"
+ },
+ {
+  "a": "building_synthetics_plant",
+  "c": "img/buildings/synthetics_plants.png",
+  "g": "Heavy Industries",
+  "n": "Synthetics Plants",
+  "t": "building",
+  "u": "buildings/synthetics_plant"
+ },
+ {
+  "a": "building_taj_mahal",
+  "c": "img/buildings/taj_mahal.png",
+  "g": "Monuments",
+  "n": "Taj Mahal",
+  "t": "building",
+  "u": "buildings/taj_mahal"
  },
  {
   "a": "tanks",
@@ -376,12 +1145,36 @@
   "u": "goods/tea"
  },
  {
+  "a": "building_tea_plantation",
+  "c": "img/buildings/tea_plantation.png",
+  "g": "Plantations",
+  "n": "Tea Plantations",
+  "t": "building",
+  "u": "buildings/tea_plantation"
+ },
+ {
   "a": "telephones",
   "c": "img/goods/telephones.png",
   "g": "luxury",
   "n": "Telephones",
   "t": "good",
   "u": "goods/telephones"
+ },
+ {
+  "a": "building_textile_mill",
+  "c": "img/buildings/textile_industry.png",
+  "g": "Light Industries",
+  "n": "Textile Mills",
+  "t": "building",
+  "u": "buildings/textile_mill"
+ },
+ {
+  "a": "building_eiffel_tower",
+  "c": "img/buildings/building_eiffel_tower.png",
+  "g": "Monuments",
+  "n": "The Eiffel Tower",
+  "t": "building",
+  "u": "buildings/eiffel_tower"
  },
  {
   "a": "tobacco",
@@ -392,6 +1185,22 @@
   "u": "goods/tobacco"
  },
  {
+  "a": "building_tobacco_plantation",
+  "c": "img/buildings/tobacco_plantation.png",
+  "g": "Plantations",
+  "n": "Tobacco Plantations",
+  "t": "building",
+  "u": "buildings/tobacco_plantation"
+ },
+ {
+  "a": "building_tooling_workshop",
+  "c": "img/buildings/tooling_workshops.png",
+  "g": "Light Industries",
+  "n": "Tooling Workshops",
+  "t": "building",
+  "u": "buildings/tooling_workshop"
+ },
+ {
   "a": "tools",
   "c": "img/goods/tools.png",
   "g": "industrial",
@@ -400,12 +1209,84 @@
   "u": "goods/tools"
  },
  {
+  "a": "building_trade_center",
+  "c": "img/buildings/building_trade_center.png",
+  "g": "Trade Centers",
+  "n": "Trade Center",
+  "t": "building",
+  "u": "buildings/trade_center"
+ },
+ {
   "a": "transportation",
   "c": "img/goods/transportation.png",
   "g": "staple",
   "n": "Transportation",
   "t": "good",
   "u": "goods/transportation"
+ },
+ {
+  "a": "building_university",
+  "c": "img/buildings/building_university.png",
+  "g": "University Buildings",
+  "n": "University",
+  "t": "building",
+  "u": "buildings/university"
+ },
+ {
+  "a": "building_urban_center",
+  "c": "img/buildings/urban_center.png",
+  "g": "Service Industries",
+  "n": "Urban Center",
+  "t": "building",
+  "u": "buildings/urban_center"
+ },
+ {
+  "a": "building_vatican_city",
+  "c": "img/buildings/vatican_city.png",
+  "g": "Monuments",
+  "n": "Vatican City",
+  "t": "building",
+  "u": "buildings/vatican_city"
+ },
+ {
+  "a": "building_victoria_terminus",
+  "c": "img/buildings/building_victoria_terminus.png",
+  "g": "Monuments",
+  "n": "Victoria Terminus",
+  "t": "building",
+  "u": "buildings/victoria_terminus"
+ },
+ {
+  "a": "building_vineyard",
+  "c": "img/buildings/vineyards.png",
+  "g": "Agriculture",
+  "n": "Vineyards",
+  "t": "building",
+  "u": "buildings/vineyard"
+ },
+ {
+  "a": "building_whaling_station",
+  "c": "img/buildings/whaling_station.png",
+  "g": "Whaling",
+  "n": "Whaling Stations",
+  "t": "building",
+  "u": "buildings/whaling_station"
+ },
+ {
+  "a": "building_wheat_farm",
+  "c": "img/buildings/wheat_farm.png",
+  "g": "Staple Crops",
+  "n": "Wheat Farms",
+  "t": "building",
+  "u": "buildings/wheat_farm"
+ },
+ {
+  "a": "building_white_house",
+  "c": "img/buildings/white_house.png",
+  "g": "Monuments",
+  "n": "White House",
+  "t": "building",
+  "u": "buildings/white_house"
  },
  {
   "a": "wine",

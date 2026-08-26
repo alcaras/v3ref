@@ -1,0 +1,563 @@
+{
+ "needs": [
+  {
+   "buyPackages": {
+    "maxAmount": 102,
+    "maxWealth": 29,
+    "minAmount": 90,
+    "minWealth": 1
+   },
+   "default": "grain",
+   "entries": [
+    {
+     "good": "grain",
+     "maxSupplyShare": 0.9,
+     "minSupplyShare": 0,
+     "name": "Grain",
+     "weight": 0.85
+    },
+    {
+     "good": "fish",
+     "maxSupplyShare": 0.9,
+     "minSupplyShare": 0,
+     "name": "Fish",
+     "weight": 1
+    },
+    {
+     "good": "meat",
+     "maxSupplyShare": 0.9,
+     "minSupplyShare": 0,
+     "name": "Meat",
+     "weight": 1
+    },
+    {
+     "good": "fruit",
+     "maxSupplyShare": 0.9,
+     "minSupplyShare": 0,
+     "name": "Fruit",
+     "weight": 1
+    },
+    {
+     "good": "groceries",
+     "maxSupplyShare": 0.9,
+     "minSupplyShare": 0,
+     "name": "Groceries",
+     "weight": 1.15
+    }
+   ],
+   "id": "popneed_basic_food",
+   "name": "Basic Food"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 162677,
+    "maxWealth": 99,
+    "minAmount": 16,
+    "minWealth": 20
+   },
+   "default": "transportation",
+   "entries": [
+    {
+     "good": "transportation",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0,
+     "name": "Transportation",
+     "weight": 1
+    },
+    {
+     "good": "telephones",
+     "maxSupplyShare": 1,
+     "minSupplyShare": 0,
+     "name": "Telephones",
+     "weight": 2
+    }
+   ],
+   "id": "popneed_communication",
+   "name": "Communication"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 8,
+    "maxWealth": 14,
+    "minAmount": 13,
+    "minWealth": 5
+   },
+   "default": "wood",
+   "entries": [
+    {
+     "good": "wood",
+     "maxSupplyShare": 0.5,
+     "minSupplyShare": 0,
+     "name": "Wood",
+     "weight": 1
+    },
+    {
+     "good": "furniture",
+     "maxSupplyShare": 1,
+     "minSupplyShare": 0,
+     "name": "Furniture",
+     "weight": 2
+    }
+   ],
+   "id": "popneed_crude_items",
+   "name": "Crude Items"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 162677,
+    "maxWealth": 99,
+    "minAmount": 3,
+    "minWealth": 10
+   },
+   "default": "transportation",
+   "entries": [
+    {
+     "good": "transportation",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0,
+     "name": "Transportation",
+     "weight": 1
+    },
+    {
+     "good": "automobiles",
+     "maxSupplyShare": 1,
+     "minSupplyShare": 0,
+     "name": "Automobiles",
+     "weight": 1.25
+    }
+   ],
+   "id": "popneed_free_movement",
+   "name": "Free Movement"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 26,
+    "maxWealth": 99,
+    "minAmount": 15,
+    "minWealth": 1
+   },
+   "default": "wood",
+   "entries": [
+    {
+     "good": "wood",
+     "maxSupplyShare": 0.5,
+     "minSupplyShare": 0,
+     "name": "Wood",
+     "weight": 0.75
+    },
+    {
+     "good": "fabric",
+     "maxSupplyShare": 0.25,
+     "minSupplyShare": 0,
+     "name": "Fabric",
+     "weight": 0.25
+    },
+    {
+     "good": "coal",
+     "maxSupplyShare": 0.8,
+     "minSupplyShare": 0,
+     "name": "Coal",
+     "weight": 2
+    },
+    {
+     "good": "oil",
+     "maxSupplyShare": 1,
+     "minSupplyShare": 0,
+     "name": "Oil",
+     "weight": 3
+    },
+    {
+     "good": "electricity",
+     "maxSupplyShare": 1,
+     "minSupplyShare": 0,
+     "name": "Electricity",
+     "weight": 3
+    }
+   ],
+   "id": "popneed_heating",
+   "name": "Heating"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 238,
+    "maxWealth": 44,
+    "minAmount": 7,
+    "minWealth": 10
+   },
+   "default": "furniture",
+   "entries": [
+    {
+     "good": "furniture",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0.1,
+     "name": "Furniture",
+     "weight": 1
+    },
+    {
+     "good": "glass",
+     "maxSupplyShare": 0.5,
+     "minSupplyShare": 0,
+     "name": "Glass",
+     "weight": 1
+    },
+    {
+     "good": "paper",
+     "maxSupplyShare": 0.5,
+     "minSupplyShare": 0,
+     "name": "Paper",
+     "weight": 0.5
+    }
+   ],
+   "id": "popneed_household_items",
+   "name": "Household Items"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 216,
+    "maxWealth": 99,
+    "minAmount": 23,
+    "minWealth": 1
+   },
+   "default": "liquor",
+   "entries": [
+    {
+     "good": "liquor",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0,
+     "name": "Liquor",
+     "weight": 1
+    },
+    {
+     "good": "tobacco",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0,
+     "name": "Tobacco",
+     "weight": 0.9
+    },
+    {
+     "good": "opium",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0,
+     "name": "Opium",
+     "weight": 0.75
+    },
+    {
+     "good": "wine",
+     "maxSupplyShare": 0.25,
+     "minSupplyShare": 0,
+     "name": "Wine",
+     "weight": 0.25
+    }
+   ],
+   "id": "popneed_intoxicants",
+   "name": "Intoxicants"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 406693,
+    "maxWealth": 99,
+    "minAmount": 16,
+    "minWealth": 20
+   },
+   "default": "services",
+   "entries": [
+    {
+     "good": "services",
+     "maxSupplyShare": 1,
+     "minSupplyShare": 0,
+     "name": "Services",
+     "weight": 0.1
+    },
+    {
+     "good": "fine_art",
+     "maxSupplyShare": 1,
+     "minSupplyShare": 0,
+     "name": "Fine Art",
+     "weight": 4
+    },
+    {
+     "good": "small_arms",
+     "maxSupplyShare": 0.25,
+     "minSupplyShare": 0,
+     "name": "Small Arms",
+     "weight": 0.75
+    },
+    {
+     "good": "aeroplanes",
+     "maxSupplyShare": 0.2,
+     "minSupplyShare": 0,
+     "name": "Aeroplanes",
+     "weight": 1
+    },
+    {
+     "good": "automobiles",
+     "maxSupplyShare": 0.25,
+     "minSupplyShare": 0,
+     "name": "Automobiles",
+     "weight": 1
+    },
+    {
+     "good": "radios",
+     "maxSupplyShare": 0.2,
+     "minSupplyShare": 0,
+     "name": "Radios",
+     "weight": 1
+    },
+    {
+     "good": "opium",
+     "maxSupplyShare": 0.5,
+     "minSupplyShare": 0,
+     "name": "Opium",
+     "weight": 0.5
+    },
+    {
+     "good": "clippers",
+     "maxSupplyShare": 0.25,
+     "minSupplyShare": 0,
+     "name": "Clippers",
+     "weight": 1
+    },
+    {
+     "good": "steamers",
+     "maxSupplyShare": 0.25,
+     "minSupplyShare": 0,
+     "name": "Steamers",
+     "weight": 0.75
+    }
+   ],
+   "id": "popneed_leisure",
+   "name": "Leisure"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 162677,
+    "maxWealth": 99,
+    "minAmount": 18,
+    "minWealth": 15
+   },
+   "default": "tea",
+   "entries": [
+    {
+     "good": "tea",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0,
+     "name": "Tea",
+     "weight": 1
+    },
+    {
+     "good": "coffee",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0,
+     "name": "Coffee",
+     "weight": 1
+    },
+    {
+     "good": "wine",
+     "maxSupplyShare": 0.33,
+     "minSupplyShare": 0,
+     "name": "Wine",
+     "weight": 0.45
+    }
+   ],
+   "id": "popneed_luxury_drinks",
+   "name": "Luxury Drinks"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 162677,
+    "maxWealth": 99,
+    "minAmount": 8,
+    "minWealth": 20
+   },
+   "default": "meat",
+   "entries": [
+    {
+     "good": "meat",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0.1,
+     "name": "Meat",
+     "weight": 1.25
+    },
+    {
+     "good": "fruit",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0.1,
+     "name": "Fruit",
+     "weight": 0.75
+    },
+    {
+     "good": "groceries",
+     "maxSupplyShare": 1,
+     "minSupplyShare": 0,
+     "name": "Groceries",
+     "weight": 1.5
+    },
+    {
+     "good": "sugar",
+     "maxSupplyShare": 0.5,
+     "minSupplyShare": 0,
+     "name": "Sugar",
+     "weight": 0.5
+    }
+   ],
+   "id": "popneed_luxury_food",
+   "name": "Luxury Food"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 406693,
+    "maxWealth": 99,
+    "minAmount": 11,
+    "minWealth": 15
+   },
+   "default": "silk",
+   "entries": [
+    {
+     "good": "silk",
+     "maxSupplyShare": 0.25,
+     "minSupplyShare": 0.1,
+     "name": "Silk",
+     "weight": 0.5
+    },
+    {
+     "good": "luxury_clothes",
+     "maxSupplyShare": 0.5,
+     "minSupplyShare": 0.1,
+     "name": "Luxury Clothes",
+     "weight": 1
+    },
+    {
+     "good": "luxury_furniture",
+     "maxSupplyShare": 0.5,
+     "minSupplyShare": 0.1,
+     "name": "Luxury Furniture",
+     "weight": 1
+    },
+    {
+     "good": "porcelain",
+     "maxSupplyShare": 0.5,
+     "minSupplyShare": 0.1,
+     "name": "Porcelain",
+     "weight": 1
+    },
+    {
+     "good": "radios",
+     "maxSupplyShare": 0.5,
+     "minSupplyShare": 0,
+     "name": "Radios",
+     "weight": 1
+    }
+   ],
+   "id": "popneed_luxury_items",
+   "name": "Luxury Items"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 244016,
+    "maxWealth": 99,
+    "minAmount": 23,
+    "minWealth": 10
+   },
+   "default": "services",
+   "entries": [
+    {
+     "good": "services",
+     "maxSupplyShare": null,
+     "minSupplyShare": null,
+     "name": "Services",
+     "weight": 1
+    }
+   ],
+   "id": "popneed_services",
+   "name": "Services"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 7,
+    "maxWealth": 14,
+    "minAmount": 23,
+    "minWealth": 1
+   },
+   "default": "fabric",
+   "entries": [
+    {
+     "good": "fabric",
+     "maxSupplyShare": 0.5,
+     "minSupplyShare": 0,
+     "name": "Fabric",
+     "weight": 1
+    },
+    {
+     "good": "clothes",
+     "maxSupplyShare": 1,
+     "minSupplyShare": 0,
+     "name": "Clothes",
+     "weight": 2
+    }
+   ],
+   "id": "popneed_simple_clothing",
+   "name": "Simple Clothing"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 161,
+    "maxWealth": 39,
+    "minAmount": 7,
+    "minWealth": 10
+   },
+   "default": "clothes",
+   "entries": [
+    {
+     "good": "clothes",
+     "maxSupplyShare": null,
+     "minSupplyShare": null,
+     "name": "Clothes",
+     "weight": 1
+    }
+   ],
+   "id": "popneed_standard_clothing",
+   "name": "Standard Clothing"
+  },
+  {
+   "buyPackages": {
+    "maxAmount": 20,
+    "maxWealth": 30,
+    "minAmount": 7,
+    "minWealth": 6
+   },
+   "default": "sugar",
+   "entries": [
+    {
+     "good": "sugar",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0,
+     "name": "Sugar",
+     "weight": 1
+    },
+    {
+     "good": "tea",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0,
+     "name": "Tea",
+     "weight": 0.95
+    },
+    {
+     "good": "coffee",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0,
+     "name": "Coffee",
+     "weight": 0.95
+    },
+    {
+     "good": "tobacco",
+     "maxSupplyShare": 0.75,
+     "minSupplyShare": 0,
+     "name": "Tobacco",
+     "weight": 0.8
+    }
+   ],
+   "id": "popneed_stimulants",
+   "name": "Stimulants"
+  }
+ ]
+}

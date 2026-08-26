@@ -115,6 +115,10 @@ export class Loc {
     // Formatting runs: '#tag ' opens, '#!' closes — keep inner text only.
     text = text.replace(/#[\w;:.]+ /g, '').replace(/#!/g, '');
 
+    // Inline icon tokens ('@aristocrats!') — we render real icons separately,
+    // so plain text drops them.
+    text = text.replace(/@[\w.-]+!\s*/g, '');
+
     // Escaped newlines/tabs in loc strings.
     text = text.replace(/\\n/g, '\n').replace(/\\t/g, ' ');
 

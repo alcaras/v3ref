@@ -24,7 +24,7 @@ export const TABS: Tab[] = [
   },
   {
     slug: 'buildings', icon: '🏭', label: 'Buildings', section: 'Economy',
-    status: 'placeholder',
+    status: 'built',
     summary: 'All buildings with their production methods, inputs, outputs, and jobs',
     willContain: [
       'Building × production-method matrix with per-level goods and employment',
@@ -33,17 +33,17 @@ export const TABS: Tab[] = [
   },
   {
     slug: 'production-methods', icon: '⚙️', label: 'Production Methods', section: 'Economy',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Compare PM options per building: net goods, jobs, base-price profit',
   },
   {
     slug: 'pop-types', icon: '👷', label: 'Pop Types', section: 'Economy',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Wages, qualifications, dependents, political strength per profession',
   },
   {
     slug: 'pop-needs', icon: '🛒', label: 'Pop Needs', section: 'Economy',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Buy packages and needs — which goods compete to satisfy each',
   },
   {

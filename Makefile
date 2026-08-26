@@ -10,6 +10,8 @@ export V3REF
 
 data:
 	node scripts/build_goods.mjs
+	node scripts/build_buildings.mjs
+	node scripts/build_pops.mjs
 	node scripts/build_entities.mjs
 
 art:
