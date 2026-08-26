@@ -55,39 +55,39 @@ export const TABS: Tab[] = [
   // ── Politics ──────────────────────────────────────────────────────
   {
     slug: 'laws', icon: '⚖️', label: 'Laws', section: 'Politics',
-    status: 'placeholder',
+    status: 'built',
     summary: 'All law groups — effects, requirements, interest-group stances',
   },
   {
     slug: 'interest-groups', icon: '🗳️', label: 'Interest Groups', section: 'Politics',
-    status: 'placeholder',
+    status: 'built',
     summary: 'The eight IGs — traits, ideologies, pop attraction',
   },
   {
     slug: 'ideologies', icon: '💭', label: 'Ideologies', section: 'Politics',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Leader and IG ideologies × law-stance matrix',
   },
   {
     slug: 'institutions', icon: '🏛️', label: 'Institutions', section: 'Politics',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Institution levels, effects, and the laws that gate them',
   },
   {
     slug: 'decrees', icon: '📜', label: 'Decrees', section: 'Politics',
-    status: 'placeholder',
+    status: 'built',
     summary: 'State decrees — costs, effects, requirements',
   },
   {
     slug: 'character-traits', icon: '🎭', label: 'Character Traits', section: 'Politics',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Commander, politician, and agitator traits with effects',
   },
 
   // ── Technology ────────────────────────────────────────────────────
   {
     slug: 'technology', icon: '🔬', label: 'Technology', section: 'Technology',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Production, military, and society trees — prereqs and everything each tech unlocks',
   },
 

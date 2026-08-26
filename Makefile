@@ -12,6 +12,9 @@ data:
 	node scripts/build_goods.mjs
 	node scripts/build_buildings.mjs
 	node scripts/build_pops.mjs
+	node scripts/build_politics.mjs
+	node scripts/build_techs.mjs
+	node scripts/build_characters.mjs
 	node scripts/build_entities.mjs
 
 art:

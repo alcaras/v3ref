@@ -1,12 +1,30 @@
 {
  "entities": [
   {
+   "group": "society",
+   "icon": "img/techs/academia.png",
+   "id": "academia",
+   "name": "Academia",
+   "page": "technology#academia",
+   "slug": "academia",
+   "type": "technology"
+  },
+  {
    "icon": "img/pops/academics.png",
    "id": "academics",
    "name": "Academics",
    "page": "pop-types#academics",
    "slug": "academics",
    "type": "pop_type"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/admiralty.png",
+   "id": "admiralty",
+   "name": "Admiralty",
+   "page": "technology#admiralty",
+   "slug": "admiralty",
+   "type": "technology"
   },
   {
    "group": "military",
@@ -18,6 +36,33 @@
    "type": "good"
   },
   {
+   "group": "personality",
+   "icon": "img/traits/aesthete.png",
+   "id": "aesthete",
+   "name": "Aesthete",
+   "page": "character-traits#aesthete",
+   "slug": "aesthete",
+   "type": "character_trait"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/alcoholic.png",
+   "id": "alcoholic",
+   "name": "Alcoholic",
+   "page": "character-traits#alcoholic",
+   "slug": "alcoholic",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/ambitious.png",
+   "id": "ambitious",
+   "name": "Ambitious",
+   "page": "character-traits#ambitious",
+   "slug": "ambitious",
+   "type": "character_trait"
+  },
+  {
    "group": "military",
    "icon": "img/goods/ammunition.png",
    "id": "ammunition",
@@ -25,6 +70,51 @@
    "page": "goods/ammunition",
    "slug": "ammunition",
    "type": "good"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/analytical_philosophy.png",
+   "id": "analytical_philosophy",
+   "name": "Analytical Philosophy",
+   "page": "technology#analytical_philosophy",
+   "slug": "analytical_philosophy",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/anarchy.png",
+   "id": "anarchism",
+   "name": "Anarchism",
+   "page": "technology#anarchism",
+   "slug": "anarchism",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/aniline.png",
+   "id": "aniline",
+   "name": "Aniline",
+   "page": "technology#aniline",
+   "slug": "aniline",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/antibiotics.png",
+   "id": "antibiotics",
+   "name": "Antibiotics",
+   "page": "technology#antibiotics",
+   "slug": "antibiotics",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/arc_welding.png",
+   "id": "arc_welding",
+   "name": "Arc Welding",
+   "page": "technology#arc_welding",
+   "slug": "arc_welding",
+   "type": "technology"
   },
   {
    "icon": "img/pops/aristocrats.png",
@@ -36,12 +126,75 @@
   },
   {
    "group": "military",
+   "icon": "img/techs/army_reserves.png",
+   "id": "army_reserves",
+   "name": "Army Reserves",
+   "page": "technology#army_reserves",
+   "slug": "army_reserves",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/arrogant.png",
+   "id": "arrogant",
+   "name": "Arrogant",
+   "page": "character-traits#arrogant",
+   "slug": "arrogant",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/art_silk.png",
+   "id": "art_silk",
+   "name": "Art Silk",
+   "page": "technology#art_silk",
+   "slug": "art_silk",
+   "type": "technology"
+  },
+  {
+   "group": "military",
    "icon": "img/goods/artillery.png",
    "id": "artillery",
    "name": "Artillery",
    "page": "goods/artillery",
    "slug": "artillery",
    "type": "good"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/artillery.png",
+   "id": "artillery",
+   "name": "Artillery",
+   "page": "technology#artillery",
+   "slug": "artillery",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/atmospheric_engine.png",
+   "id": "atmospheric_engine",
+   "name": "Atmospheric Engine",
+   "page": "technology#atmospheric_engine",
+   "slug": "atmospheric_engine",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/automatic_bottle_blowers.png",
+   "id": "automatic_bottle_blowers",
+   "name": "Automatic Bottle Blowers",
+   "page": "technology#automatic_bottle_blowers",
+   "slug": "automatic_bottle_blowers",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/machine_gun.png",
+   "id": "automatic_machine_guns",
+   "name": "Automatic Machine Guns",
+   "page": "technology#automatic_machine_guns",
+   "slug": "automatic_machine_guns",
+   "type": "technology"
   },
   {
    "group": "luxury",
@@ -51,6 +204,186 @@
    "page": "goods/automobiles",
    "slug": "automobiles",
    "type": "good"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/baking_powder.png",
+   "id": "baking_powder",
+   "name": "Baking Powder",
+   "page": "technology#baking_powder",
+   "slug": "baking_powder",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/bandit.png",
+   "id": "bandit",
+   "name": "Bandit",
+   "page": "character-traits#bandit",
+   "slug": "bandit",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/banking.png",
+   "id": "banking",
+   "name": "Banking",
+   "page": "technology#banking",
+   "slug": "banking",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/basic_artillery_commander.png",
+   "id": "basic_artillery_commander",
+   "name": "Artillery Commander",
+   "page": "character-traits#basic_artillery_commander",
+   "slug": "basic_artillery_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/basic_colonial_administrator.png",
+   "id": "basic_colonial_administrator",
+   "name": "Colonial Administrator",
+   "page": "character-traits#basic_colonial_administrator",
+   "slug": "basic_colonial_administrator",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/basic_defensive_strategist.png",
+   "id": "basic_defensive_strategist",
+   "name": "Defensive Strategist",
+   "page": "character-traits#basic_defensive_strategist",
+   "slug": "basic_defensive_strategist",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/basic_diplomat.png",
+   "id": "basic_diplomat",
+   "name": "Diplomat",
+   "page": "character-traits#basic_diplomat",
+   "slug": "basic_diplomat",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/basic_entrepreneur.png",
+   "id": "basic_entrepreneur",
+   "name": "Basic Entrepreneur",
+   "page": "character-traits#basic_entrepreneur",
+   "slug": "basic_entrepreneur",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/basic_naval_commander.png",
+   "id": "basic_naval_commander",
+   "name": "Naval Commander",
+   "page": "character-traits#basic_naval_commander",
+   "slug": "basic_naval_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/basic_offensive_planner.png",
+   "id": "basic_offensive_planner",
+   "name": "Offensive Planner",
+   "page": "character-traits#basic_offensive_planner",
+   "slug": "basic_offensive_planner",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/basic_political_operator.png",
+   "id": "basic_political_operator",
+   "name": "Political Operator",
+   "page": "character-traits#basic_political_operator",
+   "slug": "basic_political_operator",
+   "type": "character_trait"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/battlefleet_tactics.png",
+   "id": "battlefleet_tactics",
+   "name": "Modern Battlefleet Tactics",
+   "page": "technology#battlefleet_tactics",
+   "slug": "battlefleet_tactics",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/battleship_tech.png",
+   "id": "battleship_tech",
+   "name": "Super Dreadnought",
+   "page": "technology#battleship_tech",
+   "slug": "battleship_tech",
+   "type": "technology"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/beetle_eared.png",
+   "id": "beetle_ear",
+   "name": "Beetle Eared",
+   "page": "character-traits#beetle_ear",
+   "slug": "beetle_ear",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/behaviorism.png",
+   "id": "behaviorism",
+   "name": "Behaviorism",
+   "page": "technology#behaviorism",
+   "slug": "behaviorism",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/bessemer_process.png",
+   "id": "bessemer_process",
+   "name": "Bessemer Process",
+   "page": "technology#bessemer_process",
+   "slug": "bessemer_process",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/bigoted.png",
+   "id": "bigoted",
+   "name": "Bigoted",
+   "page": "character-traits#bigoted",
+   "slug": "bigoted",
+   "type": "character_trait"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/bolt_action_rifles.png",
+   "id": "bolt_action_rifles",
+   "name": "Bolt-Action Rifle",
+   "page": "technology#bolt_action_rifles",
+   "slug": "bolt_action_rifles",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/brave.png",
+   "id": "brave",
+   "name": "Brave",
+   "page": "character-traits#brave",
+   "slug": "brave",
+   "type": "character_trait"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/breech_loading_artillery.png",
+   "id": "breech_loading_artillery",
+   "name": "Breech-Loading Artillery",
+   "page": "technology#breech_loading_artillery",
+   "slug": "breech_loading_artillery",
+   "type": "technology"
   },
   {
    "group": "Monuments",
@@ -934,12 +1267,138 @@
    "type": "pop_type"
   },
   {
+   "group": "society",
+   "icon": "img/techs/camera.png",
+   "id": "camera",
+   "name": "Camera",
+   "page": "technology#camera",
+   "slug": "camera",
+   "type": "technology"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/cancer.png",
+   "id": "cancer",
+   "name": "Cancer",
+   "page": "character-traits#cancer",
+   "slug": "cancer",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/canneries.png",
+   "id": "canneries",
+   "name": "Canneries",
+   "page": "technology#canneries",
+   "slug": "canneries",
+   "type": "technology"
+  },
+  {
    "icon": "img/pops/capitalists.png",
    "id": "capitalists",
    "name": "Capitalists",
    "page": "pop-types#capitalists",
    "slug": "capitalists",
    "type": "pop_type"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/carrier_tech.png",
+   "id": "carrier_tech",
+   "name": "Aircraft Carrier",
+   "page": "technology#carrier_tech",
+   "slug": "carrier_tech",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/cautious.png",
+   "id": "cautious",
+   "name": "Cautious",
+   "page": "character-traits#cautious",
+   "slug": "cautious",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/celebrity_commander.png",
+   "id": "celebrity_commander",
+   "name": "Celebrity Commander",
+   "page": "character-traits#celebrity_commander",
+   "slug": "celebrity_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/central_archives.png",
+   "id": "central_archives",
+   "name": "Central Archives",
+   "page": "technology#central_archives",
+   "slug": "central_archives",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/central_banking.png",
+   "id": "central_banking",
+   "name": "Central Banking",
+   "page": "technology#central_banking",
+   "slug": "central_banking",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/central_planning.png",
+   "id": "central_planning",
+   "name": "Central Planning",
+   "page": "technology#central_planning",
+   "slug": "central_planning",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/centralization.png",
+   "id": "centralization",
+   "name": "Centralization",
+   "page": "technology#centralization",
+   "slug": "centralization",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/charismatic.png",
+   "id": "charismatic",
+   "name": "Charismatic",
+   "page": "character-traits#charismatic",
+   "slug": "charismatic",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/chemical_bleaching.png",
+   "id": "chemical_bleaching",
+   "name": "Chemical Bleaching",
+   "page": "technology#chemical_bleaching",
+   "slug": "chemical_bleaching",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/chemical_warfare.png",
+   "id": "chemical_warfare",
+   "name": "Chemical Warfare",
+   "page": "technology#chemical_warfare",
+   "slug": "chemical_warfare",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/civilizing_mission.png",
+   "id": "civilizing_mission",
+   "name": "Civilizing Mission",
+   "page": "technology#civilizing_mission",
+   "slug": "civilizing_mission",
+   "type": "technology"
   },
   {
    "icon": "img/pops/clergymen.png",
@@ -985,6 +1444,15 @@
    "type": "good"
   },
   {
+   "group": "condition",
+   "icon": "img/traits/cocaine_addiction.png",
+   "id": "cocaine_addiction",
+   "name": "Cocaine Addict",
+   "page": "character-traits#cocaine_addiction",
+   "slug": "cocaine_addiction",
+   "type": "character_trait"
+  },
+  {
    "group": "luxury",
    "icon": "img/goods/coffee.png",
    "id": "coffee",
@@ -992,6 +1460,337 @@
    "page": "goods/coffee",
    "slug": "coffee",
    "type": "good"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/colonization.png",
+   "id": "colonization",
+   "name": "Colonization",
+   "page": "technology#colonization",
+   "slug": "colonization",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/combustion_engine.png",
+   "id": "combustion_engine",
+   "name": "Combustion Engine",
+   "page": "technology#combustion_engine",
+   "slug": "combustion_engine",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/compliant.png",
+   "id": "compliant",
+   "name": "Compliant",
+   "page": "character-traits#compliant",
+   "slug": "compliant",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/compression_ignition.png",
+   "id": "compression_ignition",
+   "name": "Compression Ignition",
+   "page": "technology#compression_ignition",
+   "slug": "compression_ignition",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/concrete_dockyards.png",
+   "id": "concrete_dockyards",
+   "name": "Concrete Dockyards",
+   "page": "technology#concrete_dockyards",
+   "slug": "concrete_dockyards",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/concrete_fortifications.png",
+   "id": "concrete_fortifications",
+   "name": "Concrete Fortifications",
+   "page": "technology#concrete_fortifications",
+   "slug": "concrete_fortifications",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/conveyers.png",
+   "id": "conveyors",
+   "name": "Conveyors",
+   "page": "technology#conveyors",
+   "slug": "conveyors",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/convoy_raider_commander.png",
+   "id": "convoy_raider_commander",
+   "name": "Convoy Raider",
+   "page": "character-traits#convoy_raider_commander",
+   "slug": "convoy_raider_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/corporate_charters.png",
+   "id": "corporate_charters",
+   "name": "Corporate Charters",
+   "page": "technology#corporate_charters",
+   "slug": "corporate_charters",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/corporate_management.png",
+   "id": "corporate_management",
+   "name": "Corporate Governance",
+   "page": "technology#corporate_management",
+   "slug": "corporate_management",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/corporatism.png",
+   "id": "corporatism",
+   "name": "Corporatism",
+   "page": "technology#corporatism",
+   "slug": "corporatism",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/cotton_gin.png",
+   "id": "cotton_gin",
+   "name": "Cotton Gin",
+   "page": "technology#cotton_gin",
+   "slug": "cotton_gin",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/cruel.png",
+   "id": "cruel",
+   "name": "Cruel",
+   "page": "character-traits#cruel",
+   "slug": "cruel",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/crystal_glass.png",
+   "id": "crystal_glass",
+   "name": "Crystal Glass",
+   "page": "technology#crystal_glass",
+   "slug": "crystal_glass",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/currency_standards.png",
+   "id": "currency_standards",
+   "name": "Currency Standards",
+   "page": "technology#currency_standards",
+   "slug": "currency_standards",
+   "type": "technology"
+  },
+  {
+   "icon": "img/decrees/decree_emergency_relief.png",
+   "id": "decree_emergency_relief",
+   "name": "Emergency Relief",
+   "page": "decrees#decree_emergency_relief",
+   "slug": "decree_emergency_relief",
+   "type": "decree"
+  },
+  {
+   "icon": "img/decrees/decree_encourage_agricultural_industry.png",
+   "id": "decree_encourage_agricultural_industry",
+   "name": "Encourage Agricultural Industry",
+   "page": "decrees#decree_encourage_agricultural_industry",
+   "slug": "decree_encourage_agricultural_industry",
+   "type": "decree"
+  },
+  {
+   "icon": "img/decrees/decree_encourage_manufacturing_industry.png",
+   "id": "decree_encourage_manufacturing_industry",
+   "name": "Encourage Manufacturing Industry",
+   "page": "decrees#decree_encourage_manufacturing_industry",
+   "slug": "decree_encourage_manufacturing_industry",
+   "type": "decree"
+  },
+  {
+   "icon": "img/decrees/decree_encourage_resource_industry.png",
+   "id": "decree_encourage_resource_industry",
+   "name": "Encourage Resource Industry",
+   "page": "decrees#decree_encourage_resource_industry",
+   "slug": "decree_encourage_resource_industry",
+   "type": "decree"
+  },
+  {
+   "icon": "img/decrees/decree_enlistment_efforts.png",
+   "id": "decree_enlistment_efforts",
+   "name": "Enlistment Efforts",
+   "page": "decrees#decree_enlistment_efforts",
+   "slug": "decree_enlistment_efforts",
+   "type": "decree"
+  },
+  {
+   "icon": "img/decrees/decree_establish_missions.png",
+   "id": "decree_establish_missions",
+   "name": "Establish Missions",
+   "page": "decrees#decree_establish_missions",
+   "slug": "decree_establish_missions",
+   "type": "decree"
+  },
+  {
+   "icon": "img/decrees/decree_greener_grass_campaign.png",
+   "id": "decree_greener_grass_campaign",
+   "name": "Greener Grass Campaign",
+   "page": "decrees#decree_greener_grass_campaign",
+   "slug": "decree_greener_grass_campaign",
+   "type": "decree"
+  },
+  {
+   "icon": "img/decrees/decree_promote_national_values.png",
+   "id": "decree_promote_national_values",
+   "name": "Promote National Values",
+   "page": "decrees#decree_promote_national_values",
+   "slug": "decree_promote_national_values",
+   "type": "decree"
+  },
+  {
+   "icon": "img/decrees/decree_promote_social_mobility.png",
+   "id": "decree_promote_social_mobility",
+   "name": "Promote Social Mobility",
+   "page": "decrees#decree_promote_social_mobility",
+   "slug": "decree_promote_social_mobility",
+   "type": "decree"
+  },
+  {
+   "icon": "img/decrees/decree_road_maintenance.png",
+   "id": "decree_road_maintenance",
+   "name": "Road Maintenance",
+   "page": "decrees#decree_road_maintenance",
+   "slug": "decree_road_maintenance",
+   "type": "decree"
+  },
+  {
+   "icon": "img/decrees/decree_violent_suppression.png",
+   "id": "decree_violent_suppression",
+   "name": "Violent Suppression",
+   "page": "decrees#decree_violent_suppression",
+   "slug": "decree_violent_suppression",
+   "type": "decree"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/defense_in_depth.png",
+   "id": "defense_in_depth",
+   "name": "Defense in Depth",
+   "page": "technology#defense_in_depth",
+   "slug": "defense_in_depth",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/defense_in_depth_specialist.png",
+   "id": "defense_in_depth_specialist",
+   "name": "Defense in Depth Specialist",
+   "page": "character-traits#defense_in_depth_specialist",
+   "slug": "defense_in_depth_specialist",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/demagogue_orator2.png",
+   "id": "demagogue",
+   "name": "Demagogue",
+   "page": "character-traits#demagogue",
+   "slug": "demagogue",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/democracy.png",
+   "id": "democracy",
+   "name": "Democracy",
+   "page": "technology#democracy",
+   "slug": "democracy",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/destroyers.png",
+   "id": "destroyer",
+   "name": "Destroyer",
+   "page": "technology#destroyer",
+   "slug": "destroyer",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/dialectics.png",
+   "id": "dialectics",
+   "name": "Dialectics",
+   "page": "technology#dialectics",
+   "slug": "dialectics",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/direct.png",
+   "id": "direct",
+   "name": "Direct",
+   "page": "character-traits#direct",
+   "slug": "direct",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/distillation.png",
+   "id": "distillation",
+   "name": "Distillation",
+   "page": "technology#distillation",
+   "slug": "distillation",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/drydock_repairs.png",
+   "id": "dockyard_master",
+   "name": "Dockyard Organizer",
+   "page": "character-traits#dockyard_master",
+   "slug": "dockyard_master",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/rollers.png",
+   "id": "dough_rollers",
+   "name": "Dough Rollers",
+   "page": "technology#dough_rollers",
+   "slug": "dough_rollers",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/dreadnought.png",
+   "id": "dreadnought_tech",
+   "name": "Dreadnought",
+   "page": "technology#dreadnought_tech",
+   "slug": "dreadnought_tech",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/drydock.png",
+   "id": "drydocks",
+   "name": "Drydocks",
+   "page": "technology#drydocks",
+   "slug": "drydocks",
+   "type": "technology"
   },
   {
    "group": "industrial",
@@ -1003,6 +1802,78 @@
    "type": "good"
   },
   {
+   "group": "production",
+   "icon": "img/techs/dynamite.png",
+   "id": "dynamite",
+   "name": "Dynamite",
+   "page": "technology#dynamite",
+   "slug": "dynamite",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/egalitarianism.png",
+   "id": "egalitarianism",
+   "name": "Egalitarianism",
+   "page": "technology#egalitarianism",
+   "slug": "egalitarianism",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/elder.png",
+   "id": "elder",
+   "name": "Elder",
+   "page": "character-traits#elder",
+   "slug": "elder",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/electric_arc_process.png",
+   "id": "electric_arc_process",
+   "name": "Electric Arc Process",
+   "page": "technology#electric_arc_process",
+   "slug": "electric_arc_process",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/electric_railway.png",
+   "id": "electric_railway",
+   "name": "Electric Railways",
+   "page": "technology#electric_railway",
+   "slug": "electric_railway",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/electrical_telegraph.png",
+   "id": "electric_telegraph",
+   "name": "Electric Telegraph",
+   "page": "technology#electric_telegraph",
+   "slug": "electric_telegraph",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/electrical_capacitors.png",
+   "id": "electrical_capacitors",
+   "name": "Electrical Capacitors",
+   "page": "technology#electrical_capacitors",
+   "slug": "electrical_capacitors",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/electrical_generation.png",
+   "id": "electrical_generation",
+   "name": "Electrical Generation",
+   "page": "technology#electrical_generation",
+   "slug": "electrical_generation",
+   "type": "technology"
+  },
+  {
    "group": "staple",
    "icon": "img/goods/electricity.png",
    "id": "electricity",
@@ -1010,6 +1881,42 @@
    "page": "goods/electricity",
    "slug": "electricity",
    "type": "good"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/elevator.png",
+   "id": "elevator",
+   "name": "Elevators",
+   "page": "technology#elevator",
+   "slug": "elevator",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/empiricism.png",
+   "id": "empiricism",
+   "name": "Empiricism",
+   "page": "technology#empiricism",
+   "slug": "empiricism",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/enclosure.png",
+   "id": "enclosure",
+   "name": "Enclosure",
+   "page": "technology#enclosure",
+   "slug": "enclosure",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/engineer.png",
+   "id": "engineer",
+   "name": "Engineer",
+   "page": "character-traits#engineer",
+   "slug": "engineer",
+   "type": "character_trait"
   },
   {
    "icon": "img/pops/engineers.png",
@@ -1027,6 +1934,195 @@
    "page": "goods/engines",
    "slug": "engines",
    "type": "good"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/enlistment_offices.png",
+   "id": "enlistment_offices",
+   "name": "Enlistment Offices",
+   "page": "technology#enlistment_offices",
+   "slug": "enlistment_offices",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/erudite.png",
+   "id": "erudite",
+   "name": "Erudite",
+   "page": "character-traits#erudite",
+   "slug": "erudite",
+   "type": "character_trait"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/expensive_tastes.png",
+   "id": "expensive_tastes",
+   "name": "Expensive Tastes",
+   "page": "character-traits#expensive_tastes",
+   "slug": "expensive_tastes",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/experienced_artillery_commander.png",
+   "id": "experienced_artillery_commander",
+   "name": "Experienced Artillery Commander",
+   "page": "character-traits#experienced_artillery_commander",
+   "slug": "experienced_artillery_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/experienced_colonial_administrator.png",
+   "id": "experienced_colonial_administrator",
+   "name": "Experienced Colonial Administrator",
+   "page": "character-traits#experienced_colonial_administrator",
+   "slug": "experienced_colonial_administrator",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/experienced_convoy_raider.png",
+   "id": "experienced_convoy_raider",
+   "name": "Experienced Convoy Raider",
+   "page": "character-traits#experienced_convoy_raider",
+   "slug": "experienced_convoy_raider",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/experienced_defensive_strategist.png",
+   "id": "experienced_defensive_strategist",
+   "name": "Experienced Defensive Strategist",
+   "page": "character-traits#experienced_defensive_strategist",
+   "slug": "experienced_defensive_strategist",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/experienced_diplomat.png",
+   "id": "experienced_diplomat",
+   "name": "Experienced Diplomat",
+   "page": "character-traits#experienced_diplomat",
+   "slug": "experienced_diplomat",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/experienced_entrepreneur.png",
+   "id": "experienced_entrepreneur",
+   "name": "Experienced Entrepreneur",
+   "page": "character-traits#experienced_entrepreneur",
+   "slug": "experienced_entrepreneur",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/experienced_naval_commander.png",
+   "id": "experienced_naval_commander",
+   "name": "Experienced Naval Commander",
+   "page": "character-traits#experienced_naval_commander",
+   "slug": "experienced_naval_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/experienced_offensive_planner.png",
+   "id": "experienced_offensive_planner",
+   "name": "Experienced Offensive Planner",
+   "page": "character-traits#experienced_offensive_planner",
+   "slug": "experienced_offensive_planner",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/experienced_political_operator.png",
+   "id": "experienced_political_operator",
+   "name": "Experienced Political Operator",
+   "page": "character-traits#experienced_political_operator",
+   "slug": "experienced_political_operator",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/expert_artillery_commander.png",
+   "id": "expert_artillery_commander",
+   "name": "Expert Artillery Commander",
+   "page": "character-traits#expert_artillery_commander",
+   "slug": "expert_artillery_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/expert_colonial_administrator.png",
+   "id": "expert_colonial_administrator",
+   "name": "Expert Colonial Administrator",
+   "page": "character-traits#expert_colonial_administrator",
+   "slug": "expert_colonial_administrator",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/expert_convoy_raider.png",
+   "id": "expert_convoy_raider",
+   "name": "Expert Convoy Raider",
+   "page": "character-traits#expert_convoy_raider",
+   "slug": "expert_convoy_raider",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/expert_defensive_strategist.png",
+   "id": "expert_defensive_strategist",
+   "name": "Expert Defensive Strategist",
+   "page": "character-traits#expert_defensive_strategist",
+   "slug": "expert_defensive_strategist",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/expert_entrepreneur.png",
+   "id": "expert_entrepreneur",
+   "name": "Expert Entrepreneur",
+   "page": "character-traits#expert_entrepreneur",
+   "slug": "expert_entrepreneur",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/expert_naval_commander.png",
+   "id": "expert_naval_commander",
+   "name": "Expert Naval Commander",
+   "page": "character-traits#expert_naval_commander",
+   "slug": "expert_naval_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/expert_offensive_planner.png",
+   "id": "expert_offensive_planner",
+   "name": "Expert Offensive Planner",
+   "page": "character-traits#expert_offensive_planner",
+   "slug": "expert_offensive_planner",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/expert_political_operator.png",
+   "id": "expert_political_operator",
+   "name": "Expert Political Operator",
+   "page": "character-traits#expert_political_operator",
+   "slug": "expert_political_operator",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/explorer.png",
+   "id": "explorer",
+   "name": "Explorer",
+   "page": "character-traits#explorer",
+   "slug": "explorer",
+   "type": "character_trait"
   },
   {
    "group": "industrial",
@@ -1055,6 +2151,15 @@
    "type": "pop_type"
   },
   {
+   "group": "society",
+   "icon": "img/techs/feminism.png",
+   "id": "feminism",
+   "name": "Feminism",
+   "page": "technology#feminism",
+   "slug": "feminism",
+   "type": "technology"
+  },
+  {
    "group": "industrial",
    "icon": "img/goods/fertilizer.png",
    "id": "fertilizer",
@@ -1062,6 +2167,24 @@
    "page": "goods/fertilizer",
    "slug": "fertilizer",
    "type": "good"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/field_works.png",
+   "id": "field_works",
+   "name": "Field Works",
+   "page": "technology#field_works",
+   "slug": "field_works",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/film.png",
+   "id": "film",
+   "name": "Film",
+   "page": "technology#film",
+   "slug": "film",
+   "type": "technology"
   },
   {
    "group": "luxury",
@@ -1073,6 +2196,15 @@
    "type": "good"
   },
   {
+   "group": "skill",
+   "icon": "img/traits/firebrand_orator3.png",
+   "id": "firebrand",
+   "name": "Firebrand",
+   "page": "character-traits#firebrand",
+   "slug": "firebrand",
+   "type": "character_trait"
+  },
+  {
    "group": "staple",
    "icon": "img/goods/fish.png",
    "id": "fish",
@@ -1080,6 +2212,51 @@
    "page": "goods/fish",
    "slug": "fish",
    "type": "good"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/flamethrowers.png",
+   "id": "flamethrowers",
+   "name": "Flamethrowers",
+   "page": "technology#flamethrowers",
+   "slug": "flamethrowers",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/flash_freezing.png",
+   "id": "flash_freezing",
+   "name": "Flash Freezing",
+   "page": "technology#flash_freezing",
+   "slug": "flash_freezing",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/floating_harbor.png",
+   "id": "floating_harbor",
+   "name": "Floating Harbor",
+   "page": "technology#floating_harbor",
+   "slug": "floating_harbor",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/forest_commander.png",
+   "id": "forest_commander",
+   "name": "Woodland Combat Expert",
+   "page": "character-traits#forest_commander",
+   "slug": "forest_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/fractional_distillation.png",
+   "id": "fractional_distillation",
+   "name": "Fractional Distillation",
+   "page": "technology#fractional_distillation",
+   "slug": "fractional_distillation",
+   "type": "technology"
   },
   {
    "group": "luxury",
@@ -1098,6 +2275,24 @@
    "page": "goods/furniture",
    "slug": "furniture",
    "type": "good"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/gantry_crane.png",
+   "id": "gantry_cranes",
+   "name": "Gantry Cranes",
+   "page": "technology#gantry_cranes",
+   "slug": "gantry_cranes",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/general_staff.png",
+   "id": "general_staff",
+   "name": "General Staff",
+   "page": "technology#general_staff",
+   "slug": "general_staff",
+   "type": "technology"
   },
   {
    "group": "industrial",
@@ -1127,6 +2322,15 @@
    "type": "good"
   },
   {
+   "group": "condition",
+   "icon": "img/traits/grifter.png",
+   "id": "grifter",
+   "name": "Grifter",
+   "page": "character-traits#grifter",
+   "slug": "grifter",
+   "type": "character_trait"
+  },
+  {
    "group": "staple",
    "icon": "img/goods/groceries.png",
    "id": "groceries",
@@ -1136,6 +2340,24 @@
    "type": "good"
   },
   {
+   "group": "military",
+   "icon": "img/techs/gunsmithing.png",
+   "id": "gunsmithing",
+   "name": "Gunsmithing",
+   "page": "technology#gunsmithing",
+   "slug": "gunsmithing",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/handcranked_machine_gun.png",
+   "id": "handcranked_machine_gun",
+   "name": "Handcranked Machine Gun",
+   "page": "technology#handcranked_machine_gun",
+   "slug": "handcranked_machine_gun",
+   "type": "technology"
+  },
+  {
    "group": "industrial",
    "icon": "img/goods/hardwood.png",
    "id": "hardwood",
@@ -1143,6 +2365,279 @@
    "page": "goods/hardwood",
    "slug": "hardwood",
    "type": "good"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/hedonist.png",
+   "id": "hedonist",
+   "name": "Hedonist",
+   "page": "character-traits#hedonist",
+   "slug": "hedonist",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/honorable.png",
+   "id": "honorable",
+   "name": "Honorable",
+   "page": "character-traits#honorable",
+   "slug": "honorable",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/human_rights.png",
+   "id": "human_rights",
+   "name": "Human Rights",
+   "page": "technology#human_rights",
+   "slug": "human_rights",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/hydraulic_cranes.png",
+   "id": "hydraulic_cranes",
+   "name": "Hydraulic Cranes",
+   "page": "technology#hydraulic_cranes",
+   "slug": "hydraulic_cranes",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/identification_documents.png",
+   "id": "identification_documents",
+   "name": "Identification Documents",
+   "page": "technology#identification_documents",
+   "slug": "identification_documents",
+   "type": "technology"
+  },
+  {
+   "icon": "img/igs/armed_forces.png",
+   "id": "ig_armed_forces",
+   "name": "Armed Forces",
+   "page": "interest-groups#ig_armed_forces",
+   "slug": "ig_armed_forces",
+   "type": "interest_group"
+  },
+  {
+   "icon": "img/igs/devout.png",
+   "id": "ig_devout",
+   "name": "Devout",
+   "page": "interest-groups#ig_devout",
+   "slug": "ig_devout",
+   "type": "interest_group"
+  },
+  {
+   "icon": "img/igs/industrialists.png",
+   "id": "ig_industrialists",
+   "name": "Industrialists",
+   "page": "interest-groups#ig_industrialists",
+   "slug": "ig_industrialists",
+   "type": "interest_group"
+  },
+  {
+   "icon": "img/igs/intelligensia.png",
+   "id": "ig_intelligentsia",
+   "name": "Intelligentsia",
+   "page": "interest-groups#ig_intelligentsia",
+   "slug": "ig_intelligentsia",
+   "type": "interest_group"
+  },
+  {
+   "icon": "img/igs/landowners.png",
+   "id": "ig_landowners",
+   "name": "Landowners",
+   "page": "interest-groups#ig_landowners",
+   "slug": "ig_landowners",
+   "type": "interest_group"
+  },
+  {
+   "icon": "img/igs/petty_bourgeoisie.png",
+   "id": "ig_petty_bourgeoisie",
+   "name": "Petite Bourgeoisie",
+   "page": "interest-groups#ig_petty_bourgeoisie",
+   "slug": "ig_petty_bourgeoisie",
+   "type": "interest_group"
+  },
+  {
+   "icon": "img/igs/rural_folk.png",
+   "id": "ig_rural_folk",
+   "name": "Rural Folk",
+   "page": "interest-groups#ig_rural_folk",
+   "slug": "ig_rural_folk",
+   "type": "interest_group"
+  },
+  {
+   "icon": "img/igs/trade_unions.png",
+   "id": "ig_trade_unions",
+   "name": "Trade Unions",
+   "page": "interest-groups#ig_trade_unions",
+   "slug": "ig_trade_unions",
+   "type": "interest_group"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/imperious.png",
+   "id": "imperious",
+   "name": "Imperious",
+   "page": "character-traits#imperious",
+   "slug": "imperious",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/imposing.png",
+   "id": "imposing",
+   "name": "Imposing",
+   "page": "character-traits#imposing",
+   "slug": "imposing",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/improved_fertilizer.png",
+   "id": "improved_fertilizer",
+   "name": "Improved Fertilizer",
+   "page": "technology#improved_fertilizer",
+   "slug": "improved_fertilizer",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/inept.png",
+   "id": "inept",
+   "name": "Inept",
+   "page": "character-traits#inept",
+   "slug": "inept",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/inexperienced.png",
+   "id": "inexperienced",
+   "name": "Inexperienced",
+   "page": "character-traits#inexperienced",
+   "slug": "inexperienced",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/innovative.png",
+   "id": "innovative",
+   "name": "Innovative",
+   "page": "character-traits#innovative",
+   "slug": "innovative",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/inspirational_orator1.png",
+   "id": "inspirational_orator",
+   "name": "Inspirational Orator",
+   "page": "character-traits#inspirational_orator",
+   "slug": "inspirational_orator",
+   "type": "character_trait"
+  },
+  {
+   "icon": "img/institutions/colonization.png",
+   "id": "institution_colonial_affairs",
+   "name": "Colonial Affairs",
+   "page": "institutions#institution_colonial_affairs",
+   "slug": "institution_colonial_affairs",
+   "type": "institution"
+  },
+  {
+   "icon": "img/institutions/health_service.png",
+   "id": "institution_health_system",
+   "name": "Health System",
+   "page": "institutions#institution_health_system",
+   "slug": "institution_health_system",
+   "type": "institution"
+  },
+  {
+   "icon": "img/institutions/home_affairs.png",
+   "id": "institution_home_affairs",
+   "name": "Home Affairs",
+   "page": "institutions#institution_home_affairs",
+   "slug": "institution_home_affairs",
+   "type": "institution"
+  },
+  {
+   "icon": "img/institutions/police.png",
+   "id": "institution_police",
+   "name": "Law Enforcement",
+   "page": "institutions#institution_police",
+   "slug": "institution_police",
+   "type": "institution"
+  },
+  {
+   "icon": "img/institutions/schools.png",
+   "id": "institution_schools",
+   "name": "Education",
+   "page": "institutions#institution_schools",
+   "slug": "institution_schools",
+   "type": "institution"
+  },
+  {
+   "icon": "img/institutions/social_security.png",
+   "id": "institution_social_security",
+   "name": "Social Security",
+   "page": "institutions#institution_social_security",
+   "slug": "institution_social_security",
+   "type": "institution"
+  },
+  {
+   "icon": "img/institutions/workplace_safety.png",
+   "id": "institution_workplace_safety",
+   "name": "Workplace Safety Office",
+   "page": "institutions#institution_workplace_safety",
+   "slug": "institution_workplace_safety",
+   "type": "institution"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/intensive_agriculture.png",
+   "id": "intensive_agriculture",
+   "name": "Intensive Agriculture",
+   "page": "technology#intensive_agriculture",
+   "slug": "intensive_agriculture",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/international_exchange_standards.png",
+   "id": "international_exchange_standards",
+   "name": "International Exchange Standards",
+   "page": "technology#international_exchange_standards",
+   "slug": "international_exchange_standards",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/international_diplomacy.png",
+   "id": "international_relations",
+   "name": "International Relations",
+   "page": "technology#international_relations",
+   "slug": "international_relations",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/international_trade.png",
+   "id": "international_trade",
+   "name": "International Trade",
+   "page": "technology#international_trade",
+   "slug": "international_trade",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/investment_banks.png",
+   "id": "investment_banks",
+   "name": "Investment Banks",
+   "page": "technology#investment_banks",
+   "slug": "investment_banks",
+   "type": "technology"
   },
   {
    "group": "industrial",
@@ -1155,6 +2650,15 @@
   },
   {
    "group": "military",
+   "icon": "img/techs/ironclad_tech.png",
+   "id": "ironclad_tech",
+   "name": "Ironclad",
+   "page": "technology#ironclad_tech",
+   "slug": "ironclad_tech",
+   "type": "technology"
+  },
+  {
+   "group": "military",
    "icon": "img/goods/ironclads.png",
    "id": "ironclads",
    "name": "Ironclads",
@@ -1163,12 +2667,1317 @@
    "type": "good"
   },
   {
+   "group": "military",
+   "icon": "img/techs/jeune_ecole.png",
+   "id": "jeune_ecole",
+   "name": "Jeune École",
+   "page": "technology#jeune_ecole",
+   "slug": "jeune_ecole",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/joint_stock_companies.png",
+   "id": "joint_stock_companies",
+   "name": "Joint-Stock Companies",
+   "page": "technology#joint_stock_companies",
+   "slug": "joint_stock_companies",
+   "type": "technology"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/kidney_stones.png",
+   "id": "kidney_stones",
+   "name": "Kidney Stones",
+   "page": "character-traits#kidney_stones",
+   "slug": "kidney_stones",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/labor_movement.png",
+   "id": "labor_movement",
+   "name": "Labor Movement",
+   "page": "technology#labor_movement",
+   "slug": "labor_movement",
+   "type": "technology"
+  },
+  {
    "icon": "img/pops/laborers.png",
    "id": "laborers",
    "name": "Laborers",
    "page": "pop-types#laborers",
    "slug": "laborers",
    "type": "pop_type"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/landing_craft.png",
+   "id": "landing_craft",
+   "name": "Landing Craft",
+   "page": "technology#landing_craft",
+   "slug": "landing_craft",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/lathe.png",
+   "id": "lathe",
+   "name": "Lathe",
+   "page": "technology#lathe",
+   "slug": "lathe",
+   "type": "technology"
+  },
+  {
+   "group": "Caste Hegemony",
+   "icon": "img/laws/affirmative_action.png",
+   "id": "law_affirmative_action",
+   "name": "Affirmative Action",
+   "page": "laws#law_affirmative_action",
+   "slug": "law_affirmative_action",
+   "type": "law"
+  },
+  {
+   "group": "Economic System",
+   "icon": "img/laws/agrarianism.png",
+   "id": "law_agrarianism",
+   "name": "Agrarianism",
+   "page": "laws#law_agrarianism",
+   "slug": "law_agrarianism",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/anarchy.png",
+   "id": "law_anarchy",
+   "name": "Anarchy",
+   "page": "laws#law_anarchy",
+   "slug": "law_anarchy",
+   "type": "law"
+  },
+  {
+   "group": "Labor Associations",
+   "icon": "img/laws/anti_strike_laws.png",
+   "id": "law_anti_strike_laws",
+   "name": "Anti-Strike Laws",
+   "page": "laws#law_anti_strike_laws",
+   "slug": "law_anti_strike_laws",
+   "type": "law"
+  },
+  {
+   "group": "Bureaucracy",
+   "icon": "img/laws/appointed_bureaucrats.png",
+   "id": "law_appointed_bureaucrats",
+   "name": "Appointed Bureaucrats",
+   "page": "laws#law_appointed_bureaucrats",
+   "slug": "law_appointed_bureaucrats",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/autocracy.png",
+   "id": "law_autocracy",
+   "name": "Autocracy",
+   "page": "laws#law_autocracy",
+   "slug": "law_autocracy",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/bakufu.png",
+   "id": "law_bakufu",
+   "name": "Bakufu",
+   "page": "laws#law_bakufu",
+   "slug": "law_bakufu",
+   "type": "law"
+  },
+  {
+   "group": "Trade Policy",
+   "icon": "img/laws/isolationism.png",
+   "id": "law_canton_system",
+   "name": "Canton System",
+   "page": "laws#law_canton_system",
+   "slug": "law_canton_system",
+   "type": "law"
+  },
+  {
+   "group": "Free Speech",
+   "icon": "img/laws/censorship.png",
+   "id": "law_censorship",
+   "name": "Censorship",
+   "page": "laws#law_censorship",
+   "slug": "law_censorship",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/census_voting.png",
+   "id": "law_census_voting",
+   "name": "Census Suffrage",
+   "page": "laws#law_census_voting",
+   "slug": "law_census_voting",
+   "type": "law"
+  },
+  {
+   "group": "Health System",
+   "icon": "img/laws/charitable_health_system.png",
+   "id": "law_charitable_health_system",
+   "name": "Charity Hospitals",
+   "page": "laws#law_charitable_health_system",
+   "slug": "law_charitable_health_system",
+   "type": "law"
+  },
+  {
+   "group": "Governance Principles",
+   "icon": "img/laws/chiefdom.png",
+   "id": "law_chiefdom",
+   "name": "Chiefdom",
+   "page": "laws#law_chiefdom",
+   "slug": "law_chiefdom",
+   "type": "law"
+  },
+  {
+   "group": "Welfare",
+   "icon": "img/laws/sefs_distribute_funds.png",
+   "id": "law_chiefs_distribute_aid",
+   "name": "Šef Paternalism",
+   "page": "laws#law_chiefs_distribute_aid",
+   "slug": "law_chiefs_distribute_aid",
+   "type": "law"
+  },
+  {
+   "group": "Children's Rights",
+   "icon": "img/laws/child_labor_allowed.png",
+   "id": "law_child_labor_allowed",
+   "name": "Child Labor Allowed",
+   "page": "laws#law_child_labor_allowed",
+   "slug": "law_child_labor_allowed",
+   "type": "law"
+  },
+  {
+   "group": "Migration",
+   "icon": "img/laws/closed_borders.png",
+   "id": "law_closed_borders",
+   "name": "Closed Borders",
+   "page": "laws#law_closed_borders",
+   "slug": "law_closed_borders",
+   "type": "law"
+  },
+  {
+   "group": "Land Reform",
+   "icon": "img/laws/collectivized_agriculture.png",
+   "id": "law_collectivized_agriculture",
+   "name": "Collectivized Agriculture",
+   "page": "laws#law_collectivized_agriculture",
+   "slug": "law_collectivized_agriculture",
+   "type": "law"
+  },
+  {
+   "group": "Governance Principles",
+   "icon": "img/laws/colonial_administration.png",
+   "id": "law_colonial_administration",
+   "name": "Colonial Administration",
+   "page": "laws#law_colonial_administration",
+   "slug": "law_colonial_administration",
+   "type": "law"
+  },
+  {
+   "group": "Colonization",
+   "icon": "img/laws/colonial_exploitation.png",
+   "id": "law_colonial_exploitation",
+   "name": "Colonial Exploitation",
+   "page": "laws#law_colonial_exploitation",
+   "slug": "law_colonial_exploitation",
+   "type": "law"
+  },
+  {
+   "group": "Colonization",
+   "icon": "img/laws/colonial_resettlement.png",
+   "id": "law_colonial_resettlement",
+   "name": "Colonial Resettlement",
+   "page": "laws#law_colonial_resettlement",
+   "slug": "law_colonial_resettlement",
+   "type": "law"
+  },
+  {
+   "group": "Slavery",
+   "icon": "img/laws/colonial_slavery.png",
+   "id": "law_colonial_slavery",
+   "name": "Colonial Slavery",
+   "page": "laws#law_colonial_slavery",
+   "slug": "law_colonial_slavery",
+   "type": "law"
+  },
+  {
+   "group": "Labor Associations",
+   "icon": "img/laws/combination_acts.png",
+   "id": "law_combination_acts",
+   "name": "Combination Acts",
+   "page": "laws#law_combination_acts",
+   "slug": "law_combination_acts",
+   "type": "law"
+  },
+  {
+   "group": "Economic System",
+   "icon": "img/laws/command_economy.png",
+   "id": "law_command_economy",
+   "name": "Command Economy",
+   "page": "laws#law_command_economy",
+   "slug": "law_command_economy",
+   "type": "law"
+  },
+  {
+   "group": "Land Reform",
+   "icon": "img/laws/commercial_agriculture.png",
+   "id": "law_commercialized_agriculture",
+   "name": "Commercialized Agriculture",
+   "page": "laws#law_commercialized_agriculture",
+   "slug": "law_commercialized_agriculture",
+   "type": "law"
+  },
+  {
+   "group": "Children's Rights",
+   "icon": "img/laws/compulsory_primary_school.png",
+   "id": "law_compulsory_primary_school",
+   "name": "Compulsory Primary School",
+   "page": "laws#law_compulsory_primary_school",
+   "slug": "law_compulsory_primary_school",
+   "type": "law"
+  },
+  {
+   "group": "Taxation",
+   "icon": "img/laws/consumption_based_taxation.png",
+   "id": "law_consumption_based_taxation",
+   "name": "Consumption-Based Taxation",
+   "page": "laws#law_consumption_based_taxation",
+   "slug": "law_consumption_based_taxation",
+   "type": "law"
+  },
+  {
+   "group": "Economic System",
+   "icon": "img/laws/cooperative_ownership.png",
+   "id": "law_cooperative_ownership",
+   "name": "Cooperative Ownership",
+   "page": "laws#law_cooperative_ownership",
+   "slug": "law_cooperative_ownership",
+   "type": "law"
+  },
+  {
+   "group": "Governance Principles",
+   "icon": "img/laws/corporate_state.png",
+   "id": "law_corporate_state",
+   "name": "Corporate State",
+   "page": "laws#law_corporate_state",
+   "slug": "law_corporate_state",
+   "type": "law"
+  },
+  {
+   "group": "Labor Associations",
+   "icon": "img/laws/corporatized_unions.png",
+   "id": "law_corporatized_unions",
+   "name": "Corporatized Unions",
+   "page": "laws#law_corporatized_unions",
+   "slug": "law_corporatized_unions",
+   "type": "law"
+  },
+  {
+   "group": "Governance Principles",
+   "icon": "img/laws/council_republic.png",
+   "id": "law_council_republic",
+   "name": "Council Republic",
+   "page": "laws#law_council_republic",
+   "slug": "law_council_republic",
+   "type": "law"
+  },
+  {
+   "group": "Bureaucracy",
+   "icon": "img/laws/crownland_diets.png",
+   "id": "law_crownland_diets",
+   "name": "Crownland Diets",
+   "page": "laws#law_crownland_diets",
+   "slug": "law_crownland_diets",
+   "type": "law"
+  },
+  {
+   "group": "Citizenship",
+   "icon": "img/laws/cultural_exclusion.png",
+   "id": "law_cultural_exclusion",
+   "name": "Cultural Exclusion",
+   "page": "laws#law_cultural_exclusion",
+   "slug": "law_cultural_exclusion",
+   "type": "law"
+  },
+  {
+   "group": "Slavery",
+   "icon": "img/laws/debt_slavery.png",
+   "id": "law_debt_slavery",
+   "name": "Debt Slavery",
+   "page": "laws#law_debt_slavery",
+   "slug": "law_debt_slavery",
+   "type": "law"
+  },
+  {
+   "group": "Policing",
+   "icon": "img/laws/dedicated_police.png",
+   "id": "law_dedicated_police",
+   "name": "Dedicated Police Force",
+   "page": "laws#law_dedicated_police",
+   "slug": "law_dedicated_police",
+   "type": "law"
+  },
+  {
+   "group": "Navy Model",
+   "icon": "img/laws/diplomatic_interest.png",
+   "id": "law_diplomatic_navy",
+   "name": "Diplomatic Fleet",
+   "page": "laws#law_diplomatic_navy",
+   "slug": "law_diplomatic_navy",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/elder_council.png",
+   "id": "law_elder_council",
+   "name": "Elder Council",
+   "page": "laws#law_elder_council",
+   "slug": "law_elder_council",
+   "type": "law"
+  },
+  {
+   "group": "Bureaucracy",
+   "icon": "img/laws/elected_bureaucrats.png",
+   "id": "law_elected_bureaucrats",
+   "name": "Elected Bureaucrats",
+   "page": "laws#law_elected_bureaucrats",
+   "slug": "law_elected_bureaucrats",
+   "type": "law"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/law_enforcement.png",
+   "id": "law_enforcement",
+   "name": "Law Enforcement",
+   "page": "technology#law_enforcement",
+   "slug": "law_enforcement",
+   "type": "technology"
+  },
+  {
+   "group": "Citizenship",
+   "icon": "img/laws/ethnostate.png",
+   "id": "law_ethnostate",
+   "name": "Ethnostate",
+   "page": "laws#law_ethnostate",
+   "slug": "law_ethnostate",
+   "type": "law"
+  },
+  {
+   "group": "Land Reform",
+   "icon": "img/laws/tenant_farmers.png",
+   "id": "law_expanded_latifundias",
+   "name": "Expanded Latifundias",
+   "page": "laws#law_expanded_latifundias",
+   "slug": "law_expanded_latifundias",
+   "type": "law"
+  },
+  {
+   "group": "Economic System",
+   "icon": "img/laws/extraction_economy.png",
+   "id": "law_extraction_economy",
+   "name": "Extraction Economy",
+   "page": "laws#law_extraction_economy",
+   "slug": "law_extraction_economy",
+   "type": "law"
+  },
+  {
+   "group": "Labor Associations",
+   "icon": "img/laws/factory_councils.png",
+   "id": "law_factory_councils",
+   "name": "Factory Councils",
+   "page": "laws#law_factory_councils",
+   "slug": "law_factory_councils",
+   "type": "law"
+  },
+  {
+   "group": "Trade Policy",
+   "icon": "img/laws/free_trade.png",
+   "id": "law_free_trade",
+   "name": "Free Trade",
+   "page": "laws#law_free_trade",
+   "slug": "law_free_trade",
+   "type": "law"
+  },
+  {
+   "group": "Church and State",
+   "icon": "img/laws/freedom_of_conscience.png",
+   "id": "law_freedom_of_conscience",
+   "name": "Freedom of Conscience",
+   "page": "laws#law_freedom_of_conscience",
+   "slug": "law_freedom_of_conscience",
+   "type": "law"
+  },
+  {
+   "group": "Colonization",
+   "icon": "img/laws/frontier_colonization.png",
+   "id": "law_frontier_colonization",
+   "name": "Frontier Colonization",
+   "page": "laws#law_frontier_colonization",
+   "slug": "law_frontier_colonization",
+   "type": "law"
+  },
+  {
+   "group": "Taxation",
+   "icon": "img/laws/graduated_taxation.png",
+   "id": "law_graduated_taxation",
+   "name": "Graduated Taxation",
+   "page": "laws#law_graduated_taxation",
+   "slug": "law_graduated_taxation",
+   "type": "law"
+  },
+  {
+   "group": "Internal Security",
+   "icon": "img/laws/guaranteed_liberties.png",
+   "id": "law_guaranteed_liberties",
+   "name": "Guaranteed Liberties",
+   "page": "laws#law_guaranteed_liberties",
+   "slug": "law_guaranteed_liberties",
+   "type": "law"
+  },
+  {
+   "group": "Labor Associations",
+   "icon": "img/laws/guild_system.png",
+   "id": "law_guild_system",
+   "name": "Guild System",
+   "page": "laws#law_guild_system",
+   "slug": "law_guild_system",
+   "type": "law"
+  },
+  {
+   "group": "Bureaucracy",
+   "icon": "img/laws/hereditary_bureaucrats.png",
+   "id": "law_hereditary_bureaucrats",
+   "name": "Hereditary Bureaucrats",
+   "page": "laws#law_hereditary_bureaucrats",
+   "slug": "law_hereditary_bureaucrats",
+   "type": "law"
+  },
+  {
+   "group": "Caste Hegemony",
+   "icon": "img/laws/social_hierarchy_codified.png",
+   "id": "law_hindu_caste_codified",
+   "name": "Caste System Codified",
+   "page": "laws#law_hindu_caste_codified",
+   "slug": "law_hindu_caste_codified",
+   "type": "law"
+  },
+  {
+   "group": "Caste Hegemony",
+   "icon": "img/laws/social_hierarchy_enforced.png",
+   "id": "law_hindu_caste_enforced",
+   "name": "Caste System Enforced",
+   "page": "laws#law_hindu_caste_enforced",
+   "slug": "law_hindu_caste_enforced",
+   "type": "law"
+  },
+  {
+   "group": "Caste Hegemony",
+   "icon": "img/laws/social_hierarchy_not_enforced.png",
+   "id": "law_hindu_caste_not_enforced",
+   "name": "Caste Not Enforced",
+   "page": "laws#law_hindu_caste_not_enforced",
+   "slug": "law_hindu_caste_not_enforced",
+   "type": "law"
+  },
+  {
+   "group": "Land Reform",
+   "icon": "img/laws/freeholders.png",
+   "id": "law_homesteading",
+   "name": "Homesteading",
+   "page": "laws#law_homesteading",
+   "slug": "law_homesteading",
+   "type": "law"
+  },
+  {
+   "group": "Economic System",
+   "icon": "img/laws/industry_banned.png",
+   "id": "law_industry_banned",
+   "name": "Industry Banned",
+   "page": "laws#law_industry_banned",
+   "slug": "law_industry_banned",
+   "type": "law"
+  },
+  {
+   "group": "Edo Status System",
+   "icon": "img/laws/social_hierarchy_codified.png",
+   "id": "law_intermediate_edo_system",
+   "name": "Loosened Status Order",
+   "page": "laws#law_intermediate_edo_system",
+   "slug": "law_intermediate_edo_system",
+   "type": "law"
+  },
+  {
+   "group": "Economic System",
+   "icon": "img/laws/interventionism.png",
+   "id": "law_interventionism",
+   "name": "Interventionism",
+   "page": "laws#law_interventionism",
+   "slug": "law_interventionism",
+   "type": "law"
+  },
+  {
+   "group": "Trade Policy",
+   "icon": "img/laws/isolationism.png",
+   "id": "law_isolationism",
+   "name": "Isolationism",
+   "page": "laws#law_isolationism",
+   "slug": "law_isolationism",
+   "type": "law"
+  },
+  {
+   "group": "Navy Model",
+   "icon": "img/laws/torpedos.png",
+   "id": "law_jeune_ecole",
+   "name": "Jeune École",
+   "page": "laws#law_jeune_ecole",
+   "slug": "law_jeune_ecole",
+   "type": "law"
+  },
+  {
+   "group": "Economic System",
+   "icon": "img/laws/laissez_faire.png",
+   "id": "law_laissez_faire",
+   "name": "Laissez-Faire",
+   "page": "laws#law_laissez_faire",
+   "slug": "law_laissez_faire",
+   "type": "law"
+  },
+  {
+   "group": "Taxation",
+   "icon": "img/laws/land_based_taxation.png",
+   "id": "law_land_based_taxation",
+   "name": "Land-Based Taxation",
+   "page": "laws#law_land_based_taxation",
+   "slug": "law_land_based_taxation",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/landed_voting.png",
+   "id": "law_landed_voting",
+   "name": "Landed Voting",
+   "page": "laws#law_landed_voting",
+   "slug": "law_landed_voting",
+   "type": "law"
+  },
+  {
+   "group": "Land Reform",
+   "icon": "img/laws/tenant_farmers.png",
+   "id": "law_latifundias",
+   "name": "Latifundias",
+   "page": "laws#law_latifundias",
+   "slug": "law_latifundias",
+   "type": "law"
+  },
+  {
+   "group": "Edo Status System",
+   "icon": "img/laws/social_hierarchy_not_enforced.png",
+   "id": "law_lax_edo_system",
+   "name": "Lax Status Order",
+   "page": "laws#law_lax_edo_system",
+   "slug": "law_lax_edo_system",
+   "type": "law"
+  },
+  {
+   "group": "Slavery",
+   "icon": "img/laws/legacy_slavery.png",
+   "id": "law_legacy_slavery",
+   "name": "Legacy Slavery",
+   "page": "laws#law_legacy_slavery",
+   "slug": "law_legacy_slavery",
+   "type": "law"
+  },
+  {
+   "group": "Policing",
+   "icon": "img/laws/local_police.png",
+   "id": "law_local_police",
+   "name": "Local Police Force",
+   "page": "laws#law_local_police",
+   "slug": "law_local_police",
+   "type": "law"
+  },
+  {
+   "group": "Land Reform",
+   "icon": "img/laws/manorialism.png",
+   "id": "law_manorialism",
+   "name": "Manorialism",
+   "page": "laws#law_manorialism",
+   "slug": "law_manorialism",
+   "type": "law"
+  },
+  {
+   "group": "Army Model",
+   "icon": "img/laws/mass_conscription.png",
+   "id": "law_mass_conscription",
+   "name": "Mass Conscription",
+   "page": "laws#law_mass_conscription",
+   "slug": "law_mass_conscription",
+   "type": "law"
+  },
+  {
+   "group": "Trade Policy",
+   "icon": "img/laws/mercantilism.png",
+   "id": "law_mercantilism",
+   "name": "Mercantilism",
+   "page": "laws#law_mercantilism",
+   "slug": "law_mercantilism",
+   "type": "law"
+  },
+  {
+   "group": "Navy Model",
+   "icon": "img/laws/merchant_fleet.png",
+   "id": "law_merchant_navy",
+   "name": "Merchant Navy",
+   "page": "laws#law_merchant_navy",
+   "slug": "law_merchant_navy",
+   "type": "law"
+  },
+  {
+   "group": "Migration",
+   "icon": "img/laws/migration_controls.png",
+   "id": "law_migration_controls",
+   "name": "Migration Controls",
+   "page": "laws#law_migration_controls",
+   "slug": "law_migration_controls",
+   "type": "law"
+  },
+  {
+   "group": "Policing",
+   "icon": "img/laws/militarized_police.png",
+   "id": "law_militarized_police",
+   "name": "Militarized Police Force",
+   "page": "laws#law_militarized_police",
+   "slug": "law_militarized_police",
+   "type": "law"
+  },
+  {
+   "group": "Church and State",
+   "icon": "img/laws/people_of_the_book.png",
+   "id": "law_millet_system",
+   "name": "Millet System",
+   "page": "laws#law_millet_system",
+   "slug": "law_millet_system",
+   "type": "law"
+  },
+  {
+   "group": "Governance Principles",
+   "icon": "img/laws/monarchy.png",
+   "id": "law_monarchy",
+   "name": "Monarchy",
+   "page": "laws#law_monarchy",
+   "slug": "law_monarchy",
+   "type": "law"
+  },
+  {
+   "group": "Citizenship",
+   "icon": "img/laws/multicultural.png",
+   "id": "law_multicultural",
+   "name": "Multiculturalism",
+   "page": "laws#law_multicultural",
+   "slug": "law_multicultural",
+   "type": "law"
+  },
+  {
+   "group": "Internal Security",
+   "icon": "img/laws/national_guard.png",
+   "id": "law_national_guard",
+   "name": "National Guard",
+   "page": "laws#law_national_guard",
+   "slug": "law_national_guard",
+   "type": "law"
+  },
+  {
+   "group": "Army Model",
+   "icon": "img/laws/national_militia.png",
+   "id": "law_national_militia",
+   "name": "National Militia",
+   "page": "laws#law_national_militia",
+   "slug": "law_national_militia",
+   "type": "law"
+  },
+  {
+   "group": "Citizenship",
+   "icon": "img/laws/national_supremacy.png",
+   "id": "law_national_supremacy",
+   "name": "National Supremacy",
+   "page": "laws#law_national_supremacy",
+   "slug": "law_national_supremacy",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/neo_absolutism.png",
+   "id": "law_neo_absolutism",
+   "name": "Neo-Absolutism",
+   "page": "laws#law_neo_absolutism",
+   "slug": "law_neo_absolutism",
+   "type": "law"
+  },
+  {
+   "group": "Colonization",
+   "icon": "img/laws/no_colonial_affairs.png",
+   "id": "law_no_colonial_affairs",
+   "name": "No Colonial Affairs",
+   "page": "laws#law_no_colonial_affairs",
+   "slug": "law_no_colonial_affairs",
+   "type": "law"
+  },
+  {
+   "group": "Health System",
+   "icon": "img/laws/no_health_system.png",
+   "id": "law_no_health_system",
+   "name": "No Health System",
+   "page": "laws#law_no_health_system",
+   "slug": "law_no_health_system",
+   "type": "law"
+  },
+  {
+   "group": "Internal Security",
+   "icon": "img/laws/no_home_affairs.png",
+   "id": "law_no_home_affairs",
+   "name": "No Home Affairs",
+   "page": "laws#law_no_home_affairs",
+   "slug": "law_no_home_affairs",
+   "type": "law"
+  },
+  {
+   "group": "Migration",
+   "icon": "img/laws/no_migration_controls.png",
+   "id": "law_no_migration_controls",
+   "name": "No Migration Controls",
+   "page": "laws#law_no_migration_controls",
+   "slug": "law_no_migration_controls",
+   "type": "law"
+  },
+  {
+   "group": "Policing",
+   "icon": "img/laws/no_police.png",
+   "id": "law_no_police",
+   "name": "No Police",
+   "page": "laws#law_no_police",
+   "slug": "law_no_police",
+   "type": "law"
+  },
+  {
+   "group": "Education System",
+   "icon": "img/laws/no_schools.png",
+   "id": "law_no_schools",
+   "name": "No Schools",
+   "page": "laws#law_no_schools",
+   "slug": "law_no_schools",
+   "type": "law"
+  },
+  {
+   "group": "Welfare",
+   "icon": "img/laws/no_social_security.png",
+   "id": "law_no_social_security",
+   "name": "No Social Security",
+   "page": "laws#law_no_social_security",
+   "slug": "law_no_social_security",
+   "type": "law"
+  },
+  {
+   "group": "Rights of Women",
+   "icon": "img/laws/no_womens_rights.png",
+   "id": "law_no_womens_rights",
+   "name": "Legal Guardianship",
+   "page": "laws#law_no_womens_rights",
+   "slug": "law_no_womens_rights",
+   "type": "law"
+  },
+  {
+   "group": "Labor Rights",
+   "icon": "img/laws/no_workers_rights.png",
+   "id": "law_no_workers_rights",
+   "name": "No Workers' Rights",
+   "page": "laws#law_no_workers_rights",
+   "slug": "law_no_workers_rights",
+   "type": "law"
+  },
+  {
+   "group": "Welfare",
+   "icon": "img/laws/old_age_pension.png",
+   "id": "law_old_age_pension",
+   "name": "Old Age Pension",
+   "page": "laws#law_old_age_pension",
+   "slug": "law_old_age_pension",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/oligarchy.png",
+   "id": "law_oligarchy",
+   "name": "Oligarchy",
+   "page": "laws#law_oligarchy",
+   "slug": "law_oligarchy",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/organic_regulation.png",
+   "id": "law_organic_regulation",
+   "name": "Organic Regulation",
+   "page": "laws#law_organic_regulation",
+   "slug": "law_organic_regulation",
+   "type": "law"
+  },
+  {
+   "group": "Free Speech",
+   "icon": "img/laws/outlawed_dissent.png",
+   "id": "law_outlawed_dissent",
+   "name": "Outlawed Dissent",
+   "page": "laws#law_outlawed_dissent",
+   "slug": "law_outlawed_dissent",
+   "type": "law"
+  },
+  {
+   "group": "Governance Principles",
+   "icon": "img/laws/parliamentary_republic.png",
+   "id": "law_parliamentary_republic",
+   "name": "Parliamentary Republic",
+   "page": "laws#law_parliamentary_republic",
+   "slug": "law_parliamentary_republic",
+   "type": "law"
+  },
+  {
+   "group": "Army Model",
+   "icon": "img/laws/peasant_levies.png",
+   "id": "law_peasant_levies",
+   "name": "Peasant Levies",
+   "page": "laws#law_peasant_levies",
+   "slug": "law_peasant_levies",
+   "type": "law"
+  },
+  {
+   "group": "Land Reform",
+   "icon": "img/laws/freeholders.png",
+   "id": "law_peasant_proprietorship",
+   "name": "Peasant Proprietorship",
+   "page": "laws#law_peasant_proprietorship",
+   "slug": "law_peasant_proprietorship",
+   "type": "law"
+  },
+  {
+   "group": "Church and State",
+   "icon": "img/laws/people_of_the_book.png",
+   "id": "law_people_of_the_book",
+   "name": "People of the Book",
+   "page": "laws#law_people_of_the_book",
+   "slug": "law_people_of_the_book",
+   "type": "law"
+  },
+  {
+   "group": "Taxation",
+   "icon": "img/laws/per_capita_based_taxation.png",
+   "id": "law_per_capita_based_taxation",
+   "name": "Per-Capita Taxation",
+   "page": "laws#law_per_capita_based_taxation",
+   "slug": "law_per_capita_based_taxation",
+   "type": "law"
+  },
+  {
+   "group": "Welfare",
+   "icon": "img/laws/poor_laws.png",
+   "id": "law_poor_laws",
+   "name": "Poor Laws",
+   "page": "laws#law_poor_laws",
+   "slug": "law_poor_laws",
+   "type": "law"
+  },
+  {
+   "group": "Governance Principles",
+   "icon": "img/laws/presidential_republic.png",
+   "id": "law_presidential_republic",
+   "name": "Presidential Republic",
+   "page": "laws#law_presidential_republic",
+   "slug": "law_presidential_republic",
+   "type": "law"
+  },
+  {
+   "group": "Health System",
+   "icon": "img/laws/private_health_insurance.png",
+   "id": "law_private_health_insurance",
+   "name": "Private Health Insurance",
+   "page": "laws#law_private_health_insurance",
+   "slug": "law_private_health_insurance",
+   "type": "law"
+  },
+  {
+   "group": "Education System",
+   "icon": "img/laws/private_schools.png",
+   "id": "law_private_schools",
+   "name": "Private Schools",
+   "page": "laws#law_private_schools",
+   "slug": "law_private_schools",
+   "type": "law"
+  },
+  {
+   "group": "Army Model",
+   "icon": "img/laws/professional_army.png",
+   "id": "law_professional_army",
+   "name": "Professional Army",
+   "page": "laws#law_professional_army",
+   "slug": "law_professional_army",
+   "type": "law"
+  },
+  {
+   "group": "Navy Model",
+   "icon": "img/laws/ocean_domination.png",
+   "id": "law_professional_navy",
+   "name": "Capital Fleet",
+   "page": "laws#law_professional_navy",
+   "slug": "law_professional_navy",
+   "type": "law"
+  },
+  {
+   "group": "Taxation",
+   "icon": "img/laws/proportional_taxation.png",
+   "id": "law_proportional_taxation",
+   "name": "Proportional Taxation",
+   "page": "laws#law_proportional_taxation",
+   "slug": "law_proportional_taxation",
+   "type": "law"
+  },
+  {
+   "group": "Free Speech",
+   "icon": "img/laws/protected_speech.png",
+   "id": "law_protected_speech",
+   "name": "Protected Speech",
+   "page": "laws#law_protected_speech",
+   "slug": "law_protected_speech",
+   "type": "law"
+  },
+  {
+   "group": "Trade Policy",
+   "icon": "img/laws/protectionism.png",
+   "id": "law_protectionism",
+   "name": "Protectionism",
+   "page": "laws#law_protectionism",
+   "slug": "law_protectionism",
+   "type": "law"
+  },
+  {
+   "group": "Health System",
+   "icon": "img/laws/public_health_insurance.png",
+   "id": "law_public_health_insurance",
+   "name": "Public Health Insurance",
+   "page": "laws#law_public_health_insurance",
+   "slug": "law_public_health_insurance",
+   "type": "law"
+  },
+  {
+   "group": "Education System",
+   "icon": "img/laws/public_schools.png",
+   "id": "law_public_schools",
+   "name": "Public Schools",
+   "page": "laws#law_public_schools",
+   "slug": "law_public_schools",
+   "type": "law"
+  },
+  {
+   "group": "Citizenship",
+   "icon": "img/laws/racial_segregation.png",
+   "id": "law_racial_segregation",
+   "name": "Racial Segregation",
+   "page": "laws#law_racial_segregation",
+   "slug": "law_racial_segregation",
+   "type": "law"
+  },
+  {
+   "group": "Labor Rights",
+   "icon": "img/laws/regulatory_bodies.png",
+   "id": "law_regulatory_bodies",
+   "name": "Regulatory Bodies",
+   "page": "laws#law_regulatory_bodies",
+   "slug": "law_regulatory_bodies",
+   "type": "law"
+  },
+  {
+   "group": "Education System",
+   "icon": "img/laws/religious_schools.png",
+   "id": "law_religious_schools",
+   "name": "Religious Schools",
+   "page": "laws#law_religious_schools",
+   "slug": "law_religious_schools",
+   "type": "law"
+  },
+  {
+   "group": "Children's Rights",
+   "icon": "img/laws/restricted_child_labor.png",
+   "id": "law_restricted_child_labor",
+   "name": "Restricted Child Labor",
+   "page": "laws#law_restricted_child_labor",
+   "slug": "law_restricted_child_labor",
+   "type": "law"
+  },
+  {
+   "group": "Free Speech",
+   "icon": "img/laws/right_of_assembly.png",
+   "id": "law_right_of_assembly",
+   "name": "Right of Assembly",
+   "page": "laws#law_right_of_assembly",
+   "slug": "law_right_of_assembly",
+   "type": "law"
+  },
+  {
+   "group": "Labor Associations",
+   "icon": "img/laws/right_to_associate.png",
+   "id": "law_right_to_associate",
+   "name": "Right to Associate",
+   "page": "laws#law_right_to_associate",
+   "slug": "law_right_to_associate",
+   "type": "law"
+  },
+  {
+   "group": "Trade Policy",
+   "icon": "img/laws/sakoku.png",
+   "id": "law_sakoku",
+   "name": "Sakoku",
+   "page": "laws#law_sakoku",
+   "slug": "law_sakoku",
+   "type": "law"
+  },
+  {
+   "group": "Internal Security",
+   "icon": "img/laws/secret_police.png",
+   "id": "law_secret_police",
+   "name": "Secret Police",
+   "page": "laws#law_secret_police",
+   "slug": "law_secret_police",
+   "type": "law"
+  },
+  {
+   "group": "Land Reform",
+   "icon": "img/laws/serfdom.png",
+   "id": "law_serfdom",
+   "name": "Serfdom",
+   "page": "laws#law_serfdom",
+   "slug": "law_serfdom",
+   "type": "law"
+  },
+  {
+   "group": "Internal Security",
+   "icon": "img/laws/shinsengumi.png",
+   "id": "law_shinsengumi",
+   "name": "Shinsengumi",
+   "page": "laws#law_shinsengumi",
+   "slug": "law_shinsengumi",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/single_party_state.png",
+   "id": "law_single_party_state",
+   "name": "Single-Party State",
+   "page": "laws#law_single_party_state",
+   "slug": "law_single_party_state",
+   "type": "law"
+  },
+  {
+   "group": "Slavery",
+   "icon": "img/laws/slave_trade.png",
+   "id": "law_slave_trade",
+   "name": "Slave Trade",
+   "page": "laws#law_slave_trade",
+   "slug": "law_slave_trade",
+   "type": "law"
+  },
+  {
+   "group": "Slavery",
+   "icon": "img/laws/slavery_banned.png",
+   "id": "law_slavery_banned",
+   "name": "Slavery Banned",
+   "page": "laws#law_slavery_banned",
+   "slug": "law_slavery_banned",
+   "type": "law"
+  },
+  {
+   "group": "Governance Principles",
+   "icon": "img/laws/social_monarchy.png",
+   "id": "law_social_monarchy",
+   "name": "Social Monarchy",
+   "page": "laws#law_social_monarchy",
+   "slug": "law_social_monarchy",
+   "type": "law"
+  },
+  {
+   "group": "Church and State",
+   "icon": "img/laws/state_atheism.png",
+   "id": "law_state_atheism",
+   "name": "State Atheism",
+   "page": "laws#law_state_atheism",
+   "slug": "law_state_atheism",
+   "type": "law"
+  },
+  {
+   "group": "Church and State",
+   "icon": "img/laws/state_religion.png",
+   "id": "law_state_religion",
+   "name": "State Religion",
+   "page": "laws#law_state_religion",
+   "slug": "law_state_religion",
+   "type": "law"
+  },
+  {
+   "group": "Edo Status System",
+   "icon": "img/laws/social_hierarchy_enforced.png",
+   "id": "law_strict_edo_system",
+   "name": "Rigid Status Order",
+   "page": "laws#law_strict_edo_system",
+   "slug": "law_strict_edo_system",
+   "type": "law"
+  },
+  {
+   "group": "Citizenship",
+   "icon": "img/laws/imperial_subjecthood.png",
+   "id": "law_subjecthood",
+   "name": "Subjecthood",
+   "page": "laws#law_subjecthood",
+   "slug": "law_subjecthood",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/technocracy.png",
+   "id": "law_technocracy",
+   "name": "Technocracy",
+   "page": "laws#law_technocracy",
+   "slug": "law_technocracy",
+   "type": "law"
+  },
+  {
+   "group": "Land Reform",
+   "icon": "img/laws/tenant_farmers.png",
+   "id": "law_tenant_farmers",
+   "name": "Tenant Farmers",
+   "page": "laws#law_tenant_farmers",
+   "slug": "law_tenant_farmers",
+   "type": "law"
+  },
+  {
+   "group": "Education System",
+   "icon": "img/laws/private_schools.png",
+   "id": "law_terakoya",
+   "name": "Terakoya",
+   "page": "laws#law_terakoya",
+   "slug": "law_terakoya",
+   "type": "law"
+  },
+  {
+   "group": "Governance Principles",
+   "icon": "img/laws/theocracy.png",
+   "id": "law_theocracy",
+   "name": "Theocracy",
+   "page": "laws#law_theocracy",
+   "slug": "law_theocracy",
+   "type": "law"
+  },
+  {
+   "group": "Church and State",
+   "icon": "img/laws/total_separation.png",
+   "id": "law_total_separation",
+   "name": "Total Separation",
+   "page": "laws#law_total_separation",
+   "slug": "law_total_separation",
+   "type": "law"
+  },
+  {
+   "group": "Economic System",
+   "icon": "img/laws/traditionalism.png",
+   "id": "law_traditionalism",
+   "name": "Traditionalism",
+   "page": "laws#law_traditionalism",
+   "slug": "law_traditionalism",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/universal_suffrage.png",
+   "id": "law_universal_suffrage",
+   "name": "Universal Suffrage",
+   "page": "laws#law_universal_suffrage",
+   "slug": "law_universal_suffrage",
+   "type": "law"
+  },
+  {
+   "group": "Welfare",
+   "icon": "img/laws/wage_controls.png",
+   "id": "law_wage_subsidies",
+   "name": "Wage Subsidies",
+   "page": "laws#law_wage_subsidies",
+   "slug": "law_wage_subsidies",
+   "type": "law"
+  },
+  {
+   "group": "Army Model",
+   "icon": "img/laws/warrior_caste.png",
+   "id": "law_warrior_caste",
+   "name": "Warrior Caste",
+   "page": "laws#law_warrior_caste",
+   "slug": "law_warrior_caste",
+   "type": "law"
+  },
+  {
+   "group": "Distribution of Power",
+   "icon": "img/laws/wealth_voting.png",
+   "id": "law_wealth_voting",
+   "name": "Wealth Voting",
+   "page": "laws#law_wealth_voting",
+   "slug": "law_wealth_voting",
+   "type": "law"
+  },
+  {
+   "group": "Rights of Women",
+   "icon": "img/laws/women_in_the_fields.png",
+   "id": "law_women_in_the_fields",
+   "name": "Women in the Fields",
+   "page": "laws#law_women_in_the_fields",
+   "slug": "law_women_in_the_fields",
+   "type": "law"
+  },
+  {
+   "group": "Rights of Women",
+   "icon": "img/laws/women_in_the_workplace.png",
+   "id": "law_women_in_the_workplace",
+   "name": "Women in the Workplace",
+   "page": "laws#law_women_in_the_workplace",
+   "slug": "law_women_in_the_workplace",
+   "type": "law"
+  },
+  {
+   "group": "Rights of Women",
+   "icon": "img/laws/women_own_property.png",
+   "id": "law_women_own_property",
+   "name": "Propertied Women",
+   "page": "laws#law_women_own_property",
+   "slug": "law_women_own_property",
+   "type": "law"
+  },
+  {
+   "group": "Rights of Women",
+   "icon": "img/laws/womens_suffrage.png",
+   "id": "law_womens_suffrage",
+   "name": "Women’s Suffrage",
+   "page": "laws#law_womens_suffrage",
+   "slug": "law_womens_suffrage",
+   "type": "law"
+  },
+  {
+   "group": "Labor Rights",
+   "icon": "img/laws/worker_protections.png",
+   "id": "law_worker_protections",
+   "name": "Workers' Protections",
+   "page": "laws#law_worker_protections",
+   "slug": "law_worker_protections",
+   "type": "law"
   },
   {
    "group": "industrial",
@@ -1180,6 +3989,15 @@
    "type": "good"
   },
   {
+   "group": "military",
+   "icon": "img/techs/line_infantry.png",
+   "id": "line_infantry",
+   "name": "Line Infantry",
+   "page": "technology#line_infantry",
+   "slug": "line_infantry",
+   "type": "technology"
+  },
+  {
    "group": "luxury",
    "icon": "img/goods/liquor.png",
    "id": "liquor",
@@ -1187,6 +4005,24 @@
    "page": "goods/liquor",
    "slug": "liquor",
    "type": "good"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/literary.png",
+   "id": "literary",
+   "name": "Literary",
+   "page": "character-traits#literary",
+   "slug": "literary",
+   "type": "character_trait"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/logistics_tech.png",
+   "id": "logistics",
+   "name": "Logistics",
+   "page": "technology#logistics",
+   "slug": "logistics",
+   "type": "technology"
   },
   {
    "group": "luxury",
@@ -1215,6 +4051,33 @@
    "type": "pop_type"
   },
   {
+   "group": "society",
+   "icon": "img/techs/macroeconomics.png",
+   "id": "macroeconomics",
+   "name": "Macroeconomics",
+   "page": "technology#macroeconomics",
+   "slug": "macroeconomics",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/malaria_prevention.png",
+   "id": "malaria_prevention",
+   "name": "Malaria Prevention",
+   "page": "technology#malaria_prevention",
+   "slug": "malaria_prevention",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/mandatory_service.png",
+   "id": "mandatory_service",
+   "name": "Mandatory Service",
+   "page": "technology#mandatory_service",
+   "slug": "mandatory_service",
+   "type": "technology"
+  },
+  {
    "group": "military",
    "icon": "img/goods/man_o_wars.png",
    "id": "manowars",
@@ -1222,6 +4085,60 @@
    "page": "goods/manowars",
    "slug": "manowars",
    "type": "good"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/manufacturies.png",
+   "id": "manufacturies",
+   "name": "Manufacturies",
+   "page": "technology#manufacturies",
+   "slug": "manufacturies",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/mass_communication.png",
+   "id": "mass_communication",
+   "name": "Mass Communication",
+   "page": "technology#mass_communication",
+   "slug": "mass_communication",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/mass_propaganda.png",
+   "id": "mass_propaganda",
+   "name": "Mass Propaganda",
+   "page": "technology#mass_propaganda",
+   "slug": "mass_propaganda",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/mass_surveillance.png",
+   "id": "mass_surveillance",
+   "name": "Mass Surveillance",
+   "page": "technology#mass_surveillance",
+   "slug": "mass_surveillance",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/master_bureaucrat.png",
+   "id": "master_bureaucrat",
+   "name": "Master Bureaucrat",
+   "page": "character-traits#master_bureaucrat",
+   "slug": "master_bureaucrat",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/masterful_diplomat.png",
+   "id": "masterful_diplomat",
+   "name": "Masterful Diplomat",
+   "page": "character-traits#masterful_diplomat",
+   "slug": "masterful_diplomat",
+   "type": "character_trait"
   },
   {
    "group": "luxury",
@@ -1233,6 +4150,42 @@
    "type": "good"
   },
   {
+   "group": "production",
+   "icon": "img/techs/mechanical_tools.png",
+   "id": "mechanical_tools",
+   "name": "Mechanical Tools",
+   "page": "technology#mechanical_tools",
+   "slug": "mechanical_tools",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/mechanized_farming.png",
+   "id": "mechanized_farming",
+   "name": "Mechanized Farming",
+   "page": "technology#mechanized_farming",
+   "slug": "mechanized_farming",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/mechanized_workshops.png",
+   "id": "mechanized_workshops",
+   "name": "Mechanized Workshops",
+   "page": "technology#mechanized_workshops",
+   "slug": "mechanized_workshops",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/medical_degrees.png",
+   "id": "medical_degrees",
+   "name": "Medical Degrees",
+   "page": "technology#medical_degrees",
+   "slug": "medical_degrees",
+   "type": "technology"
+  },
+  {
    "group": "staple",
    "icon": "img/goods/merchant_marine.png",
    "id": "merchant_marine",
@@ -1240,6 +4193,168 @@
    "page": "goods/merchant_marine",
    "slug": "merchant_marine",
    "type": "good"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/meticulous.png",
+   "id": "meticulous",
+   "name": "Meticulous",
+   "page": "character-traits#meticulous",
+   "slug": "meticulous",
+   "type": "character_trait"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/military_aviation.png",
+   "id": "military_aviation",
+   "name": "Military Aviation",
+   "page": "technology#military_aviation",
+   "slug": "military_aviation",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/military_drill.png",
+   "id": "military_drill",
+   "name": "Military Drill",
+   "page": "technology#military_drill",
+   "slug": "military_drill",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/military_statistics.png",
+   "id": "military_statistics",
+   "name": "Military Statistics",
+   "page": "technology#military_statistics",
+   "slug": "military_statistics",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/mobile_armor.png",
+   "id": "mobile_armor",
+   "name": "Mobile Armor",
+   "page": "technology#mobile_armor",
+   "slug": "mobile_armor",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/modern_financial_instruments.png",
+   "id": "modern_financial_instruments",
+   "name": "Modern Financial Instruments",
+   "page": "technology#modern_financial_instruments",
+   "slug": "modern_financial_instruments",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/modern_nursing.png",
+   "id": "modern_nursing",
+   "name": "Modern Nursing",
+   "page": "technology#modern_nursing",
+   "slug": "modern_nursing",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/modern_sewerage.png",
+   "id": "modern_sewerage",
+   "name": "Modern Sewerage",
+   "page": "technology#modern_sewerage",
+   "slug": "modern_sewerage",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/monitor_tech.png",
+   "id": "monitor_tech",
+   "name": "Modern Ironclad",
+   "page": "technology#monitor_tech",
+   "slug": "monitor_tech",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/mountain_commander.png",
+   "id": "mountain_commander",
+   "name": "Mountain Combat Expert",
+   "page": "character-traits#mountain_commander",
+   "slug": "mountain_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/multilateral_alliances.png",
+   "id": "multilateral_alliances",
+   "name": "Multilateral Alliances",
+   "page": "technology#multilateral_alliances",
+   "slug": "multilateral_alliances",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/mutual_funds.png",
+   "id": "mutual_funds",
+   "name": "Mutual Funds",
+   "page": "technology#mutual_funds",
+   "slug": "mutual_funds",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/napoleonic_warfare.png",
+   "id": "napoleonic_warfare",
+   "name": "Napoleonic Warfare",
+   "page": "technology#napoleonic_warfare",
+   "slug": "napoleonic_warfare",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/nationalism.png",
+   "id": "nationalism",
+   "name": "Nationalism",
+   "page": "technology#nationalism",
+   "slug": "nationalism",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/navigation.png",
+   "id": "navigation",
+   "name": "Navigation",
+   "page": "technology#navigation",
+   "slug": "navigation",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/nco_training.png",
+   "id": "nco_training",
+   "name": "NCO Training",
+   "page": "technology#nco_training",
+   "slug": "nco_training",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/nitrogen_fixation.png",
+   "id": "nitrogen_fixation",
+   "name": "Nitrogen Fixation",
+   "page": "technology#nitrogen_fixation",
+   "slug": "nitrogen_fixation",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/nitroglycerin.png",
+   "id": "nitroglycerin",
+   "name": "Nitroglycerin",
+   "page": "technology#nitroglycerin",
+   "slug": "nitroglycerin",
+   "type": "technology"
   },
   {
    "icon": "img/pops/officers.png",
@@ -1259,6 +4374,24 @@
    "type": "good"
   },
   {
+   "group": "production",
+   "icon": "img/techs/oil_turbines.png",
+   "id": "oil_turbine",
+   "name": "Oil Turbine",
+   "page": "technology#oil_turbine",
+   "slug": "oil_turbine",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/open_hearth_process.png",
+   "id": "open_hearth_process",
+   "name": "Open Hearth Process",
+   "page": "technology#open_hearth_process",
+   "slug": "open_hearth_process",
+   "type": "technology"
+  },
+  {
    "group": "luxury",
    "icon": "img/goods/opium.png",
    "id": "opium",
@@ -1266,6 +4399,42 @@
    "page": "goods/opium",
    "slug": "opium",
    "type": "good"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/opium_addiction.png",
+   "id": "opium_addiction",
+   "name": "Opium Addict",
+   "page": "character-traits#opium_addiction",
+   "slug": "opium_addiction",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/organized_sports.png",
+   "id": "organized_sports",
+   "name": "Organized Sports",
+   "page": "technology#organized_sports",
+   "slug": "organized_sports",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/paddle_steamer.png",
+   "id": "paddle_steamer",
+   "name": "Paddle Steamer",
+   "page": "technology#paddle_steamer",
+   "slug": "paddle_steamer",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/pan_nationalism.png",
+   "id": "pan-nationalism",
+   "name": "Pan-nationalism",
+   "page": "technology#pan-nationalism",
+   "slug": "pan-nationalism",
+   "type": "technology"
   },
   {
    "group": "staple",
@@ -1277,12 +4446,138 @@
    "type": "good"
   },
   {
+   "group": "production",
+   "icon": "img/techs/pasteurization.png",
+   "id": "pasteurization",
+   "name": "Pasteurization",
+   "page": "technology#pasteurization",
+   "slug": "pasteurization",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/paved_roads.png",
+   "id": "paved_roads",
+   "name": "Paved Roads",
+   "page": "technology#paved_roads",
+   "slug": "paved_roads",
+   "type": "technology"
+  },
+  {
    "icon": "img/pops/peasants.png",
    "id": "peasants",
    "name": "Peasants",
    "page": "pop-types#peasants",
    "slug": "peasants",
    "type": "pop_type"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/percussion_cap.png",
+   "id": "percussion_cap",
+   "name": "Percussion Cap",
+   "page": "technology#percussion_cap",
+   "slug": "percussion_cap",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/persistent.png",
+   "id": "persistent",
+   "name": "Persistent",
+   "page": "character-traits#persistent",
+   "slug": "persistent",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/pharmaceuticals.png",
+   "id": "pharmaceuticals",
+   "name": "Pharmaceuticals",
+   "page": "technology#pharmaceuticals",
+   "slug": "pharmaceuticals",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/philosophical_pragmatism.png",
+   "id": "philosophical_pragmatism",
+   "name": "Philosophical Pragmatism",
+   "page": "technology#philosophical_pragmatism",
+   "slug": "philosophical_pragmatism",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/pillager.png",
+   "id": "pillager",
+   "name": "Pillager",
+   "page": "character-traits#pillager",
+   "slug": "pillager",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/pious.png",
+   "id": "pious",
+   "name": "Pious",
+   "page": "character-traits#pious",
+   "slug": "pious",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/plains_commander.png",
+   "id": "plains_commander",
+   "name": "Open Terrain Commander",
+   "page": "character-traits#plains_commander",
+   "slug": "plains_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/plastics.png",
+   "id": "plastics",
+   "name": "Plastics",
+   "page": "technology#plastics",
+   "slug": "plastics",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/pneumatic_tools.png",
+   "id": "pneumatic_tools",
+   "name": "Pneumatic Tools",
+   "page": "technology#pneumatic_tools",
+   "slug": "pneumatic_tools",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/political_agitation.png",
+   "id": "political_agitation",
+   "name": "Political Agitation",
+   "page": "technology#political_agitation",
+   "slug": "political_agitation",
+   "type": "technology"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/political_appointee.png",
+   "id": "political_appointee",
+   "name": "Political Appointee",
+   "page": "character-traits#political_appointee",
+   "slug": "political_appointee",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/popular_commander.png",
+   "id": "popular_commander",
+   "name": "Popular Commander",
+   "page": "character-traits#popular_commander",
+   "slug": "popular_commander",
+   "type": "character_trait"
   },
   {
    "group": "luxury",
@@ -1294,6 +4589,96 @@
    "type": "good"
   },
   {
+   "group": "society",
+   "icon": "img/techs/postal_savings.png",
+   "id": "postal_savings",
+   "name": "Postal Savings",
+   "page": "technology#postal_savings",
+   "slug": "postal_savings",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/power_of_the_purse.png",
+   "id": "power_of_the_purse",
+   "name": "Power of the Purse",
+   "page": "technology#power_of_the_purse",
+   "slug": "power_of_the_purse",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/pre_dreadnought.png",
+   "id": "pre_dreadnought_tech",
+   "name": "Pre-Dreadnought",
+   "page": "technology#pre_dreadnought_tech",
+   "slug": "pre_dreadnought_tech",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/prospecting_tech.png",
+   "id": "prospecting",
+   "name": "Prospecting",
+   "page": "technology#prospecting",
+   "slug": "prospecting",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/psychiatry.png",
+   "id": "psychiatry",
+   "name": "Psychiatry",
+   "page": "technology#psychiatry",
+   "slug": "psychiatry",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/psychoanalysis.png",
+   "id": "psychoanalysis",
+   "name": "Psychoanalysis",
+   "page": "technology#psychoanalysis",
+   "slug": "psychoanalysis",
+   "type": "technology"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/psychological_affliction.png",
+   "id": "psychological_affliction",
+   "name": "Psychological Affliction",
+   "page": "character-traits#psychological_affliction",
+   "slug": "psychological_affliction",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/pumpjacks.png",
+   "id": "pumpjacks",
+   "name": "Pumpjacks",
+   "page": "technology#pumpjacks",
+   "slug": "pumpjacks",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/quinine.png",
+   "id": "quinine",
+   "name": "Quinine",
+   "page": "technology#quinine",
+   "slug": "quinine",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/radio.png",
+   "id": "radio",
+   "name": "Radio",
+   "page": "technology#radio",
+   "slug": "radio",
+   "type": "technology"
+  },
+  {
    "group": "luxury",
    "icon": "img/goods/radios.png",
    "id": "radios",
@@ -1301,6 +4686,114 @@
    "page": "goods/radios",
    "slug": "radios",
    "type": "good"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/railways.png",
+   "id": "railways",
+   "name": "Railways",
+   "page": "technology#railways",
+   "slug": "railways",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/rationalism.png",
+   "id": "rationalism",
+   "name": "Rationalism",
+   "page": "technology#rationalism",
+   "slug": "rationalism",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/realism.png",
+   "id": "realism",
+   "name": "Realism",
+   "page": "technology#realism",
+   "slug": "realism",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/reckless.png",
+   "id": "reckless",
+   "name": "Reckless",
+   "page": "character-traits#reckless",
+   "slug": "reckless",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/reinforced_concrete.png",
+   "id": "reinforced_concrete",
+   "name": "Reinforced Concrete",
+   "page": "technology#reinforced_concrete",
+   "slug": "reinforced_concrete",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/repeaters.png",
+   "id": "repeaters",
+   "name": "Repeaters",
+   "page": "technology#repeaters",
+   "slug": "repeaters",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/reserved.png",
+   "id": "reserved",
+   "name": "Reserved",
+   "page": "character-traits#reserved",
+   "slug": "reserved",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/resupply_commander.png",
+   "id": "resupply_commander",
+   "name": "Supply Requisitions Expert",
+   "page": "character-traits#resupply_commander",
+   "slug": "resupply_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/rifling.png",
+   "id": "rifling",
+   "name": "Rifling",
+   "page": "technology#rifling",
+   "slug": "rifling",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/romantic.png",
+   "id": "romantic",
+   "name": "Romantic",
+   "page": "character-traits#romantic",
+   "slug": "romantic",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/romanticism.png",
+   "id": "romanticism",
+   "name": "Romanticism",
+   "page": "technology#romanticism",
+   "slug": "romanticism",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/rotary_valve_engine.png",
+   "id": "rotary_valve_engine",
+   "name": "Rotary Valve Engine",
+   "page": "technology#rotary_valve_engine",
+   "slug": "rotary_valve_engine",
+   "type": "technology"
   },
   {
    "group": "industrial",
@@ -1312,6 +4805,78 @@
    "type": "good"
   },
   {
+   "group": "production",
+   "icon": "img/techs/rubber.png",
+   "id": "rubber_mastication",
+   "name": "Rubber Mastication",
+   "page": "technology#rubber_mastication",
+   "slug": "rubber_mastication",
+   "type": "technology"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/ruthless.png",
+   "id": "ruthless",
+   "name": "Ruthless",
+   "page": "character-traits#ruthless",
+   "slug": "ruthless",
+   "type": "character_trait"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/scarred.png",
+   "id": "scarred",
+   "name": "Scarred",
+   "page": "character-traits#scarred",
+   "slug": "scarred",
+   "type": "character_trait"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/screw_frigate.png",
+   "id": "screw_frigate",
+   "name": "Screw Frigate",
+   "page": "technology#screw_frigate",
+   "slug": "screw_frigate",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/sea_lane_strategies.png",
+   "id": "sea_lane_strategies",
+   "name": "Sea Lane Strategies",
+   "page": "technology#sea_lane_strategies",
+   "slug": "sea_lane_strategies",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/self_propelled_torpedoes.png",
+   "id": "self_propelled_torpedoes",
+   "name": "Self-Propelled Torpedoes",
+   "page": "technology#self_propelled_torpedoes",
+   "slug": "self_propelled_torpedoes",
+   "type": "technology"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/senile.png",
+   "id": "senile",
+   "name": "Senile",
+   "page": "character-traits#senile",
+   "slug": "senile",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/sericulture.png",
+   "id": "sericulture",
+   "name": "Sericulture",
+   "page": "technology#sericulture",
+   "slug": "sericulture",
+   "type": "technology"
+  },
+  {
    "group": "staple",
    "icon": "img/goods/services.png",
    "id": "services",
@@ -1321,12 +4886,57 @@
    "type": "good"
   },
   {
+   "group": "production",
+   "icon": "img/techs/shaft_mining.png",
+   "id": "shaft_mining",
+   "name": "Shaft Mining",
+   "page": "technology#shaft_mining",
+   "slug": "shaft_mining",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/shell_gun.png",
+   "id": "shell_gun",
+   "name": "Shell Gun",
+   "page": "technology#shell_gun",
+   "slug": "shell_gun",
+   "type": "technology"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/shellshocked.png",
+   "id": "shellshocked",
+   "name": "Shell Shock",
+   "page": "character-traits#shellshocked",
+   "slug": "shellshocked",
+   "type": "character_trait"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/shift_work.png",
+   "id": "shift_work",
+   "name": "Shift Work",
+   "page": "technology#shift_work",
+   "slug": "shift_work",
+   "type": "technology"
+  },
+  {
    "icon": "img/pops/shopkeepers.png",
    "id": "shopkeepers",
    "name": "Shopkeepers",
    "page": "pop-types#shopkeepers",
    "slug": "shopkeepers",
    "type": "pop_type"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/sickly.png",
+   "id": "sickly",
+   "name": "Sickly",
+   "page": "character-traits#sickly",
+   "slug": "sickly",
+   "type": "character_trait"
   },
   {
    "group": "industrial",
@@ -1355,12 +4965,291 @@
    "type": "good"
   },
   {
+   "group": "skill",
+   "icon": "img/traits/social_banditry.png",
+   "id": "social_bandit",
+   "name": "Social Bandit",
+   "page": "character-traits#social_bandit",
+   "slug": "social_bandit",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/socialism.png",
+   "id": "socialism",
+   "name": "Socialism",
+   "page": "technology#socialism",
+   "slug": "socialism",
+   "type": "technology"
+  },
+  {
    "icon": "img/pops/soldiers.png",
    "id": "soldiers",
    "name": "Servicemen",
    "page": "pop-types#soldiers",
    "slug": "soldiers",
    "type": "pop_type"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_agent_of_the_sovereign.png",
+   "id": "special_character_agent_of_the_sovereign",
+   "name": "Agent of the Sovereign",
+   "page": "character-traits#special_character_agent_of_the_sovereign",
+   "slug": "special_character_agent_of_the_sovereign",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_blanqui_is_free.png",
+   "id": "special_character_blanqui_is_free",
+   "name": "Professional Revolutionary",
+   "page": "character-traits#special_character_blanqui_is_free",
+   "slug": "special_character_blanqui_is_free",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/colonial_business.png",
+   "id": "special_character_colonial_business",
+   "name": "Prominent Businessman",
+   "page": "character-traits#special_character_colonial_business",
+   "slug": "special_character_colonial_business",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/colonial_extraction.png",
+   "id": "special_character_colonial_extraction",
+   "name": "Experienced Extractor",
+   "page": "character-traits#special_character_colonial_extraction",
+   "slug": "special_character_colonial_extraction",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/colonial_local.png",
+   "id": "special_character_colonial_local",
+   "name": "Local Appointee",
+   "page": "character-traits#special_character_colonial_local",
+   "slug": "special_character_colonial_local",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/colonial_military.png",
+   "id": "special_character_colonial_military",
+   "name": "Military Governor",
+   "page": "character-traits#special_character_colonial_military",
+   "slug": "special_character_colonial_military",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/colonial_plantation.png",
+   "id": "special_character_colonial_plantation",
+   "name": "Influential Planter",
+   "page": "character-traits#special_character_colonial_plantation",
+   "slug": "special_character_colonial_plantation",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_curly_haired_orpheus.png",
+   "id": "special_character_curly_haired_orpheus",
+   "name": "The Curly-Haired Orpheuse",
+   "page": "character-traits#special_character_curly_haired_orpheus",
+   "slug": "special_character_curly_haired_orpheus",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_el_excelentisimo.png",
+   "id": "special_character_el_excelentisimo",
+   "name": "El Excelentísimo",
+   "page": "character-traits#special_character_el_excelentisimo",
+   "slug": "special_character_el_excelentisimo",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_emperor_norton_popularity.png",
+   "id": "special_character_emperor_norton_popularity",
+   "name": "The Spirit of San Francisco",
+   "page": "character-traits#special_character_emperor_norton_popularity",
+   "slug": "special_character_emperor_norton_popularity",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_general_revanche.png",
+   "id": "special_character_general_revanche",
+   "name": "Général Revanche",
+   "page": "character-traits#special_character_general_revanche",
+   "slug": "special_character_general_revanche",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_german_unifier_ruler.png",
+   "id": "special_character_german_unifier_ruler",
+   "name": "German Unifier",
+   "page": "character-traits#special_character_german_unifier_ruler",
+   "slug": "special_character_german_unifier_ruler",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_great_reformer.png",
+   "id": "special_character_great_reformer",
+   "name": "Tsar-Liberator",
+   "page": "character-traits#special_character_great_reformer",
+   "slug": "special_character_great_reformer",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_japanese_emperor.png",
+   "id": "special_character_japanese_emperor",
+   "name": "Emperor of Japan",
+   "page": "character-traits#special_character_japanese_emperor",
+   "slug": "special_character_japanese_emperor",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_john_brown_popularity.png",
+   "id": "special_character_john_brown_popularity",
+   "name": "This Glorious Endeavor",
+   "page": "character-traits#special_character_john_brown_popularity",
+   "slug": "special_character_john_brown_popularity",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_lenin_popularity.png",
+   "id": "special_character_lenin_popularity",
+   "name": "The Man from the River Lena",
+   "page": "character-traits#special_character_lenin_popularity",
+   "slug": "special_character_lenin_popularity",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_luxemburg_in_exile.png",
+   "id": "special_character_luxemburg_in_exile",
+   "name": "Untamed Revolutionary",
+   "page": "character-traits#special_character_luxemburg_in_exile",
+   "slug": "special_character_luxemburg_in_exile",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_maurras_popularity.png",
+   "id": "special_character_maurras_popularity",
+   "name": "Reactionary Icon",
+   "page": "character-traits#special_character_maurras_popularity",
+   "slug": "special_character_maurras_popularity",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_mazzini_popularity.png",
+   "id": "special_character_mazzini_popularity",
+   "name": "Popular Radical",
+   "page": "character-traits#special_character_mazzini_popularity",
+   "slug": "special_character_mazzini_popularity",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_napoleon_of_the_americas.png",
+   "id": "special_character_napoleon_of_the_americas",
+   "name": "Napoleon of the Americas",
+   "page": "character-traits#special_character_napoleon_of_the_americas",
+   "slug": "special_character_napoleon_of_the_americas",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_napoleonic_return.png",
+   "id": "special_character_napoleonic_return",
+   "name": "Napoleonic Return",
+   "page": "character-traits#special_character_napoleonic_return",
+   "slug": "special_character_napoleonic_return",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_nightingale_popularity.png",
+   "id": "special_character_nightingale_popularity",
+   "name": "Nightingale Pledge",
+   "page": "character-traits#special_character_nightingale_popularity",
+   "slug": "special_character_nightingale_popularity",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_passionate_academic.png",
+   "id": "special_character_passionate_academic",
+   "name": "Passionate Theorist",
+   "page": "character-traits#special_character_passionate_academic",
+   "slug": "special_character_passionate_academic",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_pedro_legitimacy.png",
+   "id": "special_character_pedro_legitimacy",
+   "name": "President Pedro",
+   "page": "character-traits#special_character_pedro_legitimacy",
+   "slug": "special_character_pedro_legitimacy",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/special_character_restitutor_orbis.png",
+   "id": "special_character_restitutor_orbis",
+   "name": "Restitutor Orbis",
+   "page": "character-traits#special_character_restitutor_orbis",
+   "slug": "special_character_restitutor_orbis",
+   "type": "character_trait"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/stalwart_defender.png",
+   "id": "stalwart_defender",
+   "name": "Stalwart Defender",
+   "page": "character-traits#stalwart_defender",
+   "slug": "stalwart_defender",
+   "type": "character_trait"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/standing_army.png",
+   "id": "standing_army",
+   "name": "Standing Army",
+   "page": "technology#standing_army",
+   "slug": "standing_army",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/steam_donkey.png",
+   "id": "steam_donkey",
+   "name": "Steam Donkey",
+   "page": "technology#steam_donkey",
+   "slug": "steam_donkey",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/steam_turbines.png",
+   "id": "steam_turbine",
+   "name": "Steam Turbine",
+   "page": "technology#steam_turbine",
+   "slug": "steam_turbine",
+   "type": "technology"
   },
   {
    "group": "industrial",
@@ -1381,6 +5270,60 @@
    "type": "good"
   },
   {
+   "group": "society",
+   "icon": "img/techs/steel_frame_buildings.png",
+   "id": "steel_frame_buildings",
+   "name": "Steel-Frame Buildings",
+   "page": "technology#steel_frame_buildings",
+   "slug": "steel_frame_buildings",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/steel_railway_cars.png",
+   "id": "steel_railway_cars",
+   "name": "Steel Railway Cars",
+   "page": "technology#steel_railway_cars",
+   "slug": "steel_railway_cars",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/steelworking.png",
+   "id": "steelworking",
+   "name": "Steelworking",
+   "page": "technology#steelworking",
+   "slug": "steelworking",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/stock_exchanges.png",
+   "id": "stock_exchange",
+   "name": "Stock Exchange",
+   "page": "technology#stock_exchange",
+   "slug": "stock_exchange",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/stormtroopers.png",
+   "id": "stormtroopers",
+   "name": "Stormtroopers",
+   "page": "technology#stormtroopers",
+   "slug": "stormtroopers",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/submarine.png",
+   "id": "submarine",
+   "name": "Submarine",
+   "page": "technology#submarine",
+   "slug": "submarine",
+   "type": "technology"
+  },
+  {
    "group": "luxury",
    "icon": "img/goods/sugar.png",
    "id": "sugar",
@@ -1397,6 +5340,33 @@
    "page": "goods/sulfur",
    "slug": "sulfur",
    "type": "good"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/surveyor.png",
+   "id": "surveyor",
+   "name": "Surveyor",
+   "page": "character-traits#surveyor",
+   "slug": "surveyor",
+   "type": "character_trait"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/syphilis.png",
+   "id": "syphilis",
+   "name": "Syphilis",
+   "page": "character-traits#syphilis",
+   "slug": "syphilis",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/tactful.png",
+   "id": "tactful",
+   "name": "Tactful",
+   "page": "character-traits#tactful",
+   "slug": "tactful",
+   "type": "character_trait"
   },
   {
    "group": "military",
@@ -1417,6 +5387,24 @@
    "type": "good"
   },
   {
+   "group": "society",
+   "icon": "img/techs/bureaucracy.png",
+   "id": "tech_bureaucracy",
+   "name": "Bureaucracy",
+   "page": "technology#tech_bureaucracy",
+   "slug": "tech_bureaucracy",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/telephone.png",
+   "id": "telephone",
+   "name": "Telephone",
+   "page": "technology#telephone",
+   "slug": "telephone",
+   "type": "technology"
+  },
+  {
    "group": "luxury",
    "icon": "img/goods/telephones.png",
    "id": "telephones",
@@ -1424,6 +5412,15 @@
    "page": "goods/telephones",
    "slug": "telephones",
    "type": "good"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/threshing_machine.png",
+   "id": "threshing_machine",
+   "name": "Threshing Machines",
+   "page": "technology#threshing_machine",
+   "slug": "threshing_machine",
+   "type": "technology"
   },
   {
    "group": "luxury",
@@ -1444,6 +5441,24 @@
    "type": "good"
   },
   {
+   "group": "skill",
+   "icon": "img/traits/traditionalist_commander.png",
+   "id": "traditionalist_commander",
+   "name": "Traditionalist Commander",
+   "page": "character-traits#traditionalist_commander",
+   "slug": "traditionalist_commander",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/trait_child.png",
+   "id": "trait_child",
+   "name": "Child",
+   "page": "character-traits#trait_child",
+   "slug": "trait_child",
+   "type": "character_trait"
+  },
+  {
    "group": "staple",
    "icon": "img/goods/transportation.png",
    "id": "transportation",
@@ -1451,6 +5466,114 @@
    "page": "goods/transportation",
    "slug": "transportation",
    "type": "good"
+  },
+  {
+   "group": "skill",
+   "icon": "img/traits/trench_rat.png",
+   "id": "trench_rat",
+   "name": "Trench Rat",
+   "page": "character-traits#trench_rat",
+   "slug": "trench_rat",
+   "type": "character_trait"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/trench_works.png",
+   "id": "trench_works",
+   "name": "Trench Works",
+   "page": "technology#trench_works",
+   "slug": "trench_works",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/triage.png",
+   "id": "triage",
+   "name": "Triage",
+   "page": "technology#triage",
+   "slug": "triage",
+   "type": "technology"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/tuberculosis.png",
+   "id": "tuberculosis",
+   "name": "Tuberculosis",
+   "page": "character-traits#tuberculosis",
+   "slug": "tuberculosis",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/urban_planning.png",
+   "id": "urban_planning",
+   "name": "Urban Planning",
+   "page": "technology#urban_planning",
+   "slug": "urban_planning",
+   "type": "technology"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/urbanization.png",
+   "id": "urbanization",
+   "name": "Urbanization",
+   "page": "technology#urbanization",
+   "slug": "urbanization",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/vacuum_canning.png",
+   "id": "vacuum_canning",
+   "name": "Vacuum Canning",
+   "page": "technology#vacuum_canning",
+   "slug": "vacuum_canning",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/vulcanization.png",
+   "id": "vulcanization",
+   "name": "Vulcanization",
+   "page": "technology#vulcanization",
+   "slug": "vulcanization",
+   "type": "technology"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/wrathful.png",
+   "id": "war_criminal",
+   "name": "War Criminal",
+   "page": "character-traits#war_criminal",
+   "slug": "war_criminal",
+   "type": "character_trait"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/war_propaganda.png",
+   "id": "war_propaganda",
+   "name": "War Propaganda",
+   "page": "technology#war_propaganda",
+   "slug": "war_propaganda",
+   "type": "technology"
+  },
+  {
+   "group": "military",
+   "icon": "img/techs/wargaming.png",
+   "id": "wargaming",
+   "name": "Wargaming",
+   "page": "technology#wargaming",
+   "slug": "wargaming",
+   "type": "technology"
+  },
+  {
+   "group": "production",
+   "icon": "img/techs/watertube_boiler.png",
+   "id": "watertube_boiler",
+   "name": "Water-tube Boiler",
+   "page": "technology#watertube_boiler",
+   "slug": "watertube_boiler",
+   "type": "technology"
   },
   {
    "group": "luxury",
@@ -1469,6 +5592,33 @@
    "page": "goods/wood",
    "slug": "wood",
    "type": "good"
+  },
+  {
+   "group": "condition",
+   "icon": "img/traits/wounded.png",
+   "id": "wounded",
+   "name": "Wounded",
+   "page": "character-traits#wounded",
+   "slug": "wounded",
+   "type": "character_trait"
+  },
+  {
+   "group": "personality",
+   "icon": "img/traits/wrathful.png",
+   "id": "wrathful",
+   "name": "Wrathful",
+   "page": "character-traits#wrathful",
+   "slug": "wrathful",
+   "type": "character_trait"
+  },
+  {
+   "group": "society",
+   "icon": "img/techs/zeppelins.png",
+   "id": "zeppelins",
+   "name": "Zeppelins",
+   "page": "technology#zeppelins",
+   "slug": "zeppelins",
+   "type": "technology"
   }
  ]
 }

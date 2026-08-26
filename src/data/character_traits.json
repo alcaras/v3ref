@@ -1,0 +1,4538 @@
+{
+ "traits": [
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_academics_pol_str_mult",
+     "label": "Political Strength of Academics",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/aesthete.png",
+   "id": "aesthete",
+   "name": "Aesthete",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_agent_of_the_sovereign.png",
+   "id": "special_character_agent_of_the_sovereign",
+   "name": "Agent of the Sovereign",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "unit_recovery_rate_add",
+     "label": "Recovery Rate",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "ship_critical_hit_chance_mult",
+     "label": "Critical Chance",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "character_coup_strength_mult",
+     "label": "Coup Strength",
+     "tone": "neutral",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_prestige_from_army_power_projection_mult",
+     "label": "Prestige from Army Power Projection",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_prestige_from_navy_power_projection_mult",
+     "label": "Prestige from Navy Power Projection",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "state_decree_cost_mult",
+     "label": "Decree Cost",
+     "tone": "good",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "icon": "img/traits/ambitious.png",
+   "id": "ambitious",
+   "name": "Ambitious",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -25,
+     "valueText": "-25"
+    },
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "command": [
+    {
+     "key": "character_command_limit_mult",
+     "label": "Command Limit",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "ship_vulnerability_mult",
+     "label": "Vulnerability",
+     "tone": "bad",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_legitimacy_base_add",
+     "label": "Legitimacy",
+     "tone": "bad",
+     "value": -5,
+     "valueText": "-5"
+    }
+   ],
+   "icon": "img/traits/arrogant.png",
+   "id": "arrogant",
+   "name": "Arrogant",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -35,
+     "valueText": "-35"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "country": [
+    {
+     "key": "state_radicalism_increases_violent_hostility_mult",
+     "label": "Radicalism increases for the Violent Hostility Status",
+     "tone": "bad",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "state_radicalism_increases_cultural_erasure_mult",
+     "label": "Radicalism increases for the Cultural Erasure Status",
+     "tone": "bad",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "state_radicalism_increases_open_prejudice_mult",
+     "label": "Radicalism increases for the Open Prejudice Status",
+     "tone": "bad",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_influence_add",
+     "label": "…Influence",
+     "tone": "bad",
+     "value": -100,
+     "valueText": "-100"
+    },
+    {
+     "key": "country_authority_add",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 100,
+     "valueText": "+100"
+    }
+   ],
+   "icon": "img/traits/bigoted.png",
+   "id": "bigoted",
+   "name": "Bigoted",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "ship_vulnerability_mult",
+     "label": "Vulnerability",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "ship_critical_hit_chance_mult",
+     "label": "Critical Chance",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_prestige_from_army_power_projection_mult",
+     "label": "Prestige from Army Power Projection",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "country_prestige_from_navy_power_projection_mult",
+     "label": "Prestige from Navy Power Projection",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "icon": "img/traits/brave.png",
+   "id": "brave",
+   "name": "Brave",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "good",
+     "value": 0.3,
+     "valueText": "+30%"
+    },
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": -5,
+     "valueText": "-5"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "good",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "ship_screening_mult",
+     "label": "Screening",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "ship_accuracy_add",
+     "label": "Accuracy",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "ship_critical_hit_chance_mult",
+     "label": "Critical Chance",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_infamy_generation_mult",
+     "label": "Infamy Generation",
+     "tone": "good",
+     "value": -0.2,
+     "valueText": "-20%"
+    },
+    {
+     "key": "country_influence_add",
+     "label": "…Influence",
+     "tone": "bad",
+     "value": -100,
+     "valueText": "-100"
+    }
+   ],
+   "icon": "img/traits/cautious.png",
+   "id": "cautious",
+   "name": "Cautious",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 50,
+     "valueText": "+50"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "icon": "img/traits/charismatic.png",
+   "id": "charismatic",
+   "name": "Charismatic",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -25,
+     "valueText": "-25"
+    },
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": -25,
+     "valueText": "-25"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "bad",
+     "value": -0.15,
+     "valueText": "-15%"
+    },
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    }
+   ],
+   "icon": "img/traits/trait_child.png",
+   "id": "trait_child",
+   "name": "Child",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": -5,
+     "valueText": "-5"
+    }
+   ],
+   "command": [
+    {
+     "key": "character_coup_strength_mult",
+     "label": "Coup Strength",
+     "tone": "neutral",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "icon": "img/traits/compliant.png",
+   "id": "compliant",
+   "name": "Compliant",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -50,
+     "valueText": "-50"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_consumption_tax_cost_mult",
+     "label": "Consumption Tax Cost",
+     "tone": "good",
+     "value": -0.25,
+     "valueText": "-25%"
+    },
+    {
+     "key": "country_opposition_ig_approval_add",
+     "label": "Opposition Interest Group Approval",
+     "tone": "bad",
+     "value": -1,
+     "valueText": "-1"
+    },
+    {
+     "key": "state_standard_of_living_add",
+     "label": "Standard of Living",
+     "tone": "bad",
+     "value": -1,
+     "valueText": "-1"
+    }
+   ],
+   "icon": "img/traits/cruel.png",
+   "id": "cruel",
+   "name": "Cruel",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 15,
+     "valueText": "+15"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "ship_hull_damage_mult",
+     "label": "Hull Attack Damage",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "ship_crew_damage_mult",
+     "label": "Crew Attack Damage",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "ship_vulnerability_mult",
+     "label": "Vulnerability",
+     "tone": "bad",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "character_battle_condition_aggressive_maneuver_mult",
+     "label": "… Chance",
+     "tone": "neutral",
+     "value": 1,
+     "valueText": "+100%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_officers_pol_str_mult",
+     "label": "Political Strength of Officers",
+     "tone": "neutral",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "icon": "img/traits/direct.png",
+   "id": "direct",
+   "name": "Direct",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 40,
+     "valueText": "+40"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_legitimacy_headofstate_add",
+     "label": "Legitimacy from including the Head of State In Government",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "icon": "img/traits/special_character_el_excelentisimo.png",
+   "id": "special_character_el_excelentisimo",
+   "name": "El Excelentísimo",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [],
+   "command": [],
+   "country": [
+    {
+     "key": "country_legitimacy_base_add",
+     "label": "Legitimacy",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "icon": "img/traits/special_character_japanese_emperor.png",
+   "id": "special_character_japanese_emperor",
+   "name": "Emperor of Japan",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 50,
+     "valueText": "+50"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_general_revanche.png",
+   "id": "special_character_general_revanche",
+   "name": "Général Revanche",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 50,
+     "valueText": "+50"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    }
+   ],
+   "icon": "img/traits/special_character_german_unifier_ruler.png",
+   "id": "special_character_german_unifier_ruler",
+   "name": "German Unifier",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -15,
+     "valueText": "-15"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_supply_consumption_mult",
+     "label": "Supply Consumption",
+     "tone": "bad",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "ship_supply_efficiency_mult",
+     "label": "Supply Efficiency",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_clergymen_pol_str_mult",
+     "label": "Political Strength of Clergymen",
+     "tone": "neutral",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "icon": "img/traits/hedonist.png",
+   "id": "hedonist",
+   "name": "Hedonist",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_piracy_income_add",
+     "label": "Piracy Income",
+     "tone": "bad",
+     "value": -0.025,
+     "valueText": "-3%"
+    }
+   ],
+   "icon": "img/traits/honorable.png",
+   "id": "honorable",
+   "name": "Honorable",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -35,
+     "valueText": "-35"
+    },
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "good",
+     "value": -0.15,
+     "valueText": "-15%"
+    },
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "bad",
+     "value": -0.15,
+     "valueText": "-15%"
+    },
+    {
+     "key": "character_battle_condition_aggressive_maneuver_mult",
+     "label": "… Chance",
+     "tone": "neutral",
+     "value": 1,
+     "valueText": "+100%"
+    },
+    {
+     "key": "character_coup_strength_mult",
+     "label": "Coup Strength",
+     "tone": "neutral",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "country": [
+    {
+     "key": "state_decree_cost_mult",
+     "label": "Decree Cost",
+     "tone": "good",
+     "value": -0.2,
+     "valueText": "-20%"
+    },
+    {
+     "key": "state_loyalists_from_political_movements_mult",
+     "label": "Loyalists from Political Movements",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "state_radicals_from_political_movements_mult",
+     "label": "Radicals from Political Movements",
+     "tone": "good",
+     "value": -0.2,
+     "valueText": "-20%"
+    }
+   ],
+   "icon": "img/traits/imperious.png",
+   "id": "imperious",
+   "name": "Imperious",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_battle_condition_aggressive_maneuver_mult",
+     "label": "… Chance",
+     "tone": "neutral",
+     "value": 1,
+     "valueText": "+100%"
+    },
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_infamy_decay_mult",
+     "label": "Infamy Decay",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "icon": "img/traits/imposing.png",
+   "id": "imposing",
+   "name": "Imposing",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "good",
+     "value": -0.15,
+     "valueText": "-15%"
+    },
+    {
+     "key": "character_battle_condition_surprise_maneuver_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    },
+    {
+     "key": "ship_critical_hit_chance_mult",
+     "label": "Critical Chance",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_tech_spread_mult",
+     "label": "Technology Spread",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/innovative.png",
+   "id": "innovative",
+   "name": "Innovative",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "unit_defense_mult",
+     "label": "Defense",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "unit_recovery_rate_add",
+     "label": "Recovery Rate",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "ship_accuracy_add",
+     "label": "Accuracy",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "ship_critical_hit_chance_mult",
+     "label": "Critical Chance",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_battle_condition_surprise_maneuver_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "character_battle_condition_careful_maneuver_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_bureaucracy_mult",
+     "label": "…Bureaucracy",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "country_institution_size_change_speed_mult",
+     "label": "Institution Size Change Speed",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "icon": "img/traits/meticulous.png",
+   "id": "meticulous",
+   "name": "Meticulous",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 60,
+     "valueText": "+60"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_defense_mult",
+     "label": "Defense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_legitimacy_headofstate_add",
+     "label": "Legitimacy from including the Head of State In Government",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "icon": "img/traits/special_character_napoleon_of_the_americas.png",
+   "id": "special_character_napoleon_of_the_americas",
+   "name": "Napoleon of the Americas",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 35,
+     "valueText": "+35"
+    },
+    {
+     "key": "character_coup_strength_mult",
+     "label": "Coup Strength",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_napoleonic_return.png",
+   "id": "special_character_napoleonic_return",
+   "name": "Napoleonic Return",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 50,
+     "valueText": "+50"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_nightingale_popularity.png",
+   "id": "special_character_nightingale_popularity",
+   "name": "Nightingale Pledge",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 40,
+     "valueText": "+40"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_passionate_academic.png",
+   "id": "special_character_passionate_academic",
+   "name": "Passionate Theorist",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "good",
+     "value": -0.15,
+     "valueText": "-15%"
+    },
+    {
+     "key": "ship_screening_mult",
+     "label": "Screening",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_bureaucrats_pol_str_mult",
+     "label": "Political Strength of Bureaucrats",
+     "tone": "neutral",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "icon": "img/traits/persistent.png",
+   "id": "persistent",
+   "name": "Persistent",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "good",
+     "value": -0.25,
+     "valueText": "-25%"
+    },
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_clergymen_pol_str_mult",
+     "label": "Political Strength of Clergymen",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/pious.png",
+   "id": "pious",
+   "name": "Pious",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 50,
+     "valueText": "+50"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_mazzini_popularity.png",
+   "id": "special_character_mazzini_popularity",
+   "name": "Popular Radical",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 30,
+     "valueText": "+30"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_legitimacy_base_add",
+     "label": "Legitimacy",
+     "tone": "good",
+     "value": 15,
+     "valueText": "+15"
+    }
+   ],
+   "icon": "img/traits/special_character_pedro_legitimacy.png",
+   "id": "special_character_pedro_legitimacy",
+   "name": "President Pedro",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "character_coup_strength_mult",
+     "label": "Coup Strength",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_loyalty_add",
+     "label": "Loyalty",
+     "tone": "bad",
+     "value": -10,
+     "valueText": "-10"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_blanqui_is_free.png",
+   "id": "special_character_blanqui_is_free",
+   "name": "Professional Revolutionary",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_maurras_popularity.png",
+   "id": "special_character_maurras_popularity",
+   "name": "Reactionary Icon",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.2,
+     "valueText": "-20%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_recovery_rate_add",
+     "label": "Recovery Rate",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "character_coup_strength_mult",
+     "label": "Coup Strength",
+     "tone": "neutral",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "ship_vulnerability_mult",
+     "label": "Vulnerability",
+     "tone": "bad",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "ship_critical_hit_chance_mult",
+     "label": "Critical Chance",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_diplomatic_play_maneuvers_add",
+     "label": "Maneuvers per Diplomatic Play",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "country_infamy_generation_mult",
+     "label": "Infamy Generation",
+     "tone": "bad",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "icon": "img/traits/reckless.png",
+   "id": "reckless",
+   "name": "Reckless",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -25,
+     "valueText": "-25"
+    },
+    {
+     "key": "character_battle_condition_careful_maneuver_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "ship_critical_hit_chance_mult",
+     "label": "Critical Chance",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/reserved.png",
+   "id": "reserved",
+   "name": "Reserved",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 50,
+     "valueText": "+50"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_legitimacy_base_add",
+     "label": "Legitimacy",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "icon": "img/traits/special_character_restitutor_orbis.png",
+   "id": "special_character_restitutor_orbis",
+   "name": "Restitutor Orbis",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "ship_vulnerability_mult",
+     "label": "Vulnerability",
+     "tone": "bad",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "ship_hull_damage_mult",
+     "label": "Hull Attack Damage",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_aristocrats_pol_str_mult",
+     "label": "Political Strength of Aristocrats",
+     "tone": "neutral",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "icon": "img/traits/romantic.png",
+   "id": "romantic",
+   "name": "Romantic",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -15,
+     "valueText": "-15"
+    },
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "country_piracy_income_add",
+     "label": "Piracy Income",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "icon": "img/traits/ruthless.png",
+   "id": "ruthless",
+   "name": "Ruthless",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "unit_morale_damage_mult",
+     "label": "Morale Damage",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "character_battle_condition_careful_maneuver_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_improve_relations_speed_mult",
+     "label": "Improve Relations Speed",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "icon": "img/traits/tactful.png",
+   "id": "tactful",
+   "name": "Tactful",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_curly_haired_orpheus.png",
+   "id": "special_character_curly_haired_orpheus",
+   "name": "The Curly-Haired Orpheuse",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_lenin_popularity.png",
+   "id": "special_character_lenin_popularity",
+   "name": "The Man from the River Lena",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 15,
+     "valueText": "+15"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_emperor_norton_popularity.png",
+   "id": "special_character_emperor_norton_popularity",
+   "name": "The Spirit of San Francisco",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_john_brown_popularity.png",
+   "id": "special_character_john_brown_popularity",
+   "name": "This Glorious Endeavor",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 50,
+     "valueText": "+50"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_loyalists_from_legitimacy_mult",
+     "label": "Loyalists from high Legitimacy",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/special_character_great_reformer.png",
+   "id": "special_character_great_reformer",
+   "name": "Tsar-Liberator",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 40,
+     "valueText": "+40"
+    },
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/special_character_luxemburg_in_exile.png",
+   "id": "special_character_luxemburg_in_exile",
+   "name": "Untamed Revolutionary",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "unit_morale_damage_mult",
+     "label": "Morale Damage",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "ship_hull_damage_mult",
+     "label": "Hull Attack Damage",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "ship_crew_damage_mult",
+     "label": "Crew Attack Damage",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "ship_vulnerability_mult",
+     "label": "Vulnerability",
+     "tone": "bad",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_authority_add",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 100,
+     "valueText": "+100"
+    }
+   ],
+   "icon": "img/traits/wrathful.png",
+   "id": "wrathful",
+   "name": "Wrathful",
+   "replaces": [],
+   "type": "personality"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_combat_unit_type_siege_artillery_offense_mult",
+     "label": "Siege Artillery Offense",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "unit_combat_unit_type_shrapnel_artillery_offense_mult",
+     "label": "Shrapnel Artillery Offense",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "unit_combat_unit_type_cannon_artillery_offense_mult",
+     "label": "Cannon Artillery Offense",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "unit_combat_unit_type_mobile_artillery_offense_mult",
+     "label": "Mobile Artillery Offense",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "character_battle_condition_aggressive_maneuver_mult",
+     "label": "… Chance",
+     "tone": "neutral",
+     "value": 1,
+     "valueText": "+100%"
+    },
+    {
+     "key": "character_battle_condition_mud_mult",
+     "label": "… Chance",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/basic_artillery_commander.png",
+   "id": "basic_artillery_commander",
+   "name": "Artillery Commander",
+   "replaces": [
+    "inexperienced"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -25,
+     "valueText": "-25"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_damage_mult",
+     "label": "Morale Damage",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_piracy_goods_capacity_mult",
+     "label": "Pirating Capacity",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "country_infamy_decay_mult",
+     "label": "Infamy Decay",
+     "tone": "bad",
+     "value": -0.5,
+     "valueText": "-50%"
+    },
+    {
+     "key": "country_authority_add",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 100,
+     "valueText": "+100"
+    }
+   ],
+   "icon": "img/traits/bandit.png",
+   "id": "bandit",
+   "name": "Bandit",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/basic_entrepreneur.png",
+   "id": "basic_entrepreneur",
+   "name": "Basic Entrepreneur",
+   "replaces": [
+    "inexperienced"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_command_limit_mult",
+     "label": "Command Limit",
+     "tone": "good",
+     "value": 0.3,
+     "valueText": "+30%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 30,
+     "valueText": "+30"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    }
+   ],
+   "icon": "img/traits/celebrity_commander.png",
+   "id": "celebrity_commander",
+   "name": "Celebrity Commander",
+   "replaces": [
+    "popular_commander"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [],
+   "country": [
+    {
+     "key": "state_colony_growth_speed_mult",
+     "label": "Colony Growth Speed",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/basic_colonial_administrator.png",
+   "id": "basic_colonial_administrator",
+   "name": "Colonial Administrator",
+   "replaces": [
+    "inexperienced"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "ship_visibility_mult",
+     "label": "Visibility",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "ship_ship_type_submarine_hull_damage_mult",
+     "label": "Submarine Hull Attack Damage",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/convoy_raider_commander.png",
+   "id": "convoy_raider_commander",
+   "name": "Convoy Raider",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "character_battle_condition_careful_maneuver_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 2.5,
+     "valueText": "+250%"
+    },
+    {
+     "key": "character_battle_condition_surprise_maneuver_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 2.5,
+     "valueText": "+250%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/defense_in_depth_specialist.png",
+   "id": "defense_in_depth_specialist",
+   "name": "Defense in Depth Specialist",
+   "replaces": [
+    "trench_rat"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_defense_mult",
+     "label": "Defense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_battle_condition_dug_in_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    },
+    {
+     "key": "character_battle_condition_camouflaged_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/basic_defensive_strategist.png",
+   "id": "basic_defensive_strategist",
+   "name": "Defensive Strategist",
+   "replaces": [
+    "inexperienced"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 35,
+     "valueText": "+35"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/demagogue_orator2.png",
+   "id": "demagogue",
+   "name": "Demagogue",
+   "replaces": [],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "icon": "img/traits/basic_diplomat.png",
+   "id": "basic_diplomat",
+   "name": "Diplomat",
+   "replaces": [
+    "inexperienced"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "ship_supply_efficiency_mult",
+     "label": "Supply Efficiency",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/drydock_repairs.png",
+   "id": "dockyard_master",
+   "name": "Dockyard Organizer",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_supply_consumption_mult",
+     "label": "Supply Consumption",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "battle_offense_owned_province_mult",
+     "label": "Home Offense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "battle_defense_owned_province_mult",
+     "label": "Home Defense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_peasants_pol_str_mult",
+     "label": "Political Strength of Peasants",
+     "tone": "neutral",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "country_farmers_pol_str_mult",
+     "label": "Political Strength of Farmers",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "country_infamy_decay_mult",
+     "label": "Infamy Decay",
+     "tone": "bad",
+     "value": -0.5,
+     "valueText": "-50%"
+    },
+    {
+     "key": "country_authority_add",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 100,
+     "valueText": "+100"
+    }
+   ],
+   "icon": "img/traits/elder.png",
+   "id": "elder",
+   "name": "Elder",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "ship_armor_mult",
+     "label": "Ship Armor",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "character_battle_condition_dug_in_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    },
+    {
+     "key": "character_battle_condition_logistics_secured_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_construction_add",
+     "label": "…Construction",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "country_engineers_pol_str_mult",
+     "label": "Political Strength of Engineers",
+     "tone": "neutral",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "country_machinists_pol_str_mult",
+     "label": "Political Strength of Machinists",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/engineer.png",
+   "id": "engineer",
+   "name": "Engineer",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "character_command_limit_mult",
+     "label": "Command Limit",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_academics_pol_str_mult",
+     "label": "Political Strength of Academics",
+     "tone": "neutral",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "country_bureaucrats_pol_str_mult",
+     "label": "Political Strength of Bureaucrats",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/erudite.png",
+   "id": "erudite",
+   "name": "Erudite",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_combat_unit_type_siege_artillery_offense_mult",
+     "label": "Siege Artillery Offense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "unit_combat_unit_type_shrapnel_artillery_offense_mult",
+     "label": "Shrapnel Artillery Offense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "unit_combat_unit_type_cannon_artillery_offense_mult",
+     "label": "Cannon Artillery Offense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "unit_combat_unit_type_mobile_artillery_offense_mult",
+     "label": "Mobile Artillery Offense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_battle_condition_aggressive_maneuver_mult",
+     "label": "… Chance",
+     "tone": "neutral",
+     "value": 2,
+     "valueText": "+200%"
+    },
+    {
+     "key": "character_battle_condition_mud_mult",
+     "label": "… Chance",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/experienced_artillery_commander.png",
+   "id": "experienced_artillery_commander",
+   "name": "Experienced Artillery Commander",
+   "replaces": [
+    "basic_artillery_commander"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [],
+   "country": [
+    {
+     "key": "state_colony_growth_speed_mult",
+     "label": "Colony Growth Speed",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "icon": "img/traits/experienced_colonial_administrator.png",
+   "id": "experienced_colonial_administrator",
+   "name": "Experienced Colonial Administrator",
+   "replaces": [
+    "basic_colonial_administrator"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "ship_detection_mult",
+     "label": "Detection",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "ship_visibility_mult",
+     "label": "Visibility",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "ship_ship_type_submarine_hull_damage_mult",
+     "label": "Submarine Hull Attack Damage",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/experienced_convoy_raider.png",
+   "id": "experienced_convoy_raider",
+   "name": "Experienced Convoy Raider",
+   "replaces": [
+    "convoy_raider_commander"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_defense_mult",
+     "label": "Defense",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "character_battle_condition_dug_in_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+200%"
+    },
+    {
+     "key": "character_battle_condition_camouflaged_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+200%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/experienced_defensive_strategist.png",
+   "id": "experienced_defensive_strategist",
+   "name": "Experienced Defensive Strategist",
+   "replaces": [
+    "basic_defensive_strategist"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/experienced_diplomat.png",
+   "id": "experienced_diplomat",
+   "name": "Experienced Diplomat",
+   "replaces": [
+    "basic_diplomat"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 15,
+     "valueText": "+15"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_company_throughput_bonus_add",
+     "label": "Company Throughput Bonus",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "icon": "img/traits/experienced_entrepreneur.png",
+   "id": "experienced_entrepreneur",
+   "name": "Experienced Entrepreneur",
+   "replaces": [
+    "basic_entrepreneur"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [],
+   "country": [
+    {
+     "key": "building_group_bg_extraction_throughput_add",
+     "label": "Extraction Throughput",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "state_colony_growth_speed_mult",
+     "label": "Colony Growth Speed",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "state_mortality_mult",
+     "label": "Mortality",
+     "tone": "bad",
+     "value": 0.01,
+     "valueText": "+1%"
+    }
+   ],
+   "icon": "img/traits/colonial_extraction.png",
+   "id": "special_character_colonial_extraction",
+   "name": "Experienced Extractor",
+   "replaces": [],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "ship_hull_damage_mult",
+     "label": "Hull Attack Damage",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "ship_vulnerability_mult",
+     "label": "Vulnerability",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/experienced_naval_commander.png",
+   "id": "experienced_naval_commander",
+   "name": "Experienced Naval Commander",
+   "replaces": [
+    "basic_naval_commander"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_battle_condition_surprise_maneuver_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/experienced_offensive_planner.png",
+   "id": "experienced_offensive_planner",
+   "name": "Experienced Offensive Planner",
+   "replaces": [
+    "basic_offensive_planner"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "command": [
+    {
+     "key": "character_coup_strength_mult",
+     "label": "Coup Strength",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/experienced_political_operator.png",
+   "id": "experienced_political_operator",
+   "name": "Experienced Political Operator",
+   "replaces": [
+    "basic_political_operator"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_combat_unit_type_siege_artillery_offense_mult",
+     "label": "Siege Artillery Offense",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "unit_combat_unit_type_shrapnel_artillery_offense_mult",
+     "label": "Shrapnel Artillery Offense",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "unit_combat_unit_type_cannon_artillery_offense_mult",
+     "label": "Cannon Artillery Offense",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "unit_combat_unit_type_mobile_artillery_offense_mult",
+     "label": "Mobile Artillery Offense",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "character_battle_condition_aggressive_maneuver_mult",
+     "label": "… Chance",
+     "tone": "neutral",
+     "value": 3,
+     "valueText": "+300%"
+    },
+    {
+     "key": "character_battle_condition_mud_mult",
+     "label": "… Chance",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/expert_artillery_commander.png",
+   "id": "expert_artillery_commander",
+   "name": "Expert Artillery Commander",
+   "replaces": [
+    "experienced_artillery_commander"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [],
+   "country": [
+    {
+     "key": "state_colony_growth_speed_mult",
+     "label": "Colony Growth Speed",
+     "tone": "good",
+     "value": 0.4,
+     "valueText": "+40%"
+    }
+   ],
+   "icon": "img/traits/expert_colonial_administrator.png",
+   "id": "expert_colonial_administrator",
+   "name": "Expert Colonial Administrator",
+   "replaces": [
+    "experienced_colonial_administrator"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "ship_movement_speed_mult",
+     "label": "Ship Speed",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "ship_detection_mult",
+     "label": "Detection",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "ship_visibility_mult",
+     "label": "Visibility",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "ship_ship_type_submarine_hull_damage_mult",
+     "label": "Submarine Hull Attack Damage",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/expert_convoy_raider.png",
+   "id": "expert_convoy_raider",
+   "name": "Expert Convoy Raider",
+   "replaces": [
+    "experienced_convoy_raider"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_defense_mult",
+     "label": "Defense",
+     "tone": "good",
+     "value": 0.3,
+     "valueText": "+30%"
+    },
+    {
+     "key": "character_battle_condition_dug_in_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 3,
+     "valueText": "+300%"
+    },
+    {
+     "key": "character_battle_condition_camouflaged_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 3,
+     "valueText": "+300%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/expert_defensive_strategist.png",
+   "id": "expert_defensive_strategist",
+   "name": "Expert Defensive Strategist",
+   "replaces": [
+    "experienced_defensive_strategist"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_free_charters_add",
+     "label": "Free Company Charters",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "country_company_throughput_bonus_add",
+     "label": "Company Throughput Bonus",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_company_construction_efficiency_bonus_add",
+     "label": "Company Construction Bonus",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/expert_entrepreneur.png",
+   "id": "expert_entrepreneur",
+   "name": "Expert Entrepreneur",
+   "replaces": [
+    "experienced_entrepreneur"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "ship_hull_damage_mult",
+     "label": "Hull Attack Damage",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "ship_screening_mult",
+     "label": "Screening",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "ship_vulnerability_mult",
+     "label": "Vulnerability",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "ship_blockade_strength_mult",
+     "label": "Blockade Strength",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/expert_naval_commander.png",
+   "id": "expert_naval_commander",
+   "name": "Expert Naval Commander",
+   "replaces": [
+    "experienced_naval_commander"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "character_battle_condition_surprise_maneuver_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1.5,
+     "valueText": "+150%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/expert_offensive_planner.png",
+   "id": "expert_offensive_planner",
+   "name": "Expert Offensive Planner",
+   "replaces": [
+    "experienced_offensive_planner"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": 15,
+     "valueText": "+15"
+    }
+   ],
+   "command": [
+    {
+     "key": "character_coup_strength_mult",
+     "label": "Coup Strength",
+     "tone": "neutral",
+     "value": 0.15,
+     "valueText": "+15%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "icon": "img/traits/expert_political_operator.png",
+   "id": "expert_political_operator",
+   "name": "Expert Political Operator",
+   "replaces": [
+    "experienced_political_operator"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "character_expedition_events_explorer_mult",
+     "label": "Expedition Opportunity",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+200%"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_prestige_add",
+     "label": "Prestige",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "country_expedition_events_explorer_mult",
+     "label": "Expedition Opportunity",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    }
+   ],
+   "icon": "img/traits/explorer.png",
+   "id": "explorer",
+   "name": "Explorer",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 50,
+     "valueText": "+50"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/firebrand_orator3.png",
+   "id": "firebrand",
+   "name": "Firebrand",
+   "replaces": [],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -15,
+     "valueText": "-15"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    },
+    {
+     "key": "unit_defense_mult",
+     "label": "Defense",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "ship_hull_damage_mult",
+     "label": "Hull Attack Damage",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "ship_crew_damage_mult",
+     "label": "Crew Attack Damage",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "ship_vulnerability_mult",
+     "label": "Vulnerability",
+     "tone": "bad",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_coup_strength_mult",
+     "label": "Coup Strength",
+     "tone": "neutral",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_legitimacy_base_add",
+     "label": "Legitimacy",
+     "tone": "bad",
+     "value": -5,
+     "valueText": "-5"
+    }
+   ],
+   "icon": "img/traits/inept.png",
+   "id": "inept",
+   "name": "Inept",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "unit_defense_mult",
+     "label": "Defense",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "ship_hull_damage_mult",
+     "label": "Hull Attack Damage",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "ship_crew_damage_mult",
+     "label": "Crew Attack Damage",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "ship_vulnerability_mult",
+     "label": "Vulnerability",
+     "tone": "bad",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_legitimacy_base_add",
+     "label": "Legitimacy",
+     "tone": "bad",
+     "value": -5,
+     "valueText": "-5"
+    }
+   ],
+   "icon": "img/traits/inexperienced.png",
+   "id": "inexperienced",
+   "name": "Inexperienced",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [],
+   "country": [
+    {
+     "key": "building_group_bg_plantations_throughput_add",
+     "label": "Plantations Throughput",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "building_group_bg_ranching_throughput_add",
+     "label": "Ranches Throughput",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "state_colony_growth_speed_mult",
+     "label": "Colony Growth Speed",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/colonial_plantation.png",
+   "id": "special_character_colonial_plantation",
+   "name": "Influential Planter",
+   "replaces": [],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/inspirational_orator1.png",
+   "id": "inspirational_orator",
+   "name": "Inspirational Orator",
+   "replaces": [],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "country_infamy_decay_mult",
+     "label": "Infamy Decay",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "icon": "img/traits/literary.png",
+   "id": "literary",
+   "name": "Literary",
+   "replaces": [
+    "inexperienced"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 30,
+     "valueText": "+30"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "state_radicals_from_political_movements_mult",
+     "label": "Radicals from Political Movements",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "state_loyalists_from_political_movements_mult",
+     "label": "Loyalists from Political Movements",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_liberty_desire_add",
+     "label": "Weekly Liberty Desire",
+     "tone": "neutral",
+     "value": -0.05,
+     "valueText": "-0.05"
+    }
+   ],
+   "icon": "img/traits/colonial_local.png",
+   "id": "special_character_colonial_local",
+   "name": "Local Appointee",
+   "replaces": [],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [],
+   "country": [
+    {
+     "key": "country_bureaucracy_mult",
+     "label": "…Bureaucracy",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_bureaucrats_pol_str_mult",
+     "label": "Political Strength of Bureaucrats",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/master_bureaucrat.png",
+   "id": "master_bureaucrat",
+   "name": "Master Bureaucrat",
+   "replaces": [
+    "inexperienced"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 50,
+     "valueText": "+50"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "icon": "img/traits/masterful_diplomat.png",
+   "id": "masterful_diplomat",
+   "name": "Masterful Diplomat",
+   "replaces": [
+    "experienced_diplomat"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "character_command_limit_mult",
+     "label": "Command Limit",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_suppression_attraction_factor",
+     "label": "Suppression impact on Political Movement attraction",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "state_conscription_rate_mult",
+     "label": "Conscriptable Battalions",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/colonial_military.png",
+   "id": "special_character_colonial_military",
+   "name": "Military Governor",
+   "replaces": [],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_defense_elevated_mult",
+     "label": "Defense in Elevated Terrain",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "character_battle_condition_guerilla_ambush_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 4,
+     "valueText": "+400%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/mountain_commander.png",
+   "id": "mountain_commander",
+   "name": "Mountain Combat Expert",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "ship_hull_damage_mult",
+     "label": "Hull Attack Damage",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "ship_vulnerability_mult",
+     "label": "Vulnerability",
+     "tone": "good",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/basic_naval_commander.png",
+   "id": "basic_naval_commander",
+   "name": "Naval Commander",
+   "replaces": [
+    "inexperienced"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/basic_offensive_planner.png",
+   "id": "basic_offensive_planner",
+   "name": "Offensive Planner",
+   "replaces": [
+    "inexperienced"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_offense_flat_mult",
+     "label": "Offense in Flat Terrain",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/plains_commander.png",
+   "id": "plains_commander",
+   "name": "Open Terrain Commander",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "character_battle_condition_guerilla_ambush_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 8,
+     "valueText": "+800%"
+    },
+    {
+     "key": "unit_devastation_mult",
+     "label": "Devastation",
+     "tone": "neutral",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -10,
+     "valueText": "-10"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/pillager.png",
+   "id": "pillager",
+   "name": "Pillager",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -10,
+     "valueText": "-10"
+    }
+   ],
+   "command": [
+    {
+     "key": "character_coup_strength_mult",
+     "label": "Coup Strength",
+     "tone": "neutral",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_legitimacy_base_add",
+     "label": "Legitimacy",
+     "tone": "bad",
+     "value": -5,
+     "valueText": "-5"
+    },
+    {
+     "key": "interest_group_in_government_attraction_mult",
+     "label": "Attraction of Interest Groups In Government",
+     "tone": "neutral",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "icon": "img/traits/political_appointee.png",
+   "id": "political_appointee",
+   "name": "Political Appointee",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_prominence_add",
+     "label": "Prominence",
+     "tone": "neutral",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "command": [
+    {
+     "key": "character_coup_strength_mult",
+     "label": "Coup Strength",
+     "tone": "neutral",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "icon": "img/traits/basic_political_operator.png",
+   "id": "basic_political_operator",
+   "name": "Political Operator",
+   "replaces": [
+    "inexperienced"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_command_limit_mult",
+     "label": "Command Limit",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "icon": "img/traits/popular_commander.png",
+   "id": "popular_commander",
+   "name": "Popular Commander",
+   "replaces": [
+    "traditionalist_commander"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [],
+   "country": [
+    {
+     "key": "country_ship_group_supply_ships_construction_efficiency_add",
+     "label": "Supply Ships Construction Efficiency",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "state_construction_mult",
+     "label": "State Construction Efficiency",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "country_loan_interest_rate_mult",
+     "label": "Loan interest rate",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "icon": "img/traits/colonial_business.png",
+   "id": "special_character_colonial_business",
+   "name": "Prominent Businessman",
+   "replaces": [],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_damage_mult",
+     "label": "Morale Damage",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_piracy_goods_capacity_mult",
+     "label": "Pirating Capacity",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "country_infamy_decay_mult",
+     "label": "Infamy Decay",
+     "tone": "bad",
+     "value": -0.5,
+     "valueText": "-50%"
+    },
+    {
+     "key": "country_authority_add",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 100,
+     "valueText": "+100"
+    },
+    {
+     "key": "country_piracy_income_add",
+     "label": "Piracy Income",
+     "tone": "good",
+     "value": 0.025,
+     "valueText": "+3%"
+    }
+   ],
+   "icon": "img/traits/social_banditry.png",
+   "id": "social_bandit",
+   "name": "Social Bandit",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_defense_mult",
+     "label": "Defense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/stalwart_defender.png",
+   "id": "stalwart_defender",
+   "name": "Stalwart Defender",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_supply_consumption_mult",
+     "label": "Supply Consumption",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "character_battle_condition_logistics_secured_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    },
+    {
+     "key": "character_battle_condition_broken_supply_line_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": -0.9,
+     "valueText": "-90%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/resupply_commander.png",
+   "id": "resupply_commander",
+   "name": "Supply Requisitions Expert",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "battle_offense_owned_province_mult",
+     "label": "Home Offense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "battle_defense_owned_province_mult",
+     "label": "Home Defense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_battle_condition_guerilla_ambush_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 4,
+     "valueText": "+400%"
+    },
+    {
+     "key": "character_battle_condition_charted_terrain_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+200%"
+    },
+    {
+     "key": "character_battle_condition_good_visibility_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/surveyor.png",
+   "id": "surveyor",
+   "name": "Surveyor",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "character_command_limit_mult",
+     "label": "Command Limit",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_blockade_mult",
+     "label": "Admiral Blockade Strength",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "ship_ship_type_aircraft_carrier_hull_damage_mult",
+     "label": "Aircraft Carrier Hull Attack Damage",
+     "tone": "bad",
+     "value": -0.2,
+     "valueText": "-20%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "icon": "img/traits/traditionalist_commander.png",
+   "id": "traditionalist_commander",
+   "name": "Traditionalist Commander",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "character_battle_condition_careful_maneuver_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    },
+    {
+     "key": "character_battle_condition_surprise_maneuver_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/trench_rat.png",
+   "id": "trench_rat",
+   "name": "Trench Rat",
+   "replaces": [
+    "stalwart_defender"
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [],
+   "command": [
+    {
+     "key": "unit_defense_forested_mult",
+     "label": "Defense in Forested Terrain",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "character_battle_condition_guerilla_ambush_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 4,
+     "valueText": "+400%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/forest_commander.png",
+   "id": "forest_commander",
+   "name": "Woodland Combat Expert",
+   "replaces": [
+    {}
+   ],
+   "type": "skill"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -10,
+     "valueText": "-10"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_damage_mult",
+     "label": "Morale Damage",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.02,
+     "valueText": "+2%"
+    }
+   ],
+   "icon": "img/traits/alcoholic.png",
+   "id": "alcoholic",
+   "name": "Alcoholic",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.3,
+     "valueText": "-30%"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/beetle_eared.png",
+   "id": "beetle_ear",
+   "name": "Beetle Eared",
+   "replaces": [],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.8,
+     "valueText": "-80%"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/cancer.png",
+   "id": "cancer",
+   "name": "Cancer",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/cocaine_addiction.png",
+   "id": "cocaine_addiction",
+   "name": "Cocaine Addict",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "state_tax_waste_add",
+     "label": "Tax Waste",
+     "tone": "bad",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "icon": "img/traits/expensive_tastes.png",
+   "id": "expensive_tastes",
+   "name": "Expensive Tastes",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -25,
+     "valueText": "-25"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_supply_consumption_mult",
+     "label": "Supply Consumption",
+     "tone": "bad",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "ship_supply_efficiency_mult",
+     "label": "Supply Efficiency",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "character_piracy_goods_capacity_mult",
+     "label": "Pirating Capacity",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    }
+   ],
+   "country": [
+    {
+     "key": "state_tax_waste_add",
+     "label": "Tax Waste",
+     "tone": "bad",
+     "value": 0.01,
+     "valueText": "+1%"
+    },
+    {
+     "key": "country_piracy_income_add",
+     "label": "Piracy Income",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "icon": "img/traits/grifter.png",
+   "id": "grifter",
+   "name": "Grifter",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.3,
+     "valueText": "-30%"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "unit_defense_mult",
+     "label": "Defense",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/kidney_stones.png",
+   "id": "kidney_stones",
+   "name": "Kidney Stones",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -25,
+     "valueText": "-25"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "building_opium_plantation_throughput_add",
+     "label": "Opium Plantations building Throughput",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "icon": "img/traits/opium_addiction.png",
+   "id": "opium_addiction",
+   "name": "Opium Addict",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.2,
+     "valueText": "-20%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -50,
+     "valueText": "-50"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/psychological_affliction.png",
+   "id": "psychological_affliction",
+   "name": "Psychological Affliction",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/scarred.png",
+   "id": "scarred",
+   "name": "Scarred",
+   "replaces": [
+    "wounded"
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -50,
+     "valueText": "-50"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "character_command_limit_mult",
+     "label": "Command Limit",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "country": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "bad",
+     "value": -0.05,
+     "valueText": "-5%"
+    }
+   ],
+   "icon": "img/traits/senile.png",
+   "id": "senile",
+   "name": "Senile",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.2,
+     "valueText": "-20%"
+    },
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -30,
+     "valueText": "-30"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "bad",
+     "value": -0.2,
+     "valueText": "-20%"
+    },
+    {
+     "key": "unit_defense_mult",
+     "label": "Defense",
+     "tone": "bad",
+     "value": -0.2,
+     "valueText": "-20%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/shellshocked.png",
+   "id": "shellshocked",
+   "name": "Shell Shock",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.2,
+     "valueText": "-20%"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/sickly.png",
+   "id": "sickly",
+   "name": "Sickly",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.5,
+     "valueText": "-50%"
+    }
+   ],
+   "command": [],
+   "country": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "bad",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "icon": "img/traits/syphilis.png",
+   "id": "syphilis",
+   "name": "Syphilis",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.6,
+     "valueText": "-60%"
+    }
+   ],
+   "command": [],
+   "country": [],
+   "icon": "img/traits/tuberculosis.png",
+   "id": "tuberculosis",
+   "name": "Tuberculosis",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_popularity_add",
+     "label": "Popularity",
+     "tone": "bad",
+     "value": -50,
+     "valueText": "-50"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/wrathful.png",
+   "id": "war_criminal",
+   "name": "War Criminal",
+   "replaces": [],
+   "type": "condition"
+  },
+  {
+   "character": [
+    {
+     "key": "character_health_add",
+     "label": "Character Health",
+     "tone": "bad",
+     "value": -0.4,
+     "valueText": "-40%"
+    }
+   ],
+   "command": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "country": [],
+   "icon": "img/traits/wounded.png",
+   "id": "wounded",
+   "name": "Wounded",
+   "replaces": [
+    {}
+   ],
+   "type": "condition"
+  }
+ ]
+}

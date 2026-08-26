@@ -1,9 +1,10 @@
 // build_entities.mjs — the entity registry + site search index.
 // Entities are the nodes of the reference graph: anything that can be linked
-// to (goods now; buildings, pop types, laws, techs… as their pages land).
-// An entity without a `page` renders as plain text — safe to register early.
+// to. An entity without a `page` renders as plain text — safe to register
+// early. Runs LAST in `make data`: it reads the other builds' JSON for the
+// anchor-page datasets rather than re-parsing game files.
 
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
@@ -52,6 +53,30 @@ for (const [id, p] of Object.entries(popTypesRaw)) {
     icon: `img/pops/${String(p.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
     page: `pop-types#${id}`,
   });
+}
+
+// Anchor-page datasets from the generated JSON (this script runs last).
+const gen = (f) => JSON.parse(readFileSync(new URL(`../src/data/${f}`, import.meta.url).pathname, 'utf8'));
+
+for (const g of gen('laws.json').lawGroups) {
+  for (const l of g.laws) {
+    entities.push({ id: l.id, type: 'law', slug: l.id, name: l.name, icon: l.icon, page: `laws#${l.id}`, group: g.name });
+  }
+}
+for (const t of gen('techs.json').techs) {
+  entities.push({ id: t.id, type: 'technology', slug: t.id, name: t.name, icon: t.icon, page: `technology#${t.id}`, group: t.category });
+}
+for (const ig of gen('interest_groups.json').interestGroups) {
+  entities.push({ id: ig.id, type: 'interest_group', slug: ig.id, name: ig.name, icon: ig.icon, page: `interest-groups#${ig.id}` });
+}
+for (const inst of gen('institutions.json').institutions) {
+  entities.push({ id: inst.id, type: 'institution', slug: inst.id, name: inst.name, icon: inst.icon, page: `institutions#${inst.id}` });
+}
+for (const t of gen('character_traits.json').traits) {
+  entities.push({ id: t.id, type: 'character_trait', slug: t.id, name: t.name, icon: t.icon, page: `character-traits#${t.id}`, group: t.type });
+}
+for (const d of gen('decrees.json').decrees) {
+  entities.push({ id: d.id, type: 'decree', slug: d.id, name: d.name, icon: d.icon, page: `decrees#${d.id}` });
 }
 
 entities.sort((a, b) => a.id.localeCompare(b.id));

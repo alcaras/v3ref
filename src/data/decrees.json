@@ -1,0 +1,450 @@
+{
+ "decrees": [
+  {
+   "cost": 50,
+   "icon": "img/decrees/decree_emergency_relief.png",
+   "id": "decree_emergency_relief",
+   "laws": [],
+   "modifiers": [
+    {
+     "key": "state_tax_collection_mult",
+     "label": "Tax Collection",
+     "tone": "neutral",
+     "value": -0.5,
+     "valueText": "-50%"
+    },
+    {
+     "key": "state_infrastructure_mult",
+     "label": "Infrastructure",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "state_market_access_price_impact",
+     "label": "Market Access Price Impact",
+     "tone": "neutral",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "state_food_security_add",
+     "label": "Food Security",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Emergency Relief",
+   "techs": [
+    {
+     "id": "centralization",
+     "name": "Centralization"
+    }
+   ]
+  },
+  {
+   "cost": 100,
+   "icon": "img/decrees/decree_encourage_agricultural_industry.png",
+   "id": "decree_encourage_agricultural_industry",
+   "laws": [],
+   "modifiers": [
+    {
+     "key": "building_group_bg_agriculture_throughput_add",
+     "label": "Agriculture Throughput",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "building_group_bg_plantations_throughput_add",
+     "label": "Plantations Throughput",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "building_group_bg_ranching_throughput_add",
+     "label": "Ranches Throughput",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "Encourage Agricultural Industry",
+   "techs": [
+    {
+     "id": "enclosure",
+     "name": "Enclosure"
+    }
+   ]
+  },
+  {
+   "cost": 100,
+   "icon": "img/decrees/decree_encourage_manufacturing_industry.png",
+   "id": "decree_encourage_manufacturing_industry",
+   "laws": [],
+   "modifiers": [
+    {
+     "key": "building_group_bg_manufacturing_throughput_add",
+     "label": "Manufacturing Industries Throughput",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "building_group_bg_service_throughput_add",
+     "label": "Service Industries Throughput",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "Encourage Manufacturing Industry",
+   "techs": [
+    {
+     "id": "manufacturies",
+     "name": "Manufacturies"
+    }
+   ]
+  },
+  {
+   "cost": 100,
+   "icon": "img/decrees/decree_encourage_resource_industry.png",
+   "id": "decree_encourage_resource_industry",
+   "laws": [],
+   "modifiers": [
+    {
+     "key": "building_group_bg_mining_throughput_add",
+     "label": "Mines Throughput",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "building_group_bg_logging_throughput_add",
+     "label": "Logging Industry Throughput",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "building_group_bg_fishing_throughput_add",
+     "label": "Fishing Industry Throughput",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "building_group_bg_whaling_throughput_add",
+     "label": "Whaling Industry Throughput",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "building_group_bg_oil_extraction_throughput_add",
+     "label": "Oil Extractors Throughput",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "building_group_bg_rubber_throughput_add",
+     "label": "Rubber Plantations Throughput",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "Encourage Resource Industry",
+   "techs": [
+    {
+     "id": "shaft_mining",
+     "name": "Shaft Mining"
+    }
+   ]
+  },
+  {
+   "cost": 100,
+   "icon": "img/decrees/decree_enlistment_efforts.png",
+   "id": "decree_enlistment_efforts",
+   "laws": [],
+   "modifiers": [
+    {
+     "key": "state_conscription_rate_add",
+     "label": "Conscription Rate",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "building_training_rate_mult",
+     "label": "Training Rate",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Enlistment Efforts",
+   "techs": [
+    {
+     "id": "mandatory_service",
+     "name": "Mandatory Service"
+    }
+   ]
+  },
+  {
+   "cost": 100,
+   "icon": "img/decrees/decree_establish_missions.png",
+   "id": "decree_establish_missions",
+   "laws": [
+    {
+     "id": "law_frontier_colonization",
+     "name": "Frontier Colonization"
+    },
+    {
+     "id": "law_colonial_exploitation",
+     "name": "Colonial Exploitation"
+    },
+    {
+     "id": "law_colonial_resettlement",
+     "name": "Colonial Resettlement"
+    }
+   ],
+   "modifiers": [
+    {
+     "key": "state_allow_conversion_without_presence_bool",
+     "label": "Conversion to State Religion Always Allowed",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    },
+    {
+     "key": "state_colony_growth_speed_mult",
+     "label": "Colony Growth Speed",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "state_conversion_mult",
+     "label": "Conversion",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "state_education_access_add",
+     "label": "Education Access",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "state_food_security_add",
+     "label": "Food Security",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Establish Missions",
+   "techs": [
+    {
+     "id": "civilizing_mission",
+     "name": "Civilizing Mission"
+    }
+   ]
+  },
+  {
+   "cost": 100,
+   "icon": "img/decrees/decree_greener_grass_campaign.png",
+   "id": "decree_greener_grass_campaign",
+   "laws": [],
+   "modifiers": [
+    {
+     "key": "state_migration_pull_add",
+     "label": "Migration Attraction",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "state_migration_pull_mult",
+     "label": "Migration Attraction",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Greener Grass Campaign",
+   "techs": [
+    {
+     "id": "romanticism",
+     "name": "Romanticism"
+    }
+   ]
+  },
+  {
+   "cost": 100,
+   "icon": "img/decrees/decree_promote_national_values.png",
+   "id": "decree_promote_national_values",
+   "laws": [],
+   "modifiers": [
+    {
+     "key": "state_assimilation_mult",
+     "label": "Assimilation",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "state_conversion_mult",
+     "label": "Conversion",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "state_allow_assimilation_in_homeland_bool",
+     "label": "Assimilation in Homeland States Allowed",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    },
+    {
+     "key": "state_allow_assimilation_without_presence_bool",
+     "label": "Assimilation to Primary Culture Always Allowed",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    },
+    {
+     "key": "state_allow_conversion_without_presence_bool",
+     "label": "Conversion to State Religion Always Allowed",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    },
+    {
+     "key": "state_radicalism_increases_violent_hostility_mult",
+     "label": "Radicalism increases for the Violent Hostility Status",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "state_radicalism_increases_cultural_erasure_mult",
+     "label": "Radicalism increases for the Cultural Erasure Status",
+     "tone": "bad",
+     "value": 0.4,
+     "valueText": "+40%"
+    },
+    {
+     "key": "state_radicalism_increases_open_prejudice_mult",
+     "label": "Radicalism increases for the Open Prejudice Status",
+     "tone": "bad",
+     "value": 0.3,
+     "valueText": "+30%"
+    }
+   ],
+   "name": "Promote National Values",
+   "techs": [
+    {
+     "id": "nationalism",
+     "name": "Nationalism"
+    }
+   ]
+  },
+  {
+   "cost": 100,
+   "icon": "img/decrees/decree_promote_social_mobility.png",
+   "id": "decree_promote_social_mobility",
+   "laws": [],
+   "modifiers": [
+    {
+     "key": "state_education_access_add",
+     "label": "Education Access",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "state_pop_qualifications_mult",
+     "label": "Qualifications",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Promote Social Mobility",
+   "techs": []
+  },
+  {
+   "cost": 100,
+   "icon": "img/decrees/decree_road_maintenance.png",
+   "id": "decree_road_maintenance",
+   "laws": [],
+   "modifiers": [
+    {
+     "key": "state_infrastructure_from_population_add",
+     "label": "Infrastructure per … Population",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_infrastructure_from_population_max_add",
+     "label": "Maximum Infrastructure from Population",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "state_construction_mult",
+     "label": "State Construction Efficiency",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "name": "Road Maintenance",
+   "techs": [
+    {
+     "id": "centralization",
+     "name": "Centralization"
+    }
+   ]
+  },
+  {
+   "cost": 100,
+   "icon": "img/decrees/decree_violent_suppression.png",
+   "id": "decree_violent_suppression",
+   "laws": [],
+   "modifiers": [
+    {
+     "key": "state_turmoil_effects_mult",
+     "label": "State Penalties from Turmoil",
+     "tone": "good",
+     "value": -0.5,
+     "valueText": "-50%"
+    },
+    {
+     "key": "state_mortality_turmoil_mult",
+     "label": "Mortality per Turmoil",
+     "tone": "bad",
+     "value": 0.02,
+     "valueText": "+2%"
+    }
+   ],
+   "name": "Violent Suppression",
+   "techs": [
+    {
+     "id": "standing_army",
+     "name": "Standing Army"
+    }
+   ]
+  }
+ ]
+}

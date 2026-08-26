@@ -1,0 +1,143 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import ModifierList from '../components/ModifierList.astro';
+import lawsJson from '../data/laws.json';
+
+const base = import.meta.env.BASE_URL;
+const lawGroups = (lawsJson as any).lawGroups as any[];
+const lawCount = lawGroups.reduce((s, g) => s + g.laws.length, 0);
+const CATEGORY_LABEL: Record<string, string> = {
+  power_structure: 'Power Structure',
+  economy: 'Economy',
+  human_rights: 'Human Rights',
+};
+
+const reqText = (l: any) =>
+  [
+    ...l.techs.map((t: any) => t.name),
+    ...l.requiredLaws.map((x: any) => x.name),
+    ...l.disallowedLaws.map((x: any) => `not ${x.name}`),
+  ].join('; ');
+const csv = {
+  header: ['Law group', 'Category', 'Law', 'Id', 'Progressiveness', 'Requires', 'Institution', 'Effects'],
+  rows: lawGroups.flatMap((g) =>
+    g.laws.map((l: any) => [
+      g.name, g.category ?? '', l.name, l.id, l.progressiveness, reqText(l),
+      l.institution?.name ?? '',
+      l.modifiers.map((m: any) => `${m.valueText} ${m.label}`).join('; '),
+    ]),
+  ),
+};
+
+let lastCategory = '';
+---
+<Base
+  title="Laws"
+  active="laws"
+  eyebrow="Politics"
+  pageFilter="Filter laws…"
+  pageStats={[
+    { value: lawGroups.length, label: 'law groups' },
+    { value: lawCount, label: 'laws' },
+  ]}
+>
+  <TableTools csvId="laws" csvName="victoria3-laws" />
+
+  {lawGroups.map((g) => {
+    const showCategory = g.category !== lastCategory;
+    lastCategory = g.category;
+    return (
+      <>
+        {showCategory && <h2 class="sect">{CATEGORY_LABEL[g.category] ?? g.category}</h2>}
+        <h3 class="lawgroup" id={g.id}>
+          {g.name}
+          {g.enactmentDays && <span class="lawgroup__meta">{g.enactmentDays} base enactment days</span>}
+        </h3>
+        <div class="grid" data-lawgroup><div class="grid__scroll">
+          <table class="vtbl">
+            <thead>
+              <tr>
+                <th style="width: 15rem;">Law</th>
+                <th class="num" style="width: 6rem;" title="Higher = more progressive; ordering within the group">Progress.</th>
+                <th style="width: 18rem;">Requires</th>
+                <th>Effects</th>
+                <th style="width: 14rem;">Institution</th>
+              </tr>
+            </thead>
+            <tbody>
+              {g.laws.map((l: any) => (
+                <tr id={l.id} data-name={`${l.name} ${l.id} ${g.name}`.toLowerCase()}>
+                  <td class="lead-cell">
+                    <span class="lead">
+                      <img class="lead__icon" src={`${base}${l.icon}`} alt="" loading="lazy" />
+                      {l.name}
+                    </span>
+                  </td>
+                  <td class="num dim">{l.progressiveness}</td>
+                  <td class="dim">
+                    {reqText(l) ? (
+                      <>
+                        {l.techs.map((t: any, i: number) => <>{i > 0 && ', '}{t.name}</>)}
+                        {l.requiredLaws.length > 0 && <>{l.techs.length > 0 && ', '}{l.requiredLaws.map((x: any, i: number) => <>{i > 0 && ', '}{x.name}</>)}</>}
+                        {l.disallowedLaws.length > 0 && <>{(l.techs.length > 0 || l.requiredLaws.length > 0) && ', '}{l.disallowedLaws.map((x: any, i: number) => <>{i > 0 && ', '}<span class="tone-bad">not {x.name}</span></>)}</>}
+                      </>
+                    ) : <span class="cell__dash">—</span>}
+                  </td>
+                  <td><ModifierList mods={l.modifiers} /></td>
+                  <td class="dim">
+                    {l.institution ? <a href={`${base}institutions#${l.institution.id}`}>{l.institution.name}</a> : <span class="cell__dash">—</span>}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div></div>
+      </>
+    );
+  })}
+
+  <p class="caption">
+    Ordered by progressiveness within each group · scripted effects (on-enact events, IG shifts) not shown ·
+    ideology stances on the <a href={`${base}ideologies`}>Ideologies</a> page
+  </p>
+
+  <script is:inline define:vars={{ csv }}>
+    window.v3Csv = window.v3Csv || {};
+    window.v3Csv.laws = () => csv;
+  </script>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const rows = [...document.querySelectorAll('tbody tr[data-name]')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const r of rows) r.classList.toggle('is-hidden', !!q && !r.dataset.name.includes(q));
+        // Hide a group's heading + table when every row is filtered out.
+        document.querySelectorAll('[data-lawgroup]').forEach((wrap) => {
+          const any = [...wrap.querySelectorAll('tbody tr[data-name]')].some((r) => !r.classList.contains('is-hidden'));
+          wrap.classList.toggle('is-hidden', !any);
+          const h = wrap.previousElementSibling;
+          if (h?.classList.contains('lawgroup')) h.classList.toggle('is-hidden', !any);
+        });
+      });
+    }
+  </script>
+
+  <style is:global>
+    .lawgroup {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 1.1rem 0 0.35rem;
+      display: flex; align-items: baseline; gap: 0.7rem;
+    }
+    .lawgroup__meta {
+      font-family: var(--font-ui);
+      font-size: 0.68rem;
+      color: var(--text-faint);
+      letter-spacing: 0.03em;
+    }
+  </style>
+</Base>

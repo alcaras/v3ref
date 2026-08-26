@@ -1,0 +1,140 @@
+---
+import Base from '../layouts/Base.astro';
+import ideologiesJson from '../data/ideologies.json';
+import lawsJson from '../data/laws.json';
+
+const base = import.meta.env.BASE_URL;
+const ideologies = (ideologiesJson as any).ideologies as any[];
+const lawGroups = (lawsJson as any).lawGroups as any[];
+
+// Per law group: matrix rows = the group's laws, columns = every ideology
+// with at least one stance in that group.
+const GLYPH: Record<string, string> = {
+  strongly_approve: '++',
+  approve: '+',
+  neutral: '·',
+  disapprove: '−',
+  strongly_disapprove: '−−',
+};
+const TONE: Record<string, string> = {
+  strongly_approve: 'good',
+  approve: 'good',
+  neutral: 'neutral',
+  disapprove: 'bad',
+  strongly_disapprove: 'bad',
+};
+const core = ideologies.filter((i) => i.core);
+const groupsWithCols = lawGroups
+  .map((g) => {
+    const lawIds = g.laws.map((l: any) => l.id);
+    const cols = core.filter((i) => lawIds.some((id: string) => i.stances[id]));
+    return { ...g, cols };
+  })
+  .filter((g) => g.cols.length > 0);
+const stanceCount = ideologies.reduce((s, i) => s + Object.keys(i.stances).length, 0);
+---
+<Base
+  title="Ideologies"
+  active="ideologies"
+  eyebrow="Politics"
+  pageFilter="Filter ideologies…"
+  pageStats={[
+    { value: ideologies.length, label: 'ideologies' },
+    { value: stanceCount, label: 'law stances' },
+  ]}
+>
+  <div class="legends" style="margin-bottom: 0.75rem;">
+    <div class="legend">
+      <span class="legend__label">Stance</span>
+      <span class="chip"><b class="tone-good">++</b> strongly approve</span>
+      <span class="chip"><b class="tone-good">+</b> approve</span>
+      <span class="chip"><b class="tone-neutral">·</b> neutral</span>
+      <span class="chip"><b class="tone-bad">−</b> disapprove</span>
+      <span class="chip"><b class="tone-bad">−−</b> strongly disapprove</span>
+    </div>
+  </div>
+
+  {groupsWithCols.map((g) => (
+    <div data-iggroup>
+      <h2 class="sect" id={g.id}>{g.name}</h2>
+      <div class="grid"><div class="grid__scroll">
+        <table class="vtbl vtbl--matrix">
+          <thead>
+            <tr>
+              <th style="min-width: 11rem;">Law</th>
+              {g.cols.map((i: any) => (
+                <th class="ideo-col" id={`${g.id}-${i.id}`} data-ideo={i.id} data-name={i.name.toLowerCase()}>
+                  <span class="ideo-hdr" title={i.name}>
+                    <img src={`${base}${i.icon}`} alt="" loading="lazy" />
+                    <span>{i.name}</span>
+                  </span>
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {g.laws.map((l: any) => (
+              <tr>
+                <td class="lead-cell">
+                  <span class="lead">
+                    <img class="lead__icon" src={`${base}${l.icon}`} alt="" loading="lazy" />
+                    <a href={`${base}laws#${l.id}`}>{l.name}</a>
+                  </span>
+                </td>
+                {g.cols.map((i: any) => {
+                  const s = i.stances[l.id];
+                  return (
+                    <td class="num stance" data-ideo={i.id}>
+                      {s ? <b class={`tone-${TONE[s]}`} title={`${i.name}: ${s.replace('_', ' ')}`}>{GLYPH[s]}</b> : <span class="cell__dash">—</span>}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+  ))}
+
+  <p class="caption">
+    Core generic ideologies only — {ideologies.length - core.length} country-flavored and event variants
+    (Carlist, Shogunate, …) exist in script and mostly mirror these stances
+  </p>
+
+  <script is:inline>
+    // Filter by ideology name: hides non-matching ideology COLUMNS (and any
+    // group where no column survives). Law rows always stay.
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        document.querySelectorAll('[data-iggroup]').forEach((wrap) => {
+          let visible = 0;
+          wrap.querySelectorAll('th.ideo-col').forEach((th) => {
+            const show = !q || th.dataset.name.includes(q);
+            th.classList.toggle('is-hidden', !show);
+            if (show) visible++;
+            wrap.querySelectorAll(`td.stance[data-ideo="${th.dataset.ideo}"]`)
+              .forEach((td) => td.classList.toggle('is-hidden', !show));
+          });
+          wrap.classList.toggle('is-hidden', visible === 0);
+        });
+      });
+    }
+  </script>
+
+  <style is:global>
+    .vtbl--matrix td.stance { text-align: center; }
+    .ideo-hdr {
+      display: inline-flex; flex-direction: column; align-items: center; gap: 0.2rem;
+      max-width: 5.2rem;
+    }
+    .ideo-hdr img { width: 20px; height: 20px; object-fit: contain; }
+    .ideo-hdr span {
+      font-size: 0.56rem; letter-spacing: 0.04em; text-align: center;
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 5.2rem;
+    }
+    .vtbl--matrix thead th.ideo-col { text-align: center; padding: 0.4rem 0.3rem 0.35rem; }
+  </style>
+</Base>

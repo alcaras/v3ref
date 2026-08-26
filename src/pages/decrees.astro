@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import ModifierList from '../components/ModifierList.astro';
+import decreesJson from '../data/decrees.json';
+
+const base = import.meta.env.BASE_URL;
+const decrees = (decreesJson as any).decrees as any[];
+---
+<Base
+  title="Decrees"
+  active="decrees"
+  eyebrow="Politics"
+  pageStats={[{ value: decrees.length, label: 'decrees' }]}
+>
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl">
+        <thead>
+          <tr>
+            <th style="width: 16rem;">Decree</th>
+            <th class="num" style="width: 7rem;" title="Authority cost (scales with power rank)">Authority</th>
+            <th style="width: 16rem;">Requires</th>
+            <th>State effects</th>
+          </tr>
+        </thead>
+        <tbody>
+          {decrees.map((d) => (
+            <tr id={d.id}>
+              <td class="lead-cell">
+                <span class="lead">
+                  <img class="lead__icon" src={`${base}${d.icon}`} alt="" loading="lazy" />
+                  {d.name}
+                </span>
+              </td>
+              <td class="num">{d.cost ?? <span class="cell__dash">—</span>}</td>
+              <td class="dim">
+                {[...d.techs, ...d.laws].length ? [...d.techs, ...d.laws].map((r: any, i: number) => (
+                  <>{i > 0 && ', '}{r.name}</>
+                )) : <span class="cell__dash">—</span>}
+              </td>
+              <td><ModifierList mods={d.modifiers} /></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="caption">One decree per state · authority cost scales with power rank</p>
+</Base>

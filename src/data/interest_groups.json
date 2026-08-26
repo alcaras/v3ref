@@ -1,0 +1,732 @@
+{
+ "interestGroups": [
+  {
+   "characterIdeologies": [
+    {
+     "id": "ideology_moderate",
+     "name": "Moderate"
+    },
+    {
+     "id": "ideology_authoritarian",
+     "name": "Authoritarian"
+    }
+   ],
+   "icon": "img/igs/armed_forces.png",
+   "id": "ig_armed_forces",
+   "ideologies": [
+    {
+     "id": "ideology_jingoist",
+     "name": "Jingoist"
+    },
+    {
+     "id": "ideology_loyalist",
+     "name": "Loyalist"
+    },
+    {
+     "id": "ideology_patriotic",
+     "name": "Patriotic"
+    }
+   ],
+   "name": "Armed Forces",
+   "traits": [
+    {
+     "id": "ig_trait_patriotic_fervor",
+     "maxApproval": null,
+     "minApproval": "loyal",
+     "modifiers": [
+      {
+       "key": "unit_offense_mult",
+       "label": "Offense",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "unit_defense_mult",
+       "label": "Defense",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Patriotic Fervor"
+    },
+    {
+     "id": "ig_trait_veteran_consultation",
+     "maxApproval": null,
+     "minApproval": "happy",
+     "modifiers": [
+      {
+       "key": "country_military_tech_research_speed_mult",
+       "label": "Military Research Speed",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Veteran Consultation"
+    },
+    {
+     "id": "ig_trait_materiel_waste",
+     "maxApproval": "unhappy",
+     "minApproval": null,
+     "modifiers": [
+      {
+       "key": "country_military_goods_cost_mult",
+       "label": "Military Goods Cost",
+       "tone": "bad",
+       "value": 0.15,
+       "valueText": "+15%"
+      }
+     ],
+     "name": "Materiel Waste"
+    }
+   ]
+  },
+  {
+   "characterIdeologies": [
+    {
+     "id": "ideology_moderate",
+     "name": "Moderate"
+    },
+    {
+     "id": "ideology_traditionalist",
+     "name": "Traditionalist"
+    }
+   ],
+   "icon": "img/igs/devout.png",
+   "id": "ig_devout",
+   "ideologies": [
+    {
+     "id": "ideology_pious",
+     "name": "Pious"
+    },
+    {
+     "id": "ideology_moralist",
+     "name": "Moralist"
+    },
+    {
+     "id": "ideology_patriarchal",
+     "name": "Patriarchal"
+    }
+   ],
+   "name": "Devout",
+   "traits": [
+    {
+     "id": "ig_trait_be_fruitful_and_multiply",
+     "maxApproval": null,
+     "minApproval": "loyal",
+     "modifiers": [
+      {
+       "key": "state_birth_rate_mult",
+       "label": "Birth Rate",
+       "tone": "good",
+       "value": 0.025,
+       "valueText": "+3%"
+      }
+     ],
+     "name": "Be Fruitful and Multiply"
+    },
+    {
+     "id": "ig_trait_divine_right",
+     "maxApproval": null,
+     "minApproval": "happy",
+     "modifiers": [
+      {
+       "key": "country_authority_mult",
+       "label": "…Authority",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Divine Right"
+    },
+    {
+     "id": "ig_trait_pious_fiction",
+     "maxApproval": "unhappy",
+     "minApproval": null,
+     "modifiers": [
+      {
+       "key": "state_education_access_add",
+       "label": "Education Access",
+       "tone": "bad",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Pious Fiction"
+    }
+   ]
+  },
+  {
+   "characterIdeologies": [
+    {
+     "id": "ideology_moderate",
+     "name": "Moderate"
+    },
+    {
+     "id": "ideology_market_liberal",
+     "name": "Market Liberal"
+    },
+    {
+     "id": "ideology_protectionist",
+     "name": "Protectionist"
+    }
+   ],
+   "icon": "img/igs/industrialists.png",
+   "id": "ig_industrialists",
+   "ideologies": [
+    {
+     "id": "ideology_plutocratic",
+     "name": "Plutocratic"
+    },
+    {
+     "id": "ideology_laissez_faire",
+     "name": "Laissez-Faire"
+    },
+    {
+     "id": "ideology_individualist",
+     "name": "Individualist"
+    }
+   ],
+   "name": "Industrialists",
+   "traits": [
+    {
+     "id": "ig_trait_job_creators",
+     "maxApproval": null,
+     "minApproval": "loyal",
+     "modifiers": [
+      {
+       "key": "state_capitalists_investment_pool_efficiency_mult",
+       "label": "Capitalists Investment Pool contribution efficiency",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Job Creators"
+    },
+    {
+     "id": "ig_trait_engines_of_progress",
+     "maxApproval": null,
+     "minApproval": "happy",
+     "modifiers": [
+      {
+       "key": "country_production_tech_research_speed_mult",
+       "label": "Production Research Speed",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Engines of Progress"
+    },
+    {
+     "id": "ig_trait_tax_avoidance",
+     "maxApproval": "unhappy",
+     "minApproval": null,
+     "modifiers": [
+      {
+       "key": "building_group_bg_manufacturing_tax_mult",
+       "label": "Manufacturing Tax Income",
+       "tone": "neutral",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Tax Avoidance"
+    }
+   ]
+  },
+  {
+   "characterIdeologies": [
+    {
+     "id": "ideology_moderate",
+     "name": "Moderate"
+    },
+    {
+     "id": "ideology_republican_leader",
+     "name": "Republican"
+    },
+    {
+     "id": "ideology_radical",
+     "name": "Radical"
+    },
+    {
+     "id": "ideology_reformer",
+     "name": "Reformer"
+    },
+    {
+     "id": "ideology_sovereignist_leader",
+     "name": "Sovereignist"
+    },
+    {
+     "id": "ideology_despotic_utopian",
+     "name": "Despotic Utopian"
+    },
+    {
+     "id": "ideology_humanitarian",
+     "name": "Humanitarian"
+    },
+    {
+     "id": "ideology_utopian",
+     "name": "Utopian"
+    }
+   ],
+   "icon": "img/igs/intelligensia.png",
+   "id": "ig_intelligentsia",
+   "ideologies": [
+    {
+     "id": "ideology_liberal",
+     "name": "Liberal"
+    },
+    {
+     "id": "ideology_anti_clerical",
+     "name": "Anti-Clerical"
+    },
+    {
+     "id": "ideology_republican",
+     "name": "Republican"
+    },
+    {
+     "id": "ideology_anti_slavery",
+     "name": "Anti-Slavery"
+    }
+   ],
+   "name": "Intelligentsia",
+   "traits": [
+    {
+     "id": "ig_trait_propagandists",
+     "maxApproval": null,
+     "minApproval": "loyal",
+     "modifiers": [
+      {
+       "key": "state_migration_pull_mult",
+       "label": "Migration Attraction",
+       "tone": "good",
+       "value": 0.15,
+       "valueText": "+15%"
+      }
+     ],
+     "name": "Propagandists"
+    },
+    {
+     "id": "ig_trait_avant_garde",
+     "maxApproval": null,
+     "minApproval": "happy",
+     "modifiers": [
+      {
+       "key": "country_society_tech_research_speed_mult",
+       "label": "Society Research Speed",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Avant-garde"
+    },
+    {
+     "id": "ig_trait_social_criticism",
+     "maxApproval": "unhappy",
+     "minApproval": null,
+     "modifiers": [
+      {
+       "key": "country_prestige_mult",
+       "label": "Prestige",
+       "tone": "bad",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Social Criticism"
+    }
+   ]
+  },
+  {
+   "characterIdeologies": [
+    {
+     "id": "ideology_moderate",
+     "name": "Moderate"
+    },
+    {
+     "id": "ideology_traditionalist",
+     "name": "Traditionalist"
+    }
+   ],
+   "icon": "img/igs/landowners.png",
+   "id": "ig_landowners",
+   "ideologies": [
+    {
+     "id": "ideology_paternalistic",
+     "name": "Paternalistic"
+    },
+    {
+     "id": "ideology_hierarchic",
+     "name": "Hierarchic"
+    },
+    {
+     "id": "ideology_patriarchal",
+     "name": "Patriarchal"
+    }
+   ],
+   "name": "Landowners",
+   "traits": [
+    {
+     "id": "ig_trait_noblesse_oblige",
+     "maxApproval": null,
+     "minApproval": "loyal",
+     "modifiers": [
+      {
+       "key": "state_aristocrats_investment_pool_efficiency_mult",
+       "label": "Aristocrats Investment Pool contribution efficiency",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Noblesse Oblige"
+    },
+    {
+     "id": "ig_trait_family_ties",
+     "maxApproval": null,
+     "minApproval": "happy",
+     "modifiers": [
+      {
+       "key": "country_influence_mult",
+       "label": "…Influence",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Family Ties"
+    },
+    {
+     "id": "ig_trait_noble_privileges",
+     "maxApproval": "unhappy",
+     "minApproval": null,
+     "modifiers": [
+      {
+       "key": "building_group_bg_agriculture_tax_mult",
+       "label": "Agriculture Tax Income",
+       "tone": "neutral",
+       "value": -0.1,
+       "valueText": "-10%"
+      },
+      {
+       "key": "building_group_bg_ranching_tax_mult",
+       "label": "Ranching Tax Income",
+       "tone": "neutral",
+       "value": -0.1,
+       "valueText": "-10%"
+      },
+      {
+       "key": "building_group_bg_plantations_tax_mult",
+       "label": "Plantation Tax Income",
+       "tone": "neutral",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Noble Privileges"
+    }
+   ]
+  },
+  {
+   "characterIdeologies": [
+    {
+     "id": "ideology_moderate",
+     "name": "Moderate"
+    },
+    {
+     "id": "ideology_traditionalist",
+     "name": "Traditionalist"
+    },
+    {
+     "id": "ideology_jingoist_leader",
+     "name": "Jingoist"
+    },
+    {
+     "id": "ideology_protectionist",
+     "name": "Protectionist"
+    },
+    {
+     "id": "ideology_sovereignist_leader",
+     "name": "Sovereignist"
+    },
+    {
+     "id": "ideology_despotic_utopian",
+     "name": "Despotic Utopian"
+    }
+   ],
+   "icon": "img/igs/petty_bourgeoisie.png",
+   "id": "ig_petty_bourgeoisie",
+   "ideologies": [
+    {
+     "id": "ideology_reactionary",
+     "name": "Reactionary"
+    },
+    {
+     "id": "ideology_meritocratic",
+     "name": "Meritocratic"
+    },
+    {
+     "id": "ideology_patriotic",
+     "name": "Patriotic"
+    }
+   ],
+   "name": "Petite Bourgeoisie",
+   "traits": [
+    {
+     "id": "ig_trait_treasury_bonds",
+     "maxApproval": null,
+     "minApproval": "loyal",
+     "modifiers": [
+      {
+       "key": "country_loan_interest_rate_mult",
+       "label": "Loan interest rate",
+       "tone": "good",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Treasury Bonds"
+    },
+    {
+     "id": "ig_trait_middle_managers",
+     "maxApproval": null,
+     "minApproval": "happy",
+     "modifiers": [
+      {
+       "key": "country_bureaucracy_mult",
+       "label": "…Bureaucracy",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Middle Managers"
+    },
+    {
+     "id": "ig_trait_xenophobia",
+     "maxApproval": "unhappy",
+     "minApproval": null,
+     "modifiers": [
+      {
+       "key": "state_radicalism_increases_violent_hostility_mult",
+       "label": "Radicalism increases for the Violent Hostility Status",
+       "tone": "bad",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "state_radicalism_increases_cultural_erasure_mult",
+       "label": "Radicalism increases for the Cultural Erasure Status",
+       "tone": "bad",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "state_radicalism_increases_open_prejudice_mult",
+       "label": "Radicalism increases for the Open Prejudice Status",
+       "tone": "bad",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "country_influence_mult",
+       "label": "…Influence",
+       "tone": "bad",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Xenophobia"
+    }
+   ]
+  },
+  {
+   "characterIdeologies": [
+    {
+     "id": "ideology_moderate",
+     "name": "Moderate"
+    },
+    {
+     "id": "ideology_pacifist",
+     "name": "Pacifist"
+    }
+   ],
+   "icon": "img/igs/rural_folk.png",
+   "id": "ig_rural_folk",
+   "ideologies": [
+    {
+     "id": "ideology_agrarian",
+     "name": "Agrarian"
+    },
+    {
+     "id": "ideology_particularist",
+     "name": "Particularist"
+    },
+    {
+     "id": "ideology_isolationist",
+     "name": "Isolationist"
+    }
+   ],
+   "name": "Rural Folk",
+   "traits": [
+    {
+     "id": "ig_trait_farmers_markets",
+     "maxApproval": null,
+     "minApproval": "loyal",
+     "modifiers": [
+      {
+       "key": "state_infrastructure_mult",
+       "label": "Infrastructure",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Farmer's Markets"
+    },
+    {
+     "id": "ig_trait_honest_work",
+     "maxApproval": null,
+     "minApproval": "happy",
+     "modifiers": [
+      {
+       "key": "building_group_bg_agriculture_throughput_add",
+       "label": "Agriculture Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_group_bg_plantations_throughput_add",
+       "label": "Plantations Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      },
+      {
+       "key": "building_group_bg_ranching_throughput_add",
+       "label": "Ranches Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Honest Work"
+    },
+    {
+     "id": "ig_trait_old_ways",
+     "maxApproval": "unhappy",
+     "minApproval": null,
+     "modifiers": [
+      {
+       "key": "country_tech_spread_mult",
+       "label": "Technology Spread",
+       "tone": "bad",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Old Ways"
+    }
+   ]
+  },
+  {
+   "characterIdeologies": [
+    {
+     "id": "ideology_moderate",
+     "name": "Moderate"
+    },
+    {
+     "id": "ideology_reformer",
+     "name": "Reformer"
+    },
+    {
+     "id": "ideology_radical",
+     "name": "Radical"
+    },
+    {
+     "id": "ideology_utopian",
+     "name": "Utopian"
+    },
+    {
+     "id": "ideology_despotic_utopian",
+     "name": "Despotic Utopian"
+    }
+   ],
+   "icon": "img/igs/trade_unions.png",
+   "id": "ig_trade_unions",
+   "ideologies": [
+    {
+     "id": "ideology_proletarian",
+     "name": "Proletarian"
+    },
+    {
+     "id": "ideology_egalitarian",
+     "name": "Egalitarian"
+    },
+    {
+     "id": "ideology_populist",
+     "name": "Populist"
+    },
+    {
+     "id": "ideology_anti_slavery",
+     "name": "Anti-Slavery"
+    }
+   ],
+   "name": "Trade Unions",
+   "traits": [
+    {
+     "id": "ig_trait_solidarity",
+     "maxApproval": null,
+     "minApproval": "loyal",
+     "modifiers": [
+      {
+       "key": "state_working_adult_ratio_add",
+       "label": "Workforce Ratio",
+       "tone": "good",
+       "value": 0.05,
+       "valueText": "+5%"
+      }
+     ],
+     "name": "Solidarity"
+    },
+    {
+     "id": "ig_trait_industrial_organizers",
+     "maxApproval": null,
+     "minApproval": "happy",
+     "modifiers": [
+      {
+       "key": "building_group_bg_manufacturing_throughput_add",
+       "label": "Manufacturing Industries Throughput",
+       "tone": "good",
+       "value": 0.1,
+       "valueText": "+10%"
+      }
+     ],
+     "name": "Industrial Organizers"
+    },
+    {
+     "id": "ig_trait_work_to_rule",
+     "maxApproval": "unhappy",
+     "minApproval": null,
+     "modifiers": [
+      {
+       "key": "state_construction_mult",
+       "label": "State Construction Efficiency",
+       "tone": "bad",
+       "value": -0.1,
+       "valueText": "-10%"
+      }
+     ],
+     "name": "Work-to-rule"
+    }
+   ]
+  }
+ ]
+}

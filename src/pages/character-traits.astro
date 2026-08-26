@@ -1,0 +1,90 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import ModifierList from '../components/ModifierList.astro';
+import traitsJson from '../data/character_traits.json';
+
+const base = import.meta.env.BASE_URL;
+const traits = (traitsJson as any).traits as any[];
+const types = ['personality', 'skill', 'condition'];
+const TYPE_LABEL: Record<string, string> = {
+  personality: 'Personality',
+  skill: 'Skill',
+  condition: 'Condition',
+};
+
+const modText = (mods: any[]) => mods.map((m) => `${m.valueText} ${m.label}`).join('; ');
+const csv = {
+  header: ['Trait', 'Id', 'Type', 'Character effects', 'Country effects (in power)', 'Command effects'],
+  rows: traits.map((t) => [
+    t.name, t.id, t.type ?? '', modText(t.character), modText(t.country), modText(t.command),
+  ]),
+};
+---
+<Base
+  title="Character Traits"
+  active="character-traits"
+  eyebrow="Politics"
+  pageFilter="Filter traits…"
+  pageStats={[{ value: traits.length, label: 'traits' }]}
+>
+  <TableTools csvId="traits" csvName="victoria3-character-traits" />
+
+  {types.map((type) => (
+    <div data-traitgroup>
+      <h2 class="sect">{TYPE_LABEL[type]}</h2>
+      <div class="grid"><div class="grid__scroll">
+        <table class="vtbl">
+          <thead>
+            <tr>
+              <th style="width: 13rem;">Trait</th>
+              <th>Character</th>
+              <th>Country (while in power)</th>
+              <th>Command</th>
+            </tr>
+          </thead>
+          <tbody>
+            {traits.filter((t) => t.type === type).map((t) => (
+              <tr id={t.id} data-name={`${t.name} ${t.id}`.toLowerCase()}>
+                <td class="lead-cell">
+                  <span class="lead">
+                    <img class="lead__icon" src={`${base}${t.icon}`} alt="" loading="lazy" />
+                    {t.name}
+                  </span>
+                </td>
+                <td><ModifierList mods={t.character} /></td>
+                <td><ModifierList mods={t.country} /></td>
+                <td><ModifierList mods={t.command} /></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+  ))}
+
+  <p class="caption">
+    Country effects apply while the character heads their IG in government or rules ·
+    command effects apply to led formations
+  </p>
+
+  <script is:inline define:vars={{ csv }}>
+    window.v3Csv = window.v3Csv || {};
+    window.v3Csv.traits = () => csv;
+  </script>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const rows = [...document.querySelectorAll('tbody tr[data-name]')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const r of rows) r.classList.toggle('is-hidden', !!q && !r.dataset.name.includes(q));
+        document.querySelectorAll('[data-traitgroup]').forEach((wrap) => {
+          const any = [...wrap.querySelectorAll('tbody tr[data-name]')].some((r) => !r.classList.contains('is-hidden'));
+          wrap.classList.toggle('is-hidden', !any);
+        });
+      });
+    }
+  </script>
+</Base>

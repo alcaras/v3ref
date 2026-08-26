@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import ModifierList from '../components/ModifierList.astro';
+import institutionsJson from '../data/institutions.json';
+
+const base = import.meta.env.BASE_URL;
+const institutions = (institutionsJson as any).institutions as any[];
+---
+<Base
+  title="Institutions"
+  active="institutions"
+  eyebrow="Politics"
+  pageStats={[{ value: institutions.length, label: 'institutions' }]}
+>
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl">
+        <thead>
+          <tr>
+            <th style="width: 16rem;">Institution</th>
+            <th>Effects per investment level</th>
+            <th style="width: 22rem;">Funded by laws</th>
+          </tr>
+        </thead>
+        <tbody>
+          {institutions.map((inst) => (
+            <tr id={inst.id}>
+              <td class="lead-cell">
+                <span class="lead">
+                  <img class="lead__icon" src={`${base}${inst.icon}`} alt="" loading="lazy" />
+                  {inst.name}
+                </span>
+              </td>
+              <td>
+                {inst.modifiers.length ? <ModifierList mods={inst.modifiers} /> :
+                  <span class="dim" style="color: var(--text-dim);">Effects scripted per law (see the funding laws)</span>}
+              </td>
+              <td class="dim">
+                {inst.laws.length ? inst.laws.map((l: any, i: number) => (
+                  <>{i > 0 && ', '}<a href={`${base}laws#${l.id}`}>{l.name}</a></>
+                )) : <span class="cell__dash">—</span>}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="caption">Modifiers scale with the institution's investment level · max level grows with technology</p>
+</Base>

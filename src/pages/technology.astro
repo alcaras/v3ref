@@ -1,0 +1,130 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import ModifierList from '../components/ModifierList.astro';
+import techsJson from '../data/techs.json';
+
+const base = import.meta.env.BASE_URL;
+const techs = (techsJson as any).techs as any[];
+const categories = ['production', 'military', 'society'];
+const CATEGORY_LABEL: Record<string, string> = {
+  production: 'Production',
+  military: 'Military',
+  society: 'Society',
+};
+
+const unlockText = (t: any) =>
+  [
+    ...t.unlocks.buildings.map((x: any) => x.name),
+    ...t.unlocks.pms.map((x: any) => x.name),
+    ...t.unlocks.laws.map((x: any) => x.name),
+    ...t.unlocks.decrees.map((x: any) => x.name),
+  ].join('; ');
+const csv = {
+  header: ['Technology', 'Id', 'Category', 'Era', 'Prerequisites', 'Own effects', 'Unlocks buildings', 'Unlocks PMs', 'Unlocks laws', 'Unlocks decrees'],
+  rows: techs.map((t) => [
+    t.name, t.id, t.category ?? '', t.era, t.prereqs.map((p: any) => p.name).join('; '),
+    t.modifiers.map((m: any) => `${m.valueText} ${m.label}`).join('; '),
+    t.unlocks.buildings.map((x: any) => x.name).join('; '),
+    t.unlocks.pms.map((x: any) => x.name).join('; '),
+    t.unlocks.laws.map((x: any) => x.name).join('; '),
+    t.unlocks.decrees.map((x: any) => x.name).join('; '),
+  ]),
+};
+---
+<Base
+  title="Technology"
+  active="technology"
+  eyebrow="Technology"
+  pageFilter="Filter technologies…"
+  pageStats={[
+    { value: techs.length, label: 'technologies' },
+    { value: 5, label: 'eras' },
+  ]}
+>
+  <TableTools csvId="techs" csvName="victoria3-technologies" />
+
+  {categories.map((cat) => (
+    <div data-techgroup>
+      <h2 class="sect">{CATEGORY_LABEL[cat]}</h2>
+      <div class="grid"><div class="grid__scroll">
+        <table class="vtbl">
+          <thead>
+            <tr>
+              <th style="width: 15rem;">Technology</th>
+              <th class="num" style="width: 3.5rem;">Era</th>
+              <th style="width: 15rem;">Requires</th>
+              <th style="width: 20rem;">Own effects</th>
+              <th>Unlocks</th>
+            </tr>
+          </thead>
+          <tbody>
+            {techs.filter((t) => t.category === cat).map((t) => (
+              <tr id={t.id} data-name={`${t.name} ${t.id}`.toLowerCase()}>
+                <td class="lead-cell">
+                  <span class="lead">
+                    <img class="lead__icon" src={`${base}${t.icon}`} alt="" loading="lazy" />
+                    {t.name}
+                    {!t.canResearch && <span class="chip" title="Granted by script, cannot be researched">· scripted</span>}
+                  </span>
+                </td>
+                <td class="num dim">{t.era}</td>
+                <td class="dim">
+                  {t.prereqs.length ? t.prereqs.map((p: any, i: number) => (
+                    <>{i > 0 && ', '}<a href={`${base}technology#${p.id}`}>{p.name}</a></>
+                  )) : <span class="cell__dash">—</span>}
+                </td>
+                <td><ModifierList mods={t.modifiers} /></td>
+                <td class="dim">
+                  {unlockText(t) ? (
+                    <>
+                      {t.unlocks.buildings.map((x: any, i: number) => (
+                        <>{i > 0 && ', '}<a href={`${base}buildings/${x.slug}`}>{x.name}</a></>
+                      ))}
+                      {t.unlocks.pms.length > 0 && (
+                        <>{t.unlocks.buildings.length > 0 && ' · '}<span title={t.unlocks.pms.map((x: any) => x.name).join(', ')}>{t.unlocks.pms.length} PM{t.unlocks.pms.length > 1 ? 's' : ''}</span>: {t.unlocks.pms.slice(0, 4).map((x: any) => x.name).join(', ')}{t.unlocks.pms.length > 4 ? ', …' : ''}</>
+                      )}
+                      {t.unlocks.laws.length > 0 && (
+                        <>{(t.unlocks.buildings.length > 0 || t.unlocks.pms.length > 0) && ' · '}laws: {t.unlocks.laws.map((x: any, i: number) => (
+                          <>{i > 0 && ', '}<a href={`${base}laws#${x.id}`}>{x.name}</a></>
+                        ))}</>
+                      )}
+                      {t.unlocks.decrees.length > 0 && (
+                        <>{(t.unlocks.buildings.length > 0 || t.unlocks.pms.length > 0 || t.unlocks.laws.length > 0) && ' · '}decrees: {t.unlocks.decrees.map((x: any) => x.name).join(', ')}</>
+                      )}
+                    </>
+                  ) : <span class="cell__dash">—</span>}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+  ))}
+
+  <p class="caption">
+    Unlocks gathered by scanning buildings, production methods, laws, and decrees for tech gates ·
+    journal entries, units, and companies join this index as their pages are built
+  </p>
+
+  <script is:inline define:vars={{ csv }}>
+    window.v3Csv = window.v3Csv || {};
+    window.v3Csv.techs = () => csv;
+  </script>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const rows = [...document.querySelectorAll('tbody tr[data-name]')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const r of rows) r.classList.toggle('is-hidden', !!q && !r.dataset.name.includes(q));
+        document.querySelectorAll('[data-techgroup]').forEach((wrap) => {
+          const any = [...wrap.querySelectorAll('tbody tr[data-name]')].some((r) => !r.classList.contains('is-hidden'));
+          wrap.classList.toggle('is-hidden', !any);
+        });
+      });
+    }
+  </script>
+</Base>

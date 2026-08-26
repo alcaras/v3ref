@@ -1,0 +1,7142 @@
+{
+ "techs": [
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/cotton_gin.png",
+   "id": "cotton_gin",
+   "modifiers": [
+    {
+     "key": "building_cotton_plantation_throughput_add",
+     "label": "Cotton Plantations building Throughput",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Cotton Gin",
+   "prereqs": [
+    {
+     "id": "manufacturies",
+     "name": "Manufacturies"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/distillation.png",
+   "id": "distillation",
+   "modifiers": [],
+   "name": "Distillation",
+   "prereqs": [
+    {
+     "id": "manufacturies",
+     "name": "Manufacturies"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_pot_stills",
+      "name": "Pot Stills"
+     },
+     {
+      "id": "pm_sweeteners",
+      "name": "Sweeteners"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/enclosure.png",
+   "id": "enclosure",
+   "modifiers": [],
+   "name": "Enclosure",
+   "prereqs": [],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_banana_plantation",
+      "name": "Banana Plantations",
+      "slug": "banana_plantation"
+     },
+     {
+      "id": "building_coffee_plantation",
+      "name": "Coffee Plantations",
+      "slug": "coffee_plantation"
+     },
+     {
+      "id": "building_cotton_plantation",
+      "name": "Cotton Plantations",
+      "slug": "cotton_plantation"
+     },
+     {
+      "id": "building_dye_plantation",
+      "name": "Dye Plantations",
+      "slug": "dye_plantation"
+     },
+     {
+      "id": "building_livestock_ranch",
+      "name": "Livestock Ranches",
+      "slug": "livestock_ranch"
+     },
+     {
+      "id": "building_maize_farm",
+      "name": "Maize Farms",
+      "slug": "maize_farm"
+     },
+     {
+      "id": "building_millet_farm",
+      "name": "Millet Farms",
+      "slug": "millet_farm"
+     },
+     {
+      "id": "building_opium_plantation",
+      "name": "Opium Plantations",
+      "slug": "opium_plantation"
+     },
+     {
+      "id": "building_rice_farm",
+      "name": "Rice Farms",
+      "slug": "rice_farm"
+     },
+     {
+      "id": "building_rye_farm",
+      "name": "Rye Farms",
+      "slug": "rye_farm"
+     },
+     {
+      "id": "building_silk_plantation",
+      "name": "Silk Plantations",
+      "slug": "silk_plantation"
+     },
+     {
+      "id": "building_sugar_plantation",
+      "name": "Sugar Plantations",
+      "slug": "sugar_plantation"
+     },
+     {
+      "id": "building_tea_plantation",
+      "name": "Tea Plantations",
+      "slug": "tea_plantation"
+     },
+     {
+      "id": "building_tobacco_plantation",
+      "name": "Tobacco Plantations",
+      "slug": "tobacco_plantation"
+     },
+     {
+      "id": "building_vineyard",
+      "name": "Vineyards",
+      "slug": "vineyard"
+     },
+     {
+      "id": "building_wheat_farm",
+      "name": "Wheat Farms",
+      "slug": "wheat_farm"
+     }
+    ],
+    "decrees": [
+     {
+      "id": "decree_encourage_agricultural_industry",
+      "name": "Encourage Agricultural Industry"
+     }
+    ],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/lathe.png",
+   "id": "lathe",
+   "modifiers": [],
+   "name": "Lathe",
+   "prereqs": [
+    {
+     "id": "cotton_gin",
+     "name": "Cotton Gin"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_dye_workshops",
+      "name": "Dye Workshops"
+     },
+     {
+      "id": "pm_lathe",
+      "name": "Lathes"
+     },
+     {
+      "id": "pm_leaded_glass",
+      "name": "Leaded Glass"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/manufacturies.png",
+   "id": "manufacturies",
+   "modifiers": [],
+   "name": "Manufacturies",
+   "prereqs": [],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_food_industry",
+      "name": "Food Industries",
+      "slug": "food_industry"
+     },
+     {
+      "id": "building_furniture_manufactory",
+      "name": "Furniture Manufacturies",
+      "slug": "furniture_manufactory"
+     },
+     {
+      "id": "building_glassworks",
+      "name": "Glassworks",
+      "slug": "glassworks"
+     },
+     {
+      "id": "building_paper_mill",
+      "name": "Paper Mills",
+      "slug": "paper_mill"
+     },
+     {
+      "id": "building_textile_mill",
+      "name": "Textile Mills",
+      "slug": "textile_mill"
+     },
+     {
+      "id": "building_tooling_workshop",
+      "name": "Tooling Workshops",
+      "slug": "tooling_workshop"
+     }
+    ],
+    "decrees": [
+     {
+      "id": "decree_encourage_manufacturing_industry",
+      "name": "Encourage Manufacturing Industry"
+     }
+    ],
+    "laws": [
+     {
+      "id": "law_interventionism",
+      "name": "Interventionism"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/prospecting_tech.png",
+   "id": "prospecting",
+   "modifiers": [],
+   "name": "Prospecting",
+   "prereqs": [
+    {
+     "id": "shaft_mining",
+     "name": "Shaft Mining"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_gold_field",
+      "name": "Gold Fields",
+      "slug": "gold_field"
+     },
+     {
+      "id": "building_gold_mine",
+      "name": "Gold Mines",
+      "slug": "gold_mine"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": false,
+   "category": "production",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/sericulture.png",
+   "id": "sericulture",
+   "modifiers": [
+    {
+     "key": "building_silk_plantation_throughput_add",
+     "label": "Silk Plantations building Throughput",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Sericulture",
+   "prereqs": [],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/shaft_mining.png",
+   "id": "shaft_mining",
+   "modifiers": [],
+   "name": "Shaft Mining",
+   "prereqs": [
+    {
+     "id": "enclosure",
+     "name": "Enclosure"
+    },
+    {
+     "id": "manufacturies",
+     "name": "Manufacturies"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_coal_mine",
+      "name": "Coal Mines",
+      "slug": "coal_mine"
+     },
+     {
+      "id": "building_iron_mine",
+      "name": "Iron Mines",
+      "slug": "iron_mine"
+     },
+     {
+      "id": "building_lead_mine",
+      "name": "Lead Mines",
+      "slug": "lead_mine"
+     },
+     {
+      "id": "building_sulfur_mine",
+      "name": "Sulfur Mines",
+      "slug": "sulfur_mine"
+     }
+    ],
+    "decrees": [
+     {
+      "id": "decree_encourage_resource_industry",
+      "name": "Encourage Resource Industry"
+     }
+    ],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/steelworking.png",
+   "id": "steelworking",
+   "modifiers": [],
+   "name": "Steelworking",
+   "prereqs": [
+    {
+     "id": "shaft_mining",
+     "name": "Shaft Mining"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_steel_mill",
+      "name": "Steel Mills",
+      "slug": "steel_mill"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_saw_mills",
+      "name": "Saw Mills"
+     },
+     {
+      "id": "pm_pig_iron",
+      "name": "Wrought Iron Tools"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/atmospheric_engine.png",
+   "id": "atmospheric_engine",
+   "modifiers": [],
+   "name": "Atmospheric Engine",
+   "prereqs": [
+    {
+     "id": "shaft_mining",
+     "name": "Shaft Mining"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_motor_industry",
+      "name": "Motor Industries",
+      "slug": "motor_industry"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_atmospheric_engine_pump_building_coal_mine",
+      "name": "Atmospheric Engine Pump"
+     },
+     {
+      "id": "pm_atmospheric_engine_pump_building_iron_mine",
+      "name": "Atmospheric Engine Pump"
+     },
+     {
+      "id": "pm_atmospheric_engine_pump_building_lead_mine",
+      "name": "Atmospheric Engine Pump"
+     },
+     {
+      "id": "pm_atmospheric_engine_pump_building_sulfur_mine",
+      "name": "Atmospheric Engine Pump"
+     },
+     {
+      "id": "pm_atmospheric_engine_pump_building_gold_mine",
+      "name": "Atmospheric Engine Pump"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/baking_powder.png",
+   "id": "baking_powder",
+   "modifiers": [],
+   "name": "Baking Powder",
+   "prereqs": [
+    {
+     "id": "fractional_distillation",
+     "name": "Fractional Distillation"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_baking_powder",
+      "name": "Baking Powder"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/bessemer_process.png",
+   "id": "bessemer_process",
+   "modifiers": [],
+   "name": "Bessemer Process",
+   "prereqs": [
+    {
+     "id": "steelworking",
+     "name": "Steelworking"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_bessemer_process",
+      "name": "Bessemer Process"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/canneries.png",
+   "id": "canneries",
+   "modifiers": [],
+   "name": "Canneries",
+   "prereqs": [
+    {
+     "id": "lathe",
+     "name": "Lathe"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_cannery_fish",
+      "name": "Canned Fish"
+     },
+     {
+      "id": "pm_cannery",
+      "name": "Canned Meat"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/chemical_bleaching.png",
+   "id": "chemical_bleaching",
+   "modifiers": [],
+   "name": "Chemical Bleaching",
+   "prereqs": [
+    {
+     "id": "crystal_glass",
+     "name": "Crystal Glass"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_bone_china",
+      "name": "Bone China"
+     },
+     {
+      "id": "pm_bleached_paper",
+      "name": "Paper Bleaching"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/crystal_glass.png",
+   "id": "crystal_glass",
+   "modifiers": [],
+   "name": "Crystal Glass",
+   "prereqs": [
+    {
+     "id": "lathe",
+     "name": "Lathe"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_crystal_glass",
+      "name": "Crystal Glass"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/fractional_distillation.png",
+   "id": "fractional_distillation",
+   "modifiers": [],
+   "name": "Fractional Distillation",
+   "prereqs": [
+    {
+     "id": "distillation",
+     "name": "Distillation"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_patent_stills",
+      "name": "Patent Stills"
+     },
+     {
+      "id": "steam_powered_evaporation_sugar",
+      "name": "Steam-Powered Mills"
+     },
+     {
+      "id": "pm_sugar_beets",
+      "name": "Sugar Beets"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/intensive_agriculture.png",
+   "id": "intensive_agriculture",
+   "modifiers": [],
+   "name": "Intensive Agriculture",
+   "prereqs": [
+    {
+     "id": "enclosure",
+     "name": "Enclosure"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_explosives_factory",
+      "name": "Explosives Factory",
+      "slug": "explosives_factory"
+     },
+     {
+      "id": "building_chemical_plant",
+      "name": "Fertilizer Plants",
+      "slug": "chemical_plant"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_sheep_farms",
+      "name": "Increased Wool Gathering"
+     },
+     {
+      "id": "pm_soil_enriching_farming",
+      "name": "Soil-Enriching Farming"
+     },
+     {
+      "id": "pm_soil_enriching_farming_building_rice_farm",
+      "name": "Soil-Enriching Farming"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/mechanical_tools.png",
+   "id": "mechanical_tools",
+   "modifiers": [],
+   "name": "Mechanical Tools",
+   "prereqs": [
+    {
+     "id": "lathe",
+     "name": "Lathe"
+    },
+    {
+     "id": "steelworking",
+     "name": "Steelworking"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_pena_palace",
+      "name": "Pena Palace",
+      "slug": "pena_palace"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_precision_tools",
+      "name": "Precision Tools"
+     },
+     {
+      "id": "pm_slaughterhouses",
+      "name": "Slaughterhouses"
+     },
+     {
+      "id": "pm_steel",
+      "name": "Steel Tools"
+     },
+     {
+      "id": "pm_sulfite_pulping",
+      "name": "Sulfite Pulping"
+     },
+     {
+      "id": "coffee_plantation_wet_process_manual",
+      "name": "Wet Process - Manual Pulping"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/mechanized_workshops.png",
+   "id": "mechanized_workshops",
+   "modifiers": [
+    {
+     "key": "building_economy_of_scale_level_cap_add",
+     "label": "Economy of Scale Building Level Cap",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "name": "Mechanized Workshops",
+   "prereqs": [
+    {
+     "id": "canneries",
+     "name": "Canneries"
+    },
+    {
+     "id": "mechanical_tools",
+     "name": "Mechanical Tools"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "coffee_plantation_mechanical_drying",
+      "name": "Mechanical Dryers"
+     },
+     {
+      "id": "pm_mechanized_looms",
+      "name": "Mechanized Looms"
+     },
+     {
+      "id": "pm_mechanized_workshops",
+      "name": "Mechanized Workshops"
+     },
+     {
+      "id": "pm_sewing_machines",
+      "name": "Sewing Machines"
+     },
+     {
+      "id": "coffee_plantation_wet_process_mechanical",
+      "name": "Wet Process - Mechanical Pulping"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/nitroglycerin.png",
+   "id": "nitroglycerin",
+   "modifiers": [
+    {
+     "key": "country_resource_discovery_chance_mult",
+     "label": "Resource Discovery Chance",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Nitroglycerin",
+   "prereqs": [
+    {
+     "id": "intensive_agriculture",
+     "name": "Intensive Agriculture"
+    },
+    {
+     "id": "prospecting",
+     "name": "Prospecting"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_ammonia-soda_process",
+      "name": "Ammonia-soda Process"
+     },
+     {
+      "id": "pm_nitroglycerin_building_coal_mine",
+      "name": "Nitroglycerin"
+     },
+     {
+      "id": "pm_nitroglycerin_building_iron_mine",
+      "name": "Nitroglycerin"
+     },
+     {
+      "id": "pm_nitroglycerin_building_lead_mine",
+      "name": "Nitroglycerin"
+     },
+     {
+      "id": "pm_nitroglycerin_building_sulfur_mine",
+      "name": "Nitroglycerin"
+     },
+     {
+      "id": "pm_nitroglycerin_building_gold_mine",
+      "name": "Nitroglycerin"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/railways.png",
+   "id": "railways",
+   "modifiers": [],
+   "name": "Railways",
+   "prereqs": [
+    {
+     "id": "mechanical_tools",
+     "name": "Mechanical Tools"
+    },
+    {
+     "id": "atmospheric_engine",
+     "name": "Atmospheric Engine"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_railway",
+      "name": "Railway",
+      "slug": "railway"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_public_trams",
+      "name": "Public Trams"
+     },
+     {
+      "id": "pm_rail_transport_mine",
+      "name": "Rail Transportation"
+     },
+     {
+      "id": "pm_steam_rail_transport",
+      "name": "Rail Transportation"
+     },
+     {
+      "id": "pm_rail_transport_building_logging_camp",
+      "name": "Rail Transportation"
+     },
+     {
+      "id": "pm_rail_transport_building_oil_rig",
+      "name": "Rail Transportation"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/watertube_boiler.png",
+   "id": "watertube_boiler",
+   "modifiers": [],
+   "name": "Water-tube Boiler",
+   "prereqs": [
+    {
+     "id": "atmospheric_engine",
+     "name": "Atmospheric Engine"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_condensing_engine_pump_building_coal_mine",
+      "name": "Condensing Engine Pump"
+     },
+     {
+      "id": "pm_condensing_engine_pump_building_iron_mine",
+      "name": "Condensing Engine Pump"
+     },
+     {
+      "id": "pm_condensing_engine_pump_building_lead_mine",
+      "name": "Condensing Engine Pump"
+     },
+     {
+      "id": "pm_condensing_engine_pump_building_sulfur_mine",
+      "name": "Condensing Engine Pump"
+     },
+     {
+      "id": "pm_condensing_engine_pump_building_gold_mine",
+      "name": "Condensing Engine Pump"
+     },
+     {
+      "id": "vacuum_pan_sugar",
+      "name": "Vacuum Pans"
+     },
+     {
+      "id": "pm_watertube_boiler_building_furniture_manufactory",
+      "name": "Water-tube Boiler"
+     },
+     {
+      "id": "pm_watertube_boiler_building_tooling_workshop",
+      "name": "Water-tube Boiler"
+     },
+     {
+      "id": "pm_watertube_boiler_building_paper_mill",
+      "name": "Water-tube Boiler"
+     },
+     {
+      "id": "pm_watertube_boiler_building_steel_mill",
+      "name": "Water-tube Boiler"
+     },
+     {
+      "id": "pm_watertube_boiler_building_motor_industry",
+      "name": "Water-tube Boiler"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/aniline.png",
+   "id": "aniline",
+   "modifiers": [],
+   "name": "Aniline",
+   "prereqs": [
+    {
+     "id": "rubber_mastication",
+     "name": "Rubber Mastication"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_synthetics_plant",
+      "name": "Synthetics Plants",
+      "slug": "synthetics_plant"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/dynamite.png",
+   "id": "dynamite",
+   "modifiers": [
+    {
+     "key": "country_resource_discovery_chance_mult",
+     "label": "Resource Discovery Chance",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Dynamite",
+   "prereqs": [
+    {
+     "id": "nitroglycerin",
+     "name": "Nitroglycerin"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_dynamite_building_coal_mine",
+      "name": "Dynamite"
+     },
+     {
+      "id": "pm_dynamite_building_iron_mine",
+      "name": "Dynamite"
+     },
+     {
+      "id": "pm_dynamite_building_lead_mine",
+      "name": "Dynamite"
+     },
+     {
+      "id": "pm_dynamite_building_sulfur_mine",
+      "name": "Dynamite"
+     },
+     {
+      "id": "pm_dynamite_building_gold_mine",
+      "name": "Dynamite"
+     },
+     {
+      "id": "pm_explosive_shells",
+      "name": "Explosive Shells"
+     },
+     {
+      "id": "pm_vacuum_evaporation",
+      "name": "Vacuum Evaporation"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/electrical_generation.png",
+   "id": "electrical_generation",
+   "modifiers": [],
+   "name": "Electrical Generation",
+   "prereqs": [
+    {
+     "id": "rotary_valve_engine",
+     "name": "Rotary Valve Engine"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_power_plant",
+      "name": "Power Plants",
+      "slug": "power_plant"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_electric_fencing",
+      "name": "Electric Fences"
+     },
+     {
+      "id": "electric_rollers",
+      "name": "Electric Rollers"
+     },
+     {
+      "id": "pm_electric_saw_mills",
+      "name": "Electric Saw Mills"
+     },
+     {
+      "id": "pm_electric_streetlights",
+      "name": "Electric Streetlights"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/improved_fertilizer.png",
+   "id": "improved_fertilizer",
+   "modifiers": [],
+   "name": "Improved Fertilizer",
+   "prereqs": [
+    {
+     "id": "intensive_agriculture",
+     "name": "Intensive Agriculture"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_fertilization",
+      "name": "Fertilizers"
+     },
+     {
+      "id": "pm_fertilization_building_rice_farm",
+      "name": "Fertilizers"
+     },
+     {
+      "id": "pm_improved_fertilizer",
+      "name": "Improved Fertilizers"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/open_hearth_process.png",
+   "id": "open_hearth_process",
+   "modifiers": [],
+   "name": "Open Hearth Process",
+   "prereqs": [
+    {
+     "id": "bessemer_process",
+     "name": "Bessemer Process"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_open_hearth_process",
+      "name": "Open Hearth Process"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/pumpjacks.png",
+   "id": "pumpjacks",
+   "modifiers": [],
+   "name": "Pumpjacks",
+   "prereqs": [
+    {
+     "id": "steam_donkey",
+     "name": "Steam Donkey"
+    },
+    {
+     "id": "dynamite",
+     "name": "Dynamite"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_oil_rig",
+      "name": "Oil Rigs",
+      "slug": "oil_rig"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "automatic_irrigation_building_vineyard",
+      "name": "Automatic Irrigation"
+     },
+     {
+      "id": "automatic_irrigation_building_cotton_plantation",
+      "name": "Automatic Irrigation"
+     },
+     {
+      "id": "automatic_irrigation_building_dye_plantation",
+      "name": "Automatic Irrigation"
+     },
+     {
+      "id": "automatic_irrigation_building_opium_plantation",
+      "name": "Automatic Irrigation"
+     },
+     {
+      "id": "automatic_irrigation_building_tea_plantation",
+      "name": "Automatic Irrigation"
+     },
+     {
+      "id": "automatic_irrigation_building_tobacco_plantation",
+      "name": "Automatic Irrigation"
+     },
+     {
+      "id": "automatic_irrigation_building_sugar_plantation",
+      "name": "Automatic Irrigation"
+     },
+     {
+      "id": "automatic_irrigation_building_banana_plantation",
+      "name": "Automatic Irrigation"
+     },
+     {
+      "id": "automatic_irrigation_building_silk_plantation",
+      "name": "Automatic Irrigation"
+     },
+     {
+      "id": "automatic_irrigation_building_rubber_plantation",
+      "name": "Automatic Irrigation"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/reinforced_concrete.png",
+   "id": "reinforced_concrete",
+   "modifiers": [
+    {
+     "key": "building_construction_sector_throughput_add",
+     "label": "Construction Sector building Throughput",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    }
+   ],
+   "name": "Reinforced Concrete",
+   "prereqs": [
+    {
+     "id": "bessemer_process",
+     "name": "Bessemer Process"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_kaiserforum_1",
+      "name": "Kaiserforum",
+      "slug": "kaiserforum_1"
+     },
+     {
+      "id": "building_manila_cathedral_monument",
+      "name": "Manila Cathedral",
+      "slug": "manila_cathedral_monument"
+     },
+     {
+      "id": "building_sagrada_familia_cathedral_1",
+      "name": "Sagrada Família Cathedral",
+      "slug": "sagrada_familia_cathedral_1"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/rotary_valve_engine.png",
+   "id": "rotary_valve_engine",
+   "modifiers": [],
+   "name": "Rotary Valve Engine",
+   "prereqs": [
+    {
+     "id": "watertube_boiler",
+     "name": "Water-tube Boiler"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "centrifugal_machine_sugar",
+      "name": "Centrifugal Machines"
+     },
+     {
+      "id": "pm_rotary_valve_engine_building_furniture_manufactory",
+      "name": "Rotary Valve Engine"
+     },
+     {
+      "id": "pm_rotary_valve_engine_building_tooling_workshop",
+      "name": "Rotary Valve Engine"
+     },
+     {
+      "id": "pm_rotary_valve_engine_building_paper_mill",
+      "name": "Rotary Valve Engine"
+     },
+     {
+      "id": "pm_rotary_valve_engine_building_steel_mill",
+      "name": "Rotary Valve Engine"
+     },
+     {
+      "id": "pm_rotary_valve_engine_building_motor_industry",
+      "name": "Rotary Valve Engine"
+     },
+     {
+      "id": "pm_rotary_valve_engine_building_arms_industry",
+      "name": "Rotary Valve Engine"
+     },
+     {
+      "id": "pm_rotary_valve_engine_building_munition_plant",
+      "name": "Rotary Valve Engine"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/rubber.png",
+   "id": "rubber_mastication",
+   "modifiers": [],
+   "name": "Rubber Mastication",
+   "prereqs": [
+    {
+     "id": "fractional_distillation",
+     "name": "Fractional Distillation"
+    },
+    {
+     "id": "chemical_bleaching",
+     "name": "Chemical Bleaching"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_rubber_plantation",
+      "name": "Rubber Plantations",
+      "slug": "rubber_plantation"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/shift_work.png",
+   "id": "shift_work",
+   "modifiers": [
+    {
+     "key": "building_economy_of_scale_level_cap_add",
+     "label": "Economy of Scale Building Level Cap",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    }
+   ],
+   "name": "Shift Work",
+   "prereqs": [
+    {
+     "id": "mechanized_workshops",
+     "name": "Mechanized Workshops"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/steam_donkey.png",
+   "id": "steam_donkey",
+   "modifiers": [],
+   "name": "Steam Donkey",
+   "prereqs": [
+    {
+     "id": "intensive_agriculture",
+     "name": "Intensive Agriculture"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_steam_donkey_building_coal_mine",
+      "name": "Steam Donkey"
+     },
+     {
+      "id": "pm_steam_donkey_mine",
+      "name": "Steam Donkey"
+     },
+     {
+      "id": "pm_steam_donkey_building_logging_camp",
+      "name": "Steam Donkey"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/steel_railway_cars.png",
+   "id": "steel_railway_cars",
+   "modifiers": [],
+   "name": "Steel Railway Cars",
+   "prereqs": [
+    {
+     "id": "railways",
+     "name": "Railways"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_steam_trains_principle_transport_3",
+      "name": "Joint Steam Trains"
+     },
+     {
+      "id": "pm_steam_trains",
+      "name": "Steam Trains"
+     },
+     {
+      "id": "pm_steel_passenger_carriages",
+      "name": "Steel Passenger Carriages"
+     },
+     {
+      "id": "pm_tanker_cars",
+      "name": "Tanker Cars"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/threshing_machine.png",
+   "id": "threshing_machine",
+   "modifiers": [],
+   "name": "Threshing Machines",
+   "prereqs": [
+    {
+     "id": "steam_donkey",
+     "name": "Steam Donkey"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_steam_threshers",
+      "name": "Steam-Powered Thresher Machines"
+     },
+     {
+      "id": "pm_steam_threshers_building_rice_farm",
+      "name": "Steam-Powered Thresher Machines"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/vacuum_canning.png",
+   "id": "vacuum_canning",
+   "modifiers": [],
+   "name": "Vacuum Canning",
+   "prereqs": [
+    {
+     "id": "mechanized_workshops",
+     "name": "Mechanized Workshops"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_vacuum_canning_principle_3",
+      "name": "Efficient Canning Practices"
+     },
+     {
+      "id": "pm_vacuum_canning",
+      "name": "Vacuum Packaging"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/vulcanization.png",
+   "id": "vulcanization",
+   "modifiers": [],
+   "name": "Vulcanization",
+   "prereqs": [
+    {
+     "id": "rubber_mastication",
+     "name": "Rubber Mastication"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_elastics",
+      "name": "Elastics"
+     },
+     {
+      "id": "pm_rubber_grips",
+      "name": "Machined Steel Tools"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/art_silk.png",
+   "id": "art_silk",
+   "modifiers": [],
+   "name": "Art Silk",
+   "prereqs": [
+    {
+     "id": "aniline",
+     "name": "Aniline"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_rayon",
+      "name": "Rayon"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/automatic_bottle_blowers.png",
+   "id": "automatic_bottle_blowers",
+   "modifiers": [],
+   "name": "Automatic Bottle Blowers",
+   "prereqs": [
+    {
+     "id": "vulcanization",
+     "name": "Vulcanization"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_automatic_bottle_blowers",
+      "name": "Automatic Bottle Blowers"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/combustion_engine.png",
+   "id": "combustion_engine",
+   "modifiers": [],
+   "name": "Combustion Engine",
+   "prereqs": [
+    {
+     "id": "rotary_valve_engine",
+     "name": "Rotary Valve Engine"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_automotive_industry",
+      "name": "Automotive Industries",
+      "slug": "automotive_industry"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_automobile_production",
+      "name": "Automobile Production"
+     },
+     {
+      "id": "pm_chainsaws",
+      "name": "Chainsaws"
+     },
+     {
+      "id": "pm_combustion_derricks",
+      "name": "Combustion Engine Derricks"
+     },
+     {
+      "id": "pm_public_motor_carriages",
+      "name": "Public Motor Carriages"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/conveyers.png",
+   "id": "conveyors",
+   "modifiers": [],
+   "name": "Conveyors",
+   "prereqs": [
+    {
+     "id": "vulcanization",
+     "name": "Vulcanization"
+    },
+    {
+     "id": "shift_work",
+     "name": "Shift Work"
+    },
+    {
+     "id": "electrical_generation",
+     "name": "Electrical Generation"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_assembly_lines_building_furniture_manufactory",
+      "name": "Assembly Lines"
+     },
+     {
+      "id": "pm_assembly_lines_building_tooling_workshop",
+      "name": "Assembly Lines"
+     },
+     {
+      "id": "pm_assembly_lines_building_motor_industry",
+      "name": "Assembly Lines"
+     },
+     {
+      "id": "pm_assembly_lines_building_automotive_industry",
+      "name": "Assembly Lines"
+     },
+     {
+      "id": "pm_assembly_lines_building_arms_industry",
+      "name": "Assembly Lines"
+     },
+     {
+      "id": "pm_assembly_lines_building_munition_plant",
+      "name": "Assembly Lines"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/electric_arc_process.png",
+   "id": "electric_arc_process",
+   "modifiers": [],
+   "name": "Electric Arc Process",
+   "prereqs": [
+    {
+     "id": "open_hearth_process",
+     "name": "Open Hearth Process"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_electric_arc_process",
+      "name": "Electric Arc Process"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/electric_railway.png",
+   "id": "electric_railway",
+   "modifiers": [],
+   "name": "Electric Railways",
+   "prereqs": [
+    {
+     "id": "electrical_capacitors",
+     "name": "Electrical Capacitors"
+    },
+    {
+     "id": "steel_railway_cars",
+     "name": "Steel Railway Cars"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_electric_engines",
+      "name": "Electric Engines"
+     },
+     {
+      "id": "pm_electric_trains",
+      "name": "Electric Trains"
+     },
+     {
+      "id": "pm_electric_trains_principle_transport_3",
+      "name": "Joint Electric Trains"
+     },
+     {
+      "id": "pm_log_carts",
+      "name": "Rail Log Carts"
+     },
+     {
+      "id": "pm_refrigerated_rail_cars_building_livestock_ranch",
+      "name": "Refrigerated Rail Cars"
+     },
+     {
+      "id": "pm_refrigerated_rail_cars_building_fishing_wharf",
+      "name": "Refrigerated Rail Cars"
+     },
+     {
+      "id": "pm_refrigerated_rail_cars_building_whaling_station",
+      "name": "Refrigerated Rail Cars"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/electrical_capacitors.png",
+   "id": "electrical_capacitors",
+   "modifiers": [],
+   "name": "Electrical Capacitors",
+   "prereqs": [
+    {
+     "id": "electrical_generation",
+     "name": "Electrical Generation"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_automatic_power_looms",
+      "name": "Automatic Power Looms"
+     },
+     {
+      "id": "pm_brine_electrolysis",
+      "name": "Brine Electrolysis"
+     },
+     {
+      "id": "pm_electric_sewing_machines",
+      "name": "Electric Sewing Machines"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/mechanized_farming.png",
+   "id": "mechanized_farming",
+   "modifiers": [],
+   "name": "Mechanized Farming",
+   "prereqs": [
+    {
+     "id": "threshing_machine",
+     "name": "Threshing Machines"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_intensive_grazing_ranch",
+      "name": "Intensive Wool Gathering"
+     },
+     {
+      "id": "pm_mechanized_slaughtering",
+      "name": "Mechanized Slaughterhouses"
+     },
+     {
+      "id": "pm_tractors",
+      "name": "Tractors"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/nitrogen_fixation.png",
+   "id": "nitrogen_fixation",
+   "modifiers": [],
+   "name": "Nitrogen Fixation",
+   "prereqs": [
+    {
+     "id": "improved_fertilizer",
+     "name": "Improved Fertilizer"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_chemical_fertilizer",
+      "name": "Chemical Fertilizers"
+     },
+     {
+      "id": "pm_chemical_fertilizer_building_rice_farm",
+      "name": "Chemical Fertilizers"
+     },
+     {
+      "id": "pm_nitrogen_fixation",
+      "name": "Nitrogen Fixation Process"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/pasteurization.png",
+   "id": "pasteurization",
+   "modifiers": [],
+   "name": "Pasteurization",
+   "prereqs": [
+    {
+     "id": "vacuum_canning",
+     "name": "Vacuum Canning"
+    },
+    {
+     "id": "electrical_capacitors",
+     "name": "Electrical Capacitors"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_refrigerated_storage_building_livestock_ranch",
+      "name": "Refrigerated Storage"
+     },
+     {
+      "id": "pm_refrigerated_storage_building_fishing_wharf",
+      "name": "Refrigerated Storage"
+     },
+     {
+      "id": "pm_refrigerated_storage_building_whaling_station",
+      "name": "Refrigerated Storage"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/plastics.png",
+   "id": "plastics",
+   "modifiers": [],
+   "name": "Plastics",
+   "prereqs": [
+    {
+     "id": "reinforced_concrete",
+     "name": "Reinforced Concrete"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_houseware_plastics",
+      "name": "Houseware Plastics"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/pneumatic_tools.png",
+   "id": "pneumatic_tools",
+   "modifiers": [
+    {
+     "key": "building_construction_sector_throughput_add",
+     "label": "Construction Sector building Throughput",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "goods_output_hardwood_mult",
+     "label": "Building Hardwood output",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "country_resource_discovery_chance_mult",
+     "label": "Resource Discovery Chance",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Pneumatic Tools",
+   "prereqs": [
+    {
+     "id": "rotary_valve_engine",
+     "name": "Rotary Valve Engine"
+    },
+    {
+     "id": "reinforced_concrete",
+     "name": "Reinforced Concrete"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_cristo_redentor",
+      "name": "Cristo Redentor",
+      "slug": "cristo_redentor"
+     },
+     {
+      "id": "building_gran_teatro_de_la_habana",
+      "name": "Grand Theater of Havana",
+      "slug": "gran_teatro_de_la_habana"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/radio.png",
+   "id": "radio",
+   "modifiers": [],
+   "name": "Radio",
+   "prereqs": [
+    {
+     "id": "telephone",
+     "name": "Telephone"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "radio_stations_tobacco",
+      "name": "Factory Radios"
+     },
+     {
+      "id": "pm_radios",
+      "name": "Radio Production"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/steam_turbines.png",
+   "id": "steam_turbine",
+   "modifiers": [],
+   "name": "Steam Turbine",
+   "prereqs": [
+    {
+     "id": "electrical_generation",
+     "name": "Electrical Generation"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_coal-fired_plant",
+      "name": "Coal-Fired Plant"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/telephone.png",
+   "id": "telephone",
+   "modifiers": [],
+   "name": "Telephone",
+   "prereqs": [
+    {
+     "id": "shift_work",
+     "name": "Shift Work"
+    },
+    {
+     "id": "electrical_generation",
+     "name": "Electrical Generation"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_electrics_industry",
+      "name": "Electrics Industries",
+      "slug": "electrics_industry"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/arc_welding.png",
+   "id": "arc_welding",
+   "modifiers": [
+    {
+     "key": "country_ship_group_capital_ships_construction_progress_max_add",
+     "label": "Capital Ships Max Construction Progress",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    }
+   ],
+   "name": "Arc Welding",
+   "prereqs": [
+    {
+     "id": "electric_arc_process",
+     "name": "Electric Arc Process"
+    },
+    {
+     "id": "pneumatic_tools",
+     "name": "Pneumatic Tools"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_arc_welded_buildings",
+      "name": "Arc-Welded Buildings"
+     },
+     {
+      "id": "pm_arc_welding_shipbuilding",
+      "name": "Arc-Welded Steamships"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/compression_ignition.png",
+   "id": "compression_ignition",
+   "modifiers": [],
+   "name": "Compression Ignition",
+   "prereqs": [
+    {
+     "id": "combustion_engine",
+     "name": "Combustion Engine"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_compression_ignition_tractors",
+      "name": "Compression Ignition Tractors"
+     },
+     {
+      "id": "pm_diesel_engines",
+      "name": "Diesel Engines"
+     },
+     {
+      "id": "pm_diesel_pump_building_coal_mine",
+      "name": "Diesel Pump"
+     },
+     {
+      "id": "pm_diesel_pump_building_iron_mine",
+      "name": "Diesel Pump"
+     },
+     {
+      "id": "pm_diesel_pump_building_lead_mine",
+      "name": "Diesel Pump"
+     },
+     {
+      "id": "pm_diesel_pump_building_sulfur_mine",
+      "name": "Diesel Pump"
+     },
+     {
+      "id": "pm_diesel_pump_building_gold_mine",
+      "name": "Diesel Pump"
+     },
+     {
+      "id": "pm_diesel_trains",
+      "name": "Diesel Trains"
+     },
+     {
+      "id": "pm_diesel_trains_principle_transport_3",
+      "name": "Joint Diesel Trains"
+     },
+     {
+      "id": "pm_mass_automobile_production",
+      "name": "Mass Production"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/rollers.png",
+   "id": "dough_rollers",
+   "modifiers": [],
+   "name": "Dough Rollers",
+   "prereqs": [
+    {
+     "id": "conveyors",
+     "name": "Conveyors"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_automated_bakery",
+      "name": "Automated Bakery"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/flash_freezing.png",
+   "id": "flash_freezing",
+   "modifiers": [],
+   "name": "Flash Freezing",
+   "prereqs": [
+    {
+     "id": "pasteurization",
+     "name": "Pasteurization"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_flash_freezing_building_fishing_wharf",
+      "name": "Flash Freezing"
+     },
+     {
+      "id": "pm_flash_freezing_building_whaling_station",
+      "name": "Flash Freezing"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "production",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/oil_turbines.png",
+   "id": "oil_turbine",
+   "modifiers": [],
+   "name": "Oil Turbine",
+   "prereqs": [
+    {
+     "id": "steam_turbine",
+     "name": "Steam Turbine"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_oil-fired_plant",
+      "name": "Oil-Fired Plant"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/admiralty.png",
+   "id": "admiralty",
+   "modifiers": [],
+   "name": "Admiralty",
+   "prereqs": [
+    {
+     "id": "navigation",
+     "name": "Navigation"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_naval_administration",
+      "name": "Naval Administration",
+      "slug": "naval_administration"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/army_reserves.png",
+   "id": "army_reserves",
+   "modifiers": [
+    {
+     "key": "state_conscription_rate_mult",
+     "label": "Conscriptable Battalions",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "country_general_rank_impact_mult",
+     "label": "General Rank Impact",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "Army Reserves",
+   "prereqs": [
+    {
+     "id": "line_infantry",
+     "name": "Line Infantry"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/artillery.png",
+   "id": "artillery",
+   "modifiers": [],
+   "name": "Artillery",
+   "prereqs": [
+    {
+     "id": "gunsmithing",
+     "name": "Gunsmithing"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_cannons",
+      "name": "Cannons"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/drydock.png",
+   "id": "drydocks",
+   "modifiers": [],
+   "name": "Drydocks",
+   "prereqs": [
+    {
+     "id": "navigation",
+     "name": "Navigation"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/gunsmithing.png",
+   "id": "gunsmithing",
+   "modifiers": [],
+   "name": "Gunsmithing",
+   "prereqs": [
+    {
+     "id": "standing_army",
+     "name": "Standing Army"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_arms_industry",
+      "name": "Arms Industries",
+      "slug": "arms_industry"
+     },
+     {
+      "id": "building_artillery_foundry",
+      "name": "Artillery Foundry",
+      "slug": "artillery_foundry"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/line_infantry.png",
+   "id": "line_infantry",
+   "modifiers": [],
+   "name": "Line Infantry",
+   "prereqs": [
+    {
+     "id": "mandatory_service",
+     "name": "Mandatory Service"
+    },
+    {
+     "id": "military_drill",
+     "name": "Military Drill"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/mandatory_service.png",
+   "id": "mandatory_service",
+   "modifiers": [
+    {
+     "key": "state_conscription_rate_mult",
+     "label": "Conscriptable Battalions",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "country_general_rank_impact_mult",
+     "label": "General Rank Impact",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "Mandatory Service",
+   "prereqs": [
+    {
+     "id": "standing_army",
+     "name": "Standing Army"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [
+     {
+      "id": "decree_enlistment_efforts",
+      "name": "Enlistment Efforts"
+     }
+    ],
+    "laws": [
+     {
+      "id": "law_national_militia",
+      "name": "National Militia"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/military_drill.png",
+   "id": "military_drill",
+   "modifiers": [
+    {
+     "key": "unit_experience_gain_mult",
+     "label": "Weekly Experience Gain for Armies",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Military Drill",
+   "prereqs": [
+    {
+     "id": "standing_army",
+     "name": "Standing Army"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_professional_navy",
+      "name": "Capital Fleet"
+     },
+     {
+      "id": "law_diplomatic_navy",
+      "name": "Diplomatic Fleet"
+     },
+     {
+      "id": "law_professional_army",
+      "name": "Professional Army"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/napoleonic_warfare.png",
+   "id": "napoleonic_warfare",
+   "modifiers": [],
+   "name": "Napoleonic Warfare",
+   "prereqs": [
+    {
+     "id": "line_infantry",
+     "name": "Line Infantry"
+    },
+    {
+     "id": "artillery",
+     "name": "Artillery"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/navigation.png",
+   "id": "navigation",
+   "modifiers": [],
+   "name": "Navigation",
+   "prereqs": [],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_port",
+      "name": "Port",
+      "slug": "port"
+     },
+     {
+      "id": "building_shipyard",
+      "name": "Shipyards",
+      "slug": "shipyard"
+     },
+     {
+      "id": "building_whaling_station",
+      "name": "Whaling Stations",
+      "slug": "whaling_station"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/paddle_steamer.png",
+   "id": "paddle_steamer",
+   "modifiers": [
+    {
+     "key": "ship_hull_damage_mult",
+     "label": "Hull Attack Damage",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "ship_crew_damage_mult",
+     "label": "Crew Attack Damage",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Paddle Steamer",
+   "prereqs": [
+    {
+     "id": "admiralty",
+     "name": "Admiralty"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/standing_army.png",
+   "id": "standing_army",
+   "modifiers": [],
+   "name": "Standing Army",
+   "prereqs": [],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_barrack",
+      "name": "Barracks",
+      "slug": "barrack"
+     }
+    ],
+    "decrees": [
+     {
+      "id": "decree_violent_suppression",
+      "name": "Violent Suppression"
+     }
+    ],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/field_works.png",
+   "id": "field_works",
+   "modifiers": [
+    {
+     "key": "unit_army_defense_mult",
+     "label": "Army Defense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "name": "Field Works",
+   "prereqs": [
+    {
+     "id": "napoleonic_warfare",
+     "name": "Napoleonic Warfare"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_barbed_wire_fences",
+      "name": "Barbed Wire Fences"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/general_staff.png",
+   "id": "general_staff",
+   "modifiers": [],
+   "name": "General Staff",
+   "prereqs": [
+    {
+     "id": "army_reserves",
+     "name": "Army Reserves"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_general_training",
+      "name": "General Training"
+     },
+     {
+      "id": "pm_general_training_conscription",
+      "name": "General Training"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/hydraulic_cranes.png",
+   "id": "hydraulic_cranes",
+   "modifiers": [],
+   "name": "Hydraulic Cranes",
+   "prereqs": [
+    {
+     "id": "drydocks",
+     "name": "Drydocks"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_trade_center_trade_quantity_high",
+      "name": "Bulk Trading"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/logistics_tech.png",
+   "id": "logistics",
+   "modifiers": [
+    {
+     "key": "state_conscription_rate_mult",
+     "label": "Conscriptable Battalions",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "country_general_rank_impact_mult",
+     "label": "General Rank Impact",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "Logistics",
+   "prereqs": [
+    {
+     "id": "napoleonic_warfare",
+     "name": "Napoleonic Warfare"
+    },
+    {
+     "id": "army_reserves",
+     "name": "Army Reserves"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/percussion_cap.png",
+   "id": "percussion_cap",
+   "modifiers": [],
+   "name": "Percussion Cap",
+   "prereqs": [
+    {
+     "id": "gunsmithing",
+     "name": "Gunsmithing"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_munition_plant",
+      "name": "Munition Plants",
+      "slug": "munition_plant"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/power_of_the_purse.png",
+   "id": "power_of_the_purse",
+   "modifiers": [
+    {
+     "key": "country_admiral_rank_impact_mult",
+     "label": "Admiral Rank Impact",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Power of the Purse",
+   "prereqs": [
+    {
+     "id": "admiralty",
+     "name": "Admiralty"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/rifling.png",
+   "id": "rifling",
+   "modifiers": [],
+   "name": "Rifling",
+   "prereqs": [
+    {
+     "id": "percussion_cap",
+     "name": "Percussion Cap"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_rifles",
+      "name": "Rifles"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/screw_frigate.png",
+   "id": "screw_frigate",
+   "modifiers": [],
+   "name": "Screw Frigate",
+   "prereqs": [
+    {
+     "id": "paddle_steamer",
+     "name": "Paddle Steamer"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_complex_shipbuilding",
+      "name": "Reinforced Wooden Ships"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/shell_gun.png",
+   "id": "shell_gun",
+   "modifiers": [],
+   "name": "Shell Gun",
+   "prereqs": [
+    {
+     "id": "artillery",
+     "name": "Artillery"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_smoothbores",
+      "name": "Smoothbores"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/triage.png",
+   "id": "triage",
+   "modifiers": [],
+   "name": "Triage",
+   "prereqs": [
+    {
+     "id": "logistics",
+     "name": "Logistics"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/breech_loading_artillery.png",
+   "id": "breech_loading_artillery",
+   "modifiers": [],
+   "name": "Breech-Loading Artillery",
+   "prereqs": [
+    {
+     "id": "rifling",
+     "name": "Rifling"
+    },
+    {
+     "id": "shell_gun",
+     "name": "Shell Gun"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_breech_loaders",
+      "name": "Breech Loaders"
+     },
+     {
+      "id": "pm_naval_fortification_reinforced",
+      "name": "Reinforced Fortification"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/electrical_telegraph.png",
+   "id": "electric_telegraph",
+   "modifiers": [
+    {
+     "key": "country_war_exhaustion_casualties_mult",
+     "label": "War Exhaustion from Casualties",
+     "tone": "good",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "name": "Electric Telegraph",
+   "prereqs": [
+    {
+     "id": "logistics",
+     "name": "Logistics"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/enlistment_offices.png",
+   "id": "enlistment_offices",
+   "modifiers": [
+    {
+     "key": "state_conscription_rate_mult",
+     "label": "Conscriptable Battalions",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "country_general_rank_impact_mult",
+     "label": "General Rank Impact",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "Enlistment Offices",
+   "prereqs": [
+    {
+     "id": "logistics",
+     "name": "Logistics"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_mass_conscription",
+      "name": "Mass Conscription"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/floating_harbor.png",
+   "id": "floating_harbor",
+   "modifiers": [],
+   "name": "Floating Harbor",
+   "prereqs": [
+    {
+     "id": "gantry_cranes",
+     "name": "Gantry Cranes"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_trade_center_trade_quantity_very_high",
+      "name": "Mass-Scale Trading"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/gantry_crane.png",
+   "id": "gantry_cranes",
+   "modifiers": [
+    {
+     "key": "ship_ship_type_supply_ship_supply_capacity_mult",
+     "label": "Supply Ship Supply Capacity",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "name": "Gantry Cranes",
+   "prereqs": [
+    {
+     "id": "hydraulic_cranes",
+     "name": "Hydraulic Cranes"
+    },
+    {
+     "id": "screw_frigate",
+     "name": "Screw Frigate"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_industrial_port",
+      "name": "Industrial Port"
+     },
+     {
+      "id": "pm_steam_trawlers",
+      "name": "Steam Trawlers"
+     },
+     {
+      "id": "pm_steam_whaling_ships",
+      "name": "Steam-Powered Whalers"
+     },
+     {
+      "id": "pm_metal_shipbuilding",
+      "name": "Steamships"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/handcranked_machine_gun.png",
+   "id": "handcranked_machine_gun",
+   "modifiers": [
+    {
+     "key": "unit_army_defense_add",
+     "label": "Army Defense",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Handcranked Machine Gun",
+   "prereqs": [
+    {
+     "id": "repeaters",
+     "name": "Repeaters"
+    },
+    {
+     "id": "breech_loading_artillery",
+     "name": "Breech-Loading Artillery"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/ironclad_tech.png",
+   "id": "ironclad_tech",
+   "modifiers": [],
+   "name": "Ironclad",
+   "prereqs": [
+    {
+     "id": "screw_frigate",
+     "name": "Screw Frigate"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_kiel_canal",
+      "name": "Kiel Canal",
+      "slug": "kiel_canal"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/jeune_ecole.png",
+   "id": "jeune_ecole",
+   "modifiers": [
+    {
+     "key": "country_admiral_rank_impact_mult",
+     "label": "Admiral Rank Impact",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Jeune École",
+   "prereqs": [
+    {
+     "id": "self_propelled_torpedoes",
+     "name": "Self-Propelled Torpedoes"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_jeune_ecole",
+      "name": "Jeune École"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/military_statistics.png",
+   "id": "military_statistics",
+   "modifiers": [
+    {
+     "key": "military_formation_organization_gain_mult",
+     "label": "Daily Organization Gain",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "Military Statistics",
+   "prereqs": [
+    {
+     "id": "electric_telegraph",
+     "name": "Electric Telegraph"
+    },
+    {
+     "id": "general_staff",
+     "name": "General Staff"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_advanced_tactics_training",
+      "name": "Advanced Tactics Training"
+     },
+     {
+      "id": "pm_advanced_tactics_training_conscription",
+      "name": "Advanced Tactics Training"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/monitor_tech.png",
+   "id": "monitor_tech",
+   "modifiers": [],
+   "name": "Modern Ironclad",
+   "prereqs": [
+    {
+     "id": "ironclad_tech",
+     "name": "Ironclad"
+    },
+    {
+     "id": "breech_loading_artillery",
+     "name": "Breech-Loading Artillery"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/modern_nursing.png",
+   "id": "modern_nursing",
+   "modifiers": [],
+   "name": "Modern Nursing",
+   "prereqs": [
+    {
+     "id": "triage",
+     "name": "Triage"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/repeaters.png",
+   "id": "repeaters",
+   "modifiers": [],
+   "name": "Repeaters",
+   "prereqs": [
+    {
+     "id": "rifling",
+     "name": "Rifling"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_repeaters",
+      "name": "Repeating Rifles"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/self_propelled_torpedoes.png",
+   "id": "self_propelled_torpedoes",
+   "modifiers": [],
+   "name": "Self-Propelled Torpedoes",
+   "prereqs": [
+    {
+     "id": "power_of_the_purse",
+     "name": "Power of the Purse"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/machine_gun.png",
+   "id": "automatic_machine_guns",
+   "modifiers": [],
+   "name": "Automatic Machine Guns",
+   "prereqs": [
+    {
+     "id": "handcranked_machine_gun",
+     "name": "Handcranked Machine Gun"
+    },
+    {
+     "id": "bolt_action_rifles",
+     "name": "Bolt-Action Rifle"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_recoiled_barrels",
+      "name": "Recoil Mechanisms"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/bolt_action_rifles.png",
+   "id": "bolt_action_rifles",
+   "modifiers": [],
+   "name": "Bolt-Action Rifle",
+   "prereqs": [
+    {
+     "id": "repeaters",
+     "name": "Repeaters"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_bolt_action_rifles",
+      "name": "Bolt Action Rifles"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/concrete_dockyards.png",
+   "id": "concrete_dockyards",
+   "modifiers": [
+    {
+     "key": "ship_ship_type_supply_ship_supply_capacity_mult",
+     "label": "Supply Ship Supply Capacity",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_ship_group_capital_ships_construction_progress_max_add",
+     "label": "Capital Ships Max Construction Progress",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "name": "Concrete Dockyards",
+   "prereqs": [
+    {
+     "id": "floating_harbor",
+     "name": "Floating Harbor"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_modern_port",
+      "name": "Modern Port"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/defense_in_depth.png",
+   "id": "defense_in_depth",
+   "modifiers": [
+    {
+     "key": "unit_army_defense_mult",
+     "label": "Army Defense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "name": "Defense in Depth",
+   "prereqs": [
+    {
+     "id": "trench_works",
+     "name": "Trench Works"
+    },
+    {
+     "id": "handcranked_machine_gun",
+     "name": "Handcranked Machine Gun"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/dreadnought.png",
+   "id": "dreadnought_tech",
+   "modifiers": [],
+   "name": "Dreadnought",
+   "prereqs": [
+    {
+     "id": "pre_dreadnought_tech",
+     "name": "Pre-Dreadnought"
+    },
+    {
+     "id": "sea_lane_strategies",
+     "name": "Sea Lane Strategies"
+    },
+    {
+     "id": "concrete_dockyards",
+     "name": "Concrete Dockyards"
+    },
+    {
+     "id": "military_aviation",
+     "name": "Military Aviation"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/landing_craft.png",
+   "id": "landing_craft",
+   "modifiers": [],
+   "name": "Landing Craft",
+   "prereqs": [
+    {
+     "id": "jeune_ecole",
+     "name": "Jeune École"
+    },
+    {
+     "id": "monitor_tech",
+     "name": "Modern Ironclad"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/military_aviation.png",
+   "id": "military_aviation",
+   "modifiers": [],
+   "name": "Military Aviation",
+   "prereqs": [
+    {
+     "id": "handcranked_machine_gun",
+     "name": "Handcranked Machine Gun"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_aeroplane_production",
+      "name": "Aeroplane Production"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/pre_dreadnought.png",
+   "id": "pre_dreadnought_tech",
+   "modifiers": [],
+   "name": "Pre-Dreadnought",
+   "prereqs": [
+    {
+     "id": "ironclad_tech",
+     "name": "Ironclad"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/sea_lane_strategies.png",
+   "id": "sea_lane_strategies",
+   "modifiers": [
+    {
+     "key": "country_admiral_rank_impact_mult",
+     "label": "Admiral Rank Impact",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Sea Lane Strategies",
+   "prereqs": [
+    {
+     "id": "jeune_ecole",
+     "name": "Jeune École"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/submarine.png",
+   "id": "submarine",
+   "modifiers": [],
+   "name": "Submarine",
+   "prereqs": [
+    {
+     "id": "self_propelled_torpedoes",
+     "name": "Self-Propelled Torpedoes"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/trench_works.png",
+   "id": "trench_works",
+   "modifiers": [],
+   "name": "Trench Works",
+   "prereqs": [
+    {
+     "id": "general_staff",
+     "name": "General Staff"
+    },
+    {
+     "id": "electric_telegraph",
+     "name": "Electric Telegraph"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/war_propaganda.png",
+   "id": "war_propaganda",
+   "modifiers": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "good",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "state_conscription_rate_mult",
+     "label": "Conscriptable Battalions",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "War Propaganda",
+   "prereqs": [
+    {
+     "id": "enlistment_offices",
+     "name": "Enlistment Offices"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/wargaming.png",
+   "id": "wargaming",
+   "modifiers": [
+    {
+     "key": "unit_army_offense_mult",
+     "label": "Army Offense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_general_rank_impact_mult",
+     "label": "General Rank Impact",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "Wargaming",
+   "prereqs": [
+    {
+     "id": "military_statistics",
+     "name": "Military Statistics"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_training_streamlining",
+      "name": "Training Method Streamlining"
+     },
+     {
+      "id": "pm_training_streamlining_conscription",
+      "name": "Training Method Streamlining"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/carrier_tech.png",
+   "id": "carrier_tech",
+   "modifiers": [],
+   "name": "Aircraft Carrier",
+   "prereqs": [
+    {
+     "id": "dreadnought_tech",
+     "name": "Dreadnought"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/chemical_warfare.png",
+   "id": "chemical_warfare",
+   "modifiers": [],
+   "name": "Chemical Warfare",
+   "prereqs": [
+    {
+     "id": "automatic_machine_guns",
+     "name": "Automatic Machine Guns"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/concrete_fortifications.png",
+   "id": "concrete_fortifications",
+   "modifiers": [
+    {
+     "key": "unit_army_defense_mult",
+     "label": "Army Defense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "name": "Concrete Fortifications",
+   "prereqs": [
+    {
+     "id": "defense_in_depth",
+     "name": "Defense in Depth"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_naval_fortification_advanced",
+      "name": "Advanced Fortification"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/destroyers.png",
+   "id": "destroyer",
+   "modifiers": [],
+   "name": "Destroyer",
+   "prereqs": [
+    {
+     "id": "monitor_tech",
+     "name": "Modern Ironclad"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/flamethrowers.png",
+   "id": "flamethrowers",
+   "modifiers": [
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Flamethrowers",
+   "prereqs": [
+    {
+     "id": "trench_works",
+     "name": "Trench Works"
+    },
+    {
+     "id": "automatic_machine_guns",
+     "name": "Automatic Machine Guns"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/mobile_armor.png",
+   "id": "mobile_armor",
+   "modifiers": [],
+   "name": "Mobile Armor",
+   "prereqs": [
+    {
+     "id": "concrete_fortifications",
+     "name": "Concrete Fortifications"
+    },
+    {
+     "id": "nco_training",
+     "name": "NCO Training"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_mobile_warfare_tactics",
+      "name": "Mobile Warfare Tactics"
+     },
+     {
+      "id": "pm_mobile_warfare_tactics_conscription",
+      "name": "Mobile Warfare Tactics"
+     },
+     {
+      "id": "pm_tank_production",
+      "name": "Tank Production"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/battlefleet_tactics.png",
+   "id": "battlefleet_tactics",
+   "modifiers": [
+    {
+     "key": "country_admiral_rank_impact_mult",
+     "label": "Admiral Rank Impact",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Modern Battlefleet Tactics",
+   "prereqs": [
+    {
+     "id": "battleship_tech",
+     "name": "Super Dreadnought"
+    },
+    {
+     "id": "sea_lane_strategies",
+     "name": "Sea Lane Strategies"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/nco_training.png",
+   "id": "nco_training",
+   "modifiers": [
+    {
+     "key": "country_general_rank_impact_mult",
+     "label": "General Rank Impact",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "NCO Training",
+   "prereqs": [
+    {
+     "id": "wargaming",
+     "name": "Wargaming"
+    },
+    {
+     "id": "trench_works",
+     "name": "Trench Works"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_nco_incorporation",
+      "name": "NCO Incorporation"
+     },
+     {
+      "id": "pm_nco_incorporation_conscription",
+      "name": "NCO Incorporation"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/stormtroopers.png",
+   "id": "stormtroopers",
+   "modifiers": [
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "unit_combat_unit_type_trench_infantry_offense_add",
+     "label": "Trench Infantry Offense",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "unit_combat_unit_type_squad_infantry_offense_add",
+     "label": "Squad Infantry Offense",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "unit_combat_unit_type_mechanized_infantry_offense_add",
+     "label": "Mechanized Infantry Offense",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "name": "Stormtroopers",
+   "prereqs": [
+    {
+     "id": "wargaming",
+     "name": "Wargaming"
+    },
+    {
+     "id": "trench_works",
+     "name": "Trench Works"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "military",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/battleship_tech.png",
+   "id": "battleship_tech",
+   "modifiers": [],
+   "name": "Super Dreadnought",
+   "prereqs": [
+    {
+     "id": "dreadnought_tech",
+     "name": "Dreadnought"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/academia.png",
+   "id": "academia",
+   "modifiers": [
+    {
+     "key": "state_education_access_wealth_add",
+     "label": "Education Access (Wealth-based)",
+     "tone": "good",
+     "value": 0.005,
+     "valueText": "+0.5%"
+    }
+   ],
+   "name": "Academia",
+   "prereqs": [
+    {
+     "id": "rationalism",
+     "name": "Rationalism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_university",
+      "name": "University",
+      "slug": "university"
+     }
+    ],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_private_schools",
+      "name": "Private Schools"
+     },
+     {
+      "id": "law_terakoya",
+      "name": "Terakoya"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/banking.png",
+   "id": "banking",
+   "modifiers": [
+    {
+     "key": "country_minting_mult",
+     "label": "Minting",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_loan_interest_rate_add",
+     "label": "Loan interest rate",
+     "tone": "good",
+     "value": -0.02,
+     "valueText": "-2%"
+    },
+    {
+     "key": "state_max_trade_advantage_from_capacity_add",
+     "label": "Maximum Trade Advantage from Capacity",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Banking",
+   "prereqs": [
+    {
+     "id": "currency_standards",
+     "name": "Currency Standards"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/bureaucracy.png",
+   "id": "tech_bureaucracy",
+   "modifiers": [
+    {
+     "key": "country_institution_police_max_investment_add",
+     "label": "Max Law Enforcement Institution Investment",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    }
+   ],
+   "name": "Bureaucracy",
+   "prereqs": [
+    {
+     "id": "urbanization",
+     "name": "Urbanization"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_government_administration",
+      "name": "Government Administration",
+      "slug": "government_administration"
+     }
+    ],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_local_police",
+      "name": "Local Police Force"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/centralization.png",
+   "id": "centralization",
+   "modifiers": [
+    {
+     "key": "state_tax_capacity_add",
+     "label": "Taxation Capacity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "country_institution_home_affairs_max_investment_add",
+     "label": "Max Home Affairs Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_incorporation_speed_mult",
+     "label": "Incorporation Speed",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Centralization",
+   "prereqs": [
+    {
+     "id": "tech_bureaucracy",
+     "name": "Bureaucracy"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [
+     {
+      "id": "decree_emergency_relief",
+      "name": "Emergency Relief"
+     },
+     {
+      "id": "decree_road_maintenance",
+      "name": "Road Maintenance"
+     }
+    ],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_horizontal_drawer_cabinets",
+      "name": "Filing Cabinets"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/colonization.png",
+   "id": "colonization",
+   "modifiers": [
+    {
+     "key": "country_institution_colonial_affairs_max_investment_add",
+     "label": "Max Colonial Affairs Institution Investment",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "country_infamy_generation_against_unrecognized_mult",
+     "label": "Infamy Generation against Unrecognized Powers",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "name": "Colonization",
+   "prereqs": [
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_suez_canal",
+      "name": "Suez Canal",
+      "slug": "suez_canal"
+     }
+    ],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_colonial_exploitation",
+      "name": "Colonial Exploitation"
+     },
+     {
+      "id": "law_colonial_resettlement",
+      "name": "Colonial Resettlement"
+     },
+     {
+      "id": "law_extraction_economy",
+      "name": "Extraction Economy"
+     },
+     {
+      "id": "law_frontier_colonization",
+      "name": "Frontier Colonization"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/currency_standards.png",
+   "id": "currency_standards",
+   "modifiers": [],
+   "name": "Currency Standards",
+   "prereqs": [
+    {
+     "id": "international_trade",
+     "name": "International Trade"
+    },
+    {
+     "id": "centralization",
+     "name": "Centralization"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_per_capita_based_taxation",
+      "name": "Per-Capita Taxation"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/democracy.png",
+   "id": "democracy",
+   "modifiers": [
+    {
+     "key": "country_institution_social_security_max_investment_add",
+     "label": "Max Social Security Institution Investment",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    }
+   ],
+   "name": "Democracy",
+   "prereqs": [
+    {
+     "id": "rationalism",
+     "name": "Rationalism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_census_voting",
+      "name": "Census Suffrage"
+     },
+     {
+      "id": "law_landed_voting",
+      "name": "Landed Voting"
+     },
+     {
+      "id": "law_parliamentary_republic",
+      "name": "Parliamentary Republic"
+     },
+     {
+      "id": "law_poor_laws",
+      "name": "Poor Laws"
+     },
+     {
+      "id": "law_presidential_republic",
+      "name": "Presidential Republic"
+     },
+     {
+      "id": "law_wealth_voting",
+      "name": "Wealth Voting"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/empiricism.png",
+   "id": "empiricism",
+   "modifiers": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "country_diplomatic_play_maneuvers_mult",
+     "label": "Maneuvers per Diplomatic Play",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "country_institution_schools_max_investment_add",
+     "label": "Max Education Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_education_access_wealth_add",
+     "label": "Education Access (Wealth-based)",
+     "tone": "good",
+     "value": 0.005,
+     "valueText": "+0.5%"
+    }
+   ],
+   "name": "Empiricism",
+   "prereqs": [
+    {
+     "id": "academia",
+     "name": "Academia"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_public_schools",
+      "name": "Public Schools"
+     },
+     {
+      "id": "law_state_atheism",
+      "name": "State Atheism"
+     },
+     {
+      "id": "law_total_separation",
+      "name": "Total Separation"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/international_diplomacy.png",
+   "id": "international_relations",
+   "modifiers": [],
+   "name": "International Relations",
+   "prereqs": [
+    {
+     "id": "tech_bureaucracy",
+     "name": "Bureaucracy"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/international_trade.png",
+   "id": "international_trade",
+   "modifiers": [],
+   "name": "International Trade",
+   "prereqs": [
+    {
+     "id": "tech_bureaucracy",
+     "name": "Bureaucracy"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_free_trade",
+      "name": "Free Trade"
+     },
+     {
+      "id": "law_laissez_faire",
+      "name": "Laissez-Faire"
+     },
+     {
+      "id": "law_mercantilism",
+      "name": "Mercantilism"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/law_enforcement.png",
+   "id": "law_enforcement",
+   "modifiers": [
+    {
+     "key": "country_institution_police_max_investment_add",
+     "label": "Max Law Enforcement Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "name": "Law Enforcement",
+   "prereqs": [
+    {
+     "id": "tech_bureaucracy",
+     "name": "Bureaucracy"
+    },
+    {
+     "id": "urban_planning",
+     "name": "Urban Planning"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_censorship",
+      "name": "Censorship"
+     },
+     {
+      "id": "law_dedicated_police",
+      "name": "Dedicated Police Force"
+     },
+     {
+      "id": "law_national_guard",
+      "name": "National Guard"
+     },
+     {
+      "id": "law_shinsengumi",
+      "name": "Shinsengumi"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/mass_communication.png",
+   "id": "mass_communication",
+   "modifiers": [
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_voting_power_mult",
+     "label": "Political Strength per Vote",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "name": "Mass Communication",
+   "prereqs": [
+    {
+     "id": "democracy",
+     "name": "Democracy"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/medical_degrees.png",
+   "id": "medical_degrees",
+   "modifiers": [
+    {
+     "key": "country_institution_health_system_max_investment_add",
+     "label": "Max Health System Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "name": "Medical Degrees",
+   "prereqs": [
+    {
+     "id": "academia",
+     "name": "Academia"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_charitable_health_system",
+      "name": "Charity Hospitals"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/rationalism.png",
+   "id": "rationalism",
+   "modifiers": [
+    {
+     "key": "country_institution_schools_max_investment_add",
+     "label": "Max Education Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_education_access_wealth_add",
+     "label": "Education Access (Wealth-based)",
+     "tone": "good",
+     "value": 0.01,
+     "valueText": "+1%"
+    }
+   ],
+   "name": "Rationalism",
+   "prereqs": [],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_freedom_of_conscience",
+      "name": "Freedom of Conscience"
+     },
+     {
+      "id": "law_religious_schools",
+      "name": "Religious Schools"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/romanticism.png",
+   "id": "romanticism",
+   "modifiers": [
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Romanticism",
+   "prereqs": [
+    {
+     "id": "academia",
+     "name": "Academia"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_art_academy",
+      "name": "Arts Academy",
+      "slug": "art_academy"
+     }
+    ],
+    "decrees": [
+     {
+      "id": "decree_greener_grass_campaign",
+      "name": "Greener Grass Campaign"
+     }
+    ],
+    "laws": [
+     {
+      "id": "law_agrarianism",
+      "name": "Agrarianism"
+     },
+     {
+      "id": "law_industry_banned",
+      "name": "Industry Banned"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/stock_exchanges.png",
+   "id": "stock_exchange",
+   "modifiers": [
+    {
+     "key": "state_market_access_price_impact",
+     "label": "Market Access Price Impact",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "name": "Stock Exchange",
+   "prereqs": [
+    {
+     "id": "international_trade",
+     "name": "International Trade"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_protectionism",
+      "name": "Protectionism"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/urban_planning.png",
+   "id": "urban_planning",
+   "modifiers": [
+    {
+     "key": "state_infrastructure_from_population_add",
+     "label": "Infrastructure per … Population",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_infrastructure_from_population_max_add",
+     "label": "Maximum Infrastructure from Population",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "state_building_construction_sector_max_level_add",
+     "label": "Construction Sector Max Level",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "country_max_weekly_construction_progress_add",
+     "label": "Max Weekly Construction Progress",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "name": "Urban Planning",
+   "prereqs": [
+    {
+     "id": "urbanization",
+     "name": "Urbanization"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_iron_frame_buildings",
+      "name": "Iron-Frame Buildings"
+     },
+     {
+      "id": "pm_market_squares",
+      "name": "Market Squares"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 1,
+   "eraCost": 7500,
+   "icon": "img/techs/urbanization.png",
+   "id": "urbanization",
+   "modifiers": [
+    {
+     "key": "state_infrastructure_from_population_add",
+     "label": "Infrastructure per … Population",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "state_infrastructure_from_population_max_add",
+     "label": "Maximum Infrastructure from Population",
+     "tone": "good",
+     "value": 40,
+     "valueText": "+40"
+    },
+    {
+     "key": "state_building_construction_sector_max_level_add",
+     "label": "Construction Sector Max Level",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "country_max_weekly_construction_progress_add",
+     "label": "Max Weekly Construction Progress",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "name": "Urbanization",
+   "prereqs": [],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_construction_sector",
+      "name": "Construction Sector",
+      "slug": "construction_sector"
+     },
+     {
+      "id": "building_urban_center",
+      "name": "Urban Center",
+      "slug": "urban_center"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/central_archives.png",
+   "id": "central_archives",
+   "modifiers": [
+    {
+     "key": "state_tax_capacity_add",
+     "label": "Taxation Capacity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "country_institution_home_affairs_max_investment_add",
+     "label": "Max Home Affairs Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_incorporation_speed_mult",
+     "label": "Incorporation Speed",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Central Archives",
+   "prereqs": [
+    {
+     "id": "centralization",
+     "name": "Centralization"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_secret_police",
+      "name": "Secret Police"
+     },
+     {
+      "id": "law_technocracy",
+      "name": "Technocracy"
+     }
+    ],
+    "pms": [
+     {
+      "id": "pm_vertical_filing_cabinets",
+      "name": "Standardized Filing System"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/central_banking.png",
+   "id": "central_banking",
+   "modifiers": [
+    {
+     "key": "country_minting_mult",
+     "label": "Minting",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_loan_interest_rate_add",
+     "label": "Loan interest rate",
+     "tone": "good",
+     "value": -0.02,
+     "valueText": "-2%"
+    },
+    {
+     "key": "state_max_trade_advantage_from_capacity_add",
+     "label": "Maximum Trade Advantage from Capacity",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Central Banking",
+   "prereqs": [
+    {
+     "id": "banking",
+     "name": "Banking"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/corporate_charters.png",
+   "id": "corporate_charters",
+   "modifiers": [
+    {
+     "key": "country_max_companies_add",
+     "label": "Max Number of Companies",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "country_free_charters_add",
+     "label": "Free Company Charters",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    }
+   ],
+   "name": "Corporate Charters",
+   "prereqs": [
+    {
+     "id": "stock_exchange",
+     "name": "Stock Exchange"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/dialectics.png",
+   "id": "dialectics",
+   "modifiers": [
+    {
+     "key": "country_institution_schools_max_investment_add",
+     "label": "Max Education Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "name": "Dialectics",
+   "prereqs": [
+    {
+     "id": "empiricism",
+     "name": "Empiricism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_philosophy_department",
+      "name": "Philosophy Department"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/egalitarianism.png",
+   "id": "egalitarianism",
+   "modifiers": [
+    {
+     "key": "state_expected_sol_from_literacy",
+     "label": "Minimum Expected Standard of Living from Literacy",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "country_institution_social_security_max_investment_add",
+     "label": "Max Social Security Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "name": "Egalitarianism",
+   "prereqs": [
+    {
+     "id": "democracy",
+     "name": "Democracy"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_proportional_taxation",
+      "name": "Proportional Taxation"
+     },
+     {
+      "id": "law_universal_suffrage",
+      "name": "Universal Suffrage"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/joint_stock_companies.png",
+   "id": "joint_stock_companies",
+   "modifiers": [
+    {
+     "key": "country_max_companies_add",
+     "label": "Max Number of Companies",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_urbanization_per_level_mult",
+     "label": "Urbanization per …",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "name": "Joint-Stock Companies",
+   "prereqs": [
+    {
+     "id": "banking",
+     "name": "Banking"
+    },
+    {
+     "id": "corporate_charters",
+     "name": "Corporate Charters"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/labor_movement.png",
+   "id": "labor_movement",
+   "modifiers": [
+    {
+     "key": "state_expected_sol_from_literacy",
+     "label": "Minimum Expected Standard of Living from Literacy",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "country_institution_workplace_safety_max_investment_add",
+     "label": "Max Workplace Safety Office Institution Investment",
+     "tone": "good",
+     "value": 3,
+     "valueText": "+3"
+    },
+    {
+     "key": "country_agitator_slots_add",
+     "label": "Potential Agitators",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "name": "Labor Movement",
+   "prereqs": [
+    {
+     "id": "mass_communication",
+     "name": "Mass Communication"
+    },
+    {
+     "id": "egalitarianism",
+     "name": "Egalitarianism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_regulatory_bodies",
+      "name": "Regulatory Bodies"
+     },
+     {
+      "id": "law_restricted_child_labor",
+      "name": "Restricted Child Labor"
+     },
+     {
+      "id": "law_wage_subsidies",
+      "name": "Wage Subsidies"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/modern_sewerage.png",
+   "id": "modern_sewerage",
+   "modifiers": [
+    {
+     "key": "state_infrastructure_from_population_add",
+     "label": "Infrastructure per … Population",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_infrastructure_from_population_max_add",
+     "label": "Maximum Infrastructure from Population",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "state_building_construction_sector_max_level_add",
+     "label": "Construction Sector Max Level",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "country_max_weekly_construction_progress_add",
+     "label": "Max Weekly Construction Progress",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "state_pollution_reduction_health_mult",
+     "label": "Pollution Health Effects Reduction",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "state_harvest_condition_flood_impact_mult",
+     "label": "… Harvest Condition Impact",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "name": "Modern Sewerage",
+   "prereqs": [
+    {
+     "id": "urban_planning",
+     "name": "Urban Planning"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/nationalism.png",
+   "id": "nationalism",
+   "modifiers": [
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_voting_power_mult",
+     "label": "Political Strength per Vote",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "name": "Nationalism",
+   "prereqs": [
+    {
+     "id": "mass_communication",
+     "name": "Mass Communication"
+    },
+    {
+     "id": "international_relations",
+     "name": "International Relations"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [
+     {
+      "id": "decree_promote_national_values",
+      "name": "Promote National Values"
+     }
+    ],
+    "laws": [
+     {
+      "id": "law_ethnostate",
+      "name": "Ethnostate"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/organized_sports.png",
+   "id": "organized_sports",
+   "modifiers": [
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "name": "Organized Sports",
+   "prereqs": [
+    {
+     "id": "nationalism",
+     "name": "Nationalism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/pharmaceuticals.png",
+   "id": "pharmaceuticals",
+   "modifiers": [
+    {
+     "key": "country_institution_health_system_max_investment_add",
+     "label": "Max Health System Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_harvest_condition_disease_outbreak_impact_mult",
+     "label": "… Harvest Condition Impact",
+     "tone": "good",
+     "value": -0.2,
+     "valueText": "-20%"
+    }
+   ],
+   "name": "Pharmaceuticals",
+   "prereqs": [
+    {
+     "id": "medical_degrees",
+     "name": "Medical Degrees"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_private_health_insurance",
+      "name": "Private Health Insurance"
+     },
+     {
+      "id": "law_public_health_insurance",
+      "name": "Public Health Insurance"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/postal_savings.png",
+   "id": "postal_savings",
+   "modifiers": [
+    {
+     "key": "state_farmers_investment_pool_efficiency_mult",
+     "label": "Farmers Investment Pool contribution efficiency",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "state_shopkeepers_investment_pool_efficiency_mult",
+     "label": "Shopkeepers Investment Pool contribution efficiency",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "state_bureaucrats_investment_pool_efficiency_mult",
+     "label": "Bureaucrats Investment Pool contribution efficiency",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "state_engineers_investment_pool_efficiency_mult",
+     "label": "Engineers Investment Pool contribution efficiency",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "state_machinists_investment_pool_efficiency_mult",
+     "label": "Machinists Investment Pool contribution efficiency",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "building_cash_reserves_mult",
+     "label": "Maximum Cash Reserves",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "name": "Postal Savings",
+   "prereqs": [
+    {
+     "id": "stock_exchange",
+     "name": "Stock Exchange"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/psychiatry.png",
+   "id": "psychiatry",
+   "modifiers": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "country_diplomatic_play_maneuvers_mult",
+     "label": "Maneuvers per Diplomatic Play",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "state_bureaucracy_population_base_cost_factor_mult",
+     "label": "…Bureaucracy Population Cost Multiplier",
+     "tone": "good",
+     "value": -0.05,
+     "valueText": "-5%"
+    }
+   ],
+   "name": "Psychiatry",
+   "prereqs": [
+    {
+     "id": "empiricism",
+     "name": "Empiricism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/quinine.png",
+   "id": "quinine",
+   "modifiers": [
+    {
+     "key": "country_institution_colonial_affairs_max_investment_add",
+     "label": "Max Colonial Affairs Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "country_institution_health_system_max_investment_add",
+     "label": "Max Health System Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "name": "Quinine",
+   "prereqs": [
+    {
+     "id": "colonization",
+     "name": "Colonization"
+    },
+    {
+     "id": "pharmaceuticals",
+     "name": "Pharmaceuticals"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 2,
+   "eraCost": 10000,
+   "icon": "img/techs/realism.png",
+   "id": "realism",
+   "modifiers": [
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Realism",
+   "prereqs": [
+    {
+     "id": "romanticism",
+     "name": "Romanticism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_bourgeoisie_patronage",
+      "name": "Bourgeoisie Patronage"
+     },
+     {
+      "id": "pm_independent_artists",
+      "name": "Independent Artists"
+     },
+     {
+      "id": "pm_realist_art",
+      "name": "Realist Art"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/anarchy.png",
+   "id": "anarchism",
+   "modifiers": [],
+   "name": "Anarchism",
+   "prereqs": [
+    {
+     "id": "egalitarianism",
+     "name": "Egalitarianism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_anarchy",
+      "name": "Anarchy"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/camera.png",
+   "id": "camera",
+   "modifiers": [
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Camera",
+   "prereqs": [
+    {
+     "id": "realism",
+     "name": "Realism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_photographic_art",
+      "name": "Photographic Art"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/civilizing_mission.png",
+   "id": "civilizing_mission",
+   "modifiers": [
+    {
+     "key": "country_institution_colonial_affairs_max_investment_add",
+     "label": "Max Colonial Affairs Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "country_infamy_generation_against_unrecognized_mult",
+     "label": "Infamy Generation against Unrecognized Powers",
+     "tone": "good",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "name": "Civilizing Mission",
+   "prereqs": [
+    {
+     "id": "quinine",
+     "name": "Quinine"
+    },
+    {
+     "id": "nationalism",
+     "name": "Nationalism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_panama_canal",
+      "name": "Panama Canal",
+      "slug": "panama_canal"
+     }
+    ],
+    "decrees": [
+     {
+      "id": "decree_establish_missions",
+      "name": "Establish Missions"
+     }
+    ],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/corporatism.png",
+   "id": "corporatism",
+   "modifiers": [
+    {
+     "key": "state_radicals_from_political_movements_mult",
+     "label": "Radicals from Political Movements",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "name": "Corporatism",
+   "prereqs": [
+    {
+     "id": "labor_movement",
+     "name": "Labor Movement"
+    },
+    {
+     "id": "nationalism",
+     "name": "Nationalism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_corporate_state",
+      "name": "Corporate State"
+     },
+     {
+      "id": "law_corporatized_unions",
+      "name": "Corporatized Unions"
+     },
+     {
+      "id": "law_social_monarchy",
+      "name": "Social Monarchy"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/feminism.png",
+   "id": "feminism",
+   "modifiers": [
+    {
+     "key": "country_institution_social_security_max_investment_add",
+     "label": "Max Social Security Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "name": "Feminism",
+   "prereqs": [
+    {
+     "id": "human_rights",
+     "name": "Human Rights"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_women_in_the_workplace",
+      "name": "Women in the Workplace"
+     },
+     {
+      "id": "law_womens_suffrage",
+      "name": "Women’s Suffrage"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/human_rights.png",
+   "id": "human_rights",
+   "modifiers": [
+    {
+     "key": "country_institution_social_security_max_investment_add",
+     "label": "Max Social Security Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "name": "Human Rights",
+   "prereqs": [
+    {
+     "id": "egalitarianism",
+     "name": "Egalitarianism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_compulsory_primary_school",
+      "name": "Compulsory Primary School"
+     },
+     {
+      "id": "law_multicultural",
+      "name": "Multiculturalism"
+     },
+     {
+      "id": "law_old_age_pension",
+      "name": "Old Age Pension"
+     },
+     {
+      "id": "law_protected_speech",
+      "name": "Protected Speech"
+     },
+     {
+      "id": "law_worker_protections",
+      "name": "Workers' Protections"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/identification_documents.png",
+   "id": "identification_documents",
+   "modifiers": [
+    {
+     "key": "state_tax_capacity_add",
+     "label": "Taxation Capacity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "country_institution_home_affairs_max_investment_add",
+     "label": "Max Home Affairs Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_incorporation_speed_mult",
+     "label": "Incorporation Speed",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Identification Documents",
+   "prereqs": [
+    {
+     "id": "central_archives",
+     "name": "Central Archives"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/investment_banks.png",
+   "id": "investment_banks",
+   "modifiers": [
+    {
+     "key": "country_max_companies_add",
+     "label": "Max Number of Companies",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "country_free_charters_add",
+     "label": "Free Company Charters",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_urbanization_per_level_mult",
+     "label": "Urbanization per …",
+     "tone": "good",
+     "value": -0.15,
+     "valueText": "-15%"
+    }
+   ],
+   "name": "Investment Banks",
+   "prereqs": [
+    {
+     "id": "joint_stock_companies",
+     "name": "Joint-Stock Companies"
+    },
+    {
+     "id": "mutual_funds",
+     "name": "Mutual Funds"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/mutual_funds.png",
+   "id": "mutual_funds",
+   "modifiers": [
+    {
+     "key": "country_minting_mult",
+     "label": "Minting",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_loan_interest_rate_add",
+     "label": "Loan interest rate",
+     "tone": "good",
+     "value": -0.02,
+     "valueText": "-2%"
+    },
+    {
+     "key": "state_max_trade_advantage_from_capacity_add",
+     "label": "Maximum Trade Advantage from Capacity",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Mutual Funds",
+   "prereqs": [
+    {
+     "id": "central_banking",
+     "name": "Central Banking"
+    },
+    {
+     "id": "postal_savings",
+     "name": "Postal Savings"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_commercialized_agriculture",
+      "name": "Commercialized Agriculture"
+     }
+    ],
+    "pms": [
+     {
+      "id": "pm_financial_district_publicly_traded",
+      "name": "Publicly Traded"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/pan_nationalism.png",
+   "id": "pan-nationalism",
+   "modifiers": [
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_support_separatism_strength_mult",
+     "label": "… Strength",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "country_voting_power_mult",
+     "label": "Political Strength per Vote",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "name": "Pan-nationalism",
+   "prereqs": [
+    {
+     "id": "nationalism",
+     "name": "Nationalism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/philosophical_pragmatism.png",
+   "id": "philosophical_pragmatism",
+   "modifiers": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "country_diplomatic_play_maneuvers_mult",
+     "label": "Maneuvers per Diplomatic Play",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "state_bureaucracy_population_base_cost_factor_mult",
+     "label": "…Bureaucracy Population Cost Multiplier",
+     "tone": "good",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "state_literacy_growth_add",
+     "label": "Literacy Growth",
+     "tone": "good",
+     "value": 0.0001,
+     "valueText": "+0.01%"
+    }
+   ],
+   "name": "Philosophical Pragmatism",
+   "prereqs": [
+    {
+     "id": "psychiatry",
+     "name": "Psychiatry"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/socialism.png",
+   "id": "socialism",
+   "modifiers": [
+    {
+     "key": "state_expected_sol_from_literacy",
+     "label": "Minimum Expected Standard of Living from Literacy",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "country_institution_workplace_safety_max_investment_add",
+     "label": "Max Workplace Safety Office Institution Investment",
+     "tone": "good",
+     "value": 2,
+     "valueText": "+2"
+    }
+   ],
+   "name": "Socialism",
+   "prereqs": [
+    {
+     "id": "labor_movement",
+     "name": "Labor Movement"
+    },
+    {
+     "id": "dialectics",
+     "name": "Dialectics"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_collectivized_agriculture",
+      "name": "Collectivized Agriculture"
+     },
+     {
+      "id": "law_council_republic",
+      "name": "Council Republic"
+     },
+     {
+      "id": "law_factory_councils",
+      "name": "Factory Councils"
+     },
+     {
+      "id": "law_graduated_taxation",
+      "name": "Graduated Taxation"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 3,
+   "eraCost": 12500,
+   "icon": "img/techs/steel_frame_buildings.png",
+   "id": "steel_frame_buildings",
+   "modifiers": [
+    {
+     "key": "state_infrastructure_from_population_add",
+     "label": "Infrastructure per … Population",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_infrastructure_from_population_max_add",
+     "label": "Maximum Infrastructure from Population",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "state_building_construction_sector_max_level_add",
+     "label": "Construction Sector Max Level",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "country_max_weekly_construction_progress_add",
+     "label": "Max Weekly Construction Progress",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "state_harvest_condition_flood_impact_mult",
+     "label": "… Harvest Condition Impact",
+     "tone": "good",
+     "value": -0.05,
+     "valueText": "-5%"
+    }
+   ],
+   "name": "Steel-Frame Buildings",
+   "prereqs": [
+    {
+     "id": "modern_sewerage",
+     "name": "Modern Sewerage"
+    }
+   ],
+   "unlocks": {
+    "buildings": [
+     {
+      "id": "building_estacion_de_madrid_atocha",
+      "name": "Atocha Railway Station",
+      "slug": "estacion_de_madrid_atocha"
+     },
+     {
+      "id": "building_statue_of_liberty",
+      "name": "Statue of Liberty",
+      "slug": "statue_of_liberty"
+     },
+     {
+      "id": "building_eiffel_tower",
+      "name": "The Eiffel Tower",
+      "slug": "eiffel_tower"
+     },
+     {
+      "id": "building_victoria_terminus",
+      "name": "Victoria Terminus",
+      "slug": "victoria_terminus"
+     }
+    ],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_covered_markets",
+      "name": "Covered Markets"
+     },
+     {
+      "id": "pm_steel_frame_buildings",
+      "name": "Steel-Frame Buildings"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/central_planning.png",
+   "id": "central_planning",
+   "modifiers": [
+    {
+     "key": "state_tax_capacity_add",
+     "label": "Taxation Capacity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "country_government_dividends_efficiency_add",
+     "label": "Government Dividends Efficiency",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "country_institution_home_affairs_max_investment_add",
+     "label": "Max Home Affairs Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_incorporation_speed_mult",
+     "label": "Incorporation Speed",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "state_literacy_growth_add",
+     "label": "Literacy Growth",
+     "tone": "good",
+     "value": 0.0002,
+     "valueText": "+0.02%"
+    }
+   ],
+   "name": "Central Planning",
+   "prereqs": [
+    {
+     "id": "identification_documents",
+     "name": "Identification Documents"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_command_economy",
+      "name": "Command Economy"
+     }
+    ],
+    "pms": [
+     {
+      "id": "pm_switch_boards",
+      "name": "Telephone Switchboards"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/corporate_management.png",
+   "id": "corporate_management",
+   "modifiers": [
+    {
+     "key": "country_max_companies_add",
+     "label": "Max Number of Companies",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_urbanization_per_level_mult",
+     "label": "Urbanization per …",
+     "tone": "good",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "name": "Corporate Governance",
+   "prereqs": [
+    {
+     "id": "investment_banks",
+     "name": "Investment Banks"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/elevator.png",
+   "id": "elevator",
+   "modifiers": [
+    {
+     "key": "state_infrastructure_from_population_add",
+     "label": "Infrastructure per … Population",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_infrastructure_from_population_max_add",
+     "label": "Maximum Infrastructure from Population",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "state_building_construction_sector_max_level_add",
+     "label": "Construction Sector Max Level",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "country_max_weekly_construction_progress_add",
+     "label": "Max Weekly Construction Progress",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    }
+   ],
+   "name": "Elevators",
+   "prereqs": [
+    {
+     "id": "steel_frame_buildings",
+     "name": "Steel-Frame Buildings"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_arcades",
+      "name": "Arcades"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/film.png",
+   "id": "film",
+   "modifiers": [
+    {
+     "key": "country_prestige_mult",
+     "label": "Prestige",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Film",
+   "prereqs": [
+    {
+     "id": "camera",
+     "name": "Camera"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_film_art",
+      "name": "Film Art"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/international_exchange_standards.png",
+   "id": "international_exchange_standards",
+   "modifiers": [
+    {
+     "key": "country_minting_mult",
+     "label": "Minting",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_loan_interest_rate_add",
+     "label": "Loan interest rate",
+     "tone": "good",
+     "value": -0.02,
+     "valueText": "-2%"
+    },
+    {
+     "key": "state_max_trade_advantage_from_capacity_add",
+     "label": "Maximum Trade Advantage from Capacity",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "International Exchange Standards",
+   "prereqs": [
+    {
+     "id": "mutual_funds",
+     "name": "Mutual Funds"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/malaria_prevention.png",
+   "id": "malaria_prevention",
+   "modifiers": [
+    {
+     "key": "country_institution_colonial_affairs_max_investment_add",
+     "label": "Max Colonial Affairs Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "country_institution_health_system_max_investment_add",
+     "label": "Max Health System Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "name": "Malaria Prevention",
+   "prereqs": [
+    {
+     "id": "civilizing_mission",
+     "name": "Civilizing Mission"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/multilateral_alliances.png",
+   "id": "multilateral_alliances",
+   "modifiers": [
+    {
+     "key": "country_infamy_generation_mult",
+     "label": "Infamy Generation",
+     "tone": "good",
+     "value": -0.25,
+     "valueText": "-25%"
+    },
+    {
+     "key": "country_diplomatic_play_maneuvers_mult",
+     "label": "Maneuvers per Diplomatic Play",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "country_allow_multiple_alliances_bool",
+     "label": "Allow Multiple Alliances",
+     "tone": "neutral",
+     "value": true,
+     "valueText": "yes"
+    }
+   ],
+   "name": "Multilateral Alliances",
+   "prereqs": [
+    {
+     "id": "pan-nationalism",
+     "name": "Pan-nationalism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/political_agitation.png",
+   "id": "political_agitation",
+   "modifiers": [
+    {
+     "key": "state_expected_sol_from_literacy",
+     "label": "Minimum Expected Standard of Living from Literacy",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_voting_power_mult",
+     "label": "Political Strength per Vote",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_agitator_slots_add",
+     "label": "Potential Agitators",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "name": "Political Agitation",
+   "prereqs": [
+    {
+     "id": "anarchism",
+     "name": "Anarchism"
+    },
+    {
+     "id": "socialism",
+     "name": "Socialism"
+    },
+    {
+     "id": "corporatism",
+     "name": "Corporatism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_outlawed_dissent",
+      "name": "Outlawed Dissent"
+     },
+     {
+      "id": "law_single_party_state",
+      "name": "Single-Party State"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/psychoanalysis.png",
+   "id": "psychoanalysis",
+   "modifiers": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "country_diplomatic_play_maneuvers_mult",
+     "label": "Maneuvers per Diplomatic Play",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "state_bureaucracy_population_base_cost_factor_mult",
+     "label": "…Bureaucracy Population Cost Multiplier",
+     "tone": "good",
+     "value": -0.05,
+     "valueText": "-5%"
+    }
+   ],
+   "name": "Psychoanalysis",
+   "prereqs": [
+    {
+     "id": "philosophical_pragmatism",
+     "name": "Philosophical Pragmatism"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 4,
+   "eraCost": 15000,
+   "icon": "img/techs/zeppelins.png",
+   "id": "zeppelins",
+   "modifiers": [
+    {
+     "key": "state_market_access_price_impact",
+     "label": "Market Access Price Impact",
+     "tone": "neutral",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Zeppelins",
+   "prereqs": [
+    {
+     "id": "steel_frame_buildings",
+     "name": "Steel-Frame Buildings"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_airship_mooring_post",
+      "name": "Airship Mooring Post"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/analytical_philosophy.png",
+   "id": "analytical_philosophy",
+   "modifiers": [
+    {
+     "key": "state_literacy_growth_add",
+     "label": "Literacy Growth",
+     "tone": "good",
+     "value": 0.0002,
+     "valueText": "+0.02%"
+    }
+   ],
+   "name": "Analytical Philosophy",
+   "prereqs": [
+    {
+     "id": "psychoanalysis",
+     "name": "Psychoanalysis"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": [
+     {
+      "id": "pm_analytical_philosophy_department",
+      "name": "Analytical Philosophy Department"
+     }
+    ]
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/antibiotics.png",
+   "id": "antibiotics",
+   "modifiers": [
+    {
+     "key": "country_institution_health_system_max_investment_add",
+     "label": "Max Health System Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_harvest_condition_disease_outbreak_impact_mult",
+     "label": "… Harvest Condition Impact",
+     "tone": "good",
+     "value": -0.15,
+     "valueText": "-15%"
+    }
+   ],
+   "name": "Antibiotics",
+   "prereqs": [
+    {
+     "id": "malaria_prevention",
+     "name": "Malaria Prevention"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/behaviorism.png",
+   "id": "behaviorism",
+   "modifiers": [
+    {
+     "key": "country_influence_mult",
+     "label": "…Influence",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "country_diplomatic_play_maneuvers_mult",
+     "label": "Maneuvers per Diplomatic Play",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "state_bureaucracy_population_base_cost_factor_mult",
+     "label": "…Bureaucracy Population Cost Multiplier",
+     "tone": "good",
+     "value": -0.05,
+     "valueText": "-5%"
+    }
+   ],
+   "name": "Behaviorism",
+   "prereqs": [
+    {
+     "id": "psychoanalysis",
+     "name": "Psychoanalysis"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/macroeconomics.png",
+   "id": "macroeconomics",
+   "modifiers": [
+    {
+     "key": "country_max_companies_add",
+     "label": "Max Number of Companies",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_market_access_price_impact",
+     "label": "Market Access Price Impact",
+     "tone": "neutral",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Macroeconomics",
+   "prereqs": [
+    {
+     "id": "international_exchange_standards",
+     "name": "International Exchange Standards"
+    },
+    {
+     "id": "corporate_management",
+     "name": "Corporate Governance"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/mass_propaganda.png",
+   "id": "mass_propaganda",
+   "modifiers": [
+    {
+     "key": "country_authority_mult",
+     "label": "…Authority",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_voting_power_mult",
+     "label": "Political Strength per Vote",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "state_expected_sol_from_literacy",
+     "label": "Minimum Expected Standard of Living from Literacy",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "country_agitator_slots_add",
+     "label": "Potential Agitators",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "country_support_separatism_strength_mult",
+     "label": "… Strength",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ],
+   "name": "Mass Propaganda",
+   "prereqs": [
+    {
+     "id": "political_agitation",
+     "name": "Political Agitation"
+    },
+    {
+     "id": "film",
+     "name": "Film"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/mass_surveillance.png",
+   "id": "mass_surveillance",
+   "modifiers": [
+    {
+     "key": "state_tax_capacity_add",
+     "label": "Taxation Capacity",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "country_support_separatism_resistance_mult",
+     "label": "… Resistance",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "country_institution_home_affairs_max_investment_add",
+     "label": "Max Home Affairs Institution Investment",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "state_incorporation_speed_mult",
+     "label": "Incorporation Speed",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Mass Surveillance",
+   "prereqs": [
+    {
+     "id": "central_planning",
+     "name": "Central Planning"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [
+     {
+      "id": "law_militarized_police",
+      "name": "Militarized Police Force"
+     }
+    ],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/modern_financial_instruments.png",
+   "id": "modern_financial_instruments",
+   "modifiers": [
+    {
+     "key": "country_minting_mult",
+     "label": "Minting",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "country_loan_interest_rate_add",
+     "label": "Loan interest rate",
+     "tone": "good",
+     "value": -0.02,
+     "valueText": "-2%"
+    },
+    {
+     "key": "country_government_dividends_efficiency_add",
+     "label": "Government Dividends Efficiency",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    }
+   ],
+   "name": "Modern Financial Instruments",
+   "prereqs": [
+    {
+     "id": "international_exchange_standards",
+     "name": "International Exchange Standards"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  },
+  {
+   "canResearch": true,
+   "category": "society",
+   "era": 5,
+   "eraCost": 17500,
+   "icon": "img/techs/paved_roads.png",
+   "id": "paved_roads",
+   "modifiers": [
+    {
+     "key": "state_infrastructure_from_automobiles_consumption_add",
+     "label": "Infrastructure from Pop Automobiles Consumption",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+0.25"
+    }
+   ],
+   "name": "Paved Roads",
+   "prereqs": [
+    {
+     "id": "elevator",
+     "name": "Elevators"
+    }
+   ],
+   "unlocks": {
+    "buildings": [],
+    "decrees": [],
+    "laws": [],
+    "pms": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+---
+// Renders a formatted modifier bag (the output of modifiers.formatBag in the
+// build scripts): one line per modifier, value colored by tone. This is the
+// single way effects are displayed — the formatting itself happened at build
+// time from the game's own modifier definitions.
+interface Mod {
+  key: string;
+  label: string;
+  valueText: string;
+  tone: 'good' | 'bad' | 'neutral';
+}
+interface Props {
+  mods: Mod[];
+  inline?: boolean; // one line, comma-separated — for tight table cells
+}
+const { mods, inline = false } = Astro.props;
+---
+{mods.length === 0 ? (
+  <span class="cell__dash">—</span>
+) : inline ? (
+  <span class="modl modl--inline">
+    {mods.map((m, i) => (
+      <>
+        {i > 0 && ', '}
+        <span class="modl__item">
+          <b class={`tone-${m.tone}`}>{m.valueText === 'yes' ? '✓' : m.valueText === 'no' ? '✗' : m.valueText}</b>{' '}{m.label}
+        </span>
+      </>
+    ))}
+  </span>
+) : (
+  <span class="modl">
+    {mods.map((m) => (
+      <span class="modl__row">
+        <b class={`tone-${m.tone}`}>{m.valueText === 'yes' ? '✓' : m.valueText === 'no' ? '✗' : m.valueText}</b>{' '}{m.label}
+      </span>
+    ))}
+  </span>
+)}
+
+<style is:global>
+  .modl { display: flex; flex-direction: column; gap: 0.1rem; }
+  .modl--inline { display: inline; }
+  .modl__row { display: block; line-height: 1.3; }
+  .modl__row b, .modl__item b { font-weight: 600; font-variant-numeric: tabular-nums; }
+</style>

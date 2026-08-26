@@ -1,0 +1,75 @@
+---
+import Base from '../layouts/Base.astro';
+import ModifierList from '../components/ModifierList.astro';
+import igsJson from '../data/interest_groups.json';
+
+const base = import.meta.env.BASE_URL;
+const igs = (igsJson as any).interestGroups as any[];
+
+// min_approval / max_approval → when the trait is active.
+const when = (t: any) =>
+  t.minApproval ? `${t.minApproval}+` : t.maxApproval ? `${t.maxApproval} or below` : 'always';
+---
+<Base
+  title="Interest Groups"
+  active="interest-groups"
+  eyebrow="Politics"
+  pageStats={[{ value: igs.length, label: 'interest groups' }]}
+>
+  {igs.map((ig) => (
+    <>
+      <h2 class="sect" id={ig.id}>
+        <img class="sect__icon" src={`${base}${ig.icon}`} alt="" loading="lazy" />
+        {ig.name}
+      </h2>
+      <div class="igmeta">
+        <span class="igmeta__label">Leader ideologies</span>
+        {ig.ideologies.map((i: any, n: number) => (
+          <>{n > 0 && ', '}<a href={`${base}ideologies#${i.id}`}>{i.name}</a></>
+        ))}
+        {ig.characterIdeologies.length > 0 && (
+          <>
+            <span class="igmeta__label" style="margin-left: 1rem;">Also possible</span>
+            {ig.characterIdeologies.map((i: any, n: number) => (
+              <>{n > 0 && ', '}<a href={`${base}ideologies#${i.id}`}>{i.name}</a></>
+            ))}
+          </>
+        )}
+      </div>
+      <div class="grid"><div class="grid__scroll">
+        <table class="vtbl">
+          <thead>
+            <tr>
+              <th style="width: 16rem;">Default trait</th>
+              <th style="width: 10rem;" title="IG approval level at which the trait is active">Active when</th>
+              <th>Effects</th>
+            </tr>
+          </thead>
+          <tbody>
+            {ig.traits.map((t: any) => (
+              <tr>
+                <td class="lead-cell"><span class="lead">{t.name}</span></td>
+                <td class={t.maxApproval ? 'tone-bad' : 'tone-good'}>{when(t)}</td>
+                <td><ModifierList mods={t.modifiers} inline /></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div></div>
+    </>
+  ))}
+
+  <p class="caption">
+    Default traits — several countries swap in flavored traits via script (China, France, Japan, …) ·
+    approval thresholds: loyal · happy · unhappy · angry
+  </p>
+
+  <style is:global>
+    .sect__icon { width: 1.6em; height: 1.6em; object-fit: contain; vertical-align: -0.45em; margin-right: 0.4em; }
+    .igmeta { font-size: 0.78rem; color: var(--text-soft); margin: 0.15rem 0 0.5rem; }
+    .igmeta__label {
+      font-family: var(--font-ui); font-size: 0.6rem; text-transform: uppercase;
+      letter-spacing: 0.14em; color: var(--text-faint); margin-right: 0.45rem;
+    }
+  </style>
+</Base>

@@ -1,0 +1,198 @@
+{
+ "institutions": [
+  {
+   "icon": "img/institutions/colonization.png",
+   "id": "institution_colonial_affairs",
+   "laws": [
+    {
+     "id": "law_frontier_colonization",
+     "name": "Frontier Colonization"
+    },
+    {
+     "id": "law_colonial_resettlement",
+     "name": "Colonial Resettlement"
+    },
+    {
+     "id": "law_colonial_exploitation",
+     "name": "Colonial Exploitation"
+    }
+   ],
+   "modifiers": [
+    {
+     "key": "state_colony_growth_creation_factor",
+     "label": "Colonial Growth Generation",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+0.1"
+    }
+   ],
+   "name": "Colonial Affairs"
+  },
+  {
+   "icon": "img/institutions/social_security.png",
+   "id": "institution_social_security",
+   "laws": [
+    {
+     "id": "law_chiefs_distribute_aid",
+     "name": "Šef Paternalism"
+    },
+    {
+     "id": "law_poor_laws",
+     "name": "Poor Laws"
+    },
+    {
+     "id": "law_wage_subsidies",
+     "name": "Wage Subsidies"
+    },
+    {
+     "id": "law_old_age_pension",
+     "name": "Old Age Pension"
+    }
+   ],
+   "modifiers": [
+    {
+     "key": "state_welfare_payments_add",
+     "label": "Welfare Payments",
+     "tone": "neutral",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "state_food_security_add",
+     "label": "Food Security",
+     "tone": "good",
+     "value": 0.02,
+     "valueText": "+2%"
+    }
+   ],
+   "name": "Social Security"
+  },
+  {
+   "icon": "img/institutions/workplace_safety.png",
+   "id": "institution_workplace_safety",
+   "laws": [
+    {
+     "id": "law_regulatory_bodies",
+     "name": "Regulatory Bodies"
+    },
+    {
+     "id": "law_worker_protections",
+     "name": "Workers' Protections"
+    }
+   ],
+   "modifiers": [
+    {
+     "key": "building_working_conditions_mult",
+     "label": "Dangerous Working Conditions",
+     "tone": "good",
+     "value": -0.2,
+     "valueText": "-20%"
+    }
+   ],
+   "name": "Workplace Safety Office"
+  },
+  {
+   "icon": "img/institutions/schools.png",
+   "id": "institution_schools",
+   "laws": [
+    {
+     "id": "law_religious_schools",
+     "name": "Religious Schools"
+    },
+    {
+     "id": "law_private_schools",
+     "name": "Private Schools"
+    },
+    {
+     "id": "law_public_schools",
+     "name": "Public Schools"
+    }
+   ],
+   "modifiers": [],
+   "name": "Education"
+  },
+  {
+   "icon": "img/institutions/police.png",
+   "id": "institution_police",
+   "laws": [
+    {
+     "id": "law_local_police",
+     "name": "Local Police Force"
+    },
+    {
+     "id": "law_dedicated_police",
+     "name": "Dedicated Police Force"
+    },
+    {
+     "id": "law_militarized_police",
+     "name": "Militarized Police Force"
+    }
+   ],
+   "modifiers": [
+    {
+     "key": "state_turmoil_effects_mult",
+     "label": "State Penalties from Turmoil",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "name": "Law Enforcement"
+  },
+  {
+   "icon": "img/institutions/health_service.png",
+   "id": "institution_health_system",
+   "laws": [
+    {
+     "id": "law_charitable_health_system",
+     "name": "Charity Hospitals"
+    },
+    {
+     "id": "law_private_health_insurance",
+     "name": "Private Health Insurance"
+    },
+    {
+     "id": "law_public_health_insurance",
+     "name": "Public Health Insurance"
+    }
+   ],
+   "modifiers": [],
+   "name": "Health System"
+  },
+  {
+   "icon": "img/institutions/home_affairs.png",
+   "id": "institution_home_affairs",
+   "laws": [
+    {
+     "id": "law_national_guard",
+     "name": "National Guard"
+    },
+    {
+     "id": "law_secret_police",
+     "name": "Secret Police"
+    },
+    {
+     "id": "law_guaranteed_liberties",
+     "name": "Guaranteed Liberties"
+    }
+   ],
+   "modifiers": [
+    {
+     "key": "country_revolution_progress_mult",
+     "label": "Revolution Progression Speed",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    },
+    {
+     "key": "country_secession_progress_mult",
+     "label": "Secession Progression Speed",
+     "tone": "good",
+     "value": -0.1,
+     "valueText": "-10%"
+    }
+   ],
+   "name": "Home Affairs"
+  }
+ ]
+}
