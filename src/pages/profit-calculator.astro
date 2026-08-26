@@ -18,6 +18,14 @@ const base = import.meta.env.BASE_URL;
         <select id="bp-building" class="rail__select"><option>Loading…</option></select>
       </div>
       <div>
+        <div class="rail__label">Optimise for</div>
+        <select id="bp-rank" class="rail__select">
+          <option value="net">Total profit (£ / level)</option>
+          <option value="worker">Profit per worker</option>
+        </select>
+        <p class="bp__railnote" id="bp-ranknote"></p>
+      </div>
+      <div>
         <div class="rail__label">
           <span>Market prices</span>
           <button type="button" id="bp-reset" class="rail__btn">reset</button>
@@ -83,6 +91,15 @@ const base = import.meta.env.BASE_URL;
         return { flow, jobs, net, totalJobs: Object.values(jobs).reduce((s, a) => s + a, 0) };
       }
       const evaluateWith = (gi, pi) => evaluate({ ...state.choice, [gi]: pi });
+
+      // What "best" means. Construction cost is a property of the BUILDING and
+      // no production method modifies it (checked across every PM), so ranking
+      // by £/construction inside one building is £ divided by a constant — the
+      // same order. It only reorders across buildings, which is why it is a
+      // column on Compare Methods and not a mode here.
+      const rankBy = () => document.getElementById('bp-rank').value;
+      const metric = (r) =>
+        rankBy() === 'worker' ? (r.totalJobs > 0 ? r.net / r.totalJobs : -Infinity) : r.net;
 
       const liveGroups = () =>
         state.building.pmGroups.map((g, gi) => ({ gi, g })).filter(({ g }) => g.pms.length);
@@ -165,14 +182,19 @@ const base = import.meta.env.BASE_URL;
           .filter(([, u]) => u !== 0)
           .map(([g, u]) => ({ g, u, value: u * priceOf(g) }))
           .sort((a, b) => b.value - a.value);
-        const best = Math.max(...allCombinations().map((c) => evaluate(c).net));
-        const atBest = net >= best - 0.5;
+        const scored = allCombinations().map((c) => ({ c, r: evaluate(c) }));
+        const bestEntry = scored.slice().sort((a, b) => metric(b.r) - metric(a.r))[0];
+        const best = bestEntry.r.net;
+        const atBest = metric({ net, totalJobs }) >= metric(bestEntry.r) - 1e-9;
+        const constr = state.building.construction;
 
         $('bp-head').innerHTML = `
           <div class="bp__netrow">
             <div class="bp__net ${net >= 0 ? 'tone-good' : 'tone-bad'}">£${net.toFixed(0)}<span>net / level</span></div>
             <div class="bp__jobs">${totalJobs.toLocaleString()}<span>workers</span></div>
             <div class="bp__perw">${totalJobs > 0 ? '£' + (net / totalJobs).toFixed(2) : '—'}<span>per worker</span></div>
+            <div class="bp__perw" title="Construction points this building costs — fixed per building, so it never changes which method wins here">${
+              constr ? '£' + (net / constr).toFixed(2) : '—'}<span>per construction${constr ? ` (of ${constr})` : ''}</span></div>
             ${atBest
               ? '<span class="bp__atbest">best set at these prices</span>'
               : `<button type="button" id="bp-loadbest" class="bp__bestbtn">load best set (£${best.toFixed(0)})</button>`}
@@ -188,10 +210,7 @@ const base = import.meta.env.BASE_URL;
 
         const btn = $('bp-loadbest');
         if (btn) btn.addEventListener('click', () => {
-          const bestCombo = allCombinations()
-            .map((c) => ({ c, net: evaluate(c).net }))
-            .sort((a, b) => b.net - a.net)[0];
-          state.choice = { ...bestCombo.c };
+          state.choice = { ...bestEntry.c };
           renderAll();
         });
       }
@@ -205,10 +224,11 @@ const base = import.meta.env.BASE_URL;
             return {
               pi, pm, net: r.net, jobs: r.totalJobs, delta: r.net - currentNet,
               perWorker: r.totalJobs > 0 ? r.net / r.totalJobs : null,
+              score: metric(r),
             };
           });
-          const best = Math.max(...options.map((o) => o.net));
-          const ranked = [...options].sort((a, b) => b.net - a.net || a.pi - b.pi);
+          const best = Math.max(...options.map((o) => o.score));
+          const ranked = [...options].sort((a, b) => b.score - a.score || a.pi - b.pi);
           return `
             <div class="bp__group">
               <div class="bp__gname">${g.name}</div>
@@ -223,7 +243,7 @@ const base = import.meta.env.BASE_URL;
                       <img src="${base}${o.pm.icon ?? ''}" alt="" loading="lazy"
                            onerror="this.style.visibility='hidden'" />
                       ${o.pm.name}
-                      ${o.net === best ? '<span class="bp__badge">best</span>' : ''}
+                      ${o.score === best ? '<span class="bp__badge">best</span>' : ''}
                     </td>
                     <td class="num"><b class="${o.net >= 0 ? 'tone-good' : 'tone-bad'}">£${o.net.toFixed(0)}</b></td>
                     <td class="num">${o.pi === current ? '<span class="bp__cur">—</span>'
@@ -250,8 +270,9 @@ const base = import.meta.env.BASE_URL;
         const scored = allCombinations().map((choice) => {
           const r = evaluate(choice);
           return { choice, net: r.net, jobs: r.totalJobs,
-                   perWorker: r.totalJobs > 0 ? r.net / r.totalJobs : null };
-        }).sort((a, b) => b.net - a.net);
+                   perWorker: r.totalJobs > 0 ? r.net / r.totalJobs : null,
+                   score: metric(r) };
+        }).sort((a, b) => b.score - a.score);
         const same = (c) => groups.every(({ gi }) => c[gi] === state.choice[gi]);
 
         $('bp-combos').tHead.innerHTML = `<tr><th class="num" style="width:3rem;">#</th>
@@ -280,6 +301,15 @@ const base = import.meta.env.BASE_URL;
       function renderAll() { renderHead(); renderGroups(); renderCombos(); }
 
       $('bp-combos').closest('details').addEventListener('toggle', renderCombos);
+      function rankNote() {
+        $('bp-ranknote').innerHTML = rankBy() === 'worker'
+          ? 'Ranking by output per job — this is where automation earns its place.'
+          : 'Ranking by total profit per level. Per point of construction gives the same order here '
+            + `(cost is fixed per building), so use <a href="${base}method-comparison">Compare Methods</a> `
+            + 'to optimise construction across buildings.';
+      }
+      $('bp-rank').addEventListener('change', () => { rankNote(); renderAll(); });
+      rankNote();
       $('bp-reset').addEventListener('click', () => { P.reset(); renderPrices(); renderAll(); });
       sel.addEventListener('change', () => pickBuilding(sel.value));
       pickBuilding(data.buildings[0].id);
@@ -356,6 +386,8 @@ const base = import.meta.env.BASE_URL;
       padding: 0.4rem 0.7rem; border-left: 3px solid var(--gold-deep);
       background: var(--bg-elev); border-radius: 0 6px 6px 0;
     }
+    .bp__railnote { font-size: 0.68rem; color: var(--text-faint); margin: 0.3rem 0 0; line-height: 1.45; }
+    .bp__railnote a { color: var(--gold-soft); }
     .bp__all { margin: 0.6rem 0 1rem; }
     .bp__all > summary {
       cursor: pointer; font-family: var(--font-ui); font-size: 0.62rem;

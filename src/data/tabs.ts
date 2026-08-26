@@ -142,6 +142,11 @@ export const TABS: Tab[] = [
     summary: 'Every state region — 1836 owner, population, buildings, goods, resources',
   },
   {
+    slug: 'resource-map', icon: '🗺️', label: 'Map', section: 'World',
+    status: 'built',
+    summary: 'Interactive world map — resources, 1836 production, and population',
+  },
+  {
     slug: 'cultures', icon: '🌍', label: 'Cultures & Religions', section: 'World',
     status: 'built',
     summary: 'Culture and religion catalog with traits and obsessions',
@@ -176,16 +181,12 @@ export const TABS: Tab[] = [
     summary: 'The constants under the hood, curated',
   },
 
+
   // ── Tools ─────────────────────────────────────────────────────────
   {
     slug: 'profit-calculator', icon: '🧮', label: 'Building Profit', section: 'Tools',
     status: 'built',
     summary: 'One building at your prices — every method in every group ranked in place',
-  },
-  {
-    slug: 'resource-map', icon: '🗺️', label: 'Resource Map', section: 'Tools',
-    status: 'built',
-    summary: 'Interactive map of every state resource — switch layers or overlay up to three',
   },
   {
     slug: 'method-comparison', icon: '⚖️', label: 'Compare Methods', section: 'Tools',
