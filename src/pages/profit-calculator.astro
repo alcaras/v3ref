@@ -20,7 +20,7 @@ const base = import.meta.env.BASE_URL;
       <div>
         <div class="rail__label">Optimise for</div>
         <select id="bp-rank" class="rail__select">
-          <option value="net">Total profit (£ / level)</option>
+          <option value="constr">Profit per construction point</option>
           <option value="worker">Profit per worker</option>
         </select>
         <p class="bp__railnote" id="bp-ranknote"></p>
@@ -266,7 +266,7 @@ const base = import.meta.env.BASE_URL;
               <table class="vtbl bp__gtable">
                 <thead><tr>
                   <th>Method</th>
-                  <th class="num ${mode === 'net' ? 'is-opt' : ''}">Net £</th>
+                  <th class="num">Net £</th>
                   <th class="num">vs now</th>
                   <th class="num">Jobs</th>
                   <th class="num ${mode === 'worker' ? 'is-opt' : ''}" title="Profit per worker">£/wkr</th>
@@ -280,7 +280,7 @@ const base = import.meta.env.BASE_URL;
                       ${o.pm.name}
                       ${o.score === best ? '<span class="bp__badge">best</span>' : ''}
                     </td>
-                    <td class="num ${mode === 'net' ? 'is-opt' : ''}"><b class="${o.net >= 0 ? 'tone-good' : 'tone-bad'}">£${o.net.toFixed(0)}</b></td>
+                    <td class="num"><b class="${o.net >= 0 ? 'tone-good' : 'tone-bad'}">£${o.net.toFixed(0)}</b></td>
                     <td class="num">${o.pi === current ? '<span class="bp__cur">—</span>'
                       : `<span class="${o.delta > 0 ? 'tone-good' : o.delta < 0 ? 'tone-bad' : 'tone-neutral'}">${
                           o.delta > 0 ? '+' : ''}£${o.delta.toFixed(0)}</span>`}</td>
@@ -343,17 +343,17 @@ const base = import.meta.env.BASE_URL;
           }));
       }
 
-      function renderAll() { renderHead(); renderGroups(); renderCombos(); }
+      function renderAll() { rankNote(); renderHead(); renderGroups(); renderCombos(); }
 
       $('bp-combos').closest('details').addEventListener('toggle', renderCombos);
       function rankNote() {
         const c = state.building?.construction;
         const notes = {
           worker: 'Ranking by output per job — this is where automation earns its place.',
-          net: `Ranking by total profit per level. Profit per construction point is the same ranking `
-            + `here — every method divides by this building's fixed ${c ?? '—'} points — so it is shown `
-            + `as a column instead. It only reorders across buildings: `
-            + `<a href="${base}method-comparison">Compare Buildings</a>.`,
+          constr: `Ranking by return on a point of construction, this building's real bottleneck. `
+            + `Every method divides by the same fixed ${c ?? '—'} points, so the order matches total `
+            + `profit — total £ is still in the table. To compare this building against others, where `
+            + `the cost differs, use <a href="${base}method-comparison">Compare Buildings</a>.`,
         };
         $('bp-ranknote').innerHTML = notes[rankBy()];
       }
