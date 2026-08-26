@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
 const base = import.meta.env.BASE_URL;
 ---
 <Base
@@ -31,6 +32,45 @@ const base = import.meta.env.BASE_URL;
     Revenue − input costs at your prices, per level at full employment · wages, throughput bonuses,
     and economy-of-scale not modeled — this is the production margin, not final profitability
   </p>
+
+  <TableTools showBar={false} />
+
+  <h2 class="sect" id="compare">Compare every production method</h2>
+  <p class="pc__hint">
+    Each row is one production method's own goods flow, valued at the prices set above, so a method you
+    have not selected is still priced with your market. Sort by the per-worker or per-construction column
+    to find where a pound of wages or a point of construction buys the most output.
+  </p>
+  <div class="pc__cmpbar">
+    <label class="pc__field pc__field--inline">
+      <span class="pc__label">Filter</span>
+      <input id="pc-cmp-filter" type="search" class="pc__select" placeholder="Building, method, or good…" />
+    </label>
+    <label class="pc__toggle">
+      <input type="checkbox" id="pc-cmp-positive" /> only profitable
+    </label>
+    <span id="pc-cmp-count" class="pc__hint" style="margin:0;"></span>
+  </div>
+  <div class="grid"><div class="grid__scroll">
+    <table class="vtbl" id="pc-cmp" data-sortable>
+      <thead>
+        <tr>
+          <th style="min-width: 12rem;">Building</th>
+          <th style="min-width: 12rem;">Production method</th>
+          <th class="num" title="Revenue − input cost at your prices, per building level">Net £/level</th>
+          <th class="num" title="Jobs this method adds per level">Workers</th>
+          <th class="num" title="Net £ per worker employed — how much output each job carries">£/worker</th>
+          <th class="num" title="Construction points the building costs">Construction</th>
+          <th class="num" title="Net £ per point of construction — the payback on building it">£/construction</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div></div>
+  <p class="caption">
+    Per-method marginal values: only that method's own inputs, outputs, and jobs — a building's total is the
+    sum of its selected methods · percentage-based methods (throughput, automation) have no goods of their own
+    and show as —</p>
 
   <script is:inline define:vars={{ base }}>
     (async () => {
@@ -104,28 +144,49 @@ const base = import.meta.env.BASE_URL;
         for (const [g, m] of Object.entries(mult)) {
           if (flow[g] != null) flow[g] *= 1 + (flow[g] > 0 ? m.out : m.in);
         }
+        state.flow = flow;
+        state.jobs = jobs;
 
-        // Price rows for every good involved.
-        const prices = $('pc-prices');
-        prices.innerHTML = '';
+        // Price rows for every good involved. Rebuild the ROWS only when the
+        // set of goods changes — re-creating a slider mid-drag destroys the
+        // element the browser is tracking, which reads as "click to step"
+        // instead of dragging. Price moves only update labels + summary.
+        const involved = Object.keys(flow).filter((g) => flow[g] !== 0);
+        const signature = involved.join('|');
+        if (signature !== state.priceRowsFor) {
+          state.priceRowsFor = signature;
+          const prices = $('pc-prices');
+          prices.innerHTML = '';
+          for (const g of involved) {
+            if (state.price[g] == null) state.price[g] = 0; // % offset from base
+            const good = data.goods[g];
+            const row = document.createElement('div');
+            row.className = 'pc__price';
+            row.innerHTML = `
+              <img src="${base}${good.icon}" alt="" loading="lazy" />
+              <span class="pc__pname">${good.name}</span>
+              <input type="range" min="-75" max="75" step="5" value="${state.price[g]}" data-good="${g}" />
+              <span class="pc__pval" data-val="${g}"></span>`;
+            row.querySelector('input').addEventListener('input', (e) => {
+              state.price[g] = Number(e.target.value);
+              renderValues();
+              renderCompare();
+            });
+            prices.appendChild(row);
+          }
+        }
+        renderValues();
+      }
+
+      // Everything that depends on prices but not on which goods are involved.
+      function renderValues() {
+        const flow = state.flow, jobs = state.jobs;
         const involved = Object.keys(flow).filter((g) => flow[g] !== 0);
         for (const g of involved) {
-          if (state.price[g] == null) state.price[g] = 0; // % offset from base
           const good = data.goods[g];
-          const row = document.createElement('div');
-          row.className = 'pc__price';
-          const pct = state.price[g];
-          const price = good.cost * (1 + pct / 100);
-          row.innerHTML = `
-            <img src="${base}${good.icon}" alt="" loading="lazy" />
-            <span class="pc__pname">${good.name}</span>
-            <input type="range" min="-75" max="75" step="5" value="${pct}" data-good="${g}" />
-            <span class="pc__pval">£${price.toFixed(1)} <i>(${pct >= 0 ? '+' : ''}${pct}%)</i></span>`;
-          row.querySelector('input').addEventListener('input', (e) => {
-            state.price[g] = Number(e.target.value);
-            render();
-          });
-          prices.appendChild(row);
+          const pct = state.price[g] ?? 0;
+          const el = document.querySelector(`[data-val="${g}"]`);
+          if (el) el.innerHTML = `£${(good.cost * (1 + pct / 100)).toFixed(1)} <i>(${pct >= 0 ? '+' : ''}${pct}%)</i>`;
         }
 
         // Summary.
@@ -152,8 +213,89 @@ const base = import.meta.env.BASE_URL;
           </tbody></table>`;
       }
 
+      // ── Compare-all table ───────────────────────────────────────────
+      // Flatten every (building, PM) pair once; only the money is recomputed
+      // when prices move.
+      const rows = [];
+      for (const b of data.buildings) {
+        for (const g of b.pmGroups) {
+          for (const pm of g.pms) {
+            if (!pm.inputs.length && !pm.outputs.length) continue; // pure % methods
+            rows.push({
+              b,
+              pm,
+              jobs: pm.jobs.reduce((s, j) => s + j.a, 0),
+              search: `${b.name} ${g.name} ${pm.name} ${[...pm.inputs, ...pm.outputs]
+                .map((l) => data.goods[l.g]?.name ?? l.g).join(' ')}`.toLowerCase(),
+            });
+          }
+        }
+      }
+
+      const priceOf = (g) => (data.goods[g]?.cost ?? 0) * (1 + (state.price[g] ?? 0) / 100);
+      const money = (lines, sign) =>
+        lines.filter((l) => l.k === 'add').reduce((s, l) => s + sign * l.a * priceOf(l.g), 0);
+
+      function renderCompare() {
+        const q = $('pc-cmp-filter').value.trim().toLowerCase();
+        const onlyPositive = $('pc-cmp-positive').checked;
+        const body = $('pc-cmp').tBodies[0];
+        const out = [];
+        let shown = 0;
+        for (const r of rows) {
+          if (q && !r.search.includes(q)) continue;
+          const net = money(r.pm.outputs, 1) + money(r.pm.inputs, -1);
+          if (onlyPositive && net <= 0) continue;
+          // Automation methods REMOVE jobs (negative employment). Dividing a
+          // negative net by negative workers yields a cheerful positive ratio
+          // that means nothing, so per-worker only applies where jobs are added.
+          const perWorker = r.jobs > 0 ? net / r.jobs : null;
+          const perConstruction = r.b.construction ? net / r.b.construction : null;
+          shown++;
+          const tone = (v) => (v > 0 ? 'tone-good' : v < 0 ? 'tone-bad' : 'tone-neutral');
+          const num = (v, digits = 0) =>
+            v == null ? '<span class="cell__dash">—</span>' : v.toFixed(digits);
+          out.push({ sort: [r.b.name, r.pm.name, net, r.jobs, perWorker, r.b.construction, perConstruction], html: `<tr>
+            <td class="lead-cell" data-sort="${r.b.name}">
+              <span class="lead"><img class="lead__icon" src="${base}${r.b.icon}" alt="" loading="lazy" />
+              <a href="${base}buildings/${r.b.id.replace('building_', '')}">${r.b.name}</a></span></td>
+            <td>${r.pm.name}</td>
+            <td class="num" data-sort="${net.toFixed(2)}"><b class="${tone(net)}">£${net.toFixed(0)}</b></td>
+            <td class="num" data-sort="${r.jobs || ''}">${r.jobs || '<span class="cell__dash">—</span>'}</td>
+            <td class="num" data-sort="${perWorker ?? ''}"><span class="${perWorker == null ? '' : tone(perWorker)}">${num(perWorker, 3)}</span></td>
+            <td class="num dim" data-sort="${r.b.construction ?? ''}">${r.b.construction ?? '<span class="cell__dash">—</span>'}</td>
+            <td class="num" data-sort="${perConstruction ?? ''}"><span class="${perConstruction == null ? '' : tone(perConstruction)}">${num(perConstruction, 2)}</span></td>
+          </tr>` });
+        }
+
+        // Re-applying the table's active sort ourselves: TableTools sorts the
+        // live DOM, and we just replaced every row, so a price nudge would
+        // otherwise silently drop the user back to build order.
+        const heads = [...$('pc-cmp').tHead.rows[0].cells];
+        const col = heads.findIndex((th) => (th.getAttribute('aria-sort') ?? 'none') !== 'none');
+        if (col >= 0) {
+          const dir = heads[col].getAttribute('aria-sort') === 'ascending' ? 1 : -1;
+          out.sort((a, b) => {
+            const av = a.sort[col], bv = b.sort[col];
+            if (av == null && bv == null) return 0;
+            if (av == null) return 1;   // blanks sink, both directions
+            if (bv == null) return -1;
+            return (typeof av === 'number' ? av - bv : String(av).localeCompare(String(bv))) * dir;
+          });
+        }
+        body.innerHTML = out.map((r) => r.html).join('');
+        $('pc-cmp-count').textContent = `${shown} of ${rows.length} methods`;
+        // Re-wire sorting: TableTools binds once on load, and we just replaced
+        // every row, so any frozen build order is stale.
+        body.querySelectorAll('tr').forEach((tr) => tr.removeAttribute('data-tt-i'));
+      }
+
+      $('pc-cmp-filter').addEventListener('input', renderCompare);
+      $('pc-cmp-positive').addEventListener('change', renderCompare);
+
       buildingSel.addEventListener('change', () => pickBuilding(buildingSel.value));
       pickBuilding(data.buildings[0].id);
+      renderCompare();
     })();
   </script>
 
@@ -182,5 +324,13 @@ const base = import.meta.env.BASE_URL;
     .pc__net { font-family: var(--font-display); font-size: 2rem; margin: 0.3rem 0 0.6rem; }
     .pc__net span { font-size: 0.9rem; color: var(--text-dim); font-family: var(--font-ui); }
     .pc__table { max-width: 34rem; }
+    .pc__cmpbar { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
+    .pc__field--inline { flex-direction: row; align-items: center; gap: 0.5rem; margin: 0; }
+    .pc__field--inline .pc__select { min-width: 18rem; }
+    .pc__toggle {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.78rem; color: var(--text-dim); cursor: pointer;
+    }
+    .pc__toggle input { accent-color: var(--gold); margin: 0; }
   </style>
 </Base>

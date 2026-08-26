@@ -5,7 +5,7 @@
 //
 // Sea/ocean state regions carry no subsistence building — filtered out.
 
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
@@ -48,6 +48,20 @@ function hsvToRgb(h, s, v) {
 }
 
 // ── Countries ───────────────────────────────────────────────────────
+// A tag in country_definitions is not necessarily a country you meet in 1836.
+// Three populations, and they must not be mixed in one list:
+//   - exists at start: has a file in history/countries (named "tag - name.txt")
+//   - formable:        appears in country_formation (Germany, Italy, the
+//                      Federation of the Andes …). Its `capital` is the one it
+//                      TAKES ON FORMATION — that's why FND reads "Panama".
+//   - dynamic:         99_dynamic.txt, releasable/civil-war shells
+const startTags = new Set(
+  readdirSync(join(root, 'game/common/history/countries'))
+    .map((f) => f.slice(0, 3).toUpperCase())
+    .filter((t) => /^[A-Z0-9]{3}$/.test(t)),
+);
+const { entries: formations } = await parseFolder(join(root, 'game/common/country_formation'));
+const formableTags = new Set(Object.keys(formations).filter((t) => /^[A-Z0-9]{3}$/.test(t)));
 const TIER_ORDER = ['hegemony', 'empire', 'kingdom', 'grand_principality', 'principality', 'city_state'];
 const TYPE_ORDER = ['recognized', 'unrecognized', 'company', 'colonial', 'decentralized'];
 const ord = (list, v) => (list.indexOf(v) >= 0 ? list.indexOf(v) : list.length);
@@ -62,10 +76,15 @@ const countryList = Object.entries(countries.entries)
     capital: c.capital ? { id: c.capital, name: loc.name(c.capital) } : null,
     cultures: asArray(c.cultures).flat().map((cu) => ({ id: cu, name: loc.name(cu) })),
     religion: c.religion ? { id: c.religion, name: loc.name(c.religion) } : null,
+    existsAtStart: startTags.has(tag),
+    formable: formableTags.has(tag),
     dynamic: countries.sources[tag] === '99_dynamic.txt',
   }))
   .sort(
     (a, b) =>
+      // 1836 starters first, then formables, then dynamic shells.
+      Number(b.existsAtStart) - Number(a.existsAtStart) ||
+      Number(a.formable) - Number(b.formable) ||
       Number(a.dynamic) - Number(b.dynamic) ||
       ord(TYPE_ORDER, a.type) - ord(TYPE_ORDER, b.type) ||
       ord(TIER_ORDER, a.tier) - ord(TIER_ORDER, b.tier) ||
@@ -133,6 +152,7 @@ writeFileSync(
 );
 
 console.log(
-  `countries.json: ${countryList.length} countries (${countryList.filter((c) => c.dynamic).length} dynamic) · ` +
+  `countries.json: ${countryList.length} tags — ${countryList.filter((c) => c.existsAtStart).length} at 1836 start, ` +
+    `${countryList.filter((c) => c.formable).length} formable, ${countryList.filter((c) => c.dynamic).length} dynamic · ` +
     `states.json: ${stateList.length} states, ${traitCatalog.filter((t) => t.states.length).length} traits`,
 );

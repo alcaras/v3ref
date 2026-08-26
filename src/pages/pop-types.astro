@@ -9,7 +9,7 @@ const pops = (popsJson as any).pops as any[];
 const csv = {
   header: [
     'Pop type', 'Id', 'Strata', 'Wage weight', 'Dependent wage', 'Political engagement',
-    'Unemployment wealth', 'Starting QoL', 'Qualifications', 'PMs employing',
+    'Destitution sink (wealth <=)', 'Starting QoL', 'Qualifications', 'PMs employing',
   ],
   rows: pops.map((p) => [
     p.name, p.id, p.strata ?? '', p.wageWeight ?? '', p.dependentWage ?? '',
@@ -36,7 +36,7 @@ const csv = {
             <th class="num" title="Relative share of the building's wage budget">Wage weight</th>
             <th class="num" title="Wage paid per dependent, per year">Dependent wage</th>
             <th class="num" title="Base share politically engaged (before literacy)">Engagement</th>
-            <th class="num" title="Wealth level while unemployed">Unemployed wealth</th>
+            <th class="num" title="Pops that fall to this wealth level or below switch INTO this profession — the game's unemployment sink">Destitution sink</th>
             <th class="num" title="Quality of life at game start">Start QoL</th>
             <th>Qualifications</th>
             <th class="num" title="Production methods that employ this profession">PMs</th>
@@ -59,7 +59,9 @@ const csv = {
                 {p.engagementBase != null ? `${Math.round(p.engagementBase * 100)}%` : <span class="cell__dash">—</span>}
               </td>
               <td class="num" data-sort={p.unemployment ? p.unemploymentWealth ?? '' : ''}>
-                {p.unemployment ? p.unemploymentWealth : <span class="cell__dash">—</span>}
+                {p.unemployment
+                  ? <span title={`Unemployed pops that fall to wealth ${p.unemploymentWealth} or below become ${p.name}`}>≤ {p.unemploymentWealth}</span>
+                  : <span class="cell__dash">—</span>}
               </td>
               <td class="num" data-sort={p.startQualityOfLife ?? ''}>{p.startQualityOfLife ?? <span class="cell__dash">—</span>}</td>
               <td class="dim">{p.hasQualifications ? 'required' : <span class="cell__dash">—</span>}</td>
@@ -72,7 +74,10 @@ const csv = {
   </div>
 
   <p class="caption">
-    Engagement shown before literacy and modifiers · qualification formulas are scripted per pop type (education access, existing pops)
+    Wage weight is this profession's share of its building's wage budget · engagement is the base share
+    politically active, before literacy · <b>destitution sink</b>: unemployed pops whose wealth falls to that
+    level or below become this profession, so Laborers absorb the destitute ·
+    wealth levels run 1–99 and drive which <a href={`${base}pop-needs`}>buy package</a> a pop can afford
   </p>
 
   <script is:inline define:vars={{ csv }}>

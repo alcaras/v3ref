@@ -16,7 +16,11 @@ const buildingsOut = buildings
   .map((b) => ({
     id: b.id,
     name: b.name,
+    icon: b.icon,
     group: b.groupRoot?.name ?? null,
+    // Construction points the building costs — the denominator for
+    // "profit per point of construction" in the comparison table.
+    construction: b.construction?.value ?? null,
     pmGroups: b.pmGroups.map((g) => ({
       name: g.name,
       pms: g.pms.map((pm) => ({

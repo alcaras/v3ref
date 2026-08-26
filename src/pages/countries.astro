@@ -5,17 +5,21 @@ import countriesJson from '../data/countries.json';
 
 const countries = (countriesJson as any).countries as any[];
 const base = import.meta.env.BASE_URL;
-const starters = countries.filter((c) => !c.dynamic);
+const starters = countries.filter((c) => c.existsAtStart);
+const formables = countries.filter((c) => c.formable && !c.existsAtStart);
 const TIER_LABEL: Record<string, string> = {
   hegemony: 'Hegemony', empire: 'Empire', kingdom: 'Kingdom',
   grand_principality: 'Grand Principality', principality: 'Principality', city_state: 'City-state',
 };
 
 const csv = {
-  header: ['Country', 'Tag', 'Type', 'Tier', 'Capital', 'Cultures', 'Religion', 'Formable/dynamic'],
+  header: ['Country', 'Status', 'Tag', 'Type', 'Tier', 'Capital', 'Cultures', 'Religion'],
   rows: countries.map((c) => [
-    c.name, c.tag, c.type ?? '', c.tier ?? '', c.capital?.name ?? '',
-    c.cultures.map((x: any) => x.name).join('; '), c.religion?.name ?? '', c.dynamic ? 'yes' : '',
+    c.name,
+    c.existsAtStart ? 'on the 1836 map' : c.formable ? 'formable' : c.dynamic ? 'dynamic/releasable' : 'unused',
+    c.tag,
+    c.type ?? '', c.tier ?? '', c.capital?.name ?? '',
+    c.cultures.map((x: any) => x.name).join('; '), c.religion?.name ?? '',
   ]),
 };
 ---
@@ -25,8 +29,9 @@ const csv = {
   eyebrow="World"
   pageFilter="Filter countries…"
   pageStats={[
-    { value: starters.length, label: 'countries' },
-    { value: countries.length - starters.length, label: 'formable / dynamic' },
+    { value: starters.length, label: 'on the 1836 map' },
+    { value: formables.length, label: 'formable' },
+    { value: countries.length - starters.length - formables.length, label: 'dynamic' },
   ]}
 >
   <TableTools csvId="countries" csvName="victoria3-countries" />
@@ -37,10 +42,11 @@ const csv = {
         <thead>
           <tr>
             <th style="min-width: 15rem;">Country</th>
+            <th style="width: 8rem;">Status</th>
             <th style="width: 4rem;">Tag</th>
             <th style="width: 9rem;">Type</th>
             <th style="width: 10rem;">Tier</th>
-            <th style="width: 14rem;">Capital</th>
+            <th style="width: 14rem;" title="For a formable tag this is the capital it adopts when formed, not a 1836 capital">Capital</th>
             <th>Primary cultures</th>
           </tr>
         </thead>
@@ -51,8 +57,12 @@ const csv = {
                 <span class="lead">
                   <span class="tagchip" style={`--tag-color: ${c.color ?? 'var(--border-strong)'}`}></span>
                   {c.name}
-                  {c.dynamic && <span class="chip" title="Formable or releasable — not on the 1836 map">· formable</span>}
                 </span>
+              </td>
+              <td class="dim" data-sort={c.existsAtStart ? '0' : c.formable ? '1' : '2'}>
+                {c.existsAtStart ? '1836 map'
+                  : c.formable ? <span title="Formed through a country-formation decision — its capital is the one it adopts on formation">formable</span>
+                  : <span title="Released or spawned by script (civil wars, colonies)">dynamic</span>}
               </td>
               <td class="dim" style="font-family: var(--font-mono); font-size: 0.72rem;">{c.tag}</td>
               <td class="dim">{c.type?.replace('_', ' ') ?? <span class="cell__dash">—</span>}</td>
@@ -68,7 +78,10 @@ const csv = {
     </div>
   </div>
 
-  <p class="caption">Swatches are the in-game map colors · formable and dynamic tags sort after the 1836 starters</p>
+  <p class="caption">
+    Swatches are the in-game map colors · formable and dynamic tags sort after the 1836 starters ·
+    a formable's capital is the one it adopts on formation, so it may name a state it does not hold in 1836
+  </p>
 
   <script is:inline define:vars={{ csv }}>
     window.v3Csv = window.v3Csv || {};
