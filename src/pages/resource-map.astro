@@ -24,22 +24,31 @@ const base = import.meta.env.BASE_URL;
           style="margin-bottom:0.4rem;" />
         <div id="rm-layers" class="rm__layers"></div>
       </div>
-      <div>
-        <div class="rail__label">Scale</div>
-        <label class="rm__toggle">
-          <input type="checkbox" id="rm-sqrt" checked /> compress large deposits
-        </label>
-        <p class="rm__note" style="margin-top:0.3rem;">
-          A few states dwarf the rest, so shading uses a square-root scale by default; uncheck for
-          strictly linear.
-        </p>
-      </div>
     </aside>
 
     <div class="rm__main">
-      <div id="rm-legend" class="rm__legend"></div>
+      <div class="rm__top">
+        <div id="rm-legend" class="rm__legend"></div>
+        <div class="rm__viewbar">
+          <label class="rm__toggle">
+            <input type="checkbox" id="rm-labels-cb" /> numbers on map
+          </label>
+          <label class="rm__toggle" title="A few deposits dwarf the rest, so shading uses a square-root scale by default">
+            <input type="checkbox" id="rm-sqrt" checked /> compress large values
+          </label>
+          <span id="rm-labnote" class="rm__hint"></span>
+        </div>
+      </div>
       <div class="rm__canvaswrap">
-        <canvas id="rm-canvas" width="2048" height="904"></canvas>
+        <div id="rm-pan" class="rm__pan">
+          <canvas id="rm-canvas" width="2048" height="904"></canvas>
+          <div id="rm-labels" class="rm__labels"></div>
+        </div>
+        <div class="rm__zoom">
+          <button type="button" id="rm-zin" title="Zoom in">+</button>
+          <button type="button" id="rm-zout" title="Zoom out">−</button>
+          <button type="button" id="rm-zreset" title="Reset view">⤢</button>
+        </div>
         <div id="rm-tip" class="rm__tip" hidden></div>
       </div>
       <h2 class="sect">Every state, ranked</h2>
@@ -169,7 +178,7 @@ const base = import.meta.env.BASE_URL;
             const k = b.dataset.key, at = selected.indexOf(k);
             if (at >= 0) selected.splice(at, 1);
             else if (selected.length < MAX_LAYERS) selected.push(k);
-            renderLayers(); draw(); renderTable(); syncHash();
+            renderLayers(); draw(); renderTable(); renderLabels(); syncHash();
           }));
       }
 
@@ -240,6 +249,76 @@ const base = import.meta.env.BASE_URL;
                <span class="rm__hint">hue = largest here · brightness = total, up to ${max}</span>
              </div>`;
       }
+
+      // ── Zoom, pan and on-map numbers ─────────────────────────────
+      const view = { z: 1, x: 0, y: 0 };
+      const pan = $('rm-pan');
+      const wrap = pan.parentElement;
+
+      function applyView() {
+        // Keep the map covering its frame at every zoom level.
+        const w = wrap.clientWidth, h = wrap.clientHeight;
+        const maxX = w * (view.z - 1), maxY = h * (view.z - 1);
+        view.x = Math.min(0, Math.max(-maxX, view.x));
+        view.y = Math.min(0, Math.max(-maxY, view.y));
+        pan.style.transform = `translate(${view.x}px, ${view.y}px) scale(${view.z})`;
+        pan.style.cursor = view.z > 1 ? 'grab' : 'crosshair';
+        renderLabels();
+      }
+
+      function zoomTo(z, cxFrac = 0.5, cyFrac = 0.5) {
+        const prev = view.z;
+        view.z = Math.max(1, Math.min(8, Math.round(z * 100) / 100));
+        // Keep the point under the cursor (or the centre) fixed.
+        const w = wrap.clientWidth, h = wrap.clientHeight;
+        const px = cxFrac * w, py = cyFrac * h;
+        view.x = px - ((px - view.x) / prev) * view.z;
+        view.y = py - ((py - view.y) / prev) * view.z;
+        if (view.z === 1) { view.x = 0; view.y = 0; }
+        applyView();
+        syncHash();
+      }
+
+      const compact = (n) =>
+        n >= 1e6 ? `${(n / 1e6).toFixed(n >= 1e7 ? 0 : 1)}M`
+        : n >= 1e4 ? `${Math.round(n / 1e3)}k`
+        : n >= 1e3 ? `${(n / 1e3).toFixed(1)}k`
+        : String(Math.round(n));
+
+      function renderLabels() {
+        const layer = $('rm-labels');
+        layer.innerHTML = '';
+        if (!showLabels() || !selected.length) {
+          $('rm-labnote').textContent = 'Small states have no room for a number until you zoom in.';
+          return;
+        }
+
+        // Only label a state if the number can actually sit inside it at the
+        // current zoom. Screen pixels per map pixel:
+        const perPx = (wrap.clientWidth / W) * view.z;
+        let drawn = 0, skipped = 0;
+        const html = [];
+        for (const [i, st] of Object.entries(meta.states)) {
+          const total = selected.reduce((t, k) => t + (meta.values[k]?.[i] ?? 0), 0);
+          if (!total) continue;
+          const b = meta.bbox[i];
+          if (!b || b.cx == null) continue;
+          const text = compact(total);
+          // ~5.6px per character at the 10px label size, plus padding.
+          if ((b.x1 - b.x0) * perPx < text.length * 5.6 + 4 || (b.y1 - b.y0) * perPx < 9) {
+            skipped++;
+            continue;
+          }
+          drawn++;
+          html.push(`<span class="rm__lab" style="left:${(b.cx / W) * 100}%;top:${(b.cy / H) * 100}%">${text}</span>`);
+        }
+        layer.innerHTML = html.join('');
+        layer.style.setProperty('--lab', `${10 / view.z}px`);
+        $('rm-labnote').textContent = skipped
+          ? `${drawn} shown, ${skipped} too small at this zoom — use + to fit more.`
+          : `${drawn} shown.`;
+      }
+      const showLabels = () => $('rm-labels-cb').checked;
 
       // ── Table under the map ──────────────────────────────────────
       // Same numbers the map is painted from, so the two can never disagree.
@@ -336,6 +415,7 @@ const base = import.meta.env.BASE_URL;
       });
       canvas.addEventListener('mouseleave', () => { tip.hidden = true; });
       canvas.addEventListener('click', (e) => {
+        if (drag && drag.moved) return;   // that was a pan, not a pick
         const r = canvas.getBoundingClientRect();
         const x = Math.floor((e.clientX - r.left) / r.width * W);
         const y = Math.floor((e.clientY - r.top) / r.height * H);
@@ -344,23 +424,83 @@ const base = import.meta.env.BASE_URL;
       });
 
       function syncHash() {
-        history.replaceState(null, '', selected.length ? `#l=${selected.join(',')}` : location.pathname);
+        const parts = [];
+        if (selected.length) parts.push(`l=${selected.join(',')}`);
+        if ($('rm-labels-cb').checked) parts.push('labels=1');
+        if (view.z > 1) parts.push(`z=${view.z}`);
+        history.replaceState(null, '', parts.length ? `#${parts.join('&')}` : location.pathname);
       }
       $('rm-sqrt').addEventListener('change', draw);
+      $('rm-labels-cb').addEventListener('change', () => { renderLabels(); syncHash(); });
+      $('rm-zin').addEventListener('click', () => zoomTo(view.z * 1.6));
+      $('rm-zout').addEventListener('click', () => zoomTo(view.z / 1.6));
+      $('rm-zreset').addEventListener('click', () => { view.z = 1; view.x = 0; view.y = 0; applyView(); });
+      canvas.addEventListener('dblclick', (e) => {
+        const r = wrap.getBoundingClientRect();
+        zoomTo(view.z * 1.8, (e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height);
+      });
+      // Drag to pan once zoomed in.
+      let drag = null;
+      pan.addEventListener('pointerdown', (e) => {
+        if (view.z === 1) return;
+        drag = { x: e.clientX, y: e.clientY, ox: view.x, oy: view.y, moved: false };
+        pan.setPointerCapture(e.pointerId);
+        pan.style.cursor = 'grabbing';
+      });
+      pan.addEventListener('pointermove', (e) => {
+        if (!drag) return;
+        view.x = drag.ox + (e.clientX - drag.x);
+        view.y = drag.oy + (e.clientY - drag.y);
+        if (Math.abs(e.clientX - drag.x) + Math.abs(e.clientY - drag.y) > 3) drag.moved = true;
+        applyView();
+      });
+      pan.addEventListener('pointerup', (e) => {
+        if (drag) { pan.releasePointerCapture(e.pointerId); }
+        pan.style.cursor = view.z > 1 ? 'grab' : 'crosshair';
+        setTimeout(() => { drag = null; }, 0);
+      });
+      // Trackpad pinch. macOS Chrome/Firefox report a pinch as a wheel event
+      // with ctrlKey set; a plain two-finger scroll has it clear and must be
+      // left alone so the page still scrolls.
+      wrap.addEventListener('wheel', (e) => {
+        if (!e.ctrlKey) return;
+        e.preventDefault();
+        const r = wrap.getBoundingClientRect();
+        zoomTo(view.z * Math.exp(-e.deltaY * 0.01),
+               (e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height);
+      }, { passive: false });
+
+      // Safari sends its own gesture events instead.
+      let gestureStart = 1;
+      wrap.addEventListener('gesturestart', (e) => { e.preventDefault(); gestureStart = view.z; });
+      wrap.addEventListener('gesturechange', (e) => {
+        e.preventDefault();
+        const r = wrap.getBoundingClientRect();
+        zoomTo(gestureStart * e.scale,
+               (e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height);
+      });
+      wrap.addEventListener('gestureend', (e) => e.preventDefault());
+
+      window.addEventListener('resize', renderLabels);
       $('rm-clear').addEventListener('click', () => {
         selected.length = 0; renderLayers(); draw(); renderTable(); syncHash();
       });
 
       // A map view in the URL, so a layer set can be linked to.
-      const fromHash = new URLSearchParams(location.hash.slice(1)).get('l');
+      const hash = new URLSearchParams(location.hash.slice(1));
+      const fromHash = hash.get('l');
       const wanted = fromHash
         ? fromHash.split(',').filter((k) => meta.layers.some((l) => l.key === k)).slice(0, MAX_LAYERS)
         : [(meta.layers.find((l) => /iron/i.test(l.name)) ?? meta.layers[0]).key];
       selected.push(...wanted);
       $('rm-search').addEventListener('input', renderLayers);
+      if (hash.get('labels') === '1') $('rm-labels-cb').checked = true;
+      const hz = Number(hash.get('z'));
+      if (hz > 1) view.z = Math.min(8, hz);
       renderLayers();
       draw();
       renderTable();
+      applyView();
     })();
   </script>
 
@@ -397,12 +537,39 @@ const base = import.meta.env.BASE_URL;
     }
     .rm__toggle input { accent-color: var(--gold); margin: 0; }
 
-    .rm__canvaswrap { position: relative; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .rm__canvaswrap {
+      position: relative; border: 1px solid var(--border); border-radius: 8px;
+      overflow: hidden; touch-action: none;
+    }
+    .rm__pan { transform-origin: 0 0; position: relative; will-change: transform; }
+    .rm__labels { position: absolute; inset: 0; pointer-events: none; }
+    .rm__lab {
+      position: absolute; transform: translate(-50%, -50%);
+      font-family: var(--font-mono); font-size: var(--lab, 10px); line-height: 1;
+      color: #fff; text-shadow: 0 0 2px #000, 0 0 3px #000, 0 1px 2px #000;
+      white-space: nowrap;
+    }
+    .rm__zoom {
+      position: absolute; top: 0.5rem; right: 0.5rem; z-index: 4;
+      display: flex; flex-direction: column; gap: 0.2rem;
+    }
+    .rm__zoom button {
+      width: 1.8rem; height: 1.8rem; font: inherit; font-size: 0.9rem; cursor: pointer;
+      background: color-mix(in srgb, var(--bg-elev) 88%, transparent);
+      border: 1px solid var(--border-strong); color: var(--text);
+      border-radius: 5px; line-height: 1;
+    }
+    .rm__zoom button:hover { border-color: var(--gold-deep); color: var(--gold); }
     .rm__canvaswrap canvas {
       display: block; width: 100%; height: auto;
       image-rendering: auto; cursor: crosshair; background: #101216;
     }
-    .rm__legend { margin-bottom: 0.5rem; min-height: 1.6rem; }
+    .rm__top {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap; margin-bottom: 0.5rem;
+    }
+    .rm__viewbar { display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; }
+    .rm__legend { min-height: 1.6rem; }
     .rm__lg { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; font-size: 0.76rem; }
     .rm__lgname { color: var(--text); font-weight: 500; }
     .rm__key { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--text-soft); }

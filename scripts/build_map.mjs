@@ -70,9 +70,14 @@ for (let p = 0, q = 0; p < raw.length; p += 3, q += 4) {
   if (idx) landPixels++;
 }
 
-// Per-state bounding box + pixel count, so a location page can crop the shared
-// index image to that state instead of shipping 675 little PNGs.
+// Per-state bounding box, pixel count and a label anchor.
+//
+// The anchor is NOT the bbox centre — for a concave or split state (Denmark,
+// Chile, anything with islands) that point can land in the sea. Take the mean
+// of the state's own pixels, then snap to the nearest pixel that really belongs
+// to the state, so a number drawn there sits on the state it describes.
 const bbox = {};
+const sums = {};
 for (let y = 0, i = 0; y < H; y++) {
   for (let x = 0; x < W; x++, i++) {
     const idx = out[i * 4] | (out[i * 4 + 1] << 8);
@@ -81,7 +86,23 @@ for (let y = 0, i = 0; y < H; y++) {
     if (x < b.x0) b.x0 = x; if (x > b.x1) b.x1 = x;
     if (y < b.y0) b.y0 = y; if (y > b.y1) b.y1 = y;
     b.n++;
+    const t = (sums[idx] ??= { x: 0, y: 0 });
+    t.x += x; t.y += y;
   }
+}
+for (const [idx, t] of Object.entries(sums)) {
+  const b = bbox[idx];
+  const mx = t.x / b.n, my = t.y / b.n;
+  let best = null, bestD = Infinity;
+  for (let y = b.y0; y <= b.y1; y++) {
+    for (let x = b.x0; x <= b.x1; x++) {
+      const i = (y * W + x) * 4;
+      if ((out[i] | (out[i + 1] << 8)) !== Number(idx)) continue;
+      const d = (x - mx) ** 2 + (y - my) ** 2;
+      if (d < bestD) { bestD = d; best = [x, y]; }
+    }
+  }
+  if (best) { b.cx = best[0]; b.cy = best[1]; }
 }
 
 mkdirSync(new URL('../public/img/map/', import.meta.url).pathname, { recursive: true });
