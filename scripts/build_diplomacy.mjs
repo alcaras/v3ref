@@ -8,6 +8,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
+import { iconPath } from './lib/icons.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
 
 const loc = loadLoc();
@@ -29,7 +30,7 @@ const treatyList = Object.entries(articles.entries)
   .map(([id, a]) => ({
     id,
     name: loc.name(id),
-    icon: `img/treaties/${String(a.icon ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+    icon: iconPath(a.icon, 'treaties'),
     kind: a.kind ?? null,
     cost: a.cost ?? null,
     usageLimit: a.usage_limit ?? null,
@@ -51,7 +52,7 @@ writeFileSync(
 const identityList = Object.entries(identities.entries).map(([id, ident]) => ({
   id,
   name: loc.name(id),
-  icon: `img/identities/${String(ident.icon ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+  icon: iconPath(ident.icon, 'identities'),
   blocModifiers: bag(ident.power_bloc_modifier),
   leaderModifiers: bag(ident.leader_modifier),
   memberModifiers: bag(ident.member_modifier),
@@ -76,7 +77,7 @@ const groupList = Object.entries(principleGroups.entries).map(([gId, g]) => ({
         id: pId,
         name: loc.name(pId),
         tier: tierMatch ? Number(tierMatch[1]) : null,
-        icon: `img/principles/${String(p.icon ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+        icon: iconPath(p.icon, 'principles'),
         blocModifiers: bag(p.power_bloc_modifier),
         leaderModifiers: bag(p.leader_modifier),
         memberModifiers: bag(p.member_modifier),

@@ -189,7 +189,7 @@ export const TABS: Tab[] = [
   },
   {
     slug: 'patch-notes', icon: '🛠', label: 'Patch Notes', section: 'Tools',
-    status: 'placeholder',
+    status: 'built',
     summary: 'What each patch changed in the data we track',
   },
 ];

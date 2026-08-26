@@ -8,6 +8,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
+import { iconPath } from './lib/icons.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
 
 const loc = loadLoc();
@@ -30,7 +31,8 @@ for (const [gId, g] of Object.entries(unitGroups.entries)) domainOf[gId] = g.typ
 const units = Object.entries(unitTypes.entries).map(([id, u], index) => ({
   id,
   name: loc.name(id),
-  icon: `img/military/${id.replace('combat_unit_type_', '')}.png`,
+  // No flat icon exists for a unit type — its art is a set of culture-gated
+  // `combat_unit_image` illustrations. The table goes without.
   group: u.group ? { id: u.group, name: loc.name(u.group) } : null,
   domain: domainOf[u.group] ?? (unitTypes.sources[id]?.includes('land') ? 'army' : 'navy'),
   manpower: u.max_manpower ?? null,
@@ -52,7 +54,7 @@ writeFileSync(new URL('../src/data/units.json', import.meta.url).pathname, stabl
 const mobilization = Object.entries(mobOptions.entries).map(([id, m]) => ({
   id,
   name: loc.name(id),
-  icon: `img/mobilization/${String(m.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+  icon: iconPath(m.texture, 'mobilization'),
   group: m.group ?? null,
   techs: names(m.unlocking_technologies),
   // Per-unit goods upkeep while mobilized + flat (unscaled) modifiers.

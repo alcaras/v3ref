@@ -7,6 +7,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
+import { iconPath } from './lib/icons.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
 import { loadEconomy } from './lib/economy.mjs';
 
@@ -53,7 +54,7 @@ const techList = Object.entries(techs.entries)
   .map(([id, t]) => ({
     id,
     name: loc.name(id),
-    icon: `img/techs/${String(t.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+    icon: iconPath(t.texture, 'techs'),
     era: eraNum(t.era),
     eraCost: eras.entries[t.era]?.technology_cost ?? null,
     category: t.category ?? null,

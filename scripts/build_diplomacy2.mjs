@@ -6,6 +6,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
+import { iconPath } from './lib/icons.mjs';
 
 const loc = loadLoc();
 const root = join(dataRoot(), 'game/common');
@@ -41,7 +42,7 @@ writeFileSync(
 const goalList = Object.entries(warGoals.entries).map(([id, g]) => ({
   id,
   name: loc.name(id),
-  icon: `img/wargoals/${String(g.icon ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+  icon: iconPath(g.icon, 'wargoals'),
   kind: g.kind ?? null,
   settings: asArray(g.settings).flat().filter((s) => typeof s === 'string'),
   plays: [],
@@ -53,7 +54,7 @@ const playList = Object.entries(plays.entries).map(([id, p]) => {
   return {
     id,
     name: loc.name(id),
-    icon: `img/wargoals/${String(p.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+    icon: iconPath(p.texture, 'wargoals'),
     warGoal: p.war_goal ? { id: p.war_goal, name: loc.name(p.war_goal) } : null,
     warOnly: yes(p.war_only),
     requiresInterest: yes(p.requires_interest_marker),

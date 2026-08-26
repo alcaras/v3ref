@@ -7,6 +7,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
+import { iconPath } from './lib/icons.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
 
 const loc = loadLoc();
@@ -21,7 +22,7 @@ const buildingRefs = (ids) =>
 const list = Object.entries(companies.entries ?? companies).map(([id, c]) => ({
   id,
   name: loc.name(id),
-  icon: `img/companies/${String(c.icon ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+  icon: iconPath(c.icon, 'companies'),
   flavored: c.flavored_company === true || c.flavored_company === 'yes',
   buildings: buildingRefs(c.building_types),
   extensionBuildings: buildingRefs(c.extension_building_types),

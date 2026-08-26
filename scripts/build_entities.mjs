@@ -8,6 +8,7 @@ import { writeFileSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
+import { iconPath } from './lib/icons.mjs';
 import { loadEconomy } from './lib/economy.mjs';
 
 const loc = loadLoc();
@@ -24,7 +25,7 @@ for (const [id, g] of Object.entries(goodsRaw)) {
     type: 'good',
     slug: id,
     name: loc.name(id),
-    icon: `img/goods/${String(g.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+    icon: iconPath(g.texture, 'goods'),
     page: `goods/${id}`,
     group: g.category ?? null,
   });
@@ -38,7 +39,7 @@ for (const [id, b] of Object.entries(econ.buildings)) {
     type: 'building',
     slug,
     name: loc.name(id),
-    icon: `img/buildings/${String(b.icon ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+    icon: iconPath(b.icon, 'buildings'),
     page: `buildings/${slug}`,
     group: b.building_group ? loc.name(b.building_group) : null,
   });
@@ -50,7 +51,7 @@ for (const [id, p] of Object.entries(popTypesRaw)) {
     type: 'pop_type',
     slug: id,
     name: loc.name(id),
-    icon: `img/pops/${String(p.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+    icon: iconPath(p.texture, 'pops'),
     page: `pop-types#${id}`,
   });
 }

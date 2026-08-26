@@ -7,6 +7,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
+import { iconPath } from './lib/icons.mjs';
 import { loadEconomy } from './lib/economy.mjs';
 
 const loc = loadLoc();
@@ -72,7 +73,7 @@ const goods = Object.entries(goodsRaw).map(([id, g]) => {
     tradedQuantity: g.traded_quantity ?? null,
     obsessionChance: g.obsession_chance ?? 0,
     convoyCostMultiplier: g.convoy_cost_multiplier ?? null,
-    icon: `img/goods/${String(g.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+    icon: iconPath(g.texture, 'goods'),
     producers: f.producers.sort(bySize),
     consumers: f.consumers.sort(bySize),
     needs: (needsByGood.get(id) ?? []).sort((a, b) => a.need.localeCompare(b.need)),

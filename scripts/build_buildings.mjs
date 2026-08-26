@@ -11,6 +11,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, parseFile, asArray, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
+import { iconPath } from './lib/icons.mjs';
 import { loadEconomy } from './lib/economy.mjs';
 
 const loc = loadLoc();
@@ -77,7 +78,7 @@ function pmView(pmId) {
   return {
     id: pmId,
     name: loc.name(pmId),
-    icon: `img/pms/${String(pm.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+    icon: iconPath(pm.texture, 'pms'),
     techs: names(pm.unlocking_technologies),
     laws: names(pm.unlocking_laws),
     blockedByLaws: names(pm.disallowing_laws),
@@ -116,7 +117,7 @@ const buildings = Object.entries(econ.buildings)
     id,
     slug: id.replace(/^building_/, ''),
     name: loc.name(id),
-    icon: `img/buildings/${String(b.icon ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+    icon: iconPath(b.icon, 'buildings'),
     group: b.building_group ? { id: b.building_group, name: loc.name(b.building_group) } : null,
     groupRoot: groupRoot ? { id: groupRoot, name: loc.name(groupRoot) } : null,
     landUsage: landUsage(b.building_group),

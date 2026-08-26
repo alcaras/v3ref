@@ -7,6 +7,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
+import { iconPath } from './lib/icons.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
 
 const loc = loadLoc();
@@ -25,7 +26,7 @@ const traitList = Object.entries(traits.entries)
   .map(([id, t]) => ({
     id,
     name: loc.name(id),
-    icon: `img/traits/${String(t.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+    icon: iconPath(t.texture, 'traits'),
     type: t.type ?? null,
     // The three modifier scopes a trait can carry; command applies when leading
     // a formation.
@@ -47,7 +48,7 @@ const decreeList = Object.entries(decrees.entries)
   .map(([id, d]) => ({
     id,
     name: loc.name(id),
-    icon: `img/decrees/${String(d.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+    icon: iconPath(d.texture, 'decrees'),
     cost: d.cost ?? null,
     techs: asArray(d.unlocking_technologies).flat().map((t) => ({ id: t, name: loc.name(t) })),
     laws: asArray(d.unlocking_laws).flat().map((l) => ({ id: l, name: loc.name(l) })),

@@ -9,6 +9,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, parseFile, asArray, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
+import { iconPath } from './lib/icons.mjs';
 
 const loc = loadLoc();
 const root = dataRoot();
@@ -41,7 +42,7 @@ writeFileSync(
 const religionList = Object.entries(religions.entries).map(([id, r]) => ({
   id,
   name: loc.name(id),
-  icon: `img/religions/${String(r.icon ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+  icon: iconPath(r.icon, 'religions'),
   heritage: r.heritage ? { id: r.heritage, name: loc.name(r.heritage) } : null,
   taboos: goodRefs(r.taboos),
   cultures: cultureList.filter((c) => c.religion?.id === id).length,

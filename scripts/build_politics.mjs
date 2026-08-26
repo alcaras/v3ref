@@ -11,6 +11,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
+import { iconPath } from './lib/icons.mjs';
 import { loadModifiers } from './lib/modifiers.mjs';
 
 const loc = loadLoc();
@@ -27,8 +28,7 @@ const [laws, lawGroups, ideologies, igs, igTraits, institutions] = await Promise
 ]);
 
 const names = (ids) => asArray(ids).flat().map((id) => ({ id, name: loc.name(id) }));
-const iconOf = (entry, dir) =>
-  `img/${dir}/${String(entry.icon ?? entry.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`;
+const iconOf = (entry, dir) => iconPath(entry.icon ?? entry.texture, dir);
 const bag = (m) => mods.formatBag(Object.assign({}, ...asArray(m)));
 
 // ── Ideologies: law stances, flattened lawId -> stance ──────────────

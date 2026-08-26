@@ -6,7 +6,7 @@
 V3REF ?= ../v3ref
 export V3REF
 
-.PHONY: data art build dev check all
+.PHONY: data art audit changelog snapshot build dev check all patch
 
 data:
 	node scripts/build_goods.mjs
@@ -28,6 +28,15 @@ data:
 	node scripts/build_company_planner.mjs
 	node scripts/build_entities.mjs
 
+audit:
+	node scripts/audit.mjs
+
+changelog:
+	node scripts/changelog.mjs
+
+snapshot:
+	node scripts/changelog.mjs --snapshot
+
 art:
 	./scripts/extract_art.sh
 
@@ -40,4 +49,8 @@ dev:
 check:
 	npx astro check
 
-all: data build
+all: data audit changelog build
+
+# Full per-patch flow: re-parse, gate, diff, rebuild. Review CHANGELOG.md,
+# then `make snapshot` to make this patch the new baseline.
+patch: data audit changelog build

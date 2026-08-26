@@ -6371,7 +6371,7 @@
      "slug": "manila_cathedral_original"
     }
    ],
-   "icon": "img/pms/.png",
+   "icon": null,
    "id": "pm_dummy",
    "inputs": [],
    "jobs": [],

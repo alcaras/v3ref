@@ -10,6 +10,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dataRoot, parseFolder, asArray, stableStringify } from './lib/pdx.mjs';
 import { loadLoc } from './lib/loc.mjs';
+import { iconPath } from './lib/icons.mjs';
 import { loadEconomy } from './lib/economy.mjs';
 
 const loc = loadLoc();
@@ -40,7 +41,7 @@ for (const jobs of econ.pmEmployment.values()) {
 const pops = Object.entries(popsRaw).map(([id, p]) => ({
   id,
   name: loc.name(id),
-  icon: `img/pops/${String(p.texture ?? '').split('/').pop()?.replace(/\.dds$/, '')}.png`,
+  icon: iconPath(p.texture, 'pops'),
   strata: strataOf[id] ?? null,
   wageWeight: p.wage_weight ?? null,
   dependentWage: p.dependent_wage ?? null,

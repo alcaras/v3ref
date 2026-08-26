@@ -52,7 +52,6 @@
     "id": "combat_unit_group_artillery",
     "name": "Artillery"
    },
-   "icon": "img/military/cannon_artillery.png",
    "id": "combat_unit_type_cannon_artillery",
    "manpower": 1000,
    "name": "Cannon Artillery",
@@ -125,7 +124,6 @@
     "id": "combat_unit_group_artillery",
     "name": "Artillery"
    },
-   "icon": "img/military/mobile_artillery.png",
    "id": "combat_unit_type_mobile_artillery",
    "manpower": 1000,
    "name": "Mobile Artillery",
@@ -198,7 +196,6 @@
     "id": "combat_unit_group_artillery",
     "name": "Artillery"
    },
-   "icon": "img/military/shrapnel_artillery.png",
    "id": "combat_unit_type_shrapnel_artillery",
    "manpower": 1000,
    "name": "Shrapnel Artillery",
@@ -278,7 +275,6 @@
     "id": "combat_unit_group_artillery",
     "name": "Artillery"
    },
-   "icon": "img/military/siege_artillery.png",
    "id": "combat_unit_type_siege_artillery",
    "manpower": 1000,
    "name": "Siege Artillery",
@@ -372,7 +368,6 @@
     "id": "combat_unit_group_artillery",
     "name": "Artillery"
    },
-   "icon": "img/military/heavy_tank.png",
    "id": "combat_unit_type_heavy_tank",
    "manpower": 1000,
    "name": "Heavy Tanks",
@@ -459,7 +454,6 @@
     "id": "combat_unit_group_cavalry",
     "name": "Cavalry"
    },
-   "icon": "img/military/hussars.png",
    "id": "combat_unit_type_hussars",
    "manpower": 1000,
    "name": "Hussars",
@@ -525,7 +519,6 @@
     "id": "combat_unit_group_cavalry",
     "name": "Cavalry"
    },
-   "icon": "img/military/dragoons.png",
    "id": "combat_unit_type_dragoons",
    "manpower": 1000,
    "name": "Dragoons",
@@ -598,7 +591,6 @@
     "id": "combat_unit_group_cavalry",
     "name": "Cavalry"
    },
-   "icon": "img/military/cuirassiers.png",
    "id": "combat_unit_type_cuirassiers",
    "manpower": 1000,
    "name": "Cuirassiers",
@@ -685,7 +677,6 @@
     "id": "combat_unit_group_cavalry",
     "name": "Cavalry"
    },
-   "icon": "img/military/lancers.png",
    "id": "combat_unit_type_lancers",
    "manpower": 1000,
    "name": "Lancers",
@@ -772,7 +763,6 @@
     "id": "combat_unit_group_cavalry",
     "name": "Cavalry"
    },
-   "icon": "img/military/light_tanks.png",
    "id": "combat_unit_type_light_tanks",
    "manpower": 1000,
    "name": "Light Tanks",
@@ -859,7 +849,6 @@
     "id": "combat_unit_group_infantry",
     "name": "Infantry"
    },
-   "icon": "img/military/irregular_infantry.png",
    "id": "combat_unit_type_irregular_infantry",
    "manpower": 1000,
    "name": "Irregular Infantry",
@@ -905,7 +894,6 @@
     "id": "combat_unit_group_infantry",
     "name": "Infantry"
    },
-   "icon": "img/military/line_infantry.png",
    "id": "combat_unit_type_line_infantry",
    "manpower": 1000,
    "name": "Line Infantry",
@@ -964,7 +952,6 @@
     "id": "combat_unit_group_infantry",
     "name": "Infantry"
    },
-   "icon": "img/military/skirmish_infantry.png",
    "id": "combat_unit_type_skirmish_infantry",
    "manpower": 1000,
    "name": "Skirmish Infantry",
@@ -1030,7 +1017,6 @@
     "id": "combat_unit_group_infantry",
     "name": "Infantry"
    },
-   "icon": "img/military/trench_infantry.png",
    "id": "combat_unit_type_trench_infantry",
    "manpower": 1000,
    "name": "Trench Infantry",
@@ -1096,7 +1082,6 @@
     "id": "combat_unit_group_infantry",
     "name": "Infantry"
    },
-   "icon": "img/military/squad_infantry.png",
    "id": "combat_unit_type_squad_infantry",
    "manpower": 1000,
    "name": "Squad Infantry",
@@ -1169,7 +1154,6 @@
     "id": "combat_unit_group_infantry",
     "name": "Infantry"
    },
-   "icon": "img/military/mechanized_infantry.png",
    "id": "combat_unit_type_mechanized_infantry",
    "manpower": 1000,
    "name": "Mechanized Infantry",
@@ -1249,7 +1233,6 @@
     "id": "combat_unit_group_marines",
     "name": "Marines"
    },
-   "icon": "img/military/low_tier_marines.png",
    "id": "combat_unit_type_low_tier_marines",
    "manpower": 1000,
    "name": "Shipboard Marines",
@@ -1301,7 +1284,6 @@
     "id": "combat_unit_group_marines",
     "name": "Marines"
    },
-   "icon": "img/military/mid_tier_marines.png",
    "id": "combat_unit_type_mid_tier_marines",
    "manpower": 1000,
    "name": "Landing Marines",
@@ -1360,7 +1342,6 @@
     "id": "combat_unit_group_marines",
     "name": "Marines"
    },
-   "icon": "img/military/high_tier_marines.png",
    "id": "combat_unit_type_high_tier_marines",
    "manpower": 1000,
    "name": "Assault Marines",

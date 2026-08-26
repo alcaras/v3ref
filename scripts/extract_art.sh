@@ -59,3 +59,7 @@ convert_dir "$ICONS/war_goals" "$OUT/wargoals"
 convert_dir "$ICONS/mobilization_options" "$OUT/mobilization"
 convert_dir "$ICONS/religion_icons" "$OUT/religions"
 convert_dir "$ICONS/military_icons" "$OUT/military"
+convert_dir "$ICONS/character_trait_icons/special_character_traits" "$OUT/traits"
+
+# One-off: the free-text treaty article points at a generic icon.
+magick "$ICONS/generic_icons/diplomatic_treaties.dds" "$OUT/treaties/diplomatic_treaties.png" 2>/dev/null || true
