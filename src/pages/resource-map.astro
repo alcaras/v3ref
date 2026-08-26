@@ -17,8 +17,11 @@ const base = import.meta.env.BASE_URL;
         </div>
         <p class="rm__note">
           Pick one for a magnitude map. Pick two or three to compare — each gets its own hue and a
-          state takes the hue of whichever leads there.
+          state takes the hue of whichever leads there. <b>Produced</b> layers are actual 1836 output;
+          the rest are what the ground can hold.
         </p>
+        <input id="rm-search" class="rail__select" type="search" placeholder="Find a layer…"
+          style="margin-bottom:0.4rem;" />
         <div id="rm-layers" class="rm__layers"></div>
       </div>
       <div>
@@ -40,10 +43,14 @@ const base = import.meta.env.BASE_URL;
         <div id="rm-tip" class="rm__tip" hidden></div>
       </div>
       <p class="caption">
-        State regions coloured from the game's own <code>state_regions</code> resource caps — the
-        maximum levels of each extraction building a state can hold. Undiscovered deposits are what
-        prospecting can still reveal. Sea, lakes, and the 106 water regions carry no data.
-        Built by recolouring a state-index map derived from <code>provinces.png</code>.
+        Two kinds of layer. <b>Deposit</b> layers (mines, wharves, arable land, undiscovered finds)
+        come from the game's <code>state_regions</code> caps — the maximum levels a state can ever
+        hold. <b>Produced</b> layers come from the 1836 setup: the buildings each state starts with,
+        at their starting levels, running their activated production methods, so they show where a
+        good is actually made on day one rather than where it could be. Hover a state for its full
+        breakdown, click to open its <a href={`${base}states`}>location page</a>. Sea, lakes, and the
+        106 water regions carry no data. Built by recolouring a state-index map derived from
+        <code>provinces.png</code>.
       </p>
     </div>
   </div>
@@ -112,7 +119,10 @@ const base = import.meta.env.BASE_URL;
       };
 
       function renderLayers() {
-        $('rm-layers').innerHTML = meta.layers.map((l) => {
+        const q = ($('rm-search').value || '').trim().toLowerCase();
+        // Never hide a selected layer, or you cannot switch it off.
+        const shown = meta.layers.filter((l) => !q || l.name.toLowerCase().includes(q) || selected.includes(l.key));
+        $('rm-layers').innerHTML = shown.map((l) => {
           const at = selected.indexOf(l.key);
           const on = at >= 0;
           const full = selected.length >= MAX_LAYERS && !on;
@@ -242,6 +252,7 @@ const base = import.meta.env.BASE_URL;
         ? fromHash.split(',').filter((k) => meta.layers.some((l) => l.key === k)).slice(0, MAX_LAYERS)
         : [(meta.layers.find((l) => /iron/i.test(l.name)) ?? meta.layers[0]).key];
       selected.push(...wanted);
+      $('rm-search').addEventListener('input', renderLayers);
       renderLayers();
       draw();
     })();

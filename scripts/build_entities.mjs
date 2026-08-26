@@ -85,10 +85,10 @@ for (const c of gen('countries.json').countries) {
     page: `countries#${c.tag}`, group: c.dynamic ? 'formable' : (c.type ?? null),
   });
 }
-for (const s of gen('states.json').states) {
+for (const l of gen('locations.json').locations) {
   entities.push({
-    id: s.id, type: 'state', slug: s.id, name: s.name, icon: null,
-    page: `states#${s.id}`, group: s.region?.name ?? null,
+    id: l.id, type: 'location', slug: l.slug, name: l.name, icon: null,
+    page: `locations/${l.slug}`, group: l.region?.name ?? null,
   });
 }
 for (const t of gen('treaties.json').treaties) {

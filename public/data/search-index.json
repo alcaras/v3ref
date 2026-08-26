@@ -176,8 +176,8 @@
   "a": "state_abruzzo",
   "g": "Southern Europe",
   "n": "Abruzzo",
-  "t": "state",
-  "u": "states#STATE_ABRUZZO"
+  "t": "location",
+  "u": "locations/abruzzo"
  },
  {
   "a": "abs",
@@ -251,8 +251,8 @@
   "a": "state_aceh",
   "g": "Indonesia",
   "n": "Aceh",
-  "t": "state",
-  "u": "states#STATE_ACEH"
+  "t": "location",
+  "u": "locations/aceh"
  },
  {
   "a": "je_achieve_sovereignty",
@@ -291,8 +291,8 @@
   "a": "state_acre",
   "g": "The Andes",
   "n": "Acre",
-  "t": "state",
-  "u": "states#STATE_ACRE"
+  "t": "location",
+  "u": "locations/acre"
  },
  {
   "a": "events:brazil--acre_dispute",
@@ -328,8 +328,8 @@
   "a": "state_adana",
   "g": "Near East",
   "n": "Adana",
-  "t": "state",
-  "u": "states#STATE_ADANA"
+  "t": "location",
+  "u": "locations/adana"
  },
  {
   "a": "free_text",
@@ -562,8 +562,8 @@
   "a": "state_agra",
   "g": "North India",
   "n": "Agra",
-  "t": "state",
-  "u": "states#STATE_AGRA"
+  "t": "location",
+  "u": "locations/agra"
  },
  {
   "a": "law_agrarianism",
@@ -648,36 +648,36 @@
   "a": "state_akmolinsk",
   "g": "Central Asia",
   "n": "Akmolinsk",
-  "t": "state",
-  "u": "states#STATE_AKMOLINSK"
+  "t": "location",
+  "u": "locations/akmolinsk"
  },
  {
   "a": "state_aktobe",
   "g": "Central Asia",
   "n": "Aktobe",
-  "t": "state",
-  "u": "states#STATE_AKTOBE"
+  "t": "location",
+  "u": "locations/aktobe"
  },
  {
   "a": "state_al_rif",
   "g": "North Africa",
   "n": "al Rif",
-  "t": "state",
-  "u": "states#STATE_AL_RIF"
+  "t": "location",
+  "u": "locations/al_rif"
  },
  {
   "a": "state_alabama",
   "g": "Atlantic Coast",
   "n": "Alabama",
-  "t": "state",
-  "u": "states#STATE_ALABAMA"
+  "t": "location",
+  "u": "locations/alabama"
  },
  {
   "a": "state_aland",
   "g": "Northern Europe",
   "n": "Åland",
-  "t": "state",
-  "u": "states#STATE_ALAND"
+  "t": "location",
+  "u": "locations/aland"
  },
  {
   "a": "alk",
@@ -690,8 +690,8 @@
   "a": "state_alaska",
   "g": "Pacific Coast",
   "n": "Alaska",
-  "t": "state",
-  "u": "states#STATE_ALASKA"
+  "t": "location",
+  "u": "locations/alaska"
  },
  {
   "a": "events:alaska_events",
@@ -717,8 +717,8 @@
   "a": "state_albania",
   "g": "Balkans",
   "n": "Albania",
-  "t": "state",
-  "u": "states#STATE_ALBANIA"
+  "t": "location",
+  "u": "locations/albania"
  },
  {
   "a": "albanian",
@@ -730,8 +730,8 @@
   "a": "state_alberta",
   "g": "Canada",
   "n": "Alberta",
-  "t": "state",
-  "u": "states#STATE_ALBERTA"
+  "t": "location",
+  "u": "locations/alberta"
  },
  {
   "a": "alcoholic",
@@ -745,8 +745,8 @@
   "a": "state_taurida",
   "g": "Eastern Europe",
   "n": "Aleksandrovsk",
-  "t": "state",
-  "u": "states#STATE_TAURIDA"
+  "t": "location",
+  "u": "locations/taurida"
  },
  {
   "a": "je_portuguese_colonialism",
@@ -765,15 +765,15 @@
   "a": "state_alentejo",
   "g": "Southern Europe",
   "n": "Alentejo",
-  "t": "state",
-  "u": "states#STATE_ALENTEJO"
+  "t": "location",
+  "u": "locations/alentejo"
  },
  {
   "a": "state_aleppo",
   "g": "Near East",
   "n": "Aleppo",
-  "t": "state",
-  "u": "states#STATE_ALEPPO"
+  "t": "location",
+  "u": "locations/aleppo"
  },
  {
   "a": "concept_alert_settings_alert",
@@ -798,8 +798,8 @@
   "a": "state_algiers",
   "g": "North Africa",
   "n": "Algiers",
-  "t": "state",
-  "u": "states#STATE_ALGIERS"
+  "t": "location",
+  "u": "locations/algiers"
  },
  {
   "a": "algonquian",
@@ -851,8 +851,8 @@
   "a": "state_alsace_lorraine",
   "g": "Western Europe",
   "n": "Alsace-Lorraine",
-  "t": "state",
-  "u": "states#STATE_ALSACE_LORRAINE"
+  "t": "location",
+  "u": "locations/alsace_lorraine"
  },
  {
   "a": "ali",
@@ -865,15 +865,15 @@
   "a": "state_altai",
   "g": "Siberia",
   "n": "Altai",
-  "t": "state",
-  "u": "states#STATE_ALTAI"
+  "t": "location",
+  "u": "locations/altai"
  },
  {
   "a": "state_alto_paraguay",
   "g": "La Plata",
   "n": "Alto Paraguay",
-  "t": "state",
-  "u": "states#STATE_ALTO_PARAGUAY"
+  "t": "location",
+  "u": "locations/alto_paraguay"
  },
  {
   "a": "company_altos_hornos_de_vizcaya",
@@ -894,8 +894,8 @@
   "a": "state_alxa",
   "g": "North China",
   "n": "Alxa",
-  "t": "state",
-  "u": "states#STATE_ALXA"
+  "t": "location",
+  "u": "locations/alxa"
  },
  {
   "a": "company_rossi",
@@ -921,8 +921,8 @@
   "a": "state_amazonas",
   "g": "Brazil",
   "n": "Amazonas",
-  "t": "state",
-  "u": "states#STATE_AMAZONAS"
+  "t": "location",
+  "u": "locations/amazonas"
  },
  {
   "a": "events:brazil--amazonas",
@@ -999,8 +999,8 @@
   "a": "state_amhara",
   "g": "East Africa",
   "n": "Amhara",
-  "t": "state",
-  "u": "states#STATE_AMHARA"
+  "t": "location",
+  "u": "locations/amhara"
  },
  {
   "a": "ammunition",
@@ -1142,8 +1142,8 @@
   "a": "state_anhalt",
   "g": "Central Europe",
   "n": "Anhalt",
-  "t": "state",
-  "u": "states#STATE_ANHALT"
+  "t": "location",
+  "u": "locations/anhalt"
  },
  {
   "a": "ahu",
@@ -1174,8 +1174,8 @@
   "a": "state_ankara",
   "g": "Near East",
   "n": "Ankara",
-  "t": "state",
-  "u": "states#STATE_ANKARA"
+  "t": "location",
+  "u": "locations/ankara"
  },
  {
   "a": "ank",
@@ -1188,8 +1188,8 @@
   "a": "state_annam",
   "g": "Indochina",
   "n": "Annam",
-  "t": "state",
-  "u": "states#STATE_ANNAM"
+  "t": "location",
+  "u": "locations/annam"
  },
  {
   "a": "je_conquer_oregon",
@@ -1259,15 +1259,15 @@
   "a": "state_antioquia",
   "g": "Gran Colombia",
   "n": "Antioquia",
-  "t": "state",
-  "u": "states#STATE_ANTIOQUIA"
+  "t": "location",
+  "u": "locations/antioquia"
  },
  {
   "a": "state_antofagasta",
   "g": "The Andes",
   "n": "Antofagasta",
-  "t": "state",
-  "u": "states#STATE_ANTOFAGASTA"
+  "t": "location",
+  "u": "locations/antofagasta"
  },
  {
   "a": "anu",
@@ -1327,15 +1327,15 @@
   "a": "state_apulia",
   "g": "Southern Europe",
   "n": "Apulia",
-  "t": "state",
-  "u": "states#STATE_APULIA"
+  "t": "location",
+  "u": "locations/apulia"
  },
  {
   "a": "state_aquitaine",
   "g": "Southern Europe",
   "n": "Aquitaine",
-  "t": "state",
-  "u": "states#STATE_AQUITAINE"
+  "t": "location",
+  "u": "locations/aquitaine"
  },
  {
   "a": "ara",
@@ -1355,8 +1355,8 @@
   "a": "state_khuzestan",
   "g": "Greater Persia",
   "n": "Arabistan",
-  "t": "state",
-  "u": "states#STATE_KHUZESTAN"
+  "t": "location",
+  "u": "locations/khuzestan"
  },
  {
   "a": "concept_arable_land",
@@ -1375,8 +1375,8 @@
   "a": "state_aragon",
   "g": "Southern Europe",
   "n": "Aragon",
-  "t": "state",
-  "u": "states#STATE_ARAGON"
+  "t": "location",
+  "u": "locations/aragon"
  },
  {
   "a": "aragonese",
@@ -1395,8 +1395,8 @@
   "a": "state_arakan",
   "g": "Indochina",
   "n": "Arakan",
-  "t": "state",
-  "u": "states#STATE_ARAKAN"
+  "t": "location",
+  "u": "locations/arakan"
  },
  {
   "a": "arp",
@@ -1409,8 +1409,8 @@
   "a": "state_araucania",
   "g": "La Plata",
   "n": "Araucania",
-  "t": "state",
-  "u": "states#STATE_ARAUCANIA"
+  "t": "location",
+  "u": "locations/araucania"
  },
  {
   "a": "arc_welding",
@@ -1434,8 +1434,8 @@
   "a": "state_arequipa",
   "g": "The Andes",
   "n": "Arequipa",
-  "t": "state",
-  "u": "states#STATE_AREQUIPA"
+  "t": "location",
+  "u": "locations/arequipa"
  },
  {
   "a": "arg",
@@ -1461,22 +1461,22 @@
   "a": "state_arizona",
   "g": "Pacific Coast",
   "n": "Arizona",
-  "t": "state",
-  "u": "states#STATE_ARIZONA"
+  "t": "location",
+  "u": "locations/arizona"
  },
  {
   "a": "state_arkansas",
   "g": "Great Plains",
   "n": "Arkansas",
-  "t": "state",
-  "u": "states#STATE_ARKANSAS"
+  "t": "location",
+  "u": "locations/arkansas"
  },
  {
   "a": "state_arkhangelsk",
   "g": "Russia",
   "n": "Arkhangelsk",
-  "t": "state",
-  "u": "states#STATE_ARKHANGELSK"
+  "t": "location",
+  "u": "locations/arkhangelsk"
  },
  {
   "a": "company_basic_weapons",
@@ -1504,8 +1504,8 @@
   "a": "state_armenia",
   "g": "Greater Persia",
   "n": "Armenia",
-  "t": "state",
-  "u": "states#STATE_ARMENIA"
+  "t": "location",
+  "u": "locations/armenia"
  },
  {
   "a": "armenian",
@@ -1680,8 +1680,8 @@
   "a": "state_assam",
   "g": "North India",
   "n": "Assam",
-  "t": "state",
-  "u": "states#STATE_ASSAM"
+  "t": "location",
+  "u": "locations/assam"
  },
  {
   "a": "company_assam_company",
@@ -1733,8 +1733,8 @@
   "a": "state_astrakhan",
   "g": "Russia",
   "n": "Astrakhan",
-  "t": "state",
-  "u": "states#STATE_ASTRAKHAN"
+  "t": "location",
+  "u": "locations/astrakhan"
  },
  {
   "a": "asu",
@@ -1747,8 +1747,8 @@
   "a": "state_asturias",
   "g": "Southern Europe",
   "n": "Asturias",
-  "t": "state",
-  "u": "states#STATE_ASTURIAS"
+  "t": "location",
+  "u": "locations/asturias"
  },
  {
   "a": "asturleonese",
@@ -1812,8 +1812,8 @@
   "a": "state_attica",
   "g": "Balkans",
   "n": "Attica",
-  "t": "state",
-  "u": "states#STATE_ATTICA"
+  "t": "location",
+  "u": "locations/attica"
  },
  {
   "a": "concept_attitude",
@@ -1871,8 +1871,8 @@
   "a": "state_austria",
   "g": "Central Europe",
   "n": "Austria",
-  "t": "state",
-  "u": "states#STATE_AUSTRIA"
+  "t": "location",
+  "u": "locations/austria"
  },
  {
   "a": "events:balkans_events--austria_federalism",
@@ -1961,8 +1961,8 @@
   "a": "state_auvergne_limousin",
   "g": "Southern Europe",
   "n": "Auvergne-Limousin",
-  "t": "state",
-  "u": "states#STATE_AUVERGNE_LIMOUSIN"
+  "t": "location",
+  "u": "locations/auvergne_limousin"
  },
  {
   "a": "avadhi",
@@ -2006,8 +2006,8 @@
   "a": "state_aydin",
   "g": "Near East",
   "n": "Aydin",
-  "t": "state",
-  "u": "states#STATE_AYDIN"
+  "t": "location",
+  "u": "locations/aydin"
  },
  {
   "a": "aym",
@@ -2053,8 +2053,8 @@
   "a": "state_azores",
   "g": "Southern Europe",
   "n": "Azores",
-  "t": "state",
-  "u": "states#STATE_AZORES"
+  "t": "location",
+  "u": "locations/azores"
  },
  {
   "a": "company_b_grimm",
@@ -2083,8 +2083,8 @@
   "a": "state_baden",
   "g": "Central Europe",
   "n": "Baden",
-  "t": "state",
-  "u": "states#STATE_BADEN"
+  "t": "location",
+  "u": "locations/baden"
  },
  {
   "a": "baganda",
@@ -2096,8 +2096,8 @@
   "a": "state_baghdad",
   "g": "Near East",
   "n": "Baghdad",
-  "t": "state",
-  "u": "states#STATE_BAGHDAD"
+  "t": "location",
+  "u": "locations/baghdad"
  },
  {
   "a": "bageli",
@@ -2129,8 +2129,8 @@
   "a": "state_bahamas",
   "g": "Central America",
   "n": "Bahamas",
-  "t": "state",
-  "u": "states#STATE_BAHAMAS"
+  "t": "location",
+  "u": "locations/bahamas"
  },
  {
   "a": "bhw",
@@ -2150,8 +2150,8 @@
   "a": "state_bahia",
   "g": "Brazil",
   "n": "Bahia",
-  "t": "state",
-  "u": "states#STATE_BAHIA"
+  "t": "location",
+  "u": "locations/bahia"
  },
  {
   "a": "bhn",
@@ -2164,22 +2164,22 @@
   "a": "state_baja_california",
   "g": "Central America",
   "n": "Baja California",
-  "t": "state",
-  "u": "states#STATE_BAJA_CALIFORNIA"
+  "t": "location",
+  "u": "locations/baja_california"
  },
  {
   "a": "state_bajio",
   "g": "Central America",
   "n": "Bajío",
-  "t": "state",
-  "u": "states#STATE_BAJIO"
+  "t": "location",
+  "u": "locations/bajio"
  },
  {
   "a": "state_bajo_paraguay",
   "g": "La Plata",
   "n": "Bajo Paraguay",
-  "t": "state",
-  "u": "states#STATE_BAJO_PARAGUAY"
+  "t": "location",
+  "u": "locations/bajo_paraguay"
  },
  {
   "a": "baking_powder",
@@ -2202,8 +2202,8 @@
   "a": "state_azerbaijan",
   "g": "Greater Persia",
   "n": "Baku",
-  "t": "state",
-  "u": "states#STATE_AZERBAIJAN"
+  "t": "location",
+  "u": "locations/azerbaijan"
  },
  {
   "a": "law_bakufu",
@@ -2223,8 +2223,8 @@
   "a": "state_balearic_islands",
   "g": "Southern Europe",
   "n": "Balearic Islands",
-  "t": "state",
-  "u": "states#STATE_BALEARIC_ISLANDS"
+  "t": "location",
+  "u": "locations/balearic_islands"
  },
  {
   "a": "bal",
@@ -2268,8 +2268,8 @@
   "a": "state_baluchistan",
   "g": "Greater Persia",
   "n": "Baluchistan",
-  "t": "state",
-  "u": "states#STATE_BALUCHISTAN"
+  "t": "location",
+  "u": "locations/baluchistan"
  },
  {
   "a": "bambara",
@@ -2281,8 +2281,8 @@
   "a": "state_sistan",
   "g": "Greater Persia",
   "n": "Bampur",
-  "t": "state",
-  "u": "states#STATE_SISTAN"
+  "t": "location",
+  "u": "locations/sistan"
  },
  {
   "a": "bmm",
@@ -2316,8 +2316,8 @@
   "a": "state_banat",
   "g": "Balkans",
   "n": "Banat",
-  "t": "state",
-  "u": "states#STATE_BANAT"
+  "t": "location",
+  "u": "locations/banat"
  },
  {
   "a": "bandit",
@@ -2338,8 +2338,8 @@
   "a": "state_bangkok",
   "g": "Indochina",
   "n": "Bangkok",
-  "t": "state",
-  "u": "states#STATE_BANGKOK"
+  "t": "location",
+  "u": "locations/bangkok"
  },
  {
   "a": "bnj",
@@ -2458,15 +2458,15 @@
   "a": "state_basque_country",
   "g": "Southern Europe",
   "n": "Basque Country",
-  "t": "state",
-  "u": "states#STATE_BASQUE_COUNTRY"
+  "t": "location",
+  "u": "locations/basque_country"
  },
  {
   "a": "state_basra",
   "g": "Near East",
   "n": "Basra",
-  "t": "state",
-  "u": "states#STATE_BASRA"
+  "t": "location",
+  "u": "locations/basra"
  },
  {
   "a": "bassa",
@@ -2544,8 +2544,8 @@
   "a": "state_bavaria",
   "g": "Central Europe",
   "n": "Bavaria",
-  "t": "state",
-  "u": "states#STATE_BAVARIA"
+  "t": "location",
+  "u": "locations/bavaria"
  },
  {
   "a": "je_bavarocracy",
@@ -2602,15 +2602,15 @@
   "a": "state_beijing",
   "g": "North China",
   "n": "Beijing",
-  "t": "state",
-  "u": "states#STATE_BEIJING"
+  "t": "location",
+  "u": "locations/beijing"
  },
  {
   "a": "state_beira",
   "g": "Southern Europe",
   "n": "Beira",
-  "t": "state",
-  "u": "states#STATE_BEIRA"
+  "t": "location",
+  "u": "locations/beira"
  },
  {
   "a": "bei",
@@ -2691,22 +2691,22 @@
   "a": "state_benin",
   "g": "West Africa",
   "n": "Benin",
-  "t": "state",
-  "u": "states#STATE_BENIN"
+  "t": "location",
+  "u": "locations/benin"
  },
  {
   "a": "state_bermuda",
   "g": "Atlantic Coast",
   "n": "Bermuda",
-  "t": "state",
-  "u": "states#STATE_BERMUDA"
+  "t": "location",
+  "u": "locations/bermuda"
  },
  {
   "a": "state_bessarabia",
   "g": "Balkans",
   "n": "Bessarabia",
-  "t": "state",
-  "u": "states#STATE_BESSARABIA"
+  "t": "location",
+  "u": "locations/bessarabia"
  },
  {
   "a": "bessemer_process",
@@ -2779,8 +2779,8 @@
   "a": "state_bihar",
   "g": "North India",
   "n": "Bihar",
-  "t": "state",
-  "u": "states#STATE_BIHAR"
+  "t": "location",
+  "u": "locations/bihar"
  },
  {
   "a": "bihari",
@@ -2855,8 +2855,8 @@
   "a": "state_blue_nile",
   "g": "Nile Basin",
   "n": "Blue Nile",
-  "t": "state",
-  "u": "states#STATE_BLUE_NILE"
+  "t": "location",
+  "u": "locations/blue_nile"
  },
  {
   "a": "bob",
@@ -2888,8 +2888,8 @@
   "a": "state_bohemia",
   "g": "Central Europe",
   "n": "Bohemia",
-  "t": "state",
-  "u": "states#STATE_BOHEMIA"
+  "t": "location",
+  "u": "locations/bohemia"
  },
  {
   "a": "company_bolckow_vaughan",
@@ -2903,8 +2903,8 @@
   "a": "state_bolivar",
   "g": "Gran Colombia",
   "n": "Bolívar",
-  "t": "state",
-  "u": "states#STATE_BOLIVAR"
+  "t": "location",
+  "u": "locations/bolivar"
  },
  {
   "a": "je_andean_federation",
@@ -2961,8 +2961,8 @@
   "a": "state_bombay",
   "g": "South India",
   "n": "Bombay",
-  "t": "state",
-  "u": "states#STATE_BOMBAY"
+  "t": "location",
+  "u": "locations/bombay"
  },
  {
   "a": "company_bombay_burmah_trading_corporation",
@@ -3019,15 +3019,15 @@
   "a": "state_bornu",
   "g": "West Africa",
   "n": "Bornu",
-  "t": "state",
-  "u": "states#STATE_BORNU"
+  "t": "location",
+  "u": "locations/bornu"
  },
  {
   "a": "state_bosnia",
   "g": "Balkans",
   "n": "Bosnia",
-  "t": "state",
-  "u": "states#STATE_BOSNIA"
+  "t": "location",
+  "u": "locations/bosnia"
  },
  {
   "a": "bos",
@@ -3046,15 +3046,15 @@
   "a": "state_botswana",
   "g": "Southern Africa",
   "n": "Botswana",
-  "t": "state",
-  "u": "states#STATE_BOTSWANA"
+  "t": "location",
+  "u": "locations/botswana"
  },
  {
   "a": "state_bougainville",
   "g": "Oceania",
   "n": "Bougainville",
-  "t": "state",
-  "u": "states#STATE_BOUGAINVILLE"
+  "t": "location",
+  "u": "locations/bougainville"
  },
  {
   "a": "events:boxer_rebellion_events",
@@ -3073,8 +3073,8 @@
   "a": "state_brandenburg",
   "g": "Central Europe",
   "n": "Brandenburg",
-  "t": "state",
-  "u": "states#STATE_BRANDENBURG"
+  "t": "location",
+  "u": "locations/brandenburg"
  },
  {
   "a": "company_branobel",
@@ -3177,8 +3177,8 @@
   "a": "state_brittany",
   "g": "Western Europe",
   "n": "Brittany",
-  "t": "state",
-  "u": "states#STATE_BRITTANY"
+  "t": "location",
+  "u": "locations/brittany"
  },
  {
   "a": "company_broken_hill_proprietary_company",
@@ -3206,8 +3206,8 @@
   "a": "state_brunswick",
   "g": "Central Europe",
   "n": "Brunswick",
-  "t": "state",
-  "u": "states#STATE_BRUNSWICK"
+  "t": "location",
+  "u": "locations/brunswick"
  },
  {
   "a": "decision_found_budapest",
@@ -3219,8 +3219,8 @@
   "a": "state_buenos_aires",
   "g": "La Plata",
   "n": "Buenos Aires",
-  "t": "state",
-  "u": "states#STATE_BUENOS_AIRES"
+  "t": "location",
+  "u": "locations/buenos_aires"
  },
  {
   "a": "bug",
@@ -3277,8 +3277,8 @@
   "a": "state_bukovina",
   "g": "Balkans",
   "n": "Bukovina",
-  "t": "state",
-  "u": "states#STATE_BUKOVINA"
+  "t": "location",
+  "u": "locations/bukovina"
  },
  {
   "a": "bul",
@@ -3291,8 +3291,8 @@
   "a": "state_bulgaria",
   "g": "Balkans",
   "n": "Bulgaria",
-  "t": "state",
-  "u": "states#STATE_BULGARIA"
+  "t": "location",
+  "u": "locations/bulgaria"
  },
  {
   "a": "events:bulgaria_events",
@@ -3323,8 +3323,8 @@
   "a": "state_bundelkhand",
   "g": "North India",
   "n": "Bundelkhand",
-  "t": "state",
-  "u": "states#STATE_BUNDELKHAND"
+  "t": "location",
+  "u": "locations/bundelkhand"
  },
  {
   "a": "bnd",
@@ -3382,8 +3382,8 @@
   "a": "state_burgundy",
   "g": "Western Europe",
   "n": "Burgundy",
-  "t": "state",
-  "u": "states#STATE_BURGUNDY"
+  "t": "location",
+  "u": "locations/burgundy"
  },
  {
   "a": "bur",
@@ -3422,8 +3422,8 @@
   "a": "state_buryatia",
   "g": "Siberia",
   "n": "Buryatia",
-  "t": "state",
-  "u": "states#STATE_BURYATIA"
+  "t": "location",
+  "u": "locations/buryatia"
  },
  {
   "a": "concept_busy",
@@ -3483,8 +3483,8 @@
   "a": "state_cajamarca",
   "g": "The Andes",
   "n": "Cajamarca",
-  "t": "state",
-  "u": "states#STATE_CAJAMARCA"
+  "t": "location",
+  "u": "locations/cajamarca"
  },
  {
   "a": "cajun",
@@ -3496,8 +3496,8 @@
   "a": "state_calabria",
   "g": "Southern Europe",
   "n": "Calabria",
-  "t": "state",
-  "u": "states#STATE_CALABRIA"
+  "t": "location",
+  "u": "locations/calabria"
  },
  {
   "a": "company_calcutta_electric",
@@ -3518,8 +3518,8 @@
   "a": "state_california",
   "g": "Pacific Coast",
   "n": "California",
-  "t": "state",
-  "u": "states#STATE_CALIFORNIA"
+  "t": "location",
+  "u": "locations/california"
  },
  {
   "a": "je_suffragists",
@@ -3539,8 +3539,8 @@
   "a": "state_cambodia",
   "g": "Indochina",
   "n": "Cambodia",
-  "t": "state",
-  "u": "states#STATE_CAMBODIA"
+  "t": "location",
+  "u": "locations/cambodia"
  },
  {
   "a": "camera",
@@ -3563,8 +3563,8 @@
   "a": "state_campania",
   "g": "Southern Europe",
   "n": "Campania",
-  "t": "state",
-  "u": "states#STATE_CAMPANIA"
+  "t": "location",
+  "u": "locations/campania"
  },
  {
   "a": "can",
@@ -3595,8 +3595,8 @@
   "a": "state_canary_islands",
   "g": "Southern Europe",
   "n": "Canary Islands",
-  "t": "state",
-  "u": "states#STATE_CANARY_ISLANDS"
+  "t": "location",
+  "u": "locations/canary_islands"
  },
  {
   "a": "stop_panama_survey_decision",
@@ -3654,15 +3654,15 @@
   "a": "state_cape_colony",
   "g": "Southern Africa",
   "n": "Cape Colony",
-  "t": "state",
-  "u": "states#STATE_CAPE_COLONY"
+  "t": "location",
+  "u": "locations/cape_colony"
  },
  {
   "a": "state_cape_verde",
   "g": "Southern Europe",
   "n": "Cape Verde",
-  "t": "state",
-  "u": "states#STATE_CAPE_VERDE"
+  "t": "location",
+  "u": "locations/cape_verde"
  },
  {
   "a": "law_professional_navy",
@@ -3735,8 +3735,8 @@
   "a": "state_madras",
   "g": "South India",
   "n": "Carnatic",
-  "t": "state",
-  "u": "states#STATE_MADRAS"
+  "t": "location",
+  "u": "locations/madras"
  },
  {
   "a": "company_us_steel",
@@ -3832,8 +3832,8 @@
   "a": "state_catalonia",
   "g": "Southern Europe",
   "n": "Catalonia",
-  "t": "state",
-  "u": "states#STATE_CATALONIA"
+  "t": "location",
+  "u": "locations/catalonia"
  },
  {
   "a": "catholic",
@@ -3846,8 +3846,8 @@
   "a": "state_cauca",
   "g": "Gran Colombia",
   "n": "Cauca",
-  "t": "state",
-  "u": "states#STATE_CAUCA"
+  "t": "location",
+  "u": "locations/cauca"
  },
  {
   "a": "events:brazil--caudillo",
@@ -3874,22 +3874,22 @@
   "a": "state_ceara",
   "g": "Brazil",
   "n": "Ceará",
-  "t": "state",
-  "u": "states#STATE_CEARA"
+  "t": "location",
+  "u": "locations/ceara"
  },
  {
   "a": "state_kurnool",
   "g": "South India",
   "n": "Ceded Districts",
-  "t": "state",
-  "u": "states#STATE_KURNOOL"
+  "t": "location",
+  "u": "locations/kurnool"
  },
  {
   "a": "state_celebes",
   "g": "Indonesia",
   "n": "Celebes",
-  "t": "state",
-  "u": "states#STATE_CELEBES"
+  "t": "location",
+  "u": "locations/celebes"
  },
  {
   "a": "celebrity_commander",
@@ -3980,8 +3980,8 @@
   "a": "state_central_cuba",
   "g": "Central America",
   "n": "Central Cuba",
-  "t": "state",
-  "u": "states#STATE_CENTRAL_CUBA"
+  "t": "location",
+  "u": "locations/central_cuba"
  },
  {
   "a": "hre",
@@ -4000,8 +4000,8 @@
   "a": "state_central_java",
   "g": "Indonesia",
   "n": "Central Java",
-  "t": "state",
-  "u": "states#STATE_CENTRAL_JAVA"
+  "t": "location",
+  "u": "locations/central_java"
  },
  {
   "a": "central_planning",
@@ -4018,8 +4018,8 @@
   "a": "state_central_provinces",
   "g": "North India",
   "n": "Central Provinces",
-  "t": "state",
-  "u": "states#STATE_CENTRAL_PROVINCES"
+  "t": "location",
+  "u": "locations/central_provinces"
  },
  {
   "a": "centralization",
@@ -4051,8 +4051,8 @@
   "a": "state_ceylon",
   "g": "South India",
   "n": "Ceylon",
-  "t": "state",
-  "u": "states#STATE_CEYLON"
+  "t": "location",
+  "u": "locations/ceylon"
  },
  {
   "a": "cmb",
@@ -4065,15 +4065,15 @@
   "a": "state_chaco",
   "g": "La Plata",
   "n": "Chaco",
-  "t": "state",
-  "u": "states#STATE_CHACO"
+  "t": "location",
+  "u": "locations/chaco"
  },
  {
   "a": "state_chad",
   "g": "Equatorial Africa",
   "n": "Chad",
-  "t": "state",
-  "u": "states#STATE_CHAD"
+  "t": "location",
+  "u": "locations/chad"
  },
  {
   "a": "champa",
@@ -4085,8 +4085,8 @@
   "a": "state_champagne",
   "g": "Western Europe",
   "n": "Champagne",
-  "t": "state",
-  "u": "states#STATE_CHAMPAGNE"
+  "t": "location",
+  "u": "locations/champagne"
  },
  {
   "a": "chp",
@@ -4166,8 +4166,8 @@
   "a": "state_chuvashia",
   "g": "Russia",
   "n": "Cheboksary",
-  "t": "state",
-  "u": "states#STATE_CHUVASHIA"
+  "t": "location",
+  "u": "locations/chuvashia"
  },
  {
   "a": "chechen",
@@ -4186,8 +4186,8 @@
   "a": "state_chelyabinsk",
   "g": "Siberia",
   "n": "Chelyabinsk",
-  "t": "state",
-  "u": "states#STATE_CHELYABINSK"
+  "t": "location",
+  "u": "locations/chelyabinsk"
  },
  {
   "a": "chemical_bleaching",
@@ -4231,8 +4231,8 @@
   "a": "state_chernihiv",
   "g": "Eastern Europe",
   "n": "Chernihiv",
-  "t": "state",
-  "u": "states#STATE_CHERNIHIV"
+  "t": "location",
+  "u": "locations/chernihiv"
  },
  {
   "a": "che",
@@ -4277,15 +4277,15 @@
   "a": "state_chiang_mai",
   "g": "Indochina",
   "n": "Chiang Mai",
-  "t": "state",
-  "u": "states#STATE_CHIANG_MAI"
+  "t": "location",
+  "u": "locations/chiang_mai"
  },
  {
   "a": "state_chiapas",
   "g": "Central America",
   "n": "Chiapas",
-  "t": "state",
-  "u": "states#STATE_CHIAPAS"
+  "t": "location",
+  "u": "locations/chiapas"
  },
  {
   "a": "law_chiefdom",
@@ -4299,8 +4299,8 @@
   "a": "state_chihuahua",
   "g": "Central America",
   "n": "Chihuahua",
-  "t": "state",
-  "u": "states#STATE_CHIHUAHUA"
+  "t": "location",
+  "u": "locations/chihuahua"
  },
  {
   "a": "trait_child",
@@ -4348,8 +4348,8 @@
   "a": "state_trans_baikal",
   "g": "Siberia",
   "n": "Chita",
-  "t": "state",
-  "u": "states#STATE_TRANS_BAIKAL"
+  "t": "location",
+  "u": "locations/trans_baikal"
  },
  {
   "a": "cht",
@@ -4381,15 +4381,15 @@
   "a": "state_chongqing",
   "g": "South China",
   "n": "Chongqing",
-  "t": "state",
-  "u": "states#STATE_CHONGQING"
+  "t": "location",
+  "u": "locations/chongqing"
  },
  {
   "a": "state_khiva",
   "g": "Central Asia",
   "n": "Chorasmia",
-  "t": "state",
-  "u": "states#STATE_KHIVA"
+  "t": "location",
+  "u": "locations/khiva"
  },
  {
   "a": "company_chr_hansens",
@@ -4417,8 +4417,8 @@
   "a": "state_chugoku",
   "g": "Northeast Asia",
   "n": "Chugoku",
-  "t": "state",
-  "u": "states#STATE_CHUGOKU"
+  "t": "location",
+  "u": "locations/chugoku"
  },
  {
   "a": "ckc",
@@ -4431,8 +4431,8 @@
   "a": "state_chukotka",
   "g": "Northeast Asia",
   "n": "Chukotka",
-  "t": "state",
-  "u": "states#STATE_CHUKOTKA"
+  "t": "location",
+  "u": "locations/chukotka"
  },
  {
   "a": "chuvash",
@@ -4751,8 +4751,8 @@
   "a": "state_colorado",
   "g": "Great Plains",
   "n": "Colorado",
-  "t": "state",
-  "u": "states#STATE_COLORADO"
+  "t": "location",
+  "u": "locations/colorado"
  },
  {
   "a": "company_colt_firearms",
@@ -5185,8 +5185,8 @@
   "a": "state_congo",
   "g": "Equatorial Africa",
   "n": "Congo",
-  "t": "state",
-  "u": "states#STATE_CONGO"
+  "t": "location",
+  "u": "locations/congo"
  },
  {
   "a": "events:congo_free_state_events",
@@ -5217,15 +5217,15 @@
   "a": "state_connaught",
   "g": "Western Europe",
   "n": "Connaught",
-  "t": "state",
-  "u": "states#STATE_CONNAUGHT"
+  "t": "location",
+  "u": "locations/connaught"
  },
  {
   "a": "state_connecticut",
   "g": "Atlantic Coast",
   "n": "Connecticut",
-  "t": "state",
-  "u": "states#STATE_CONNECTICUT"
+  "t": "location",
+  "u": "locations/connecticut"
  },
  {
   "a": "concept_conscript_battalion",
@@ -5314,8 +5314,8 @@
   "a": "state_constantine",
   "g": "North Africa",
   "n": "Constantine",
-  "t": "state",
-  "u": "states#STATE_CONSTANTINE"
+  "t": "location",
+  "u": "locations/constantine"
  },
  {
   "a": "concept_austrian_constitutional_pressure",
@@ -5465,8 +5465,8 @@
   "a": "state_la_pampa",
   "g": "La Plata",
   "n": "Córdoba",
-  "t": "state",
-  "u": "states#STATE_LA_PAMPA"
+  "t": "location",
+  "u": "locations/la_pampa"
  },
  {
   "a": "concept_core_movement_ideology",
@@ -5553,8 +5553,8 @@
   "a": "state_corrientes",
   "g": "La Plata",
   "n": "Corrientes",
-  "t": "state",
-  "u": "states#STATE_CORRIENTES"
+  "t": "location",
+  "u": "locations/corrientes"
  },
  {
   "a": "cor",
@@ -5567,8 +5567,8 @@
   "a": "state_corsica",
   "g": "Southern Europe",
   "n": "Corsica",
-  "t": "state",
-  "u": "states#STATE_CORSICA"
+  "t": "location",
+  "u": "locations/corsica"
  },
  {
   "a": "corsican",
@@ -5587,8 +5587,8 @@
   "a": "state_costa_rica",
   "g": "Central America",
   "n": "Costa Rica",
-  "t": "state",
-  "u": "states#STATE_COSTA_RICA"
+  "t": "location",
+  "u": "locations/costa_rica"
  },
  {
   "a": "cotton_gin",
@@ -5702,8 +5702,8 @@
   "a": "state_courland",
   "g": "Eastern Europe",
   "n": "Courland",
-  "t": "state",
-  "u": "states#STATE_COURLAND"
+  "t": "location",
+  "u": "locations/courland"
  },
  {
   "a": "concept_court_intrigue",
@@ -5748,8 +5748,8 @@
   "a": "state_crete",
   "g": "Balkans",
   "n": "Crete",
-  "t": "state",
-  "u": "states#STATE_CRETE"
+  "t": "location",
+  "u": "locations/crete"
  },
  {
   "a": "concept_crew_attack_damage",
@@ -5780,8 +5780,8 @@
   "a": "state_crimea",
   "g": "Eastern Europe",
   "n": "Crimea",
-  "t": "state",
-  "u": "states#STATE_CRIMEA"
+  "t": "location",
+  "u": "locations/crimea"
  },
  {
   "a": "je_eastern_question_russia",
@@ -5827,8 +5827,8 @@
   "a": "state_croatia",
   "g": "Balkans",
   "n": "Croatia",
-  "t": "state",
-  "u": "states#STATE_CROATIA"
+  "t": "location",
+  "u": "locations/croatia"
  },
  {
   "a": "croat",
@@ -5969,8 +5969,8 @@
   "a": "state_cundinamarca",
   "g": "Gran Colombia",
   "n": "Cundinamarca",
-  "t": "state",
-  "u": "states#STATE_CUNDINAMARCA"
+  "t": "location",
+  "u": "locations/cundinamarca"
  },
  {
   "a": "currency_standards",
@@ -6000,8 +6000,8 @@
   "a": "state_cyprus",
   "g": "Near East",
   "n": "Cyprus",
-  "t": "state",
-  "u": "states#STATE_CYPRUS"
+  "t": "location",
+  "u": "locations/cyprus"
  },
  {
   "a": "cyr",
@@ -6014,8 +6014,8 @@
   "a": "state_libya",
   "g": "North Africa",
   "n": "Cyrenaica",
-  "t": "state",
-  "u": "states#STATE_LIBYA"
+  "t": "location",
+  "u": "locations/libya"
  },
  {
   "a": "czech",
@@ -6756,8 +6756,8 @@
   "a": "state_dagestan",
   "g": "Russia",
   "n": "Dagestan",
-  "t": "state",
-  "u": "states#STATE_DAGESTAN"
+  "t": "location",
+  "u": "locations/dagestan"
  },
  {
   "a": "dah",
@@ -6770,8 +6770,8 @@
   "a": "state_dahomey",
   "g": "West Africa",
   "n": "Dahomey",
-  "t": "state",
-  "u": "states#STATE_DAHOMEY"
+  "t": "location",
+  "u": "locations/dahomey"
  },
  {
   "a": "dai",
@@ -6797,8 +6797,8 @@
   "a": "state_dalmatia",
   "g": "Balkans",
   "n": "Dalmatia",
-  "t": "state",
-  "u": "states#STATE_DALMATIA"
+  "t": "location",
+  "u": "locations/dalmatia"
  },
  {
   "a": "dly",
@@ -6852,8 +6852,8 @@
   "a": "state_darfur",
   "g": "Nile Basin",
   "n": "Darfur",
-  "t": "state",
-  "u": "states#STATE_DARFUR"
+  "t": "location",
+  "u": "locations/darfur"
  },
  {
   "a": "company_david_sassoon",
@@ -7028,22 +7028,22 @@
   "a": "state_deir_ez_zor",
   "g": "Near East",
   "n": "Deir-Ez-Zor",
-  "t": "state",
-  "u": "states#STATE_DEIR_EZ_ZOR"
+  "t": "location",
+  "u": "locations/deir_ez_zor"
  },
  {
   "a": "state_delaware",
   "g": "Atlantic Coast",
   "n": "Delaware",
-  "t": "state",
-  "u": "states#STATE_DELAWARE"
+  "t": "location",
+  "u": "locations/delaware"
  },
  {
   "a": "state_delhi",
   "g": "North India",
   "n": "Delhi",
-  "t": "state",
-  "u": "states#STATE_DELHI"
+  "t": "location",
+  "u": "locations/delhi"
  },
  {
   "a": "dlm",
@@ -7384,8 +7384,8 @@
   "a": "state_district_of_columbia",
   "g": "Atlantic Coast",
   "n": "District of Columbia",
-  "t": "state",
-  "u": "states#STATE_DISTRICT_OF_COLUMBIA"
+  "t": "location",
+  "u": "locations/district_of_columbia"
  },
  {
   "a": "je_divided_monarchists",
@@ -7416,15 +7416,15 @@
   "a": "state_diyarbakir",
   "g": "Near East",
   "n": "Diyarbakir",
-  "t": "state",
-  "u": "states#STATE_DIYARBAKIR"
+  "t": "location",
+  "u": "locations/diyarbakir"
  },
  {
   "a": "state_dobrudja",
   "g": "Balkans",
   "n": "Dobrudja",
-  "t": "state",
-  "u": "states#STATE_DOBRUDJA"
+  "t": "location",
+  "u": "locations/dobrudja"
  },
  {
   "a": "dockyard_master",
@@ -7465,8 +7465,8 @@
   "a": "state_dongola",
   "g": "Nile Basin",
   "n": "Dongola",
-  "t": "state",
-  "u": "states#STATE_DONGOLA"
+  "t": "location",
+  "u": "locations/dongola"
  },
  {
   "a": "dough_rollers",
@@ -7559,8 +7559,8 @@
   "a": "state_durango",
   "g": "Central America",
   "n": "Durango",
-  "t": "state",
-  "u": "states#STATE_DURANGO"
+  "t": "location",
+  "u": "locations/durango"
  },
  {
   "a": "company_duro_y_compania",
@@ -7626,8 +7626,8 @@
   "a": "state_dzungaria",
   "g": "Central Asia",
   "n": "Dzungaria",
-  "t": "state",
-  "u": "states#STATE_DZUNGARIA"
+  "t": "location",
+  "u": "locations/dzungaria"
  },
  {
   "a": "ship_type_early_ironclad",
@@ -7654,50 +7654,50 @@
   "a": "state_east_aegean_islands",
   "g": "Near East",
   "n": "East Aegean Islands",
-  "t": "state",
-  "u": "states#STATE_EAST_AEGEAN_ISLANDS"
+  "t": "location",
+  "u": "locations/east_aegean_islands"
  },
  {
   "a": "state_east_anglia",
   "g": "Western Europe",
   "n": "East Anglia",
-  "t": "state",
-  "u": "states#STATE_EAST_ANGLIA"
+  "t": "location",
+  "u": "locations/east_anglia"
  },
  {
   "a": "state_east_angola",
   "g": "Equatorial Africa",
   "n": "East Angola",
-  "t": "state",
-  "u": "states#STATE_EAST_ANGOLA"
+  "t": "location",
+  "u": "locations/east_angola"
  },
  {
   "a": "state_east_bengal",
   "g": "North India",
   "n": "East Bengal",
-  "t": "state",
-  "u": "states#STATE_EAST_BENGAL"
+  "t": "location",
+  "u": "locations/east_bengal"
  },
  {
   "a": "state_east_borneo",
   "g": "Indonesia",
   "n": "East Borneo",
-  "t": "state",
-  "u": "states#STATE_EAST_BORNEO"
+  "t": "location",
+  "u": "locations/east_borneo"
  },
  {
   "a": "state_east_galicia",
   "g": "Eastern Europe",
   "n": "East Galicia",
-  "t": "state",
-  "u": "states#STATE_EAST_GALICIA"
+  "t": "location",
+  "u": "locations/east_galicia"
  },
  {
   "a": "state_east_hausaland",
   "g": "West Africa",
   "n": "East Hausaland",
-  "t": "state",
-  "u": "states#STATE_EAST_HAUSALAND"
+  "t": "location",
+  "u": "locations/east_hausaland"
  },
  {
   "a": "bic",
@@ -7731,50 +7731,50 @@
   "a": "state_east_java",
   "g": "Indonesia",
   "n": "East Java",
-  "t": "state",
-  "u": "states#STATE_EAST_JAVA"
+  "t": "location",
+  "u": "locations/east_java"
  },
  {
   "a": "state_east_karelia",
   "g": "Northern Europe",
   "n": "East Karelia",
-  "t": "state",
-  "u": "states#STATE_EAST_KARELIA"
+  "t": "location",
+  "u": "locations/east_karelia"
  },
  {
   "a": "state_east_micronesia",
   "g": "Oceania",
   "n": "East Micronesia",
-  "t": "state",
-  "u": "states#STATE_EAST_MICRONESIA"
+  "t": "location",
+  "u": "locations/east_micronesia"
  },
  {
   "a": "state_east_prussia",
   "g": "Eastern Europe",
   "n": "East Prussia",
-  "t": "state",
-  "u": "states#STATE_EAST_PRUSSIA"
+  "t": "location",
+  "u": "locations/east_prussia"
  },
  {
   "a": "state_east_sahara",
   "g": "North Africa",
   "n": "East Sahara",
-  "t": "state",
-  "u": "states#STATE_EAST_SAHARA"
+  "t": "location",
+  "u": "locations/east_sahara"
  },
  {
   "a": "state_east_switzerland",
   "g": "Central Europe",
   "n": "East Switzerland",
-  "t": "state",
-  "u": "states#STATE_EAST_SWITZERLAND"
+  "t": "location",
+  "u": "locations/east_switzerland"
  },
  {
   "a": "state_eastern_cape",
   "g": "Southern Africa",
   "n": "Eastern Cape",
-  "t": "state",
-  "u": "states#STATE_EASTERN_CAPE"
+  "t": "location",
+  "u": "locations/eastern_cape"
  },
  {
   "a": "events:balkans_events--eastern_crisis",
@@ -7786,8 +7786,8 @@
   "a": "state_eastern_cuba",
   "g": "Central America",
   "n": "Eastern Cuba",
-  "t": "state",
-  "u": "states#STATE_EASTERN_CUBA"
+  "t": "location",
+  "u": "locations/eastern_cuba"
  },
  {
   "a": "east_german",
@@ -7799,43 +7799,43 @@
   "a": "state_shaozhou",
   "g": "South China",
   "n": "Eastern Guangdong",
-  "t": "state",
-  "u": "states#STATE_SHAOZHOU"
+  "t": "location",
+  "u": "locations/shaozhou"
  },
  {
   "a": "state_eastern_himalayas",
   "g": "Himalayas",
   "n": "Eastern Himalayas",
-  "t": "state",
-  "u": "states#STATE_EASTERN_HIMALAYAS"
+  "t": "location",
+  "u": "locations/eastern_himalayas"
  },
  {
   "a": "state_eastern_hubei",
   "g": "South China",
   "n": "Eastern Hubei",
-  "t": "state",
-  "u": "states#STATE_EASTERN_HUBEI"
+  "t": "location",
+  "u": "locations/eastern_hubei"
  },
  {
   "a": "state_eastern_mali",
   "g": "West Africa",
   "n": "Eastern Mali",
-  "t": "state",
-  "u": "states#STATE_EASTERN_MALI"
+  "t": "location",
+  "u": "locations/eastern_mali"
  },
  {
   "a": "state_eastern_new_guinea",
   "g": "Indonesia",
   "n": "Eastern New Guinea",
-  "t": "state",
-  "u": "states#STATE_EASTERN_NEW_GUINEA"
+  "t": "location",
+  "u": "locations/eastern_new_guinea"
  },
  {
   "a": "state_eastern_norway",
   "g": "Northern Europe",
   "n": "Eastern Norway",
-  "t": "state",
-  "u": "states#STATE_EASTERN_NORWAY"
+  "t": "location",
+  "u": "locations/eastern_norway"
  },
  {
   "a": "events:balkans_events--eastern_question",
@@ -7847,15 +7847,15 @@
   "a": "state_eastern_serbia",
   "g": "Balkans",
   "n": "Eastern Serbia",
-  "t": "state",
-  "u": "states#STATE_EASTERN_SERBIA"
+  "t": "location",
+  "u": "locations/eastern_serbia"
  },
  {
   "a": "state_eastern_thrace",
   "g": "Balkans",
   "n": "Eastern Thrace",
-  "t": "state",
-  "u": "states#STATE_EASTERN_THRACE"
+  "t": "location",
+  "u": "locations/eastern_thrace"
  },
  {
   "a": "concept_economic_dependence",
@@ -7899,8 +7899,8 @@
   "a": "state_ecuador",
   "g": "The Andes",
   "n": "Ecuador",
-  "t": "state",
-  "u": "states#STATE_ECUADOR"
+  "t": "location",
+  "u": "locations/ecuador"
  },
  {
   "a": "ecuadorian",
@@ -7968,8 +7968,8 @@
   "a": "state_egyptian_desert",
   "g": "Nile Basin",
   "n": "Egyptian Desert",
-  "t": "state",
-  "u": "states#STATE_EGYPTIAN_DESERT"
+  "t": "location",
+  "u": "locations/egyptian_desert"
  },
  {
   "a": "company_egyptian_rail",
@@ -8006,8 +8006,8 @@
   "a": "state_elbe",
   "g": "Central Europe",
   "n": "Elbe",
-  "t": "state",
-  "u": "states#STATE_ELBE"
+  "t": "location",
+  "u": "locations/elbe"
  },
  {
   "a": "elder",
@@ -8186,8 +8186,8 @@
   "a": "state_elizavetpol",
   "g": "Greater Persia",
   "n": "Elizavetpol",
-  "t": "state",
-  "u": "states#STATE_ELIZAVETPOL"
+  "t": "location",
+  "u": "locations/elizavetpol"
  },
  {
   "a": "company_elso_budapesti_gozmalom",
@@ -8214,8 +8214,8 @@
   "a": "state_emilia",
   "g": "Southern Europe",
   "n": "Emilia",
-  "t": "state",
-  "u": "states#STATE_EMILIA"
+  "t": "location",
+  "u": "locations/emilia"
  },
  {
   "a": "eot",
@@ -8445,8 +8445,8 @@
   "a": "state_entre_douro_e_minho",
   "g": "Southern Europe",
   "n": "Entre Douro and Minho",
-  "t": "state",
-  "u": "states#STATE_ENTRE_DOURO_E_MINHO"
+  "t": "location",
+  "u": "locations/entre_douro_e_minho"
  },
  {
   "a": "events:japan_events--ep2_ezo_republic",
@@ -8543,8 +8543,8 @@
   "a": "state_equateur",
   "g": "Equatorial Africa",
   "n": "Equateur",
-  "t": "state",
-  "u": "states#STATE_EQUATEUR"
+  "t": "location",
+  "u": "locations/equateur"
  },
  {
   "a": "equ",
@@ -8557,8 +8557,8 @@
   "a": "state_equatoria",
   "g": "Nile Basin",
   "n": "Equatoria",
-  "t": "state",
-  "u": "states#STATE_EQUATORIA"
+  "t": "location",
+  "u": "locations/equatoria"
  },
  {
   "a": "equatorial_bantu",
@@ -8585,8 +8585,8 @@
   "a": "state_eritrea",
   "g": "East Africa",
   "n": "Eritrea",
-  "t": "state",
-  "u": "states#STATE_ERITREA"
+  "t": "location",
+  "u": "locations/eritrea"
  },
  {
   "a": "company_erste_brunner",
@@ -8608,8 +8608,8 @@
   "a": "state_erzurum",
   "g": "Near East",
   "n": "Erzurum",
-  "t": "state",
-  "u": "states#STATE_ERZURUM"
+  "t": "location",
+  "u": "locations/erzurum"
  },
  {
   "a": "mrd",
@@ -8704,8 +8704,8 @@
   "a": "state_estremadura",
   "g": "Southern Europe",
   "n": "Estremadura",
-  "t": "state",
-  "u": "states#STATE_ESTREMADURA"
+  "t": "location",
+  "u": "locations/estremadura"
  },
  {
   "a": "eth",
@@ -9075,8 +9075,8 @@
   "a": "state_extremadura",
   "g": "Southern Europe",
   "n": "Extremadura",
-  "t": "state",
-  "u": "states#STATE_EXTREMADURA"
+  "t": "location",
+  "u": "locations/extremadura"
  },
  {
   "a": "je_conquest_of_tetouan",
@@ -9175,8 +9175,8 @@
   "a": "state_fars",
   "g": "Greater Persia",
   "n": "Fars",
-  "t": "state",
-  "u": "states#STATE_FARS"
+  "t": "location",
+  "u": "locations/fars"
  },
  {
   "a": "events:fascism_events",
@@ -9240,8 +9240,8 @@
   "a": "state_fergana",
   "g": "Central Asia",
   "n": "Fergana",
-  "t": "state",
-  "u": "states#STATE_FERGANA"
+  "t": "location",
+  "u": "locations/fergana"
  },
  {
   "a": "company_ferranti_ltd",
@@ -9285,8 +9285,8 @@
   "a": "state_fez",
   "g": "North Africa",
   "n": "Fez",
-  "t": "state",
-  "u": "states#STATE_FEZ"
+  "t": "location",
+  "u": "locations/fez"
  },
  {
   "a": "fzn",
@@ -9299,8 +9299,8 @@
   "a": "state_libyan_desert",
   "g": "North Africa",
   "n": "Fezzan",
-  "t": "state",
-  "u": "states#STATE_LIBYAN_DESERT"
+  "t": "location",
+  "u": "locations/libyan_desert"
  },
  {
   "a": "company_fiat",
@@ -9332,8 +9332,8 @@
   "a": "state_fiji",
   "g": "Oceania",
   "n": "Fiji",
-  "t": "state",
-  "u": "states#STATE_FIJI"
+  "t": "location",
+  "u": "locations/fiji"
  },
  {
   "a": "filipino_hispanophone",
@@ -9468,8 +9468,8 @@
   "a": "state_flanders",
   "g": "Western Europe",
   "n": "Flanders",
-  "t": "state",
-  "u": "states#STATE_FLANDERS"
+  "t": "location",
+  "u": "locations/flanders"
  },
  {
   "a": "flash_freezing",
@@ -9522,8 +9522,8 @@
   "a": "state_florida",
   "g": "Atlantic Coast",
   "n": "Florida",
-  "t": "state",
-  "u": "states#STATE_FLORIDA"
+  "t": "location",
+  "u": "locations/florida"
  },
  {
   "a": "je_spanish_flu",
@@ -9647,8 +9647,8 @@
   "a": "state_formosa",
   "g": "South China",
   "n": "Formosa",
-  "t": "state",
-  "u": "states#STATE_FORMOSA"
+  "t": "location",
+  "u": "locations/formosa"
  },
  {
   "a": "make_delhi_capital",
@@ -9692,8 +9692,8 @@
   "a": "state_franche_comte",
   "g": "Western Europe",
   "n": "Franche-Comté",
-  "t": "state",
-  "u": "states#STATE_FRANCHE_COMTE"
+  "t": "location",
+  "u": "locations/franche_comte"
  },
  {
   "a": "franco_canadian",
@@ -9711,8 +9711,8 @@
   "a": "state_franconia",
   "g": "Central Europe",
   "n": "Franconia",
-  "t": "state",
-  "u": "states#STATE_FRANCONIA"
+  "t": "location",
+  "u": "locations/franconia"
  },
  {
   "a": "company_ingolstadt_electrical_company",
@@ -9796,8 +9796,8 @@
   "a": "state_french_low_countries",
   "g": "Western Europe",
   "n": "French Low Countries",
-  "t": "state",
-  "u": "states#STATE_FRENCH_LOW_COUNTRIES"
+  "t": "location",
+  "u": "locations/french_low_countries"
  },
  {
   "a": "events:french_pretenders",
@@ -9823,8 +9823,8 @@
   "a": "state_friesland",
   "g": "Western Europe",
   "n": "Friesland",
-  "t": "state",
-  "u": "states#STATE_FRIESLAND"
+  "t": "location",
+  "u": "locations/friesland"
  },
  {
   "a": "ship_type_frigate",
@@ -9873,8 +9873,8 @@
   "a": "state_fujian",
   "g": "South China",
   "n": "Fujian",
-  "t": "state",
-  "u": "states#STATE_FUJIAN"
+  "t": "location",
+  "u": "locations/fujian"
  },
  {
   "a": "fulbe",
@@ -9958,8 +9958,8 @@
   "a": "state_gabon",
   "g": "Equatorial Africa",
   "n": "Gabon",
-  "t": "state",
-  "u": "states#STATE_GABON"
+  "t": "location",
+  "u": "locations/gabon"
  },
  {
   "a": "scottish_gaelic",
@@ -9978,8 +9978,8 @@
   "a": "state_galicia",
   "g": "Southern Europe",
   "n": "Galicia",
-  "t": "state",
-  "u": "states#STATE_GALICIA"
+  "t": "location",
+  "u": "locations/galicia"
  },
  {
   "a": "gal",
@@ -10013,8 +10013,8 @@
   "a": "state_gansu",
   "g": "North China",
   "n": "Gansu",
-  "t": "state",
-  "u": "states#STATE_GANSU"
+  "t": "location",
+  "u": "locations/gansu"
  },
  {
   "a": "gantry_cranes",
@@ -10086,8 +10086,8 @@
   "a": "state_gelre",
   "g": "Western Europe",
   "n": "Gelre",
-  "t": "state",
-  "u": "states#STATE_GELRE"
+  "t": "location",
+  "u": "locations/gelre"
  },
  {
   "a": "gelugpa",
@@ -10165,8 +10165,8 @@
   "a": "state_georgia",
   "g": "Atlantic Coast",
   "n": "Georgia",
-  "t": "state",
-  "u": "states#STATE_GEORGIA"
+  "t": "location",
+  "u": "locations/georgia"
  },
  {
   "a": "georgian",
@@ -10274,8 +10274,8 @@
   "a": "state_goias",
   "g": "Brazil",
   "n": "Goiás",
-  "t": "state",
-  "u": "states#STATE_GOIAS"
+  "t": "location",
+  "u": "locations/goias"
  },
  {
   "a": "gjm",
@@ -10296,8 +10296,8 @@
   "a": "state_gold_coast",
   "g": "West Africa",
   "n": "Gold Coast",
-  "t": "state",
-  "u": "states#STATE_GOLD_COAST"
+  "t": "location",
+  "u": "locations/gold_coast"
  },
  {
   "a": "building_gold_field",
@@ -10331,8 +10331,8 @@
   "a": "state_gonder",
   "g": "East Africa",
   "n": "Gonder",
-  "t": "state",
-  "u": "states#STATE_GONDER"
+  "t": "location",
+  "u": "locations/gonder"
  },
  {
   "a": "gondi",
@@ -10387,8 +10387,8 @@
   "a": "state_gotaland",
   "g": "Northern Europe",
   "n": "Götaland",
-  "t": "state",
-  "u": "states#STATE_GOTALAND"
+  "t": "location",
+  "u": "locations/gotaland"
  },
  {
   "a": "company_gotaverken",
@@ -10402,8 +10402,8 @@
   "a": "state_gotland",
   "g": "Northern Europe",
   "n": "Gotland",
-  "t": "state",
-  "u": "states#STATE_GOTLAND"
+  "t": "location",
+  "u": "locations/gotland"
  },
  {
   "a": "je_prestige_goods_groceries",
@@ -10531,8 +10531,8 @@
   "a": "state_liberia",
   "g": "West Africa",
   "n": "Grain Coast",
-  "t": "state",
-  "u": "states#STATE_LIBERIA"
+  "t": "location",
+  "u": "locations/liberia"
  },
  {
   "a": "gco",
@@ -10608,8 +10608,8 @@
   "a": "state_central_hungary",
   "g": "Balkans",
   "n": "Great Hungarian Plain",
-  "t": "state",
-  "u": "states#STATE_CENTRAL_HUNGARY"
+  "t": "location",
+  "u": "locations/central_hungary"
  },
  {
   "a": "company_great_indian_railway",
@@ -10691,8 +10691,8 @@
   "a": "state_greenland",
   "g": "Northern Europe",
   "n": "Greenland",
-  "t": "state",
-  "u": "states#STATE_GREENLAND"
+  "t": "location",
+  "u": "locations/greenland"
  },
  {
   "a": "grifter",
@@ -10765,8 +10765,8 @@
   "a": "state_guangxi",
   "g": "South China",
   "n": "Guangxi",
-  "t": "state",
-  "u": "states#STATE_GUANGXI"
+  "t": "location",
+  "u": "locations/guangxi"
  },
  {
   "a": "gni",
@@ -10820,15 +10820,15 @@
   "a": "state_guatemala",
   "g": "Central America",
   "n": "Guatemala",
-  "t": "state",
-  "u": "states#STATE_GUATEMALA"
+  "t": "location",
+  "u": "locations/guatemala"
  },
  {
   "a": "state_guaviare",
   "g": "Gran Colombia",
   "n": "Guaviare",
-  "t": "state",
-  "u": "states#STATE_GUAVIARE"
+  "t": "location",
+  "u": "locations/guaviare"
  },
  {
   "a": "concept_guerilla_war",
@@ -10840,8 +10840,8 @@
   "a": "state_guerrero",
   "g": "Central America",
   "n": "Guerrero",
-  "t": "state",
-  "u": "states#STATE_GUERRERO"
+  "t": "location",
+  "u": "locations/guerrero"
  },
  {
   "a": "law_guild_system",
@@ -10855,8 +10855,8 @@
   "a": "state_guinea",
   "g": "West Africa",
   "n": "Guinea",
-  "t": "state",
-  "u": "states#STATE_GUINEA"
+  "t": "location",
+  "u": "locations/guinea"
  },
  {
   "a": "gui",
@@ -10869,8 +10869,8 @@
   "a": "state_guizhou",
   "g": "South China",
   "n": "Guizhou",
-  "t": "state",
-  "u": "states#STATE_GUIZHOU"
+  "t": "location",
+  "u": "locations/guizhou"
  },
  {
   "a": "guj",
@@ -10883,8 +10883,8 @@
   "a": "state_gujarat",
   "g": "North India",
   "n": "Gujarat",
-  "t": "state",
-  "u": "states#STATE_GUJARAT"
+  "t": "location",
+  "u": "locations/gujarat"
  },
  {
   "a": "gujarati",
@@ -10915,15 +10915,15 @@
   "a": "state_guayana",
   "g": "Gran Colombia",
   "n": "Guyana",
-  "t": "state",
-  "u": "states#STATE_GUAYANA"
+  "t": "location",
+  "u": "locations/guayana"
  },
  {
   "a": "state_guyenne",
   "g": "Southern Europe",
   "n": "Guyenne",
-  "t": "state",
-  "u": "states#STATE_GUYENNE"
+  "t": "location",
+  "u": "locations/guyenne"
  },
  {
   "a": "gwa",
@@ -10936,15 +10936,15 @@
   "a": "state_sariwon",
   "g": "Northeast Asia",
   "n": "Gwanbuk",
-  "t": "state",
-  "u": "states#STATE_SARIWON"
+  "t": "location",
+  "u": "locations/sariwon"
  },
  {
   "a": "state_seoul",
   "g": "Northeast Asia",
   "n": "Gyeonggi",
-  "t": "state",
-  "u": "states#STATE_SEOUL"
+  "t": "location",
+  "u": "locations/seoul"
  },
  {
   "a": "je_gyojo_shinwon",
@@ -10972,8 +10972,8 @@
   "a": "state_hail",
   "g": "Arabia",
   "n": "Hail",
-  "t": "state",
-  "u": "states#STATE_HAIL"
+  "t": "location",
+  "u": "locations/hail"
  },
  {
   "a": "hai",
@@ -10986,8 +10986,8 @@
   "a": "state_haiti",
   "g": "Central America",
   "n": "Haiti",
-  "t": "state",
-  "u": "states#STATE_HAITI"
+  "t": "location",
+  "u": "locations/haiti"
  },
  {
   "a": "hakka",
@@ -11037,8 +11037,8 @@
   "a": "state_hannover",
   "g": "Central Europe",
   "n": "Hanover",
-  "t": "state",
-  "u": "states#STATE_HANNOVER"
+  "t": "location",
+  "u": "locations/hannover"
  },
  {
   "a": "company_hanseong_jeongi_hoesa",
@@ -11113,8 +11113,8 @@
   "a": "state_hausaland",
   "g": "West Africa",
   "n": "Hausaland",
-  "t": "state",
-  "u": "states#STATE_HAUSALAND"
+  "t": "location",
+  "u": "locations/hausaland"
  },
  {
   "a": "haw",
@@ -11139,8 +11139,8 @@
   "a": "state_hawaiian_islands",
   "g": "Oceania",
   "n": "Hawaiian Islands",
-  "t": "state",
-  "u": "states#STATE_HAWAIIAN_ISLANDS"
+  "t": "location",
+  "u": "locations/hawaiian_islands"
  },
  {
   "a": "hazara",
@@ -11159,8 +11159,8 @@
   "a": "state_central_highlands",
   "g": "Greater Persia",
   "n": "Hazaristan",
-  "t": "state",
-  "u": "states#STATE_CENTRAL_HIGHLANDS"
+  "t": "location",
+  "u": "locations/central_highlands"
  },
  {
   "a": "concept_head_of_state",
@@ -11211,8 +11211,8 @@
   "a": "state_zhili",
   "g": "North China",
   "n": "Hebei",
-  "t": "state",
-  "u": "states#STATE_ZHILI"
+  "t": "location",
+  "u": "locations/zhili"
  },
  {
   "a": "hdj",
@@ -11225,8 +11225,8 @@
   "a": "state_hedjaz",
   "g": "Arabia",
   "n": "Hedjaz",
-  "t": "state",
-  "u": "states#STATE_HEDJAZ"
+  "t": "location",
+  "u": "locations/hedjaz"
  },
  {
   "a": "hedonist",
@@ -11260,8 +11260,8 @@
   "a": "state_henan",
   "g": "North China",
   "n": "Henan",
-  "t": "state",
-  "u": "states#STATE_HENAN"
+  "t": "location",
+  "u": "locations/henan"
  },
  {
   "a": "her",
@@ -11274,8 +11274,8 @@
   "a": "state_herat",
   "g": "Greater Persia",
   "n": "Herat",
-  "t": "state",
-  "u": "states#STATE_HERAT"
+  "t": "location",
+  "u": "locations/herat"
  },
  {
   "a": "law_hereditary_bureaucrats",
@@ -11302,8 +11302,8 @@
   "a": "state_hereroland",
   "g": "Southern Africa",
   "n": "Hereroland",
-  "t": "state",
-  "u": "states#STATE_HEREROLAND"
+  "t": "location",
+  "u": "locations/hereroland"
  },
  {
   "a": "concept_heritage_trait",
@@ -11322,8 +11322,8 @@
   "a": "state_hesse",
   "g": "Central Europe",
   "n": "Hesse",
-  "t": "state",
-  "u": "states#STATE_HESSE"
+  "t": "location",
+  "u": "locations/hesse"
  },
  {
   "a": "hek",
@@ -11350,8 +11350,8 @@
   "a": "state_highlands",
   "g": "Western Europe",
   "n": "Highlands",
-  "t": "state",
-  "u": "states#STATE_HIGHLANDS"
+  "t": "location",
+  "u": "locations/highlands"
  },
  {
   "a": "hindu",
@@ -11422,8 +11422,8 @@
   "a": "state_hokushinetsu",
   "g": "Northeast Asia",
   "n": "Hokushin'etsu",
-  "t": "state",
-  "u": "states#STATE_HOKUSHINETSU"
+  "t": "location",
+  "u": "locations/hokushinetsu"
  },
  {
   "a": "grand_exhibition_decision",
@@ -11441,8 +11441,8 @@
   "a": "state_holland",
   "g": "Western Europe",
   "n": "Holland",
-  "t": "state",
-  "u": "states#STATE_HOLLAND"
+  "t": "location",
+  "u": "locations/holland"
  },
  {
   "a": "hol",
@@ -11462,8 +11462,8 @@
   "a": "state_home_counties",
   "g": "Western Europe",
   "n": "Home Counties",
-  "t": "state",
-  "u": "states#STATE_HOME_COUNTIES"
+  "t": "location",
+  "u": "locations/home_counties"
  },
  {
   "a": "company_basic_electrics",
@@ -11504,8 +11504,8 @@
   "a": "state_honduras",
   "g": "Central America",
   "n": "Honduras",
-  "t": "state",
-  "u": "states#STATE_HONDURAS"
+  "t": "location",
+  "u": "locations/honduras"
  },
  {
   "a": "je_caucasian_war_circassia",
@@ -11533,8 +11533,8 @@
   "a": "state_laristan",
   "g": "Greater Persia",
   "n": "Hormuz",
-  "t": "state",
-  "u": "states#STATE_LARISTAN"
+  "t": "location",
+  "u": "locations/laristan"
  },
  {
   "a": "concept_house_of_karadjordjevic",
@@ -11558,15 +11558,15 @@
   "a": "state_brest",
   "g": "Eastern Europe",
   "n": "Hrodna",
-  "t": "state",
-  "u": "states#STATE_BREST"
+  "t": "location",
+  "u": "locations/brest"
  },
  {
   "a": "state_hudavendigar",
   "g": "Near East",
   "n": "Hudavendigar",
-  "t": "state",
-  "u": "states#STATE_HUDAVENDIGAR"
+  "t": "location",
+  "u": "locations/hudavendigar"
  },
  {
   "a": "hbc",
@@ -11617,8 +11617,8 @@
   "a": "state_hunan",
   "g": "South China",
   "n": "Hunan",
-  "t": "state",
-  "u": "states#STATE_HUNAN"
+  "t": "location",
+  "u": "locations/hunan"
  },
  {
   "a": "hungarian",
@@ -11664,8 +11664,8 @@
   "a": "state_hyderabad",
   "g": "South India",
   "n": "Hyderabad",
-  "t": "state",
-  "u": "states#STATE_HYDERABAD"
+  "t": "location",
+  "u": "locations/hyderabad"
  },
  {
   "a": "hydraulic_cranes",
@@ -11734,8 +11734,8 @@
   "a": "state_ica",
   "g": "The Andes",
   "n": "Ica",
-  "t": "state",
-  "u": "states#STATE_ICA"
+  "t": "location",
+  "u": "locations/ica"
  },
  {
   "a": "icl",
@@ -11748,8 +11748,8 @@
   "a": "state_iceland",
   "g": "Northern Europe",
   "n": "Iceland",
-  "t": "state",
-  "u": "states#STATE_ICELAND"
+  "t": "location",
+  "u": "locations/iceland"
  },
  {
   "a": "icelandic",
@@ -11761,8 +11761,8 @@
   "a": "state_idaho",
   "g": "Pacific Coast",
   "n": "Idaho",
-  "t": "state",
-  "u": "states#STATE_IDAHO"
+  "t": "location",
+  "u": "locations/idaho"
  },
  {
   "a": "ida",
@@ -11843,22 +11843,22 @@
   "a": "state_ile_de_france",
   "g": "Western Europe",
   "n": "Île-de-France",
-  "t": "state",
-  "u": "states#STATE_ILE_DE_FRANCE"
+  "t": "location",
+  "u": "locations/ile_de_france"
  },
  {
   "a": "state_jetisy",
   "g": "Central Asia",
   "n": "Ili",
-  "t": "state",
-  "u": "states#STATE_JETISY"
+  "t": "location",
+  "u": "locations/jetisy"
  },
  {
   "a": "state_illinois",
   "g": "Atlantic Coast",
   "n": "Illinois",
-  "t": "state",
-  "u": "states#STATE_ILLINOIS"
+  "t": "location",
+  "u": "locations/illinois"
  },
  {
   "a": "ilocano",
@@ -12116,8 +12116,8 @@
   "a": "state_indian_ocean_territory",
   "g": "East Africa",
   "n": "Indian Ocean Territory",
-  "t": "state",
-  "u": "states#STATE_INDIAN_OCEAN_TERRITORY"
+  "t": "location",
+  "u": "locations/indian_ocean_territory"
  },
  {
   "a": "seq",
@@ -12130,8 +12130,8 @@
   "a": "state_indiana",
   "g": "Atlantic Coast",
   "n": "Indiana",
-  "t": "state",
-  "u": "states#STATE_INDIANA"
+  "t": "location",
+  "u": "locations/indiana"
  },
  {
   "a": "concept_individual",
@@ -12252,8 +12252,8 @@
   "a": "state_ingria",
   "g": "Russia",
   "n": "Ingria",
-  "t": "state",
-  "u": "states#STATE_INGRIA"
+  "t": "location",
+  "u": "locations/ingria"
  },
  {
   "a": "je_the_grand_collapse",
@@ -12272,22 +12272,22 @@
   "a": "state_inner_mauritania",
   "g": "West Africa",
   "n": "Inner Mauritania",
-  "t": "state",
-  "u": "states#STATE_INNER_MAURITANIA"
+  "t": "location",
+  "u": "locations/inner_mauritania"
  },
  {
   "a": "state_hinggan",
   "g": "North China",
   "n": "Inner Mongolia",
-  "t": "state",
-  "u": "states#STATE_HINGGAN"
+  "t": "location",
+  "u": "locations/hinggan"
  },
  {
   "a": "state_inner_morocco",
   "g": "North Africa",
   "n": "Inner Morocco",
-  "t": "state",
-  "u": "states#STATE_INNER_MOROCCO"
+  "t": "location",
+  "u": "locations/inner_morocco"
  },
  {
   "a": "je_kaiserforum",
@@ -12540,15 +12540,15 @@
   "a": "state_ionian_islands",
   "g": "Balkans",
   "n": "Ionian Islands",
-  "t": "state",
-  "u": "states#STATE_IONIAN_ISLANDS"
+  "t": "location",
+  "u": "locations/ionian_islands"
  },
  {
   "a": "state_iowa",
   "g": "Great Plains",
   "n": "Iowa",
-  "t": "state",
-  "u": "states#STATE_IOWA"
+  "t": "location",
+  "u": "locations/iowa"
  },
  {
   "a": "events:iberia_events--ip4_anarchism_events",
@@ -12609,8 +12609,8 @@
   "a": "state_irakajemi",
   "g": "Greater Persia",
   "n": "Irak-i-Ajami",
-  "t": "state",
-  "u": "states#STATE_IRAKAJEMI"
+  "t": "location",
+  "u": "locations/irakajemi"
  },
  {
   "a": "company_iranian_state_railway",
@@ -12644,8 +12644,8 @@
   "a": "state_irkutsk",
   "g": "Siberia",
   "n": "Irkutsk",
-  "t": "state",
-  "u": "states#STATE_IRKUTSK"
+  "t": "location",
+  "u": "locations/irkutsk"
  },
  {
   "a": "iron",
@@ -12720,8 +12720,8 @@
   "a": "state_isfahan",
   "g": "Greater Persia",
   "n": "Isfahan",
-  "t": "state",
-  "u": "states#STATE_ISFAHAN"
+  "t": "location",
+  "u": "locations/isfahan"
  },
  {
   "a": "concept_isolated_state",
@@ -12760,8 +12760,8 @@
   "a": "state_istria",
   "g": "Southern Europe",
   "n": "Istria",
-  "t": "state",
-  "u": "states#STATE_ISTRIA"
+  "t": "location",
+  "u": "locations/istria"
  },
  {
   "a": "events:italian_unification",
@@ -12780,8 +12780,8 @@
   "a": "state_ivory_coast",
   "g": "West Africa",
   "n": "Ivory Coast",
-  "t": "state",
-  "u": "states#STATE_IVORY_COAST"
+  "t": "location",
+  "u": "locations/ivory_coast"
  },
  {
   "a": "company_izhevsk_arms_plant",
@@ -12831,8 +12831,8 @@
   "a": "state_jalisco",
   "g": "Central America",
   "n": "Jalisco",
-  "t": "state",
-  "u": "states#STATE_JALISCO"
+  "t": "location",
+  "u": "locations/jalisco"
  },
  {
   "a": "jam",
@@ -12845,8 +12845,8 @@
   "a": "state_jamaica",
   "g": "Central America",
   "n": "Jamaica",
-  "t": "state",
-  "u": "states#STATE_JAMAICA"
+  "t": "location",
+  "u": "locations/jamaica"
  },
  {
   "a": "jmb",
@@ -13065,15 +13065,15 @@
   "a": "state_jiangsu",
   "g": "North China",
   "n": "Jiangsu",
-  "t": "state",
-  "u": "states#STATE_JIANGSU"
+  "t": "location",
+  "u": "locations/jiangsu"
  },
  {
   "a": "state_jiangxi",
   "g": "South China",
   "n": "Jiangxi",
-  "t": "state",
-  "u": "states#STATE_JIANGXI"
+  "t": "location",
+  "u": "locations/jiangxi"
  },
  {
   "a": "company_jingdezhen",
@@ -13161,8 +13161,8 @@
   "a": "state_jujuy",
   "g": "The Andes",
   "n": "Jujuy",
-  "t": "state",
-  "u": "states#STATE_JUJUY"
+  "t": "location",
+  "u": "locations/jujuy"
  },
  {
   "a": "jun",
@@ -13181,8 +13181,8 @@
   "a": "state_jutland",
   "g": "Northern Europe",
   "n": "Jutland",
-  "t": "state",
-  "u": "states#STATE_JUTLAND"
+  "t": "location",
+  "u": "locations/jutland"
  },
  {
   "a": "kbu",
@@ -13216,8 +13216,8 @@
   "a": "state_kabul",
   "g": "Greater Persia",
   "n": "Kabulistan",
-  "t": "state",
-  "u": "states#STATE_KABUL"
+  "t": "location",
+  "u": "locations/kabul"
  },
  {
   "a": "kachin",
@@ -13324,8 +13324,8 @@
   "a": "state_kalmykia",
   "g": "Russia",
   "n": "Kalmykia",
-  "t": "state",
-  "u": "states#STATE_KALMYKIA"
+  "t": "location",
+  "u": "locations/kalmykia"
  },
  {
   "a": "kmc",
@@ -13338,8 +13338,8 @@
   "a": "state_kamchatka",
   "g": "Northeast Asia",
   "n": "Kamchatka",
-  "t": "state",
-  "u": "states#STATE_KAMCHATKA"
+  "t": "location",
+  "u": "locations/kamchatka"
  },
  {
   "a": "knk",
@@ -13352,8 +13352,8 @@
   "a": "state_kanak",
   "g": "Oceania",
   "n": "Kanak",
-  "t": "state",
-  "u": "states#STATE_KANAK"
+  "t": "location",
+  "u": "locations/kanak"
  },
  {
   "a": "kan",
@@ -13366,8 +13366,8 @@
   "a": "state_kandahar",
   "g": "Greater Persia",
   "n": "Kandahar",
-  "t": "state",
-  "u": "states#STATE_KANDAHAR"
+  "t": "location",
+  "u": "locations/kandahar"
  },
  {
   "a": "kannada",
@@ -13379,15 +13379,15 @@
   "a": "state_kansas",
   "g": "Great Plains",
   "n": "Kansas",
-  "t": "state",
-  "u": "states#STATE_KANSAS"
+  "t": "location",
+  "u": "locations/kansas"
  },
  {
   "a": "state_kanto",
   "g": "Northeast Asia",
   "n": "Kanto",
-  "t": "state",
-  "u": "states#STATE_KANTO"
+  "t": "location",
+  "u": "locations/kanto"
  },
  {
   "a": "knt",
@@ -13452,8 +13452,8 @@
   "a": "state_kars",
   "g": "Near East",
   "n": "Kars",
-  "t": "state",
-  "u": "states#STATE_KARS"
+  "t": "location",
+  "u": "locations/kars"
  },
  {
   "a": "ktu",
@@ -13466,8 +13466,8 @@
   "a": "state_kasai",
   "g": "Equatorial Africa",
   "n": "Kasai",
-  "t": "state",
-  "u": "states#STATE_KASAI"
+  "t": "location",
+  "u": "locations/kasai"
  },
  {
   "a": "ksn",
@@ -13487,8 +13487,8 @@
   "a": "state_kashmir",
   "g": "Himalayas",
   "n": "Kashmir",
-  "t": "state",
-  "u": "states#STATE_KASHMIR"
+  "t": "location",
+  "u": "locations/kashmir"
  },
  {
   "a": "kashmiri",
@@ -13500,15 +13500,15 @@
   "a": "state_kastamonu",
   "g": "Near East",
   "n": "Kastamonu",
-  "t": "state",
-  "u": "states#STATE_KASTAMONU"
+  "t": "location",
+  "u": "locations/kastamonu"
  },
  {
   "a": "state_katanga",
   "g": "Equatorial Africa",
   "n": "Katanga",
-  "t": "state",
-  "u": "states#STATE_KATANGA"
+  "t": "location",
+  "u": "locations/katanga"
  },
  {
   "a": "kat",
@@ -13547,8 +13547,8 @@
   "a": "state_kazan",
   "g": "Russia",
   "n": "Kazan",
-  "t": "state",
-  "u": "states#STATE_KAZAN"
+  "t": "location",
+  "u": "locations/kazan"
  },
  {
   "a": "kzm",
@@ -13561,8 +13561,8 @@
   "a": "state_kazembe",
   "g": "East Africa",
   "n": "Kazembe",
-  "t": "state",
-  "u": "states#STATE_KAZEMBE"
+  "t": "location",
+  "u": "locations/kazembe"
  },
  {
   "a": "adg",
@@ -13610,22 +13610,22 @@
   "a": "state_kentucky",
   "g": "Atlantic Coast",
   "n": "Kentucky",
-  "t": "state",
-  "u": "states#STATE_KENTUCKY"
+  "t": "location",
+  "u": "locations/kentucky"
  },
  {
   "a": "state_kenya",
   "g": "East Africa",
   "n": "Kenya",
-  "t": "state",
-  "u": "states#STATE_KENYA"
+  "t": "location",
+  "u": "locations/kenya"
  },
  {
   "a": "state_kerman",
   "g": "Greater Persia",
   "n": "Kerman",
-  "t": "state",
-  "u": "states#STATE_KERMAN"
+  "t": "location",
+  "u": "locations/kerman"
  },
  {
   "a": "kpr",
@@ -13645,8 +13645,8 @@
   "a": "state_kharkov",
   "g": "Eastern Europe",
   "n": "Kharkiv",
-  "t": "state",
-  "u": "states#STATE_KHARKOV"
+  "t": "location",
+  "u": "locations/kharkov"
  },
  {
   "a": "mgh",
@@ -13698,8 +13698,8 @@
   "a": "state_khorasan",
   "g": "Greater Persia",
   "n": "Khorasan",
-  "t": "state",
-  "u": "states#STATE_KHORASAN"
+  "t": "location",
+  "u": "locations/khorasan"
  },
  {
   "a": "kidney_stones",
@@ -13748,8 +13748,8 @@
   "a": "state_kirghizia",
   "g": "Central Asia",
   "n": "Kirghizia",
-  "t": "state",
-  "u": "states#STATE_KIRGHIZIA"
+  "t": "location",
+  "u": "locations/kirghizia"
  },
  {
   "a": "kyr",
@@ -13813,8 +13813,8 @@
   "a": "state_kola",
   "g": "Northern Europe",
   "n": "Kola",
-  "t": "state",
-  "u": "states#STATE_KOLA"
+  "t": "location",
+  "u": "locations/kola"
  },
  {
   "a": "khp",
@@ -13827,8 +13827,8 @@
   "a": "state_kolyma",
   "g": "Siberia",
   "n": "Kolyma",
-  "t": "state",
-  "u": "states#STATE_KOLYMA"
+  "t": "location",
+  "u": "locations/kolyma"
  },
  {
   "a": "kng",
@@ -13856,15 +13856,15 @@
   "a": "state_konya",
   "g": "Near East",
   "n": "Konya",
-  "t": "state",
-  "u": "states#STATE_KONYA"
+  "t": "location",
+  "u": "locations/konya"
  },
  {
   "a": "state_kordofan",
   "g": "Nile Basin",
   "n": "Kordofan",
-  "t": "state",
-  "u": "states#STATE_KORDOFAN"
+  "t": "location",
+  "u": "locations/kordofan"
  },
  {
   "a": "kor",
@@ -13889,8 +13889,8 @@
   "a": "state_kosovo",
   "g": "Balkans",
   "n": "Kosovo",
-  "t": "state",
-  "u": "states#STATE_KOSOVO"
+  "t": "location",
+  "u": "locations/kosovo"
  },
  {
   "a": "kot",
@@ -13930,8 +13930,8 @@
   "a": "state_krasnoyarsk",
   "g": "Siberia",
   "n": "Krasnoyarsk",
-  "t": "state",
-  "u": "states#STATE_KRASNOYARSK"
+  "t": "location",
+  "u": "locations/krasnoyarsk"
  },
  {
   "a": "kru",
@@ -13957,8 +13957,8 @@
   "a": "state_kuban",
   "g": "Russia",
   "n": "Kuban",
-  "t": "state",
-  "u": "states#STATE_KUBAN"
+  "t": "location",
+  "u": "locations/kuban"
  },
  {
   "a": "kki",
@@ -13985,8 +13985,8 @@
   "a": "state_kuopio",
   "g": "Northern Europe",
   "n": "Kuopio",
-  "t": "state",
-  "u": "states#STATE_KUOPIO"
+  "t": "location",
+  "u": "locations/kuopio"
  },
  {
   "a": "kurdish",
@@ -14012,8 +14012,8 @@
   "a": "state_kursk",
   "g": "Russia",
   "n": "Kursk",
-  "t": "state",
-  "u": "states#STATE_KURSK"
+  "t": "location",
+  "u": "locations/kursk"
  },
  {
   "a": "kti",
@@ -14033,15 +14033,15 @@
   "a": "state_kiev",
   "g": "Eastern Europe",
   "n": "Kyiv",
-  "t": "state",
-  "u": "states#STATE_KIEV"
+  "t": "location",
+  "u": "locations/kiev"
  },
  {
   "a": "state_kyoto",
   "g": "Northeast Asia",
   "n": "Kyoto",
-  "t": "state",
-  "u": "states#STATE_KYOTO"
+  "t": "location",
+  "u": "locations/kyoto"
  },
  {
   "a": "kirgiz",
@@ -14053,8 +14053,8 @@
   "a": "state_kyushu",
   "g": "Northeast Asia",
   "n": "Kyushu",
-  "t": "state",
-  "u": "states#STATE_KYUSHU"
+  "t": "location",
+  "u": "locations/kyushu"
  },
  {
   "a": "company_espana_industrial",
@@ -14084,8 +14084,8 @@
   "a": "state_la_paz",
   "g": "The Andes",
   "n": "La Paz",
-  "t": "state",
-  "u": "states#STATE_LA_PAZ"
+  "t": "location",
+  "u": "locations/la_paz"
  },
  {
   "a": "company_la_rosada",
@@ -14171,8 +14171,8 @@
   "a": "state_lancashire",
   "g": "Western Europe",
   "n": "Lancashire",
-  "t": "state",
-  "u": "states#STATE_LANCASHIRE"
+  "t": "location",
+  "u": "locations/lancashire"
  },
  {
   "a": "combat_unit_type_lancers",
@@ -14278,8 +14278,8 @@
   "a": "state_languedoc",
   "g": "Southern Europe",
   "n": "Languedoc",
-  "t": "state",
-  "u": "states#STATE_LANGUEDOC"
+  "t": "location",
+  "u": "locations/languedoc"
  },
  {
   "a": "lao",
@@ -14298,8 +14298,8 @@
   "a": "state_laos",
   "g": "Indochina",
   "n": "Laos",
-  "t": "state",
-  "u": "states#STATE_LAOS"
+  "t": "location",
+  "u": "locations/laos"
  },
  {
   "a": "lrr",
@@ -14420,8 +14420,8 @@
   "a": "state_lazio",
   "g": "Southern Europe",
   "n": "Lazio",
-  "t": "state",
-  "u": "states#STATE_LAZIO"
+  "t": "location",
+  "u": "locations/lazio"
  },
  {
   "a": "lead",
@@ -14462,8 +14462,8 @@
   "a": "state_lebanon",
   "g": "Near East",
   "n": "Lebanon",
-  "t": "state",
-  "u": "states#STATE_LEBANON"
+  "t": "location",
+  "u": "locations/lebanon"
  },
  {
   "a": "company_lee_wilson",
@@ -14506,15 +14506,15 @@
   "a": "state_leinster",
   "g": "Western Europe",
   "n": "Leinster",
-  "t": "state",
-  "u": "states#STATE_LEINSTER"
+  "t": "location",
+  "u": "locations/leinster"
  },
  {
   "a": "state_leon",
   "g": "Southern Europe",
   "n": "Leon",
-  "t": "state",
-  "u": "states#STATE_LEON"
+  "t": "location",
+  "u": "locations/leon"
  },
  {
   "a": "leo",
@@ -14545,8 +14545,8 @@
   "a": "state_lhasa",
   "g": "Himalayas",
   "n": "Lhasa",
-  "t": "state",
-  "u": "states#STATE_LHASA"
+  "t": "location",
+  "u": "locations/lhasa"
  },
  {
   "a": "events:liberalism",
@@ -14613,8 +14613,8 @@
   "a": "state_lima",
   "g": "The Andes",
   "n": "Lima",
-  "t": "state",
-  "u": "states#STATE_LIMA"
+  "t": "location",
+  "u": "locations/lima"
  },
  {
   "a": "lim",
@@ -14681,8 +14681,8 @@
   "a": "state_kaunas",
   "g": "Eastern Europe",
   "n": "Lithuania",
-  "t": "state",
-  "u": "states#STATE_KAUNAS"
+  "t": "location",
+  "u": "locations/kaunas"
  },
  {
   "a": "lithuanian",
@@ -14836,8 +14836,8 @@
   "a": "state_lombardy",
   "g": "Southern Europe",
   "n": "Lombardy",
-  "t": "state",
-  "u": "states#STATE_LOMBARDY"
+  "t": "location",
+  "u": "locations/lombardy"
  },
  {
   "a": "lmw",
@@ -14878,8 +14878,8 @@
   "a": "state_lorraine",
   "g": "Western Europe",
   "n": "Lorraine",
-  "t": "state",
-  "u": "states#STATE_LORRAINE"
+  "t": "location",
+  "u": "locations/lorraine"
  },
  {
   "a": "alt",
@@ -14892,8 +14892,8 @@
   "a": "state_los_rios",
   "g": "La Plata",
   "n": "Los Ríos",
-  "t": "state",
-  "u": "states#STATE_LOS_RIOS"
+  "t": "location",
+  "u": "locations/los_rios"
  },
  {
   "a": "lou",
@@ -14906,43 +14906,43 @@
   "a": "state_louisiana",
   "g": "Great Plains",
   "n": "Louisiana",
-  "t": "state",
-  "u": "states#STATE_LOUISIANA"
+  "t": "location",
+  "u": "locations/louisiana"
  },
  {
   "a": "state_lourenco_marques",
   "g": "East Africa",
   "n": "Lourenço Marques",
-  "t": "state",
-  "u": "states#STATE_LOURENCO_MARQUES"
+  "t": "location",
+  "u": "locations/lourenco_marques"
  },
  {
   "a": "state_lower_andalusia",
   "g": "Southern Europe",
   "n": "Lower Andalusia",
-  "t": "state",
-  "u": "states#STATE_LOWER_ANDALUSIA"
+  "t": "location",
+  "u": "locations/lower_andalusia"
  },
  {
   "a": "state_bas_congo",
   "g": "Equatorial Africa",
   "n": "Lower Congo",
-  "t": "state",
-  "u": "states#STATE_BAS_CONGO"
+  "t": "location",
+  "u": "locations/bas_congo"
  },
  {
   "a": "state_lower_egypt",
   "g": "Nile Basin",
   "n": "Lower Egypt",
-  "t": "state",
-  "u": "states#STATE_LOWER_EGYPT"
+  "t": "location",
+  "u": "locations/lower_egypt"
  },
  {
   "a": "state_lower_silesia",
   "g": "Central Europe",
   "n": "Lower Silesia",
-  "t": "state",
-  "u": "states#STATE_LOWER_SILESIA"
+  "t": "location",
+  "u": "locations/lower_silesia"
  },
  {
   "a": "concept_lower_strata",
@@ -14961,8 +14961,8 @@
   "a": "state_lowlands",
   "g": "Western Europe",
   "n": "Lowlands",
-  "t": "state",
-  "u": "states#STATE_LOWLANDS"
+  "t": "location",
+  "u": "locations/lowlands"
  },
  {
   "a": "lowlands_land_reclamation",
@@ -14986,8 +14986,8 @@
   "a": "state_congo_orientale",
   "g": "Equatorial Africa",
   "n": "Lualaba",
-  "t": "state",
-  "u": "states#STATE_CONGO_ORIENTALE"
+  "t": "location",
+  "u": "locations/congo_orientale"
  },
  {
   "a": "lua",
@@ -15020,8 +15020,8 @@
   "a": "state_lesser_poland",
   "g": "Eastern Europe",
   "n": "Lublin",
-  "t": "state",
-  "u": "states#STATE_LESSER_POLAND"
+  "t": "location",
+  "u": "locations/lesser_poland"
  },
  {
   "a": "luc",
@@ -15085,8 +15085,8 @@
   "a": "state_luristan",
   "g": "Greater Persia",
   "n": "Luristan",
-  "t": "state",
-  "u": "states#STATE_LURISTAN"
+  "t": "location",
+  "u": "locations/luristan"
  },
  {
   "a": "lushai",
@@ -15121,8 +15121,8 @@
   "a": "state_luzon",
   "g": "Indonesia",
   "n": "Luzón",
-  "t": "state",
-  "u": "states#STATE_LUZON"
+  "t": "location",
+  "u": "locations/luzon"
  },
  {
   "a": "maasai",
@@ -15134,8 +15134,8 @@
   "a": "state_macedonia",
   "g": "Balkans",
   "n": "Macedonia",
-  "t": "state",
-  "u": "states#STATE_MACEDONIA"
+  "t": "location",
+  "u": "locations/macedonia"
  },
  {
   "a": "machinists",
@@ -15166,8 +15166,8 @@
   "a": "state_madeira",
   "g": "Southern Europe",
   "n": "Madeira",
-  "t": "state",
-  "u": "states#STATE_MADEIRA"
+  "t": "location",
+  "u": "locations/madeira"
  },
  {
   "a": "company_madura_mills",
@@ -15201,8 +15201,8 @@
   "a": "state_mogilev",
   "g": "Eastern Europe",
   "n": "Magiliow",
-  "t": "state",
-  "u": "states#STATE_MOGILEV"
+  "t": "location",
+  "u": "locations/mogilev"
  },
  {
   "a": "je_pedro_brazil",
@@ -15256,15 +15256,15 @@
   "a": "state_maine",
   "g": "Atlantic Coast",
   "n": "Maine",
-  "t": "state",
-  "u": "states#STATE_MAINE"
+  "t": "location",
+  "u": "locations/maine"
  },
  {
   "a": "state_maine_anjou",
   "g": "Western Europe",
   "n": "Maine-Anjou",
-  "t": "state",
-  "u": "states#STATE_MAINE_ANJOU"
+  "t": "location",
+  "u": "locations/maine_anjou"
  },
  {
   "a": "je_take_subject",
@@ -15359,8 +15359,8 @@
   "a": "state_travancore",
   "g": "South India",
   "n": "Malabar",
-  "t": "state",
-  "u": "states#STATE_TRAVANCORE"
+  "t": "location",
+  "u": "locations/travancore"
  },
  {
   "a": "malagasy",
@@ -15389,8 +15389,8 @@
   "a": "state_malaya",
   "g": "Indochina",
   "n": "Malaya",
-  "t": "state",
-  "u": "states#STATE_MALAYA"
+  "t": "location",
+  "u": "locations/malaya"
  },
  {
   "a": "malayalam",
@@ -15423,8 +15423,8 @@
   "a": "state_malta",
   "g": "Southern Europe",
   "n": "Malta",
-  "t": "state",
-  "u": "states#STATE_MALTA"
+  "t": "location",
+  "u": "locations/malta"
  },
  {
   "a": "maltese",
@@ -15436,8 +15436,8 @@
   "a": "state_malwa",
   "g": "North India",
   "n": "Malwa",
-  "t": "state",
-  "u": "states#STATE_MALWA"
+  "t": "location",
+  "u": "locations/malwa"
  },
  {
   "a": "manowars",
@@ -15464,8 +15464,8 @@
   "a": "state_mandalay",
   "g": "Indochina",
   "n": "Mandalay",
-  "t": "state",
-  "u": "states#STATE_MANDALAY"
+  "t": "location",
+  "u": "locations/mandalay"
  },
  {
   "a": "concept_power_bloc_mandate",
@@ -15582,8 +15582,8 @@
   "a": "state_manitoba",
   "g": "Canada",
   "n": "Manitoba",
-  "t": "state",
-  "u": "states#STATE_MANITOBA"
+  "t": "location",
+  "u": "locations/manitoba"
  },
  {
   "a": "building_manor_house",
@@ -15680,8 +15680,8 @@
   "a": "state_maranhao",
   "g": "Brazil",
   "n": "Maranhão",
-  "t": "state",
-  "u": "states#STATE_MARANHAO"
+  "t": "location",
+  "u": "locations/maranhao"
  },
  {
   "a": "marathi",
@@ -15725,8 +15725,8 @@
   "a": "state_new_brunswick",
   "g": "Atlantic Coast",
   "n": "Maritimes",
-  "t": "state",
-  "u": "states#STATE_NEW_BRUNSWICK"
+  "t": "location",
+  "u": "locations/new_brunswick"
  },
  {
   "a": "concept_market",
@@ -15786,8 +15786,8 @@
   "a": "state_marrakech",
   "g": "North Africa",
   "n": "Marrakech",
-  "t": "state",
-  "u": "states#STATE_MARRAKECH"
+  "t": "location",
+  "u": "locations/marrakech"
  },
  {
   "a": "jod",
@@ -15800,8 +15800,8 @@
   "a": "state_maryland",
   "g": "Atlantic Coast",
   "n": "Maryland",
-  "t": "state",
-  "u": "states#STATE_MARYLAND"
+  "t": "location",
+  "u": "locations/maryland"
  },
  {
   "a": "msi",
@@ -15902,8 +15902,8 @@
   "a": "state_massachusetts",
   "g": "Atlantic Coast",
   "n": "Massachusetts",
-  "t": "state",
-  "u": "states#STATE_MASSACHUSETTS"
+  "t": "location",
+  "u": "locations/massachusetts"
  },
  {
   "a": "company_massey_harris",
@@ -15948,15 +15948,15 @@
   "a": "state_mato_grosso",
   "g": "Brazil",
   "n": "Mato Grosso",
-  "t": "state",
-  "u": "states#STATE_MATO_GROSSO"
+  "t": "location",
+  "u": "locations/mato_grosso"
  },
  {
   "a": "state_matruh",
   "g": "Nile Basin",
   "n": "Matruh",
-  "t": "state",
-  "u": "states#STATE_MATRUH"
+  "t": "location",
+  "u": "locations/matruh"
  },
  {
   "a": "je_matter_of_hungary",
@@ -15969,8 +15969,8 @@
   "a": "state_mauritania",
   "g": "West Africa",
   "n": "Mauritania",
-  "t": "state",
-  "u": "states#STATE_MAURITANIA"
+  "t": "location",
+  "u": "locations/mauritania"
  },
  {
   "a": "company_mav",
@@ -16018,8 +16018,8 @@
   "a": "state_mazandaran",
   "g": "Greater Persia",
   "n": "Mazandaran",
-  "t": "state",
-  "u": "states#STATE_MAZANDARAN"
+  "t": "location",
+  "u": "locations/mazandaran"
  },
  {
   "a": "mazanderani",
@@ -16086,8 +16086,8 @@
   "a": "state_mecklenburg",
   "g": "Central Europe",
   "n": "Mecklenburg",
-  "t": "state",
-  "u": "states#STATE_MECKLENBURG"
+  "t": "location",
+  "u": "locations/mecklenburg"
  },
  {
   "a": "mst",
@@ -16117,8 +16117,8 @@
   "a": "state_mekong",
   "g": "Indochina",
   "n": "Mekong",
-  "t": "state",
-  "u": "states#STATE_MEKONG"
+  "t": "location",
+  "u": "locations/mekong"
  },
  {
   "a": "melanesian",
@@ -16137,8 +16137,8 @@
   "a": "state_rio_negro",
   "g": "La Plata",
   "n": "Mendoza",
-  "t": "state",
-  "u": "states#STATE_RIO_NEGRO"
+  "t": "location",
+  "u": "locations/rio_negro"
  },
  {
   "a": "law_mercantilism",
@@ -16168,8 +16168,8 @@
   "a": "state_merz",
   "g": "Central Asia",
   "n": "Merv",
-  "t": "state",
-  "u": "states#STATE_MERZ"
+  "t": "location",
+  "u": "locations/merz"
  },
  {
   "a": "company_basic_metal_mining",
@@ -16236,8 +16236,8 @@
   "a": "state_mexico",
   "g": "Central America",
   "n": "México",
-  "t": "state",
-  "u": "states#STATE_MEXICO"
+  "t": "location",
+  "u": "locations/mexico"
  },
  {
   "a": "miao",
@@ -16249,8 +16249,8 @@
   "a": "state_michigan",
   "g": "Atlantic Coast",
   "n": "Michigan",
-  "t": "state",
-  "u": "states#STATE_MICHIGAN"
+  "t": "location",
+  "u": "locations/michigan"
  },
  {
   "a": "uom",
@@ -16283,8 +16283,8 @@
   "a": "state_middle_egypt",
   "g": "Nile Basin",
   "n": "Middle Egypt",
-  "t": "state",
-  "u": "states#STATE_MIDDLE_EGYPT"
+  "t": "location",
+  "u": "locations/middle_egypt"
  },
  {
   "a": "concept_middle_strata",
@@ -16296,8 +16296,8 @@
   "a": "state_midlands",
   "g": "Western Europe",
   "n": "Midlands",
-  "t": "state",
-  "u": "states#STATE_MIDLANDS"
+  "t": "location",
+  "u": "locations/midlands"
  },
  {
   "a": "concept_migration",
@@ -16513,8 +16513,8 @@
   "a": "state_minas_gerais",
   "g": "Brazil",
   "n": "Minas Gerais",
-  "t": "state",
-  "u": "states#STATE_MINAS_GERAIS"
+  "t": "location",
+  "u": "locations/minas_gerais"
  },
  {
   "a": "mnd",
@@ -16527,8 +16527,8 @@
   "a": "state_mindanao",
   "g": "Indonesia",
   "n": "Mindanao",
-  "t": "state",
-  "u": "states#STATE_MINDANAO"
+  "t": "location",
+  "u": "locations/mindanao"
  },
  {
   "a": "concept_expected_sol",
@@ -16540,8 +16540,8 @@
   "a": "state_minnesota",
   "g": "Great Plains",
   "n": "Minnesota",
-  "t": "state",
-  "u": "states#STATE_MINNESOTA"
+  "t": "location",
+  "u": "locations/minnesota"
  },
  {
   "a": "concept_minor_power",
@@ -16553,8 +16553,8 @@
   "a": "state_minsk",
   "g": "Eastern Europe",
   "n": "Minsk",
-  "t": "state",
-  "u": "states#STATE_MINSK"
+  "t": "location",
+  "u": "locations/minsk"
  },
  {
   "a": "concept_budget_minting",
@@ -16566,8 +16566,8 @@
   "a": "state_miranda",
   "g": "Gran Colombia",
   "n": "Miranda",
-  "t": "state",
-  "u": "states#STATE_MIRANDA"
+  "t": "location",
+  "u": "locations/miranda"
  },
  {
   "a": "mdi",
@@ -16632,15 +16632,15 @@
   "a": "state_mississippi",
   "g": "Atlantic Coast",
   "n": "Mississippi",
-  "t": "state",
-  "u": "states#STATE_MISSISSIPPI"
+  "t": "location",
+  "u": "locations/mississippi"
  },
  {
   "a": "state_missouri",
   "g": "Great Plains",
   "n": "Missouri",
-  "t": "state",
-  "u": "states#STATE_MISSOURI"
+  "t": "location",
+  "u": "locations/missouri"
  },
  {
   "a": "company_mitsubishi",
@@ -16719,8 +16719,8 @@
   "a": "state_mocambique",
   "g": "East Africa",
   "n": "Mocambique",
-  "t": "state",
-  "u": "states#STATE_MOCAMBIQUE"
+  "t": "location",
+  "u": "locations/mocambique"
  },
  {
   "a": "mod",
@@ -16808,8 +16808,8 @@
   "a": "state_moldavia",
   "g": "Balkans",
   "n": "Moldavia",
-  "t": "state",
-  "u": "states#STATE_MOLDAVIA"
+  "t": "location",
+  "u": "locations/moldavia"
  },
  {
   "a": "moluccan",
@@ -16821,8 +16821,8 @@
   "a": "state_moluccas",
   "g": "Indonesia",
   "n": "Moluccas",
-  "t": "state",
-  "u": "states#STATE_MOLUCCAS"
+  "t": "location",
+  "u": "locations/moluccas"
  },
  {
   "a": "mbs",
@@ -16906,8 +16906,8 @@
   "a": "state_montana",
   "g": "Great Plains",
   "n": "Montana",
-  "t": "state",
-  "u": "states#STATE_MONTANA"
+  "t": "location",
+  "u": "locations/montana"
  },
  {
   "a": "mon",
@@ -16920,8 +16920,8 @@
   "a": "state_montenegro",
   "g": "Balkans",
   "n": "Montenegro",
-  "t": "state",
-  "u": "states#STATE_MONTENEGRO"
+  "t": "location",
+  "u": "locations/montenegro"
  },
  {
   "a": "events:balkans_events--montenegro_events",
@@ -16951,8 +16951,8 @@
   "a": "state_moravia",
   "g": "Central Europe",
   "n": "Moravia",
-  "t": "state",
-  "u": "states#STATE_MORAVIA"
+  "t": "location",
+  "u": "locations/moravia"
  },
  {
   "a": "mordvin",
@@ -16983,8 +16983,8 @@
   "a": "state_moscow",
   "g": "Russia",
   "n": "Moscow",
-  "t": "state",
-  "u": "states#STATE_MOSCOW"
+  "t": "location",
+  "u": "locations/moscow"
  },
  {
   "a": "company_moscow_irrigation_company",
@@ -17019,8 +17019,8 @@
   "a": "state_mosul",
   "g": "Near East",
   "n": "Mosul",
-  "t": "state",
-  "u": "states#STATE_MOSUL"
+  "t": "location",
+  "u": "locations/mosul"
  },
  {
   "a": "building_motor_industry",
@@ -17126,15 +17126,15 @@
   "a": "state_munster",
   "g": "Western Europe",
   "n": "Munster",
-  "t": "state",
-  "u": "states#STATE_MUNSTER"
+  "t": "location",
+  "u": "locations/munster"
  },
  {
   "a": "state_murcia",
   "g": "Southern Europe",
   "n": "Murcia",
-  "t": "state",
-  "u": "states#STATE_MURCIA"
+  "t": "location",
+  "u": "locations/murcia"
  },
  {
   "a": "msc",
@@ -17185,8 +17185,8 @@
   "a": "state_mysore",
   "g": "South India",
   "n": "Mysore",
-  "t": "state",
-  "u": "states#STATE_MYSORE"
+  "t": "location",
+  "u": "locations/mysore"
  },
  {
   "a": "mzb",
@@ -17225,8 +17225,8 @@
   "a": "state_nakhon_ratchasima",
   "g": "Indochina",
   "n": "Nakhon Ratchasima",
-  "t": "state",
-  "u": "states#STATE_NAKHON_RATCHASIMA"
+  "t": "location",
+  "u": "locations/nakhon_ratchasima"
  },
  {
   "a": "company_nam_dinh",
@@ -17247,15 +17247,15 @@
   "a": "state_namaqualand",
   "g": "Southern Africa",
   "n": "Namaqualand",
-  "t": "state",
-  "u": "states#STATE_NAMAQUALAND"
+  "t": "location",
+  "u": "locations/namaqualand"
  },
  {
   "a": "state_nanjing",
   "g": "South China",
   "n": "Nanjing",
-  "t": "state",
-  "u": "states#STATE_NANJING"
+  "t": "location",
+  "u": "locations/nanjing"
  },
  {
   "a": "special_character_napoleon_of_the_americas",
@@ -17433,8 +17433,8 @@
   "a": "state_nauru",
   "g": "Oceania",
   "n": "Nauru",
-  "t": "state",
-  "u": "states#STATE_NAURU"
+  "t": "location",
+  "u": "locations/nauru"
  },
  {
   "a": "navajo",
@@ -17589,8 +17589,8 @@
   "a": "state_nebraska",
   "g": "Great Plains",
   "n": "Nebraska",
-  "t": "state",
-  "u": "states#STATE_NEBRASKA"
+  "t": "location",
+  "u": "locations/nebraska"
  },
  {
   "a": "company_nhm",
@@ -17643,15 +17643,15 @@
   "a": "state_nejd",
   "g": "Arabia",
   "n": "Nejd",
-  "t": "state",
-  "u": "states#STATE_NEJD"
+  "t": "location",
+  "u": "locations/nejd"
  },
  {
   "a": "state_nenetsia",
   "g": "Russia",
   "n": "Nenetsia",
-  "t": "state",
-  "u": "states#STATE_NENETSIA"
+  "t": "location",
+  "u": "locations/nenetsia"
  },
  {
   "a": "law_neo_absolutism",
@@ -17697,8 +17697,8 @@
   "a": "state_nevada",
   "g": "Pacific Coast",
   "n": "Nevada",
-  "t": "state",
-  "u": "states#STATE_NEVADA"
+  "t": "location",
+  "u": "locations/nevada"
  },
  {
   "a": "asa",
@@ -17718,8 +17718,8 @@
   "a": "state_new_castile",
   "g": "Southern Europe",
   "n": "New Castile",
-  "t": "state",
-  "u": "states#STATE_NEW_CASTILE"
+  "t": "location",
+  "u": "locations/new_castile"
  },
  {
   "a": "nen",
@@ -17732,22 +17732,22 @@
   "a": "state_new_hampshire",
   "g": "Atlantic Coast",
   "n": "New Hampshire",
-  "t": "state",
-  "u": "states#STATE_NEW_HAMPSHIRE"
+  "t": "location",
+  "u": "locations/new_hampshire"
  },
  {
   "a": "state_new_jersey",
   "g": "Atlantic Coast",
   "n": "New Jersey",
-  "t": "state",
-  "u": "states#STATE_NEW_JERSEY"
+  "t": "location",
+  "u": "locations/new_jersey"
  },
  {
   "a": "state_new_mexico",
   "g": "Great Plains",
   "n": "New Mexico",
-  "t": "state",
-  "u": "states#STATE_NEW_MEXICO"
+  "t": "location",
+  "u": "locations/new_mexico"
  },
  {
   "a": "company_john_hughes",
@@ -17768,15 +17768,15 @@
   "a": "state_new_south_wales",
   "g": "Oceania",
   "n": "New South Wales",
-  "t": "state",
-  "u": "states#STATE_NEW_SOUTH_WALES"
+  "t": "location",
+  "u": "locations/new_south_wales"
  },
  {
   "a": "state_new_york",
   "g": "Atlantic Coast",
   "n": "New York",
-  "t": "state",
-  "u": "states#STATE_NEW_YORK"
+  "t": "location",
+  "u": "locations/new_york"
  },
  {
   "a": "nzl",
@@ -17796,8 +17796,8 @@
   "a": "state_newfoundland",
   "g": "Canada",
   "n": "Newfoundland",
-  "t": "state",
-  "u": "states#STATE_NEWFOUNDLAND"
+  "t": "location",
+  "u": "locations/newfoundland"
  },
  {
   "a": "nez_perce",
@@ -17816,8 +17816,8 @@
   "a": "state_ngari",
   "g": "Himalayas",
   "n": "Ngari",
-  "t": "state",
-  "u": "states#STATE_NGARI"
+  "t": "location",
+  "u": "locations/ngari"
  },
  {
   "a": "ngu",
@@ -17864,22 +17864,22 @@
   "a": "state_nicaragua",
   "g": "Central America",
   "n": "Nicaragua",
-  "t": "state",
-  "u": "states#STATE_NICARAGUA"
+  "t": "location",
+  "u": "locations/nicaragua"
  },
  {
   "a": "state_niger",
   "g": "West Africa",
   "n": "Niger",
-  "t": "state",
-  "u": "states#STATE_NIGER"
+  "t": "location",
+  "u": "locations/niger"
  },
  {
   "a": "state_niger_delta",
   "g": "West Africa",
   "n": "Niger Delta",
-  "t": "state",
-  "u": "states#STATE_NIGER_DELTA"
+  "t": "location",
+  "u": "locations/niger_delta"
  },
  {
   "a": "je_niger_river_expedition",
@@ -17904,8 +17904,8 @@
   "a": "state_nigeria",
   "g": "West Africa",
   "n": "Nigeria",
-  "t": "state",
-  "u": "states#STATE_NIGERIA"
+  "t": "location",
+  "u": "locations/nigeria"
  },
  {
   "a": "special_character_nightingale_popularity",
@@ -17952,8 +17952,8 @@
   "a": "state_ningxia",
   "g": "North China",
   "n": "Ningxia",
-  "t": "state",
-  "u": "states#STATE_NINGXIA"
+  "t": "location",
+  "u": "locations/ningxia"
  },
  {
   "a": "nitrogen_fixation",
@@ -17981,8 +17981,8 @@
   "a": "state_nizhny_novgorod",
   "g": "Russia",
   "n": "Nizhny Novgorod",
-  "t": "state",
-  "u": "states#STATE_NIZHNY_NOVGOROD"
+  "t": "location",
+  "u": "locations/nizhny_novgorod"
  },
  {
   "a": "law_no_colonial_affairs",
@@ -18147,15 +18147,15 @@
   "a": "state_normandy",
   "g": "Western Europe",
   "n": "Normandy",
-  "t": "state",
-  "u": "states#STATE_NORMANDY"
+  "t": "location",
+  "u": "locations/normandy"
  },
  {
   "a": "state_norrland",
   "g": "Northern Europe",
   "n": "Norrland",
-  "t": "state",
-  "u": "states#STATE_NORRLAND"
+  "t": "location",
+  "u": "locations/norrland"
  },
  {
   "a": "company_norsk_hydro",
@@ -18175,22 +18175,22 @@
   "a": "state_north_angola",
   "g": "Equatorial Africa",
   "n": "North Angola",
-  "t": "state",
-  "u": "states#STATE_NORTH_ANGOLA"
+  "t": "location",
+  "u": "locations/north_angola"
  },
  {
   "a": "state_north_borneo",
   "g": "Indonesia",
   "n": "North Borneo",
-  "t": "state",
-  "u": "states#STATE_NORTH_BORNEO"
+  "t": "location",
+  "u": "locations/north_borneo"
  },
  {
   "a": "state_north_cameroon",
   "g": "Equatorial Africa",
   "n": "North Cameroon",
-  "t": "state",
-  "u": "states#STATE_NORTH_CAMEROON"
+  "t": "location",
+  "u": "locations/north_cameroon"
  },
  {
   "a": "ncr",
@@ -18203,8 +18203,8 @@
   "a": "state_north_carolina",
   "g": "Atlantic Coast",
   "n": "North Carolina",
-  "t": "state",
-  "u": "states#STATE_NORTH_CAROLINA"
+  "t": "location",
+  "u": "locations/north_carolina"
  },
  {
   "a": "north_caucasian",
@@ -18216,15 +18216,15 @@
   "a": "state_north_caucasus",
   "g": "Russia",
   "n": "North Caucasus",
-  "t": "state",
-  "u": "states#STATE_NORTH_CAUCASUS"
+  "t": "location",
+  "u": "locations/north_caucasus"
  },
  {
   "a": "state_north_dakota",
   "g": "Great Plains",
   "n": "North Dakota",
-  "t": "state",
-  "u": "states#STATE_NORTH_DAKOTA"
+  "t": "location",
+  "u": "locations/north_dakota"
  },
  {
   "a": "north_german",
@@ -18250,8 +18250,8 @@
   "a": "state_north_island",
   "g": "Oceania",
   "n": "North Island",
-  "t": "state",
-  "u": "states#STATE_NORTH_ISLAND"
+  "t": "location",
+  "u": "locations/north_island"
  },
  {
   "a": "north_italian",
@@ -18263,15 +18263,15 @@
   "a": "state_tartu",
   "g": "Eastern Europe",
   "n": "North Livonia",
-  "t": "state",
-  "u": "states#STATE_TARTU"
+  "t": "location",
+  "u": "locations/tartu"
  },
  {
   "a": "state_north_madagascar",
   "g": "East Africa",
   "n": "North Madagascar",
-  "t": "state",
-  "u": "states#STATE_NORTH_MADAGASCAR"
+  "t": "location",
+  "u": "locations/north_madagascar"
  },
  {
   "a": "npu",
@@ -18284,99 +18284,99 @@
   "a": "state_north_rhine",
   "g": "Western Europe",
   "n": "North Rhine",
-  "t": "state",
-  "u": "states#STATE_NORTH_RHINE"
+  "t": "location",
+  "u": "locations/north_rhine"
  },
  {
   "a": "state_north_sumatra",
   "g": "Indonesia",
   "n": "North Sumatra",
-  "t": "state",
-  "u": "states#STATE_NORTH_SUMATRA"
+  "t": "location",
+  "u": "locations/north_sumatra"
  },
  {
   "a": "state_northern_anhui",
   "g": "North China",
   "n": "Northern Anhui",
-  "t": "state",
-  "u": "states#STATE_NORTHERN_ANHUI"
+  "t": "location",
+  "u": "locations/northern_anhui"
  },
  {
   "a": "state_northern_baluchistan",
   "g": "Greater Persia",
   "n": "Northern Baluchistan",
-  "t": "state",
-  "u": "states#STATE_NORTHERN_BALUCHISTAN"
+  "t": "location",
+  "u": "locations/northern_baluchistan"
  },
  {
   "a": "state_northern_cape",
   "g": "Southern Africa",
   "n": "Northern Cape",
-  "t": "state",
-  "u": "states#STATE_NORTHERN_CAPE"
+  "t": "location",
+  "u": "locations/northern_cape"
  },
  {
   "a": "state_circars",
   "g": "South India",
   "n": "Northern Circars",
-  "t": "state",
-  "u": "states#STATE_CIRCARS"
+  "t": "location",
+  "u": "locations/circars"
  },
  {
   "a": "state_british_columbia",
   "g": "Pacific Coast",
   "n": "Northern Columbia",
-  "t": "state",
-  "u": "states#STATE_BRITISH_COLUMBIA"
+  "t": "location",
+  "u": "locations/british_columbia"
  },
  {
   "a": "state_amur",
   "g": "Northeast Asia",
   "n": "Northern Heilongjiang",
-  "t": "state",
-  "u": "states#STATE_AMUR"
+  "t": "location",
+  "u": "locations/amur"
  },
  {
   "a": "state_outer_manchuria",
   "g": "Northeast Asia",
   "n": "Northern Jilin",
-  "t": "state",
-  "u": "states#STATE_OUTER_MANCHURIA"
+  "t": "location",
+  "u": "locations/outer_manchuria"
  },
  {
   "a": "state_northern_norway",
   "g": "Northern Europe",
   "n": "Northern Norway",
-  "t": "state",
-  "u": "states#STATE_NORTHERN_NORWAY"
+  "t": "location",
+  "u": "locations/northern_norway"
  },
  {
   "a": "state_northern_territory",
   "g": "Oceania",
   "n": "Northern Territory",
-  "t": "state",
-  "u": "states#STATE_NORTHERN_TERRITORY"
+  "t": "location",
+  "u": "locations/northern_territory"
  },
  {
   "a": "state_northern_thrace",
   "g": "Balkans",
   "n": "Northern Thrace",
-  "t": "state",
-  "u": "states#STATE_NORTHERN_THRACE"
+  "t": "location",
+  "u": "locations/northern_thrace"
  },
  {
   "a": "state_northern_transylvania",
   "g": "Balkans",
   "n": "Northern Transylvania",
-  "t": "state",
-  "u": "states#STATE_NORTHERN_TRANSYLVANIA"
+  "t": "location",
+  "u": "locations/northern_transylvania"
  },
  {
   "a": "state_northwest_territories",
   "g": "Canada",
   "n": "Northwest Territories",
-  "t": "state",
-  "u": "states#STATE_NORTHWEST_TERRITORIES"
+  "t": "location",
+  "u": "locations/northwest_territories"
  },
  {
   "a": "nor",
@@ -18408,8 +18408,8 @@
   "a": "state_novgorod",
   "g": "Russia",
   "n": "Novgorod",
-  "t": "state",
-  "u": "states#STATE_NOVGOROD"
+  "t": "location",
+  "u": "locations/novgorod"
  },
  {
   "a": "nba",
@@ -18462,8 +18462,8 @@
   "a": "state_nunavut",
   "g": "Canada",
   "n": "Nunavut",
-  "t": "state",
-  "u": "states#STATE_NUNAVUT"
+  "t": "location",
+  "u": "locations/nunavut"
  },
  {
   "a": "events:tech_events--nursing_events",
@@ -18508,15 +18508,15 @@
   "a": "state_oaxaca",
   "g": "Central America",
   "n": "Oaxaca",
-  "t": "state",
-  "u": "states#STATE_OAXACA"
+  "t": "location",
+  "u": "locations/oaxaca"
  },
  {
   "a": "state_ob",
   "g": "Siberia",
   "n": "Ob",
-  "t": "state",
-  "u": "states#STATE_OB"
+  "t": "location",
+  "u": "locations/ob"
  },
  {
   "a": "concept_obligation",
@@ -18577,8 +18577,8 @@
   "a": "state_cherson",
   "g": "Eastern Europe",
   "n": "Odessa",
-  "t": "state",
-  "u": "states#STATE_CHERSON"
+  "t": "location",
+  "u": "locations/cherson"
  },
  {
   "a": "company_oesterreichisch_alpine_montangesellschaft",
@@ -18647,8 +18647,8 @@
   "a": "state_ohio",
   "g": "Atlantic Coast",
   "n": "Ohio",
-  "t": "state",
-  "u": "states#STATE_OHIO"
+  "t": "location",
+  "u": "locations/ohio"
  },
  {
   "a": "oil",
@@ -18687,15 +18687,15 @@
   "a": "state_okhotsk",
   "g": "Northeast Asia",
   "n": "Okhotsk",
-  "t": "state",
-  "u": "states#STATE_OKHOTSK"
+  "t": "location",
+  "u": "locations/okhotsk"
  },
  {
   "a": "state_oklahoma",
   "g": "Great Plains",
   "n": "Oklahoma",
-  "t": "state",
-  "u": "states#STATE_OKLAHOMA"
+  "t": "location",
+  "u": "locations/oklahoma"
  },
  {
   "a": "law_old_age_pension",
@@ -18709,8 +18709,8 @@
   "a": "state_old_castile",
   "g": "Southern Europe",
   "n": "Old Castile",
-  "t": "state",
-  "u": "states#STATE_OLD_CASTILE"
+  "t": "location",
+  "u": "locations/old_castile"
  },
  {
   "a": "old",
@@ -18738,8 +18738,8 @@
   "a": "state_oman",
   "g": "Arabia",
   "n": "Oman",
-  "t": "state",
-  "u": "states#STATE_OMAN"
+  "t": "location",
+  "u": "locations/oman"
  },
  {
   "a": "omo",
@@ -18780,8 +18780,8 @@
   "a": "state_ontario",
   "g": "Canada",
   "n": "Ontario",
-  "t": "state",
-  "u": "states#STATE_ONTARIO"
+  "t": "location",
+  "u": "locations/ontario"
  },
  {
   "a": "open_hearth_process",
@@ -18862,8 +18862,8 @@
   "a": "state_oran",
   "g": "North Africa",
   "n": "Oran",
-  "t": "state",
-  "u": "states#STATE_ORAN"
+  "t": "location",
+  "u": "locations/oran"
  },
  {
   "a": "ora",
@@ -18896,8 +18896,8 @@
   "a": "state_oregon",
   "g": "Pacific Coast",
   "n": "Oregon",
-  "t": "state",
-  "u": "states#STATE_OREGON"
+  "t": "location",
+  "u": "locations/oregon"
  },
  {
   "a": "events:oregon_events",
@@ -18977,15 +18977,15 @@
   "a": "state_orissa",
   "g": "North India",
   "n": "Orissa",
-  "t": "state",
-  "u": "states#STATE_ORISSA"
+  "t": "location",
+  "u": "locations/orissa"
  },
  {
   "a": "state_orleans",
   "g": "Western Europe",
   "n": "Orléanais-Berry",
-  "t": "state",
-  "u": "states#STATE_ORLEANS"
+  "t": "location",
+  "u": "locations/orleans"
  },
  {
   "a": "orm",
@@ -18998,8 +18998,8 @@
   "a": "state_oromia",
   "g": "East Africa",
   "n": "Oromia",
-  "t": "state",
-  "u": "states#STATE_OROMIA"
+  "t": "location",
+  "u": "locations/oromia"
  },
  {
   "a": "oromo",
@@ -19025,8 +19025,8 @@
   "a": "state_kansai",
   "g": "Northeast Asia",
   "n": "Osaka",
-  "t": "state",
-  "u": "states#STATE_KANSAI"
+  "t": "location",
+  "u": "locations/kansai"
  },
  {
   "a": "events:oscar_wilde",
@@ -19046,8 +19046,8 @@
   "a": "state_ostrobothnia",
   "g": "Northern Europe",
   "n": "Ostrobothnia",
-  "t": "state",
-  "u": "states#STATE_OSTROBOTHNIA"
+  "t": "location",
+  "u": "locations/ostrobothnia"
  },
  {
   "a": "events:balkans_events--ottoman_events",
@@ -19067,15 +19067,15 @@
   "a": "state_awadh",
   "g": "North India",
   "n": "Oudh",
-  "t": "state",
-  "u": "states#STATE_AWADH"
+  "t": "location",
+  "u": "locations/awadh"
  },
  {
   "a": "state_oulu",
   "g": "Northern Europe",
   "n": "Oulu",
-  "t": "state",
-  "u": "states#STATE_OULU"
+  "t": "location",
+  "u": "locations/oulu"
  },
  {
   "a": "je_portugal_regeneration",
@@ -19102,8 +19102,8 @@
   "a": "state_outer_hausaland",
   "g": "West Africa",
   "n": "Outer Hausaland",
-  "t": "state",
-  "u": "states#STATE_OUTER_HAUSALAND"
+  "t": "location",
+  "u": "locations/outer_hausaland"
  },
  {
   "a": "law_outlawed_dissent",
@@ -19221,8 +19221,8 @@
   "a": "state_palestine",
   "g": "Near East",
   "n": "Palestine",
-  "t": "state",
-  "u": "states#STATE_PALESTINE"
+  "t": "location",
+  "u": "locations/palestine"
  },
  {
   "a": "pma",
@@ -19253,8 +19253,8 @@
   "a": "state_panama",
   "g": "Central America",
   "n": "Panama",
-  "t": "state",
-  "u": "states#STATE_PANAMA"
+  "t": "location",
+  "u": "locations/panama"
  },
  {
   "a": "building_panama_canal",
@@ -19320,8 +19320,8 @@
   "a": "state_para",
   "g": "Brazil",
   "n": "Pará",
-  "t": "state",
-  "u": "states#STATE_PARA"
+  "t": "location",
+  "u": "locations/para"
  },
  {
   "a": "prg",
@@ -19346,8 +19346,8 @@
   "a": "state_paraiba",
   "g": "Brazil",
   "n": "Paraíba",
-  "t": "state",
-  "u": "states#STATE_PARAIBA"
+  "t": "location",
+  "u": "locations/paraiba"
  },
  {
   "a": "events:paralegal_discrimination_events",
@@ -19359,8 +19359,8 @@
   "a": "state_parana",
   "g": "Brazil",
   "n": "Paraná",
-  "t": "state",
-  "u": "states#STATE_PARANA"
+  "t": "location",
+  "u": "locations/parana"
  },
  {
   "a": "slave_owner_paranoia",
@@ -19413,8 +19413,8 @@
   "a": "state_bekes",
   "g": "Balkans",
   "n": "Partium",
-  "t": "state",
-  "u": "states#STATE_BEKES"
+  "t": "location",
+  "u": "locations/bekes"
  },
  {
   "a": "concept_party",
@@ -19450,8 +19450,8 @@
   "a": "state_pashtunistan",
   "g": "Greater Persia",
   "n": "Pashtunistan",
-  "t": "state",
-  "u": "states#STATE_PASHTUNISTAN"
+  "t": "location",
+  "u": "locations/pashtunistan"
  },
  {
   "a": "je_tutorial_enact_institution_law",
@@ -19479,8 +19479,8 @@
   "a": "state_pastaza",
   "g": "The Andes",
   "n": "Pastaza",
-  "t": "state",
-  "u": "states#STATE_PASTAZA"
+  "t": "location",
+  "u": "locations/pastaza"
  },
  {
   "a": "pasteurization",
@@ -19497,8 +19497,8 @@
   "a": "state_patagonia",
   "g": "La Plata",
   "n": "Patagonia",
-  "t": "state",
-  "u": "states#STATE_PATAGONIA"
+  "t": "location",
+  "u": "locations/patagonia"
  },
  {
   "a": "events:brazil--patagonia_events",
@@ -19644,15 +19644,15 @@
   "a": "state_pegu",
   "g": "Indochina",
   "n": "Pegu",
-  "t": "state",
-  "u": "states#STATE_PEGU"
+  "t": "location",
+  "u": "locations/pegu"
  },
  {
   "a": "state_peloponnese",
   "g": "Balkans",
   "n": "Peloponnese",
-  "t": "state",
-  "u": "states#STATE_PELOPONNESE"
+  "t": "location",
+  "u": "locations/peloponnese"
  },
  {
   "a": "building_pena_palace",
@@ -19666,8 +19666,8 @@
   "a": "state_pennsylvania",
   "g": "Atlantic Coast",
   "n": "Pennsylvania",
-  "t": "state",
-  "u": "states#STATE_PENNSYLVANIA"
+  "t": "location",
+  "u": "locations/pennsylvania"
  },
  {
   "a": "law_people_of_the_book",
@@ -19733,15 +19733,15 @@
   "a": "state_perm",
   "g": "Russia",
   "n": "Perm",
-  "t": "state",
-  "u": "states#STATE_PERM"
+  "t": "location",
+  "u": "locations/perm"
  },
  {
   "a": "state_pernambuco",
   "g": "Brazil",
   "n": "Pernambuco",
-  "t": "state",
-  "u": "states#STATE_PERNAMBUCO"
+  "t": "location",
+  "u": "locations/pernambuco"
  },
  {
   "a": "per",
@@ -19760,8 +19760,8 @@
   "a": "state_persian_kurdistan",
   "g": "Greater Persia",
   "n": "Persian Kurdistan",
-  "t": "state",
-  "u": "states#STATE_PERSIAN_KURDISTAN"
+  "t": "location",
+  "u": "locations/persian_kurdistan"
  },
  {
   "a": "persistent",
@@ -19895,22 +19895,22 @@
   "a": "state_piaui",
   "g": "Brazil",
   "n": "Piauí",
-  "t": "state",
-  "u": "states#STATE_PIAUI"
+  "t": "location",
+  "u": "locations/piaui"
  },
  {
   "a": "state_picardy",
   "g": "Western Europe",
   "n": "Picardy",
-  "t": "state",
-  "u": "states#STATE_PICARDY"
+  "t": "location",
+  "u": "locations/picardy"
  },
  {
   "a": "state_piedmont",
   "g": "Southern Europe",
   "n": "Piedmont",
-  "t": "state",
-  "u": "states#STATE_PIEDMONT"
+  "t": "location",
+  "u": "locations/piedmont"
  },
  {
   "a": "kyn",
@@ -19975,8 +19975,8 @@
   "a": "state_mazovia",
   "g": "Eastern Europe",
   "n": "Płock",
-  "t": "state",
-  "u": "states#STATE_MAZOVIA"
+  "t": "location",
+  "u": "locations/mazovia"
  },
  {
   "a": "events:pm_events",
@@ -19999,8 +19999,8 @@
   "a": "state_poitou",
   "g": "Western Europe",
   "n": "Poitou-Saintonge",
-  "t": "state",
-  "u": "states#STATE_POITOU"
+  "t": "location",
+  "u": "locations/poitou"
  },
  {
   "a": "pol",
@@ -20133,8 +20133,8 @@
   "a": "state_pomerania",
   "g": "Central Europe",
   "n": "Pomerania",
-  "t": "state",
-  "u": "states#STATE_POMERANIA"
+  "t": "location",
+  "u": "locations/pomerania"
  },
  {
   "a": "pon",
@@ -20263,8 +20263,8 @@
   "a": "state_puerto_rico",
   "g": "Central America",
   "n": "Porto Rico",
-  "t": "state",
-  "u": "states#STATE_PUERTO_RICO"
+  "t": "location",
+  "u": "locations/puerto_rico"
  },
  {
   "a": "por",
@@ -20301,8 +20301,8 @@
   "a": "state_posen",
   "g": "Eastern Europe",
   "n": "Posen",
-  "t": "state",
-  "u": "states#STATE_POSEN"
+  "t": "location",
+  "u": "locations/posen"
  },
  {
   "a": "events:brazil--positivism",
@@ -20331,8 +20331,8 @@
   "a": "state_potosi",
   "g": "The Andes",
   "n": "Potosí",
-  "t": "state",
-  "u": "states#STATE_POTOSI"
+  "t": "location",
+  "u": "locations/potosi"
  },
  {
   "a": "je_sol_1",
@@ -20849,8 +20849,8 @@
   "a": "state_provence",
   "g": "Southern Europe",
   "n": "Provence",
-  "t": "state",
-  "u": "states#STATE_PROVENCE"
+  "t": "location",
+  "u": "locations/provence"
  },
  {
   "a": "concept_province",
@@ -20876,8 +20876,8 @@
   "a": "state_pskov",
   "g": "Russia",
   "n": "Pskov",
-  "t": "state",
-  "u": "states#STATE_PSKOV"
+  "t": "location",
+  "u": "locations/pskov"
  },
  {
   "a": "psychiatry",
@@ -20987,15 +20987,15 @@
   "a": "state_punjab",
   "g": "North India",
   "n": "Punjab",
-  "t": "state",
-  "u": "states#STATE_PUNJAB"
+  "t": "location",
+  "u": "locations/punjab"
  },
  {
   "a": "state_hill_punjab",
   "g": "North India",
   "n": "Punjab Hills",
-  "t": "state",
-  "u": "states#STATE_HILL_PUNJAB"
+  "t": "location",
+  "u": "locations/hill_punjab"
  },
  {
   "a": "panjabi",
@@ -21040,8 +21040,8 @@
   "a": "state_qinghai",
   "g": "Himalayas",
   "n": "Qinghai",
-  "t": "state",
-  "u": "states#STATE_QINGHAI"
+  "t": "location",
+  "u": "locations/qinghai"
  },
  {
   "a": "concept_pop_qualifications",
@@ -21068,8 +21068,8 @@
   "a": "state_quebec",
   "g": "Canada",
   "n": "Quebec",
-  "t": "state",
-  "u": "states#STATE_QUEBEC"
+  "t": "location",
+  "u": "locations/quebec"
  },
  {
   "a": "quechua",
@@ -21081,15 +21081,15 @@
   "a": "state_queensland",
   "g": "Oceania",
   "n": "Queensland",
-  "t": "state",
-  "u": "states#STATE_QUEENSLAND"
+  "t": "location",
+  "u": "locations/queensland"
  },
  {
   "a": "state_quetta",
   "g": "Greater Persia",
   "n": "Quetta",
-  "t": "state",
-  "u": "states#STATE_QUETTA"
+  "t": "location",
+  "u": "locations/quetta"
  },
  {
   "a": "je_prestige_goods_artillery",
@@ -21217,8 +21217,8 @@
   "a": "state_rajputana",
   "g": "North India",
   "n": "Rajputana",
-  "t": "state",
-  "u": "states#STATE_RAJPUTANA"
+  "t": "location",
+  "u": "locations/rajputana"
  },
  {
   "a": "company_ralli_brothers",
@@ -21754,22 +21754,22 @@
   "a": "state_rhineland",
   "g": "Western Europe",
   "n": "Rhineland",
-  "t": "state",
-  "u": "states#STATE_RHINELAND"
+  "t": "location",
+  "u": "locations/rhineland"
  },
  {
   "a": "state_rhode_island",
   "g": "Atlantic Coast",
   "n": "Rhode Island",
-  "t": "state",
-  "u": "states#STATE_RHODE_ISLAND"
+  "t": "location",
+  "u": "locations/rhode_island"
  },
  {
   "a": "state_rhone",
   "g": "Southern Europe",
   "n": "Rhône",
-  "t": "state",
-  "u": "states#STATE_RHONE"
+  "t": "location",
+  "u": "locations/rhone"
  },
  {
   "a": "building_rice_farm",
@@ -21794,8 +21794,8 @@
   "a": "state_rift_valley",
   "g": "East Africa",
   "n": "Rift Valley",
-  "t": "state",
-  "u": "states#STATE_RIFT_VALLEY"
+  "t": "location",
+  "u": "locations/rift_valley"
  },
  {
   "a": "law_right_of_assembly",
@@ -21831,8 +21831,8 @@
   "a": "state_rio_de_janeiro",
   "g": "Brazil",
   "n": "Rio de Janeiro",
-  "t": "state",
-  "u": "states#STATE_RIO_DE_JANEIRO"
+  "t": "location",
+  "u": "locations/rio_de_janeiro"
  },
  {
   "a": "je_la_plata",
@@ -21866,22 +21866,22 @@
   "a": "state_rio_grande",
   "g": "Central America",
   "n": "Río Grande",
-  "t": "state",
-  "u": "states#STATE_RIO_GRANDE"
+  "t": "location",
+  "u": "locations/rio_grande"
  },
  {
   "a": "state_rio_grande_do_norte",
   "g": "Brazil",
   "n": "Rio Grande do Norte",
-  "t": "state",
-  "u": "states#STATE_RIO_GRANDE_DO_NORTE"
+  "t": "location",
+  "u": "locations/rio_grande_do_norte"
  },
  {
   "a": "state_rio_grande_do_sul",
   "g": "Brazil",
   "n": "Rio Grande do Sul",
-  "t": "state",
-  "u": "states#STATE_RIO_GRANDE_DO_SUL"
+  "t": "location",
+  "u": "locations/rio_grande_do_sul"
  },
  {
   "a": "concept_risk",
@@ -21919,8 +21919,8 @@
   "a": "state_romagna",
   "g": "Southern Europe",
   "n": "Romagna",
-  "t": "state",
-  "u": "states#STATE_ROMAGNA"
+  "t": "location",
+  "u": "locations/romagna"
  },
  {
   "a": "rom",
@@ -21971,8 +21971,8 @@
   "a": "state_rostov",
   "g": "Russia",
   "n": "Rostov",
-  "t": "state",
-  "u": "states#STATE_ROSTOV"
+  "t": "location",
+  "u": "locations/rostov"
  },
  {
   "a": "rotary_valve_engine",
@@ -22034,15 +22034,15 @@
   "a": "state_lindi",
   "g": "East Africa",
   "n": "Rufiji",
-  "t": "state",
-  "u": "states#STATE_LINDI"
+  "t": "location",
+  "u": "locations/lindi"
  },
  {
   "a": "state_ruhr",
   "g": "Central Europe",
   "n": "Ruhr",
-  "t": "state",
-  "u": "states#STATE_RUHR"
+  "t": "location",
+  "u": "locations/ruhr"
  },
  {
   "a": "concept_ruler",
@@ -22112,8 +22112,8 @@
   "a": "state_ruthenia",
   "g": "Balkans",
   "n": "Ruthenia",
-  "t": "state",
-  "u": "states#STATE_RUTHENIA"
+  "t": "location",
+  "u": "locations/ruthenia"
  },
  {
   "a": "ruthless",
@@ -22134,8 +22134,8 @@
   "a": "state_ryazan",
   "g": "Russia",
   "n": "Ryazan",
-  "t": "state",
-  "u": "states#STATE_RYAZAN"
+  "t": "location",
+  "u": "locations/ryazan"
  },
  {
   "a": "building_rye_farm",
@@ -22156,8 +22156,8 @@
   "a": "state_ryukyu_islands",
   "g": "Northeast Asia",
   "n": "Ryukyu Islands",
-  "t": "state",
-  "u": "states#STATE_RYUKYU_ISLANDS"
+  "t": "location",
+  "u": "locations/ryukyu_islands"
  },
  {
   "a": "events:japan_events--ryukyu_rivalry_events",
@@ -22183,8 +22183,8 @@
   "a": "state_kachin",
   "g": "Indochina",
   "n": "Sagaing",
-  "t": "state",
-  "u": "states#STATE_KACHIN"
+  "t": "location",
+  "u": "locations/kachin"
  },
  {
   "a": "building_sagrada_familia_cathedral_1",
@@ -22221,8 +22221,8 @@
   "a": "state_sahara",
   "g": "North Africa",
   "n": "Sahara",
-  "t": "state",
-  "u": "states#STATE_SAHARA"
+  "t": "location",
+  "u": "locations/sahara"
  },
  {
   "a": "sah",
@@ -22249,8 +22249,8 @@
   "a": "state_sakhalin",
   "g": "Northeast Asia",
   "n": "Sakhalin",
-  "t": "state",
-  "u": "states#STATE_SAKHALIN"
+  "t": "location",
+  "u": "locations/sakhalin"
  },
  {
   "a": "law_sakoku",
@@ -22277,8 +22277,8 @@
   "a": "state_samara",
   "g": "Russia",
   "n": "Samara",
-  "t": "state",
-  "u": "states#STATE_SAMARA"
+  "t": "location",
+  "u": "locations/samara"
  },
  {
   "a": "smb",
@@ -22319,8 +22319,8 @@
   "a": "state_san_salvador",
   "g": "Central America",
   "n": "San Salvador",
-  "t": "state",
-  "u": "states#STATE_SAN_SALVADOR"
+  "t": "location",
+  "u": "locations/san_salvador"
  },
  {
   "a": "sng",
@@ -22340,29 +22340,29 @@
   "a": "state_santa_catarina",
   "g": "Brazil",
   "n": "Santa Catarina",
-  "t": "state",
-  "u": "states#STATE_SANTA_CATARINA"
+  "t": "location",
+  "u": "locations/santa_catarina"
  },
  {
   "a": "state_santa_cruz",
   "g": "The Andes",
   "n": "Santa Cruz",
-  "t": "state",
-  "u": "states#STATE_SANTA_CRUZ"
+  "t": "location",
+  "u": "locations/santa_cruz"
  },
  {
   "a": "state_santa_fe",
   "g": "La Plata",
   "n": "Santa Fe",
-  "t": "state",
-  "u": "states#STATE_SANTA_FE"
+  "t": "location",
+  "u": "locations/santa_fe"
  },
  {
   "a": "state_santiago",
   "g": "La Plata",
   "n": "Santiago",
-  "t": "state",
-  "u": "states#STATE_SANTIAGO"
+  "t": "location",
+  "u": "locations/santiago"
  },
  {
   "a": "dom",
@@ -22375,15 +22375,15 @@
   "a": "state_santo_domingo",
   "g": "Central America",
   "n": "Santo Domingo",
-  "t": "state",
-  "u": "states#STATE_SANTO_DOMINGO"
+  "t": "location",
+  "u": "locations/santo_domingo"
  },
  {
   "a": "state_sao_paulo",
   "g": "Brazil",
   "n": "São Paulo",
-  "t": "state",
-  "u": "states#STATE_SAO_PAULO"
+  "t": "location",
+  "u": "locations/sao_paulo"
  },
  {
   "a": "company_sao_paulo_railway",
@@ -22417,15 +22417,15 @@
   "a": "state_tartaria",
   "g": "Russia",
   "n": "Saratov",
-  "t": "state",
-  "u": "states#STATE_TARTARIA"
+  "t": "location",
+  "u": "locations/tartaria"
  },
  {
   "a": "state_sardinia",
   "g": "Southern Europe",
   "n": "Sardinia",
-  "t": "state",
-  "u": "states#STATE_SARDINIA"
+  "t": "location",
+  "u": "locations/sardinia"
  },
  {
   "a": "sar",
@@ -22438,8 +22438,8 @@
   "a": "state_saskatchewan",
   "g": "Canada",
   "n": "Saskatchewan",
-  "t": "state",
-  "u": "states#STATE_SASKATCHEWAN"
+  "t": "location",
+  "u": "locations/saskatchewan"
  },
  {
   "a": "sat",
@@ -22459,8 +22459,8 @@
   "a": "state_savoy",
   "g": "Southern Europe",
   "n": "Savoy",
-  "t": "state",
-  "u": "states#STATE_SAVOY"
+  "t": "location",
+  "u": "locations/savoy"
  },
  {
   "a": "company_savva_morozov",
@@ -22502,8 +22502,8 @@
   "a": "state_saxony",
   "g": "Central Europe",
   "n": "Saxony",
-  "t": "state",
-  "u": "states#STATE_SAXONY"
+  "t": "location",
+  "u": "locations/saxony"
  },
  {
   "a": "sca",
@@ -22523,8 +22523,8 @@
   "a": "state_scania",
   "g": "Northern Europe",
   "n": "Scania",
-  "t": "state",
-  "u": "states#STATE_SCANIA"
+  "t": "location",
+  "u": "locations/scania"
  },
  {
   "a": "scarred",
@@ -22552,8 +22552,8 @@
   "a": "state_schleswig_holstein",
   "g": "Central Europe",
   "n": "Schleswig-Holstein",
-  "t": "state",
-  "u": "states#STATE_SCHLESWIG_HOLSTEIN"
+  "t": "location",
+  "u": "locations/schleswig_holstein"
  },
  {
   "a": "company_schneider_creusot",
@@ -22775,15 +22775,15 @@
   "a": "state_semireche",
   "g": "Central Asia",
   "n": "Semipalatinsk",
-  "t": "state",
-  "u": "states#STATE_SEMIRECHE"
+  "t": "location",
+  "u": "locations/semireche"
  },
  {
   "a": "state_semnan",
   "g": "Greater Persia",
   "n": "Semnan",
-  "t": "state",
-  "u": "states#STATE_SEMNAN"
+  "t": "location",
+  "u": "locations/semnan"
  },
  {
   "a": "sena",
@@ -22809,8 +22809,8 @@
   "a": "state_senegal",
   "g": "West Africa",
   "n": "Senegal",
-  "t": "state",
-  "u": "states#STATE_SENEGAL"
+  "t": "location",
+  "u": "locations/senegal"
  },
  {
   "a": "senile",
@@ -22973,8 +22973,8 @@
   "a": "state_shan_states",
   "g": "Indochina",
   "n": "Shan States",
-  "t": "state",
-  "u": "states#STATE_SHAN_STATES"
+  "t": "location",
+  "u": "locations/shan_states"
  },
  {
   "a": "sha",
@@ -22987,8 +22987,8 @@
   "a": "state_shandong",
   "g": "North China",
   "n": "Shandong",
-  "t": "state",
-  "u": "states#STATE_SHANDONG"
+  "t": "location",
+  "u": "locations/shandong"
  },
  {
   "a": "shn",
@@ -23001,8 +23001,8 @@
   "a": "state_shanxi",
   "g": "North China",
   "n": "Shanxi",
-  "t": "state",
-  "u": "states#STATE_SHANXI"
+  "t": "location",
+  "u": "locations/shanxi"
  },
  {
   "a": "shell_gun",
@@ -23027,8 +23027,8 @@
   "a": "state_shengjing",
   "g": "Northeast Asia",
   "n": "Shengjing",
-  "t": "state",
-  "u": "states#STATE_SHENGJING"
+  "t": "location",
+  "u": "locations/shengjing"
  },
  {
   "a": "company_sherkate_eslamiya",
@@ -23075,8 +23075,8 @@
   "a": "state_shikoku",
   "g": "Northeast Asia",
   "n": "Shikoku",
-  "t": "state",
-  "u": "states#STATE_SHIKOKU"
+  "t": "location",
+  "u": "locations/shikoku"
  },
  {
   "a": "je_shinbutsu_bunri",
@@ -23322,15 +23322,15 @@
   "a": "state_sichuan",
   "g": "South China",
   "n": "Sichuan",
-  "t": "state",
-  "u": "states#STATE_SICHUAN"
+  "t": "location",
+  "u": "locations/sichuan"
  },
  {
   "a": "state_sicily",
   "g": "Southern Europe",
   "n": "Sicily",
-  "t": "state",
-  "u": "states#STATE_SICILY"
+  "t": "location",
+  "u": "locations/sicily"
  },
  {
   "a": "events:sick_man_events",
@@ -23385,8 +23385,8 @@
   "a": "state_sierra_leone",
   "g": "West Africa",
   "n": "Sierra Leone",
-  "t": "state",
-  "u": "states#STATE_SIERRA_LEONE"
+  "t": "location",
+  "u": "locations/sierra_leone"
  },
  {
   "a": "sikh",
@@ -23449,15 +23449,15 @@
   "a": "state_sinai",
   "g": "Nile Basin",
   "n": "Sinai",
-  "t": "state",
-  "u": "states#STATE_SINAI"
+  "t": "location",
+  "u": "locations/sinai"
  },
  {
   "a": "state_sinaloa",
   "g": "Central America",
   "n": "Sinaloa",
-  "t": "state",
-  "u": "states#STATE_SINALOA"
+  "t": "location",
+  "u": "locations/sinaloa"
  },
  {
   "a": "sin",
@@ -23470,8 +23470,8 @@
   "a": "state_sindh",
   "g": "North India",
   "n": "Sindh",
-  "t": "state",
-  "u": "states#STATE_SINDH"
+  "t": "location",
+  "u": "locations/sindh"
  },
  {
   "a": "sindi",
@@ -23546,8 +23546,8 @@
   "a": "state_skopia",
   "g": "Balkans",
   "n": "Skopia",
-  "t": "state",
-  "u": "states#STATE_SKOPIA"
+  "t": "location",
+  "u": "locations/skopia"
  },
  {
   "a": "building_skyscraper",
@@ -23627,8 +23627,8 @@
   "a": "state_slavonia",
   "g": "Balkans",
   "n": "Slavonia",
-  "t": "state",
-  "u": "states#STATE_SLAVONIA"
+  "t": "location",
+  "u": "locations/slavonia"
  },
  {
   "a": "slovak",
@@ -23647,8 +23647,8 @@
   "a": "state_slovakia",
   "g": "Balkans",
   "n": "Slovakia",
-  "t": "state",
-  "u": "states#STATE_SLOVAKIA"
+  "t": "location",
+  "u": "locations/slovakia"
  },
  {
   "a": "slovene",
@@ -23667,8 +23667,8 @@
   "a": "state_slovenia",
   "g": "Balkans",
   "n": "Slovenia",
-  "t": "state",
-  "u": "states#STATE_SLOVENIA"
+  "t": "location",
+  "u": "locations/slovenia"
  },
  {
   "a": "small_arms",
@@ -23682,8 +23682,8 @@
   "a": "state_smolensk",
   "g": "Russia",
   "n": "Smolensk",
-  "t": "state",
-  "u": "states#STATE_SMOLENSK"
+  "t": "location",
+  "u": "locations/smolensk"
  },
  {
   "a": "social_bandit",
@@ -23818,8 +23818,8 @@
   "a": "state_solomon_islands",
   "g": "Oceania",
   "n": "Solomon Islands",
-  "t": "state",
-  "u": "states#STATE_SOLOMON_ISLANDS"
+  "t": "location",
+  "u": "locations/solomon_islands"
  },
  {
   "a": "je_tutorial_fix_budget_deficit",
@@ -23838,8 +23838,8 @@
   "a": "state_somaliland",
   "g": "East Africa",
   "n": "Somaliland",
-  "t": "state",
-  "u": "states#STATE_SOMALILAND"
+  "t": "location",
+  "u": "locations/somaliland"
  },
  {
   "a": "songhai",
@@ -23851,8 +23851,8 @@
   "a": "state_sonora",
   "g": "Central America",
   "n": "Sonora",
-  "t": "state",
-  "u": "states#STATE_SONORA"
+  "t": "location",
+  "u": "locations/sonora"
  },
  {
   "a": "sorb",
@@ -23902,15 +23902,15 @@
   "a": "state_south_angola",
   "g": "Equatorial Africa",
   "n": "South Angola",
-  "t": "state",
-  "u": "states#STATE_SOUTH_ANGOLA"
+  "t": "location",
+  "u": "locations/south_angola"
  },
  {
   "a": "state_south_atlantic_islands",
   "g": "La Plata",
   "n": "South Atlantic Islands",
-  "t": "state",
-  "u": "states#STATE_SOUTH_ATLANTIC_ISLANDS"
+  "t": "location",
+  "u": "locations/south_atlantic_islands"
  },
  {
   "a": "sas",
@@ -23923,15 +23923,15 @@
   "a": "state_south_australia",
   "g": "Oceania",
   "n": "South Australia",
-  "t": "state",
-  "u": "states#STATE_SOUTH_AUSTRALIA"
+  "t": "location",
+  "u": "locations/south_australia"
  },
  {
   "a": "state_south_cameroon",
   "g": "Equatorial Africa",
   "n": "South Cameroon",
-  "t": "state",
-  "u": "states#STATE_SOUTH_CAMEROON"
+  "t": "location",
+  "u": "locations/south_cameroon"
  },
  {
   "a": "scr",
@@ -23944,15 +23944,15 @@
   "a": "state_south_carolina",
   "g": "Atlantic Coast",
   "n": "South Carolina",
-  "t": "state",
-  "u": "states#STATE_SOUTH_CAROLINA"
+  "t": "location",
+  "u": "locations/south_carolina"
  },
  {
   "a": "state_south_dakota",
   "g": "Great Plains",
   "n": "South Dakota",
-  "t": "state",
-  "u": "states#STATE_SOUTH_DAKOTA"
+  "t": "location",
+  "u": "locations/south_dakota"
  },
  {
   "a": "south_german",
@@ -23978,8 +23978,8 @@
   "a": "state_south_island",
   "g": "Oceania",
   "n": "South Island",
-  "t": "state",
-  "u": "states#STATE_SOUTH_ISLAND"
+  "t": "location",
+  "u": "locations/south_island"
  },
  {
   "a": "south_italian",
@@ -23991,15 +23991,15 @@
   "a": "state_riga",
   "g": "Eastern Europe",
   "n": "South Livonia",
-  "t": "state",
-  "u": "states#STATE_RIGA"
+  "t": "location",
+  "u": "locations/riga"
  },
  {
   "a": "state_south_madagascar",
   "g": "East Africa",
   "n": "South Madagascar",
-  "t": "state",
-  "u": "states#STATE_SOUTH_MADAGASCAR"
+  "t": "location",
+  "u": "locations/south_madagascar"
  },
  {
   "a": "spu",
@@ -24012,57 +24012,57 @@
   "a": "state_south_sumatra",
   "g": "Indonesia",
   "n": "South Sumatra",
-  "t": "state",
-  "u": "states#STATE_SOUTH_SUMATRA"
+  "t": "location",
+  "u": "locations/south_sumatra"
  },
  {
   "a": "state_south_tyrol",
   "g": "Southern Europe",
   "n": "South Tyrol",
-  "t": "state",
-  "u": "states#STATE_SOUTH_TYROL"
+  "t": "location",
+  "u": "locations/south_tyrol"
  },
  {
   "a": "state_southern_anhui",
   "g": "South China",
   "n": "Southern Anhui",
-  "t": "state",
-  "u": "states#STATE_SOUTHERN_ANHUI"
+  "t": "location",
+  "u": "locations/southern_anhui"
  },
  {
   "a": "state_washington",
   "g": "Pacific Coast",
   "n": "Southern Columbia",
-  "t": "state",
-  "u": "states#STATE_WASHINGTON"
+  "t": "location",
+  "u": "locations/washington"
  },
  {
   "a": "state_northern_manchuria",
   "g": "Northeast Asia",
   "n": "Southern Heilongjiang",
-  "t": "state",
-  "u": "states#STATE_NORTHERN_MANCHURIA"
+  "t": "location",
+  "u": "locations/northern_manchuria"
  },
  {
   "a": "state_southern_manchuria",
   "g": "Northeast Asia",
   "n": "Southern Jilin",
-  "t": "state",
-  "u": "states#STATE_SOUTHERN_MANCHURIA"
+  "t": "location",
+  "u": "locations/southern_manchuria"
  },
  {
   "a": "state_southern_transylvania",
   "g": "Balkans",
   "n": "Southern Transylvania",
-  "t": "state",
-  "u": "states#STATE_SOUTHERN_TRANSYLVANIA"
+  "t": "location",
+  "u": "locations/southern_transylvania"
  },
  {
   "a": "state_balkh",
   "g": "Greater Persia",
   "n": "Southern Turkestan",
-  "t": "state",
-  "u": "states#STATE_BALKH"
+  "t": "location",
+  "u": "locations/balkh"
  },
  {
   "a": "identity_sovereign_empire",
@@ -24331,8 +24331,8 @@
   "a": "state_stavropol",
   "g": "Russia",
   "n": "Stavropol",
-  "t": "state",
-  "u": "states#STATE_STAVROPOL"
+  "t": "location",
+  "u": "locations/stavropol"
  },
  {
   "a": "steam_donkey",
@@ -24564,8 +24564,8 @@
   "a": "state_styria",
   "g": "Central Europe",
   "n": "Styria",
-  "t": "state",
-  "u": "states#STATE_STYRIA"
+  "t": "location",
+  "u": "locations/styria"
  },
  {
   "a": "concept_subject",
@@ -24811,8 +24811,8 @@
   "a": "state_sunda_islands",
   "g": "Indonesia",
   "n": "Sunda Islands",
-  "t": "state",
-  "u": "states#STATE_SUNDA_ISLANDS"
+  "t": "location",
+  "u": "locations/sunda_islands"
  },
  {
   "a": "company_sunhwaguk",
@@ -24941,8 +24941,8 @@
   "a": "state_surgut",
   "g": "Siberia",
   "n": "Surgut",
-  "t": "state",
-  "u": "states#STATE_SURGUT"
+  "t": "location",
+  "u": "locations/surgut"
  },
  {
   "a": "skyscraper_decision",
@@ -24981,15 +24981,15 @@
   "a": "state_suzhou",
   "g": "South China",
   "n": "Suzhou",
-  "t": "state",
-  "u": "states#STATE_SUZHOU"
+  "t": "location",
+  "u": "locations/suzhou"
  },
  {
   "a": "state_svealand",
   "g": "Northern Europe",
   "n": "Svealand",
-  "t": "state",
-  "u": "states#STATE_SVEALAND"
+  "t": "location",
+  "u": "locations/svealand"
  },
  {
   "a": "swahili",
@@ -25076,15 +25076,15 @@
   "a": "state_syrdarya",
   "g": "Central Asia",
   "n": "Syrdarya",
-  "t": "state",
-  "u": "states#STATE_SYRDARYA"
+  "t": "location",
+  "u": "locations/syrdarya"
  },
  {
   "a": "state_syria",
   "g": "Near East",
   "n": "Syria",
-  "t": "state",
-  "u": "states#STATE_SYRIA"
+  "t": "location",
+  "u": "locations/syria"
  },
  {
   "a": "syr",
@@ -25109,8 +25109,8 @@
   "a": "state_tabriz",
   "g": "Greater Persia",
   "n": "Tabriz",
-  "t": "state",
-  "u": "states#STATE_TABRIZ"
+  "t": "location",
+  "u": "locations/tabriz"
  },
  {
   "a": "tactful",
@@ -25144,8 +25144,8 @@
   "a": "state_tahiti",
   "g": "Oceania",
   "n": "Tahiti",
-  "t": "state",
-  "u": "states#STATE_TAHITI"
+  "t": "location",
+  "u": "locations/tahiti"
  },
  {
   "a": "building_taj_mahal",
@@ -25165,8 +25165,8 @@
   "a": "state_tajikistan",
   "g": "Central Asia",
   "n": "Tajikistan",
-  "t": "state",
-  "u": "states#STATE_TAJIKISTAN"
+  "t": "location",
+  "u": "locations/tajikistan"
  },
  {
   "a": "tji",
@@ -25186,15 +25186,15 @@
   "a": "state_talinn",
   "g": "Eastern Europe",
   "n": "Talinn",
-  "t": "state",
-  "u": "states#STATE_TALINN"
+  "t": "location",
+  "u": "locations/talinn"
  },
  {
   "a": "state_tambov",
   "g": "Russia",
   "n": "Tambov",
-  "t": "state",
-  "u": "states#STATE_TAMBOV"
+  "t": "location",
+  "u": "locations/tambov"
  },
  {
   "a": "tamil",
@@ -25213,8 +25213,8 @@
   "a": "state_tanganyika",
   "g": "East Africa",
   "n": "Tanganyika",
-  "t": "state",
-  "u": "states#STATE_TANGANYIKA"
+  "t": "location",
+  "u": "locations/tanganyika"
  },
  {
   "a": "tanks",
@@ -25283,8 +25283,8 @@
   "a": "state_tarapaca",
   "g": "The Andes",
   "n": "Tarapacá",
-  "t": "state",
-  "u": "states#STATE_TARAPACA"
+  "t": "location",
+  "u": "locations/tarapaca"
  },
  {
   "a": "tarascan",
@@ -25315,8 +25315,8 @@
   "a": "state_tianshan",
   "g": "Central Asia",
   "n": "Tarim Basin",
-  "t": "state",
-  "u": "states#STATE_TIANSHAN"
+  "t": "location",
+  "u": "locations/tianshan"
  },
  {
   "a": "company_tashkent_railroad",
@@ -25330,8 +25330,8 @@
   "a": "state_tasmania",
   "g": "Oceania",
   "n": "Tasmania",
-  "t": "state",
-  "u": "states#STATE_TASMANIA"
+  "t": "location",
+  "u": "locations/tasmania"
  },
  {
   "a": "tas",
@@ -25511,15 +25511,15 @@
   "a": "state_tenasserim",
   "g": "Indochina",
   "n": "Tenasserim",
-  "t": "state",
-  "u": "states#STATE_TENASSERIM"
+  "t": "location",
+  "u": "locations/tenasserim"
  },
  {
   "a": "state_tennessee",
   "g": "Atlantic Coast",
   "n": "Tennessee",
-  "t": "state",
-  "u": "states#STATE_TENNESSEE"
+  "t": "location",
+  "u": "locations/tennessee"
  },
  {
   "a": "je_tenpo_crisis",
@@ -25592,8 +25592,8 @@
   "a": "state_texas",
   "g": "Great Plains",
   "n": "Texas",
-  "t": "state",
-  "u": "states#STATE_TEXAS"
+  "t": "location",
+  "u": "locations/texas"
  },
  {
   "a": "tex",
@@ -26459,8 +26459,8 @@
   "a": "state_thessalia",
   "g": "Balkans",
   "n": "Thessaly",
-  "t": "state",
-  "u": "states#STATE_THESSALIA"
+  "t": "location",
+  "u": "locations/thessalia"
  },
  {
   "a": "special_character_john_brown_popularity",
@@ -26523,8 +26523,8 @@
   "a": "state_greater_caucasus",
   "g": "Greater Persia",
   "n": "Tiflis",
-  "t": "state",
-  "u": "states#STATE_GREATER_CAUCASUS"
+  "t": "location",
+  "u": "locations/greater_caucasus"
  },
  {
   "a": "tgr",
@@ -26543,8 +26543,8 @@
   "a": "state_timbuktu",
   "g": "West Africa",
   "n": "Timbuktu",
-  "t": "state",
-  "u": "states#STATE_TIMBUKTU"
+  "t": "location",
+  "u": "locations/timbuktu"
  },
  {
   "a": "concept_timed_modifier",
@@ -26618,29 +26618,29 @@
   "a": "state_tobolsk",
   "g": "Siberia",
   "n": "Tobolsk",
-  "t": "state",
-  "u": "states#STATE_TOBOLSK"
+  "t": "location",
+  "u": "locations/tobolsk"
  },
  {
   "a": "state_togo",
   "g": "West Africa",
   "n": "Togo",
-  "t": "state",
-  "u": "states#STATE_TOGO"
+  "t": "location",
+  "u": "locations/togo"
  },
  {
   "a": "state_tohoku",
   "g": "Northeast Asia",
   "n": "Tohoku",
-  "t": "state",
-  "u": "states#STATE_TOHOKU"
+  "t": "location",
+  "u": "locations/tohoku"
  },
  {
   "a": "state_tokai",
   "g": "Northeast Asia",
   "n": "Tokai",
-  "t": "state",
-  "u": "states#STATE_TOKAI"
+  "t": "location",
+  "u": "locations/tokai"
  },
  {
   "a": "company_tokyo_electric_light_company",
@@ -26673,15 +26673,15 @@
   "a": "state_tomsk",
   "g": "Siberia",
   "n": "Tomsk",
-  "t": "state",
-  "u": "states#STATE_TOMSK"
+  "t": "location",
+  "u": "locations/tomsk"
  },
  {
   "a": "state_tonga",
   "g": "Oceania",
   "n": "Tonga",
-  "t": "state",
-  "u": "states#STATE_TONGA"
+  "t": "location",
+  "u": "locations/tonga"
  },
  {
   "a": "tng",
@@ -26700,8 +26700,8 @@
   "a": "state_tonkin",
   "g": "Indochina",
   "n": "Tonkin",
-  "t": "state",
-  "u": "states#STATE_TONKIN"
+  "t": "location",
+  "u": "locations/tonkin"
  },
  {
   "a": "building_tooling_workshop",
@@ -26759,8 +26759,8 @@
   "a": "state_trabzon",
   "g": "Near East",
   "n": "Trabzon",
-  "t": "state",
-  "u": "states#STATE_TRABZON"
+  "t": "location",
+  "u": "locations/trabzon"
  },
  {
   "a": "concept_trade",
@@ -26884,8 +26884,8 @@
   "a": "state_transdanubia",
   "g": "Balkans",
   "n": "Transdanubia",
-  "t": "state",
-  "u": "states#STATE_TRANSDANUBIA"
+  "t": "location",
+  "u": "locations/transdanubia"
  },
  {
   "a": "concept_transfer_of_power",
@@ -26911,15 +26911,15 @@
   "a": "state_transjordan",
   "g": "Near East",
   "n": "Transjordan",
-  "t": "state",
-  "u": "states#STATE_TRANSJORDAN"
+  "t": "location",
+  "u": "locations/transjordan"
  },
  {
   "a": "state_vrystaat",
   "g": "Southern Africa",
   "n": "Transorangia",
-  "t": "state",
-  "u": "states#STATE_VRYSTAAT"
+  "t": "location",
+  "u": "locations/vrystaat"
  },
  {
   "a": "transportation",
@@ -26933,8 +26933,8 @@
   "a": "state_transvaal",
   "g": "Southern Africa",
   "n": "Transvaal",
-  "t": "state",
-  "u": "states#STATE_TRANSVAAL"
+  "t": "location",
+  "u": "locations/transvaal"
  },
  {
   "a": "trn",
@@ -27067,8 +27067,8 @@
   "a": "state_tripoli",
   "g": "North Africa",
   "n": "Tripoli",
-  "t": "state",
-  "u": "states#STATE_TRIPOLI"
+  "t": "location",
+  "u": "locations/tripoli"
  },
  {
   "a": "tri",
@@ -27094,8 +27094,8 @@
   "a": "state_abu_dhabi",
   "g": "Arabia",
   "n": "Trucial Coast",
-  "t": "state",
-  "u": "states#STATE_ABU_DHABI"
+  "t": "location",
+  "u": "locations/abu_dhabi"
  },
  {
   "a": "abu",
@@ -27163,15 +27163,15 @@
   "a": "state_tucuman",
   "g": "La Plata",
   "n": "Tucumán",
-  "t": "state",
-  "u": "states#STATE_TUCUMAN"
+  "t": "location",
+  "u": "locations/tucuman"
  },
  {
   "a": "state_oryol",
   "g": "Russia",
   "n": "Tula",
-  "t": "state",
-  "u": "states#STATE_ORYOL"
+  "t": "location",
+  "u": "locations/oryol"
  },
  {
   "a": "tgi",
@@ -27204,8 +27204,8 @@
   "a": "state_tunisia",
   "g": "North Africa",
   "n": "Tunisia",
-  "t": "state",
-  "u": "states#STATE_TUNISIA"
+  "t": "location",
+  "u": "locations/tunisia"
  },
  {
   "a": "tpi",
@@ -27265,8 +27265,8 @@
   "a": "state_turkmenia",
   "g": "Central Asia",
   "n": "Turkmenia",
-  "t": "state",
-  "u": "states#STATE_TURKMENIA"
+  "t": "location",
+  "u": "locations/turkmenia"
  },
  {
   "a": "trm",
@@ -27299,8 +27299,8 @@
   "a": "state_tuscany",
   "g": "Southern Europe",
   "n": "Tuscany",
-  "t": "state",
-  "u": "states#STATE_TUSCANY"
+  "t": "location",
+  "u": "locations/tuscany"
  },
  {
   "a": "tus",
@@ -27313,8 +27313,8 @@
   "a": "state_tuva",
   "g": "Siberia",
   "n": "Tuva",
-  "t": "state",
-  "u": "states#STATE_TUVA"
+  "t": "location",
+  "u": "locations/tuva"
  },
  {
   "a": "tuv",
@@ -27333,8 +27333,8 @@
   "a": "state_tver",
   "g": "Russia",
   "n": "Tver",
-  "t": "state",
-  "u": "states#STATE_TVER"
+  "t": "location",
+  "u": "locations/tver"
  },
  {
   "a": "sic",
@@ -27353,15 +27353,15 @@
   "a": "state_tyrol",
   "g": "Central Europe",
   "n": "Tyrol",
-  "t": "state",
-  "u": "states#STATE_TYROL"
+  "t": "location",
+  "u": "locations/tyrol"
  },
  {
   "a": "state_ubangi_shari",
   "g": "Equatorial Africa",
   "n": "Ubangi-Shari",
-  "t": "state",
-  "u": "states#STATE_UBANGI_SHARI"
+  "t": "location",
+  "u": "locations/ubangi_shari"
  },
  {
   "a": "udmurt",
@@ -27380,15 +27380,15 @@
   "a": "state_ufa",
   "g": "Russia",
   "n": "Ufa",
-  "t": "state",
-  "u": "states#STATE_UFA"
+  "t": "location",
+  "u": "locations/ufa"
  },
  {
   "a": "state_uganda",
   "g": "East Africa",
   "n": "Uganda",
-  "t": "state",
-  "u": "states#STATE_UGANDA"
+  "t": "location",
+  "u": "locations/uganda"
  },
  {
   "a": "ugrian",
@@ -27419,15 +27419,15 @@
   "a": "state_uliastai",
   "g": "North China",
   "n": "Uliastai",
-  "t": "state",
-  "u": "states#STATE_ULIASTAI"
+  "t": "location",
+  "u": "locations/uliastai"
  },
  {
   "a": "state_ulster",
   "g": "Western Europe",
   "n": "Ulster",
-  "t": "state",
-  "u": "states#STATE_ULSTER"
+  "t": "location",
+  "u": "locations/ulster"
  },
  {
   "a": "uls",
@@ -27461,8 +27461,8 @@
   "a": "state_umbria",
   "g": "Southern Europe",
   "n": "Umbria",
-  "t": "state",
-  "u": "states#STATE_UMBRIA"
+  "t": "location",
+  "u": "locations/umbria"
  },
  {
   "a": "events:law_events--unable_to_enact_events",
@@ -27624,22 +27624,22 @@
   "a": "state_upper_andalusia",
   "g": "Southern Europe",
   "n": "Upper Andalusia",
-  "t": "state",
-  "u": "states#STATE_UPPER_ANDALUSIA"
+  "t": "location",
+  "u": "locations/upper_andalusia"
  },
  {
   "a": "state_upper_egypt",
   "g": "Nile Basin",
   "n": "Upper Egypt",
-  "t": "state",
-  "u": "states#STATE_UPPER_EGYPT"
+  "t": "location",
+  "u": "locations/upper_egypt"
  },
  {
   "a": "state_upper_silesia",
   "g": "Central Europe",
   "n": "Upper Silesia",
-  "t": "state",
-  "u": "states#STATE_UPPER_SILESIA"
+  "t": "location",
+  "u": "locations/upper_silesia"
  },
  {
   "a": "concept_upper_strata",
@@ -27651,15 +27651,15 @@
   "a": "state_upper_yeniseysk",
   "g": "Siberia",
   "n": "Upper Yeniseysk",
-  "t": "state",
-  "u": "states#STATE_UPPER_YENISEYSK"
+  "t": "location",
+  "u": "locations/upper_yeniseysk"
  },
  {
   "a": "state_ural",
   "g": "Siberia",
   "n": "Ural",
-  "t": "state",
-  "u": "states#STATE_URAL"
+  "t": "location",
+  "u": "locations/ural"
  },
  {
   "a": "url",
@@ -27672,8 +27672,8 @@
   "a": "state_uralsk",
   "g": "Central Asia",
   "n": "Uralsk",
-  "t": "state",
-  "u": "states#STATE_URALSK"
+  "t": "location",
+  "u": "locations/uralsk"
  },
  {
   "a": "building_urban_center",
@@ -27721,15 +27721,15 @@
   "a": "state_urga",
   "g": "North China",
   "n": "Urga",
-  "t": "state",
-  "u": "states#STATE_URGA"
+  "t": "location",
+  "u": "locations/urga"
  },
  {
   "a": "state_urmia",
   "g": "Greater Persia",
   "n": "Urmia",
-  "t": "state",
-  "u": "states#STATE_URMIA"
+  "t": "location",
+  "u": "locations/urmia"
  },
  {
   "a": "company_ursus",
@@ -27743,8 +27743,8 @@
   "a": "state_uruguay",
   "g": "Brazil",
   "n": "Uruguay",
-  "t": "state",
-  "u": "states#STATE_URUGUAY"
+  "t": "location",
+  "u": "locations/uruguay"
  },
  {
   "a": "uru",
@@ -27770,8 +27770,8 @@
   "a": "state_utah",
   "g": "Pacific Coast",
   "n": "Utah",
-  "t": "state",
-  "u": "states#STATE_UTAH"
+  "t": "location",
+  "u": "locations/utah"
  },
  {
   "a": "ute",
@@ -27810,8 +27810,8 @@
   "a": "state_uusimaa",
   "g": "Northern Europe",
   "n": "Uusimaa",
-  "t": "state",
-  "u": "states#STATE_UUSIMAA"
+  "t": "location",
+  "u": "locations/uusimaa"
  },
  {
   "a": "uya",
@@ -27837,8 +27837,8 @@
   "a": "state_uzbekia",
   "g": "Central Asia",
   "n": "Uzbekia",
-  "t": "state",
-  "u": "states#STATE_UZBEKIA"
+  "t": "location",
+  "u": "locations/uzbekia"
  },
  {
   "a": "uzb",
@@ -27862,8 +27862,8 @@
   "a": "state_valencia",
   "g": "Southern Europe",
   "n": "Valencia",
-  "t": "state",
-  "u": "states#STATE_VALENCIA"
+  "t": "location",
+  "u": "locations/valencia"
  },
  {
   "a": "events:vampire_panic_events",
@@ -27883,8 +27883,8 @@
   "a": "state_vanuatu",
   "g": "Oceania",
   "n": "Vanuatu",
-  "t": "state",
-  "u": "states#STATE_VANUATU"
+  "t": "location",
+  "u": "locations/vanuatu"
  },
  {
   "a": "vnt",
@@ -27930,8 +27930,8 @@
   "a": "state_venetia",
   "g": "Southern Europe",
   "n": "Venetia",
-  "t": "state",
-  "u": "states#STATE_VENETIA"
+  "t": "location",
+  "u": "locations/venetia"
  },
  {
   "a": "vnz",
@@ -27957,15 +27957,15 @@
   "a": "state_veracruz",
   "g": "Central America",
   "n": "Veracruz",
-  "t": "state",
-  "u": "states#STATE_VERACRUZ"
+  "t": "location",
+  "u": "locations/veracruz"
  },
  {
   "a": "state_vermont",
   "g": "Atlantic Coast",
   "n": "Vermont",
-  "t": "state",
-  "u": "states#STATE_VERMONT"
+  "t": "location",
+  "u": "locations/vermont"
  },
  {
   "a": "events:iberia_events--vernacular_events",
@@ -27983,8 +27983,8 @@
   "a": "state_victoria",
   "g": "Oceania",
   "n": "Victoria",
-  "t": "state",
-  "u": "states#STATE_VICTORIA"
+  "t": "location",
+  "u": "locations/victoria"
  },
  {
   "a": "events:victoria_events",
@@ -28037,8 +28037,8 @@
   "a": "state_vilnius",
   "g": "Eastern Europe",
   "n": "Vilnius",
-  "t": "state",
-  "u": "states#STATE_VILNIUS"
+  "t": "location",
+  "u": "locations/vilnius"
  },
  {
   "a": "building_vineyard",
@@ -28059,8 +28059,8 @@
   "a": "state_virginia",
   "g": "Atlantic Coast",
   "n": "Virginia",
-  "t": "state",
-  "u": "states#STATE_VIRGINIA"
+  "t": "location",
+  "u": "locations/virginia"
  },
  {
   "a": "visayan",
@@ -28072,8 +28072,8 @@
   "a": "state_visayas",
   "g": "Indonesia",
   "n": "Visayas",
-  "t": "state",
-  "u": "states#STATE_VISAYAS"
+  "t": "location",
+  "u": "locations/visayas"
  },
  {
   "a": "concept_visibility",
@@ -28085,8 +28085,8 @@
   "a": "state_vitebsk",
   "g": "Eastern Europe",
   "n": "Vitsyebsk",
-  "t": "state",
-  "u": "states#STATE_VITEBSK"
+  "t": "location",
+  "u": "locations/vitebsk"
  },
  {
   "a": "company_vodka_monopoly",
@@ -28100,29 +28100,29 @@
   "a": "state_delvidek",
   "g": "Balkans",
   "n": "Vojvodina",
-  "t": "state",
-  "u": "states#STATE_DELVIDEK"
+  "t": "location",
+  "u": "locations/delvidek"
  },
  {
   "a": "state_volhynia",
   "g": "Eastern Europe",
   "n": "Volhynia",
-  "t": "state",
-  "u": "states#STATE_VOLHYNIA"
+  "t": "location",
+  "u": "locations/volhynia"
  },
  {
   "a": "state_galich",
   "g": "Russia",
   "n": "Vologda",
-  "t": "state",
-  "u": "states#STATE_GALICH"
+  "t": "location",
+  "u": "locations/galich"
  },
  {
   "a": "state_volta",
   "g": "West Africa",
   "n": "Volta",
-  "t": "state",
-  "u": "states#STATE_VOLTA"
+  "t": "location",
+  "u": "locations/volta"
  },
  {
   "a": "concept_votes",
@@ -28151,8 +28151,8 @@
   "a": "state_vyatka",
   "g": "Russia",
   "n": "Vyatka",
-  "t": "state",
-  "u": "states#STATE_VYATKA"
+  "t": "location",
+  "u": "locations/vyatka"
  },
  {
   "a": "wad",
@@ -28165,8 +28165,8 @@
   "a": "state_waddai",
   "g": "Equatorial Africa",
   "n": "Waddai",
-  "t": "state",
-  "u": "states#STATE_WADDAI"
+  "t": "location",
+  "u": "locations/waddai"
  },
  {
   "a": "company_wadia_shipbuilders",
@@ -28214,8 +28214,8 @@
   "a": "state_wales",
   "g": "Western Europe",
   "n": "Wales",
-  "t": "state",
-  "u": "states#STATE_WALES"
+  "t": "location",
+  "u": "locations/wales"
  },
  {
   "a": "wls",
@@ -28228,8 +28228,8 @@
   "a": "state_wallachia",
   "g": "Balkans",
   "n": "Wallachia",
-  "t": "state",
-  "u": "states#STATE_WALLACHIA"
+  "t": "location",
+  "u": "locations/wallachia"
  },
  {
   "a": "wal",
@@ -28242,8 +28242,8 @@
   "a": "state_wallonia",
   "g": "Western Europe",
   "n": "Wallonia",
-  "t": "state",
-  "u": "states#STATE_WALLONIA"
+  "t": "location",
+  "u": "locations/wallonia"
  },
  {
   "a": "wll",
@@ -28369,8 +28369,8 @@
   "a": "state_greater_poland",
   "g": "Eastern Europe",
   "n": "Warszawa",
-  "t": "state",
-  "u": "states#STATE_GREATER_POLAND"
+  "t": "location",
+  "u": "locations/greater_poland"
  },
  {
   "a": "watertube_boiler",
@@ -28440,8 +28440,8 @@
   "a": "state_west_aegean_islands",
   "g": "Balkans",
   "n": "West Aegean Islands",
-  "t": "state",
-  "u": "states#STATE_WEST_AEGEAN_ISLANDS"
+  "t": "location",
+  "u": "locations/west_aegean_islands"
  },
  {
   "a": "events:expedition_events--west_america_expedition_events",
@@ -28453,36 +28453,36 @@
   "a": "state_west_bengal",
   "g": "North India",
   "n": "West Bengal",
-  "t": "state",
-  "u": "states#STATE_WEST_BENGAL"
+  "t": "location",
+  "u": "locations/west_bengal"
  },
  {
   "a": "state_west_borneo",
   "g": "Indonesia",
   "n": "West Borneo",
-  "t": "state",
-  "u": "states#STATE_WEST_BORNEO"
+  "t": "location",
+  "u": "locations/west_borneo"
  },
  {
   "a": "state_west_country",
   "g": "Western Europe",
   "n": "West Country",
-  "t": "state",
-  "u": "states#STATE_WEST_COUNTRY"
+  "t": "location",
+  "u": "locations/west_country"
  },
  {
   "a": "state_west_galicia",
   "g": "Eastern Europe",
   "n": "West Galicia",
-  "t": "state",
-  "u": "states#STATE_WEST_GALICIA"
+  "t": "location",
+  "u": "locations/west_galicia"
  },
  {
   "a": "state_west_indies",
   "g": "Central America",
   "n": "West Indies",
-  "t": "state",
-  "u": "states#STATE_WEST_INDIES"
+  "t": "location",
+  "u": "locations/west_indies"
  },
  {
   "a": "win",
@@ -28495,43 +28495,43 @@
   "a": "state_west_java",
   "g": "Indonesia",
   "n": "West Java",
-  "t": "state",
-  "u": "states#STATE_WEST_JAVA"
+  "t": "location",
+  "u": "locations/west_java"
  },
  {
   "a": "state_west_karelia",
   "g": "Northern Europe",
   "n": "West Karelia",
-  "t": "state",
-  "u": "states#STATE_WEST_KARELIA"
+  "t": "location",
+  "u": "locations/west_karelia"
  },
  {
   "a": "state_west_micronesia",
   "g": "Oceania",
   "n": "West Micronesia",
-  "t": "state",
-  "u": "states#STATE_WEST_MICRONESIA"
+  "t": "location",
+  "u": "locations/west_micronesia"
  },
  {
   "a": "state_west_prussia",
   "g": "Eastern Europe",
   "n": "West Prussia",
-  "t": "state",
-  "u": "states#STATE_WEST_PRUSSIA"
+  "t": "location",
+  "u": "locations/west_prussia"
  },
  {
   "a": "state_west_sahara",
   "g": "North Africa",
   "n": "West Sahara",
-  "t": "state",
-  "u": "states#STATE_WEST_SAHARA"
+  "t": "location",
+  "u": "locations/west_sahara"
  },
  {
   "a": "state_west_switzerland",
   "g": "Central Europe",
   "n": "West Switzerland",
-  "t": "state",
-  "u": "states#STATE_WEST_SWITZERLAND"
+  "t": "location",
+  "u": "locations/west_switzerland"
  },
  {
   "a": "company_west_ural_petroleum",
@@ -28545,15 +28545,15 @@
   "a": "state_west_virginia",
   "g": "Atlantic Coast",
   "n": "West Virginia",
-  "t": "state",
-  "u": "states#STATE_WEST_VIRGINIA"
+  "t": "location",
+  "u": "locations/west_virginia"
  },
  {
   "a": "state_western_australia",
   "g": "Oceania",
   "n": "Western Australia",
-  "t": "state",
-  "u": "states#STATE_WESTERN_AUSTRALIA"
+  "t": "location",
+  "u": "locations/western_australia"
  },
  {
   "a": "was",
@@ -28566,8 +28566,8 @@
   "a": "state_western_cuba",
   "g": "Central America",
   "n": "Western Cuba",
-  "t": "state",
-  "u": "states#STATE_WESTERN_CUBA"
+  "t": "location",
+  "u": "locations/western_cuba"
  },
  {
   "a": "je_west_america_expedition",
@@ -28580,64 +28580,64 @@
   "a": "state_guangdong",
   "g": "South China",
   "n": "Western Guangdong",
-  "t": "state",
-  "u": "states#STATE_GUANGDONG"
+  "t": "location",
+  "u": "locations/guangdong"
  },
  {
   "a": "state_himalayas",
   "g": "Himalayas",
   "n": "Western Himalayas",
-  "t": "state",
-  "u": "states#STATE_HIMALAYAS"
+  "t": "location",
+  "u": "locations/himalayas"
  },
  {
   "a": "state_western_hubei",
   "g": "South China",
   "n": "Western Hubei",
-  "t": "state",
-  "u": "states#STATE_WESTERN_HUBEI"
+  "t": "location",
+  "u": "locations/western_hubei"
  },
  {
   "a": "state_western_mali",
   "g": "West Africa",
   "n": "Western Mali",
-  "t": "state",
-  "u": "states#STATE_WESTERN_MALI"
+  "t": "location",
+  "u": "locations/western_mali"
  },
  {
   "a": "state_western_new_guinea",
   "g": "Indonesia",
   "n": "Western New Guinea",
-  "t": "state",
-  "u": "states#STATE_WESTERN_NEW_GUINEA"
+  "t": "location",
+  "u": "locations/western_new_guinea"
  },
  {
   "a": "state_western_norway",
   "g": "Northern Europe",
   "n": "Western Norway",
-  "t": "state",
-  "u": "states#STATE_WESTERN_NORWAY"
+  "t": "location",
+  "u": "locations/western_norway"
  },
  {
   "a": "state_western_serbia",
   "g": "Balkans",
   "n": "Western Serbia",
-  "t": "state",
-  "u": "states#STATE_WESTERN_SERBIA"
+  "t": "location",
+  "u": "locations/western_serbia"
  },
  {
   "a": "state_western_thrace",
   "g": "Balkans",
   "n": "Western Thrace",
-  "t": "state",
-  "u": "states#STATE_WESTERN_THRACE"
+  "t": "location",
+  "u": "locations/western_thrace"
  },
  {
   "a": "state_westphalia",
   "g": "Central Europe",
   "n": "Westphalia",
-  "t": "state",
-  "u": "states#STATE_WESTPHALIA"
+  "t": "location",
+  "u": "locations/westphalia"
  },
  {
   "a": "wes",
@@ -28698,8 +28698,8 @@
   "a": "state_windward_coast",
   "g": "West Africa",
   "n": "Windward Coast",
-  "t": "state",
-  "u": "states#STATE_WINDWARD_COAST"
+  "t": "location",
+  "u": "locations/windward_coast"
  },
  {
   "a": "wine",
@@ -28728,8 +28728,8 @@
   "a": "state_wisconsin",
   "g": "Atlantic Coast",
   "n": "Wisconsin",
-  "t": "state",
-  "u": "states#STATE_WISCONSIN"
+  "t": "location",
+  "u": "locations/wisconsin"
  },
  {
   "a": "concept_withdrawn_ships",
@@ -28896,8 +28896,8 @@
   "a": "state_wurttemberg",
   "g": "Central Europe",
   "n": "Württemberg",
-  "t": "state",
-  "u": "states#STATE_WURTTEMBERG"
+  "t": "location",
+  "u": "locations/wurttemberg"
  },
  {
   "a": "wur",
@@ -28910,8 +28910,8 @@
   "a": "state_wyoming",
   "g": "Great Plains",
   "n": "Wyoming",
-  "t": "state",
-  "u": "states#STATE_WYOMING"
+  "t": "location",
+  "u": "locations/wyoming"
  },
  {
   "a": "xho",
@@ -28930,8 +28930,8 @@
   "a": "state_xian",
   "g": "North China",
   "n": "Xi’an",
-  "t": "state",
-  "u": "states#STATE_XIAN"
+  "t": "location",
+  "u": "locations/xian"
  },
  {
   "a": "xib",
@@ -28964,22 +28964,22 @@
   "a": "state_yakutsk",
   "g": "Siberia",
   "n": "Yakutsk",
-  "t": "state",
-  "u": "states#STATE_YAKUTSK"
+  "t": "location",
+  "u": "locations/yakutsk"
  },
  {
   "a": "state_yangho",
   "g": "Northeast Asia",
   "n": "Yangho",
-  "t": "state",
-  "u": "states#STATE_YANGHO"
+  "t": "location",
+  "u": "locations/yangho"
  },
  {
   "a": "state_pyongyang",
   "g": "Northeast Asia",
   "n": "Yangseo",
-  "t": "state",
-  "u": "states#STATE_PYONGYANG"
+  "t": "location",
+  "u": "locations/pyongyang"
  },
  {
   "a": "yankee",
@@ -28997,8 +28997,8 @@
   "a": "state_yaroslavl",
   "g": "Russia",
   "n": "Yaroslavl",
-  "t": "state",
-  "u": "states#STATE_YAROSLAVL"
+  "t": "location",
+  "u": "locations/yaroslavl"
  },
  {
   "a": "company_yasuda",
@@ -29025,8 +29025,8 @@
   "a": "state_yemen",
   "g": "Arabia",
   "n": "Yemen",
-  "t": "state",
-  "u": "states#STATE_YEMEN"
+  "t": "location",
+  "u": "locations/yemen"
  },
  {
   "a": "yem",
@@ -29045,15 +29045,15 @@
   "a": "state_busan",
   "g": "Northeast Asia",
   "n": "Yeongnam",
-  "t": "state",
-  "u": "states#STATE_BUSAN"
+  "t": "location",
+  "u": "locations/busan"
  },
  {
   "a": "state_hokkaido",
   "g": "Northeast Asia",
   "n": "Yezo",
-  "t": "state",
-  "u": "states#STATE_HOKKAIDO"
+  "t": "location",
+  "u": "locations/hokkaido"
  },
  {
   "a": "yi",
@@ -29087,8 +29087,8 @@
   "a": "state_yorkshire",
   "g": "Western Europe",
   "n": "Yorkshire",
-  "t": "state",
-  "u": "states#STATE_YORKSHIRE"
+  "t": "location",
+  "u": "locations/yorkshire"
  },
  {
   "a": "yyt",
@@ -29107,8 +29107,8 @@
   "a": "state_yoruba_states",
   "g": "West Africa",
   "n": "Yoruba States",
-  "t": "state",
-  "u": "states#STATE_YORUBA_STATES"
+  "t": "location",
+  "u": "locations/yoruba_states"
  },
  {
   "a": "yuanzhumin",
@@ -29127,8 +29127,8 @@
   "a": "state_yucatan",
   "g": "Central America",
   "n": "Yucatán",
-  "t": "state",
-  "u": "states#STATE_YUCATAN"
+  "t": "location",
+  "u": "locations/yucatan"
  },
  {
   "a": "yuc",
@@ -29167,15 +29167,15 @@
   "a": "state_yukon_territory",
   "g": "Pacific Coast",
   "n": "Yukon Territory",
-  "t": "state",
-  "u": "states#STATE_YUKON_TERRITORY"
+  "t": "location",
+  "u": "locations/yukon_territory"
  },
  {
   "a": "state_yunnan",
   "g": "South China",
   "n": "Yunnan",
-  "t": "state",
-  "u": "states#STATE_YUNNAN"
+  "t": "location",
+  "u": "locations/yunnan"
  },
  {
   "a": "yun",
@@ -29195,8 +29195,8 @@
   "a": "state_zacatecas",
   "g": "Central America",
   "n": "Zacatecas",
-  "t": "state",
-  "u": "states#STATE_ZACATECAS"
+  "t": "location",
+  "u": "locations/zacatecas"
  },
  {
   "a": "concept_zaibatsu",
@@ -29208,29 +29208,29 @@
   "a": "state_zambezi",
   "g": "East Africa",
   "n": "Zambezi",
-  "t": "state",
-  "u": "states#STATE_ZAMBEZI"
+  "t": "location",
+  "u": "locations/zambezi"
  },
  {
   "a": "state_zambezia",
   "g": "East Africa",
   "n": "Zambezia",
-  "t": "state",
-  "u": "states#STATE_ZAMBEZIA"
+  "t": "location",
+  "u": "locations/zambezia"
  },
  {
   "a": "state_zambia",
   "g": "East Africa",
   "n": "Zambia",
-  "t": "state",
-  "u": "states#STATE_ZAMBIA"
+  "t": "location",
+  "u": "locations/zambia"
  },
  {
   "a": "state_zanzibar",
   "g": "East Africa",
   "n": "Zanzibar",
-  "t": "state",
-  "u": "states#STATE_ZANZIBAR"
+  "t": "location",
+  "u": "locations/zanzibar"
  },
  {
   "a": "zan",
@@ -29263,8 +29263,8 @@
   "a": "state_zealand",
   "g": "Northern Europe",
   "n": "Zealand",
-  "t": "state",
-  "u": "states#STATE_ZEALAND"
+  "t": "location",
+  "u": "locations/zealand"
  },
  {
   "a": "zeppelins",
@@ -29281,8 +29281,8 @@
   "a": "state_zhejiang",
   "g": "South China",
   "n": "Zhejiang",
-  "t": "state",
-  "u": "states#STATE_ZHEJIANG"
+  "t": "location",
+  "u": "locations/zhejiang"
  },
  {
   "a": "zhi",
@@ -29308,8 +29308,8 @@
   "a": "state_zulia",
   "g": "Gran Colombia",
   "n": "Zulia",
-  "t": "state",
-  "u": "states#STATE_ZULIA"
+  "t": "location",
+  "u": "locations/zulia"
  },
  {
   "a": "zul",
@@ -29328,8 +29328,8 @@
   "a": "state_zululand",
   "g": "Southern Africa",
   "n": "Zululand",
-  "t": "state",
-  "u": "states#STATE_ZULULAND"
+  "t": "location",
+  "u": "locations/zululand"
  },
  {
   "a": "zwy",

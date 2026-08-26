@@ -137,9 +137,9 @@ export const TABS: Tab[] = [
     summary: 'Every 1836 country — tier, capital, cultures, starting setup',
   },
   {
-    slug: 'states', icon: '⛰️', label: 'States', section: 'World',
+    slug: 'states', icon: '⛰️', label: 'Locations', section: 'World',
     status: 'built',
-    summary: 'State regions — arable land, resources, traits, homelands',
+    summary: 'Every state region — 1836 owner, population, buildings, goods, resources',
   },
   {
     slug: 'cultures', icon: '🌍', label: 'Cultures & Religions', section: 'World',

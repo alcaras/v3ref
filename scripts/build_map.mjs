@@ -70,6 +70,20 @@ for (let p = 0, q = 0; p < raw.length; p += 3, q += 4) {
   if (idx) landPixels++;
 }
 
+// Per-state bounding box + pixel count, so a location page can crop the shared
+// index image to that state instead of shipping 675 little PNGs.
+const bbox = {};
+for (let y = 0, i = 0; y < H; y++) {
+  for (let x = 0; x < W; x++, i++) {
+    const idx = out[i * 4] | (out[i * 4 + 1] << 8);
+    if (!idx) continue;
+    const b = (bbox[idx] ??= { x0: x, y0: y, x1: x, y1: y, n: 0 });
+    if (x < b.x0) b.x0 = x; if (x > b.x1) b.x1 = x;
+    if (y < b.y0) b.y0 = y; if (y > b.y1) b.y1 = y;
+    b.n++;
+  }
+}
+
 mkdirSync(new URL('../public/img/map/', import.meta.url).pathname, { recursive: true });
 const pngPath = new URL('../public/img/map/states.png', import.meta.url).pathname;
 execFileSync('magick', ['-size', `${W}x${H}`, '-depth', '8', 'RGBA:-', pngPath], { input: out });
@@ -102,6 +116,18 @@ for (const [group, name] of [...discoverGroups.entries()].sort((a, b) => a[1].lo
   layers.push({ key: `find:${group}`, name: `${name} (undiscovered)`, kind: 'discoverable', unit: 'hidden levels' });
 }
 
+// Layers from the 1836 starting map: what each state actually produces, and
+// how many people live there. "Where is rubber made?" is a different question
+// from "where can rubber be made", so both belong on the map.
+const { locations } = gen('locations.json');
+const locById = new Map(locations.map((l) => [l.id, l]));
+const producedGoods = new Map();
+for (const l of locations) for (const g of l.produces) producedGoods.set(g.id, g.name);
+for (const [id, name] of [...producedGoods.entries()].sort((a, b) => a[1].localeCompare(b[1]))) {
+  layers.push({ key: `good:${id}`, name: `${name} produced`, kind: 'good', unit: 'units/week at start' });
+}
+layers.push({ key: 'pop', name: 'Population', kind: 'pop', unit: 'people' });
+
 // ── Per-state values, keyed by the same index the image encodes ─────
 const values = {};   // layerKey -> { stateIndex: amount }
 const put = (key, idx, amount) => {
@@ -115,11 +141,16 @@ for (const s of states) {
   for (const r of s.cappedResources) put(`cap:${r.id}`, idx, r.cap);
   put('arable', idx, s.arableLand);
   for (const d of s.discoverables) if (d.group) put(`find:${d.group}`, idx, d.amount ?? 0);
+  const l = locById.get(s.id);
+  if (l) {
+    for (const g of l.produces) put(`good:${g.id}`, idx, g.amount);
+    put('pop', idx, l.population);
+  }
 }
 
 writeFileSync(
   new URL('../public/data/map.json', import.meta.url).pathname,
-  stableStringify({ width: W, height: H, layers, values, states: stateMeta }, 0),
+  stableStringify({ width: W, height: H, layers, values, states: stateMeta, bbox }, 0),
 );
 
 const covered = Object.keys(stateMeta).length;

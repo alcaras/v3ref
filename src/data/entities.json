@@ -28697,5229 +28697,5229 @@
    "icon": null,
    "id": "STATE_ABRUZZO",
    "name": "Abruzzo",
-   "page": "states#STATE_ABRUZZO",
-   "slug": "STATE_ABRUZZO",
-   "type": "state"
+   "page": "locations/abruzzo",
+   "slug": "abruzzo",
+   "type": "location"
   },
   {
    "group": "Arabia",
    "icon": null,
    "id": "STATE_ABU_DHABI",
    "name": "Trucial Coast",
-   "page": "states#STATE_ABU_DHABI",
-   "slug": "STATE_ABU_DHABI",
-   "type": "state"
+   "page": "locations/abu_dhabi",
+   "slug": "abu_dhabi",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_ACEH",
    "name": "Aceh",
-   "page": "states#STATE_ACEH",
-   "slug": "STATE_ACEH",
-   "type": "state"
+   "page": "locations/aceh",
+   "slug": "aceh",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_ACRE",
    "name": "Acre",
-   "page": "states#STATE_ACRE",
-   "slug": "STATE_ACRE",
-   "type": "state"
+   "page": "locations/acre",
+   "slug": "acre",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_ADANA",
    "name": "Adana",
-   "page": "states#STATE_ADANA",
-   "slug": "STATE_ADANA",
-   "type": "state"
+   "page": "locations/adana",
+   "slug": "adana",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_AGRA",
    "name": "Agra",
-   "page": "states#STATE_AGRA",
-   "slug": "STATE_AGRA",
-   "type": "state"
+   "page": "locations/agra",
+   "slug": "agra",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_AKMOLINSK",
    "name": "Akmolinsk",
-   "page": "states#STATE_AKMOLINSK",
-   "slug": "STATE_AKMOLINSK",
-   "type": "state"
+   "page": "locations/akmolinsk",
+   "slug": "akmolinsk",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_AKTOBE",
    "name": "Aktobe",
-   "page": "states#STATE_AKTOBE",
-   "slug": "STATE_AKTOBE",
-   "type": "state"
+   "page": "locations/aktobe",
+   "slug": "aktobe",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_AL_RIF",
    "name": "al Rif",
-   "page": "states#STATE_AL_RIF",
-   "slug": "STATE_AL_RIF",
-   "type": "state"
+   "page": "locations/al_rif",
+   "slug": "al_rif",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_ALABAMA",
    "name": "Alabama",
-   "page": "states#STATE_ALABAMA",
-   "slug": "STATE_ALABAMA",
-   "type": "state"
+   "page": "locations/alabama",
+   "slug": "alabama",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_ALAND",
    "name": "Åland",
-   "page": "states#STATE_ALAND",
-   "slug": "STATE_ALAND",
-   "type": "state"
+   "page": "locations/aland",
+   "slug": "aland",
+   "type": "location"
   },
   {
    "group": "Pacific Coast",
    "icon": null,
    "id": "STATE_ALASKA",
    "name": "Alaska",
-   "page": "states#STATE_ALASKA",
-   "slug": "STATE_ALASKA",
-   "type": "state"
+   "page": "locations/alaska",
+   "slug": "alaska",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_ALBANIA",
    "name": "Albania",
-   "page": "states#STATE_ALBANIA",
-   "slug": "STATE_ALBANIA",
-   "type": "state"
+   "page": "locations/albania",
+   "slug": "albania",
+   "type": "location"
   },
   {
    "group": "Canada",
    "icon": null,
    "id": "STATE_ALBERTA",
    "name": "Alberta",
-   "page": "states#STATE_ALBERTA",
-   "slug": "STATE_ALBERTA",
-   "type": "state"
+   "page": "locations/alberta",
+   "slug": "alberta",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_ALENTEJO",
    "name": "Alentejo",
-   "page": "states#STATE_ALENTEJO",
-   "slug": "STATE_ALENTEJO",
-   "type": "state"
+   "page": "locations/alentejo",
+   "slug": "alentejo",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_ALEPPO",
    "name": "Aleppo",
-   "page": "states#STATE_ALEPPO",
-   "slug": "STATE_ALEPPO",
-   "type": "state"
+   "page": "locations/aleppo",
+   "slug": "aleppo",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_ALGIERS",
    "name": "Algiers",
-   "page": "states#STATE_ALGIERS",
-   "slug": "STATE_ALGIERS",
-   "type": "state"
+   "page": "locations/algiers",
+   "slug": "algiers",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_ALSACE_LORRAINE",
    "name": "Alsace-Lorraine",
-   "page": "states#STATE_ALSACE_LORRAINE",
-   "slug": "STATE_ALSACE_LORRAINE",
-   "type": "state"
+   "page": "locations/alsace_lorraine",
+   "slug": "alsace_lorraine",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_ALTAI",
    "name": "Altai",
-   "page": "states#STATE_ALTAI",
-   "slug": "STATE_ALTAI",
-   "type": "state"
+   "page": "locations/altai",
+   "slug": "altai",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_ALTO_PARAGUAY",
    "name": "Alto Paraguay",
-   "page": "states#STATE_ALTO_PARAGUAY",
-   "slug": "STATE_ALTO_PARAGUAY",
-   "type": "state"
+   "page": "locations/alto_paraguay",
+   "slug": "alto_paraguay",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_ALXA",
    "name": "Alxa",
-   "page": "states#STATE_ALXA",
-   "slug": "STATE_ALXA",
-   "type": "state"
+   "page": "locations/alxa",
+   "slug": "alxa",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_AMAZONAS",
    "name": "Amazonas",
-   "page": "states#STATE_AMAZONAS",
-   "slug": "STATE_AMAZONAS",
-   "type": "state"
+   "page": "locations/amazonas",
+   "slug": "amazonas",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_AMHARA",
    "name": "Amhara",
-   "page": "states#STATE_AMHARA",
-   "slug": "STATE_AMHARA",
-   "type": "state"
+   "page": "locations/amhara",
+   "slug": "amhara",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_AMUR",
    "name": "Northern Heilongjiang",
-   "page": "states#STATE_AMUR",
-   "slug": "STATE_AMUR",
-   "type": "state"
+   "page": "locations/amur",
+   "slug": "amur",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_ANHALT",
    "name": "Anhalt",
-   "page": "states#STATE_ANHALT",
-   "slug": "STATE_ANHALT",
-   "type": "state"
+   "page": "locations/anhalt",
+   "slug": "anhalt",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_ANKARA",
    "name": "Ankara",
-   "page": "states#STATE_ANKARA",
-   "slug": "STATE_ANKARA",
-   "type": "state"
+   "page": "locations/ankara",
+   "slug": "ankara",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_ANNAM",
    "name": "Annam",
-   "page": "states#STATE_ANNAM",
-   "slug": "STATE_ANNAM",
-   "type": "state"
+   "page": "locations/annam",
+   "slug": "annam",
+   "type": "location"
   },
   {
    "group": "Gran Colombia",
    "icon": null,
    "id": "STATE_ANTIOQUIA",
    "name": "Antioquia",
-   "page": "states#STATE_ANTIOQUIA",
-   "slug": "STATE_ANTIOQUIA",
-   "type": "state"
+   "page": "locations/antioquia",
+   "slug": "antioquia",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_ANTOFAGASTA",
    "name": "Antofagasta",
-   "page": "states#STATE_ANTOFAGASTA",
-   "slug": "STATE_ANTOFAGASTA",
-   "type": "state"
+   "page": "locations/antofagasta",
+   "slug": "antofagasta",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_APULIA",
    "name": "Apulia",
-   "page": "states#STATE_APULIA",
-   "slug": "STATE_APULIA",
-   "type": "state"
+   "page": "locations/apulia",
+   "slug": "apulia",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_AQUITAINE",
    "name": "Aquitaine",
-   "page": "states#STATE_AQUITAINE",
-   "slug": "STATE_AQUITAINE",
-   "type": "state"
+   "page": "locations/aquitaine",
+   "slug": "aquitaine",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_ARAGON",
    "name": "Aragon",
-   "page": "states#STATE_ARAGON",
-   "slug": "STATE_ARAGON",
-   "type": "state"
+   "page": "locations/aragon",
+   "slug": "aragon",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_ARAKAN",
    "name": "Arakan",
-   "page": "states#STATE_ARAKAN",
-   "slug": "STATE_ARAKAN",
-   "type": "state"
+   "page": "locations/arakan",
+   "slug": "arakan",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_ARAUCANIA",
    "name": "Araucania",
-   "page": "states#STATE_ARAUCANIA",
-   "slug": "STATE_ARAUCANIA",
-   "type": "state"
+   "page": "locations/araucania",
+   "slug": "araucania",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_AREQUIPA",
    "name": "Arequipa",
-   "page": "states#STATE_AREQUIPA",
-   "slug": "STATE_AREQUIPA",
-   "type": "state"
+   "page": "locations/arequipa",
+   "slug": "arequipa",
+   "type": "location"
   },
   {
    "group": "Pacific Coast",
    "icon": null,
    "id": "STATE_ARIZONA",
    "name": "Arizona",
-   "page": "states#STATE_ARIZONA",
-   "slug": "STATE_ARIZONA",
-   "type": "state"
+   "page": "locations/arizona",
+   "slug": "arizona",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_ARKANSAS",
    "name": "Arkansas",
-   "page": "states#STATE_ARKANSAS",
-   "slug": "STATE_ARKANSAS",
-   "type": "state"
+   "page": "locations/arkansas",
+   "slug": "arkansas",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_ARKHANGELSK",
    "name": "Arkhangelsk",
-   "page": "states#STATE_ARKHANGELSK",
-   "slug": "STATE_ARKHANGELSK",
-   "type": "state"
+   "page": "locations/arkhangelsk",
+   "slug": "arkhangelsk",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_ARMENIA",
    "name": "Armenia",
-   "page": "states#STATE_ARMENIA",
-   "slug": "STATE_ARMENIA",
-   "type": "state"
+   "page": "locations/armenia",
+   "slug": "armenia",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_ASSAM",
    "name": "Assam",
-   "page": "states#STATE_ASSAM",
-   "slug": "STATE_ASSAM",
-   "type": "state"
+   "page": "locations/assam",
+   "slug": "assam",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_ASTRAKHAN",
    "name": "Astrakhan",
-   "page": "states#STATE_ASTRAKHAN",
-   "slug": "STATE_ASTRAKHAN",
-   "type": "state"
+   "page": "locations/astrakhan",
+   "slug": "astrakhan",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_ASTURIAS",
    "name": "Asturias",
-   "page": "states#STATE_ASTURIAS",
-   "slug": "STATE_ASTURIAS",
-   "type": "state"
+   "page": "locations/asturias",
+   "slug": "asturias",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_ATTICA",
    "name": "Attica",
-   "page": "states#STATE_ATTICA",
-   "slug": "STATE_ATTICA",
-   "type": "state"
+   "page": "locations/attica",
+   "slug": "attica",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_AUSTRIA",
    "name": "Austria",
-   "page": "states#STATE_AUSTRIA",
-   "slug": "STATE_AUSTRIA",
-   "type": "state"
+   "page": "locations/austria",
+   "slug": "austria",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_AUVERGNE_LIMOUSIN",
    "name": "Auvergne-Limousin",
-   "page": "states#STATE_AUVERGNE_LIMOUSIN",
-   "slug": "STATE_AUVERGNE_LIMOUSIN",
-   "type": "state"
+   "page": "locations/auvergne_limousin",
+   "slug": "auvergne_limousin",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_AWADH",
    "name": "Oudh",
-   "page": "states#STATE_AWADH",
-   "slug": "STATE_AWADH",
-   "type": "state"
+   "page": "locations/awadh",
+   "slug": "awadh",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_AYDIN",
    "name": "Aydin",
-   "page": "states#STATE_AYDIN",
-   "slug": "STATE_AYDIN",
-   "type": "state"
+   "page": "locations/aydin",
+   "slug": "aydin",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_AZERBAIJAN",
    "name": "Baku",
-   "page": "states#STATE_AZERBAIJAN",
-   "slug": "STATE_AZERBAIJAN",
-   "type": "state"
+   "page": "locations/azerbaijan",
+   "slug": "azerbaijan",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_AZORES",
    "name": "Azores",
-   "page": "states#STATE_AZORES",
-   "slug": "STATE_AZORES",
-   "type": "state"
+   "page": "locations/azores",
+   "slug": "azores",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_BADEN",
    "name": "Baden",
-   "page": "states#STATE_BADEN",
-   "slug": "STATE_BADEN",
-   "type": "state"
+   "page": "locations/baden",
+   "slug": "baden",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_BAGHDAD",
    "name": "Baghdad",
-   "page": "states#STATE_BAGHDAD",
-   "slug": "STATE_BAGHDAD",
-   "type": "state"
+   "page": "locations/baghdad",
+   "slug": "baghdad",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_BAHAMAS",
    "name": "Bahamas",
-   "page": "states#STATE_BAHAMAS",
-   "slug": "STATE_BAHAMAS",
-   "type": "state"
+   "page": "locations/bahamas",
+   "slug": "bahamas",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_BAHIA",
    "name": "Bahia",
-   "page": "states#STATE_BAHIA",
-   "slug": "STATE_BAHIA",
-   "type": "state"
+   "page": "locations/bahia",
+   "slug": "bahia",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_BAJA_CALIFORNIA",
    "name": "Baja California",
-   "page": "states#STATE_BAJA_CALIFORNIA",
-   "slug": "STATE_BAJA_CALIFORNIA",
-   "type": "state"
+   "page": "locations/baja_california",
+   "slug": "baja_california",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_BAJIO",
    "name": "Bajío",
-   "page": "states#STATE_BAJIO",
-   "slug": "STATE_BAJIO",
-   "type": "state"
+   "page": "locations/bajio",
+   "slug": "bajio",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_BAJO_PARAGUAY",
    "name": "Bajo Paraguay",
-   "page": "states#STATE_BAJO_PARAGUAY",
-   "slug": "STATE_BAJO_PARAGUAY",
-   "type": "state"
+   "page": "locations/bajo_paraguay",
+   "slug": "bajo_paraguay",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_BALEARIC_ISLANDS",
    "name": "Balearic Islands",
-   "page": "states#STATE_BALEARIC_ISLANDS",
-   "slug": "STATE_BALEARIC_ISLANDS",
-   "type": "state"
+   "page": "locations/balearic_islands",
+   "slug": "balearic_islands",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_BALKH",
    "name": "Southern Turkestan",
-   "page": "states#STATE_BALKH",
-   "slug": "STATE_BALKH",
-   "type": "state"
+   "page": "locations/balkh",
+   "slug": "balkh",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_BALUCHISTAN",
    "name": "Baluchistan",
-   "page": "states#STATE_BALUCHISTAN",
-   "slug": "STATE_BALUCHISTAN",
-   "type": "state"
+   "page": "locations/baluchistan",
+   "slug": "baluchistan",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_BANAT",
    "name": "Banat",
-   "page": "states#STATE_BANAT",
-   "slug": "STATE_BANAT",
-   "type": "state"
+   "page": "locations/banat",
+   "slug": "banat",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_BANGKOK",
    "name": "Bangkok",
-   "page": "states#STATE_BANGKOK",
-   "slug": "STATE_BANGKOK",
-   "type": "state"
+   "page": "locations/bangkok",
+   "slug": "bangkok",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_BAS_CONGO",
    "name": "Lower Congo",
-   "page": "states#STATE_BAS_CONGO",
-   "slug": "STATE_BAS_CONGO",
-   "type": "state"
+   "page": "locations/bas_congo",
+   "slug": "bas_congo",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_BASQUE_COUNTRY",
    "name": "Basque Country",
-   "page": "states#STATE_BASQUE_COUNTRY",
-   "slug": "STATE_BASQUE_COUNTRY",
-   "type": "state"
+   "page": "locations/basque_country",
+   "slug": "basque_country",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_BASRA",
    "name": "Basra",
-   "page": "states#STATE_BASRA",
-   "slug": "STATE_BASRA",
-   "type": "state"
+   "page": "locations/basra",
+   "slug": "basra",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_BAVARIA",
    "name": "Bavaria",
-   "page": "states#STATE_BAVARIA",
-   "slug": "STATE_BAVARIA",
-   "type": "state"
+   "page": "locations/bavaria",
+   "slug": "bavaria",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_BEIJING",
    "name": "Beijing",
-   "page": "states#STATE_BEIJING",
-   "slug": "STATE_BEIJING",
-   "type": "state"
+   "page": "locations/beijing",
+   "slug": "beijing",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_BEIRA",
    "name": "Beira",
-   "page": "states#STATE_BEIRA",
-   "slug": "STATE_BEIRA",
-   "type": "state"
+   "page": "locations/beira",
+   "slug": "beira",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_BEKES",
    "name": "Partium",
-   "page": "states#STATE_BEKES",
-   "slug": "STATE_BEKES",
-   "type": "state"
+   "page": "locations/bekes",
+   "slug": "bekes",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_BENIN",
    "name": "Benin",
-   "page": "states#STATE_BENIN",
-   "slug": "STATE_BENIN",
-   "type": "state"
+   "page": "locations/benin",
+   "slug": "benin",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_BERMUDA",
    "name": "Bermuda",
-   "page": "states#STATE_BERMUDA",
-   "slug": "STATE_BERMUDA",
-   "type": "state"
+   "page": "locations/bermuda",
+   "slug": "bermuda",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_BESSARABIA",
    "name": "Bessarabia",
-   "page": "states#STATE_BESSARABIA",
-   "slug": "STATE_BESSARABIA",
-   "type": "state"
+   "page": "locations/bessarabia",
+   "slug": "bessarabia",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_BIHAR",
    "name": "Bihar",
-   "page": "states#STATE_BIHAR",
-   "slug": "STATE_BIHAR",
-   "type": "state"
+   "page": "locations/bihar",
+   "slug": "bihar",
+   "type": "location"
   },
   {
    "group": "Nile Basin",
    "icon": null,
    "id": "STATE_BLUE_NILE",
    "name": "Blue Nile",
-   "page": "states#STATE_BLUE_NILE",
-   "slug": "STATE_BLUE_NILE",
-   "type": "state"
+   "page": "locations/blue_nile",
+   "slug": "blue_nile",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_BOHEMIA",
    "name": "Bohemia",
-   "page": "states#STATE_BOHEMIA",
-   "slug": "STATE_BOHEMIA",
-   "type": "state"
+   "page": "locations/bohemia",
+   "slug": "bohemia",
+   "type": "location"
   },
   {
    "group": "Gran Colombia",
    "icon": null,
    "id": "STATE_BOLIVAR",
    "name": "Bolívar",
-   "page": "states#STATE_BOLIVAR",
-   "slug": "STATE_BOLIVAR",
-   "type": "state"
+   "page": "locations/bolivar",
+   "slug": "bolivar",
+   "type": "location"
   },
   {
    "group": "South India",
    "icon": null,
    "id": "STATE_BOMBAY",
    "name": "Bombay",
-   "page": "states#STATE_BOMBAY",
-   "slug": "STATE_BOMBAY",
-   "type": "state"
+   "page": "locations/bombay",
+   "slug": "bombay",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_BORNU",
    "name": "Bornu",
-   "page": "states#STATE_BORNU",
-   "slug": "STATE_BORNU",
-   "type": "state"
+   "page": "locations/bornu",
+   "slug": "bornu",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_BOSNIA",
    "name": "Bosnia",
-   "page": "states#STATE_BOSNIA",
-   "slug": "STATE_BOSNIA",
-   "type": "state"
+   "page": "locations/bosnia",
+   "slug": "bosnia",
+   "type": "location"
   },
   {
    "group": "Southern Africa",
    "icon": null,
    "id": "STATE_BOTSWANA",
    "name": "Botswana",
-   "page": "states#STATE_BOTSWANA",
-   "slug": "STATE_BOTSWANA",
-   "type": "state"
+   "page": "locations/botswana",
+   "slug": "botswana",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_BOUGAINVILLE",
    "name": "Bougainville",
-   "page": "states#STATE_BOUGAINVILLE",
-   "slug": "STATE_BOUGAINVILLE",
-   "type": "state"
+   "page": "locations/bougainville",
+   "slug": "bougainville",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_BRANDENBURG",
    "name": "Brandenburg",
-   "page": "states#STATE_BRANDENBURG",
-   "slug": "STATE_BRANDENBURG",
-   "type": "state"
+   "page": "locations/brandenburg",
+   "slug": "brandenburg",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_BREST",
    "name": "Hrodna",
-   "page": "states#STATE_BREST",
-   "slug": "STATE_BREST",
-   "type": "state"
+   "page": "locations/brest",
+   "slug": "brest",
+   "type": "location"
   },
   {
    "group": "Pacific Coast",
    "icon": null,
    "id": "STATE_BRITISH_COLUMBIA",
    "name": "Northern Columbia",
-   "page": "states#STATE_BRITISH_COLUMBIA",
-   "slug": "STATE_BRITISH_COLUMBIA",
-   "type": "state"
+   "page": "locations/british_columbia",
+   "slug": "british_columbia",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_BRITTANY",
    "name": "Brittany",
-   "page": "states#STATE_BRITTANY",
-   "slug": "STATE_BRITTANY",
-   "type": "state"
+   "page": "locations/brittany",
+   "slug": "brittany",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_BRUNSWICK",
    "name": "Brunswick",
-   "page": "states#STATE_BRUNSWICK",
-   "slug": "STATE_BRUNSWICK",
-   "type": "state"
+   "page": "locations/brunswick",
+   "slug": "brunswick",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_BUENOS_AIRES",
    "name": "Buenos Aires",
-   "page": "states#STATE_BUENOS_AIRES",
-   "slug": "STATE_BUENOS_AIRES",
-   "type": "state"
+   "page": "locations/buenos_aires",
+   "slug": "buenos_aires",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_BUKOVINA",
    "name": "Bukovina",
-   "page": "states#STATE_BUKOVINA",
-   "slug": "STATE_BUKOVINA",
-   "type": "state"
+   "page": "locations/bukovina",
+   "slug": "bukovina",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_BULGARIA",
    "name": "Bulgaria",
-   "page": "states#STATE_BULGARIA",
-   "slug": "STATE_BULGARIA",
-   "type": "state"
+   "page": "locations/bulgaria",
+   "slug": "bulgaria",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_BUNDELKHAND",
    "name": "Bundelkhand",
-   "page": "states#STATE_BUNDELKHAND",
-   "slug": "STATE_BUNDELKHAND",
-   "type": "state"
+   "page": "locations/bundelkhand",
+   "slug": "bundelkhand",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_BURGUNDY",
    "name": "Burgundy",
-   "page": "states#STATE_BURGUNDY",
-   "slug": "STATE_BURGUNDY",
-   "type": "state"
+   "page": "locations/burgundy",
+   "slug": "burgundy",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_BURYATIA",
    "name": "Buryatia",
-   "page": "states#STATE_BURYATIA",
-   "slug": "STATE_BURYATIA",
-   "type": "state"
+   "page": "locations/buryatia",
+   "slug": "buryatia",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_BUSAN",
    "name": "Yeongnam",
-   "page": "states#STATE_BUSAN",
-   "slug": "STATE_BUSAN",
-   "type": "state"
+   "page": "locations/busan",
+   "slug": "busan",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_CAJAMARCA",
    "name": "Cajamarca",
-   "page": "states#STATE_CAJAMARCA",
-   "slug": "STATE_CAJAMARCA",
-   "type": "state"
+   "page": "locations/cajamarca",
+   "slug": "cajamarca",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_CALABRIA",
    "name": "Calabria",
-   "page": "states#STATE_CALABRIA",
-   "slug": "STATE_CALABRIA",
-   "type": "state"
+   "page": "locations/calabria",
+   "slug": "calabria",
+   "type": "location"
   },
   {
    "group": "Pacific Coast",
    "icon": null,
    "id": "STATE_CALIFORNIA",
    "name": "California",
-   "page": "states#STATE_CALIFORNIA",
-   "slug": "STATE_CALIFORNIA",
-   "type": "state"
+   "page": "locations/california",
+   "slug": "california",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_CAMBODIA",
    "name": "Cambodia",
-   "page": "states#STATE_CAMBODIA",
-   "slug": "STATE_CAMBODIA",
-   "type": "state"
+   "page": "locations/cambodia",
+   "slug": "cambodia",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_CAMPANIA",
    "name": "Campania",
-   "page": "states#STATE_CAMPANIA",
-   "slug": "STATE_CAMPANIA",
-   "type": "state"
+   "page": "locations/campania",
+   "slug": "campania",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_CANARY_ISLANDS",
    "name": "Canary Islands",
-   "page": "states#STATE_CANARY_ISLANDS",
-   "slug": "STATE_CANARY_ISLANDS",
-   "type": "state"
+   "page": "locations/canary_islands",
+   "slug": "canary_islands",
+   "type": "location"
   },
   {
    "group": "Southern Africa",
    "icon": null,
    "id": "STATE_CAPE_COLONY",
    "name": "Cape Colony",
-   "page": "states#STATE_CAPE_COLONY",
-   "slug": "STATE_CAPE_COLONY",
-   "type": "state"
+   "page": "locations/cape_colony",
+   "slug": "cape_colony",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_CAPE_VERDE",
    "name": "Cape Verde",
-   "page": "states#STATE_CAPE_VERDE",
-   "slug": "STATE_CAPE_VERDE",
-   "type": "state"
+   "page": "locations/cape_verde",
+   "slug": "cape_verde",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_CATALONIA",
    "name": "Catalonia",
-   "page": "states#STATE_CATALONIA",
-   "slug": "STATE_CATALONIA",
-   "type": "state"
+   "page": "locations/catalonia",
+   "slug": "catalonia",
+   "type": "location"
   },
   {
    "group": "Gran Colombia",
    "icon": null,
    "id": "STATE_CAUCA",
    "name": "Cauca",
-   "page": "states#STATE_CAUCA",
-   "slug": "STATE_CAUCA",
-   "type": "state"
+   "page": "locations/cauca",
+   "slug": "cauca",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_CEARA",
    "name": "Ceará",
-   "page": "states#STATE_CEARA",
-   "slug": "STATE_CEARA",
-   "type": "state"
+   "page": "locations/ceara",
+   "slug": "ceara",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_CELEBES",
    "name": "Celebes",
-   "page": "states#STATE_CELEBES",
-   "slug": "STATE_CELEBES",
-   "type": "state"
+   "page": "locations/celebes",
+   "slug": "celebes",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_CENTRAL_CUBA",
    "name": "Central Cuba",
-   "page": "states#STATE_CENTRAL_CUBA",
-   "slug": "STATE_CENTRAL_CUBA",
-   "type": "state"
+   "page": "locations/central_cuba",
+   "slug": "central_cuba",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_CENTRAL_HIGHLANDS",
    "name": "Hazaristan",
-   "page": "states#STATE_CENTRAL_HIGHLANDS",
-   "slug": "STATE_CENTRAL_HIGHLANDS",
-   "type": "state"
+   "page": "locations/central_highlands",
+   "slug": "central_highlands",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_CENTRAL_HUNGARY",
    "name": "Great Hungarian Plain",
-   "page": "states#STATE_CENTRAL_HUNGARY",
-   "slug": "STATE_CENTRAL_HUNGARY",
-   "type": "state"
+   "page": "locations/central_hungary",
+   "slug": "central_hungary",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_CENTRAL_JAVA",
    "name": "Central Java",
-   "page": "states#STATE_CENTRAL_JAVA",
-   "slug": "STATE_CENTRAL_JAVA",
-   "type": "state"
+   "page": "locations/central_java",
+   "slug": "central_java",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_CENTRAL_PROVINCES",
    "name": "Central Provinces",
-   "page": "states#STATE_CENTRAL_PROVINCES",
-   "slug": "STATE_CENTRAL_PROVINCES",
-   "type": "state"
+   "page": "locations/central_provinces",
+   "slug": "central_provinces",
+   "type": "location"
   },
   {
    "group": "South India",
    "icon": null,
    "id": "STATE_CEYLON",
    "name": "Ceylon",
-   "page": "states#STATE_CEYLON",
-   "slug": "STATE_CEYLON",
-   "type": "state"
+   "page": "locations/ceylon",
+   "slug": "ceylon",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_CHACO",
    "name": "Chaco",
-   "page": "states#STATE_CHACO",
-   "slug": "STATE_CHACO",
-   "type": "state"
+   "page": "locations/chaco",
+   "slug": "chaco",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_CHAD",
    "name": "Chad",
-   "page": "states#STATE_CHAD",
-   "slug": "STATE_CHAD",
-   "type": "state"
+   "page": "locations/chad",
+   "slug": "chad",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_CHAMPAGNE",
    "name": "Champagne",
-   "page": "states#STATE_CHAMPAGNE",
-   "slug": "STATE_CHAMPAGNE",
-   "type": "state"
+   "page": "locations/champagne",
+   "slug": "champagne",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_CHELYABINSK",
    "name": "Chelyabinsk",
-   "page": "states#STATE_CHELYABINSK",
-   "slug": "STATE_CHELYABINSK",
-   "type": "state"
+   "page": "locations/chelyabinsk",
+   "slug": "chelyabinsk",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_CHERNIHIV",
    "name": "Chernihiv",
-   "page": "states#STATE_CHERNIHIV",
-   "slug": "STATE_CHERNIHIV",
-   "type": "state"
+   "page": "locations/chernihiv",
+   "slug": "chernihiv",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_CHERSON",
    "name": "Odessa",
-   "page": "states#STATE_CHERSON",
-   "slug": "STATE_CHERSON",
-   "type": "state"
+   "page": "locations/cherson",
+   "slug": "cherson",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_CHIANG_MAI",
    "name": "Chiang Mai",
-   "page": "states#STATE_CHIANG_MAI",
-   "slug": "STATE_CHIANG_MAI",
-   "type": "state"
+   "page": "locations/chiang_mai",
+   "slug": "chiang_mai",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_CHIAPAS",
    "name": "Chiapas",
-   "page": "states#STATE_CHIAPAS",
-   "slug": "STATE_CHIAPAS",
-   "type": "state"
+   "page": "locations/chiapas",
+   "slug": "chiapas",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_CHIHUAHUA",
    "name": "Chihuahua",
-   "page": "states#STATE_CHIHUAHUA",
-   "slug": "STATE_CHIHUAHUA",
-   "type": "state"
+   "page": "locations/chihuahua",
+   "slug": "chihuahua",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_CHONGQING",
    "name": "Chongqing",
-   "page": "states#STATE_CHONGQING",
-   "slug": "STATE_CHONGQING",
-   "type": "state"
+   "page": "locations/chongqing",
+   "slug": "chongqing",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_CHUGOKU",
    "name": "Chugoku",
-   "page": "states#STATE_CHUGOKU",
-   "slug": "STATE_CHUGOKU",
-   "type": "state"
+   "page": "locations/chugoku",
+   "slug": "chugoku",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_CHUKOTKA",
    "name": "Chukotka",
-   "page": "states#STATE_CHUKOTKA",
-   "slug": "STATE_CHUKOTKA",
-   "type": "state"
+   "page": "locations/chukotka",
+   "slug": "chukotka",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_CHUVASHIA",
    "name": "Cheboksary",
-   "page": "states#STATE_CHUVASHIA",
-   "slug": "STATE_CHUVASHIA",
-   "type": "state"
+   "page": "locations/chuvashia",
+   "slug": "chuvashia",
+   "type": "location"
   },
   {
    "group": "South India",
    "icon": null,
    "id": "STATE_CIRCARS",
    "name": "Northern Circars",
-   "page": "states#STATE_CIRCARS",
-   "slug": "STATE_CIRCARS",
-   "type": "state"
+   "page": "locations/circars",
+   "slug": "circars",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_COLORADO",
    "name": "Colorado",
-   "page": "states#STATE_COLORADO",
-   "slug": "STATE_COLORADO",
-   "type": "state"
+   "page": "locations/colorado",
+   "slug": "colorado",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_CONGO",
    "name": "Congo",
-   "page": "states#STATE_CONGO",
-   "slug": "STATE_CONGO",
-   "type": "state"
+   "page": "locations/congo",
+   "slug": "congo",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_CONGO_ORIENTALE",
    "name": "Lualaba",
-   "page": "states#STATE_CONGO_ORIENTALE",
-   "slug": "STATE_CONGO_ORIENTALE",
-   "type": "state"
+   "page": "locations/congo_orientale",
+   "slug": "congo_orientale",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_CONNAUGHT",
    "name": "Connaught",
-   "page": "states#STATE_CONNAUGHT",
-   "slug": "STATE_CONNAUGHT",
-   "type": "state"
+   "page": "locations/connaught",
+   "slug": "connaught",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_CONNECTICUT",
    "name": "Connecticut",
-   "page": "states#STATE_CONNECTICUT",
-   "slug": "STATE_CONNECTICUT",
-   "type": "state"
+   "page": "locations/connecticut",
+   "slug": "connecticut",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_CONSTANTINE",
    "name": "Constantine",
-   "page": "states#STATE_CONSTANTINE",
-   "slug": "STATE_CONSTANTINE",
-   "type": "state"
+   "page": "locations/constantine",
+   "slug": "constantine",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_CORRIENTES",
    "name": "Corrientes",
-   "page": "states#STATE_CORRIENTES",
-   "slug": "STATE_CORRIENTES",
-   "type": "state"
+   "page": "locations/corrientes",
+   "slug": "corrientes",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_CORSICA",
    "name": "Corsica",
-   "page": "states#STATE_CORSICA",
-   "slug": "STATE_CORSICA",
-   "type": "state"
+   "page": "locations/corsica",
+   "slug": "corsica",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_COSTA_RICA",
    "name": "Costa Rica",
-   "page": "states#STATE_COSTA_RICA",
-   "slug": "STATE_COSTA_RICA",
-   "type": "state"
+   "page": "locations/costa_rica",
+   "slug": "costa_rica",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_COURLAND",
    "name": "Courland",
-   "page": "states#STATE_COURLAND",
-   "slug": "STATE_COURLAND",
-   "type": "state"
+   "page": "locations/courland",
+   "slug": "courland",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_CRETE",
    "name": "Crete",
-   "page": "states#STATE_CRETE",
-   "slug": "STATE_CRETE",
-   "type": "state"
+   "page": "locations/crete",
+   "slug": "crete",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_CRIMEA",
    "name": "Crimea",
-   "page": "states#STATE_CRIMEA",
-   "slug": "STATE_CRIMEA",
-   "type": "state"
+   "page": "locations/crimea",
+   "slug": "crimea",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_CROATIA",
    "name": "Croatia",
-   "page": "states#STATE_CROATIA",
-   "slug": "STATE_CROATIA",
-   "type": "state"
+   "page": "locations/croatia",
+   "slug": "croatia",
+   "type": "location"
   },
   {
    "group": "Gran Colombia",
    "icon": null,
    "id": "STATE_CUNDINAMARCA",
    "name": "Cundinamarca",
-   "page": "states#STATE_CUNDINAMARCA",
-   "slug": "STATE_CUNDINAMARCA",
-   "type": "state"
+   "page": "locations/cundinamarca",
+   "slug": "cundinamarca",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_CYPRUS",
    "name": "Cyprus",
-   "page": "states#STATE_CYPRUS",
-   "slug": "STATE_CYPRUS",
-   "type": "state"
+   "page": "locations/cyprus",
+   "slug": "cyprus",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_DAGESTAN",
    "name": "Dagestan",
-   "page": "states#STATE_DAGESTAN",
-   "slug": "STATE_DAGESTAN",
-   "type": "state"
+   "page": "locations/dagestan",
+   "slug": "dagestan",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_DAHOMEY",
    "name": "Dahomey",
-   "page": "states#STATE_DAHOMEY",
-   "slug": "STATE_DAHOMEY",
-   "type": "state"
+   "page": "locations/dahomey",
+   "slug": "dahomey",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_DALMATIA",
    "name": "Dalmatia",
-   "page": "states#STATE_DALMATIA",
-   "slug": "STATE_DALMATIA",
-   "type": "state"
+   "page": "locations/dalmatia",
+   "slug": "dalmatia",
+   "type": "location"
   },
   {
    "group": "Nile Basin",
    "icon": null,
    "id": "STATE_DARFUR",
    "name": "Darfur",
-   "page": "states#STATE_DARFUR",
-   "slug": "STATE_DARFUR",
-   "type": "state"
+   "page": "locations/darfur",
+   "slug": "darfur",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_DEIR_EZ_ZOR",
    "name": "Deir-Ez-Zor",
-   "page": "states#STATE_DEIR_EZ_ZOR",
-   "slug": "STATE_DEIR_EZ_ZOR",
-   "type": "state"
+   "page": "locations/deir_ez_zor",
+   "slug": "deir_ez_zor",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_DELAWARE",
    "name": "Delaware",
-   "page": "states#STATE_DELAWARE",
-   "slug": "STATE_DELAWARE",
-   "type": "state"
+   "page": "locations/delaware",
+   "slug": "delaware",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_DELHI",
    "name": "Delhi",
-   "page": "states#STATE_DELHI",
-   "slug": "STATE_DELHI",
-   "type": "state"
+   "page": "locations/delhi",
+   "slug": "delhi",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_DELVIDEK",
    "name": "Vojvodina",
-   "page": "states#STATE_DELVIDEK",
-   "slug": "STATE_DELVIDEK",
-   "type": "state"
+   "page": "locations/delvidek",
+   "slug": "delvidek",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_DISTRICT_OF_COLUMBIA",
    "name": "District of Columbia",
-   "page": "states#STATE_DISTRICT_OF_COLUMBIA",
-   "slug": "STATE_DISTRICT_OF_COLUMBIA",
-   "type": "state"
+   "page": "locations/district_of_columbia",
+   "slug": "district_of_columbia",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_DIYARBAKIR",
    "name": "Diyarbakir",
-   "page": "states#STATE_DIYARBAKIR",
-   "slug": "STATE_DIYARBAKIR",
-   "type": "state"
+   "page": "locations/diyarbakir",
+   "slug": "diyarbakir",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_DOBRUDJA",
    "name": "Dobrudja",
-   "page": "states#STATE_DOBRUDJA",
-   "slug": "STATE_DOBRUDJA",
-   "type": "state"
+   "page": "locations/dobrudja",
+   "slug": "dobrudja",
+   "type": "location"
   },
   {
    "group": "Nile Basin",
    "icon": null,
    "id": "STATE_DONGOLA",
    "name": "Dongola",
-   "page": "states#STATE_DONGOLA",
-   "slug": "STATE_DONGOLA",
-   "type": "state"
+   "page": "locations/dongola",
+   "slug": "dongola",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_DURANGO",
    "name": "Durango",
-   "page": "states#STATE_DURANGO",
-   "slug": "STATE_DURANGO",
-   "type": "state"
+   "page": "locations/durango",
+   "slug": "durango",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_DZUNGARIA",
    "name": "Dzungaria",
-   "page": "states#STATE_DZUNGARIA",
-   "slug": "STATE_DZUNGARIA",
-   "type": "state"
+   "page": "locations/dzungaria",
+   "slug": "dzungaria",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_EAST_AEGEAN_ISLANDS",
    "name": "East Aegean Islands",
-   "page": "states#STATE_EAST_AEGEAN_ISLANDS",
-   "slug": "STATE_EAST_AEGEAN_ISLANDS",
-   "type": "state"
+   "page": "locations/east_aegean_islands",
+   "slug": "east_aegean_islands",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_EAST_ANGLIA",
    "name": "East Anglia",
-   "page": "states#STATE_EAST_ANGLIA",
-   "slug": "STATE_EAST_ANGLIA",
-   "type": "state"
+   "page": "locations/east_anglia",
+   "slug": "east_anglia",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_EAST_ANGOLA",
    "name": "East Angola",
-   "page": "states#STATE_EAST_ANGOLA",
-   "slug": "STATE_EAST_ANGOLA",
-   "type": "state"
+   "page": "locations/east_angola",
+   "slug": "east_angola",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_EAST_BENGAL",
    "name": "East Bengal",
-   "page": "states#STATE_EAST_BENGAL",
-   "slug": "STATE_EAST_BENGAL",
-   "type": "state"
+   "page": "locations/east_bengal",
+   "slug": "east_bengal",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_EAST_BORNEO",
    "name": "East Borneo",
-   "page": "states#STATE_EAST_BORNEO",
-   "slug": "STATE_EAST_BORNEO",
-   "type": "state"
+   "page": "locations/east_borneo",
+   "slug": "east_borneo",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_EAST_GALICIA",
    "name": "East Galicia",
-   "page": "states#STATE_EAST_GALICIA",
-   "slug": "STATE_EAST_GALICIA",
-   "type": "state"
+   "page": "locations/east_galicia",
+   "slug": "east_galicia",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_EAST_HAUSALAND",
    "name": "East Hausaland",
-   "page": "states#STATE_EAST_HAUSALAND",
-   "slug": "STATE_EAST_HAUSALAND",
-   "type": "state"
+   "page": "locations/east_hausaland",
+   "slug": "east_hausaland",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_EAST_JAVA",
    "name": "East Java",
-   "page": "states#STATE_EAST_JAVA",
-   "slug": "STATE_EAST_JAVA",
-   "type": "state"
+   "page": "locations/east_java",
+   "slug": "east_java",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_EAST_KARELIA",
    "name": "East Karelia",
-   "page": "states#STATE_EAST_KARELIA",
-   "slug": "STATE_EAST_KARELIA",
-   "type": "state"
+   "page": "locations/east_karelia",
+   "slug": "east_karelia",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_EAST_MICRONESIA",
    "name": "East Micronesia",
-   "page": "states#STATE_EAST_MICRONESIA",
-   "slug": "STATE_EAST_MICRONESIA",
-   "type": "state"
+   "page": "locations/east_micronesia",
+   "slug": "east_micronesia",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_EAST_PRUSSIA",
    "name": "East Prussia",
-   "page": "states#STATE_EAST_PRUSSIA",
-   "slug": "STATE_EAST_PRUSSIA",
-   "type": "state"
+   "page": "locations/east_prussia",
+   "slug": "east_prussia",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_EAST_SAHARA",
    "name": "East Sahara",
-   "page": "states#STATE_EAST_SAHARA",
-   "slug": "STATE_EAST_SAHARA",
-   "type": "state"
+   "page": "locations/east_sahara",
+   "slug": "east_sahara",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_EAST_SWITZERLAND",
    "name": "East Switzerland",
-   "page": "states#STATE_EAST_SWITZERLAND",
-   "slug": "STATE_EAST_SWITZERLAND",
-   "type": "state"
+   "page": "locations/east_switzerland",
+   "slug": "east_switzerland",
+   "type": "location"
   },
   {
    "group": "Southern Africa",
    "icon": null,
    "id": "STATE_EASTERN_CAPE",
    "name": "Eastern Cape",
-   "page": "states#STATE_EASTERN_CAPE",
-   "slug": "STATE_EASTERN_CAPE",
-   "type": "state"
+   "page": "locations/eastern_cape",
+   "slug": "eastern_cape",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_EASTERN_CUBA",
    "name": "Eastern Cuba",
-   "page": "states#STATE_EASTERN_CUBA",
-   "slug": "STATE_EASTERN_CUBA",
-   "type": "state"
+   "page": "locations/eastern_cuba",
+   "slug": "eastern_cuba",
+   "type": "location"
   },
   {
    "group": "Himalayas",
    "icon": null,
    "id": "STATE_EASTERN_HIMALAYAS",
    "name": "Eastern Himalayas",
-   "page": "states#STATE_EASTERN_HIMALAYAS",
-   "slug": "STATE_EASTERN_HIMALAYAS",
-   "type": "state"
+   "page": "locations/eastern_himalayas",
+   "slug": "eastern_himalayas",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_EASTERN_HUBEI",
    "name": "Eastern Hubei",
-   "page": "states#STATE_EASTERN_HUBEI",
-   "slug": "STATE_EASTERN_HUBEI",
-   "type": "state"
+   "page": "locations/eastern_hubei",
+   "slug": "eastern_hubei",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_EASTERN_MALI",
    "name": "Eastern Mali",
-   "page": "states#STATE_EASTERN_MALI",
-   "slug": "STATE_EASTERN_MALI",
-   "type": "state"
+   "page": "locations/eastern_mali",
+   "slug": "eastern_mali",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_EASTERN_NEW_GUINEA",
    "name": "Eastern New Guinea",
-   "page": "states#STATE_EASTERN_NEW_GUINEA",
-   "slug": "STATE_EASTERN_NEW_GUINEA",
-   "type": "state"
+   "page": "locations/eastern_new_guinea",
+   "slug": "eastern_new_guinea",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_EASTERN_NORWAY",
    "name": "Eastern Norway",
-   "page": "states#STATE_EASTERN_NORWAY",
-   "slug": "STATE_EASTERN_NORWAY",
-   "type": "state"
+   "page": "locations/eastern_norway",
+   "slug": "eastern_norway",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_EASTERN_SERBIA",
    "name": "Eastern Serbia",
-   "page": "states#STATE_EASTERN_SERBIA",
-   "slug": "STATE_EASTERN_SERBIA",
-   "type": "state"
+   "page": "locations/eastern_serbia",
+   "slug": "eastern_serbia",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_EASTERN_THRACE",
    "name": "Eastern Thrace",
-   "page": "states#STATE_EASTERN_THRACE",
-   "slug": "STATE_EASTERN_THRACE",
-   "type": "state"
+   "page": "locations/eastern_thrace",
+   "slug": "eastern_thrace",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_ECUADOR",
    "name": "Ecuador",
-   "page": "states#STATE_ECUADOR",
-   "slug": "STATE_ECUADOR",
-   "type": "state"
+   "page": "locations/ecuador",
+   "slug": "ecuador",
+   "type": "location"
   },
   {
    "group": "Nile Basin",
    "icon": null,
    "id": "STATE_EGYPTIAN_DESERT",
    "name": "Egyptian Desert",
-   "page": "states#STATE_EGYPTIAN_DESERT",
-   "slug": "STATE_EGYPTIAN_DESERT",
-   "type": "state"
+   "page": "locations/egyptian_desert",
+   "slug": "egyptian_desert",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_ELBE",
    "name": "Elbe",
-   "page": "states#STATE_ELBE",
-   "slug": "STATE_ELBE",
-   "type": "state"
+   "page": "locations/elbe",
+   "slug": "elbe",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_ELIZAVETPOL",
    "name": "Elizavetpol",
-   "page": "states#STATE_ELIZAVETPOL",
-   "slug": "STATE_ELIZAVETPOL",
-   "type": "state"
+   "page": "locations/elizavetpol",
+   "slug": "elizavetpol",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_EMILIA",
    "name": "Emilia",
-   "page": "states#STATE_EMILIA",
-   "slug": "STATE_EMILIA",
-   "type": "state"
+   "page": "locations/emilia",
+   "slug": "emilia",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_ENTRE_DOURO_E_MINHO",
    "name": "Entre Douro and Minho",
-   "page": "states#STATE_ENTRE_DOURO_E_MINHO",
-   "slug": "STATE_ENTRE_DOURO_E_MINHO",
-   "type": "state"
+   "page": "locations/entre_douro_e_minho",
+   "slug": "entre_douro_e_minho",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_EQUATEUR",
    "name": "Equateur",
-   "page": "states#STATE_EQUATEUR",
-   "slug": "STATE_EQUATEUR",
-   "type": "state"
+   "page": "locations/equateur",
+   "slug": "equateur",
+   "type": "location"
   },
   {
    "group": "Nile Basin",
    "icon": null,
    "id": "STATE_EQUATORIA",
    "name": "Equatoria",
-   "page": "states#STATE_EQUATORIA",
-   "slug": "STATE_EQUATORIA",
-   "type": "state"
+   "page": "locations/equatoria",
+   "slug": "equatoria",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_ERITREA",
    "name": "Eritrea",
-   "page": "states#STATE_ERITREA",
-   "slug": "STATE_ERITREA",
-   "type": "state"
+   "page": "locations/eritrea",
+   "slug": "eritrea",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_ERZURUM",
    "name": "Erzurum",
-   "page": "states#STATE_ERZURUM",
-   "slug": "STATE_ERZURUM",
-   "type": "state"
+   "page": "locations/erzurum",
+   "slug": "erzurum",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_ESTREMADURA",
    "name": "Estremadura",
-   "page": "states#STATE_ESTREMADURA",
-   "slug": "STATE_ESTREMADURA",
-   "type": "state"
+   "page": "locations/estremadura",
+   "slug": "estremadura",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_EXTREMADURA",
    "name": "Extremadura",
-   "page": "states#STATE_EXTREMADURA",
-   "slug": "STATE_EXTREMADURA",
-   "type": "state"
+   "page": "locations/extremadura",
+   "slug": "extremadura",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_FARS",
    "name": "Fars",
-   "page": "states#STATE_FARS",
-   "slug": "STATE_FARS",
-   "type": "state"
+   "page": "locations/fars",
+   "slug": "fars",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_FERGANA",
    "name": "Fergana",
-   "page": "states#STATE_FERGANA",
-   "slug": "STATE_FERGANA",
-   "type": "state"
+   "page": "locations/fergana",
+   "slug": "fergana",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_FEZ",
    "name": "Fez",
-   "page": "states#STATE_FEZ",
-   "slug": "STATE_FEZ",
-   "type": "state"
+   "page": "locations/fez",
+   "slug": "fez",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_FIJI",
    "name": "Fiji",
-   "page": "states#STATE_FIJI",
-   "slug": "STATE_FIJI",
-   "type": "state"
+   "page": "locations/fiji",
+   "slug": "fiji",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_FLANDERS",
    "name": "Flanders",
-   "page": "states#STATE_FLANDERS",
-   "slug": "STATE_FLANDERS",
-   "type": "state"
+   "page": "locations/flanders",
+   "slug": "flanders",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_FLORIDA",
    "name": "Florida",
-   "page": "states#STATE_FLORIDA",
-   "slug": "STATE_FLORIDA",
-   "type": "state"
+   "page": "locations/florida",
+   "slug": "florida",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_FORMOSA",
    "name": "Formosa",
-   "page": "states#STATE_FORMOSA",
-   "slug": "STATE_FORMOSA",
-   "type": "state"
+   "page": "locations/formosa",
+   "slug": "formosa",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_FRANCHE_COMTE",
    "name": "Franche-Comté",
-   "page": "states#STATE_FRANCHE_COMTE",
-   "slug": "STATE_FRANCHE_COMTE",
-   "type": "state"
+   "page": "locations/franche_comte",
+   "slug": "franche_comte",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_FRANCONIA",
    "name": "Franconia",
-   "page": "states#STATE_FRANCONIA",
-   "slug": "STATE_FRANCONIA",
-   "type": "state"
+   "page": "locations/franconia",
+   "slug": "franconia",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_FRENCH_LOW_COUNTRIES",
    "name": "French Low Countries",
-   "page": "states#STATE_FRENCH_LOW_COUNTRIES",
-   "slug": "STATE_FRENCH_LOW_COUNTRIES",
-   "type": "state"
+   "page": "locations/french_low_countries",
+   "slug": "french_low_countries",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_FRIESLAND",
    "name": "Friesland",
-   "page": "states#STATE_FRIESLAND",
-   "slug": "STATE_FRIESLAND",
-   "type": "state"
+   "page": "locations/friesland",
+   "slug": "friesland",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_FUJIAN",
    "name": "Fujian",
-   "page": "states#STATE_FUJIAN",
-   "slug": "STATE_FUJIAN",
-   "type": "state"
+   "page": "locations/fujian",
+   "slug": "fujian",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_GABON",
    "name": "Gabon",
-   "page": "states#STATE_GABON",
-   "slug": "STATE_GABON",
-   "type": "state"
+   "page": "locations/gabon",
+   "slug": "gabon",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_GALICH",
    "name": "Vologda",
-   "page": "states#STATE_GALICH",
-   "slug": "STATE_GALICH",
-   "type": "state"
+   "page": "locations/galich",
+   "slug": "galich",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_GALICIA",
    "name": "Galicia",
-   "page": "states#STATE_GALICIA",
-   "slug": "STATE_GALICIA",
-   "type": "state"
+   "page": "locations/galicia",
+   "slug": "galicia",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_GANSU",
    "name": "Gansu",
-   "page": "states#STATE_GANSU",
-   "slug": "STATE_GANSU",
-   "type": "state"
+   "page": "locations/gansu",
+   "slug": "gansu",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_GELRE",
    "name": "Gelre",
-   "page": "states#STATE_GELRE",
-   "slug": "STATE_GELRE",
-   "type": "state"
+   "page": "locations/gelre",
+   "slug": "gelre",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_GEORGIA",
    "name": "Georgia",
-   "page": "states#STATE_GEORGIA",
-   "slug": "STATE_GEORGIA",
-   "type": "state"
+   "page": "locations/georgia",
+   "slug": "georgia",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_GOIAS",
    "name": "Goiás",
-   "page": "states#STATE_GOIAS",
-   "slug": "STATE_GOIAS",
-   "type": "state"
+   "page": "locations/goias",
+   "slug": "goias",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_GOLD_COAST",
    "name": "Gold Coast",
-   "page": "states#STATE_GOLD_COAST",
-   "slug": "STATE_GOLD_COAST",
-   "type": "state"
+   "page": "locations/gold_coast",
+   "slug": "gold_coast",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_GONDER",
    "name": "Gonder",
-   "page": "states#STATE_GONDER",
-   "slug": "STATE_GONDER",
-   "type": "state"
+   "page": "locations/gonder",
+   "slug": "gonder",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_GOTALAND",
    "name": "Götaland",
-   "page": "states#STATE_GOTALAND",
-   "slug": "STATE_GOTALAND",
-   "type": "state"
+   "page": "locations/gotaland",
+   "slug": "gotaland",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_GOTLAND",
    "name": "Gotland",
-   "page": "states#STATE_GOTLAND",
-   "slug": "STATE_GOTLAND",
-   "type": "state"
+   "page": "locations/gotland",
+   "slug": "gotland",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_GREATER_CAUCASUS",
    "name": "Tiflis",
-   "page": "states#STATE_GREATER_CAUCASUS",
-   "slug": "STATE_GREATER_CAUCASUS",
-   "type": "state"
+   "page": "locations/greater_caucasus",
+   "slug": "greater_caucasus",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_GREATER_POLAND",
    "name": "Warszawa",
-   "page": "states#STATE_GREATER_POLAND",
-   "slug": "STATE_GREATER_POLAND",
-   "type": "state"
+   "page": "locations/greater_poland",
+   "slug": "greater_poland",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_GREENLAND",
    "name": "Greenland",
-   "page": "states#STATE_GREENLAND",
-   "slug": "STATE_GREENLAND",
-   "type": "state"
+   "page": "locations/greenland",
+   "slug": "greenland",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_GUANGDONG",
    "name": "Western Guangdong",
-   "page": "states#STATE_GUANGDONG",
-   "slug": "STATE_GUANGDONG",
-   "type": "state"
+   "page": "locations/guangdong",
+   "slug": "guangdong",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_GUANGXI",
    "name": "Guangxi",
-   "page": "states#STATE_GUANGXI",
-   "slug": "STATE_GUANGXI",
-   "type": "state"
+   "page": "locations/guangxi",
+   "slug": "guangxi",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_GUATEMALA",
    "name": "Guatemala",
-   "page": "states#STATE_GUATEMALA",
-   "slug": "STATE_GUATEMALA",
-   "type": "state"
+   "page": "locations/guatemala",
+   "slug": "guatemala",
+   "type": "location"
   },
   {
    "group": "Gran Colombia",
    "icon": null,
    "id": "STATE_GUAVIARE",
    "name": "Guaviare",
-   "page": "states#STATE_GUAVIARE",
-   "slug": "STATE_GUAVIARE",
-   "type": "state"
+   "page": "locations/guaviare",
+   "slug": "guaviare",
+   "type": "location"
   },
   {
    "group": "Gran Colombia",
    "icon": null,
    "id": "STATE_GUAYANA",
    "name": "Guyana",
-   "page": "states#STATE_GUAYANA",
-   "slug": "STATE_GUAYANA",
-   "type": "state"
+   "page": "locations/guayana",
+   "slug": "guayana",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_GUERRERO",
    "name": "Guerrero",
-   "page": "states#STATE_GUERRERO",
-   "slug": "STATE_GUERRERO",
-   "type": "state"
+   "page": "locations/guerrero",
+   "slug": "guerrero",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_GUINEA",
    "name": "Guinea",
-   "page": "states#STATE_GUINEA",
-   "slug": "STATE_GUINEA",
-   "type": "state"
+   "page": "locations/guinea",
+   "slug": "guinea",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_GUIZHOU",
    "name": "Guizhou",
-   "page": "states#STATE_GUIZHOU",
-   "slug": "STATE_GUIZHOU",
-   "type": "state"
+   "page": "locations/guizhou",
+   "slug": "guizhou",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_GUJARAT",
    "name": "Gujarat",
-   "page": "states#STATE_GUJARAT",
-   "slug": "STATE_GUJARAT",
-   "type": "state"
+   "page": "locations/gujarat",
+   "slug": "gujarat",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_GUYENNE",
    "name": "Guyenne",
-   "page": "states#STATE_GUYENNE",
-   "slug": "STATE_GUYENNE",
-   "type": "state"
+   "page": "locations/guyenne",
+   "slug": "guyenne",
+   "type": "location"
   },
   {
    "group": "Arabia",
    "icon": null,
    "id": "STATE_HAIL",
    "name": "Hail",
-   "page": "states#STATE_HAIL",
-   "slug": "STATE_HAIL",
-   "type": "state"
+   "page": "locations/hail",
+   "slug": "hail",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_HAITI",
    "name": "Haiti",
-   "page": "states#STATE_HAITI",
-   "slug": "STATE_HAITI",
-   "type": "state"
+   "page": "locations/haiti",
+   "slug": "haiti",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_HANNOVER",
    "name": "Hanover",
-   "page": "states#STATE_HANNOVER",
-   "slug": "STATE_HANNOVER",
-   "type": "state"
+   "page": "locations/hannover",
+   "slug": "hannover",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_HAUSALAND",
    "name": "Hausaland",
-   "page": "states#STATE_HAUSALAND",
-   "slug": "STATE_HAUSALAND",
-   "type": "state"
+   "page": "locations/hausaland",
+   "slug": "hausaland",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_HAWAIIAN_ISLANDS",
    "name": "Hawaiian Islands",
-   "page": "states#STATE_HAWAIIAN_ISLANDS",
-   "slug": "STATE_HAWAIIAN_ISLANDS",
-   "type": "state"
+   "page": "locations/hawaiian_islands",
+   "slug": "hawaiian_islands",
+   "type": "location"
   },
   {
    "group": "Arabia",
    "icon": null,
    "id": "STATE_HEDJAZ",
    "name": "Hedjaz",
-   "page": "states#STATE_HEDJAZ",
-   "slug": "STATE_HEDJAZ",
-   "type": "state"
+   "page": "locations/hedjaz",
+   "slug": "hedjaz",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_HENAN",
    "name": "Henan",
-   "page": "states#STATE_HENAN",
-   "slug": "STATE_HENAN",
-   "type": "state"
+   "page": "locations/henan",
+   "slug": "henan",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_HERAT",
    "name": "Herat",
-   "page": "states#STATE_HERAT",
-   "slug": "STATE_HERAT",
-   "type": "state"
+   "page": "locations/herat",
+   "slug": "herat",
+   "type": "location"
   },
   {
    "group": "Southern Africa",
    "icon": null,
    "id": "STATE_HEREROLAND",
    "name": "Hereroland",
-   "page": "states#STATE_HEREROLAND",
-   "slug": "STATE_HEREROLAND",
-   "type": "state"
+   "page": "locations/hereroland",
+   "slug": "hereroland",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_HESSE",
    "name": "Hesse",
-   "page": "states#STATE_HESSE",
-   "slug": "STATE_HESSE",
-   "type": "state"
+   "page": "locations/hesse",
+   "slug": "hesse",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_HIGHLANDS",
    "name": "Highlands",
-   "page": "states#STATE_HIGHLANDS",
-   "slug": "STATE_HIGHLANDS",
-   "type": "state"
+   "page": "locations/highlands",
+   "slug": "highlands",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_HILL_PUNJAB",
    "name": "Punjab Hills",
-   "page": "states#STATE_HILL_PUNJAB",
-   "slug": "STATE_HILL_PUNJAB",
-   "type": "state"
+   "page": "locations/hill_punjab",
+   "slug": "hill_punjab",
+   "type": "location"
   },
   {
    "group": "Himalayas",
    "icon": null,
    "id": "STATE_HIMALAYAS",
    "name": "Western Himalayas",
-   "page": "states#STATE_HIMALAYAS",
-   "slug": "STATE_HIMALAYAS",
-   "type": "state"
+   "page": "locations/himalayas",
+   "slug": "himalayas",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_HINGGAN",
    "name": "Inner Mongolia",
-   "page": "states#STATE_HINGGAN",
-   "slug": "STATE_HINGGAN",
-   "type": "state"
+   "page": "locations/hinggan",
+   "slug": "hinggan",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_HOKKAIDO",
    "name": "Yezo",
-   "page": "states#STATE_HOKKAIDO",
-   "slug": "STATE_HOKKAIDO",
-   "type": "state"
+   "page": "locations/hokkaido",
+   "slug": "hokkaido",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_HOKUSHINETSU",
    "name": "Hokushin'etsu",
-   "page": "states#STATE_HOKUSHINETSU",
-   "slug": "STATE_HOKUSHINETSU",
-   "type": "state"
+   "page": "locations/hokushinetsu",
+   "slug": "hokushinetsu",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_HOLLAND",
    "name": "Holland",
-   "page": "states#STATE_HOLLAND",
-   "slug": "STATE_HOLLAND",
-   "type": "state"
+   "page": "locations/holland",
+   "slug": "holland",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_HOME_COUNTIES",
    "name": "Home Counties",
-   "page": "states#STATE_HOME_COUNTIES",
-   "slug": "STATE_HOME_COUNTIES",
-   "type": "state"
+   "page": "locations/home_counties",
+   "slug": "home_counties",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_HONDURAS",
    "name": "Honduras",
-   "page": "states#STATE_HONDURAS",
-   "slug": "STATE_HONDURAS",
-   "type": "state"
+   "page": "locations/honduras",
+   "slug": "honduras",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_HUDAVENDIGAR",
    "name": "Hudavendigar",
-   "page": "states#STATE_HUDAVENDIGAR",
-   "slug": "STATE_HUDAVENDIGAR",
-   "type": "state"
+   "page": "locations/hudavendigar",
+   "slug": "hudavendigar",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_HUNAN",
    "name": "Hunan",
-   "page": "states#STATE_HUNAN",
-   "slug": "STATE_HUNAN",
-   "type": "state"
+   "page": "locations/hunan",
+   "slug": "hunan",
+   "type": "location"
   },
   {
    "group": "South India",
    "icon": null,
    "id": "STATE_HYDERABAD",
    "name": "Hyderabad",
-   "page": "states#STATE_HYDERABAD",
-   "slug": "STATE_HYDERABAD",
-   "type": "state"
+   "page": "locations/hyderabad",
+   "slug": "hyderabad",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_ICA",
    "name": "Ica",
-   "page": "states#STATE_ICA",
-   "slug": "STATE_ICA",
-   "type": "state"
+   "page": "locations/ica",
+   "slug": "ica",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_ICELAND",
    "name": "Iceland",
-   "page": "states#STATE_ICELAND",
-   "slug": "STATE_ICELAND",
-   "type": "state"
+   "page": "locations/iceland",
+   "slug": "iceland",
+   "type": "location"
   },
   {
    "group": "Pacific Coast",
    "icon": null,
    "id": "STATE_IDAHO",
    "name": "Idaho",
-   "page": "states#STATE_IDAHO",
-   "slug": "STATE_IDAHO",
-   "type": "state"
+   "page": "locations/idaho",
+   "slug": "idaho",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_ILE_DE_FRANCE",
    "name": "Île-de-France",
-   "page": "states#STATE_ILE_DE_FRANCE",
-   "slug": "STATE_ILE_DE_FRANCE",
-   "type": "state"
+   "page": "locations/ile_de_france",
+   "slug": "ile_de_france",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_ILLINOIS",
    "name": "Illinois",
-   "page": "states#STATE_ILLINOIS",
-   "slug": "STATE_ILLINOIS",
-   "type": "state"
+   "page": "locations/illinois",
+   "slug": "illinois",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_INDIAN_OCEAN_TERRITORY",
    "name": "Indian Ocean Territory",
-   "page": "states#STATE_INDIAN_OCEAN_TERRITORY",
-   "slug": "STATE_INDIAN_OCEAN_TERRITORY",
-   "type": "state"
+   "page": "locations/indian_ocean_territory",
+   "slug": "indian_ocean_territory",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_INDIANA",
    "name": "Indiana",
-   "page": "states#STATE_INDIANA",
-   "slug": "STATE_INDIANA",
-   "type": "state"
+   "page": "locations/indiana",
+   "slug": "indiana",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_INGRIA",
    "name": "Ingria",
-   "page": "states#STATE_INGRIA",
-   "slug": "STATE_INGRIA",
-   "type": "state"
+   "page": "locations/ingria",
+   "slug": "ingria",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_INNER_MAURITANIA",
    "name": "Inner Mauritania",
-   "page": "states#STATE_INNER_MAURITANIA",
-   "slug": "STATE_INNER_MAURITANIA",
-   "type": "state"
+   "page": "locations/inner_mauritania",
+   "slug": "inner_mauritania",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_INNER_MOROCCO",
    "name": "Inner Morocco",
-   "page": "states#STATE_INNER_MOROCCO",
-   "slug": "STATE_INNER_MOROCCO",
-   "type": "state"
+   "page": "locations/inner_morocco",
+   "slug": "inner_morocco",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_IONIAN_ISLANDS",
    "name": "Ionian Islands",
-   "page": "states#STATE_IONIAN_ISLANDS",
-   "slug": "STATE_IONIAN_ISLANDS",
-   "type": "state"
+   "page": "locations/ionian_islands",
+   "slug": "ionian_islands",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_IOWA",
    "name": "Iowa",
-   "page": "states#STATE_IOWA",
-   "slug": "STATE_IOWA",
-   "type": "state"
+   "page": "locations/iowa",
+   "slug": "iowa",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_IRAKAJEMI",
    "name": "Irak-i-Ajami",
-   "page": "states#STATE_IRAKAJEMI",
-   "slug": "STATE_IRAKAJEMI",
-   "type": "state"
+   "page": "locations/irakajemi",
+   "slug": "irakajemi",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_IRKUTSK",
    "name": "Irkutsk",
-   "page": "states#STATE_IRKUTSK",
-   "slug": "STATE_IRKUTSK",
-   "type": "state"
+   "page": "locations/irkutsk",
+   "slug": "irkutsk",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_ISFAHAN",
    "name": "Isfahan",
-   "page": "states#STATE_ISFAHAN",
-   "slug": "STATE_ISFAHAN",
-   "type": "state"
+   "page": "locations/isfahan",
+   "slug": "isfahan",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_ISTRIA",
    "name": "Istria",
-   "page": "states#STATE_ISTRIA",
-   "slug": "STATE_ISTRIA",
-   "type": "state"
+   "page": "locations/istria",
+   "slug": "istria",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_IVORY_COAST",
    "name": "Ivory Coast",
-   "page": "states#STATE_IVORY_COAST",
-   "slug": "STATE_IVORY_COAST",
-   "type": "state"
+   "page": "locations/ivory_coast",
+   "slug": "ivory_coast",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_JALISCO",
    "name": "Jalisco",
-   "page": "states#STATE_JALISCO",
-   "slug": "STATE_JALISCO",
-   "type": "state"
+   "page": "locations/jalisco",
+   "slug": "jalisco",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_JAMAICA",
    "name": "Jamaica",
-   "page": "states#STATE_JAMAICA",
-   "slug": "STATE_JAMAICA",
-   "type": "state"
+   "page": "locations/jamaica",
+   "slug": "jamaica",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_JETISY",
    "name": "Ili",
-   "page": "states#STATE_JETISY",
-   "slug": "STATE_JETISY",
-   "type": "state"
+   "page": "locations/jetisy",
+   "slug": "jetisy",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_JIANGSU",
    "name": "Jiangsu",
-   "page": "states#STATE_JIANGSU",
-   "slug": "STATE_JIANGSU",
-   "type": "state"
+   "page": "locations/jiangsu",
+   "slug": "jiangsu",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_JIANGXI",
    "name": "Jiangxi",
-   "page": "states#STATE_JIANGXI",
-   "slug": "STATE_JIANGXI",
-   "type": "state"
+   "page": "locations/jiangxi",
+   "slug": "jiangxi",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_JUJUY",
    "name": "Jujuy",
-   "page": "states#STATE_JUJUY",
-   "slug": "STATE_JUJUY",
-   "type": "state"
+   "page": "locations/jujuy",
+   "slug": "jujuy",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_JUTLAND",
    "name": "Jutland",
-   "page": "states#STATE_JUTLAND",
-   "slug": "STATE_JUTLAND",
-   "type": "state"
+   "page": "locations/jutland",
+   "slug": "jutland",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_KABUL",
    "name": "Kabulistan",
-   "page": "states#STATE_KABUL",
-   "slug": "STATE_KABUL",
-   "type": "state"
+   "page": "locations/kabul",
+   "slug": "kabul",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_KACHIN",
    "name": "Sagaing",
-   "page": "states#STATE_KACHIN",
-   "slug": "STATE_KACHIN",
-   "type": "state"
+   "page": "locations/kachin",
+   "slug": "kachin",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_KALMYKIA",
    "name": "Kalmykia",
-   "page": "states#STATE_KALMYKIA",
-   "slug": "STATE_KALMYKIA",
-   "type": "state"
+   "page": "locations/kalmykia",
+   "slug": "kalmykia",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_KAMCHATKA",
    "name": "Kamchatka",
-   "page": "states#STATE_KAMCHATKA",
-   "slug": "STATE_KAMCHATKA",
-   "type": "state"
+   "page": "locations/kamchatka",
+   "slug": "kamchatka",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_KANAK",
    "name": "Kanak",
-   "page": "states#STATE_KANAK",
-   "slug": "STATE_KANAK",
-   "type": "state"
+   "page": "locations/kanak",
+   "slug": "kanak",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_KANDAHAR",
    "name": "Kandahar",
-   "page": "states#STATE_KANDAHAR",
-   "slug": "STATE_KANDAHAR",
-   "type": "state"
+   "page": "locations/kandahar",
+   "slug": "kandahar",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_KANSAI",
    "name": "Osaka",
-   "page": "states#STATE_KANSAI",
-   "slug": "STATE_KANSAI",
-   "type": "state"
+   "page": "locations/kansai",
+   "slug": "kansai",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_KANSAS",
    "name": "Kansas",
-   "page": "states#STATE_KANSAS",
-   "slug": "STATE_KANSAS",
-   "type": "state"
+   "page": "locations/kansas",
+   "slug": "kansas",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_KANTO",
    "name": "Kanto",
-   "page": "states#STATE_KANTO",
-   "slug": "STATE_KANTO",
-   "type": "state"
+   "page": "locations/kanto",
+   "slug": "kanto",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_KARS",
    "name": "Kars",
-   "page": "states#STATE_KARS",
-   "slug": "STATE_KARS",
-   "type": "state"
+   "page": "locations/kars",
+   "slug": "kars",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_KASAI",
    "name": "Kasai",
-   "page": "states#STATE_KASAI",
-   "slug": "STATE_KASAI",
-   "type": "state"
+   "page": "locations/kasai",
+   "slug": "kasai",
+   "type": "location"
   },
   {
    "group": "Himalayas",
    "icon": null,
    "id": "STATE_KASHMIR",
    "name": "Kashmir",
-   "page": "states#STATE_KASHMIR",
-   "slug": "STATE_KASHMIR",
-   "type": "state"
+   "page": "locations/kashmir",
+   "slug": "kashmir",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_KASTAMONU",
    "name": "Kastamonu",
-   "page": "states#STATE_KASTAMONU",
-   "slug": "STATE_KASTAMONU",
-   "type": "state"
+   "page": "locations/kastamonu",
+   "slug": "kastamonu",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_KATANGA",
    "name": "Katanga",
-   "page": "states#STATE_KATANGA",
-   "slug": "STATE_KATANGA",
-   "type": "state"
+   "page": "locations/katanga",
+   "slug": "katanga",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_KAUNAS",
    "name": "Lithuania",
-   "page": "states#STATE_KAUNAS",
-   "slug": "STATE_KAUNAS",
-   "type": "state"
+   "page": "locations/kaunas",
+   "slug": "kaunas",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_KAZAN",
    "name": "Kazan",
-   "page": "states#STATE_KAZAN",
-   "slug": "STATE_KAZAN",
-   "type": "state"
+   "page": "locations/kazan",
+   "slug": "kazan",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_KAZEMBE",
    "name": "Kazembe",
-   "page": "states#STATE_KAZEMBE",
-   "slug": "STATE_KAZEMBE",
-   "type": "state"
+   "page": "locations/kazembe",
+   "slug": "kazembe",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_KENTUCKY",
    "name": "Kentucky",
-   "page": "states#STATE_KENTUCKY",
-   "slug": "STATE_KENTUCKY",
-   "type": "state"
+   "page": "locations/kentucky",
+   "slug": "kentucky",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_KENYA",
    "name": "Kenya",
-   "page": "states#STATE_KENYA",
-   "slug": "STATE_KENYA",
-   "type": "state"
+   "page": "locations/kenya",
+   "slug": "kenya",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_KERMAN",
    "name": "Kerman",
-   "page": "states#STATE_KERMAN",
-   "slug": "STATE_KERMAN",
-   "type": "state"
+   "page": "locations/kerman",
+   "slug": "kerman",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_KHARKOV",
    "name": "Kharkiv",
-   "page": "states#STATE_KHARKOV",
-   "slug": "STATE_KHARKOV",
-   "type": "state"
+   "page": "locations/kharkov",
+   "slug": "kharkov",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_KHIVA",
    "name": "Chorasmia",
-   "page": "states#STATE_KHIVA",
-   "slug": "STATE_KHIVA",
-   "type": "state"
+   "page": "locations/khiva",
+   "slug": "khiva",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_KHORASAN",
    "name": "Khorasan",
-   "page": "states#STATE_KHORASAN",
-   "slug": "STATE_KHORASAN",
-   "type": "state"
+   "page": "locations/khorasan",
+   "slug": "khorasan",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_KHUZESTAN",
    "name": "Arabistan",
-   "page": "states#STATE_KHUZESTAN",
-   "slug": "STATE_KHUZESTAN",
-   "type": "state"
+   "page": "locations/khuzestan",
+   "slug": "khuzestan",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_KIEV",
    "name": "Kyiv",
-   "page": "states#STATE_KIEV",
-   "slug": "STATE_KIEV",
-   "type": "state"
+   "page": "locations/kiev",
+   "slug": "kiev",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_KIRGHIZIA",
    "name": "Kirghizia",
-   "page": "states#STATE_KIRGHIZIA",
-   "slug": "STATE_KIRGHIZIA",
-   "type": "state"
+   "page": "locations/kirghizia",
+   "slug": "kirghizia",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_KOLA",
    "name": "Kola",
-   "page": "states#STATE_KOLA",
-   "slug": "STATE_KOLA",
-   "type": "state"
+   "page": "locations/kola",
+   "slug": "kola",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_KOLYMA",
    "name": "Kolyma",
-   "page": "states#STATE_KOLYMA",
-   "slug": "STATE_KOLYMA",
-   "type": "state"
+   "page": "locations/kolyma",
+   "slug": "kolyma",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_KONYA",
    "name": "Konya",
-   "page": "states#STATE_KONYA",
-   "slug": "STATE_KONYA",
-   "type": "state"
+   "page": "locations/konya",
+   "slug": "konya",
+   "type": "location"
   },
   {
    "group": "Nile Basin",
    "icon": null,
    "id": "STATE_KORDOFAN",
    "name": "Kordofan",
-   "page": "states#STATE_KORDOFAN",
-   "slug": "STATE_KORDOFAN",
-   "type": "state"
+   "page": "locations/kordofan",
+   "slug": "kordofan",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_KOSOVO",
    "name": "Kosovo",
-   "page": "states#STATE_KOSOVO",
-   "slug": "STATE_KOSOVO",
-   "type": "state"
+   "page": "locations/kosovo",
+   "slug": "kosovo",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_KRASNOYARSK",
    "name": "Krasnoyarsk",
-   "page": "states#STATE_KRASNOYARSK",
-   "slug": "STATE_KRASNOYARSK",
-   "type": "state"
+   "page": "locations/krasnoyarsk",
+   "slug": "krasnoyarsk",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_KUBAN",
    "name": "Kuban",
-   "page": "states#STATE_KUBAN",
-   "slug": "STATE_KUBAN",
-   "type": "state"
+   "page": "locations/kuban",
+   "slug": "kuban",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_KUOPIO",
    "name": "Kuopio",
-   "page": "states#STATE_KUOPIO",
-   "slug": "STATE_KUOPIO",
-   "type": "state"
+   "page": "locations/kuopio",
+   "slug": "kuopio",
+   "type": "location"
   },
   {
    "group": "South India",
    "icon": null,
    "id": "STATE_KURNOOL",
    "name": "Ceded Districts",
-   "page": "states#STATE_KURNOOL",
-   "slug": "STATE_KURNOOL",
-   "type": "state"
+   "page": "locations/kurnool",
+   "slug": "kurnool",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_KURSK",
    "name": "Kursk",
-   "page": "states#STATE_KURSK",
-   "slug": "STATE_KURSK",
-   "type": "state"
+   "page": "locations/kursk",
+   "slug": "kursk",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_KYOTO",
    "name": "Kyoto",
-   "page": "states#STATE_KYOTO",
-   "slug": "STATE_KYOTO",
-   "type": "state"
+   "page": "locations/kyoto",
+   "slug": "kyoto",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_KYUSHU",
    "name": "Kyushu",
-   "page": "states#STATE_KYUSHU",
-   "slug": "STATE_KYUSHU",
-   "type": "state"
+   "page": "locations/kyushu",
+   "slug": "kyushu",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_LA_PAMPA",
    "name": "Córdoba",
-   "page": "states#STATE_LA_PAMPA",
-   "slug": "STATE_LA_PAMPA",
-   "type": "state"
+   "page": "locations/la_pampa",
+   "slug": "la_pampa",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_LA_PAZ",
    "name": "La Paz",
-   "page": "states#STATE_LA_PAZ",
-   "slug": "STATE_LA_PAZ",
-   "type": "state"
+   "page": "locations/la_paz",
+   "slug": "la_paz",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_LANCASHIRE",
    "name": "Lancashire",
-   "page": "states#STATE_LANCASHIRE",
-   "slug": "STATE_LANCASHIRE",
-   "type": "state"
+   "page": "locations/lancashire",
+   "slug": "lancashire",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_LANGUEDOC",
    "name": "Languedoc",
-   "page": "states#STATE_LANGUEDOC",
-   "slug": "STATE_LANGUEDOC",
-   "type": "state"
+   "page": "locations/languedoc",
+   "slug": "languedoc",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_LAOS",
    "name": "Laos",
-   "page": "states#STATE_LAOS",
-   "slug": "STATE_LAOS",
-   "type": "state"
+   "page": "locations/laos",
+   "slug": "laos",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_LARISTAN",
    "name": "Hormuz",
-   "page": "states#STATE_LARISTAN",
-   "slug": "STATE_LARISTAN",
-   "type": "state"
+   "page": "locations/laristan",
+   "slug": "laristan",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_LAZIO",
    "name": "Lazio",
-   "page": "states#STATE_LAZIO",
-   "slug": "STATE_LAZIO",
-   "type": "state"
+   "page": "locations/lazio",
+   "slug": "lazio",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_LEBANON",
    "name": "Lebanon",
-   "page": "states#STATE_LEBANON",
-   "slug": "STATE_LEBANON",
-   "type": "state"
+   "page": "locations/lebanon",
+   "slug": "lebanon",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_LEINSTER",
    "name": "Leinster",
-   "page": "states#STATE_LEINSTER",
-   "slug": "STATE_LEINSTER",
-   "type": "state"
+   "page": "locations/leinster",
+   "slug": "leinster",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_LEON",
    "name": "Leon",
-   "page": "states#STATE_LEON",
-   "slug": "STATE_LEON",
-   "type": "state"
+   "page": "locations/leon",
+   "slug": "leon",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_LESSER_POLAND",
    "name": "Lublin",
-   "page": "states#STATE_LESSER_POLAND",
-   "slug": "STATE_LESSER_POLAND",
-   "type": "state"
+   "page": "locations/lesser_poland",
+   "slug": "lesser_poland",
+   "type": "location"
   },
   {
    "group": "Himalayas",
    "icon": null,
    "id": "STATE_LHASA",
    "name": "Lhasa",
-   "page": "states#STATE_LHASA",
-   "slug": "STATE_LHASA",
-   "type": "state"
+   "page": "locations/lhasa",
+   "slug": "lhasa",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_LIBERIA",
    "name": "Grain Coast",
-   "page": "states#STATE_LIBERIA",
-   "slug": "STATE_LIBERIA",
-   "type": "state"
+   "page": "locations/liberia",
+   "slug": "liberia",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_LIBYA",
    "name": "Cyrenaica",
-   "page": "states#STATE_LIBYA",
-   "slug": "STATE_LIBYA",
-   "type": "state"
+   "page": "locations/libya",
+   "slug": "libya",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_LIBYAN_DESERT",
    "name": "Fezzan",
-   "page": "states#STATE_LIBYAN_DESERT",
-   "slug": "STATE_LIBYAN_DESERT",
-   "type": "state"
+   "page": "locations/libyan_desert",
+   "slug": "libyan_desert",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_LIMA",
    "name": "Lima",
-   "page": "states#STATE_LIMA",
-   "slug": "STATE_LIMA",
-   "type": "state"
+   "page": "locations/lima",
+   "slug": "lima",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_LINDI",
    "name": "Rufiji",
-   "page": "states#STATE_LINDI",
-   "slug": "STATE_LINDI",
-   "type": "state"
+   "page": "locations/lindi",
+   "slug": "lindi",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_LOMBARDY",
    "name": "Lombardy",
-   "page": "states#STATE_LOMBARDY",
-   "slug": "STATE_LOMBARDY",
-   "type": "state"
+   "page": "locations/lombardy",
+   "slug": "lombardy",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_LORRAINE",
    "name": "Lorraine",
-   "page": "states#STATE_LORRAINE",
-   "slug": "STATE_LORRAINE",
-   "type": "state"
+   "page": "locations/lorraine",
+   "slug": "lorraine",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_LOS_RIOS",
    "name": "Los Ríos",
-   "page": "states#STATE_LOS_RIOS",
-   "slug": "STATE_LOS_RIOS",
-   "type": "state"
+   "page": "locations/los_rios",
+   "slug": "los_rios",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_LOUISIANA",
    "name": "Louisiana",
-   "page": "states#STATE_LOUISIANA",
-   "slug": "STATE_LOUISIANA",
-   "type": "state"
+   "page": "locations/louisiana",
+   "slug": "louisiana",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_LOURENCO_MARQUES",
    "name": "Lourenço Marques",
-   "page": "states#STATE_LOURENCO_MARQUES",
-   "slug": "STATE_LOURENCO_MARQUES",
-   "type": "state"
+   "page": "locations/lourenco_marques",
+   "slug": "lourenco_marques",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_LOWER_ANDALUSIA",
    "name": "Lower Andalusia",
-   "page": "states#STATE_LOWER_ANDALUSIA",
-   "slug": "STATE_LOWER_ANDALUSIA",
-   "type": "state"
+   "page": "locations/lower_andalusia",
+   "slug": "lower_andalusia",
+   "type": "location"
   },
   {
    "group": "Nile Basin",
    "icon": null,
    "id": "STATE_LOWER_EGYPT",
    "name": "Lower Egypt",
-   "page": "states#STATE_LOWER_EGYPT",
-   "slug": "STATE_LOWER_EGYPT",
-   "type": "state"
+   "page": "locations/lower_egypt",
+   "slug": "lower_egypt",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_LOWER_SILESIA",
    "name": "Lower Silesia",
-   "page": "states#STATE_LOWER_SILESIA",
-   "slug": "STATE_LOWER_SILESIA",
-   "type": "state"
+   "page": "locations/lower_silesia",
+   "slug": "lower_silesia",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_LOWLANDS",
    "name": "Lowlands",
-   "page": "states#STATE_LOWLANDS",
-   "slug": "STATE_LOWLANDS",
-   "type": "state"
+   "page": "locations/lowlands",
+   "slug": "lowlands",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_LURISTAN",
    "name": "Luristan",
-   "page": "states#STATE_LURISTAN",
-   "slug": "STATE_LURISTAN",
-   "type": "state"
+   "page": "locations/luristan",
+   "slug": "luristan",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_LUZON",
    "name": "Luzón",
-   "page": "states#STATE_LUZON",
-   "slug": "STATE_LUZON",
-   "type": "state"
+   "page": "locations/luzon",
+   "slug": "luzon",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_MACEDONIA",
    "name": "Macedonia",
-   "page": "states#STATE_MACEDONIA",
-   "slug": "STATE_MACEDONIA",
-   "type": "state"
+   "page": "locations/macedonia",
+   "slug": "macedonia",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_MADEIRA",
    "name": "Madeira",
-   "page": "states#STATE_MADEIRA",
-   "slug": "STATE_MADEIRA",
-   "type": "state"
+   "page": "locations/madeira",
+   "slug": "madeira",
+   "type": "location"
   },
   {
    "group": "South India",
    "icon": null,
    "id": "STATE_MADRAS",
    "name": "Carnatic",
-   "page": "states#STATE_MADRAS",
-   "slug": "STATE_MADRAS",
-   "type": "state"
+   "page": "locations/madras",
+   "slug": "madras",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_MAINE",
    "name": "Maine",
-   "page": "states#STATE_MAINE",
-   "slug": "STATE_MAINE",
-   "type": "state"
+   "page": "locations/maine",
+   "slug": "maine",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_MAINE_ANJOU",
    "name": "Maine-Anjou",
-   "page": "states#STATE_MAINE_ANJOU",
-   "slug": "STATE_MAINE_ANJOU",
-   "type": "state"
+   "page": "locations/maine_anjou",
+   "slug": "maine_anjou",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_MALAYA",
    "name": "Malaya",
-   "page": "states#STATE_MALAYA",
-   "slug": "STATE_MALAYA",
-   "type": "state"
+   "page": "locations/malaya",
+   "slug": "malaya",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_MALTA",
    "name": "Malta",
-   "page": "states#STATE_MALTA",
-   "slug": "STATE_MALTA",
-   "type": "state"
+   "page": "locations/malta",
+   "slug": "malta",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_MALWA",
    "name": "Malwa",
-   "page": "states#STATE_MALWA",
-   "slug": "STATE_MALWA",
-   "type": "state"
+   "page": "locations/malwa",
+   "slug": "malwa",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_MANDALAY",
    "name": "Mandalay",
-   "page": "states#STATE_MANDALAY",
-   "slug": "STATE_MANDALAY",
-   "type": "state"
+   "page": "locations/mandalay",
+   "slug": "mandalay",
+   "type": "location"
   },
   {
    "group": "Canada",
    "icon": null,
    "id": "STATE_MANITOBA",
    "name": "Manitoba",
-   "page": "states#STATE_MANITOBA",
-   "slug": "STATE_MANITOBA",
-   "type": "state"
+   "page": "locations/manitoba",
+   "slug": "manitoba",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_MARANHAO",
    "name": "Maranhão",
-   "page": "states#STATE_MARANHAO",
-   "slug": "STATE_MARANHAO",
-   "type": "state"
+   "page": "locations/maranhao",
+   "slug": "maranhao",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_MARRAKECH",
    "name": "Marrakech",
-   "page": "states#STATE_MARRAKECH",
-   "slug": "STATE_MARRAKECH",
-   "type": "state"
+   "page": "locations/marrakech",
+   "slug": "marrakech",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_MARYLAND",
    "name": "Maryland",
-   "page": "states#STATE_MARYLAND",
-   "slug": "STATE_MARYLAND",
-   "type": "state"
+   "page": "locations/maryland",
+   "slug": "maryland",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_MASSACHUSETTS",
    "name": "Massachusetts",
-   "page": "states#STATE_MASSACHUSETTS",
-   "slug": "STATE_MASSACHUSETTS",
-   "type": "state"
+   "page": "locations/massachusetts",
+   "slug": "massachusetts",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_MATO_GROSSO",
    "name": "Mato Grosso",
-   "page": "states#STATE_MATO_GROSSO",
-   "slug": "STATE_MATO_GROSSO",
-   "type": "state"
+   "page": "locations/mato_grosso",
+   "slug": "mato_grosso",
+   "type": "location"
   },
   {
    "group": "Nile Basin",
    "icon": null,
    "id": "STATE_MATRUH",
    "name": "Matruh",
-   "page": "states#STATE_MATRUH",
-   "slug": "STATE_MATRUH",
-   "type": "state"
+   "page": "locations/matruh",
+   "slug": "matruh",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_MAURITANIA",
    "name": "Mauritania",
-   "page": "states#STATE_MAURITANIA",
-   "slug": "STATE_MAURITANIA",
-   "type": "state"
+   "page": "locations/mauritania",
+   "slug": "mauritania",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_MAZANDARAN",
    "name": "Mazandaran",
-   "page": "states#STATE_MAZANDARAN",
-   "slug": "STATE_MAZANDARAN",
-   "type": "state"
+   "page": "locations/mazandaran",
+   "slug": "mazandaran",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_MAZOVIA",
    "name": "Płock",
-   "page": "states#STATE_MAZOVIA",
-   "slug": "STATE_MAZOVIA",
-   "type": "state"
+   "page": "locations/mazovia",
+   "slug": "mazovia",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_MECKLENBURG",
    "name": "Mecklenburg",
-   "page": "states#STATE_MECKLENBURG",
-   "slug": "STATE_MECKLENBURG",
-   "type": "state"
+   "page": "locations/mecklenburg",
+   "slug": "mecklenburg",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_MEKONG",
    "name": "Mekong",
-   "page": "states#STATE_MEKONG",
-   "slug": "STATE_MEKONG",
-   "type": "state"
+   "page": "locations/mekong",
+   "slug": "mekong",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_MERZ",
    "name": "Merv",
-   "page": "states#STATE_MERZ",
-   "slug": "STATE_MERZ",
-   "type": "state"
+   "page": "locations/merz",
+   "slug": "merz",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_MEXICO",
    "name": "México",
-   "page": "states#STATE_MEXICO",
-   "slug": "STATE_MEXICO",
-   "type": "state"
+   "page": "locations/mexico",
+   "slug": "mexico",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_MICHIGAN",
    "name": "Michigan",
-   "page": "states#STATE_MICHIGAN",
-   "slug": "STATE_MICHIGAN",
-   "type": "state"
+   "page": "locations/michigan",
+   "slug": "michigan",
+   "type": "location"
   },
   {
    "group": "Nile Basin",
    "icon": null,
    "id": "STATE_MIDDLE_EGYPT",
    "name": "Middle Egypt",
-   "page": "states#STATE_MIDDLE_EGYPT",
-   "slug": "STATE_MIDDLE_EGYPT",
-   "type": "state"
+   "page": "locations/middle_egypt",
+   "slug": "middle_egypt",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_MIDLANDS",
    "name": "Midlands",
-   "page": "states#STATE_MIDLANDS",
-   "slug": "STATE_MIDLANDS",
-   "type": "state"
+   "page": "locations/midlands",
+   "slug": "midlands",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_MINAS_GERAIS",
    "name": "Minas Gerais",
-   "page": "states#STATE_MINAS_GERAIS",
-   "slug": "STATE_MINAS_GERAIS",
-   "type": "state"
+   "page": "locations/minas_gerais",
+   "slug": "minas_gerais",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_MINDANAO",
    "name": "Mindanao",
-   "page": "states#STATE_MINDANAO",
-   "slug": "STATE_MINDANAO",
-   "type": "state"
+   "page": "locations/mindanao",
+   "slug": "mindanao",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_MINNESOTA",
    "name": "Minnesota",
-   "page": "states#STATE_MINNESOTA",
-   "slug": "STATE_MINNESOTA",
-   "type": "state"
+   "page": "locations/minnesota",
+   "slug": "minnesota",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_MINSK",
    "name": "Minsk",
-   "page": "states#STATE_MINSK",
-   "slug": "STATE_MINSK",
-   "type": "state"
+   "page": "locations/minsk",
+   "slug": "minsk",
+   "type": "location"
   },
   {
    "group": "Gran Colombia",
    "icon": null,
    "id": "STATE_MIRANDA",
    "name": "Miranda",
-   "page": "states#STATE_MIRANDA",
-   "slug": "STATE_MIRANDA",
-   "type": "state"
+   "page": "locations/miranda",
+   "slug": "miranda",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_MISSISSIPPI",
    "name": "Mississippi",
-   "page": "states#STATE_MISSISSIPPI",
-   "slug": "STATE_MISSISSIPPI",
-   "type": "state"
+   "page": "locations/mississippi",
+   "slug": "mississippi",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_MISSOURI",
    "name": "Missouri",
-   "page": "states#STATE_MISSOURI",
-   "slug": "STATE_MISSOURI",
-   "type": "state"
+   "page": "locations/missouri",
+   "slug": "missouri",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_MOCAMBIQUE",
    "name": "Mocambique",
-   "page": "states#STATE_MOCAMBIQUE",
-   "slug": "STATE_MOCAMBIQUE",
-   "type": "state"
+   "page": "locations/mocambique",
+   "slug": "mocambique",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_MOGILEV",
    "name": "Magiliow",
-   "page": "states#STATE_MOGILEV",
-   "slug": "STATE_MOGILEV",
-   "type": "state"
+   "page": "locations/mogilev",
+   "slug": "mogilev",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_MOLDAVIA",
    "name": "Moldavia",
-   "page": "states#STATE_MOLDAVIA",
-   "slug": "STATE_MOLDAVIA",
-   "type": "state"
+   "page": "locations/moldavia",
+   "slug": "moldavia",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_MOLUCCAS",
    "name": "Moluccas",
-   "page": "states#STATE_MOLUCCAS",
-   "slug": "STATE_MOLUCCAS",
-   "type": "state"
+   "page": "locations/moluccas",
+   "slug": "moluccas",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_MONTANA",
    "name": "Montana",
-   "page": "states#STATE_MONTANA",
-   "slug": "STATE_MONTANA",
-   "type": "state"
+   "page": "locations/montana",
+   "slug": "montana",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_MONTENEGRO",
    "name": "Montenegro",
-   "page": "states#STATE_MONTENEGRO",
-   "slug": "STATE_MONTENEGRO",
-   "type": "state"
+   "page": "locations/montenegro",
+   "slug": "montenegro",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_MORAVIA",
    "name": "Moravia",
-   "page": "states#STATE_MORAVIA",
-   "slug": "STATE_MORAVIA",
-   "type": "state"
+   "page": "locations/moravia",
+   "slug": "moravia",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_MOSCOW",
    "name": "Moscow",
-   "page": "states#STATE_MOSCOW",
-   "slug": "STATE_MOSCOW",
-   "type": "state"
+   "page": "locations/moscow",
+   "slug": "moscow",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_MOSUL",
    "name": "Mosul",
-   "page": "states#STATE_MOSUL",
-   "slug": "STATE_MOSUL",
-   "type": "state"
+   "page": "locations/mosul",
+   "slug": "mosul",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_MUNSTER",
    "name": "Munster",
-   "page": "states#STATE_MUNSTER",
-   "slug": "STATE_MUNSTER",
-   "type": "state"
+   "page": "locations/munster",
+   "slug": "munster",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_MURCIA",
    "name": "Murcia",
-   "page": "states#STATE_MURCIA",
-   "slug": "STATE_MURCIA",
-   "type": "state"
+   "page": "locations/murcia",
+   "slug": "murcia",
+   "type": "location"
   },
   {
    "group": "South India",
    "icon": null,
    "id": "STATE_MYSORE",
    "name": "Mysore",
-   "page": "states#STATE_MYSORE",
-   "slug": "STATE_MYSORE",
-   "type": "state"
+   "page": "locations/mysore",
+   "slug": "mysore",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_NAKHON_RATCHASIMA",
    "name": "Nakhon Ratchasima",
-   "page": "states#STATE_NAKHON_RATCHASIMA",
-   "slug": "STATE_NAKHON_RATCHASIMA",
-   "type": "state"
+   "page": "locations/nakhon_ratchasima",
+   "slug": "nakhon_ratchasima",
+   "type": "location"
   },
   {
    "group": "Southern Africa",
    "icon": null,
    "id": "STATE_NAMAQUALAND",
    "name": "Namaqualand",
-   "page": "states#STATE_NAMAQUALAND",
-   "slug": "STATE_NAMAQUALAND",
-   "type": "state"
+   "page": "locations/namaqualand",
+   "slug": "namaqualand",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_NANJING",
    "name": "Nanjing",
-   "page": "states#STATE_NANJING",
-   "slug": "STATE_NANJING",
-   "type": "state"
+   "page": "locations/nanjing",
+   "slug": "nanjing",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_NAURU",
    "name": "Nauru",
-   "page": "states#STATE_NAURU",
-   "slug": "STATE_NAURU",
-   "type": "state"
+   "page": "locations/nauru",
+   "slug": "nauru",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_NEBRASKA",
    "name": "Nebraska",
-   "page": "states#STATE_NEBRASKA",
-   "slug": "STATE_NEBRASKA",
-   "type": "state"
+   "page": "locations/nebraska",
+   "slug": "nebraska",
+   "type": "location"
   },
   {
    "group": "Arabia",
    "icon": null,
    "id": "STATE_NEJD",
    "name": "Nejd",
-   "page": "states#STATE_NEJD",
-   "slug": "STATE_NEJD",
-   "type": "state"
+   "page": "locations/nejd",
+   "slug": "nejd",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_NENETSIA",
    "name": "Nenetsia",
-   "page": "states#STATE_NENETSIA",
-   "slug": "STATE_NENETSIA",
-   "type": "state"
+   "page": "locations/nenetsia",
+   "slug": "nenetsia",
+   "type": "location"
   },
   {
    "group": "Pacific Coast",
    "icon": null,
    "id": "STATE_NEVADA",
    "name": "Nevada",
-   "page": "states#STATE_NEVADA",
-   "slug": "STATE_NEVADA",
-   "type": "state"
+   "page": "locations/nevada",
+   "slug": "nevada",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_NEW_BRUNSWICK",
    "name": "Maritimes",
-   "page": "states#STATE_NEW_BRUNSWICK",
-   "slug": "STATE_NEW_BRUNSWICK",
-   "type": "state"
+   "page": "locations/new_brunswick",
+   "slug": "new_brunswick",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_NEW_CASTILE",
    "name": "New Castile",
-   "page": "states#STATE_NEW_CASTILE",
-   "slug": "STATE_NEW_CASTILE",
-   "type": "state"
+   "page": "locations/new_castile",
+   "slug": "new_castile",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_NEW_HAMPSHIRE",
    "name": "New Hampshire",
-   "page": "states#STATE_NEW_HAMPSHIRE",
-   "slug": "STATE_NEW_HAMPSHIRE",
-   "type": "state"
+   "page": "locations/new_hampshire",
+   "slug": "new_hampshire",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_NEW_JERSEY",
    "name": "New Jersey",
-   "page": "states#STATE_NEW_JERSEY",
-   "slug": "STATE_NEW_JERSEY",
-   "type": "state"
+   "page": "locations/new_jersey",
+   "slug": "new_jersey",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_NEW_MEXICO",
    "name": "New Mexico",
-   "page": "states#STATE_NEW_MEXICO",
-   "slug": "STATE_NEW_MEXICO",
-   "type": "state"
+   "page": "locations/new_mexico",
+   "slug": "new_mexico",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_NEW_SOUTH_WALES",
    "name": "New South Wales",
-   "page": "states#STATE_NEW_SOUTH_WALES",
-   "slug": "STATE_NEW_SOUTH_WALES",
-   "type": "state"
+   "page": "locations/new_south_wales",
+   "slug": "new_south_wales",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_NEW_YORK",
    "name": "New York",
-   "page": "states#STATE_NEW_YORK",
-   "slug": "STATE_NEW_YORK",
-   "type": "state"
+   "page": "locations/new_york",
+   "slug": "new_york",
+   "type": "location"
   },
   {
    "group": "Canada",
    "icon": null,
    "id": "STATE_NEWFOUNDLAND",
    "name": "Newfoundland",
-   "page": "states#STATE_NEWFOUNDLAND",
-   "slug": "STATE_NEWFOUNDLAND",
-   "type": "state"
+   "page": "locations/newfoundland",
+   "slug": "newfoundland",
+   "type": "location"
   },
   {
    "group": "Himalayas",
    "icon": null,
    "id": "STATE_NGARI",
    "name": "Ngari",
-   "page": "states#STATE_NGARI",
-   "slug": "STATE_NGARI",
-   "type": "state"
+   "page": "locations/ngari",
+   "slug": "ngari",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_NICARAGUA",
    "name": "Nicaragua",
-   "page": "states#STATE_NICARAGUA",
-   "slug": "STATE_NICARAGUA",
-   "type": "state"
+   "page": "locations/nicaragua",
+   "slug": "nicaragua",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_NIGER",
    "name": "Niger",
-   "page": "states#STATE_NIGER",
-   "slug": "STATE_NIGER",
-   "type": "state"
+   "page": "locations/niger",
+   "slug": "niger",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_NIGER_DELTA",
    "name": "Niger Delta",
-   "page": "states#STATE_NIGER_DELTA",
-   "slug": "STATE_NIGER_DELTA",
-   "type": "state"
+   "page": "locations/niger_delta",
+   "slug": "niger_delta",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_NIGERIA",
    "name": "Nigeria",
-   "page": "states#STATE_NIGERIA",
-   "slug": "STATE_NIGERIA",
-   "type": "state"
+   "page": "locations/nigeria",
+   "slug": "nigeria",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_NINGXIA",
    "name": "Ningxia",
-   "page": "states#STATE_NINGXIA",
-   "slug": "STATE_NINGXIA",
-   "type": "state"
+   "page": "locations/ningxia",
+   "slug": "ningxia",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_NIZHNY_NOVGOROD",
    "name": "Nizhny Novgorod",
-   "page": "states#STATE_NIZHNY_NOVGOROD",
-   "slug": "STATE_NIZHNY_NOVGOROD",
-   "type": "state"
+   "page": "locations/nizhny_novgorod",
+   "slug": "nizhny_novgorod",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_NORMANDY",
    "name": "Normandy",
-   "page": "states#STATE_NORMANDY",
-   "slug": "STATE_NORMANDY",
-   "type": "state"
+   "page": "locations/normandy",
+   "slug": "normandy",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_NORRLAND",
    "name": "Norrland",
-   "page": "states#STATE_NORRLAND",
-   "slug": "STATE_NORRLAND",
-   "type": "state"
+   "page": "locations/norrland",
+   "slug": "norrland",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_NORTH_ANGOLA",
    "name": "North Angola",
-   "page": "states#STATE_NORTH_ANGOLA",
-   "slug": "STATE_NORTH_ANGOLA",
-   "type": "state"
+   "page": "locations/north_angola",
+   "slug": "north_angola",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_NORTH_BORNEO",
    "name": "North Borneo",
-   "page": "states#STATE_NORTH_BORNEO",
-   "slug": "STATE_NORTH_BORNEO",
-   "type": "state"
+   "page": "locations/north_borneo",
+   "slug": "north_borneo",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_NORTH_CAMEROON",
    "name": "North Cameroon",
-   "page": "states#STATE_NORTH_CAMEROON",
-   "slug": "STATE_NORTH_CAMEROON",
-   "type": "state"
+   "page": "locations/north_cameroon",
+   "slug": "north_cameroon",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_NORTH_CAROLINA",
    "name": "North Carolina",
-   "page": "states#STATE_NORTH_CAROLINA",
-   "slug": "STATE_NORTH_CAROLINA",
-   "type": "state"
+   "page": "locations/north_carolina",
+   "slug": "north_carolina",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_NORTH_CAUCASUS",
    "name": "North Caucasus",
-   "page": "states#STATE_NORTH_CAUCASUS",
-   "slug": "STATE_NORTH_CAUCASUS",
-   "type": "state"
+   "page": "locations/north_caucasus",
+   "slug": "north_caucasus",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_NORTH_DAKOTA",
    "name": "North Dakota",
-   "page": "states#STATE_NORTH_DAKOTA",
-   "slug": "STATE_NORTH_DAKOTA",
-   "type": "state"
+   "page": "locations/north_dakota",
+   "slug": "north_dakota",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_NORTH_ISLAND",
    "name": "North Island",
-   "page": "states#STATE_NORTH_ISLAND",
-   "slug": "STATE_NORTH_ISLAND",
-   "type": "state"
+   "page": "locations/north_island",
+   "slug": "north_island",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_NORTH_MADAGASCAR",
    "name": "North Madagascar",
-   "page": "states#STATE_NORTH_MADAGASCAR",
-   "slug": "STATE_NORTH_MADAGASCAR",
-   "type": "state"
+   "page": "locations/north_madagascar",
+   "slug": "north_madagascar",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_NORTH_RHINE",
    "name": "North Rhine",
-   "page": "states#STATE_NORTH_RHINE",
-   "slug": "STATE_NORTH_RHINE",
-   "type": "state"
+   "page": "locations/north_rhine",
+   "slug": "north_rhine",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_NORTH_SUMATRA",
    "name": "North Sumatra",
-   "page": "states#STATE_NORTH_SUMATRA",
-   "slug": "STATE_NORTH_SUMATRA",
-   "type": "state"
+   "page": "locations/north_sumatra",
+   "slug": "north_sumatra",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_NORTHERN_ANHUI",
    "name": "Northern Anhui",
-   "page": "states#STATE_NORTHERN_ANHUI",
-   "slug": "STATE_NORTHERN_ANHUI",
-   "type": "state"
+   "page": "locations/northern_anhui",
+   "slug": "northern_anhui",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_NORTHERN_BALUCHISTAN",
    "name": "Northern Baluchistan",
-   "page": "states#STATE_NORTHERN_BALUCHISTAN",
-   "slug": "STATE_NORTHERN_BALUCHISTAN",
-   "type": "state"
+   "page": "locations/northern_baluchistan",
+   "slug": "northern_baluchistan",
+   "type": "location"
   },
   {
    "group": "Southern Africa",
    "icon": null,
    "id": "STATE_NORTHERN_CAPE",
    "name": "Northern Cape",
-   "page": "states#STATE_NORTHERN_CAPE",
-   "slug": "STATE_NORTHERN_CAPE",
-   "type": "state"
+   "page": "locations/northern_cape",
+   "slug": "northern_cape",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_NORTHERN_MANCHURIA",
    "name": "Southern Heilongjiang",
-   "page": "states#STATE_NORTHERN_MANCHURIA",
-   "slug": "STATE_NORTHERN_MANCHURIA",
-   "type": "state"
+   "page": "locations/northern_manchuria",
+   "slug": "northern_manchuria",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_NORTHERN_NORWAY",
    "name": "Northern Norway",
-   "page": "states#STATE_NORTHERN_NORWAY",
-   "slug": "STATE_NORTHERN_NORWAY",
-   "type": "state"
+   "page": "locations/northern_norway",
+   "slug": "northern_norway",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_NORTHERN_TERRITORY",
    "name": "Northern Territory",
-   "page": "states#STATE_NORTHERN_TERRITORY",
-   "slug": "STATE_NORTHERN_TERRITORY",
-   "type": "state"
+   "page": "locations/northern_territory",
+   "slug": "northern_territory",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_NORTHERN_THRACE",
    "name": "Northern Thrace",
-   "page": "states#STATE_NORTHERN_THRACE",
-   "slug": "STATE_NORTHERN_THRACE",
-   "type": "state"
+   "page": "locations/northern_thrace",
+   "slug": "northern_thrace",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_NORTHERN_TRANSYLVANIA",
    "name": "Northern Transylvania",
-   "page": "states#STATE_NORTHERN_TRANSYLVANIA",
-   "slug": "STATE_NORTHERN_TRANSYLVANIA",
-   "type": "state"
+   "page": "locations/northern_transylvania",
+   "slug": "northern_transylvania",
+   "type": "location"
   },
   {
    "group": "Canada",
    "icon": null,
    "id": "STATE_NORTHWEST_TERRITORIES",
    "name": "Northwest Territories",
-   "page": "states#STATE_NORTHWEST_TERRITORIES",
-   "slug": "STATE_NORTHWEST_TERRITORIES",
-   "type": "state"
+   "page": "locations/northwest_territories",
+   "slug": "northwest_territories",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_NOVGOROD",
    "name": "Novgorod",
-   "page": "states#STATE_NOVGOROD",
-   "slug": "STATE_NOVGOROD",
-   "type": "state"
+   "page": "locations/novgorod",
+   "slug": "novgorod",
+   "type": "location"
   },
   {
    "group": "Canada",
    "icon": null,
    "id": "STATE_NUNAVUT",
    "name": "Nunavut",
-   "page": "states#STATE_NUNAVUT",
-   "slug": "STATE_NUNAVUT",
-   "type": "state"
+   "page": "locations/nunavut",
+   "slug": "nunavut",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_OAXACA",
    "name": "Oaxaca",
-   "page": "states#STATE_OAXACA",
-   "slug": "STATE_OAXACA",
-   "type": "state"
+   "page": "locations/oaxaca",
+   "slug": "oaxaca",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_OB",
    "name": "Ob",
-   "page": "states#STATE_OB",
-   "slug": "STATE_OB",
-   "type": "state"
+   "page": "locations/ob",
+   "slug": "ob",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_OHIO",
    "name": "Ohio",
-   "page": "states#STATE_OHIO",
-   "slug": "STATE_OHIO",
-   "type": "state"
+   "page": "locations/ohio",
+   "slug": "ohio",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_OKHOTSK",
    "name": "Okhotsk",
-   "page": "states#STATE_OKHOTSK",
-   "slug": "STATE_OKHOTSK",
-   "type": "state"
+   "page": "locations/okhotsk",
+   "slug": "okhotsk",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_OKLAHOMA",
    "name": "Oklahoma",
-   "page": "states#STATE_OKLAHOMA",
-   "slug": "STATE_OKLAHOMA",
-   "type": "state"
+   "page": "locations/oklahoma",
+   "slug": "oklahoma",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_OLD_CASTILE",
    "name": "Old Castile",
-   "page": "states#STATE_OLD_CASTILE",
-   "slug": "STATE_OLD_CASTILE",
-   "type": "state"
+   "page": "locations/old_castile",
+   "slug": "old_castile",
+   "type": "location"
   },
   {
    "group": "Arabia",
    "icon": null,
    "id": "STATE_OMAN",
    "name": "Oman",
-   "page": "states#STATE_OMAN",
-   "slug": "STATE_OMAN",
-   "type": "state"
+   "page": "locations/oman",
+   "slug": "oman",
+   "type": "location"
   },
   {
    "group": "Canada",
    "icon": null,
    "id": "STATE_ONTARIO",
    "name": "Ontario",
-   "page": "states#STATE_ONTARIO",
-   "slug": "STATE_ONTARIO",
-   "type": "state"
+   "page": "locations/ontario",
+   "slug": "ontario",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_ORAN",
    "name": "Oran",
-   "page": "states#STATE_ORAN",
-   "slug": "STATE_ORAN",
-   "type": "state"
+   "page": "locations/oran",
+   "slug": "oran",
+   "type": "location"
   },
   {
    "group": "Pacific Coast",
    "icon": null,
    "id": "STATE_OREGON",
    "name": "Oregon",
-   "page": "states#STATE_OREGON",
-   "slug": "STATE_OREGON",
-   "type": "state"
+   "page": "locations/oregon",
+   "slug": "oregon",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_ORISSA",
    "name": "Orissa",
-   "page": "states#STATE_ORISSA",
-   "slug": "STATE_ORISSA",
-   "type": "state"
+   "page": "locations/orissa",
+   "slug": "orissa",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_ORLEANS",
    "name": "Orléanais-Berry",
-   "page": "states#STATE_ORLEANS",
-   "slug": "STATE_ORLEANS",
-   "type": "state"
+   "page": "locations/orleans",
+   "slug": "orleans",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_OROMIA",
    "name": "Oromia",
-   "page": "states#STATE_OROMIA",
-   "slug": "STATE_OROMIA",
-   "type": "state"
+   "page": "locations/oromia",
+   "slug": "oromia",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_ORYOL",
    "name": "Tula",
-   "page": "states#STATE_ORYOL",
-   "slug": "STATE_ORYOL",
-   "type": "state"
+   "page": "locations/oryol",
+   "slug": "oryol",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_OSTROBOTHNIA",
    "name": "Ostrobothnia",
-   "page": "states#STATE_OSTROBOTHNIA",
-   "slug": "STATE_OSTROBOTHNIA",
-   "type": "state"
+   "page": "locations/ostrobothnia",
+   "slug": "ostrobothnia",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_OULU",
    "name": "Oulu",
-   "page": "states#STATE_OULU",
-   "slug": "STATE_OULU",
-   "type": "state"
+   "page": "locations/oulu",
+   "slug": "oulu",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_OUTER_HAUSALAND",
    "name": "Outer Hausaland",
-   "page": "states#STATE_OUTER_HAUSALAND",
-   "slug": "STATE_OUTER_HAUSALAND",
-   "type": "state"
+   "page": "locations/outer_hausaland",
+   "slug": "outer_hausaland",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_OUTER_MANCHURIA",
    "name": "Northern Jilin",
-   "page": "states#STATE_OUTER_MANCHURIA",
-   "slug": "STATE_OUTER_MANCHURIA",
-   "type": "state"
+   "page": "locations/outer_manchuria",
+   "slug": "outer_manchuria",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_PALESTINE",
    "name": "Palestine",
-   "page": "states#STATE_PALESTINE",
-   "slug": "STATE_PALESTINE",
-   "type": "state"
+   "page": "locations/palestine",
+   "slug": "palestine",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_PANAMA",
    "name": "Panama",
-   "page": "states#STATE_PANAMA",
-   "slug": "STATE_PANAMA",
-   "type": "state"
+   "page": "locations/panama",
+   "slug": "panama",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_PARA",
    "name": "Pará",
-   "page": "states#STATE_PARA",
-   "slug": "STATE_PARA",
-   "type": "state"
+   "page": "locations/para",
+   "slug": "para",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_PARAIBA",
    "name": "Paraíba",
-   "page": "states#STATE_PARAIBA",
-   "slug": "STATE_PARAIBA",
-   "type": "state"
+   "page": "locations/paraiba",
+   "slug": "paraiba",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_PARANA",
    "name": "Paraná",
-   "page": "states#STATE_PARANA",
-   "slug": "STATE_PARANA",
-   "type": "state"
+   "page": "locations/parana",
+   "slug": "parana",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_PASHTUNISTAN",
    "name": "Pashtunistan",
-   "page": "states#STATE_PASHTUNISTAN",
-   "slug": "STATE_PASHTUNISTAN",
-   "type": "state"
+   "page": "locations/pashtunistan",
+   "slug": "pashtunistan",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_PASTAZA",
    "name": "Pastaza",
-   "page": "states#STATE_PASTAZA",
-   "slug": "STATE_PASTAZA",
-   "type": "state"
+   "page": "locations/pastaza",
+   "slug": "pastaza",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_PATAGONIA",
    "name": "Patagonia",
-   "page": "states#STATE_PATAGONIA",
-   "slug": "STATE_PATAGONIA",
-   "type": "state"
+   "page": "locations/patagonia",
+   "slug": "patagonia",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_PEGU",
    "name": "Pegu",
-   "page": "states#STATE_PEGU",
-   "slug": "STATE_PEGU",
-   "type": "state"
+   "page": "locations/pegu",
+   "slug": "pegu",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_PELOPONNESE",
    "name": "Peloponnese",
-   "page": "states#STATE_PELOPONNESE",
-   "slug": "STATE_PELOPONNESE",
-   "type": "state"
+   "page": "locations/peloponnese",
+   "slug": "peloponnese",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_PENNSYLVANIA",
    "name": "Pennsylvania",
-   "page": "states#STATE_PENNSYLVANIA",
-   "slug": "STATE_PENNSYLVANIA",
-   "type": "state"
+   "page": "locations/pennsylvania",
+   "slug": "pennsylvania",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_PERM",
    "name": "Perm",
-   "page": "states#STATE_PERM",
-   "slug": "STATE_PERM",
-   "type": "state"
+   "page": "locations/perm",
+   "slug": "perm",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_PERNAMBUCO",
    "name": "Pernambuco",
-   "page": "states#STATE_PERNAMBUCO",
-   "slug": "STATE_PERNAMBUCO",
-   "type": "state"
+   "page": "locations/pernambuco",
+   "slug": "pernambuco",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_PERSIAN_KURDISTAN",
    "name": "Persian Kurdistan",
-   "page": "states#STATE_PERSIAN_KURDISTAN",
-   "slug": "STATE_PERSIAN_KURDISTAN",
-   "type": "state"
+   "page": "locations/persian_kurdistan",
+   "slug": "persian_kurdistan",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_PIAUI",
    "name": "Piauí",
-   "page": "states#STATE_PIAUI",
-   "slug": "STATE_PIAUI",
-   "type": "state"
+   "page": "locations/piaui",
+   "slug": "piaui",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_PICARDY",
    "name": "Picardy",
-   "page": "states#STATE_PICARDY",
-   "slug": "STATE_PICARDY",
-   "type": "state"
+   "page": "locations/picardy",
+   "slug": "picardy",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_PIEDMONT",
    "name": "Piedmont",
-   "page": "states#STATE_PIEDMONT",
-   "slug": "STATE_PIEDMONT",
-   "type": "state"
+   "page": "locations/piedmont",
+   "slug": "piedmont",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_POITOU",
    "name": "Poitou-Saintonge",
-   "page": "states#STATE_POITOU",
-   "slug": "STATE_POITOU",
-   "type": "state"
+   "page": "locations/poitou",
+   "slug": "poitou",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_POMERANIA",
    "name": "Pomerania",
-   "page": "states#STATE_POMERANIA",
-   "slug": "STATE_POMERANIA",
-   "type": "state"
+   "page": "locations/pomerania",
+   "slug": "pomerania",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_POSEN",
    "name": "Posen",
-   "page": "states#STATE_POSEN",
-   "slug": "STATE_POSEN",
-   "type": "state"
+   "page": "locations/posen",
+   "slug": "posen",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_POTOSI",
    "name": "Potosí",
-   "page": "states#STATE_POTOSI",
-   "slug": "STATE_POTOSI",
-   "type": "state"
+   "page": "locations/potosi",
+   "slug": "potosi",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_PROVENCE",
    "name": "Provence",
-   "page": "states#STATE_PROVENCE",
-   "slug": "STATE_PROVENCE",
-   "type": "state"
+   "page": "locations/provence",
+   "slug": "provence",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_PSKOV",
    "name": "Pskov",
-   "page": "states#STATE_PSKOV",
-   "slug": "STATE_PSKOV",
-   "type": "state"
+   "page": "locations/pskov",
+   "slug": "pskov",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_PUERTO_RICO",
    "name": "Porto Rico",
-   "page": "states#STATE_PUERTO_RICO",
-   "slug": "STATE_PUERTO_RICO",
-   "type": "state"
+   "page": "locations/puerto_rico",
+   "slug": "puerto_rico",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_PUNJAB",
    "name": "Punjab",
-   "page": "states#STATE_PUNJAB",
-   "slug": "STATE_PUNJAB",
-   "type": "state"
+   "page": "locations/punjab",
+   "slug": "punjab",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_PYONGYANG",
    "name": "Yangseo",
-   "page": "states#STATE_PYONGYANG",
-   "slug": "STATE_PYONGYANG",
-   "type": "state"
+   "page": "locations/pyongyang",
+   "slug": "pyongyang",
+   "type": "location"
   },
   {
    "group": "Himalayas",
    "icon": null,
    "id": "STATE_QINGHAI",
    "name": "Qinghai",
-   "page": "states#STATE_QINGHAI",
-   "slug": "STATE_QINGHAI",
-   "type": "state"
+   "page": "locations/qinghai",
+   "slug": "qinghai",
+   "type": "location"
   },
   {
    "group": "Canada",
    "icon": null,
    "id": "STATE_QUEBEC",
    "name": "Quebec",
-   "page": "states#STATE_QUEBEC",
-   "slug": "STATE_QUEBEC",
-   "type": "state"
+   "page": "locations/quebec",
+   "slug": "quebec",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_QUEENSLAND",
    "name": "Queensland",
-   "page": "states#STATE_QUEENSLAND",
-   "slug": "STATE_QUEENSLAND",
-   "type": "state"
+   "page": "locations/queensland",
+   "slug": "queensland",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_QUETTA",
    "name": "Quetta",
-   "page": "states#STATE_QUETTA",
-   "slug": "STATE_QUETTA",
-   "type": "state"
+   "page": "locations/quetta",
+   "slug": "quetta",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_RAJPUTANA",
    "name": "Rajputana",
-   "page": "states#STATE_RAJPUTANA",
-   "slug": "STATE_RAJPUTANA",
-   "type": "state"
+   "page": "locations/rajputana",
+   "slug": "rajputana",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_RHINELAND",
    "name": "Rhineland",
-   "page": "states#STATE_RHINELAND",
-   "slug": "STATE_RHINELAND",
-   "type": "state"
+   "page": "locations/rhineland",
+   "slug": "rhineland",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_RHODE_ISLAND",
    "name": "Rhode Island",
-   "page": "states#STATE_RHODE_ISLAND",
-   "slug": "STATE_RHODE_ISLAND",
-   "type": "state"
+   "page": "locations/rhode_island",
+   "slug": "rhode_island",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_RHONE",
    "name": "Rhône",
-   "page": "states#STATE_RHONE",
-   "slug": "STATE_RHONE",
-   "type": "state"
+   "page": "locations/rhone",
+   "slug": "rhone",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_RIFT_VALLEY",
    "name": "Rift Valley",
-   "page": "states#STATE_RIFT_VALLEY",
-   "slug": "STATE_RIFT_VALLEY",
-   "type": "state"
+   "page": "locations/rift_valley",
+   "slug": "rift_valley",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_RIGA",
    "name": "South Livonia",
-   "page": "states#STATE_RIGA",
-   "slug": "STATE_RIGA",
-   "type": "state"
+   "page": "locations/riga",
+   "slug": "riga",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_RIO_DE_JANEIRO",
    "name": "Rio de Janeiro",
-   "page": "states#STATE_RIO_DE_JANEIRO",
-   "slug": "STATE_RIO_DE_JANEIRO",
-   "type": "state"
+   "page": "locations/rio_de_janeiro",
+   "slug": "rio_de_janeiro",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_RIO_GRANDE",
    "name": "Río Grande",
-   "page": "states#STATE_RIO_GRANDE",
-   "slug": "STATE_RIO_GRANDE",
-   "type": "state"
+   "page": "locations/rio_grande",
+   "slug": "rio_grande",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_RIO_GRANDE_DO_NORTE",
    "name": "Rio Grande do Norte",
-   "page": "states#STATE_RIO_GRANDE_DO_NORTE",
-   "slug": "STATE_RIO_GRANDE_DO_NORTE",
-   "type": "state"
+   "page": "locations/rio_grande_do_norte",
+   "slug": "rio_grande_do_norte",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_RIO_GRANDE_DO_SUL",
    "name": "Rio Grande do Sul",
-   "page": "states#STATE_RIO_GRANDE_DO_SUL",
-   "slug": "STATE_RIO_GRANDE_DO_SUL",
-   "type": "state"
+   "page": "locations/rio_grande_do_sul",
+   "slug": "rio_grande_do_sul",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_RIO_NEGRO",
    "name": "Mendoza",
-   "page": "states#STATE_RIO_NEGRO",
-   "slug": "STATE_RIO_NEGRO",
-   "type": "state"
+   "page": "locations/rio_negro",
+   "slug": "rio_negro",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_ROMAGNA",
    "name": "Romagna",
-   "page": "states#STATE_ROMAGNA",
-   "slug": "STATE_ROMAGNA",
-   "type": "state"
+   "page": "locations/romagna",
+   "slug": "romagna",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_ROSTOV",
    "name": "Rostov",
-   "page": "states#STATE_ROSTOV",
-   "slug": "STATE_ROSTOV",
-   "type": "state"
+   "page": "locations/rostov",
+   "slug": "rostov",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_RUHR",
    "name": "Ruhr",
-   "page": "states#STATE_RUHR",
-   "slug": "STATE_RUHR",
-   "type": "state"
+   "page": "locations/ruhr",
+   "slug": "ruhr",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_RUTHENIA",
    "name": "Ruthenia",
-   "page": "states#STATE_RUTHENIA",
-   "slug": "STATE_RUTHENIA",
-   "type": "state"
+   "page": "locations/ruthenia",
+   "slug": "ruthenia",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_RYAZAN",
    "name": "Ryazan",
-   "page": "states#STATE_RYAZAN",
-   "slug": "STATE_RYAZAN",
-   "type": "state"
+   "page": "locations/ryazan",
+   "slug": "ryazan",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_RYUKYU_ISLANDS",
    "name": "Ryukyu Islands",
-   "page": "states#STATE_RYUKYU_ISLANDS",
-   "slug": "STATE_RYUKYU_ISLANDS",
-   "type": "state"
+   "page": "locations/ryukyu_islands",
+   "slug": "ryukyu_islands",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_SAHARA",
    "name": "Sahara",
-   "page": "states#STATE_SAHARA",
-   "slug": "STATE_SAHARA",
-   "type": "state"
+   "page": "locations/sahara",
+   "slug": "sahara",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_SAKHALIN",
    "name": "Sakhalin",
-   "page": "states#STATE_SAKHALIN",
-   "slug": "STATE_SAKHALIN",
-   "type": "state"
+   "page": "locations/sakhalin",
+   "slug": "sakhalin",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_SAMARA",
    "name": "Samara",
-   "page": "states#STATE_SAMARA",
-   "slug": "STATE_SAMARA",
-   "type": "state"
+   "page": "locations/samara",
+   "slug": "samara",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_SAN_SALVADOR",
    "name": "San Salvador",
-   "page": "states#STATE_SAN_SALVADOR",
-   "slug": "STATE_SAN_SALVADOR",
-   "type": "state"
+   "page": "locations/san_salvador",
+   "slug": "san_salvador",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_SANTA_CATARINA",
    "name": "Santa Catarina",
-   "page": "states#STATE_SANTA_CATARINA",
-   "slug": "STATE_SANTA_CATARINA",
-   "type": "state"
+   "page": "locations/santa_catarina",
+   "slug": "santa_catarina",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_SANTA_CRUZ",
    "name": "Santa Cruz",
-   "page": "states#STATE_SANTA_CRUZ",
-   "slug": "STATE_SANTA_CRUZ",
-   "type": "state"
+   "page": "locations/santa_cruz",
+   "slug": "santa_cruz",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_SANTA_FE",
    "name": "Santa Fe",
-   "page": "states#STATE_SANTA_FE",
-   "slug": "STATE_SANTA_FE",
-   "type": "state"
+   "page": "locations/santa_fe",
+   "slug": "santa_fe",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_SANTIAGO",
    "name": "Santiago",
-   "page": "states#STATE_SANTIAGO",
-   "slug": "STATE_SANTIAGO",
-   "type": "state"
+   "page": "locations/santiago",
+   "slug": "santiago",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_SANTO_DOMINGO",
    "name": "Santo Domingo",
-   "page": "states#STATE_SANTO_DOMINGO",
-   "slug": "STATE_SANTO_DOMINGO",
-   "type": "state"
+   "page": "locations/santo_domingo",
+   "slug": "santo_domingo",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_SAO_PAULO",
    "name": "São Paulo",
-   "page": "states#STATE_SAO_PAULO",
-   "slug": "STATE_SAO_PAULO",
-   "type": "state"
+   "page": "locations/sao_paulo",
+   "slug": "sao_paulo",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_SARDINIA",
    "name": "Sardinia",
-   "page": "states#STATE_SARDINIA",
-   "slug": "STATE_SARDINIA",
-   "type": "state"
+   "page": "locations/sardinia",
+   "slug": "sardinia",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_SARIWON",
    "name": "Gwanbuk",
-   "page": "states#STATE_SARIWON",
-   "slug": "STATE_SARIWON",
-   "type": "state"
+   "page": "locations/sariwon",
+   "slug": "sariwon",
+   "type": "location"
   },
   {
    "group": "Canada",
    "icon": null,
    "id": "STATE_SASKATCHEWAN",
    "name": "Saskatchewan",
-   "page": "states#STATE_SASKATCHEWAN",
-   "slug": "STATE_SASKATCHEWAN",
-   "type": "state"
+   "page": "locations/saskatchewan",
+   "slug": "saskatchewan",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_SAVOY",
    "name": "Savoy",
-   "page": "states#STATE_SAVOY",
-   "slug": "STATE_SAVOY",
-   "type": "state"
+   "page": "locations/savoy",
+   "slug": "savoy",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_SAXONY",
    "name": "Saxony",
-   "page": "states#STATE_SAXONY",
-   "slug": "STATE_SAXONY",
-   "type": "state"
+   "page": "locations/saxony",
+   "slug": "saxony",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_SCANIA",
    "name": "Scania",
-   "page": "states#STATE_SCANIA",
-   "slug": "STATE_SCANIA",
-   "type": "state"
+   "page": "locations/scania",
+   "slug": "scania",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_SCHLESWIG_HOLSTEIN",
    "name": "Schleswig-Holstein",
-   "page": "states#STATE_SCHLESWIG_HOLSTEIN",
-   "slug": "STATE_SCHLESWIG_HOLSTEIN",
-   "type": "state"
+   "page": "locations/schleswig_holstein",
+   "slug": "schleswig_holstein",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_SEMIRECHE",
    "name": "Semipalatinsk",
-   "page": "states#STATE_SEMIRECHE",
-   "slug": "STATE_SEMIRECHE",
-   "type": "state"
+   "page": "locations/semireche",
+   "slug": "semireche",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_SEMNAN",
    "name": "Semnan",
-   "page": "states#STATE_SEMNAN",
-   "slug": "STATE_SEMNAN",
-   "type": "state"
+   "page": "locations/semnan",
+   "slug": "semnan",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_SENEGAL",
    "name": "Senegal",
-   "page": "states#STATE_SENEGAL",
-   "slug": "STATE_SENEGAL",
-   "type": "state"
+   "page": "locations/senegal",
+   "slug": "senegal",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_SEOUL",
    "name": "Gyeonggi",
-   "page": "states#STATE_SEOUL",
-   "slug": "STATE_SEOUL",
-   "type": "state"
+   "page": "locations/seoul",
+   "slug": "seoul",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_SHAN_STATES",
    "name": "Shan States",
-   "page": "states#STATE_SHAN_STATES",
-   "slug": "STATE_SHAN_STATES",
-   "type": "state"
+   "page": "locations/shan_states",
+   "slug": "shan_states",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_SHANDONG",
    "name": "Shandong",
-   "page": "states#STATE_SHANDONG",
-   "slug": "STATE_SHANDONG",
-   "type": "state"
+   "page": "locations/shandong",
+   "slug": "shandong",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_SHANXI",
    "name": "Shanxi",
-   "page": "states#STATE_SHANXI",
-   "slug": "STATE_SHANXI",
-   "type": "state"
+   "page": "locations/shanxi",
+   "slug": "shanxi",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_SHAOZHOU",
    "name": "Eastern Guangdong",
-   "page": "states#STATE_SHAOZHOU",
-   "slug": "STATE_SHAOZHOU",
-   "type": "state"
+   "page": "locations/shaozhou",
+   "slug": "shaozhou",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_SHENGJING",
    "name": "Shengjing",
-   "page": "states#STATE_SHENGJING",
-   "slug": "STATE_SHENGJING",
-   "type": "state"
+   "page": "locations/shengjing",
+   "slug": "shengjing",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_SHIKOKU",
    "name": "Shikoku",
-   "page": "states#STATE_SHIKOKU",
-   "slug": "STATE_SHIKOKU",
-   "type": "state"
+   "page": "locations/shikoku",
+   "slug": "shikoku",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_SICHUAN",
    "name": "Sichuan",
-   "page": "states#STATE_SICHUAN",
-   "slug": "STATE_SICHUAN",
-   "type": "state"
+   "page": "locations/sichuan",
+   "slug": "sichuan",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_SICILY",
    "name": "Sicily",
-   "page": "states#STATE_SICILY",
-   "slug": "STATE_SICILY",
-   "type": "state"
+   "page": "locations/sicily",
+   "slug": "sicily",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_SIERRA_LEONE",
    "name": "Sierra Leone",
-   "page": "states#STATE_SIERRA_LEONE",
-   "slug": "STATE_SIERRA_LEONE",
-   "type": "state"
+   "page": "locations/sierra_leone",
+   "slug": "sierra_leone",
+   "type": "location"
   },
   {
    "group": "Nile Basin",
    "icon": null,
    "id": "STATE_SINAI",
    "name": "Sinai",
-   "page": "states#STATE_SINAI",
-   "slug": "STATE_SINAI",
-   "type": "state"
+   "page": "locations/sinai",
+   "slug": "sinai",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_SINALOA",
    "name": "Sinaloa",
-   "page": "states#STATE_SINALOA",
-   "slug": "STATE_SINALOA",
-   "type": "state"
+   "page": "locations/sinaloa",
+   "slug": "sinaloa",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_SINDH",
    "name": "Sindh",
-   "page": "states#STATE_SINDH",
-   "slug": "STATE_SINDH",
-   "type": "state"
+   "page": "locations/sindh",
+   "slug": "sindh",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_SISTAN",
    "name": "Bampur",
-   "page": "states#STATE_SISTAN",
-   "slug": "STATE_SISTAN",
-   "type": "state"
+   "page": "locations/sistan",
+   "slug": "sistan",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_SKOPIA",
    "name": "Skopia",
-   "page": "states#STATE_SKOPIA",
-   "slug": "STATE_SKOPIA",
-   "type": "state"
+   "page": "locations/skopia",
+   "slug": "skopia",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_SLAVONIA",
    "name": "Slavonia",
-   "page": "states#STATE_SLAVONIA",
-   "slug": "STATE_SLAVONIA",
-   "type": "state"
+   "page": "locations/slavonia",
+   "slug": "slavonia",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_SLOVAKIA",
    "name": "Slovakia",
-   "page": "states#STATE_SLOVAKIA",
-   "slug": "STATE_SLOVAKIA",
-   "type": "state"
+   "page": "locations/slovakia",
+   "slug": "slovakia",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_SLOVENIA",
    "name": "Slovenia",
-   "page": "states#STATE_SLOVENIA",
-   "slug": "STATE_SLOVENIA",
-   "type": "state"
+   "page": "locations/slovenia",
+   "slug": "slovenia",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_SMOLENSK",
    "name": "Smolensk",
-   "page": "states#STATE_SMOLENSK",
-   "slug": "STATE_SMOLENSK",
-   "type": "state"
+   "page": "locations/smolensk",
+   "slug": "smolensk",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_SOLOMON_ISLANDS",
    "name": "Solomon Islands",
-   "page": "states#STATE_SOLOMON_ISLANDS",
-   "slug": "STATE_SOLOMON_ISLANDS",
-   "type": "state"
+   "page": "locations/solomon_islands",
+   "slug": "solomon_islands",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_SOMALILAND",
    "name": "Somaliland",
-   "page": "states#STATE_SOMALILAND",
-   "slug": "STATE_SOMALILAND",
-   "type": "state"
+   "page": "locations/somaliland",
+   "slug": "somaliland",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_SONORA",
    "name": "Sonora",
-   "page": "states#STATE_SONORA",
-   "slug": "STATE_SONORA",
-   "type": "state"
+   "page": "locations/sonora",
+   "slug": "sonora",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_SOUTH_ANGOLA",
    "name": "South Angola",
-   "page": "states#STATE_SOUTH_ANGOLA",
-   "slug": "STATE_SOUTH_ANGOLA",
-   "type": "state"
+   "page": "locations/south_angola",
+   "slug": "south_angola",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_SOUTH_ATLANTIC_ISLANDS",
    "name": "South Atlantic Islands",
-   "page": "states#STATE_SOUTH_ATLANTIC_ISLANDS",
-   "slug": "STATE_SOUTH_ATLANTIC_ISLANDS",
-   "type": "state"
+   "page": "locations/south_atlantic_islands",
+   "slug": "south_atlantic_islands",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_SOUTH_AUSTRALIA",
    "name": "South Australia",
-   "page": "states#STATE_SOUTH_AUSTRALIA",
-   "slug": "STATE_SOUTH_AUSTRALIA",
-   "type": "state"
+   "page": "locations/south_australia",
+   "slug": "south_australia",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_SOUTH_CAMEROON",
    "name": "South Cameroon",
-   "page": "states#STATE_SOUTH_CAMEROON",
-   "slug": "STATE_SOUTH_CAMEROON",
-   "type": "state"
+   "page": "locations/south_cameroon",
+   "slug": "south_cameroon",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_SOUTH_CAROLINA",
    "name": "South Carolina",
-   "page": "states#STATE_SOUTH_CAROLINA",
-   "slug": "STATE_SOUTH_CAROLINA",
-   "type": "state"
+   "page": "locations/south_carolina",
+   "slug": "south_carolina",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_SOUTH_DAKOTA",
    "name": "South Dakota",
-   "page": "states#STATE_SOUTH_DAKOTA",
-   "slug": "STATE_SOUTH_DAKOTA",
-   "type": "state"
+   "page": "locations/south_dakota",
+   "slug": "south_dakota",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_SOUTH_ISLAND",
    "name": "South Island",
-   "page": "states#STATE_SOUTH_ISLAND",
-   "slug": "STATE_SOUTH_ISLAND",
-   "type": "state"
+   "page": "locations/south_island",
+   "slug": "south_island",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_SOUTH_MADAGASCAR",
    "name": "South Madagascar",
-   "page": "states#STATE_SOUTH_MADAGASCAR",
-   "slug": "STATE_SOUTH_MADAGASCAR",
-   "type": "state"
+   "page": "locations/south_madagascar",
+   "slug": "south_madagascar",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_SOUTH_SUMATRA",
    "name": "South Sumatra",
-   "page": "states#STATE_SOUTH_SUMATRA",
-   "slug": "STATE_SOUTH_SUMATRA",
-   "type": "state"
+   "page": "locations/south_sumatra",
+   "slug": "south_sumatra",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_SOUTH_TYROL",
    "name": "South Tyrol",
-   "page": "states#STATE_SOUTH_TYROL",
-   "slug": "STATE_SOUTH_TYROL",
-   "type": "state"
+   "page": "locations/south_tyrol",
+   "slug": "south_tyrol",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_SOUTHERN_ANHUI",
    "name": "Southern Anhui",
-   "page": "states#STATE_SOUTHERN_ANHUI",
-   "slug": "STATE_SOUTHERN_ANHUI",
-   "type": "state"
+   "page": "locations/southern_anhui",
+   "slug": "southern_anhui",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_SOUTHERN_MANCHURIA",
    "name": "Southern Jilin",
-   "page": "states#STATE_SOUTHERN_MANCHURIA",
-   "slug": "STATE_SOUTHERN_MANCHURIA",
-   "type": "state"
+   "page": "locations/southern_manchuria",
+   "slug": "southern_manchuria",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_SOUTHERN_TRANSYLVANIA",
    "name": "Southern Transylvania",
-   "page": "states#STATE_SOUTHERN_TRANSYLVANIA",
-   "slug": "STATE_SOUTHERN_TRANSYLVANIA",
-   "type": "state"
+   "page": "locations/southern_transylvania",
+   "slug": "southern_transylvania",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_STAVROPOL",
    "name": "Stavropol",
-   "page": "states#STATE_STAVROPOL",
-   "slug": "STATE_STAVROPOL",
-   "type": "state"
+   "page": "locations/stavropol",
+   "slug": "stavropol",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_STYRIA",
    "name": "Styria",
-   "page": "states#STATE_STYRIA",
-   "slug": "STATE_STYRIA",
-   "type": "state"
+   "page": "locations/styria",
+   "slug": "styria",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_SUNDA_ISLANDS",
    "name": "Sunda Islands",
-   "page": "states#STATE_SUNDA_ISLANDS",
-   "slug": "STATE_SUNDA_ISLANDS",
-   "type": "state"
+   "page": "locations/sunda_islands",
+   "slug": "sunda_islands",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_SURGUT",
    "name": "Surgut",
-   "page": "states#STATE_SURGUT",
-   "slug": "STATE_SURGUT",
-   "type": "state"
+   "page": "locations/surgut",
+   "slug": "surgut",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_SUZHOU",
    "name": "Suzhou",
-   "page": "states#STATE_SUZHOU",
-   "slug": "STATE_SUZHOU",
-   "type": "state"
+   "page": "locations/suzhou",
+   "slug": "suzhou",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_SVEALAND",
    "name": "Svealand",
-   "page": "states#STATE_SVEALAND",
-   "slug": "STATE_SVEALAND",
-   "type": "state"
+   "page": "locations/svealand",
+   "slug": "svealand",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_SYRDARYA",
    "name": "Syrdarya",
-   "page": "states#STATE_SYRDARYA",
-   "slug": "STATE_SYRDARYA",
-   "type": "state"
+   "page": "locations/syrdarya",
+   "slug": "syrdarya",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_SYRIA",
    "name": "Syria",
-   "page": "states#STATE_SYRIA",
-   "slug": "STATE_SYRIA",
-   "type": "state"
+   "page": "locations/syria",
+   "slug": "syria",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_TABRIZ",
    "name": "Tabriz",
-   "page": "states#STATE_TABRIZ",
-   "slug": "STATE_TABRIZ",
-   "type": "state"
+   "page": "locations/tabriz",
+   "slug": "tabriz",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_TAHITI",
    "name": "Tahiti",
-   "page": "states#STATE_TAHITI",
-   "slug": "STATE_TAHITI",
-   "type": "state"
+   "page": "locations/tahiti",
+   "slug": "tahiti",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_TAJIKISTAN",
    "name": "Tajikistan",
-   "page": "states#STATE_TAJIKISTAN",
-   "slug": "STATE_TAJIKISTAN",
-   "type": "state"
+   "page": "locations/tajikistan",
+   "slug": "tajikistan",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_TALINN",
    "name": "Talinn",
-   "page": "states#STATE_TALINN",
-   "slug": "STATE_TALINN",
-   "type": "state"
+   "page": "locations/talinn",
+   "slug": "talinn",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_TAMBOV",
    "name": "Tambov",
-   "page": "states#STATE_TAMBOV",
-   "slug": "STATE_TAMBOV",
-   "type": "state"
+   "page": "locations/tambov",
+   "slug": "tambov",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_TANGANYIKA",
    "name": "Tanganyika",
-   "page": "states#STATE_TANGANYIKA",
-   "slug": "STATE_TANGANYIKA",
-   "type": "state"
+   "page": "locations/tanganyika",
+   "slug": "tanganyika",
+   "type": "location"
   },
   {
    "group": "The Andes",
    "icon": null,
    "id": "STATE_TARAPACA",
    "name": "Tarapacá",
-   "page": "states#STATE_TARAPACA",
-   "slug": "STATE_TARAPACA",
-   "type": "state"
+   "page": "locations/tarapaca",
+   "slug": "tarapaca",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_TARTARIA",
    "name": "Saratov",
-   "page": "states#STATE_TARTARIA",
-   "slug": "STATE_TARTARIA",
-   "type": "state"
+   "page": "locations/tartaria",
+   "slug": "tartaria",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_TARTU",
    "name": "North Livonia",
-   "page": "states#STATE_TARTU",
-   "slug": "STATE_TARTU",
-   "type": "state"
+   "page": "locations/tartu",
+   "slug": "tartu",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_TASMANIA",
    "name": "Tasmania",
-   "page": "states#STATE_TASMANIA",
-   "slug": "STATE_TASMANIA",
-   "type": "state"
+   "page": "locations/tasmania",
+   "slug": "tasmania",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_TAURIDA",
    "name": "Aleksandrovsk",
-   "page": "states#STATE_TAURIDA",
-   "slug": "STATE_TAURIDA",
-   "type": "state"
+   "page": "locations/taurida",
+   "slug": "taurida",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_TENASSERIM",
    "name": "Tenasserim",
-   "page": "states#STATE_TENASSERIM",
-   "slug": "STATE_TENASSERIM",
-   "type": "state"
+   "page": "locations/tenasserim",
+   "slug": "tenasserim",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_TENNESSEE",
    "name": "Tennessee",
-   "page": "states#STATE_TENNESSEE",
-   "slug": "STATE_TENNESSEE",
-   "type": "state"
+   "page": "locations/tennessee",
+   "slug": "tennessee",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_TEXAS",
    "name": "Texas",
-   "page": "states#STATE_TEXAS",
-   "slug": "STATE_TEXAS",
-   "type": "state"
+   "page": "locations/texas",
+   "slug": "texas",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_THESSALIA",
    "name": "Thessaly",
-   "page": "states#STATE_THESSALIA",
-   "slug": "STATE_THESSALIA",
-   "type": "state"
+   "page": "locations/thessalia",
+   "slug": "thessalia",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_TIANSHAN",
    "name": "Tarim Basin",
-   "page": "states#STATE_TIANSHAN",
-   "slug": "STATE_TIANSHAN",
-   "type": "state"
+   "page": "locations/tianshan",
+   "slug": "tianshan",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_TIMBUKTU",
    "name": "Timbuktu",
-   "page": "states#STATE_TIMBUKTU",
-   "slug": "STATE_TIMBUKTU",
-   "type": "state"
+   "page": "locations/timbuktu",
+   "slug": "timbuktu",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_TOBOLSK",
    "name": "Tobolsk",
-   "page": "states#STATE_TOBOLSK",
-   "slug": "STATE_TOBOLSK",
-   "type": "state"
+   "page": "locations/tobolsk",
+   "slug": "tobolsk",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_TOGO",
    "name": "Togo",
-   "page": "states#STATE_TOGO",
-   "slug": "STATE_TOGO",
-   "type": "state"
+   "page": "locations/togo",
+   "slug": "togo",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_TOHOKU",
    "name": "Tohoku",
-   "page": "states#STATE_TOHOKU",
-   "slug": "STATE_TOHOKU",
-   "type": "state"
+   "page": "locations/tohoku",
+   "slug": "tohoku",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_TOKAI",
    "name": "Tokai",
-   "page": "states#STATE_TOKAI",
-   "slug": "STATE_TOKAI",
-   "type": "state"
+   "page": "locations/tokai",
+   "slug": "tokai",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_TOMSK",
    "name": "Tomsk",
-   "page": "states#STATE_TOMSK",
-   "slug": "STATE_TOMSK",
-   "type": "state"
+   "page": "locations/tomsk",
+   "slug": "tomsk",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_TONGA",
    "name": "Tonga",
-   "page": "states#STATE_TONGA",
-   "slug": "STATE_TONGA",
-   "type": "state"
+   "page": "locations/tonga",
+   "slug": "tonga",
+   "type": "location"
   },
   {
    "group": "Indochina",
    "icon": null,
    "id": "STATE_TONKIN",
    "name": "Tonkin",
-   "page": "states#STATE_TONKIN",
-   "slug": "STATE_TONKIN",
-   "type": "state"
+   "page": "locations/tonkin",
+   "slug": "tonkin",
+   "type": "location"
   },
   {
    "group": "Near East",
    "icon": null,
    "id": "STATE_TRABZON",
    "name": "Trabzon",
-   "page": "states#STATE_TRABZON",
-   "slug": "STATE_TRABZON",
-   "type": "state"
+   "page": "locations/trabzon",
+   "slug": "trabzon",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_TRANS_BAIKAL",
    "name": "Chita",
-   "page": "states#STATE_TRANS_BAIKAL",
-   "slug": "STATE_TRANS_BAIKAL",
-   "type": "state"
+   "page": "locations/trans_baikal",
+   "slug": "trans_baikal",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_TRANSDANUBIA",
    "name": "Transdanubia",
-   "page": "states#STATE_TRANSDANUBIA",
-   "slug": "STATE_TRANSDANUBIA",
-   "type": "state"
+   "page": "locations/transdanubia",
+   "slug": "transdanubia",
+   "type": "location"
   },
   {
    "icon": "img/treaties/transfer_state.png",
@@ -33934,846 +33934,846 @@
    "icon": null,
    "id": "STATE_TRANSJORDAN",
    "name": "Transjordan",
-   "page": "states#STATE_TRANSJORDAN",
-   "slug": "STATE_TRANSJORDAN",
-   "type": "state"
+   "page": "locations/transjordan",
+   "slug": "transjordan",
+   "type": "location"
   },
   {
    "group": "Southern Africa",
    "icon": null,
    "id": "STATE_TRANSVAAL",
    "name": "Transvaal",
-   "page": "states#STATE_TRANSVAAL",
-   "slug": "STATE_TRANSVAAL",
-   "type": "state"
+   "page": "locations/transvaal",
+   "slug": "transvaal",
+   "type": "location"
   },
   {
    "group": "South India",
    "icon": null,
    "id": "STATE_TRAVANCORE",
    "name": "Malabar",
-   "page": "states#STATE_TRAVANCORE",
-   "slug": "STATE_TRAVANCORE",
-   "type": "state"
+   "page": "locations/travancore",
+   "slug": "travancore",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_TRIPOLI",
    "name": "Tripoli",
-   "page": "states#STATE_TRIPOLI",
-   "slug": "STATE_TRIPOLI",
-   "type": "state"
+   "page": "locations/tripoli",
+   "slug": "tripoli",
+   "type": "location"
   },
   {
    "group": "La Plata",
    "icon": null,
    "id": "STATE_TUCUMAN",
    "name": "Tucumán",
-   "page": "states#STATE_TUCUMAN",
-   "slug": "STATE_TUCUMAN",
-   "type": "state"
+   "page": "locations/tucuman",
+   "slug": "tucuman",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_TUNISIA",
    "name": "Tunisia",
-   "page": "states#STATE_TUNISIA",
-   "slug": "STATE_TUNISIA",
-   "type": "state"
+   "page": "locations/tunisia",
+   "slug": "tunisia",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_TURKMENIA",
    "name": "Turkmenia",
-   "page": "states#STATE_TURKMENIA",
-   "slug": "STATE_TURKMENIA",
-   "type": "state"
+   "page": "locations/turkmenia",
+   "slug": "turkmenia",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_TUSCANY",
    "name": "Tuscany",
-   "page": "states#STATE_TUSCANY",
-   "slug": "STATE_TUSCANY",
-   "type": "state"
+   "page": "locations/tuscany",
+   "slug": "tuscany",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_TUVA",
    "name": "Tuva",
-   "page": "states#STATE_TUVA",
-   "slug": "STATE_TUVA",
-   "type": "state"
+   "page": "locations/tuva",
+   "slug": "tuva",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_TVER",
    "name": "Tver",
-   "page": "states#STATE_TVER",
-   "slug": "STATE_TVER",
-   "type": "state"
+   "page": "locations/tver",
+   "slug": "tver",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_TYROL",
    "name": "Tyrol",
-   "page": "states#STATE_TYROL",
-   "slug": "STATE_TYROL",
-   "type": "state"
+   "page": "locations/tyrol",
+   "slug": "tyrol",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_UBANGI_SHARI",
    "name": "Ubangi-Shari",
-   "page": "states#STATE_UBANGI_SHARI",
-   "slug": "STATE_UBANGI_SHARI",
-   "type": "state"
+   "page": "locations/ubangi_shari",
+   "slug": "ubangi_shari",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_UFA",
    "name": "Ufa",
-   "page": "states#STATE_UFA",
-   "slug": "STATE_UFA",
-   "type": "state"
+   "page": "locations/ufa",
+   "slug": "ufa",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_UGANDA",
    "name": "Uganda",
-   "page": "states#STATE_UGANDA",
-   "slug": "STATE_UGANDA",
-   "type": "state"
+   "page": "locations/uganda",
+   "slug": "uganda",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_ULIASTAI",
    "name": "Uliastai",
-   "page": "states#STATE_ULIASTAI",
-   "slug": "STATE_ULIASTAI",
-   "type": "state"
+   "page": "locations/uliastai",
+   "slug": "uliastai",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_ULSTER",
    "name": "Ulster",
-   "page": "states#STATE_ULSTER",
-   "slug": "STATE_ULSTER",
-   "type": "state"
+   "page": "locations/ulster",
+   "slug": "ulster",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_UMBRIA",
    "name": "Umbria",
-   "page": "states#STATE_UMBRIA",
-   "slug": "STATE_UMBRIA",
-   "type": "state"
+   "page": "locations/umbria",
+   "slug": "umbria",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_UPPER_ANDALUSIA",
    "name": "Upper Andalusia",
-   "page": "states#STATE_UPPER_ANDALUSIA",
-   "slug": "STATE_UPPER_ANDALUSIA",
-   "type": "state"
+   "page": "locations/upper_andalusia",
+   "slug": "upper_andalusia",
+   "type": "location"
   },
   {
    "group": "Nile Basin",
    "icon": null,
    "id": "STATE_UPPER_EGYPT",
    "name": "Upper Egypt",
-   "page": "states#STATE_UPPER_EGYPT",
-   "slug": "STATE_UPPER_EGYPT",
-   "type": "state"
+   "page": "locations/upper_egypt",
+   "slug": "upper_egypt",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_UPPER_SILESIA",
    "name": "Upper Silesia",
-   "page": "states#STATE_UPPER_SILESIA",
-   "slug": "STATE_UPPER_SILESIA",
-   "type": "state"
+   "page": "locations/upper_silesia",
+   "slug": "upper_silesia",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_UPPER_YENISEYSK",
    "name": "Upper Yeniseysk",
-   "page": "states#STATE_UPPER_YENISEYSK",
-   "slug": "STATE_UPPER_YENISEYSK",
-   "type": "state"
+   "page": "locations/upper_yeniseysk",
+   "slug": "upper_yeniseysk",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_URAL",
    "name": "Ural",
-   "page": "states#STATE_URAL",
-   "slug": "STATE_URAL",
-   "type": "state"
+   "page": "locations/ural",
+   "slug": "ural",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_URALSK",
    "name": "Uralsk",
-   "page": "states#STATE_URALSK",
-   "slug": "STATE_URALSK",
-   "type": "state"
+   "page": "locations/uralsk",
+   "slug": "uralsk",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_URGA",
    "name": "Urga",
-   "page": "states#STATE_URGA",
-   "slug": "STATE_URGA",
-   "type": "state"
+   "page": "locations/urga",
+   "slug": "urga",
+   "type": "location"
   },
   {
    "group": "Greater Persia",
    "icon": null,
    "id": "STATE_URMIA",
    "name": "Urmia",
-   "page": "states#STATE_URMIA",
-   "slug": "STATE_URMIA",
-   "type": "state"
+   "page": "locations/urmia",
+   "slug": "urmia",
+   "type": "location"
   },
   {
    "group": "Brazil",
    "icon": null,
    "id": "STATE_URUGUAY",
    "name": "Uruguay",
-   "page": "states#STATE_URUGUAY",
-   "slug": "STATE_URUGUAY",
-   "type": "state"
+   "page": "locations/uruguay",
+   "slug": "uruguay",
+   "type": "location"
   },
   {
    "group": "Pacific Coast",
    "icon": null,
    "id": "STATE_UTAH",
    "name": "Utah",
-   "page": "states#STATE_UTAH",
-   "slug": "STATE_UTAH",
-   "type": "state"
+   "page": "locations/utah",
+   "slug": "utah",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_UUSIMAA",
    "name": "Uusimaa",
-   "page": "states#STATE_UUSIMAA",
-   "slug": "STATE_UUSIMAA",
-   "type": "state"
+   "page": "locations/uusimaa",
+   "slug": "uusimaa",
+   "type": "location"
   },
   {
    "group": "Central Asia",
    "icon": null,
    "id": "STATE_UZBEKIA",
    "name": "Uzbekia",
-   "page": "states#STATE_UZBEKIA",
-   "slug": "STATE_UZBEKIA",
-   "type": "state"
+   "page": "locations/uzbekia",
+   "slug": "uzbekia",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_VALENCIA",
    "name": "Valencia",
-   "page": "states#STATE_VALENCIA",
-   "slug": "STATE_VALENCIA",
-   "type": "state"
+   "page": "locations/valencia",
+   "slug": "valencia",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_VANUATU",
    "name": "Vanuatu",
-   "page": "states#STATE_VANUATU",
-   "slug": "STATE_VANUATU",
-   "type": "state"
+   "page": "locations/vanuatu",
+   "slug": "vanuatu",
+   "type": "location"
   },
   {
    "group": "Southern Europe",
    "icon": null,
    "id": "STATE_VENETIA",
    "name": "Venetia",
-   "page": "states#STATE_VENETIA",
-   "slug": "STATE_VENETIA",
-   "type": "state"
+   "page": "locations/venetia",
+   "slug": "venetia",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_VERACRUZ",
    "name": "Veracruz",
-   "page": "states#STATE_VERACRUZ",
-   "slug": "STATE_VERACRUZ",
-   "type": "state"
+   "page": "locations/veracruz",
+   "slug": "veracruz",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_VERMONT",
    "name": "Vermont",
-   "page": "states#STATE_VERMONT",
-   "slug": "STATE_VERMONT",
-   "type": "state"
+   "page": "locations/vermont",
+   "slug": "vermont",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_VICTORIA",
    "name": "Victoria",
-   "page": "states#STATE_VICTORIA",
-   "slug": "STATE_VICTORIA",
-   "type": "state"
+   "page": "locations/victoria",
+   "slug": "victoria",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_VILNIUS",
    "name": "Vilnius",
-   "page": "states#STATE_VILNIUS",
-   "slug": "STATE_VILNIUS",
-   "type": "state"
+   "page": "locations/vilnius",
+   "slug": "vilnius",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_VIRGINIA",
    "name": "Virginia",
-   "page": "states#STATE_VIRGINIA",
-   "slug": "STATE_VIRGINIA",
-   "type": "state"
+   "page": "locations/virginia",
+   "slug": "virginia",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_VISAYAS",
    "name": "Visayas",
-   "page": "states#STATE_VISAYAS",
-   "slug": "STATE_VISAYAS",
-   "type": "state"
+   "page": "locations/visayas",
+   "slug": "visayas",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_VITEBSK",
    "name": "Vitsyebsk",
-   "page": "states#STATE_VITEBSK",
-   "slug": "STATE_VITEBSK",
-   "type": "state"
+   "page": "locations/vitebsk",
+   "slug": "vitebsk",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_VOLHYNIA",
    "name": "Volhynia",
-   "page": "states#STATE_VOLHYNIA",
-   "slug": "STATE_VOLHYNIA",
-   "type": "state"
+   "page": "locations/volhynia",
+   "slug": "volhynia",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_VOLTA",
    "name": "Volta",
-   "page": "states#STATE_VOLTA",
-   "slug": "STATE_VOLTA",
-   "type": "state"
+   "page": "locations/volta",
+   "slug": "volta",
+   "type": "location"
   },
   {
    "group": "Southern Africa",
    "icon": null,
    "id": "STATE_VRYSTAAT",
    "name": "Transorangia",
-   "page": "states#STATE_VRYSTAAT",
-   "slug": "STATE_VRYSTAAT",
-   "type": "state"
+   "page": "locations/vrystaat",
+   "slug": "vrystaat",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_VYATKA",
    "name": "Vyatka",
-   "page": "states#STATE_VYATKA",
-   "slug": "STATE_VYATKA",
-   "type": "state"
+   "page": "locations/vyatka",
+   "slug": "vyatka",
+   "type": "location"
   },
   {
    "group": "Equatorial Africa",
    "icon": null,
    "id": "STATE_WADDAI",
    "name": "Waddai",
-   "page": "states#STATE_WADDAI",
-   "slug": "STATE_WADDAI",
-   "type": "state"
+   "page": "locations/waddai",
+   "slug": "waddai",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_WALES",
    "name": "Wales",
-   "page": "states#STATE_WALES",
-   "slug": "STATE_WALES",
-   "type": "state"
+   "page": "locations/wales",
+   "slug": "wales",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_WALLACHIA",
    "name": "Wallachia",
-   "page": "states#STATE_WALLACHIA",
-   "slug": "STATE_WALLACHIA",
-   "type": "state"
+   "page": "locations/wallachia",
+   "slug": "wallachia",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_WALLONIA",
    "name": "Wallonia",
-   "page": "states#STATE_WALLONIA",
-   "slug": "STATE_WALLONIA",
-   "type": "state"
+   "page": "locations/wallonia",
+   "slug": "wallonia",
+   "type": "location"
   },
   {
    "group": "Pacific Coast",
    "icon": null,
    "id": "STATE_WASHINGTON",
    "name": "Southern Columbia",
-   "page": "states#STATE_WASHINGTON",
-   "slug": "STATE_WASHINGTON",
-   "type": "state"
+   "page": "locations/washington",
+   "slug": "washington",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_WEST_AEGEAN_ISLANDS",
    "name": "West Aegean Islands",
-   "page": "states#STATE_WEST_AEGEAN_ISLANDS",
-   "slug": "STATE_WEST_AEGEAN_ISLANDS",
-   "type": "state"
+   "page": "locations/west_aegean_islands",
+   "slug": "west_aegean_islands",
+   "type": "location"
   },
   {
    "group": "North India",
    "icon": null,
    "id": "STATE_WEST_BENGAL",
    "name": "West Bengal",
-   "page": "states#STATE_WEST_BENGAL",
-   "slug": "STATE_WEST_BENGAL",
-   "type": "state"
+   "page": "locations/west_bengal",
+   "slug": "west_bengal",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_WEST_BORNEO",
    "name": "West Borneo",
-   "page": "states#STATE_WEST_BORNEO",
-   "slug": "STATE_WEST_BORNEO",
-   "type": "state"
+   "page": "locations/west_borneo",
+   "slug": "west_borneo",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_WEST_COUNTRY",
    "name": "West Country",
-   "page": "states#STATE_WEST_COUNTRY",
-   "slug": "STATE_WEST_COUNTRY",
-   "type": "state"
+   "page": "locations/west_country",
+   "slug": "west_country",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_WEST_GALICIA",
    "name": "West Galicia",
-   "page": "states#STATE_WEST_GALICIA",
-   "slug": "STATE_WEST_GALICIA",
-   "type": "state"
+   "page": "locations/west_galicia",
+   "slug": "west_galicia",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_WEST_INDIES",
    "name": "West Indies",
-   "page": "states#STATE_WEST_INDIES",
-   "slug": "STATE_WEST_INDIES",
-   "type": "state"
+   "page": "locations/west_indies",
+   "slug": "west_indies",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_WEST_JAVA",
    "name": "West Java",
-   "page": "states#STATE_WEST_JAVA",
-   "slug": "STATE_WEST_JAVA",
-   "type": "state"
+   "page": "locations/west_java",
+   "slug": "west_java",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_WEST_KARELIA",
    "name": "West Karelia",
-   "page": "states#STATE_WEST_KARELIA",
-   "slug": "STATE_WEST_KARELIA",
-   "type": "state"
+   "page": "locations/west_karelia",
+   "slug": "west_karelia",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_WEST_MICRONESIA",
    "name": "West Micronesia",
-   "page": "states#STATE_WEST_MICRONESIA",
-   "slug": "STATE_WEST_MICRONESIA",
-   "type": "state"
+   "page": "locations/west_micronesia",
+   "slug": "west_micronesia",
+   "type": "location"
   },
   {
    "group": "Eastern Europe",
    "icon": null,
    "id": "STATE_WEST_PRUSSIA",
    "name": "West Prussia",
-   "page": "states#STATE_WEST_PRUSSIA",
-   "slug": "STATE_WEST_PRUSSIA",
-   "type": "state"
+   "page": "locations/west_prussia",
+   "slug": "west_prussia",
+   "type": "location"
   },
   {
    "group": "North Africa",
    "icon": null,
    "id": "STATE_WEST_SAHARA",
    "name": "West Sahara",
-   "page": "states#STATE_WEST_SAHARA",
-   "slug": "STATE_WEST_SAHARA",
-   "type": "state"
+   "page": "locations/west_sahara",
+   "slug": "west_sahara",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_WEST_SWITZERLAND",
    "name": "West Switzerland",
-   "page": "states#STATE_WEST_SWITZERLAND",
-   "slug": "STATE_WEST_SWITZERLAND",
-   "type": "state"
+   "page": "locations/west_switzerland",
+   "slug": "west_switzerland",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_WEST_VIRGINIA",
    "name": "West Virginia",
-   "page": "states#STATE_WEST_VIRGINIA",
-   "slug": "STATE_WEST_VIRGINIA",
-   "type": "state"
+   "page": "locations/west_virginia",
+   "slug": "west_virginia",
+   "type": "location"
   },
   {
    "group": "Oceania",
    "icon": null,
    "id": "STATE_WESTERN_AUSTRALIA",
    "name": "Western Australia",
-   "page": "states#STATE_WESTERN_AUSTRALIA",
-   "slug": "STATE_WESTERN_AUSTRALIA",
-   "type": "state"
+   "page": "locations/western_australia",
+   "slug": "western_australia",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_WESTERN_CUBA",
    "name": "Western Cuba",
-   "page": "states#STATE_WESTERN_CUBA",
-   "slug": "STATE_WESTERN_CUBA",
-   "type": "state"
+   "page": "locations/western_cuba",
+   "slug": "western_cuba",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_WESTERN_HUBEI",
    "name": "Western Hubei",
-   "page": "states#STATE_WESTERN_HUBEI",
-   "slug": "STATE_WESTERN_HUBEI",
-   "type": "state"
+   "page": "locations/western_hubei",
+   "slug": "western_hubei",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_WESTERN_MALI",
    "name": "Western Mali",
-   "page": "states#STATE_WESTERN_MALI",
-   "slug": "STATE_WESTERN_MALI",
-   "type": "state"
+   "page": "locations/western_mali",
+   "slug": "western_mali",
+   "type": "location"
   },
   {
    "group": "Indonesia",
    "icon": null,
    "id": "STATE_WESTERN_NEW_GUINEA",
    "name": "Western New Guinea",
-   "page": "states#STATE_WESTERN_NEW_GUINEA",
-   "slug": "STATE_WESTERN_NEW_GUINEA",
-   "type": "state"
+   "page": "locations/western_new_guinea",
+   "slug": "western_new_guinea",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_WESTERN_NORWAY",
    "name": "Western Norway",
-   "page": "states#STATE_WESTERN_NORWAY",
-   "slug": "STATE_WESTERN_NORWAY",
-   "type": "state"
+   "page": "locations/western_norway",
+   "slug": "western_norway",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_WESTERN_SERBIA",
    "name": "Western Serbia",
-   "page": "states#STATE_WESTERN_SERBIA",
-   "slug": "STATE_WESTERN_SERBIA",
-   "type": "state"
+   "page": "locations/western_serbia",
+   "slug": "western_serbia",
+   "type": "location"
   },
   {
    "group": "Balkans",
    "icon": null,
    "id": "STATE_WESTERN_THRACE",
    "name": "Western Thrace",
-   "page": "states#STATE_WESTERN_THRACE",
-   "slug": "STATE_WESTERN_THRACE",
-   "type": "state"
+   "page": "locations/western_thrace",
+   "slug": "western_thrace",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_WESTPHALIA",
    "name": "Westphalia",
-   "page": "states#STATE_WESTPHALIA",
-   "slug": "STATE_WESTPHALIA",
-   "type": "state"
+   "page": "locations/westphalia",
+   "slug": "westphalia",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_WINDWARD_COAST",
    "name": "Windward Coast",
-   "page": "states#STATE_WINDWARD_COAST",
-   "slug": "STATE_WINDWARD_COAST",
-   "type": "state"
+   "page": "locations/windward_coast",
+   "slug": "windward_coast",
+   "type": "location"
   },
   {
    "group": "Atlantic Coast",
    "icon": null,
    "id": "STATE_WISCONSIN",
    "name": "Wisconsin",
-   "page": "states#STATE_WISCONSIN",
-   "slug": "STATE_WISCONSIN",
-   "type": "state"
+   "page": "locations/wisconsin",
+   "slug": "wisconsin",
+   "type": "location"
   },
   {
    "group": "Central Europe",
    "icon": null,
    "id": "STATE_WURTTEMBERG",
    "name": "Württemberg",
-   "page": "states#STATE_WURTTEMBERG",
-   "slug": "STATE_WURTTEMBERG",
-   "type": "state"
+   "page": "locations/wurttemberg",
+   "slug": "wurttemberg",
+   "type": "location"
   },
   {
    "group": "Great Plains",
    "icon": null,
    "id": "STATE_WYOMING",
    "name": "Wyoming",
-   "page": "states#STATE_WYOMING",
-   "slug": "STATE_WYOMING",
-   "type": "state"
+   "page": "locations/wyoming",
+   "slug": "wyoming",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_XIAN",
    "name": "Xi’an",
-   "page": "states#STATE_XIAN",
-   "slug": "STATE_XIAN",
-   "type": "state"
+   "page": "locations/xian",
+   "slug": "xian",
+   "type": "location"
   },
   {
    "group": "Siberia",
    "icon": null,
    "id": "STATE_YAKUTSK",
    "name": "Yakutsk",
-   "page": "states#STATE_YAKUTSK",
-   "slug": "STATE_YAKUTSK",
-   "type": "state"
+   "page": "locations/yakutsk",
+   "slug": "yakutsk",
+   "type": "location"
   },
   {
    "group": "Northeast Asia",
    "icon": null,
    "id": "STATE_YANGHO",
    "name": "Yangho",
-   "page": "states#STATE_YANGHO",
-   "slug": "STATE_YANGHO",
-   "type": "state"
+   "page": "locations/yangho",
+   "slug": "yangho",
+   "type": "location"
   },
   {
    "group": "Russia",
    "icon": null,
    "id": "STATE_YAROSLAVL",
    "name": "Yaroslavl",
-   "page": "states#STATE_YAROSLAVL",
-   "slug": "STATE_YAROSLAVL",
-   "type": "state"
+   "page": "locations/yaroslavl",
+   "slug": "yaroslavl",
+   "type": "location"
   },
   {
    "group": "Arabia",
    "icon": null,
    "id": "STATE_YEMEN",
    "name": "Yemen",
-   "page": "states#STATE_YEMEN",
-   "slug": "STATE_YEMEN",
-   "type": "state"
+   "page": "locations/yemen",
+   "slug": "yemen",
+   "type": "location"
   },
   {
    "group": "Western Europe",
    "icon": null,
    "id": "STATE_YORKSHIRE",
    "name": "Yorkshire",
-   "page": "states#STATE_YORKSHIRE",
-   "slug": "STATE_YORKSHIRE",
-   "type": "state"
+   "page": "locations/yorkshire",
+   "slug": "yorkshire",
+   "type": "location"
   },
   {
    "group": "West Africa",
    "icon": null,
    "id": "STATE_YORUBA_STATES",
    "name": "Yoruba States",
-   "page": "states#STATE_YORUBA_STATES",
-   "slug": "STATE_YORUBA_STATES",
-   "type": "state"
+   "page": "locations/yoruba_states",
+   "slug": "yoruba_states",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_YUCATAN",
    "name": "Yucatán",
-   "page": "states#STATE_YUCATAN",
-   "slug": "STATE_YUCATAN",
-   "type": "state"
+   "page": "locations/yucatan",
+   "slug": "yucatan",
+   "type": "location"
   },
   {
    "group": "Pacific Coast",
    "icon": null,
    "id": "STATE_YUKON_TERRITORY",
    "name": "Yukon Territory",
-   "page": "states#STATE_YUKON_TERRITORY",
-   "slug": "STATE_YUKON_TERRITORY",
-   "type": "state"
+   "page": "locations/yukon_territory",
+   "slug": "yukon_territory",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_YUNNAN",
    "name": "Yunnan",
-   "page": "states#STATE_YUNNAN",
-   "slug": "STATE_YUNNAN",
-   "type": "state"
+   "page": "locations/yunnan",
+   "slug": "yunnan",
+   "type": "location"
   },
   {
    "group": "Central America",
    "icon": null,
    "id": "STATE_ZACATECAS",
    "name": "Zacatecas",
-   "page": "states#STATE_ZACATECAS",
-   "slug": "STATE_ZACATECAS",
-   "type": "state"
+   "page": "locations/zacatecas",
+   "slug": "zacatecas",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_ZAMBEZI",
    "name": "Zambezi",
-   "page": "states#STATE_ZAMBEZI",
-   "slug": "STATE_ZAMBEZI",
-   "type": "state"
+   "page": "locations/zambezi",
+   "slug": "zambezi",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_ZAMBEZIA",
    "name": "Zambezia",
-   "page": "states#STATE_ZAMBEZIA",
-   "slug": "STATE_ZAMBEZIA",
-   "type": "state"
+   "page": "locations/zambezia",
+   "slug": "zambezia",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_ZAMBIA",
    "name": "Zambia",
-   "page": "states#STATE_ZAMBIA",
-   "slug": "STATE_ZAMBIA",
-   "type": "state"
+   "page": "locations/zambia",
+   "slug": "zambia",
+   "type": "location"
   },
   {
    "group": "East Africa",
    "icon": null,
    "id": "STATE_ZANZIBAR",
    "name": "Zanzibar",
-   "page": "states#STATE_ZANZIBAR",
-   "slug": "STATE_ZANZIBAR",
-   "type": "state"
+   "page": "locations/zanzibar",
+   "slug": "zanzibar",
+   "type": "location"
   },
   {
    "group": "Northern Europe",
    "icon": null,
    "id": "STATE_ZEALAND",
    "name": "Zealand",
-   "page": "states#STATE_ZEALAND",
-   "slug": "STATE_ZEALAND",
-   "type": "state"
+   "page": "locations/zealand",
+   "slug": "zealand",
+   "type": "location"
   },
   {
    "group": "South China",
    "icon": null,
    "id": "STATE_ZHEJIANG",
    "name": "Zhejiang",
-   "page": "states#STATE_ZHEJIANG",
-   "slug": "STATE_ZHEJIANG",
-   "type": "state"
+   "page": "locations/zhejiang",
+   "slug": "zhejiang",
+   "type": "location"
   },
   {
    "group": "North China",
    "icon": null,
    "id": "STATE_ZHILI",
    "name": "Hebei",
-   "page": "states#STATE_ZHILI",
-   "slug": "STATE_ZHILI",
-   "type": "state"
+   "page": "locations/zhili",
+   "slug": "zhili",
+   "type": "location"
   },
   {
    "group": "Gran Colombia",
    "icon": null,
    "id": "STATE_ZULIA",
    "name": "Zulia",
-   "page": "states#STATE_ZULIA",
-   "slug": "STATE_ZULIA",
-   "type": "state"
+   "page": "locations/zulia",
+   "slug": "zulia",
+   "type": "location"
   },
   {
    "group": "Southern Africa",
    "icon": null,
    "id": "STATE_ZULULAND",
    "name": "Zululand",
-   "page": "states#STATE_ZULULAND",
-   "slug": "STATE_ZULULAND",
-   "type": "state"
+   "page": "locations/zululand",
+   "slug": "zululand",
+   "type": "location"
   },
   {
    "group": {

@@ -3,17 +3,23 @@ import Base from '../layouts/Base.astro';
 import TableTools from '../components/TableTools.astro';
 import ModifierList from '../components/ModifierList.astro';
 import statesJson from '../data/states.json';
+import locationsJson from '../data/locations.json';
 import { getEntity } from '../lib/entities';
 
 const base = import.meta.env.BASE_URL;
-const states = (statesJson as any).states as any[];
+const byId = new Map((locationsJson as any).locations.map((l: any) => [l.id, l]));
+const states = ((statesJson as any).states as any[]).map((s) => ({ ...s, loc: byId.get(s.id) }));
 const traits = (statesJson as any).traits as any[];
 
 const capText = (s: any) => s.cappedResources.map((r: any) => `${r.name} ${r.cap}`).join('; ');
 const csv = {
-  header: ['State', 'Id', 'Region', 'Arable land', 'Arable types', 'Resource caps', 'Discoverables', 'Traits', 'Coastal'],
+  header: ['State', 'Id', 'Region', '1836 owner', 'Population', 'Produces', 'Arable land', 'Arable types', 'Resource caps', 'Discoverables', 'Traits', 'Coastal'],
   rows: states.map((s) => [
-    s.name, s.id, s.region?.name ?? '', s.arableLand,
+    s.name, s.id, s.region?.name ?? '',
+    s.loc?.owners.map((o: any) => o.name).join('; ') ?? '',
+    s.loc?.population ?? '',
+    s.loc?.produces.map((g: any) => `${g.name} ${g.amount}`).join('; ') ?? '',
+    s.arableLand,
     s.arableResources.map((r: any) => r.name).join('; '), capText(s),
     s.discoverables.map((d: any) => `${d.name}${d.amount ? ` ${d.amount}` : ''}`).join('; '),
     s.traits.map((t: any) => t.name).join('; '), s.navalExit ? 'yes' : '',
@@ -21,12 +27,12 @@ const csv = {
 };
 ---
 <Base
-  title="States"
+  title="Locations"
   active="states"
   eyebrow="World"
-  pageFilter="Filter states…"
+  pageFilter="Filter by state, owner, culture, good, or building…"
   pageStats={[
-    { value: states.length, label: 'states' },
+    { value: states.length, label: 'locations' },
     { value: traits.length, label: 'state traits' },
   ]}
 >
@@ -39,6 +45,8 @@ const csv = {
           <tr>
             <th style="min-width: 12rem;">State</th>
             <th style="width: 11rem;">Region</th>
+            <th style="width: 10rem;">1836 owner</th>
+            <th class="num" style="width: 7rem;">Population</th>
             <th class="num" style="width: 5.5rem;" title="Arable land — max total levels of farming/ranching buildings">Arable</th>
             <th style="width: 16rem;">Arable types</th>
             <th style="min-width: 18rem;">Resource caps</th>
@@ -48,14 +56,23 @@ const csv = {
         </thead>
         <tbody>
           {states.map((s) => (
-            <tr id={s.id} data-name={`${s.name} ${s.id} ${s.region?.name ?? ''} ${s.traits.map((t: any) => t.name).join(' ')}`.toLowerCase()}>
+            <tr id={s.id} data-name={[
+              s.name, s.id, s.region?.name ?? '',
+              s.traits.map((t: any) => t.name).join(' '),
+              s.loc?.owners.map((o: any) => o.name).join(' ') ?? '',
+              s.loc?.cultures.slice(0, 6).map((c: any) => c.name).join(' ') ?? '',
+              s.loc?.produces.map((g: any) => g.name).join(' ') ?? '',
+              s.loc?.buildings.map((b: any) => b.name).join(' ') ?? '',
+            ].join(' ').toLowerCase()}>
               <td class="lead-cell" data-sort={s.name}>
                 <span class="lead">
-                  {s.name}
+                  <a href={`${base}locations/${s.loc?.slug ?? s.id.replace('STATE_', '').toLowerCase()}`}>{s.name}</a>
                   {s.navalExit && <span class="chip" title="Has sea access">· coastal</span>}
                 </span>
               </td>
               <td class="dim">{s.region?.name ?? <span class="cell__dash">—</span>}</td>
+              <td class="dim">{s.loc?.owners.map((o: any) => o.name).join(', ') || <span class="cell__dash">—</span>}</td>
+              <td class="num" data-sort={s.loc?.population ?? ''}>{s.loc?.population ? s.loc.population.toLocaleString() : <span class="cell__dash">—</span>}</td>
               <td class="num" data-sort={s.arableLand}>{s.arableLand}</td>
               <td class="dim">
                 {s.arableResources.map((r: any, i: number) => {
@@ -118,7 +135,11 @@ const csv = {
     </div>
   </div>
 
-  <p class="caption">Discoverable amounts are the totals prospecting can reveal · sea regions excluded</p>
+  <p class="caption">
+    Every state region, searchable by owner, culture, produced good, and starting building ·
+    open one for its 1836 pops, buildings, and output · discoverable amounts are what prospecting
+    can reveal · sea regions excluded
+  </p>
 
   <script is:inline define:vars={{ csv }}>
     window.v3Csv = window.v3Csv || {};

@@ -1,0 +1,312 @@
+---
+import Base from '../../layouts/Base.astro';
+import locationsJson from '../../data/locations.json';
+import { getEntity } from '../../lib/entities';
+
+export function getStaticPaths() {
+  return (locationsJson as any).locations.map((l: any) => ({
+    params: { slug: l.slug },
+    props: { loc: l },
+  }));
+}
+
+const { loc } = Astro.props as { loc: any };
+const base = import.meta.env.BASE_URL;
+const pct = (n: number) => `${(n * 100).toFixed(n >= 0.1 ? 0 : 1)}%`;
+const num = (n: number) => n.toLocaleString();
+---
+<Base
+  title={loc.name}
+  active="states"
+  eyebrow={`Location${loc.region ? ` · ${loc.region.name}` : ''}`}
+  description={`Victoria 3 ${loc.name}: 1836 owner, population and culture makeup, starting buildings, goods produced, and resource potential.`}
+  pageStats={[
+    ...(loc.population ? [{ value: num(loc.population), label: 'people in 1836' }] : []),
+    ...(loc.buildingLevels ? [{ value: loc.buildingLevels, label: 'building levels' }] : []),
+    { value: loc.arableLand, label: 'arable land' },
+  ]}
+>
+  <div class="loc">
+    <div class="loc__main">
+      <div class="loc__facts">
+        {loc.owners.length > 0 && (
+          <span class="loc__fact">
+            <span class="loc__fkey">1836 owner</span>
+            {loc.owners.map((o: any, i: number) => (
+              <>{i > 0 && ', '}<a href={`${base}countries#${o.tag}`}>{o.name}</a></>
+            ))}
+          </span>
+        )}
+        {loc.homelands.length > 0 && (
+          <span class="loc__fact">
+            <span class="loc__fkey">Homeland of</span>
+            {loc.homelands.map((h: any) => h.name).join(', ')}
+          </span>
+        )}
+        {loc.navalExit && <span class="loc__fact"><span class="loc__fkey">Coastal</span>sea access</span>}
+        {loc.traits.length > 0 && (
+          <span class="loc__fact">
+            <span class="loc__fkey">Traits</span>
+            {loc.traits.map((t: any, i: number) => (
+              <>{i > 0 && ', '}<a href={`${base}states#${t.id}`}>{t.name}</a></>
+            ))}
+          </span>
+        )}
+      </div>
+
+      {loc.produces.length > 0 && (
+        <>
+          <h2 class="sect">Produced in 1836</h2>
+          <div class="loc__goods">
+            {loc.produces.map((g: any) => {
+              const e = getEntity(g.id);
+              return (
+                <a class="loc__good" href={`${base}resource-map#l=good:${g.id}`}
+                   title={`See every state producing ${g.name}`}>
+                  {e?.icon && <img src={`${base}${e.icon}`} alt="" loading="lazy" />}
+                  <span>{g.name}</span><b>{num(g.amount)}</b>
+                </a>
+              );
+            })}
+          </div>
+          <p class="loc__note">
+            Gross output per week at full staffing, from the levels and production methods this state
+            starts with. Click a good to map everywhere it is made.
+          </p>
+        </>
+      )}
+
+      {loc.buildings.length > 0 && (
+        <>
+          <h2 class="sect">Buildings at game start</h2>
+          <div class="grid"><div class="grid__scroll">
+            <table class="vtbl">
+              <thead><tr>
+                <th style="min-width: 13rem;">Building</th>
+                <th class="num" style="width: 5rem;">Levels</th>
+                <th style="width: 5rem;">Owner</th>
+                <th>Active production methods</th>
+              </tr></thead>
+              <tbody>
+                {loc.buildings.map((b: any) => (
+                  <tr>
+                    <td class="lead-cell">
+                      <span class="lead">
+                        {getEntity(b.id)?.icon && <img class="lead__icon" src={`${base}${getEntity(b.id)!.icon}`} alt="" loading="lazy" />}
+                        <a href={`${base}buildings/${b.slug}`}>{b.name}</a>
+                      </span>
+                    </td>
+                    <td class="num">{b.levels || <span class="cell__dash">—</span>}</td>
+                    <td class="dim" style="font-family: var(--font-mono); font-size: 0.7rem;">{b.owner}</td>
+                    <td class="dim">{b.pms.map((p: any) => p.name).join(' · ') || <span class="cell__dash">—</span>}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div></div>
+        </>
+      )}
+
+      {loc.cultures.length > 0 && (
+        <>
+          <h2 class="sect">Population</h2>
+          <div class="loc__cols">
+            <div>
+              <div class="loc__sub">Cultures</div>
+              <div class="loc__bars">
+                {loc.cultures.slice(0, 12).map((c: any) => (
+                  <div class="loc__bar">
+                    <span class="loc__bname">{c.name}</span>
+                    <span class="loc__btrack"><span class="loc__bfill" style={`width:${Math.max(1, c.pct * 100)}%`}></span></span>
+                    <span class="loc__bval">{pct(c.pct)}</span>
+                    <span class="loc__bnum">{num(c.size)}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {loc.religions.length > 0 && (
+              <div>
+                <div class="loc__sub">Religions</div>
+                <div class="loc__bars">
+                  {loc.religions.slice(0, 8).map((r: any) => (
+                    <div class="loc__bar">
+                      <span class="loc__bname">{r.name}</span>
+                      <span class="loc__btrack"><span class="loc__bfill loc__bfill--alt" style={`width:${Math.max(1, r.pct * 100)}%`}></span></span>
+                      <span class="loc__bval">{pct(r.pct)}</span>
+                      <span class="loc__bnum">{num(r.size)}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+          <p class="loc__note">
+            Pops as written in the 1836 setup. Where a pop has no religion of its own it follows its
+            culture's, so the religion split only counts pops that name one.
+          </p>
+        </>
+      )}
+
+      <h2 class="sect">Resource potential</h2>
+      <div class="loc__cols">
+        <div>
+          <div class="loc__sub">Extraction caps</div>
+          {loc.cappedResources.length ? (
+            <div class="loc__goods">
+              {loc.cappedResources.map((r: any) => (
+                <a class="loc__good" href={`${base}resource-map#l=cap:${r.id}`}>
+                  {getEntity(r.id)?.icon && <img src={`${base}${getEntity(r.id)!.icon}`} alt="" loading="lazy" />}
+                  <span>{r.name}</span><b>{r.cap}</b>
+                </a>
+              ))}
+            </div>
+          ) : <p class="loc__note">No capped extraction resources.</p>}
+          {loc.discoverables.length > 0 && (
+            <>
+              <div class="loc__sub" style="margin-top:0.7rem;">Undiscovered</div>
+              <div class="loc__goods">
+                {loc.discoverables.map((d: any) => (
+                  <a class="loc__good" href={`${base}resource-map#l=find:${d.group}`}>
+                    <span>{d.name}</span><b>{d.amount ?? '?'}</b>
+                  </a>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+        <div>
+          <div class="loc__sub">Arable land — {loc.arableLand} levels</div>
+          {loc.arableResources.length ? (
+            <div class="loc__goods">
+              {loc.arableResources.map((r: any) => (
+                <a class="loc__good" href={`${base}buildings/${r.slug}`}>
+                  {getEntity(r.id)?.icon && <img src={`${base}${getEntity(r.id)!.icon}`} alt="" loading="lazy" />}
+                  <span>{r.name}</span>
+                </a>
+              ))}
+            </div>
+          ) : <p class="loc__note">No arable land.</p>}
+        </div>
+      </div>
+
+      <p class="caption">
+        Owner, pops, and buildings are the game's own 1836 setup files; goods output is those buildings'
+        activated production methods at their starting levels. Everything on this page is per state
+        region — <a href={`${base}states`}>all locations</a> ·
+        <a href={`${base}resource-map`}>resource map</a>
+      </p>
+    </div>
+
+    <aside class="loc__aside">
+      <div class="loc__mapbox">
+        <canvas id="loc-map" width="360" height="240"></canvas>
+      </div>
+      <p class="loc__note" style="margin-top:0.4rem;">Location on the world map</p>
+    </aside>
+  </div>
+
+  <script is:inline define:vars={{ base, stateId: loc.id }}>
+    // The locator map crops the SHARED state-index image to this state's
+    // bounding box — no per-state image is generated or shipped.
+    (async () => {
+      const canvas = document.getElementById('loc-map');
+      const [meta, img] = await Promise.all([
+        fetch(`${base}data/map.json`).then((r) => r.json()),
+        new Promise((res, rej) => {
+          const im = new Image();
+          im.onload = () => res(im); im.onerror = rej;
+          im.src = `${base}img/map/states.png`;
+        }),
+      ]);
+      const entry = Object.entries(meta.states).find(([, s]) => s.id === stateId);
+      if (!entry) return;
+      const idx = Number(entry[0]);
+      const box = meta.bbox[idx];
+      if (!box) return;
+
+      const W = meta.width, H = meta.height;
+      const off = document.createElement('canvas');
+      off.width = W; off.height = H;
+      const octx = off.getContext('2d', { willReadFrequently: true });
+      octx.drawImage(img, 0, 0);
+      const src = octx.getImageData(0, 0, W, H).data;
+
+      // Show the state in context: pad the crop to at least 6x its own size so
+      // a small state is still recognisably somewhere.
+      const cx = (box.x0 + box.x1) / 2, cy = (box.y0 + box.y1) / 2;
+      const halfW = Math.max((box.x1 - box.x0) * 3, 90);
+      const halfH = Math.max((box.y1 - box.y0) * 3, 60);
+      const x0 = Math.max(0, Math.round(cx - halfW)), x1 = Math.min(W, Math.round(cx + halfW));
+      const y0 = Math.max(0, Math.round(cy - halfH)), y1 = Math.min(H, Math.round(cy + halfH));
+      const cw = x1 - x0, ch = y1 - y0;
+
+      const crop = document.createElement('canvas');
+      crop.width = cw; crop.height = ch;
+      const cctx = crop.getContext('2d');
+      const outImg = cctx.createImageData(cw, ch);
+      const d = outImg.data;
+      for (let y = 0; y < ch; y++) {
+        for (let x = 0; x < cw; x++) {
+          const si = ((y + y0) * W + (x + x0)) * 4;
+          const id = src[si] | (src[si + 1] << 8);
+          const p = (y * cw + x) * 4;
+          const c = !id ? [16, 18, 22] : id === idx ? [201, 160, 74] : [52, 52, 50];
+          d[p] = c[0]; d[p + 1] = c[1]; d[p + 2] = c[2]; d[p + 3] = 255;
+        }
+      }
+      cctx.putImageData(outImg, 0, 0);
+
+      const ctx = canvas.getContext('2d');
+      ctx.imageSmoothingEnabled = false;
+      const scale = Math.min(canvas.width / cw, canvas.height / ch);
+      const dw = cw * scale, dh = ch * scale;
+      ctx.fillStyle = '#101216';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(crop, (canvas.width - dw) / 2, (canvas.height - dh) / 2, dw, dh);
+    })();
+  </script>
+
+  <style is:global>
+    .loc { display: grid; grid-template-columns: 1fr minmax(14rem, 23rem); gap: 1.6rem; align-items: start; }
+    @media (max-width: 900px) { .loc { grid-template-columns: 1fr; } }
+    .loc__aside { position: sticky; top: 7rem; }
+    .loc__mapbox { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: #101216; }
+    .loc__mapbox canvas { display: block; width: 100%; height: auto; }
+
+    .loc__facts { display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 0.4rem; }
+    .loc__fact { font-size: 0.82rem; color: var(--text-soft); }
+    .loc__fkey {
+      font-family: var(--font-ui); font-size: 0.6rem; text-transform: uppercase;
+      letter-spacing: 0.14em; color: var(--gold-soft); margin-right: 0.5rem;
+    }
+    .loc__note { font-size: 0.72rem; color: var(--text-faint); margin: 0.35rem 0 0; line-height: 1.5; max-width: 46rem; }
+    .loc__sub {
+      font-family: var(--font-ui); font-size: 0.6rem; text-transform: uppercase;
+      letter-spacing: 0.14em; color: var(--text-dim); margin-bottom: 0.3rem;
+    }
+    .loc__cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 1.2rem; }
+
+    .loc__goods { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+    .loc__good {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.78rem; padding: 0.16rem 0.5rem;
+      border: 1px solid var(--border); border-radius: 5px;
+      color: var(--text); text-decoration: none; background: var(--bg-elev);
+    }
+    .loc__good:hover { border-color: var(--gold-deep); text-decoration: none; }
+    .loc__good img { width: 17px; height: 17px; object-fit: contain; }
+    .loc__good b { font-variant-numeric: tabular-nums; color: var(--gold-soft); }
+
+    .loc__bars { display: flex; flex-direction: column; gap: 0.15rem; }
+    .loc__bar {
+      display: grid; grid-template-columns: 8.5rem 1fr 2.6rem 5rem;
+      align-items: center; gap: 0.5rem; font-size: 0.76rem;
+    }
+    .loc__bname { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .loc__btrack { background: var(--bg-elev-2); border-radius: 3px; height: 8px; overflow: hidden; }
+    .loc__bfill { display: block; height: 100%; background: #3987e5; }
+    .loc__bfill--alt { background: #d95926; }
+    .loc__bval { font-variant-numeric: tabular-nums; color: var(--text); text-align: right; }
+    .loc__bnum { font-variant-numeric: tabular-nums; color: var(--text-faint); text-align: right; font-size: 0.7rem; }
+  </style>
+</Base>
