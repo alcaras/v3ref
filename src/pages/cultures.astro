@@ -1,0 +1,131 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import culturesJson from '../data/cultures.json';
+import religionsJson from '../data/religions.json';
+import { getEntity } from '../lib/entities';
+
+const base = import.meta.env.BASE_URL;
+const cultures = (culturesJson as any).cultures as any[];
+const religions = (religionsJson as any).religions as any[];
+
+const csv = {
+  header: ['Culture', 'Id', 'Heritage', 'Language', 'Default religion', 'Obsessions', 'Traditions'],
+  rows: cultures.map((c) => [
+    c.name, c.id, c.heritage?.name ?? '', c.language?.name ?? '', c.religion?.name ?? '',
+    c.obsessions.map((o: any) => o.name).join('; '), c.traditions.join('; '),
+  ]),
+};
+
+const goodLink = (g: any) => {
+  const e = getEntity(g.id);
+  return { ...g, icon: e?.icon, page: e?.page };
+};
+---
+<Base
+  title="Cultures & Religions"
+  active="cultures"
+  eyebrow="World"
+  pageFilter="Filter cultures…"
+  pageStats={[
+    { value: cultures.length, label: 'cultures' },
+    { value: religions.length, label: 'religions' },
+  ]}
+>
+  <TableTools csvId="cultures" csvName="victoria3-cultures" />
+
+  <h2 class="sect">Religions</h2>
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl">
+        <thead>
+          <tr>
+            <th style="min-width: 11rem;">Religion</th>
+            <th style="width: 11rem;">Heritage</th>
+            <th style="min-width: 13rem;" title="Goods this religion's pops refuse to buy">Taboos</th>
+            <th class="num" style="width: 6.5rem;">Cultures</th>
+          </tr>
+        </thead>
+        <tbody>
+          {religions.map((r) => (
+            <tr id={r.id}>
+              <td class="lead-cell">
+                <span class="lead">
+                  <img class="lead__icon" src={`${base}${r.icon}`} alt="" loading="lazy" />
+                  {r.name}
+                </span>
+              </td>
+              <td class="dim">{r.heritage?.name ?? <span class="cell__dash">—</span>}</td>
+              <td class="dim">
+                {r.taboos.length ? r.taboos.map(goodLink).map((g: any, i: number) => (
+                  <>
+                    {i > 0 && ', '}
+                    {g.icon && <img class="term__icon" src={`${base}${g.icon}`} alt="" loading="lazy" />}
+                    {g.page ? <a href={`${base}${g.page}`}>{g.name}</a> : g.name}
+                  </>
+                )) : <span class="cell__dash">—</span>}
+              </td>
+              <td class="num dim">{r.cultures || <span class="cell__dash">—</span>}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h2 class="sect">Cultures</h2>
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl" id="cultures-table" data-sortable>
+        <thead>
+          <tr>
+            <th style="min-width: 12rem;">Culture</th>
+            <th style="width: 11rem;">Heritage</th>
+            <th style="width: 11rem;">Language</th>
+            <th style="width: 11rem;">Default religion</th>
+            <th style="min-width: 12rem;" title="Goods these pops develop obsessions for">Obsessions</th>
+            <th>Traditions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {cultures.map((c) => (
+            <tr id={c.id} data-name={`${c.name} ${c.id} ${c.heritage?.name ?? ''} ${c.language?.name ?? ''}`.toLowerCase()}>
+              <td class="lead-cell" data-sort={c.name}><span class="lead">{c.name}</span></td>
+              <td class="dim">{c.heritage?.name ?? <span class="cell__dash">—</span>}</td>
+              <td class="dim">{c.language?.name ?? <span class="cell__dash">—</span>}</td>
+              <td class="dim">{c.religion?.name ?? <span class="cell__dash">—</span>}</td>
+              <td class="dim">
+                {c.obsessions.length ? c.obsessions.map(goodLink).map((g: any, i: number) => (
+                  <>
+                    {i > 0 && ', '}
+                    {g.icon && <img class="term__icon" src={`${base}${g.icon}`} alt="" loading="lazy" />}
+                    {g.page ? <a href={`${base}${g.page}`}>{g.name}</a> : g.name}
+                  </>
+                )) : <span class="cell__dash">—</span>}
+              </td>
+              <td class="dim" style="font-size: 0.75rem;">{c.traditions.join(', ') || <span class="cell__dash">—</span>}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="caption">Homelands live per state in history — joining the States page later · name lists omitted</p>
+
+  <script is:inline define:vars={{ csv }}>
+    window.v3Csv = window.v3Csv || {};
+    window.v3Csv.cultures = () => csv;
+  </script>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const rows = [...document.querySelectorAll('#cultures-table tbody tr')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const r of rows) r.classList.toggle('is-hidden', !!q && !r.dataset.name.includes(q));
+      });
+    }
+  </script>
+</Base>

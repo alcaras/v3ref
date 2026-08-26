@@ -53,3 +53,9 @@ convert_dir "$ICONS/principles_icons" "$OUT/principles"
 if [ -f "$OUT/goods/gold.png" ]; then
   magick "$OUT/goods/gold.png" -resize 32x32 "$OUT/favicon.png"
 fi
+convert_dir "$ICONS/company_icons" "$OUT/companies"
+convert_dir "$ICONS/company_icons/historical_company_icons" "$OUT/companies"
+convert_dir "$ICONS/war_goals" "$OUT/wargoals"
+convert_dir "$ICONS/mobilization_options" "$OUT/mobilization"
+convert_dir "$ICONS/religion_icons" "$OUT/religions"
+convert_dir "$ICONS/military_icons" "$OUT/military"

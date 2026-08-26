@@ -17,6 +17,10 @@ data:
 	node scripts/build_characters.mjs
 	node scripts/build_world.mjs
 	node scripts/build_diplomacy.mjs
+	node scripts/build_companies.mjs
+	node scripts/build_military.mjs
+	node scripts/build_diplomacy2.mjs
+	node scripts/build_culture.mjs
 	node scripts/build_entities.mjs
 
 art:

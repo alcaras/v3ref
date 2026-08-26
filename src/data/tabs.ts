@@ -48,7 +48,7 @@ export const TABS: Tab[] = [
   },
   {
     slug: 'companies', icon: '🏢', label: 'Companies', section: 'Economy',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Company types, formation requirements, prosperity bonuses, charters',
   },
 
@@ -94,12 +94,12 @@ export const TABS: Tab[] = [
   // ── Military ──────────────────────────────────────────────────────
   {
     slug: 'units', icon: '🎖️', label: 'Units', section: 'Military',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Combat unit types — stats, goods upkeep, unlock techs',
   },
   {
     slug: 'mobilization', icon: '🎒', label: 'Mobilization', section: 'Military',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Mobilization options and what they cost and add',
   },
   {
@@ -111,7 +111,7 @@ export const TABS: Tab[] = [
   // ── Diplomacy ─────────────────────────────────────────────────────
   {
     slug: 'diplomatic-plays', icon: '🎲', label: 'Diplomatic Plays', section: 'Diplomacy',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Plays and war goals — maneuver costs, infamy, escalation',
   },
   {
@@ -121,7 +121,7 @@ export const TABS: Tab[] = [
   },
   {
     slug: 'subjects', icon: '👑', label: 'Subjects', section: 'Diplomacy',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Subject types and the liberty-desire machinery',
   },
   {
@@ -143,7 +143,7 @@ export const TABS: Tab[] = [
   },
   {
     slug: 'cultures', icon: '🌍', label: 'Cultures & Religions', section: 'World',
-    status: 'placeholder',
+    status: 'built',
     summary: 'Culture and religion catalog with traits and obsessions',
   },
 
@@ -167,12 +167,12 @@ export const TABS: Tab[] = [
   // ── Concepts ──────────────────────────────────────────────────────
   {
     slug: 'concepts', icon: '💡', label: 'Concepts', section: 'Concepts',
-    status: 'placeholder',
+    status: 'built',
     summary: 'The in-game encyclopedia, auto-linked',
   },
   {
     slug: 'defines', icon: '🔢', label: 'Defines', section: 'Concepts',
-    status: 'placeholder',
+    status: 'built',
     summary: 'The constants under the hood, curated',
   },
 

@@ -96,6 +96,24 @@ for (const t of gen('treaties.json').treaties) {
 for (const i of gen('power_blocs.json').identities) {
   entities.push({ id: i.id, type: 'bloc_identity', slug: i.id, name: i.name, icon: i.icon, page: `power-blocs#${i.id}` });
 }
+for (const c of gen('companies.json').companies) {
+  entities.push({
+    id: c.id, type: 'company', slug: c.id, name: c.name, icon: c.icon,
+    page: `companies#${c.id}`, group: c.flavored ? 'historical' : 'basic',
+  });
+}
+for (const u of gen('units.json').units) {
+  entities.push({ id: u.id, type: 'unit', slug: u.id, name: u.name, icon: null, page: `units#${u.id}`, group: u.domain });
+}
+for (const c of gen('concepts.json').concepts) {
+  entities.push({ id: c.id, type: 'concept', slug: c.id, name: c.name, icon: null, page: `concepts#${c.id}` });
+}
+for (const r of gen('religions.json').religions) {
+  entities.push({ id: r.id, type: 'religion', slug: r.id, name: r.name, icon: r.icon, page: `cultures#${r.id}` });
+}
+for (const c of gen('cultures.json').cultures) {
+  entities.push({ id: c.id, type: 'culture', slug: c.id, name: c.name, icon: null, page: `cultures#${c.id}` });
+}
 
 entities.sort((a, b) => a.id.localeCompare(b.id));
 writeFileSync(

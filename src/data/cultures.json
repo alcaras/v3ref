@@ -1,0 +1,6851 @@
+{
+ "cultures": [
+  {
+   "heritage": {
+    "id": "heritage_abyssinian",
+    "name": "Abyssinian"
+   },
+   "id": "afar",
+   "language": {
+    "id": "language_afar",
+    "name": "Afar"
+   },
+   "name": "Afar",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_abyssinian",
+    "name": "Abyssinian"
+   },
+   "id": "amhara",
+   "language": {
+    "id": "language_amharic",
+    "name": "Amharic"
+   },
+   "name": "Amhara",
+   "obsessions": [],
+   "religion": {
+    "id": "oriental_orthodox",
+    "name": "Oriental Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_abyssinian",
+    "name": "Abyssinian"
+   },
+   "id": "beja",
+   "language": {
+    "id": "language_beja",
+    "name": "Beja"
+   },
+   "name": "Beja",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_abyssinian",
+    "name": "Abyssinian"
+   },
+   "id": "oromo",
+   "language": {
+    "id": "language_galla",
+    "name": "Galla"
+   },
+   "name": "Oromo",
+   "obsessions": [],
+   "religion": {
+    "id": "oriental_orthodox",
+    "name": "Oriental Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_abyssinian",
+    "name": "Abyssinian"
+   },
+   "id": "sidama",
+   "language": {
+    "id": "language_sidama",
+    "name": "Sidama"
+   },
+   "name": "Sidama",
+   "obsessions": [],
+   "religion": {
+    "id": "oriental_orthodox",
+    "name": "Oriental Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_abyssinian",
+    "name": "Abyssinian"
+   },
+   "id": "tigray",
+   "language": {
+    "id": "language_tigrinya",
+    "name": "Tigrinya"
+   },
+   "name": "Tigray",
+   "obsessions": [],
+   "religion": {
+    "id": "oriental_orthodox",
+    "name": "Oriental Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_african_diaspora",
+    "name": "African Diaspora"
+   },
+   "id": "afro_american",
+   "language": {
+    "id": "language_anglophone",
+    "name": "Anglophone"
+   },
+   "name": "Afro-American",
+   "obsessions": [],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_african_diaspora",
+    "name": "African Diaspora"
+   },
+   "id": "afro_antillean",
+   "language": {
+    "id": "language_creole",
+    "name": "Creole"
+   },
+   "name": "Afro-Antillean",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_african_diaspora",
+    "name": "African Diaspora"
+   },
+   "id": "afro_brazilian",
+   "language": {
+    "id": "language_lusophone",
+    "name": "Lusophone"
+   },
+   "name": "Afro-Brazilian",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_african_diaspora",
+    "name": "African Diaspora"
+   },
+   "id": "afro_caribbean",
+   "language": {
+    "id": "language_patois",
+    "name": "Patois"
+   },
+   "name": "Afro-Caribbean",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_african_diaspora",
+    "name": "African Diaspora"
+   },
+   "id": "afro_caribeno",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Afro-Caribeño",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_african_settler",
+    "name": "African Settler"
+   },
+   "id": "boer",
+   "language": {
+    "id": "language_dutch",
+    "name": "Dutch"
+   },
+   "name": "Boer",
+   "obsessions": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_afro_arab",
+    "name": "Afro-Arab"
+   },
+   "id": "haratin",
+   "language": {
+    "id": "language_arabic",
+    "name": "Arabic"
+   },
+   "name": "Haratin",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_afro_arab",
+    "name": "Afro-Arab"
+   },
+   "id": "sudanese",
+   "language": {
+    "id": "language_arabic",
+    "name": "Arabic"
+   },
+   "name": "Sudanese",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_ainu",
+    "name": "Ainu"
+   },
+   "id": "ainu",
+   "language": {
+    "id": "language_ainu",
+    "name": "Ainu"
+   },
+   "name": "Ainu",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_albanian",
+    "name": "Albanian"
+   },
+   "id": "albanian",
+   "language": {
+    "id": "language_albanian",
+    "name": "Albanian"
+   },
+   "name": "Albanian",
+   "obsessions": [
+    {
+     "id": "tobacco",
+     "name": "Tobacco"
+    }
+   ],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Rumelian"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_amazonian",
+    "name": "Amazonian"
+   },
+   "id": "amazonian",
+   "language": {
+    "id": "language_amazonian",
+    "name": "Amazonian"
+   },
+   "name": "Amazonian",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_anatolian",
+    "name": "Anatolian"
+   },
+   "id": "azerbaijani",
+   "language": {
+    "id": "language_oghuz",
+    "name": "Oghuz"
+   },
+   "name": "Azerbaijani",
+   "obsessions": [],
+   "religion": {
+    "id": "shiite",
+    "name": "Shiite"
+   },
+   "traditions": [
+    "Caucasian",
+    "Persianate"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_anatolian",
+    "name": "Anatolian"
+   },
+   "id": "turkish",
+   "language": {
+    "id": "language_oghuz",
+    "name": "Oghuz"
+   },
+   "name": "Turkish",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Rumelian"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_andean",
+    "name": "Andean"
+   },
+   "id": "aimara",
+   "language": {
+    "id": "language_aymaran",
+    "name": "Aymaran"
+   },
+   "name": "Aimara",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_andean",
+    "name": "Andean"
+   },
+   "id": "muisca",
+   "language": {
+    "id": "language_muiscan",
+    "name": "Muiscan"
+   },
+   "name": "Muisca",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_andean",
+    "name": "Andean"
+   },
+   "id": "quechua",
+   "language": {
+    "id": "language_quechuan",
+    "name": "Quechuan"
+   },
+   "name": "Quechua",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_arab",
+    "name": "Arab"
+   },
+   "id": "bedouin",
+   "language": {
+    "id": "language_arabic",
+    "name": "Arabic"
+   },
+   "name": "Bedouin",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_arab",
+    "name": "Arab"
+   },
+   "id": "maghrebi",
+   "language": {
+    "id": "language_arabic",
+    "name": "Arabic"
+   },
+   "name": "Maghrebi",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_arab",
+    "name": "Arab"
+   },
+   "id": "mashriqi",
+   "language": {
+    "id": "language_arabic",
+    "name": "Arabic"
+   },
+   "name": "Mashriqi",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "shiite",
+    "name": "Shiite"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_arab",
+    "name": "Arab"
+   },
+   "id": "misri",
+   "language": {
+    "id": "language_arabic",
+    "name": "Arabic"
+   },
+   "name": "Misri",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_arab",
+    "name": "Arab"
+   },
+   "id": "yemenite",
+   "language": {
+    "id": "language_arabic",
+    "name": "Arabic"
+   },
+   "name": "Yemenite",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "shiite",
+    "name": "Shiite"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_armenian",
+    "name": "Armenian"
+   },
+   "id": "armenian",
+   "language": {
+    "id": "language_armenian",
+    "name": "Armenian"
+   },
+   "name": "Armenian",
+   "obsessions": [
+    {
+     "id": "tobacco",
+     "name": "Tobacco"
+    }
+   ],
+   "religion": {
+    "id": "oriental_orthodox",
+    "name": "Oriental Orthodox"
+   },
+   "traditions": [
+    "Caucasian"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_ashkenazi",
+    "name": "Ashkenazi"
+   },
+   "id": "ashkenazi",
+   "language": {
+    "id": "language_yiddish",
+    "name": "Yiddish"
+   },
+   "name": "Ashkenazi",
+   "obsessions": [],
+   "religion": {
+    "id": "jewish",
+    "name": "Jewish"
+   },
+   "traditions": [
+    "Israelite"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_assamese",
+    "name": "Assamese"
+   },
+   "id": "assamese",
+   "language": {
+    "id": "language_eastern_hindi",
+    "name": "Eastern Hindi"
+   },
+   "name": "Assamese",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_atlantic",
+    "name": "Atlantic"
+   },
+   "id": "tupinamba",
+   "language": {
+    "id": "language_tupi",
+    "name": "Tupi"
+   },
+   "name": "Tupinamba",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_australian",
+    "name": "Australian"
+   },
+   "id": "aborigine",
+   "language": {
+    "id": "language_aboriginal",
+    "name": "Aboriginal"
+   },
+   "name": "Aboriginal",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_baltic",
+    "name": "Baltic"
+   },
+   "id": "estonian",
+   "language": {
+    "id": "language_finnic",
+    "name": "Finnic"
+   },
+   "name": "Estonian",
+   "obsessions": [],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_baltic",
+    "name": "Baltic"
+   },
+   "id": "latvian",
+   "language": {
+    "id": "language_baltic",
+    "name": "Baltic"
+   },
+   "name": "Latvian",
+   "obsessions": [],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_baltic",
+    "name": "Baltic"
+   },
+   "id": "lithuanian",
+   "language": {
+    "id": "language_baltic",
+    "name": "Baltic"
+   },
+   "name": "Lithuanian",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_berber",
+    "name": "Berber"
+   },
+   "id": "berber",
+   "language": {
+    "id": "language_berber",
+    "name": "Berber"
+   },
+   "name": "Amazigh",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_berber",
+    "name": "Berber"
+   },
+   "id": "bidan",
+   "language": {
+    "id": "language_arabic",
+    "name": "Arabic"
+   },
+   "name": "Bidan",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_berber",
+    "name": "Berber"
+   },
+   "id": "tuareg",
+   "language": {
+    "id": "language_berber",
+    "name": "Berber"
+   },
+   "name": "Tuareg",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_british",
+    "name": "British"
+   },
+   "id": "australian",
+   "language": {
+    "id": "language_anglophone",
+    "name": "Anglophone"
+   },
+   "name": "Australian",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_british",
+    "name": "British"
+   },
+   "id": "british",
+   "language": {
+    "id": "language_anglophone",
+    "name": "Anglophone"
+   },
+   "name": "English",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_british",
+    "name": "British"
+   },
+   "id": "scottish_gaelic",
+   "language": {
+    "id": "language_gaelic",
+    "name": "Gaelic"
+   },
+   "name": "Gael",
+   "obsessions": [],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_british",
+    "name": "British"
+   },
+   "id": "irish",
+   "language": {
+    "id": "language_gaelic",
+    "name": "Gaelic"
+   },
+   "name": "Irish",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_british",
+    "name": "British"
+   },
+   "id": "scottish",
+   "language": {
+    "id": "language_anglophone",
+    "name": "Anglophone"
+   },
+   "name": "Scottish",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_british",
+    "name": "British"
+   },
+   "id": "welsh",
+   "language": {
+    "id": "language_brythonic",
+    "name": "Brythonic"
+   },
+   "name": "Welsh",
+   "obsessions": [],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_burmese",
+    "name": "Burmese"
+   },
+   "id": "burmese",
+   "language": {
+    "id": "language_burmic",
+    "name": "Burmic"
+   },
+   "name": "Burmese",
+   "obsessions": [],
+   "religion": {
+    "id": "theravada",
+    "name": "Theravada"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_burmese",
+    "name": "Burmese"
+   },
+   "id": "kachin",
+   "language": {
+    "id": "language_kachinic",
+    "name": "Kachinic"
+   },
+   "name": "Kachin",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_burmese",
+    "name": "Burmese"
+   },
+   "id": "karen",
+   "language": {
+    "id": "language_karenic",
+    "name": "Karenic"
+   },
+   "name": "Karen",
+   "obsessions": [],
+   "religion": {
+    "id": "theravada",
+    "name": "Theravada"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_burmese",
+    "name": "Burmese"
+   },
+   "id": "mon",
+   "language": {
+    "id": "language_monic",
+    "name": "Monic"
+   },
+   "name": "Mon",
+   "obsessions": [],
+   "religion": {
+    "id": "theravada",
+    "name": "Theravada"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_californian_indian",
+    "name": "Californian Indian"
+   },
+   "id": "hokan",
+   "language": {
+    "id": "language_hokan",
+    "name": "Hokan"
+   },
+   "name": "Hokan",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_cambodian",
+    "name": "Cambodian"
+   },
+   "id": "khmer",
+   "language": {
+    "id": "language_khmeric",
+    "name": "Khmeric"
+   },
+   "name": "Khmer",
+   "obsessions": [],
+   "religion": {
+    "id": "theravada",
+    "name": "Theravada"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_caribbean",
+    "name": "Caribbean"
+   },
+   "id": "cariban",
+   "language": {
+    "id": "language_cariban",
+    "name": "Cariban"
+   },
+   "name": "Cariban",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_caribbean",
+    "name": "Caribbean"
+   },
+   "id": "guajiro",
+   "language": {
+    "id": "language_guajiro",
+    "name": "Guajiro"
+   },
+   "name": "Guajiro",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_caribbean",
+    "name": "Caribbean"
+   },
+   "id": "miskito",
+   "language": {
+    "id": "language_miskito",
+    "name": "Miskito"
+   },
+   "name": "Miskito",
+   "obsessions": [],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_carnatic",
+    "name": "Carnatic"
+   },
+   "id": "malayalam",
+   "language": {
+    "id": "language_tamil_tulu",
+    "name": "Tamil-Tulu"
+   },
+   "name": "Malayalam",
+   "obsessions": [
+    {
+     "id": "fruit",
+     "name": "Fruit"
+    }
+   ],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_carnatic",
+    "name": "Carnatic"
+   },
+   "id": "tamil",
+   "language": {
+    "id": "language_tamil_tulu",
+    "name": "Tamil-Tulu"
+   },
+   "name": "Tamil",
+   "obsessions": [
+    {
+     "id": "sugar",
+     "name": "Sugar"
+    }
+   ],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_central",
+    "name": "Central"
+   },
+   "id": "bageli",
+   "language": {
+    "id": "language_hindustani",
+    "name": "Hindustani"
+   },
+   "name": "Bagheli",
+   "obsessions": [],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_central",
+    "name": "Central"
+   },
+   "id": "bundeli",
+   "language": {
+    "id": "language_hindustani",
+    "name": "Hindustani"
+   },
+   "name": "Bundeli",
+   "obsessions": [],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_central",
+    "name": "Central"
+   },
+   "id": "chhattisgarhi",
+   "language": {
+    "id": "language_hindustani",
+    "name": "Hindustani"
+   },
+   "name": "Chhattisgarhi",
+   "obsessions": [],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_central",
+    "name": "Central"
+   },
+   "id": "gondi",
+   "language": {
+    "id": "language_south_central",
+    "name": "South-Central"
+   },
+   "name": "Gondi",
+   "obsessions": [],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_circumpolar",
+    "name": "Circumpolar"
+   },
+   "id": "athabaskan",
+   "language": {
+    "id": "language_athabaskan",
+    "name": "Athabaskan"
+   },
+   "name": "Athabaskan",
+   "obsessions": [
+    {
+     "id": "tobacco",
+     "name": "Tobacco"
+    }
+   ],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_circumpolar",
+    "name": "Circumpolar"
+   },
+   "id": "inuit",
+   "language": {
+    "id": "language_eskimoan",
+    "name": "Eskimoan"
+   },
+   "name": "Inuit",
+   "obsessions": [
+    {
+     "id": "tobacco",
+     "name": "Tobacco"
+    }
+   ],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_congolese",
+    "name": "Congolese"
+   },
+   "id": "azande",
+   "language": {
+    "id": "language_zande",
+    "name": "Zande"
+   },
+   "name": "Azande",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_congolese",
+    "name": "Congolese"
+   },
+   "id": "bakongo",
+   "language": {
+    "id": "language_kongo",
+    "name": "Kongo"
+   },
+   "name": "Bakongo",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_congolese",
+    "name": "Congolese"
+   },
+   "id": "equatorial_bantu",
+   "language": {
+    "id": "language_equatorial_bantu",
+    "name": "Equatorial Bantu"
+   },
+   "name": "Equatorial Bantu",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_congolese",
+    "name": "Congolese"
+   },
+   "id": "fluvian_bantu",
+   "language": {
+    "id": "language_fluvial_bantu",
+    "name": "Fluvial Bantu"
+   },
+   "name": "Fluvial Bantu",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_congolese",
+    "name": "Congolese"
+   },
+   "id": "luba",
+   "language": {
+    "id": "language_luba",
+    "name": "Luba"
+   },
+   "name": "Luba",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_congolese",
+    "name": "Congolese"
+   },
+   "id": "lunda",
+   "language": {
+    "id": "language_lunda",
+    "name": "Lunda"
+   },
+   "name": "Lunda",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_congolese",
+    "name": "Congolese"
+   },
+   "id": "mongo",
+   "language": {
+    "id": "language_mongo",
+    "name": "Mongo"
+   },
+   "name": "Mongo",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_darfurian",
+    "name": "Darfurian"
+   },
+   "id": "fur",
+   "language": {
+    "id": "language_fur",
+    "name": "Fur"
+   },
+   "name": "Fur",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_deccani",
+    "name": "Deccani"
+   },
+   "id": "deccani",
+   "language": {
+    "id": "language_hindustani",
+    "name": "Hindustani"
+   },
+   "name": "Deccani",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_deccani",
+    "name": "Deccani"
+   },
+   "id": "kannada",
+   "language": {
+    "id": "language_tamil_tulu",
+    "name": "Tamil-Tulu"
+   },
+   "name": "Kannada",
+   "obsessions": [],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_deccani",
+    "name": "Deccani"
+   },
+   "id": "marathi",
+   "language": {
+    "id": "language_southern_indic",
+    "name": "Southern Indic"
+   },
+   "name": "Marathi",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_deccani",
+    "name": "Deccani"
+   },
+   "id": "telegu",
+   "language": {
+    "id": "language_south_central",
+    "name": "South-Central"
+   },
+   "name": "Telugu",
+   "obsessions": [],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_east_african",
+    "name": "East African"
+   },
+   "id": "malagasy",
+   "language": {
+    "id": "language_malagasy",
+    "name": "Malagasy"
+   },
+   "name": "Malagasy",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_east_slavic",
+    "name": "East Slavic"
+   },
+   "id": "byelorussian",
+   "language": {
+    "id": "language_east_slavic",
+    "name": "East Slavic"
+   },
+   "name": "Byelorussian",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_east_slavic",
+    "name": "East Slavic"
+   },
+   "id": "russian",
+   "language": {
+    "id": "language_east_slavic",
+    "name": "East Slavic"
+   },
+   "name": "Russian",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "Russosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_east_slavic",
+    "name": "East Slavic"
+   },
+   "id": "ukrainian",
+   "language": {
+    "id": "language_east_slavic",
+    "name": "East Slavic"
+   },
+   "name": "Ukrainian",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_bantu",
+    "name": "Eastern Bantu"
+   },
+   "id": "baganda",
+   "language": {
+    "id": "language_lacustrine_bantu",
+    "name": "Lacustrine Bantu"
+   },
+   "name": "Baganda",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_bantu",
+    "name": "Eastern Bantu"
+   },
+   "id": "chewa",
+   "language": {
+    "id": "language_nyasa",
+    "name": "Nyasa"
+   },
+   "name": "Chewa",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_bantu",
+    "name": "Eastern Bantu"
+   },
+   "id": "kikuyu",
+   "language": {
+    "id": "language_kikuyu",
+    "name": "Kikuyu"
+   },
+   "name": "Kikuyu",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_bantu",
+    "name": "Eastern Bantu"
+   },
+   "id": "lacustrine_bantu",
+   "language": {
+    "id": "language_lacustrine_bantu",
+    "name": "Lacustrine Bantu"
+   },
+   "name": "Lacustrine Bantu",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_bantu",
+    "name": "Eastern Bantu"
+   },
+   "id": "lomwe",
+   "language": {
+    "id": "language_makua",
+    "name": "Makua"
+   },
+   "name": "Lomwe",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_bantu",
+    "name": "Eastern Bantu"
+   },
+   "id": "makua",
+   "language": {
+    "id": "language_makua",
+    "name": "Makua"
+   },
+   "name": "Makua",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_bantu",
+    "name": "Eastern Bantu"
+   },
+   "id": "nyamwezi",
+   "language": {
+    "id": "language_nyamwezi",
+    "name": "Nyamwezi"
+   },
+   "name": "Nyamwezi",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_bantu",
+    "name": "Eastern Bantu"
+   },
+   "id": "ruanda",
+   "language": {
+    "id": "language_lacustrine_bantu",
+    "name": "Lacustrine Bantu"
+   },
+   "name": "Ruanda",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_bantu",
+    "name": "Eastern Bantu"
+   },
+   "id": "rundi",
+   "language": {
+    "id": "language_lacustrine_bantu",
+    "name": "Lacustrine Bantu"
+   },
+   "name": "Rundi",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_bantu",
+    "name": "Eastern Bantu"
+   },
+   "id": "sukuma",
+   "language": {
+    "id": "language_takama",
+    "name": "Takama"
+   },
+   "name": "Sukuma",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_bantu",
+    "name": "Eastern Bantu"
+   },
+   "id": "swahili",
+   "language": {
+    "id": "language_swahili",
+    "name": "Swahili"
+   },
+   "name": "Swahili",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_bantu",
+    "name": "Eastern Bantu"
+   },
+   "id": "yao",
+   "language": {
+    "id": "language_yao",
+    "name": "Yao"
+   },
+   "name": "Yao",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_highlands",
+    "name": "Eastern Highlands"
+   },
+   "id": "lushai",
+   "language": {
+    "id": "language_mizo",
+    "name": "Mizo"
+   },
+   "name": "Lushai",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_highlands",
+    "name": "Eastern Highlands"
+   },
+   "id": "manipuri",
+   "language": {
+    "id": "language_meitei",
+    "name": "Meitei"
+   },
+   "name": "Manipuri",
+   "obsessions": [],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_highlands",
+    "name": "Eastern Highlands"
+   },
+   "id": "naga",
+   "language": {
+    "id": "language_naga",
+    "name": "Naga"
+   },
+   "name": "Naga",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_woodlands_indian",
+    "name": "Eastern Woodlands Indian"
+   },
+   "id": "algonquian",
+   "language": {
+    "id": "language_algonquian",
+    "name": "Algonquian"
+   },
+   "name": "Algonquian",
+   "obsessions": [
+    {
+     "id": "tobacco",
+     "name": "Tobacco"
+    }
+   ],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_woodlands_indian",
+    "name": "Eastern Woodlands Indian"
+   },
+   "id": "iroquoian",
+   "language": {
+    "id": "language_iroquoian",
+    "name": "Iroquoian"
+   },
+   "name": "Iroquoian",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_eastern_woodlands_indian",
+    "name": "Eastern Woodlands Indian"
+   },
+   "id": "oodham",
+   "language": {
+    "id": "language_piman",
+    "name": "Piman"
+   },
+   "name": "O’odham",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_formosan",
+    "name": "Formosan"
+   },
+   "id": "yuanzhumin",
+   "language": {
+    "id": "language_formosan",
+    "name": "Formosan"
+   },
+   "name": "Yuanzhumin",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_gallic",
+    "name": "Gallic"
+   },
+   "id": "breton",
+   "language": {
+    "id": "language_brythonic",
+    "name": "Brythonic"
+   },
+   "name": "Breton",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_gallic",
+    "name": "Gallic"
+   },
+   "id": "francoprovencal",
+   "language": {
+    "id": "language_arpitan",
+    "name": "Arpitan"
+   },
+   "name": "Franco-Provençal",
+   "obsessions": [
+    {
+     "id": "sugar",
+     "name": "Sugar"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "Helvetic"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_gallic",
+    "name": "Gallic"
+   },
+   "id": "french",
+   "language": {
+    "id": "language_francophone",
+    "name": "Francophone"
+   },
+   "name": "French",
+   "obsessions": [
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_gallic",
+    "name": "Gallic"
+   },
+   "id": "occitan",
+   "language": {
+    "id": "language_occitano_romance",
+    "name": "Occitano-Romance"
+   },
+   "name": "Occitan",
+   "obsessions": [
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_gangetic",
+    "name": "Gangetic"
+   },
+   "id": "avadhi",
+   "language": {
+    "id": "language_hindustani",
+    "name": "Hindustani"
+   },
+   "name": "Avadhi",
+   "obsessions": [],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_gangetic",
+    "name": "Gangetic"
+   },
+   "id": "bengali",
+   "language": {
+    "id": "language_magadhan",
+    "name": "Magadhan"
+   },
+   "name": "Bengali",
+   "obsessions": [
+    {
+     "id": "fruit",
+     "name": "Fruit"
+    }
+   ],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_gangetic",
+    "name": "Gangetic"
+   },
+   "id": "bihari",
+   "language": {
+    "id": "language_magadhan",
+    "name": "Magadhan"
+   },
+   "name": "Bihari",
+   "obsessions": [],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_gangetic",
+    "name": "Gangetic"
+   },
+   "id": "hindustani",
+   "language": {
+    "id": "language_hindustani",
+    "name": "Hindustani"
+   },
+   "name": "Hindustani",
+   "obsessions": [],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_gangetic",
+    "name": "Gangetic"
+   },
+   "id": "oriya",
+   "language": {
+    "id": "language_magadhan",
+    "name": "Magadhan"
+   },
+   "name": "Oria",
+   "obsessions": [],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_georgian",
+    "name": "Georgian"
+   },
+   "id": "georgian",
+   "language": {
+    "id": "language_georgian",
+    "name": "Georgian"
+   },
+   "name": "Georgian",
+   "obsessions": [
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "Caucasian"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_germanic",
+    "name": "Germanic"
+   },
+   "id": "alemannic",
+   "language": {
+    "id": "language_germanophone",
+    "name": "Germanophone"
+   },
+   "name": "Alemannic",
+   "obsessions": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "Helvetic"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_germanic",
+    "name": "Germanic"
+   },
+   "id": "east_german",
+   "language": {
+    "id": "language_germanophone",
+    "name": "Germanophone"
+   },
+   "name": "Eastern German",
+   "obsessions": [],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "Russosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_germanic",
+    "name": "Germanic"
+   },
+   "id": "north_german",
+   "language": {
+    "id": "language_germanophone",
+    "name": "Germanophone"
+   },
+   "name": "North German",
+   "obsessions": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_germanic",
+    "name": "Germanic"
+   },
+   "id": "south_german",
+   "language": {
+    "id": "language_germanophone",
+    "name": "Germanophone"
+   },
+   "name": "South German",
+   "obsessions": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_great_basin_indian",
+    "name": "Great Basin Indian"
+   },
+   "id": "paiute",
+   "language": {
+    "id": "language_numic",
+    "name": "Numic"
+   },
+   "name": "Paiute",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_greek",
+    "name": "Greek"
+   },
+   "id": "greek",
+   "language": {
+    "id": "language_greek",
+    "name": "Greek"
+   },
+   "name": "Greek",
+   "obsessions": [
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guarani",
+    "name": "Guarani"
+   },
+   "id": "guarani",
+   "language": {
+    "id": "language_guarani",
+    "name": "Guarani"
+   },
+   "name": "Guarani",
+   "obsessions": [
+    {
+     "id": "fruit",
+     "name": "Fruit"
+    }
+   ],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "akan",
+   "language": {
+    "id": "language_akan",
+    "name": "Akan"
+   },
+   "name": "Akan",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "bassa",
+   "language": {
+    "id": "language_kru",
+    "name": "Kru"
+   },
+   "name": "Bassa",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "edo",
+   "language": {
+    "id": "language_edo",
+    "name": "Edo"
+   },
+   "name": "Edo",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "ewe",
+   "language": {
+    "id": "language_gbe",
+    "name": "Gbe"
+   },
+   "name": "Ewe",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "fang",
+   "language": {
+    "id": "language_beti",
+    "name": "Beti"
+   },
+   "name": "Fang",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "fon",
+   "language": {
+    "id": "language_gbe",
+    "name": "Gbe"
+   },
+   "name": "Fon",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "ibibio",
+   "language": {
+    "id": "language_ibibio",
+    "name": "Ibibio"
+   },
+   "name": "Ibibio",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "ibo",
+   "language": {
+    "id": "language_igbo",
+    "name": "Igbo"
+   },
+   "name": "Ibo",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "kissi",
+   "language": {
+    "id": "language_kissi",
+    "name": "Kissi"
+   },
+   "name": "Kissi",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "kru",
+   "language": {
+    "id": "language_kru",
+    "name": "Kru"
+   },
+   "name": "Kru",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "mossi",
+   "language": {
+    "id": "language_mossi",
+    "name": "Mossi"
+   },
+   "name": "Mossi",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "tiv",
+   "language": {
+    "id": "language_tiv",
+    "name": "Tiv"
+   },
+   "name": "Tiv",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_guinean",
+    "name": "Guinean"
+   },
+   "id": "yoruba",
+   "language": {
+    "id": "language_yoruba",
+    "name": "Yoruba"
+   },
+   "name": "Yoruba",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_gujarati",
+    "name": "Gujarati"
+   },
+   "id": "gujarati",
+   "language": {
+    "id": "language_western_indic",
+    "name": "Western Indic"
+   },
+   "name": "Gujarati",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_han",
+    "name": "Han"
+   },
+   "id": "hakka",
+   "language": {
+    "id": "language_hakka",
+    "name": "Hakka"
+   },
+   "name": "Hakka",
+   "obsessions": [],
+   "religion": {
+    "id": "confucian",
+    "name": "Confucian"
+   },
+   "traditions": [
+    "Sinosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_han",
+    "name": "Han"
+   },
+   "id": "han",
+   "language": {
+    "id": "language_mandarin",
+    "name": "Mandarin"
+   },
+   "name": "Han",
+   "obsessions": [
+    {
+     "id": "opium",
+     "name": "Opium"
+    }
+   ],
+   "religion": {
+    "id": "confucian",
+    "name": "Confucian"
+   },
+   "traditions": [
+    "Sinosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_han",
+    "name": "Han"
+   },
+   "id": "min",
+   "language": {
+    "id": "language_min",
+    "name": "Min"
+   },
+   "name": "Min",
+   "obsessions": [],
+   "religion": {
+    "id": "confucian",
+    "name": "Confucian"
+   },
+   "traditions": [
+    "Sinosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_han",
+    "name": "Han"
+   },
+   "id": "yue",
+   "language": {
+    "id": "language_yue",
+    "name": "Yue"
+   },
+   "name": "Yue",
+   "obsessions": [],
+   "religion": {
+    "id": "confucian",
+    "name": "Confucian"
+   },
+   "traditions": [
+    "Sinosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_hazaran",
+    "name": "Hazaran"
+   },
+   "id": "hazara",
+   "language": {
+    "id": "language_persian",
+    "name": "Persian"
+   },
+   "name": "Hazara",
+   "obsessions": [],
+   "religion": {
+    "id": "shiite",
+    "name": "Shiite"
+   },
+   "traditions": [
+    "Persianate"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_himalayan",
+    "name": "Himalayan"
+   },
+   "id": "nepali",
+   "language": {
+    "id": "language_pahari",
+    "name": "Pahari"
+   },
+   "name": "Nepali",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "Himalayan"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_himalayan",
+    "name": "Himalayan"
+   },
+   "id": "pahari",
+   "language": {
+    "id": "language_pahari",
+    "name": "Pahari"
+   },
+   "name": "Pahari",
+   "obsessions": [],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iberian",
+    "name": "Iberian"
+   },
+   "id": "aragonese",
+   "language": {
+    "id": "language_aragonese",
+    "name": "Aragonese"
+   },
+   "name": "Aragonese",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iberian",
+    "name": "Iberian"
+   },
+   "id": "asturleonese",
+   "language": {
+    "id": "language_asturleonese",
+    "name": "Asturleonese"
+   },
+   "name": "Asturleonese",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iberian",
+    "name": "Iberian"
+   },
+   "id": "basque",
+   "language": {
+    "id": "language_basque",
+    "name": "Basque"
+   },
+   "name": "Basque",
+   "obsessions": [
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iberian",
+    "name": "Iberian"
+   },
+   "id": "catalan",
+   "language": {
+    "id": "language_occitano_romance",
+    "name": "Occitano-Romance"
+   },
+   "name": "Catalan",
+   "obsessions": [
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iberian",
+    "name": "Iberian"
+   },
+   "id": "galician",
+   "language": {
+    "id": "language_lusophone",
+    "name": "Lusophone"
+   },
+   "name": "Galician",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iberian",
+    "name": "Iberian"
+   },
+   "id": "iberian",
+   "language": {
+    "id": "language_esperanto",
+    "name": "Esperanto"
+   },
+   "name": "Iberian",
+   "obsessions": [],
+   "religion": {
+    "id": "atheist",
+    "name": "Atheist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iberian",
+    "name": "Iberian"
+   },
+   "id": "portuguese",
+   "language": {
+    "id": "language_lusophone",
+    "name": "Lusophone"
+   },
+   "name": "Portuguese",
+   "obsessions": [
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iberian",
+    "name": "Iberian"
+   },
+   "id": "spanish",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Spanish",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_indusine",
+    "name": "Indusine"
+   },
+   "id": "panjabi",
+   "language": {
+    "id": "language_northwestern_indic",
+    "name": "Northwestern Indic"
+   },
+   "name": "Punjabi",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "sikh",
+    "name": "Sikh"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_indusine",
+    "name": "Indusine"
+   },
+   "id": "sindi",
+   "language": {
+    "id": "language_northwestern_indic",
+    "name": "Northwestern Indic"
+   },
+   "name": "Sindi",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insular",
+    "name": "Insular"
+   },
+   "id": "sinhala",
+   "language": {
+    "id": "language_southern_indic",
+    "name": "Southern Indic"
+   },
+   "name": "Sinhala",
+   "obsessions": [
+    {
+     "id": {},
+     "name": "[object Object]"
+    }
+   ],
+   "religion": {
+    "id": "theravada",
+    "name": "Theravada"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "balinese",
+   "language": {
+    "id": "language_malay",
+    "name": "Malay"
+   },
+   "name": "Balinese",
+   "obsessions": [
+    {
+     "id": "fruit",
+     "name": "Fruit"
+    }
+   ],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "batak",
+   "language": {
+    "id": "language_batak",
+    "name": "Batak"
+   },
+   "name": "Batak",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "bornean",
+   "language": {
+    "id": "language_malay",
+    "name": "Malay"
+   },
+   "name": "Bornean",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "champa",
+   "language": {
+    "id": "language_cham",
+    "name": "Cham"
+   },
+   "name": "Champa",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "dayak",
+   "language": {
+    "id": "language_dayak",
+    "name": "Dayak"
+   },
+   "name": "Dayak",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "filipino_hispanophone",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Filipino",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "filipino_mestizo",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Filipino Mestizo",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "ilocano",
+   "language": {
+    "id": "language_philippinic",
+    "name": "Philippinic"
+   },
+   "name": "Ilocano",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "javan",
+   "language": {
+    "id": "language_malay",
+    "name": "Malay"
+   },
+   "name": "Javan",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "lumad",
+   "language": {
+    "id": "language_philippinic",
+    "name": "Philippinic"
+   },
+   "name": "Lumad",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "malay",
+   "language": {
+    "id": "language_malay",
+    "name": "Malay"
+   },
+   "name": "Malay",
+   "obsessions": [
+    {
+     "id": {},
+     "name": "[object Object]"
+    }
+   ],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "moluccan",
+   "language": {
+    "id": "language_moluccan",
+    "name": "Moluccan"
+   },
+   "name": "Moluccan",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "moro",
+   "language": {
+    "id": "language_philippinic",
+    "name": "Philippinic"
+   },
+   "name": "Moro",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "filipino",
+   "language": {
+    "id": "language_philippinic",
+    "name": "Philippinic"
+   },
+   "name": "Pilipino",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "sumatran",
+   "language": {
+    "id": "language_malay",
+    "name": "Malay"
+   },
+   "name": "Sumatran",
+   "obsessions": [
+    {
+     "id": {},
+     "name": "[object Object]"
+    }
+   ],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "tagalog",
+   "language": {
+    "id": "language_philippinic",
+    "name": "Philippinic"
+   },
+   "name": "Tagalog",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_insulindian",
+    "name": "Insulindian"
+   },
+   "id": "visayan",
+   "language": {
+    "id": "language_philippinic",
+    "name": "Philippinic"
+   },
+   "name": "Visayan",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iranian",
+    "name": "Iranian"
+   },
+   "id": "baluchi",
+   "language": {
+    "id": "language_baluchi",
+    "name": "Baluchi"
+   },
+   "name": "Baluchi",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Persianate"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iranian",
+    "name": "Iranian"
+   },
+   "id": "kurdish",
+   "language": {
+    "id": "language_kurdish",
+    "name": "Kurdish"
+   },
+   "name": "Kurdish",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Persianate"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iranian",
+    "name": "Iranian"
+   },
+   "id": "luri",
+   "language": {
+    "id": "language_persian",
+    "name": "Persian"
+   },
+   "name": "Luri",
+   "obsessions": [],
+   "religion": {
+    "id": "shiite",
+    "name": "Shiite"
+   },
+   "traditions": [
+    "Persianate"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iranian",
+    "name": "Iranian"
+   },
+   "id": "mazanderani",
+   "language": {
+    "id": "language_tabari",
+    "name": "Tabari"
+   },
+   "name": "Mazanderani",
+   "obsessions": [],
+   "religion": {
+    "id": "shiite",
+    "name": "Shiite"
+   },
+   "traditions": [
+    "Persianate"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iranian",
+    "name": "Iranian"
+   },
+   "id": "pashtun",
+   "language": {
+    "id": "language_pashto",
+    "name": "Pashto"
+   },
+   "name": "Pashtun",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Persianate"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iranian",
+    "name": "Iranian"
+   },
+   "id": "pathan",
+   "language": {
+    "id": "language_hindustani",
+    "name": "Hindustani"
+   },
+   "name": "Pathan",
+   "obsessions": [
+    {
+     "id": "tobacco",
+     "name": "Tobacco"
+    }
+   ],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Persianate"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iranian",
+    "name": "Iranian"
+   },
+   "id": "persian",
+   "language": {
+    "id": "language_persian",
+    "name": "Persian"
+   },
+   "name": "Persian",
+   "obsessions": [],
+   "religion": {
+    "id": "shiite",
+    "name": "Shiite"
+   },
+   "traditions": [
+    "Persianate"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_iranian",
+    "name": "Iranian"
+   },
+   "id": "tajik",
+   "language": {
+    "id": "language_persian",
+    "name": "Persian"
+   },
+   "name": "Tajik",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Persianate"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_italic",
+    "name": "Italic"
+   },
+   "id": "corsican",
+   "language": {
+    "id": "language_italian",
+    "name": "Italian"
+   },
+   "name": "Corsican",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_italic",
+    "name": "Italic"
+   },
+   "id": "maltese",
+   "language": {
+    "id": "language_arabic",
+    "name": "Arabic"
+   },
+   "name": "Maltese",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_italic",
+    "name": "Italic"
+   },
+   "id": "north_italian",
+   "language": {
+    "id": "language_italian",
+    "name": "Italian"
+   },
+   "name": "North Italian",
+   "obsessions": [
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_italic",
+    "name": "Italic"
+   },
+   "id": "south_italian",
+   "language": {
+    "id": "language_italian",
+    "name": "Italian"
+   },
+   "name": "South Italian",
+   "obsessions": [
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_japanese",
+    "name": "Japanese"
+   },
+   "id": "japanese",
+   "language": {
+    "id": "language_japanese",
+    "name": "Japanese"
+   },
+   "name": "Japanese",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "mahayana",
+    "name": "Mahayana"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_japanese",
+    "name": "Japanese"
+   },
+   "id": "ryukyuan",
+   "language": {
+    "id": "language_ryukyuan",
+    "name": "Ryukyuan"
+   },
+   "name": "Ryukyuan",
+   "obsessions": [],
+   "religion": {
+    "id": "mahayana",
+    "name": "Mahayana"
+   },
+   "traditions": [
+    "Sinosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_kashmiri",
+    "name": "Kashmiri"
+   },
+   "id": "kho",
+   "language": {
+    "id": "language_dardic",
+    "name": "Dardic"
+   },
+   "name": "Chitrali",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_kashmiri",
+    "name": "Kashmiri"
+   },
+   "id": "kashmiri",
+   "language": {
+    "id": "language_dardic",
+    "name": "Dardic"
+   },
+   "name": "Kashmiri",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_khmu",
+    "name": "Khmu"
+   },
+   "id": "khmu",
+   "language": {
+    "id": "language_khmuic",
+    "name": "Khmuic"
+   },
+   "name": "Khmu",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_khoisan",
+    "name": "Khoisan"
+   },
+   "id": "khoisan",
+   "language": {
+    "id": "language_khoisan",
+    "name": "Khoisan"
+   },
+   "name": "Khoisan",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_kipchak",
+    "name": "Kipchak"
+   },
+   "id": "kazak",
+   "language": {
+    "id": "language_kipchak",
+    "name": "Kipchak"
+   },
+   "name": "Kazakh",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_kipchak",
+    "name": "Kipchak"
+   },
+   "id": "kirgiz",
+   "language": {
+    "id": "language_kipchak",
+    "name": "Kipchak"
+   },
+   "name": "Kyrgyz",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_kordofanian",
+    "name": "Kordofanian"
+   },
+   "id": "nuba",
+   "language": {
+    "id": "language_kordofanian",
+    "name": "Kordofanian"
+   },
+   "name": "Nuba",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_korean",
+    "name": "Korean"
+   },
+   "id": "korean",
+   "language": {
+    "id": "language_korean",
+    "name": "Korean"
+   },
+   "name": "Korean",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "confucian",
+    "name": "Confucian"
+   },
+   "traditions": [
+    "Sinosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "amazonic",
+   "language": {
+    "id": "language_lusophone",
+    "name": "Lusophone"
+   },
+   "name": "Amazonic",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "argentine",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Argentine",
+   "obsessions": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "bolivian",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Bolivian",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "brazilian",
+   "language": {
+    "id": "language_lusophone",
+    "name": "Lusophone"
+   },
+   "name": "Brazilian",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "caribeno",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Caribeño",
+   "obsessions": [
+    {
+     "id": "sugar",
+     "name": "Sugar"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "central_american",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Central American",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "chilean",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Chilean",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "colombian",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Colombian",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "ecuadorian",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Ecuadorian",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "mexican",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Mexican",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "nordestino",
+   "language": {
+    "id": "language_lusophone",
+    "name": "Lusophone"
+   },
+   "name": "Nordestino",
+   "obsessions": [
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "north_andean",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "North Andean",
+   "obsessions": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "paraguayan",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Paraguayan",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "paulista",
+   "language": {
+    "id": "language_lusophone",
+    "name": "Lusophone"
+   },
+   "name": "Paulista",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "peruvian",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Peruvian",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "platinean",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Platinean",
+   "obsessions": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "south_andean",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "South Andean",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "sulista",
+   "language": {
+    "id": "language_lusophone",
+    "name": "Lusophone"
+   },
+   "name": "Sulista",
+   "obsessions": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "uruguayan",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Uruguayan",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_latin_american_settler",
+    "name": "Latin American Settler"
+   },
+   "id": "venezuelan",
+   "language": {
+    "id": "language_hispanophone",
+    "name": "Hispanophone"
+   },
+   "name": "Venezuelan",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_magyar",
+    "name": "Magyar"
+   },
+   "id": "hungarian",
+   "language": {
+    "id": "language_hungarian",
+    "name": "Hungarian"
+   },
+   "name": "Hungarian",
+   "obsessions": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_magyar",
+    "name": "Magyar"
+   },
+   "id": "szekely",
+   "language": {
+    "id": "language_hungarian",
+    "name": "Hungarian"
+   },
+   "name": "Szekler",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_manchu",
+    "name": "Manchu"
+   },
+   "id": "manchu",
+   "language": {
+    "id": "language_jurchenic",
+    "name": "Jurchenic"
+   },
+   "name": "Manchu",
+   "obsessions": [
+    {
+     "id": {},
+     "name": "[object Object]"
+    }
+   ],
+   "religion": {
+    "id": "confucian",
+    "name": "Confucian"
+   },
+   "traditions": [
+    "Sinosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_melanesian",
+    "name": "Melanesian"
+   },
+   "id": "melanesian",
+   "language": {
+    "id": "language_melanesian",
+    "name": "Melanesian"
+   },
+   "name": "Melanesian",
+   "obsessions": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_mesoamerican",
+    "name": "Mesoamerican"
+   },
+   "id": "mayan",
+   "language": {
+    "id": "language_mayan",
+    "name": "Mayan"
+   },
+   "name": "Maya",
+   "obsessions": [
+    {
+     "id": "tobacco",
+     "name": "Tobacco"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_mesoamerican",
+    "name": "Mesoamerican"
+   },
+   "id": "mixtec",
+   "language": {
+    "id": "language_mixtecan",
+    "name": "Mixtecan"
+   },
+   "name": "Mixtec",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_mesoamerican",
+    "name": "Mesoamerican"
+   },
+   "id": "nahua",
+   "language": {
+    "id": "language_nahuan",
+    "name": "Nahuan"
+   },
+   "name": "Nahua",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_mesoamerican",
+    "name": "Mesoamerican"
+   },
+   "id": "tarascan",
+   "language": {
+    "id": "language_tarascan",
+    "name": "Tarascan"
+   },
+   "name": "Tarascan",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_mesoamerican",
+    "name": "Mesoamerican"
+   },
+   "id": "zapotec",
+   "language": {
+    "id": "language_zapotecan",
+    "name": "Zapotecan"
+   },
+   "name": "Zapotec",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_miao",
+    "name": "Miao"
+   },
+   "id": "miao",
+   "language": {
+    "id": "language_hmong",
+    "name": "Hmong"
+   },
+   "name": "Miao",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "Sinosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_micronesian",
+    "name": "Micronesian"
+   },
+   "id": "micronesian",
+   "language": {
+    "id": "language_micronesian",
+    "name": "Micronesian"
+   },
+   "name": "Micronesian",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_mongolian",
+    "name": "Mongolian"
+   },
+   "id": "buryat",
+   "language": {
+    "id": "language_buryat",
+    "name": "Buryat"
+   },
+   "name": "Buryat",
+   "obsessions": [],
+   "religion": {
+    "id": "gelugpa",
+    "name": "Gelugpa"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_mongolian",
+    "name": "Mongolian"
+   },
+   "id": "kalmyk",
+   "language": {
+    "id": "language_mongolian",
+    "name": "Mongolian"
+   },
+   "name": "Kalmyk",
+   "obsessions": [],
+   "religion": {
+    "id": "gelugpa",
+    "name": "Gelugpa"
+   },
+   "traditions": [
+    "Russosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_mongolian",
+    "name": "Mongolian"
+   },
+   "id": "mongol",
+   "language": {
+    "id": "language_mongolian",
+    "name": "Mongolian"
+   },
+   "name": "Mongol",
+   "obsessions": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ],
+   "religion": {
+    "id": "gelugpa",
+    "name": "Gelugpa"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_netherlandish",
+    "name": "Netherlandish"
+   },
+   "id": "dutch",
+   "language": {
+    "id": "language_dutch",
+    "name": "Dutch"
+   },
+   "name": "Dutch",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_netherlandish",
+    "name": "Netherlandish"
+   },
+   "id": "flemish",
+   "language": {
+    "id": "language_dutch",
+    "name": "Dutch"
+   },
+   "name": "Flemish",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_netherlandish",
+    "name": "Netherlandish"
+   },
+   "id": "wallonian",
+   "language": {
+    "id": "language_francophone",
+    "name": "Francophone"
+   },
+   "name": "Wallonian",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_nilotic",
+    "name": "Nilotic"
+   },
+   "id": "dinka",
+   "language": {
+    "id": "language_dinka",
+    "name": "Dinka"
+   },
+   "name": "Dinka",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_nilotic",
+    "name": "Nilotic"
+   },
+   "id": "luo",
+   "language": {
+    "id": "language_luo",
+    "name": "Luo"
+   },
+   "name": "Luo",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_nilotic",
+    "name": "Nilotic"
+   },
+   "id": "maasai",
+   "language": {
+    "id": "language_maa",
+    "name": "Maa"
+   },
+   "name": "Maasai",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_nilotic",
+    "name": "Nilotic"
+   },
+   "id": "nilotic",
+   "language": {
+    "id": "language_nilotic",
+    "name": "Nilotic"
+   },
+   "name": "Nilotic",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_nilotic",
+    "name": "Nilotic"
+   },
+   "id": "nuer",
+   "language": {
+    "id": "language_nuer",
+    "name": "Nuer"
+   },
+   "name": "Nuer",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_nordic",
+    "name": "Nordic"
+   },
+   "id": "danish",
+   "language": {
+    "id": "language_scandinavian",
+    "name": "Scandinavian"
+   },
+   "name": "Danish",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_nordic",
+    "name": "Nordic"
+   },
+   "id": "finnish",
+   "language": {
+    "id": "language_finnic",
+    "name": "Finnic"
+   },
+   "name": "Finnish",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_nordic",
+    "name": "Nordic"
+   },
+   "id": "icelandic",
+   "language": {
+    "id": "language_scandinavian",
+    "name": "Scandinavian"
+   },
+   "name": "Icelandic",
+   "obsessions": [],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_nordic",
+    "name": "Nordic"
+   },
+   "id": "karelian",
+   "language": {
+    "id": "language_finnic",
+    "name": "Finnic"
+   },
+   "name": "Karelian",
+   "obsessions": [],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_nordic",
+    "name": "Nordic"
+   },
+   "id": "norwegian",
+   "language": {
+    "id": "language_scandinavian",
+    "name": "Scandinavian"
+   },
+   "name": "Norwegian",
+   "obsessions": [
+    {
+     "id": "fish",
+     "name": "Fish"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_nordic",
+    "name": "Nordic"
+   },
+   "id": "swedish",
+   "language": {
+    "id": "language_scandinavian",
+    "name": "Scandinavian"
+   },
+   "name": "Swedish",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_north_american_settler",
+    "name": "North American Settler"
+   },
+   "id": "anglo_canadian",
+   "language": {
+    "id": "language_anglophone",
+    "name": "Anglophone"
+   },
+   "name": "Anglo-Canadian",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_north_american_settler",
+    "name": "North American Settler"
+   },
+   "id": "cajun",
+   "language": {
+    "id": "language_francophone",
+    "name": "Francophone"
+   },
+   "name": "Cajun",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_north_american_settler",
+    "name": "North American Settler"
+   },
+   "id": "dixie",
+   "language": {
+    "id": "language_anglophone",
+    "name": "Anglophone"
+   },
+   "name": "Dixie",
+   "obsessions": [
+    {
+     "id": "tobacco",
+     "name": "Tobacco"
+    },
+    {
+     "id": "small_arms",
+     "name": "Small Arms"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_north_american_settler",
+    "name": "North American Settler"
+   },
+   "id": "franco_canadian",
+   "language": {
+    "id": "language_francophone",
+    "name": "Francophone"
+   },
+   "name": "Franco-Canadian",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_north_american_settler",
+    "name": "North American Settler"
+   },
+   "id": "yankee",
+   "language": {
+    "id": "language_anglophone",
+    "name": "Anglophone"
+   },
+   "name": "Yankee",
+   "obsessions": [
+    {
+     "id": "coffee",
+     "name": "Coffee"
+    },
+    {
+     "id": "small_arms",
+     "name": "Small Arms"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_north_caucasian",
+    "name": "North Caucasian"
+   },
+   "id": "chechen",
+   "language": {
+    "id": "language_vainakh",
+    "name": "Vainakh"
+   },
+   "name": "Chechen",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Caucasian"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_north_caucasian",
+    "name": "North Caucasian"
+   },
+   "id": "circassian",
+   "language": {
+    "id": "language_adyghe",
+    "name": "Adyghe"
+   },
+   "name": "Circassian",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Caucasian"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_north_caucasian",
+    "name": "North Caucasian"
+   },
+   "id": "north_caucasian",
+   "language": {
+    "id": "language_avaric",
+    "name": "Avaric"
+   },
+   "name": "North Caucasian",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Caucasian"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_northwest_coast_indian",
+    "name": "Northwest Coast Indian"
+   },
+   "id": "salish",
+   "language": {
+    "id": "language_salish",
+    "name": "Salish"
+   },
+   "name": "Salish",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_patagonian",
+    "name": "Patagonian"
+   },
+   "id": "patagonian",
+   "language": {
+    "id": "language_chonan",
+    "name": "Chonan"
+   },
+   "name": "Patagonian",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_plains_indian",
+    "name": "Plains Indian"
+   },
+   "id": "apache",
+   "language": {
+    "id": "language_apachean",
+    "name": "Apachean"
+   },
+   "name": "Apache",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_plains_indian",
+    "name": "Plains Indian"
+   },
+   "id": "caddoan",
+   "language": {
+    "id": "language_caddoan",
+    "name": "Caddoan"
+   },
+   "name": "Caddoan",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_plains_indian",
+    "name": "Plains Indian"
+   },
+   "id": "comanche",
+   "language": {
+    "id": "language_numic",
+    "name": "Numic"
+   },
+   "name": "Comanche",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_plains_indian",
+    "name": "Plains Indian"
+   },
+   "id": "siouan",
+   "language": {
+    "id": "language_siouan",
+    "name": "Siouan"
+   },
+   "name": "Siouan",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_plateau_indian",
+    "name": "Plateau Indian"
+   },
+   "id": "nez_perce",
+   "language": {
+    "id": "language_sahaptian",
+    "name": "Sahaptian"
+   },
+   "name": "Nez Perce",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_polynesian",
+    "name": "Polynesian"
+   },
+   "id": "hawaiian",
+   "language": {
+    "id": "language_polynesian",
+    "name": "Polynesian"
+   },
+   "name": "Hawaiian",
+   "obsessions": [],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_polynesian",
+    "name": "Polynesian"
+   },
+   "id": "maori",
+   "language": {
+    "id": "language_polynesian",
+    "name": "Polynesian"
+   },
+   "name": "Māori",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_polynesian",
+    "name": "Polynesian"
+   },
+   "id": "polynesian",
+   "language": {
+    "id": "language_polynesian",
+    "name": "Polynesian"
+   },
+   "name": "Polynesian",
+   "obsessions": [
+    {
+     "id": "fruit",
+     "name": "Fruit"
+    }
+   ],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_promethean",
+    "name": "Promethean"
+   },
+   "id": "promethean",
+   "language": {
+    "id": "language_promethean",
+    "name": "Promethean"
+   },
+   "name": "Promethean",
+   "obsessions": [
+    {
+     "id": "fruit",
+     "name": "Fruit"
+    },
+    {
+     "id": "grain",
+     "name": "Grain"
+    }
+   ],
+   "religion": {
+    "id": "atheist",
+    "name": "Atheist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_rajasthani",
+    "name": "Rajasthani"
+   },
+   "id": "rajput",
+   "language": {
+    "id": "language_western_indic",
+    "name": "Western Indic"
+   },
+   "name": "Rajput",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "hindu",
+    "name": "Hindu"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_romanian",
+    "name": "Romanian"
+   },
+   "id": "romanian",
+   "language": {
+    "id": "language_eastern_romance",
+    "name": "Eastern Romance"
+   },
+   "name": "Romanian",
+   "obsessions": [
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sahelian",
+    "name": "Sahelian"
+   },
+   "id": "baguirmi",
+   "language": {
+    "id": "language_bagirmi",
+    "name": "Bagirmi"
+   },
+   "name": "Baguirmi",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sahelian",
+    "name": "Sahelian"
+   },
+   "id": "bambara",
+   "language": {
+    "id": "language_manding",
+    "name": "Manding"
+   },
+   "name": "Bambara",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sahelian",
+    "name": "Sahelian"
+   },
+   "id": "dyula",
+   "language": {
+    "id": "language_manding",
+    "name": "Manding"
+   },
+   "name": "Dyula",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sahelian",
+    "name": "Sahelian"
+   },
+   "id": "fulbe",
+   "language": {
+    "id": "language_fulani",
+    "name": "Fulani"
+   },
+   "name": "Fulbe",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sahelian",
+    "name": "Sahelian"
+   },
+   "id": "hausa",
+   "language": {
+    "id": "language_hausa",
+    "name": "Hausa"
+   },
+   "name": "Hausa",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sahelian",
+    "name": "Sahelian"
+   },
+   "id": "kanuri",
+   "language": {
+    "id": "language_kanuri",
+    "name": "Kanuri"
+   },
+   "name": "Kanuri",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sahelian",
+    "name": "Sahelian"
+   },
+   "id": "mande",
+   "language": {
+    "id": "language_mande",
+    "name": "Mande"
+   },
+   "name": "Mande",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sahelian",
+    "name": "Sahelian"
+   },
+   "id": "sara",
+   "language": {
+    "id": "language_sara",
+    "name": "Sara"
+   },
+   "name": "Sara",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sahelian",
+    "name": "Sahelian"
+   },
+   "id": "senufo",
+   "language": {
+    "id": "language_senufo",
+    "name": "Senufo"
+   },
+   "name": "Senufo",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sahelian",
+    "name": "Sahelian"
+   },
+   "id": "songhai",
+   "language": {
+    "id": "language_songhai",
+    "name": "Songhai"
+   },
+   "name": "Songhai",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sahelian",
+    "name": "Sahelian"
+   },
+   "id": "teda",
+   "language": {
+    "id": "language_tebu",
+    "name": "Tebu"
+   },
+   "name": "Tubu",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sahelian",
+    "name": "Sahelian"
+   },
+   "id": "wolof",
+   "language": {
+    "id": "language_wolof",
+    "name": "Wolof"
+   },
+   "name": "Wolof",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sami",
+    "name": "Sami"
+   },
+   "id": "sami",
+   "language": {
+    "id": "language_sami",
+    "name": "Sami"
+   },
+   "name": "Sámi",
+   "obsessions": [],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_sephardic",
+    "name": "Sephardic"
+   },
+   "id": "sephardic",
+   "language": {
+    "id": "language_ladino",
+    "name": "Ladino"
+   },
+   "name": "Sephardim",
+   "obsessions": [],
+   "religion": {
+    "id": "jewish",
+    "name": "Jewish"
+   },
+   "traditions": [
+    "Israelite",
+    "Rumelian"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_siberian",
+    "name": "Siberian"
+   },
+   "id": "siberian",
+   "language": {
+    "id": "language_ewenic",
+    "name": "Ewenic"
+   },
+   "name": "Siberian",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_siberian",
+    "name": "Siberian"
+   },
+   "id": "tuvan",
+   "language": {
+    "id": "language_siberian",
+    "name": "Siberian"
+   },
+   "name": "Tuvan",
+   "obsessions": [],
+   "religion": {
+    "id": "gelugpa",
+    "name": "Gelugpa"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_siberian",
+    "name": "Siberian"
+   },
+   "id": "ugrian",
+   "language": {
+    "id": "language_ugric",
+    "name": "Ugric"
+   },
+   "name": "Ugrian",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_siberian",
+    "name": "Siberian"
+   },
+   "id": "yakut",
+   "language": {
+    "id": "language_siberian",
+    "name": "Siberian"
+   },
+   "name": "Yakut",
+   "obsessions": [],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_somali",
+    "name": "Somali"
+   },
+   "id": "somali",
+   "language": {
+    "id": "language_somali",
+    "name": "Somali"
+   },
+   "name": "Somali",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_south_slavic",
+    "name": "South Slavic"
+   },
+   "id": "bosniak",
+   "language": {
+    "id": "language_south_slavic",
+    "name": "South Slavic"
+   },
+   "name": "Bosniak",
+   "obsessions": [
+    {
+     "id": "tobacco",
+     "name": "Tobacco"
+    }
+   ],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Rumelian"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_south_slavic",
+    "name": "South Slavic"
+   },
+   "id": "bulgarian",
+   "language": {
+    "id": "language_bulgarian",
+    "name": "Bulgarian"
+   },
+   "name": "Bulgarian",
+   "obsessions": [
+    {
+     "id": "tobacco",
+     "name": "Tobacco"
+    }
+   ],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_south_slavic",
+    "name": "South Slavic"
+   },
+   "id": "croat",
+   "language": {
+    "id": "language_south_slavic",
+    "name": "South Slavic"
+   },
+   "name": "Croatian",
+   "obsessions": [
+    {
+     "id": "tobacco",
+     "name": "Tobacco"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_south_slavic",
+    "name": "South Slavic"
+   },
+   "id": "serb",
+   "language": {
+    "id": "language_south_slavic",
+    "name": "South Slavic"
+   },
+   "name": "Serbian",
+   "obsessions": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_south_slavic",
+    "name": "South Slavic"
+   },
+   "id": "slovene",
+   "language": {
+    "id": "language_slovene",
+    "name": "Slovene"
+   },
+   "name": "Slovene",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southern_bantu",
+    "name": "Southern Bantu"
+   },
+   "id": "griqua",
+   "language": {
+    "id": "language_dutch",
+    "name": "Dutch"
+   },
+   "name": "Griqua",
+   "obsessions": [],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southern_bantu",
+    "name": "Southern Bantu"
+   },
+   "id": "nguni",
+   "language": {
+    "id": "language_nguni",
+    "name": "Nguni"
+   },
+   "name": "Nguni",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southern_bantu",
+    "name": "Southern Bantu"
+   },
+   "id": "sena",
+   "language": {
+    "id": "language_nyasa",
+    "name": "Nyasa"
+   },
+   "name": "Sena",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southern_bantu",
+    "name": "Southern Bantu"
+   },
+   "id": "shona",
+   "language": {
+    "id": "language_shona",
+    "name": "Shona"
+   },
+   "name": "Shona",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southern_bantu",
+    "name": "Southern Bantu"
+   },
+   "id": "sotho",
+   "language": {
+    "id": "language_sotho",
+    "name": "Sotho"
+   },
+   "name": "Sotho",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southern_bantu",
+    "name": "Southern Bantu"
+   },
+   "id": "tonga",
+   "language": {
+    "id": "language_tonga",
+    "name": "Tonga"
+   },
+   "name": "Tonga",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southern_bantu",
+    "name": "Southern Bantu"
+   },
+   "id": "tswana",
+   "language": {
+    "id": "language_sotho",
+    "name": "Sotho"
+   },
+   "name": "Tswana",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southern_bantu",
+    "name": "Southern Bantu"
+   },
+   "id": "xhosa",
+   "language": {
+    "id": "language_nguni",
+    "name": "Nguni"
+   },
+   "name": "Xhosa",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southern_bantu",
+    "name": "Southern Bantu"
+   },
+   "id": "zulu",
+   "language": {
+    "id": "language_nguni",
+    "name": "Nguni"
+   },
+   "name": "Zulu",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southwest_bantu",
+    "name": "Southwest Bantu"
+   },
+   "id": "herero",
+   "language": {
+    "id": "language_kavango",
+    "name": "Kavango"
+   },
+   "name": "Herero",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southwest_bantu",
+    "name": "Southwest Bantu"
+   },
+   "id": "kavango_bantu",
+   "language": {
+    "id": "language_kavango",
+    "name": "Kavango"
+   },
+   "name": "Kavango Bantu",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southwest_bantu",
+    "name": "Southwest Bantu"
+   },
+   "id": "ovimbundu",
+   "language": {
+    "id": "language_umbundu",
+    "name": "Umbundu"
+   },
+   "name": "Ovimbundu",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southwest_indian",
+    "name": "Southwest Indian"
+   },
+   "id": "navajo",
+   "language": {
+    "id": "language_apachean",
+    "name": "Apachean"
+   },
+   "name": "Navajo",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_southwest_indian",
+    "name": "Southwest Indian"
+   },
+   "id": "pueblo",
+   "language": {
+    "id": "language_hopi",
+    "name": "Hopi"
+   },
+   "name": "Pueblo",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_subarctic_indian",
+    "name": "Subarctic Indian"
+   },
+   "id": "cherokee",
+   "language": {
+    "id": "language_cherokee",
+    "name": "Cherokee"
+   },
+   "name": "Cherokee",
+   "obsessions": [
+    {
+     "id": "tobacco",
+     "name": "Tobacco"
+    }
+   ],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_subarctic_indian",
+    "name": "Subarctic Indian"
+   },
+   "id": "cree",
+   "language": {
+    "id": "language_cree",
+    "name": "Cree"
+   },
+   "name": "Cree",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_subarctic_indian",
+    "name": "Subarctic Indian"
+   },
+   "id": "dakota",
+   "language": {
+    "id": "language_siouan",
+    "name": "Siouan"
+   },
+   "name": "Dakota",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_subarctic_indian",
+    "name": "Subarctic Indian"
+   },
+   "id": "metis",
+   "language": {
+    "id": "language_metis",
+    "name": "Métis"
+   },
+   "name": "Métis",
+   "obsessions": [],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_subarctic_indian",
+    "name": "Subarctic Indian"
+   },
+   "id": "muskogean",
+   "language": {
+    "id": "language_creek",
+    "name": "Creek"
+   },
+   "name": "Muskogean",
+   "obsessions": [],
+   "religion": {
+    "id": "protestant",
+    "name": "Protestant"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_syriac",
+    "name": "Syriac"
+   },
+   "id": "assyrian",
+   "language": {
+    "id": "language_aramaic",
+    "name": "Aramaic"
+   },
+   "name": "Assyrian",
+   "obsessions": [],
+   "religion": {
+    "id": "oriental_orthodox",
+    "name": "Oriental Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_tai",
+    "name": "Tai"
+   },
+   "id": "lao",
+   "language": {
+    "id": "language_laotian",
+    "name": "Laotian"
+   },
+   "name": "Lao",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "theravada",
+    "name": "Theravada"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_tai",
+    "name": "Tai"
+   },
+   "id": "shan",
+   "language": {
+    "id": "language_shan",
+    "name": "Shan"
+   },
+   "name": "Shan",
+   "obsessions": [],
+   "religion": {
+    "id": "theravada",
+    "name": "Theravada"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_tai",
+    "name": "Tai"
+   },
+   "id": "thai",
+   "language": {
+    "id": "language_siamese",
+    "name": "Siamese"
+   },
+   "name": "Thai",
+   "obsessions": [
+    {
+     "id": {},
+     "name": "[object Object]"
+    }
+   ],
+   "religion": {
+    "id": "theravada",
+    "name": "Theravada"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_tai",
+    "name": "Tai"
+   },
+   "id": "zhuang",
+   "language": {
+    "id": "language_zhuang",
+    "name": "Zhuang"
+   },
+   "name": "Zhuang",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "Sinosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_tatar",
+    "name": "Tatar"
+   },
+   "id": "bashkir",
+   "language": {
+    "id": "language_kipchak",
+    "name": "Kipchak"
+   },
+   "name": "Bashkir",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Russosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_tatar",
+    "name": "Tatar"
+   },
+   "id": "chuvash",
+   "language": {
+    "id": "language_oghuric",
+    "name": "Oghuric"
+   },
+   "name": "Chuvash",
+   "obsessions": [],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_tatar",
+    "name": "Tatar"
+   },
+   "id": "tatar",
+   "language": {
+    "id": "language_kipchak",
+    "name": "Kipchak"
+   },
+   "name": "Tatar",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Russosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_tibetan",
+    "name": "Tibetan"
+   },
+   "id": "tibetan",
+   "language": {
+    "id": "language_tibetan",
+    "name": "Tibetan"
+   },
+   "name": "Tibetan",
+   "obsessions": [
+    {
+     "id": "tea",
+     "name": "Tea"
+    }
+   ],
+   "religion": {
+    "id": "gelugpa",
+    "name": "Gelugpa"
+   },
+   "traditions": [
+    "Himalayan"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_turkmen",
+    "name": "Turkmen"
+   },
+   "id": "turkmen",
+   "language": {
+    "id": "language_oghuz",
+    "name": "Oghuz"
+   },
+   "name": "Turkmen",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Persianate"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_uighur",
+    "name": "Uighur"
+   },
+   "id": "uighur",
+   "language": {
+    "id": "language_karluk",
+    "name": "Karluk"
+   },
+   "name": "Uighur",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_uzbek",
+    "name": "Uzbek"
+   },
+   "id": "uzbek",
+   "language": {
+    "id": "language_karluk",
+    "name": "Karluk"
+   },
+   "name": "Uzbek",
+   "obsessions": [],
+   "religion": {
+    "id": "sunni",
+    "name": "Sunni"
+   },
+   "traditions": [
+    "Persianate"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_vietnamese",
+    "name": "Vietnamese"
+   },
+   "id": "vietnamese",
+   "language": {
+    "id": "language_vietic",
+    "name": "Vietic"
+   },
+   "name": "Vietnamese",
+   "obsessions": [
+    {
+     "id": {},
+     "name": "[object Object]"
+    }
+   ],
+   "religion": {
+    "id": "mahayana",
+    "name": "Mahayana"
+   },
+   "traditions": [
+    "Sinosphere"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_volga_uralic",
+    "name": "Volga-Uralic"
+   },
+   "id": "mari",
+   "language": {
+    "id": "language_mari",
+    "name": "Mari"
+   },
+   "name": "Mari",
+   "obsessions": [],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_volga_uralic",
+    "name": "Volga-Uralic"
+   },
+   "id": "mordvin",
+   "language": {
+    "id": "language_mordvinic",
+    "name": "Mordvinic"
+   },
+   "name": "Mordvin",
+   "obsessions": [],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_volga_uralic",
+    "name": "Volga-Uralic"
+   },
+   "id": "udmurt",
+   "language": {
+    "id": "language_permic",
+    "name": "Permic"
+   },
+   "name": "Udmurt",
+   "obsessions": [],
+   "religion": {
+    "id": "orthodox",
+    "name": "Orthodox"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_west_slavic",
+    "name": "West Slavic"
+   },
+   "id": "czech",
+   "language": {
+    "id": "language_west_slavic",
+    "name": "West Slavic"
+   },
+   "name": "Czech",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_west_slavic",
+    "name": "West Slavic"
+   },
+   "id": "polish",
+   "language": {
+    "id": "language_west_slavic",
+    "name": "West Slavic"
+   },
+   "name": "Polish",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_west_slavic",
+    "name": "West Slavic"
+   },
+   "id": "slovak",
+   "language": {
+    "id": "language_west_slavic",
+    "name": "West Slavic"
+   },
+   "name": "Slovak",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": []
+  },
+  {
+   "heritage": {
+    "id": "heritage_west_slavic",
+    "name": "West Slavic"
+   },
+   "id": "sorb",
+   "language": {
+    "id": "language_west_slavic",
+    "name": "West Slavic"
+   },
+   "name": "Sorb",
+   "obsessions": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    }
+   ],
+   "religion": {
+    "id": "catholic",
+    "name": "Catholic"
+   },
+   "traditions": [
+    "[object Object]"
+   ]
+  },
+  {
+   "heritage": {
+    "id": "heritage_yi",
+    "name": "Yi"
+   },
+   "id": "yi",
+   "language": {
+    "id": "language_yi",
+    "name": "Yi"
+   },
+   "name": "Yi",
+   "obsessions": [],
+   "religion": {
+    "id": "animist",
+    "name": "Animist"
+   },
+   "traditions": [
+    "Sinosphere"
+   ]
+  }
+ ]
+}

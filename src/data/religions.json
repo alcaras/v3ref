@@ -1,0 +1,228 @@
+{
+ "religions": [
+  {
+   "cultures": 67,
+   "heritage": {
+    "id": "heritage_christian",
+    "name": "Christian"
+   },
+   "icon": "img/religions/catholic.png",
+   "id": "catholic",
+   "name": "Catholic",
+   "taboos": []
+  },
+  {
+   "cultures": 6,
+   "heritage": {
+    "id": "heritage_christian",
+    "name": "Christian"
+   },
+   "icon": "img/religions/coptic.png",
+   "id": "oriental_orthodox",
+   "name": "Oriental Orthodox",
+   "taboos": []
+  },
+  {
+   "cultures": 14,
+   "heritage": {
+    "id": "heritage_christian",
+    "name": "Christian"
+   },
+   "icon": "img/religions/orthodox.png",
+   "id": "orthodox",
+   "name": "Orthodox",
+   "taboos": []
+  },
+  {
+   "cultures": 28,
+   "heritage": {
+    "id": "heritage_christian",
+    "name": "Christian"
+   },
+   "icon": "img/religions/protestant.png",
+   "id": "protestant",
+   "name": "Protestant",
+   "taboos": []
+  },
+  {
+   "cultures": 5,
+   "heritage": {
+    "id": "heritage_dharmic",
+    "name": "Dharmic"
+   },
+   "icon": "img/religions/gelugpa.png",
+   "id": "gelugpa",
+   "name": "Gelugpa",
+   "taboos": []
+  },
+  {
+   "cultures": 20,
+   "heritage": {
+    "id": "heritage_dharmic",
+    "name": "Dharmic"
+   },
+   "icon": "img/religions/hindu.png",
+   "id": "hindu",
+   "name": "Hindu",
+   "taboos": [
+    {
+     "id": "meat",
+     "name": "Meat"
+    }
+   ]
+  },
+  {
+   "cultures": 3,
+   "heritage": {
+    "id": "heritage_dharmic",
+    "name": "Dharmic"
+   },
+   "icon": "img/religions/mahayana.png",
+   "id": "mahayana",
+   "name": "Mahayana",
+   "taboos": []
+  },
+  {
+   "cultures": 1,
+   "heritage": {
+    "id": "heritage_dharmic",
+    "name": "Dharmic"
+   },
+   "icon": "img/religions/sikh.png",
+   "id": "sikh",
+   "name": "Sikh",
+   "taboos": []
+  },
+  {
+   "cultures": 8,
+   "heritage": {
+    "id": "heritage_dharmic",
+    "name": "Dharmic"
+   },
+   "icon": "img/religions/theravada.png",
+   "id": "theravada",
+   "name": "Theravada",
+   "taboos": []
+  },
+  {
+   "cultures": 95,
+   "heritage": {
+    "id": "heritage_indigenous",
+    "name": "Indigenous"
+   },
+   "icon": "img/religions/animist.png",
+   "id": "animist",
+   "name": "Animist",
+   "taboos": []
+  },
+  {
+   "cultures": 0,
+   "heritage": {
+    "id": "heritage_islamic",
+    "name": "Islamic"
+   },
+   "icon": "img/religions/ibadi.png",
+   "id": "ibadi",
+   "name": "Ibadi",
+   "taboos": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    },
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ]
+  },
+  {
+   "cultures": 7,
+   "heritage": {
+    "id": "heritage_islamic",
+    "name": "Islamic"
+   },
+   "icon": "img/religions/shiite.png",
+   "id": "shiite",
+   "name": "Shiite",
+   "taboos": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    },
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ]
+  },
+  {
+   "cultures": 53,
+   "heritage": {
+    "id": "heritage_islamic",
+    "name": "Islamic"
+   },
+   "icon": "img/religions/sunni.png",
+   "id": "sunni",
+   "name": "Sunni",
+   "taboos": [
+    {
+     "id": "liquor",
+     "name": "Liquor"
+    },
+    {
+     "id": "wine",
+     "name": "Wine"
+    }
+   ]
+  },
+  {
+   "cultures": 2,
+   "heritage": {
+    "id": "heritage_jewish",
+    "name": "Jewish"
+   },
+   "icon": "img/religions/jewish.png",
+   "id": "jewish",
+   "name": "Jewish",
+   "taboos": [
+    {
+     "id": "groceries",
+     "name": "Groceries"
+    }
+   ]
+  },
+  {
+   "cultures": 2,
+   "heritage": {
+    "id": "heritage_materialist",
+    "name": "Materialist"
+   },
+   "icon": "img/religions/atheist.png",
+   "id": "atheist",
+   "name": "Atheist",
+   "taboos": []
+  },
+  {
+   "cultures": 6,
+   "heritage": {
+    "id": "heritage_taoic",
+    "name": "Taoic"
+   },
+   "icon": "img/religions/confucianism.png",
+   "id": "confucian",
+   "name": "Confucian",
+   "taboos": []
+  },
+  {
+   "cultures": 0,
+   "heritage": {
+    "id": "heritage_taoic",
+    "name": "Taoic"
+   },
+   "icon": "img/religions/shinto.png",
+   "id": "shinto",
+   "name": "Shinto",
+   "taboos": []
+  }
+ ]
+}

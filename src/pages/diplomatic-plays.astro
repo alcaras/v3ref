@@ -1,0 +1,77 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import playsJson from '../data/plays.json';
+
+const base = import.meta.env.BASE_URL;
+const plays = (playsJson as any).plays as any[];
+const warGoals = (playsJson as any).warGoals as any[];
+
+const csv = {
+  header: ['War goal', 'Id', 'Kind', 'Settings', 'Started by plays'],
+  rows: warGoals.map((g) => [
+    g.name, g.id, g.kind ?? '', g.settings.join('; '), g.plays.join('; '),
+  ]),
+};
+---
+<Base
+  title="Diplomatic Plays"
+  active="diplomatic-plays"
+  eyebrow="Diplomacy"
+  pageFilter="Filter war goals…"
+  pageStats={[
+    { value: plays.length, label: 'plays' },
+    { value: warGoals.length, label: 'war goals' },
+  ]}
+>
+  <TableTools csvId="wargoals" csvName="victoria3-war-goals" />
+
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl" id="wg-table" data-sortable>
+        <thead>
+          <tr>
+            <th style="min-width: 13rem;">War goal</th>
+            <th style="width: 10rem;">Kind</th>
+            <th>Behavior</th>
+          </tr>
+        </thead>
+        <tbody>
+          {warGoals.map((g) => (
+            <tr id={g.id} data-name={`${g.name} ${g.id} ${g.settings.join(' ')}`.toLowerCase()}>
+              <td class="lead-cell" data-sort={g.name}>
+                <span class="lead">
+                  <img class="lead__icon" src={`${base}${g.icon}`} alt="" loading="lazy" />
+                  {g.name}
+                </span>
+              </td>
+              <td class="dim">{g.kind ?? <span class="cell__dash">—</span>}</td>
+              <td class="dim" style="font-size: 0.75rem;">{g.settings.map((s: string) => s.replace(/_/g, ' ')).join(' · ') || <span class="cell__dash">—</span>}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="caption">
+    Infamy and maneuver costs live in defines and per-goal script values ·
+    every war goal maps to a diplomatic play of the same name
+  </p>
+
+  <script is:inline define:vars={{ csv }}>
+    window.v3Csv = window.v3Csv || {};
+    window.v3Csv.wargoals = () => csv;
+  </script>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const rows = [...document.querySelectorAll('#wg-table tbody tr')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const r of rows) r.classList.toggle('is-hidden', !!q && !r.dataset.name.includes(q));
+      });
+    }
+  </script>
+</Base>

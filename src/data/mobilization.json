@@ -1,0 +1,822 @@
+{
+ "mobilization": [
+  {
+   "group": "medic_support",
+   "icon": "img/mobilization/field_hospitals.png",
+   "id": "mobilization_option_field_hospitals",
+   "name": "Field Hospitals",
+   "techs": [
+    {
+     "id": "modern_nursing",
+     "name": "Modern Nursing"
+    }
+   ],
+   "unitEffects": [
+    {
+     "key": "unit_recovery_rate_add",
+     "label": "Recovery Rate",
+     "tone": "good",
+     "value": 0.4,
+     "valueText": "+40%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_opium_add",
+     "label": "Opium input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "goods_input_tools_add",
+     "label": "Tools input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "medic_support",
+   "icon": "img/mobilization/basic_medical_aid.png",
+   "id": "mobilization_option_first_aid",
+   "name": "First Aid",
+   "techs": [
+    {
+     "id": "triage",
+     "name": "Triage"
+    }
+   ],
+   "unitEffects": [
+    {
+     "key": "unit_recovery_rate_add",
+     "label": "Recovery Rate",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_fabric_add",
+     "label": "Fabric input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "goods_input_liquor_add",
+     "label": "Liquor input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "reconnaissance",
+   "icon": "img/mobilization/aerial_reconaissance.png",
+   "id": "mobilization_option_aerial_recon",
+   "name": "Aerial Reconnaissance",
+   "techs": [
+    {
+     "id": "military_aviation",
+     "name": "Military Aviation"
+    }
+   ],
+   "unitEffects": [
+    {
+     "key": "unit_occupation_mult",
+     "label": "Battle Occupation",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    },
+    {
+     "key": "character_battle_condition_rapid_advance_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 1,
+     "valueText": "+100%"
+    },
+    {
+     "key": "character_battle_condition_lost_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": -0.5,
+     "valueText": "-50%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_aeroplanes_add",
+     "label": "Aeroplanes input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "goods_input_oil_add",
+     "label": "Oil input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+0.5"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "reconnaissance",
+   "icon": "img/mobilization/balloon_recon.png",
+   "id": "mobilization_option_balloon_recon",
+   "name": "Balloon Reconnaissance",
+   "techs": [],
+   "unitEffects": [
+    {
+     "key": "unit_occupation_mult",
+     "label": "Battle Occupation",
+     "tone": "good",
+     "value": 0.8,
+     "valueText": "+80%"
+    },
+    {
+     "key": "military_formation_attrition_risk_mult",
+     "label": "Attrition Risk Multiplier",
+     "tone": "good",
+     "value": -0.2,
+     "valueText": "-20%"
+    },
+    {
+     "key": "character_battle_condition_charted_terrain_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_fabric_add",
+     "label": "Fabric input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "goods_input_oil_add",
+     "label": "Oil input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+0.5"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "reconnaissance",
+   "icon": "img/mobilization/motorized_reconaissance.png",
+   "id": "mobilization_option_motorized_recon",
+   "name": "Motorized Reconnaissance",
+   "techs": [
+    {
+     "id": "combustion_engine",
+     "name": "Combustion Engine"
+    }
+   ],
+   "unitEffects": [
+    {
+     "key": "unit_occupation_mult",
+     "label": "Battle Occupation",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "military_formation_army_movement_speed_mult",
+     "label": "Army Speed",
+     "tone": "good",
+     "value": 0.3,
+     "valueText": "+30%"
+    },
+    {
+     "key": "character_battle_condition_surprise_maneuver_mult",
+     "label": "… Chance",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_automobiles_add",
+     "label": "Automobiles input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "goods_input_oil_add",
+     "label": "Oil input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+0.5"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "special_weapons",
+   "icon": "img/mobilization/chemical_weapons.png",
+   "id": "mobilization_option_chemical_weapons",
+   "name": "Chemical Weapons",
+   "techs": [
+    {
+     "id": "chemical_warfare",
+     "name": "Chemical Warfare"
+    }
+   ],
+   "unitEffects": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "good",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "unit_recovery_rate_add",
+     "label": "Recovery Rate",
+     "tone": "bad",
+     "value": -0.2,
+     "valueText": "-20%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_fertilizer_add",
+     "label": "Fertilizer input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "special_weapons",
+   "icon": "img/mobilization/flamethrowers.png",
+   "id": "mobilization_option_flamethrowers",
+   "name": "Flamethrowers",
+   "techs": [
+    {
+     "id": "flamethrowers",
+     "name": "Flamethrowers"
+    }
+   ],
+   "unitEffects": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 15,
+     "valueText": "+15"
+    },
+    {
+     "key": "unit_devastation_mult",
+     "label": "Devastation",
+     "tone": "neutral",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "unit_morale_damage_mult",
+     "label": "Morale Damage",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_oil_add",
+     "label": "Oil input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "special_weapons",
+   "icon": "img/mobilization/machinegunners.png",
+   "id": "mobilization_option_machinegunners",
+   "name": "Machine Gunners",
+   "techs": [
+    {
+     "id": "automatic_machine_guns",
+     "name": "Automatic Machine Guns"
+    }
+   ],
+   "unitEffects": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 5,
+     "valueText": "+5"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_small_arms_add",
+     "label": "Small Arms input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "goods_input_ammunition_add",
+     "label": "Ammunition input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "supplements",
+   "icon": "img/mobilization/chocolate.png",
+   "id": "mobilization_option_chocolate",
+   "name": "Chocolate",
+   "techs": [],
+   "unitEffects": [
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_sugar_add",
+     "label": "Sugar input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "supplements",
+   "icon": "img/mobilization/liquor.png",
+   "id": "mobilization_option_liquor",
+   "name": "Liquor",
+   "techs": [],
+   "unitEffects": [
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_liquor_add",
+     "label": "Liquor input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+0.5"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "supplements",
+   "icon": "img/mobilization/opium.png",
+   "id": "mobilization_option_opium",
+   "name": "Opium",
+   "techs": [],
+   "unitEffects": [
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_opium_add",
+     "label": "Opium input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+0.5"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "supplements",
+   "icon": "img/mobilization/tobacco.png",
+   "id": "mobilization_option_tobacco",
+   "name": "Tobacco",
+   "techs": [],
+   "unitEffects": [
+    {
+     "key": "unit_morale_recovery_mult",
+     "label": "Morale Recovery",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_tobacco_add",
+     "label": "Tobacco input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+0.5"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "supplies",
+   "icon": "img/mobilization/basic_supplies.png",
+   "id": "mobilization_option_basic_supplies",
+   "name": "Basic Supplies",
+   "techs": [],
+   "unitEffects": [],
+   "upkeep": [
+    {
+     "key": "goods_input_grain_add",
+     "label": "Grain input",
+     "tone": "bad",
+     "value": 0.75,
+     "valueText": "+0.8"
+    }
+   ],
+   "upkeepUnscaled": [
+    {
+     "key": "goods_input_small_arms_mult",
+     "label": "…Small Arms input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "goods_input_artillery_mult",
+     "label": "…Artillery input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "goods_input_ammunition_mult",
+     "label": "…Ammunition input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "goods_input_oil_mult",
+     "label": "…Oil input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "goods_input_radios_mult",
+     "label": "…Radios input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+50%"
+    },
+    {
+     "key": "goods_input_tanks_mult",
+     "label": "…Tanks input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+50%"
+    }
+   ]
+  },
+  {
+   "group": "supplies",
+   "icon": "img/mobilization/extra_supplies.png",
+   "id": "mobilization_option_extra_supplies",
+   "name": "Extra Supplies",
+   "techs": [
+    {
+     "id": "army_reserves",
+     "name": "Army Reserves"
+    }
+   ],
+   "unitEffects": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "good",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "unit_defense_mult",
+     "label": "Defense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_groceries_add",
+     "label": "Groceries input",
+     "tone": "bad",
+     "value": 1.5,
+     "valueText": "+1.5"
+    }
+   ],
+   "upkeepUnscaled": [
+    {
+     "key": "goods_input_small_arms_mult",
+     "label": "…Small Arms input",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "goods_input_artillery_mult",
+     "label": "…Artillery input",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "goods_input_ammunition_mult",
+     "label": "…Ammunition input",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "goods_input_oil_mult",
+     "label": "…Oil input",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "goods_input_radios_mult",
+     "label": "…Radios input",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "goods_input_tanks_mult",
+     "label": "…Tanks input",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ]
+  },
+  {
+   "group": "supplies",
+   "icon": "img/mobilization/luxurious_supplies.png",
+   "id": "mobilization_option_luxurious_supplies",
+   "name": "Luxurious Supplies",
+   "techs": [
+    {
+     "id": "military_statistics",
+     "name": "Military Statistics"
+    }
+   ],
+   "unitEffects": [
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "good",
+     "value": -0.05,
+     "valueText": "-5%"
+    },
+    {
+     "key": "unit_offense_mult",
+     "label": "Offense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "unit_defense_mult",
+     "label": "Defense",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_meat_add",
+     "label": "Meat input",
+     "tone": "bad",
+     "value": 1.5,
+     "valueText": "+1.5"
+    },
+    {
+     "key": "goods_input_wine_add",
+     "label": "Wine input",
+     "tone": "bad",
+     "value": 1.5,
+     "valueText": "+1.5"
+    }
+   ],
+   "upkeepUnscaled": [
+    {
+     "key": "goods_input_small_arms_mult",
+     "label": "…Small Arms input",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "goods_input_artillery_mult",
+     "label": "…Artillery input",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "goods_input_ammunition_mult",
+     "label": "…Ammunition input",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "goods_input_oil_mult",
+     "label": "…Oil input",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "goods_input_radios_mult",
+     "label": "…Radios input",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "goods_input_tanks_mult",
+     "label": "…Tanks input",
+     "tone": "bad",
+     "value": 0.25,
+     "valueText": "+25%"
+    }
+   ]
+  },
+  {
+   "group": "transport",
+   "icon": "img/mobilization/forced_march.png",
+   "id": "mobilization_option_forced_march",
+   "name": "Forced March",
+   "techs": [],
+   "unitEffects": [
+    {
+     "key": "military_formation_army_movement_speed_mult",
+     "label": "Army Speed",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "military_formation_mobilization_speed_mult",
+     "label": "Formation Mobilization Speed",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "upkeep": [],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "transport",
+   "icon": "img/mobilization/rail_transport.png",
+   "id": "mobilization_option_rail_transport",
+   "name": "Rail Transport",
+   "techs": [
+    {
+     "id": "railways",
+     "name": "Railways"
+    }
+   ],
+   "unitEffects": [
+    {
+     "key": "military_formation_army_movement_speed_mult",
+     "label": "Army Speed",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "military_formation_mobilization_speed_mult",
+     "label": "Formation Mobilization Speed",
+     "tone": "good",
+     "value": 0.3,
+     "valueText": "+30%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_engines_add",
+     "label": "Engines input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+0.5"
+    }
+   ],
+   "upkeepUnscaled": []
+  },
+  {
+   "group": "transport",
+   "icon": "img/mobilization/truck_transport.png",
+   "id": "mobilization_option_truck_transport",
+   "name": "Truck Transport",
+   "techs": [
+    {
+     "id": "combustion_engine",
+     "name": "Combustion Engine"
+    }
+   ],
+   "unitEffects": [
+    {
+     "key": "military_formation_army_movement_speed_mult",
+     "label": "Army Speed",
+     "tone": "good",
+     "value": 0.3,
+     "valueText": "+30%"
+    },
+    {
+     "key": "military_formation_mobilization_speed_mult",
+     "label": "Formation Mobilization Speed",
+     "tone": "good",
+     "value": 0.4,
+     "valueText": "+40%"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_automobiles_add",
+     "label": "Automobiles input",
+     "tone": "bad",
+     "value": 0.5,
+     "valueText": "+0.5"
+    }
+   ],
+   "upkeepUnscaled": []
+  }
+ ]
+}

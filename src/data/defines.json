@@ -1,0 +1,5493 @@
+{
+ "groups": [
+  {
+   "namespace": "NGame",
+   "values": [
+    {
+     "key": "SAVE_VERSION",
+     "value": "0"
+    },
+    {
+     "key": "MP_LAG_TICKS_BOUNDS",
+     "value": "28"
+    },
+    {
+     "key": "DEAD_OBJ_UNDESTROYED_DAYS",
+     "value": "22"
+    },
+    {
+     "key": "MAX_NUMBER_OF_AUTOSAVES",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "namespace": "NJominiMap",
+   "values": [
+    {
+     "key": "WORLD_EXTENTS_X",
+     "value": "8192"
+    },
+    {
+     "key": "WORLD_EXTENTS_Y",
+     "value": "24"
+    },
+    {
+     "key": "WORLD_EXTENTS_Z",
+     "value": "3615"
+    },
+    {
+     "key": "WATERLEVEL",
+     "value": "1.74"
+    }
+   ]
+  },
+  {
+   "namespace": "NCountry",
+   "values": [
+    {
+     "key": "DEFAULT_COUNTRY_TYPE",
+     "value": "recognized"
+    },
+    {
+     "key": "COMPANY_COUNTRY_TYPE",
+     "value": "company"
+    },
+    {
+     "key": "COMPANY_FALLBACK_COUNTRY_TYPE",
+     "value": "colonial"
+    },
+    {
+     "key": "DEFAULT_MAX_NUM_COUNTRY_FORMATION_CANDIDATES",
+     "value": "3"
+    },
+    {
+     "key": "MOVE_CAPITAL_COOLDOWN_YEARS",
+     "value": "5"
+    },
+    {
+     "key": "MOVE_MARKET_CAPITAL_COOLDOWN_YEARS",
+     "value": "5"
+    },
+    {
+     "key": "MAX_POWER_EFFECT",
+     "value": "1"
+    },
+    {
+     "key": "GREAT_POWER_RANK_KEY",
+     "value": "great_power"
+    },
+    {
+     "key": "MAJOR_POWER_RANK_KEY",
+     "value": "major_power"
+    },
+    {
+     "key": "MINOR_POWER_RANK_KEY",
+     "value": "minor_power"
+    },
+    {
+     "key": "SPLIT_STATE_DOMINANT_LAND_SHARE_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "SPLIT_STATE_PRIME_LAND_WEIGHT",
+     "value": "5"
+    },
+    {
+     "key": "CAPITAL_CULTURE_CORE_WEIGHT",
+     "value": "10"
+    },
+    {
+     "key": "CAPITAL_NON_INCORPORATED_WEIGHT",
+     "value": "0.001"
+    },
+    {
+     "key": "DEFAULT_SUBSISTENCE_BUILDING",
+     "value": "building_subsistence_farm"
+    },
+    {
+     "key": "CONSTRUCTION_CAMP_BUILDING",
+     "value": "building_construction_sector"
+    },
+    {
+     "key": "BARRACKS_BUILDING",
+     "value": "building_barrack"
+    },
+    {
+     "key": "NAVAL_ADMINISTRATION_BUILDING",
+     "value": "building_naval_administration"
+    },
+    {
+     "key": "NAVAL_FORTIFICATION_BUILDING",
+     "value": "building_naval_fortification"
+    },
+    {
+     "key": "PORT_BUILDING",
+     "value": "building_port"
+    },
+    {
+     "key": "URBAN_CENTER_BUILDING",
+     "value": "building_urban_center"
+    },
+    {
+     "key": "CONSCRIPTION_CENTER_BUILDING",
+     "value": "building_conscription_center"
+    },
+    {
+     "key": "NAVAL_LOGISTICS_CENTER_BUILDING",
+     "value": "building_naval_logistics_center"
+    },
+    {
+     "key": "LAND_LOGISTICS_CENTER_BUILDING",
+     "value": "building_army_logistics_center"
+    },
+    {
+     "key": "CONSCRIPTION_CENTER_LEVEL_POPULATION_DIVISOR",
+     "value": "1000"
+    },
+    {
+     "key": "TRADE_CENTER_BUILDING",
+     "value": "building_trade_center"
+    },
+    {
+     "key": "MANOR_HOUSE_BUILDING",
+     "value": "building_manor_house"
+    },
+    {
+     "key": "FINANCIAL_DISTRICT_BUILDING",
+     "value": "building_financial_district"
+    },
+    {
+     "key": "RAILWAY_BUILDING",
+     "value": "building_railway"
+    },
+    {
+     "key": "POWER_BLOC_STATUE_BUILDING",
+     "value": "building_power_bloc_statue"
+    },
+    {
+     "key": "COMPANY_HEADQUARTER_BUILDING",
+     "value": "building_company_headquarter"
+    },
+    {
+     "key": "COMPANY_REGIONAL_HEADQUARTER_BUILDING",
+     "value": "building_company_regional_headquarter"
+    },
+    {
+     "key": "CONSTRUCTION_QUEUE_INCREMENT_SHIFT",
+     "value": "5"
+    },
+    {
+     "key": "CONSTRUCTION_QUEUE_INCREMENT_CONTROL",
+     "value": "10"
+    },
+    {
+     "key": "WEEKS_TO_STORE_LOYALIST_RADICAL_STATISTICS",
+     "value": "52"
+    },
+    {
+     "key": "INCORPORATION_TIME_SAME_CULTURE",
+     "value": "2"
+    },
+    {
+     "key": "INCORPORATION_TIME_SAME_HERITAGE_AND_LANGUAGE",
+     "value": "5"
+    },
+    {
+     "key": "INCORPORATION_TIME_SAME_HERITAGE_OR_LANGUAGE",
+     "value": "10"
+    },
+    {
+     "key": "INCORPORATION_TIME_SAME_TRAIT_GROUP",
+     "value": "15"
+    },
+    {
+     "key": "INCORPORATION_TIME_NO_MATCH",
+     "value": "25"
+    },
+    {
+     "key": "INCORPORATION_TIME_MIN_MULTIPLIER",
+     "value": "0.1"
+    },
+    {
+     "key": "JOURNAL_ENTRY_UPDATE_ACTIVE",
+     "value": "4"
+    },
+    {
+     "key": "JOURNAL_ENTRY_UPDATE_INACTIVE",
+     "value": "14"
+    },
+    {
+     "key": "MAX_TRADITION_TRAITS_PER_CULTURE",
+     "value": "4"
+    }
+   ]
+  },
+  {
+   "namespace": "NPolitics",
+   "values": [
+    {
+     "key": "GOVERNANCE_PRINCIPLES_GROUP",
+     "value": "lawgroup_governance_principles"
+    },
+    {
+     "key": "DISTRIBUTION_OF_POWER_GROUP",
+     "value": "lawgroup_distribution_of_power"
+    },
+    {
+     "key": "TARIFF_LAW_GROUP",
+     "value": "lawgroup_trade_policy"
+    },
+    {
+     "key": "TAX_LAW_GROUP",
+     "value": "lawgroup_taxation"
+    },
+    {
+     "key": "NUM_TIMES_TO_LOOP_THROUGH_LAWS",
+     "value": "3"
+    },
+    {
+     "key": "DEFAULT_IDEOLOGY",
+     "value": "ideology_moderate"
+    },
+    {
+     "key": "CHILD_IDEOLOGY",
+     "value": "ideology_child"
+    },
+    {
+     "key": "MIN_POP_NUMBER_JOIN_OR_LEAVE_IG",
+     "value": "10"
+    },
+    {
+     "key": "MAX_POP_FRACTION_JOIN_OR_LEAVE_IG",
+     "value": "0.05"
+    },
+    {
+     "key": "MIN_POP_NUMBER_JOIN_OR_LEAVE_MOVEMENT",
+     "value": "10"
+    },
+    {
+     "key": "MAX_POP_FRACTION_JOIN_OR_LEAVE_MOVEMENT",
+     "value": "0.1"
+    },
+    {
+     "key": "MOVEMENT_POP_SUPPORT_ATTRACTION_CAP",
+     "value": "0.01"
+    },
+    {
+     "key": "MOVEMENT_IDENTITY_MIN_INDIVIDUALS_ABSOLUTE_THRESHOLD",
+     "value": "200000"
+    },
+    {
+     "key": "MOVEMENT_IDENTITY_MIN_INDIVIDUALS_RELATIVE_THRESHOLD",
+     "value": "0.2"
+    },
+    {
+     "key": "MOVEMENT_DEFAULT_MIN_SUPPORT_TO_CREATE",
+     "value": "0.025"
+    },
+    {
+     "key": "MOVEMENT_DEFAULT_MIN_SUPPORT_TO_MAINTAIN",
+     "value": "0.01"
+    },
+    {
+     "key": "MOVEMENT_FAILED_MOVEMENT_DURATION_DAYS",
+     "value": "365"
+    },
+    {
+     "key": "MOVEMENT_MIN_SUPPORT_GRACE_MONTHS",
+     "value": "12"
+    },
+    {
+     "key": "MOVEMENT_AGITATOR_STICKYNESS",
+     "value": "2"
+    },
+    {
+     "key": "MOVEMENT_SUPPORT_POPULAR_SUPPORT_FRACTION",
+     "value": "0.34"
+    },
+    {
+     "key": "MOVEMENT_SUPPORT_MILITARY_SUPPORT_FRACTION",
+     "value": "0.33"
+    },
+    {
+     "key": "MOVEMENT_SUPPORT_WEALTH_SUPPORT_FRACTION",
+     "value": "0.33"
+    },
+    {
+     "key": "MOVEMENT_WEEKLY_RADICALISM_CHANGE",
+     "value": "0.01"
+    },
+    {
+     "key": "MOVEMENT_MONTHLY_RADICALS_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "MOVEMENT_MONTHLY_RADICALS_SCALING_MIN",
+     "value": "0.005"
+    },
+    {
+     "key": "MOVEMENT_MONTHLY_RADICALS_SCALING_MAX",
+     "value": "0.025"
+    },
+    {
+     "key": "MOVEMENT_LOYALISTS_ON_APPROVED_ENACTMENT",
+     "value": "0.25"
+    },
+    {
+     "key": "MOVEMENT_MIN_RADICALISM_FOR_LAW_ENACTMENT_IMPACT",
+     "value": "0.25"
+    },
+    {
+     "key": "MOVEMENT_IMMEDIATE_RADICALISM_FROM_ENACTMENT",
+     "value": "0.5"
+    },
+    {
+     "key": "MOVEMENT_IMMEDIATE_RADICALISM_FROM_CANCELLATION",
+     "value": "-0.5"
+    },
+    {
+     "key": "MOVEMENT_RADICALISM_FROM_ACTIVE_LAW_STANCE",
+     "value": "-0.05"
+    },
+    {
+     "key": "MOVEMENT_RADICALISM_FROM_ENACTED_LAW_STANCE",
+     "value": "-0.25"
+    },
+    {
+     "key": "MOVEMENT_RADICALISM_FROM_RADICAL_SUPPORTERS",
+     "value": "1"
+    },
+    {
+     "key": "MOVEMENT_RADICALISM_FROM_LOYALIST_SUPPORTERS",
+     "value": "-0.75"
+    },
+    {
+     "key": "MOVEMENT_RADICALISM_FROM_SUPPRESSION",
+     "value": "0"
+    },
+    {
+     "key": "MOVEMENT_RADICALISM_FROM_BOLSTERING",
+     "value": "0"
+    },
+    {
+     "key": "MOVEMENT_PRESSURE_IDEOLOGY_FACTOR",
+     "value": "1000"
+    },
+    {
+     "key": "CHARACTER_PROMINENCE_AND_ROLE_LEADER_IDEOLOGY_FACTOR",
+     "value": "1"
+    },
+    {
+     "key": "IG_MAX_INFLUENCING_MOVEMENTS",
+     "value": "3"
+    },
+    {
+     "key": "IG_SUPPORTING_MOVEMENT_MIN_SUPPORTING_CLOUT",
+     "value": "0.05"
+    },
+    {
+     "key": "IG_INFLUENCING_MOVEMENT_MIN_SUPPORTING_CLOUT",
+     "value": "0.1"
+    },
+    {
+     "key": "IG_INFLUENCING_MOVEMENT_STICKYNESS",
+     "value": "1.25"
+    },
+    {
+     "key": "IG_MAX_IDEOLOGICAL_DELTA_TO_JOIN_CIVIL_WAR_NEUTRAL",
+     "value": "1"
+    },
+    {
+     "key": "IG_MAX_IDEOLOGICAL_DELTA_TO_JOIN_CIVIL_WAR_UNHAPPY",
+     "value": "1.5"
+    },
+    {
+     "key": "IG_MAX_IDEOLOGICAL_DELTA_TO_JOIN_CIVIL_WAR_ANGRY",
+     "value": "2"
+    },
+    {
+     "key": "IG_MAX_IDEOLOGICAL_DELTA_TO_JOIN_CIVIL_WAR_LEADER_FACTOR",
+     "value": "2"
+    },
+    {
+     "key": "BASE_IG_APPROVAL",
+     "value": "0"
+    },
+    {
+     "key": "MIN_IG_APPROVAL",
+     "value": "-20"
+    },
+    {
+     "key": "MAX_IG_APPROVAL",
+     "value": "20"
+    },
+    {
+     "key": "MIN_IG_APPROVAL_FROM_LAWS",
+     "value": "-5"
+    },
+    {
+     "key": "MAX_IG_APPROVAL_FROM_LAWS",
+     "value": "5"
+    },
+    {
+     "key": "IG_APPROVAL_FROM_LOYALISTS",
+     "value": "15"
+    },
+    {
+     "key": "IG_APPROVAL_FROM_RADICALS",
+     "value": "-15"
+    },
+    {
+     "key": "IG_LAW_DESIRE_RADICAL_CHANGE_THRESHOLD",
+     "value": "2"
+    },
+    {
+     "key": "IG_LAW_DESIRE_EXTREME_CHANGE_THRESHOLD",
+     "value": "3"
+    },
+    {
+     "key": "IG_APPROVAL_FROM_LAW",
+     "value": "1"
+    },
+    {
+     "key": "IG_APPROVAL_FROM_LAW_STRONG_STANCE",
+     "value": "2"
+    },
+    {
+     "key": "IG_APPROVAL_FROM_LAW_CHANGE",
+     "value": "5"
+    },
+    {
+     "key": "IG_APPROVAL_FROM_RADICAL_LAW_CHANGE",
+     "value": "10"
+    },
+    {
+     "key": "IG_APPROVAL_FROM_EXTREME_LAW_CHANGE",
+     "value": "20"
+    },
+    {
+     "key": "IG_IN_GOVERNMENT_APPROVAL",
+     "value": "0"
+    },
+    {
+     "key": "IG_IN_OPPOSITION_APPROVAL",
+     "value": "0"
+    },
+    {
+     "key": "IG_POWERFUL_IN_OPPOSITION_APPROVAL",
+     "value": "-1"
+    },
+    {
+     "key": "STARTUP_MIN_LEGITIMACY_IG_BARRIER",
+     "value": "40"
+    },
+    {
+     "key": "APPROVAL_THRESHOLD_ANGRY",
+     "value": "-10"
+    },
+    {
+     "key": "APPROVAL_THRESHOLD_UNHAPPY",
+     "value": "-5"
+    },
+    {
+     "key": "APPROVAL_THRESHOLD_HAPPY",
+     "value": "5"
+    },
+    {
+     "key": "APPROVAL_THRESHOLD_LOYAL",
+     "value": "10"
+    },
+    {
+     "key": "CHANGED_LAW_APPROVAL_MONTHS",
+     "value": "60"
+    },
+    {
+     "key": "GOVERNMENT_RADICAL_PETITION_THRESHOLD",
+     "value": "100"
+    },
+    {
+     "key": "LAW_ENACTMENT_MIN_TOTAL_DAYS",
+     "value": "1"
+    },
+    {
+     "key": "LAW_ENACTMENT_MIN_SPEED_FACTOR",
+     "value": "0.1"
+    },
+    {
+     "key": "LAW_ENACTMENT_DEFAULT_BASE_DAYS",
+     "value": "100"
+    },
+    {
+     "key": "LAW_ENACTMENT_COOLDOWN_DAYS",
+     "value": "730"
+    },
+    {
+     "key": "LAW_ENACTMENT_ADVANCE_FACTOR",
+     "value": "2"
+    },
+    {
+     "key": "LAW_ENACTMENT_RULER_IDEOLOGY_EFFECT",
+     "value": "0.05"
+    },
+    {
+     "key": "LAW_ENACTMENT_LAW_COMMITMENT_EFFECT",
+     "value": "0.05"
+    },
+    {
+     "key": "LAW_ENACTMENT_MOVEMENT_SUPPORT_PASS_EFFECT",
+     "value": "1"
+    },
+    {
+     "key": "LAW_ENACTMENT_MOVEMENT_SUPPORT_STALL_EFFECT",
+     "value": "1"
+    },
+    {
+     "key": "LAW_ENACTMENT_IG_CLOUT_STALL_EFFECT",
+     "value": "1"
+    },
+    {
+     "key": "LAW_ENACTMENT_IG_NEUTRAL_MULT",
+     "value": "0.5"
+    },
+    {
+     "key": "LAW_ENACTMENT_IG_UNHAPPY_MULT",
+     "value": "1"
+    },
+    {
+     "key": "LAW_ENACTMENT_IG_ANGRY_MULT",
+     "value": "1.5"
+    },
+    {
+     "key": "LAW_ENACTMENT_MAX_PHASES",
+     "value": "3"
+    },
+    {
+     "key": "LAW_MIN_SUCCESS_CHANCE",
+     "value": "0.01"
+    },
+    {
+     "key": "STATE_BUREAUCRACY_BASE_COST",
+     "value": "10"
+    },
+    {
+     "key": "STATE_BUREAUCRACY_POP_BASE_COST",
+     "value": "4"
+    },
+    {
+     "key": "STATE_BUREAUCRACY_POP_MULTIPLE",
+     "value": "100000"
+    },
+    {
+     "key": "MINIMUM_INVESTMENT_COST",
+     "value": "10"
+    },
+    {
+     "key": "POWERFUL_IG_THRESHOLD",
+     "value": "0.2"
+    },
+    {
+     "key": "POWERFUL_IG_CUTOFF",
+     "value": "0.18"
+    },
+    {
+     "key": "POWERFUL_IG_TRAIT_BONUS",
+     "value": "1"
+    },
+    {
+     "key": "IG_TRAIT_STICKINESS",
+     "value": "2"
+    },
+    {
+     "key": "MARGINAL_IG_THRESHOLD",
+     "value": "0.05"
+    },
+    {
+     "key": "MARGINAL_IG_CUTOFF",
+     "value": "0.04"
+    },
+    {
+     "key": "MARGINAL_IG_TRAIT_PENALTY",
+     "value": "0.5"
+    },
+    {
+     "key": "MARGINAL_IG_JOIN_PARTY_POPULATION_THRESHOLD",
+     "value": "0.03"
+    },
+    {
+     "key": "MARGINAL_IG_STAY_IN_PARTY_POPULATION_THRESHOLD",
+     "value": "0.02"
+    },
+    {
+     "key": "MIN_AMENABILITY",
+     "value": "0"
+    },
+    {
+     "key": "MAX_AMENABILITY",
+     "value": "100"
+    },
+    {
+     "key": "MIN_AMENABILITY_TENSE_NEGOTIATION",
+     "value": "25"
+    },
+    {
+     "key": "MIN_AMENABILITY_NORMAL_NEGOTIATION",
+     "value": "50"
+    },
+    {
+     "key": "MIN_AMENABILITY_FRIENDLY_NEGOTIATION",
+     "value": "75"
+    },
+    {
+     "key": "RECENT_PARTY_DAYS",
+     "value": "14"
+    },
+    {
+     "key": "MAX_GOVERNMENT_ALTERNATIVES_TO_CONSIDER_AI",
+     "value": "64"
+    },
+    {
+     "key": "MAX_GOVERNMENT_ALTERNATIVES_TO_CONSIDER_PLAYER",
+     "value": "256"
+    },
+    {
+     "key": "MAX_GOVERNMENT_ALTERNATIVES_OPTIONS_WANTED_FOR_VALIDATION",
+     "value": "8"
+    },
+    {
+     "key": "MAX_GOVERNMENT_ALTERNATIVES_TO_CONSIDER_FOR_VALIDATION",
+     "value": "256"
+    },
+    {
+     "key": "CIVIL_WAR_COOLDOWN_MONTHS",
+     "value": "9"
+    },
+    {
+     "key": "FAILED_CIVIL_WAR_START_COOLDOWN_MONTHS",
+     "value": "3"
+    },
+    {
+     "key": "MIN_ACTIVISM_DELTA_TO_REPLACE_OTHER_CIVIL_WAR",
+     "value": "0.1"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_STATES_DEFAULT_CLOUT_FACTOR",
+     "value": "1"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_STATES_DEFAULT_POPULAR_SUPPORT_FACTOR",
+     "value": "0.5"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_STATES_DEFAULT_MILITARY_SUPPORT_FACTOR",
+     "value": "0.25"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_STATES_DEFAULT_WEALTH_SUPPORT_FACTOR",
+     "value": "0.25"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_STATES_DEFAULT_MIN_FRACTION",
+     "value": "0.1"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_STATES_DEFAULT_MAX_FRACTION",
+     "value": "0.75"
+    },
+    {
+     "key": "CIVIL_WAR_POTENTIAL_UPRISING_STATE_MIN_MULTIPLIER",
+     "value": "0.01"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_STATE_RANDOM_FACTOR",
+     "value": "0.5"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_STATE_CONNECTIONS_FACTOR",
+     "value": "1"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_STATE_NON_CONNECTED_SECESSION_FACTOR",
+     "value": "0.01"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_ISOLATED_STATE_FACTOR",
+     "value": "100"
+    },
+    {
+     "key": "CIVIL_WAR_NON_CONTIGUOUS_UPRISING_STATE_FACTOR",
+     "value": "0.25"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_ARMY_TARGET_DELTA_FACTOR",
+     "value": "10"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_NAVY_TARGET_DELTA_FACTOR",
+     "value": "5"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_STATES_OVERSEAS_HIGH_UNINCORPORATED_FRACTION",
+     "value": "0.5"
+    },
+    {
+     "key": "CIVIL_WAR_COLONIAL_UPRISING_MIN_CHANCE",
+     "value": "0.25"
+    },
+    {
+     "key": "CIVIL_WAR_COLONIAL_UPRISING_CHANCE_WEALTH_SUPPORT_FACTOR",
+     "value": "2"
+    },
+    {
+     "key": "CIVIL_WAR_COLONIAL_UPRISING_CHANCE_CLOUT_FACTOR",
+     "value": "1"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_STATE_EXCESSIVE_ARMY_FRACTION",
+     "value": "0.5"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_ARMY_FRACTION_MILITARY_SUPPORT_FACTOR",
+     "value": "0.75"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_ARMY_FRACTION_CLOUT_FACTOR",
+     "value": "0.25"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_NAVY_FRACTION_MILITARY_SUPPORT_FACTOR",
+     "value": "0.75"
+    },
+    {
+     "key": "CIVIL_WAR_UPRISING_NAVY_FRACTION_CLOUT_FACTOR",
+     "value": "0.25"
+    },
+    {
+     "key": "CIVIL_WAR_STOCKPILE_SMALL_ARMS_GOODS_TYPE",
+     "value": "small_arms"
+    },
+    {
+     "key": "CIVIL_WAR_STOCKPILE_SMALL_ARMS_MULTIPLIER",
+     "value": "0.5"
+    },
+    {
+     "key": "CIVIL_WAR_STOCKPILE_AMMUNITION_GOODS_TYPE",
+     "value": "ammunition"
+    },
+    {
+     "key": "CIVIL_WAR_STOCKPILE_AMMUNITION_MULTIPLIER",
+     "value": "0.5"
+    },
+    {
+     "key": "CIVIL_WAR_STOCKPILE_ARTILLERY_GOODS_TYPE",
+     "value": "artillery"
+    },
+    {
+     "key": "CIVIL_WAR_STOCKPILE_ARTILLERY_MULTIPLIER",
+     "value": "0.4"
+    },
+    {
+     "key": "CIVIL_WAR_MAX_PROGRESS_AT_CHECKPOINT",
+     "value": "0.25"
+    },
+    {
+     "key": "MIN_RADICALISM_FOR_CIVIL_WAR_PROGRESSION",
+     "value": "0.75"
+    },
+    {
+     "key": "MIN_RADICALISM_FOR_CIVIL_WAR_START",
+     "value": "1"
+    },
+    {
+     "key": "CIVIL_WAR_PROGRESS_DECAY",
+     "value": "0.1"
+    },
+    {
+     "key": "CIVIL_WAR_PROGRESS_RADICALISM_WEIGHT",
+     "value": "0.2"
+    },
+    {
+     "key": "CIVIL_WAR_CHECKPOINT_INTERVAL_BASE_WEEKS",
+     "value": "8"
+    },
+    {
+     "key": "CIVIL_WAR_CHECKPOINT_INTERVAL_MAXIMUM_WEEKS",
+     "value": "52"
+    },
+    {
+     "key": "CIVIL_WAR_CONSCRIPTION_RATE_POPULAR_SUPPORT_MULTIPLIER",
+     "value": "0.15"
+    },
+    {
+     "key": "CIVIL_WAR_CONSCRIPTION_RATE_CLOUT_MULTIPLIER",
+     "value": "0.05"
+    },
+    {
+     "key": "CIVIL_WAR_CONSCRIPTION_RATE_MAX_MULTIPLIER",
+     "value": "0.1"
+    },
+    {
+     "key": "CIVIL_WAR_LOSER_IG_AND_MOVEMENT_DEBUFF_YEARS",
+     "value": "20"
+    },
+    {
+     "key": "SECESSION_WON_LOYALISTS_INCREASED_PERCENTAGE",
+     "value": "0.5"
+    },
+    {
+     "key": "SECESSION_START_RADICALS_REDUCED_PERCENTAGE",
+     "value": "1"
+    },
+    {
+     "key": "SECESSION_LOST_RADICALS_REDUCED_PERCENTAGE",
+     "value": "1"
+    },
+    {
+     "key": "REVOLUTION_START_REBEL_IG_RADICALS_REDUCED_PERCENTAGE",
+     "value": "1"
+    },
+    {
+     "key": "REVOLUTION_ENDED_RADICAL_BASE_REMOVAL_PERCENTAGE",
+     "value": "0.5"
+    },
+    {
+     "key": "REVOLUTION_LOST_REBEL_IG_RADICALS_REDUCED_PERCENTAGE",
+     "value": "0.25"
+    },
+    {
+     "key": "REVOLUTION_WON_LOYAL_IG_RADICALS_REDUCED_PERCENTAGE",
+     "value": "0.5"
+    },
+    {
+     "key": "IG_SUPPRESSION_COST",
+     "value": "200"
+    },
+    {
+     "key": "IG_BOLSTER_COST",
+     "value": "200"
+    },
+    {
+     "key": "DEFAULT_GOODS_TAX_COST",
+     "value": "100"
+    },
+    {
+     "key": "TURMOIL_STATE_EFFECTS_THRESHOLD",
+     "value": "0.25"
+    },
+    {
+     "key": "TURMOIL_STATE_HIGH_EFFECTS_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "TURMOIL_STATE_EXTREME_EFFECTS_THRESHOLD",
+     "value": "0.75"
+    },
+    {
+     "key": "OBSTINANCE_MAX",
+     "value": "0.2"
+    },
+    {
+     "key": "OBSTINANCE_MOVEMENT_REQUIRED_RADICALISM",
+     "value": "0.5"
+    },
+    {
+     "key": "MIN_INSTITUTION_INVESTMENT",
+     "value": "1"
+    },
+    {
+     "key": "MAX_INSTITUTION_INVESTMENT",
+     "value": "5"
+    },
+    {
+     "key": "DAILY_INSTITUTION_SIZE_CHANGE",
+     "value": "0.0028"
+    },
+    {
+     "key": "INITIAL_MOMENTUM_MIN",
+     "value": "0.5"
+    },
+    {
+     "key": "INITIAL_MOMENTUM_MAX",
+     "value": "1.5"
+    },
+    {
+     "key": "POPULARITY_MOMENTUM_FACTOR",
+     "value": "0.005"
+    },
+    {
+     "key": "ELECTION_INTERVAL_YEARS",
+     "value": "4"
+    },
+    {
+     "key": "CAMPAIGN_PERIOD_MONTHS",
+     "value": "6"
+    },
+    {
+     "key": "MIN_AFFILIATION_TO_STAY_IN_PARTY",
+     "value": "0.5"
+    },
+    {
+     "key": "MIN_AFFILIATION_TO_JOIN_PARTY",
+     "value": "1"
+    },
+    {
+     "key": "MAX_ELECTORAL_CONFIDENCE",
+     "value": "1"
+    },
+    {
+     "key": "INITIAL_ELECTORAL_CONFIDENCE",
+     "value": "1"
+    },
+    {
+     "key": "REFORM_GOVERNMENT_PERIOD",
+     "value": "6"
+    },
+    {
+     "key": "REFORM_GOVERNMENT_RADICALIZATION_RATE",
+     "value": "0.25"
+    },
+    {
+     "key": "RADICALISM_AGITATING_THRESHOLD",
+     "value": "0.25"
+    },
+    {
+     "key": "RADICALISM_PROTESTING_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "RADICALISM_MILITANT_THRESHOLD",
+     "value": "0.75"
+    },
+    {
+     "key": "SUPPORT_RELEVANT_THRESHOLD",
+     "value": "0.05"
+    },
+    {
+     "key": "SUPPORT_SIGNIFICANT_THRESHOLD",
+     "value": "0.25"
+    },
+    {
+     "key": "SUPPORT_DOMINANT_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "SUPPORT_UNIVERSAL_THRESHOLD",
+     "value": "0.75"
+    },
+    {
+     "key": "INCOHERENCE_FACTOR",
+     "value": "5"
+    },
+    {
+     "key": "LEGITIMACY_PENALTY_FOR_EACH_EXCESS_ENTITY",
+     "value": "20"
+    },
+    {
+     "key": "SHOW_CONFIRMATION_BELOW_LEGITIMACY",
+     "value": "25"
+    },
+    {
+     "key": "POLITICAL_LOBBY_BASELINE_DECAY_FACTOR_KEY",
+     "value": "appeasement_baseline_decay"
+    },
+    {
+     "key": "POLITICAL_LOBBY_CREATION_DESIRED_MEMBERS",
+     "value": "2"
+    },
+    {
+     "key": "POLITICAL_LOBBY_CREATION_DESIRED_MEMBERS_JOIN_FACTOR",
+     "value": "0.5"
+    },
+    {
+     "key": "POLITICAL_LOBBY_CREATION_MAX_MEMBERS",
+     "value": "3"
+    },
+    {
+     "key": "POLITICAL_LOBBY_MIN_NON_MARGINALIZED_MEMBERS",
+     "value": "1"
+    },
+    {
+     "key": "POLITICAL_LOBBY_MINIMUM_JOIN_WEIGHT_THRESHOLD",
+     "value": "50"
+    },
+    {
+     "key": "POLITICAL_LOBBY_GUARANTEED_JOIN_WEIGHT_THRESHOLD",
+     "value": "100"
+    },
+    {
+     "key": "MAX_NUM_POLITICAL_LOBBIES_OF_SAME_CATEGORY_PER_IG",
+     "value": "1"
+    },
+    {
+     "key": "POLITICAL_LOBBY_JOIN_WEIGHT_REPLACEMENT_THRESHOLD",
+     "value": "1.25"
+    },
+    {
+     "key": "POLITICAL_LOBBY_APPEASEMENT_APPROVAL_AVERAGED",
+     "value": "false"
+    },
+    {
+     "key": "POLITICAL_LOBBY_MIN_APPEASEMENT",
+     "value": "-10"
+    },
+    {
+     "key": "POLITICAL_LOBBY_MAX_APPEASEMENT",
+     "value": "10"
+    },
+    {
+     "key": "POLITICAL_LOBBY_STARTING_APPEASEMENT",
+     "value": "0"
+    },
+    {
+     "key": "POLITICAL_LOBBY_BASELINE_APPEASEMENT",
+     "value": "0"
+    },
+    {
+     "key": "POLITICAL_LOBBY_APPEASEMENT_DECAY_TIME",
+     "value": "1025"
+    },
+    {
+     "key": "POLITICAL_LOBBY_APPEASEMENT_APPROVAL_IMPACT",
+     "value": "1"
+    },
+    {
+     "key": "MIN_DECREE_COST",
+     "value": "0.1"
+    }
+   ]
+  },
+  {
+   "namespace": "NEconomy",
+   "values": [
+    {
+     "key": "MIN_CONSTRUCTION_EFFICIENCY",
+     "value": "0.05"
+    },
+    {
+     "key": "NUM_TIMES_TO_INITIALIZE_WEALTH",
+     "value": "10"
+    },
+    {
+     "key": "NUM_TIMES_TO_UPDATE_TRADE_DURING_INITIALIZATION",
+     "value": "10"
+    },
+    {
+     "key": "COUNTRY_GDP_MODIFIER_DIVISOR",
+     "value": "1000"
+    },
+    {
+     "key": "COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER",
+     "value": "200000"
+    },
+    {
+     "key": "COUNTRY_GDP_CONSTRUCTION_MODIFIER_DIVISOR",
+     "value": "2000000"
+    },
+    {
+     "key": "COUNTRY_GDP_CONSTRUCTION_MODIFIER_BASE_MULTIPLIER",
+     "value": "0.2"
+    },
+    {
+     "key": "COUNTRY_GDP_CONSTRUCTION_MODIFIER_SCALED_MULTIPLIER",
+     "value": "0.8"
+    },
+    {
+     "key": "COUNTRY_GDP_CONSTRUCTION_MODIFIER_MAX_MULTIPLIER",
+     "value": "1"
+    },
+    {
+     "key": "ECONOMY_OF_SCALE_START_LEVEL",
+     "value": "1"
+    },
+    {
+     "key": "USE_NATIONALIZED_ECONOMY_OF_SCALE_PENALTY",
+     "value": "false"
+    },
+    {
+     "key": "ECONOMY_OF_SCALE_NATIONALIZED_FRACTION_MULT",
+     "value": "0.5"
+    },
+    {
+     "key": "IN_DEFAULT_MINIMUM_PENALTY_SCALE",
+     "value": "0.1"
+    },
+    {
+     "key": "IN_DEFAULT_DAYS_TO_FULL_PENALTY",
+     "value": "365"
+    },
+    {
+     "key": "DECLARE_BANKRUPTCY_PENALTY_DURATION_YEARS",
+     "value": "10"
+    },
+    {
+     "key": "DECLARE_BANKRUPTCY_RADICALIZATION_BASE_FACTOR",
+     "value": "0.1"
+    },
+    {
+     "key": "DECLARE_BANKRUPTCY_RADICALIZATION_SHARES_FACTOR",
+     "value": "0.05"
+    },
+    {
+     "key": "FIRED_POP_RADICALIZATION_FRACTION",
+     "value": "0.1"
+    },
+    {
+     "key": "NATIONALIZE_BUILDING_SELF_OWNED_RADICALIZATION_FACTOR",
+     "value": "0.25"
+    },
+    {
+     "key": "NATIONALIZE_BUILDING_PRIVATELY_OWNED_RADICALIZATION_FACTOR",
+     "value": "0.01"
+    },
+    {
+     "key": "NATIONALIZE_BUILDING_PRIVATELY_OWNED_RADICALIZATION_MAX_MULTIPLIER",
+     "value": "20"
+    },
+    {
+     "key": "NATIONALIZE_BUILDING_PRIVATELY_OWNED_RADICALIZATION_SCORE_DIVISOR",
+     "value": "1"
+    },
+    {
+     "key": "NATIONALIZE_BUILDING_OTHER_COUNTRY_OWNED_RELATIONS_IMPACT",
+     "value": "-2"
+    },
+    {
+     "key": "NATIONALIZE_BUILDING_OTHER_COUNTRY_POP_OWNED_RELATIONS_IMPACT",
+     "value": "-1"
+    },
+    {
+     "key": "NATIONALIZE_BUILDING_NO_COMPENSATION_IMPACT_MULT",
+     "value": "3"
+    },
+    {
+     "key": "AUTO_DOWNSIZE_BUILDING_MIN_EMPTY_PRIVATE_LEVELS",
+     "value": "1"
+    },
+    {
+     "key": "AUTO_DOWNSIZE_BUILDING_MIN_EMPTY_FRACTION",
+     "value": "0.1"
+    },
+    {
+     "key": "AUTO_DOWNSIZE_BUILDING_MIN_UNUSED_TRADE_CAPACITY_FRACTION",
+     "value": "0.1"
+    },
+    {
+     "key": "AUTO_DOWNSIZE_BUILDING_MIN_UNUSED_TRADE_CAPACITY",
+     "value": "20"
+    },
+    {
+     "key": "AUTO_DOWNSIZE_BUILDING_MONTHS_TO_WAIT",
+     "value": "6"
+    },
+    {
+     "key": "POLLUTION_TARGET_DIVISOR_BASE",
+     "value": "50"
+    },
+    {
+     "key": "POLLUTION_TARGET_DIVISOR_ARABLE_LAND_MULT",
+     "value": "1.5"
+    },
+    {
+     "key": "POLLUTION_CHANGE_SPEED",
+     "value": "0.255"
+    },
+    {
+     "key": "POLLUTION_MAX",
+     "value": "255"
+    },
+    {
+     "key": "POLLUTION_SPREAD_TO_NEIGHBOR",
+     "value": "0.25"
+    },
+    {
+     "key": "GOODS_LEADERBOARD_SIZE",
+     "value": "10"
+    },
+    {
+     "key": "MIN_SPOT_PRESTIGE_AWARD",
+     "value": "3"
+    },
+    {
+     "key": "GOODS_LEADERBOARD_GLOBAL_GDP_SCALING",
+     "value": "10000000000"
+    },
+    {
+     "key": "GOODS_LEADERBOARD_PRESTIGE_BASE",
+     "value": "0.25"
+    },
+    {
+     "key": "GOODS_LEADERBOARD_PRESTIGE_SCALED",
+     "value": "2.75"
+    },
+    {
+     "key": "MIN_GOODS_PRICE",
+     "value": "1"
+    },
+    {
+     "key": "PRICE_RANGE",
+     "value": "0.75"
+    },
+    {
+     "key": "BUY_SELL_DIFF_AT_MAX_FACTOR",
+     "value": "2"
+    },
+    {
+     "key": "GOODS_SHORTAGE_PENALTY_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "GOODS_SHORTAGE_PENALTY_INCREASE_SPEED",
+     "value": "0.01"
+    },
+    {
+     "key": "GOODS_SHORTAGE_PENALTY_DECREASE_SPEED",
+     "value": "0.01"
+    },
+    {
+     "key": "GOODS_SHORTAGE_PENALTY_MIN",
+     "value": "0.05"
+    },
+    {
+     "key": "GOODS_SHORTAGE_PENALTY_MAX",
+     "value": "0.5"
+    },
+    {
+     "key": "GOODS_SHORTAGE_PENALTY_MISSING_INPUTS",
+     "value": "0.75"
+    },
+    {
+     "key": "GOODS_SHORTAGE_PENALTY_MILITARY_BUILDING_SPEED_MULT",
+     "value": "5"
+    },
+    {
+     "key": "POP_NEED_BASIC_FOOD",
+     "value": "popneed_basic_food"
+    },
+    {
+     "key": "MINIMUM_GOODS_TRADED_QUANTITY",
+     "value": "0.5"
+    },
+    {
+     "key": "WORLD_MARKET_GOODS_DEMAND_BUFFER",
+     "value": "10"
+    },
+    {
+     "key": "WORLD_MARKET_HUB_SCORE_STICKYNESS",
+     "value": "3"
+    },
+    {
+     "key": "WORLD_MARKET_HUB_SCORE_PORT_FACTOR",
+     "value": "10"
+    },
+    {
+     "key": "WORLD_MARKET_HUB_SCORE_GDP_FACTOR_DIVISOR",
+     "value": "100000"
+    },
+    {
+     "key": "WORLD_MARKET_HUB_SCORE_TRADE_CAPACITY_FACTOR",
+     "value": "0.1"
+    },
+    {
+     "key": "WORLD_MARKET_HUB_SCORE_MARKET_CAPITAL_FACTOR",
+     "value": "100"
+    },
+    {
+     "key": "WORLD_MARKET_LOCATION",
+     "value": "x9137A4"
+    },
+    {
+     "key": "NON_TRADE_CENTER_STATE_TRADE_POTENTIAL_UPDATE_FREQUENCY",
+     "value": "30"
+    },
+    {
+     "key": "TRADE_CENTER_ADVANTAGE_PRICE_MULTIPLIER",
+     "value": "0.25"
+    },
+    {
+     "key": "TRADE_CENTER_ADVANTAGE_BASE",
+     "value": "100"
+    },
+    {
+     "key": "TRADE_CENTER_ADVANTAGE_MARKET_AREA_PRODUCTION_FACTOR",
+     "value": "200"
+    },
+    {
+     "key": "TRADE_ADVANTAGE_COMPANY_CHARTER_FACTOR",
+     "value": "50"
+    },
+    {
+     "key": "TRADE_CENTER_ADVANTAGE_MARKET_PRESTIGE_GOOD_FACTOR",
+     "value": "100"
+    },
+    {
+     "key": "TRADE_CENTER_ADVANTAGE_TRADE_AGREEMENT_FACTOR",
+     "value": "100"
+    },
+    {
+     "key": "TRADE_CENTER_ADVANTAGE_TREATY_PORT_FACTOR",
+     "value": "200"
+    },
+    {
+     "key": "TRADE_CENTER_ADVANTAGE_EMBARGO_FACTOR",
+     "value": "-100"
+    },
+    {
+     "key": "TRADE_CENTER_ADVANTAGE_AT_WAR_FACTOR",
+     "value": "-75"
+    },
+    {
+     "key": "TRADE_CENTER_PRESTIGE_MERCHANT_MARINE_ADVANTAGE_MULT",
+     "value": "0.25"
+    },
+    {
+     "key": "TRADE_CENTER_PREFERENCE_BASE",
+     "value": "1"
+    },
+    {
+     "key": "TRADE_CENTER_PREFERENCE_SAME_POWER_BLOC_MULTIPLIER",
+     "value": "0.5"
+    },
+    {
+     "key": "TRADE_CENTER_PREFERENCE_TRADE_AGREEMENT_MULTIPLIER",
+     "value": "4"
+    },
+    {
+     "key": "TRADE_CENTER_PREFERENCE_EMBARGO_DIVISOR",
+     "value": "2"
+    },
+    {
+     "key": "TRADE_CENTER_PREFERENCE_NO_INTEREST_DIVISOR",
+     "value": "0.25"
+    },
+    {
+     "key": "TRADE_CENTER_PREFERENCE_DISTANCE_DIVISOR",
+     "value": "0.25"
+    },
+    {
+     "key": "TRADE_CENTER_PREFERENCE_TOLL_DIVISOR",
+     "value": "0.05"
+    },
+    {
+     "key": "SEA_DISTANCE_EXPECTED_TRAVEL_DISTANCE",
+     "value": "1000"
+    },
+    {
+     "key": "MAX_TRADE_ROUTE_ALTERNATIVES",
+     "value": "3"
+    },
+    {
+     "key": "MARKET_SHARE_FROM_GDP",
+     "value": "1"
+    },
+    {
+     "key": "MARKET_SHARE_MARKET_CONTROLLER_FACTOR",
+     "value": "1.33"
+    },
+    {
+     "key": "MARKET_SHARE_MARKET_ACCESS_BASE",
+     "value": "0.5"
+    },
+    {
+     "key": "MARKET_SHARE_MARKET_ACCESS_SCALED",
+     "value": "0.5"
+    },
+    {
+     "key": "COUNTRY_MIN_CREDIT_BASE",
+     "value": "100000"
+    },
+    {
+     "key": "COUNTRY_MIN_CREDIT_SCALED",
+     "value": "0.5"
+    },
+    {
+     "key": "CREDIT_RATIO_MAX_OVERRUN",
+     "value": "0.01"
+    },
+    {
+     "key": "GOLD_RESERVE_RATIO_AT_START",
+     "value": "0.25"
+    },
+    {
+     "key": "BUILDING_INITIAL_WAGE_WEEKS",
+     "value": "2"
+    },
+    {
+     "key": "MAX_WAGE_STEP_CHANGE",
+     "value": "0.1"
+    },
+    {
+     "key": "SUBSIDIES_MIN_GAIN",
+     "value": "0"
+    },
+    {
+     "key": "DEFAULT_MIN_HIRING_RATE",
+     "value": "0.01"
+    },
+    {
+     "key": "DEFAULT_MAX_HIRING_RATE",
+     "value": "0.1"
+    },
+    {
+     "key": "HIRING_RANGE_WEEKLY_CHANGE",
+     "value": "0.01"
+    },
+    {
+     "key": "EMPLOYMENT_PROPORTIONALITY_LIMIT",
+     "value": "0.1"
+    },
+    {
+     "key": "MINIMUM_EMPLOYEES",
+     "value": "10"
+    },
+    {
+     "key": "BUILDING_WAGES_DIVIDEND_INCOME_FACTOR",
+     "value": "0.5"
+    },
+    {
+     "key": "BUILDING_WAGES_WELFARE_INCOME_FACTOR",
+     "value": "0.8"
+    },
+    {
+     "key": "BUILDING_WAGES_OWNERSHIP_BUILDING_FACTOR",
+     "value": "0.75"
+    },
+    {
+     "key": "BUILDING_WAGES_MIN_RELEVANT_POP_SIZE",
+     "value": "50"
+    },
+    {
+     "key": "BUILDING_WAGES_MIN_EMPLOYEES_FOR_RELEVANT_POP_SIZE_CHECK",
+     "value": "200"
+    },
+    {
+     "key": "BUILDING_RAISE_WAGES_TARGET_WEALTH_MULT",
+     "value": "0.9"
+    },
+    {
+     "key": "BUILDING_LOWER_WAGES_TARGET_WEALTH_MULT",
+     "value": "1.2"
+    },
+    {
+     "key": "BUILDING_WAGES_AVERAGE_PRODUCTIVITY_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "BUILDING_WAGES_AVERAGE_PRODUCTIVITY_FACTOR",
+     "value": "0.5"
+    },
+    {
+     "key": "BUILDING_WAGES_AVERAGE_PRODUCTIVITY_FACTOR_MAX",
+     "value": "2.5"
+    },
+    {
+     "key": "BUILDING_PREFER_LAYOFFS_TARGET_WEALTH_MULT",
+     "value": "0.66"
+    },
+    {
+     "key": "BUILDING_FOREIGN_OWNERSHIP_WAGE_FACTOR",
+     "value": "-0.25"
+    },
+    {
+     "key": "BUILDING_DEFAULT_MIN_EARNINGS_TO_HIRE_EMPLOYEES",
+     "value": "3"
+    },
+    {
+     "key": "BUILDING_PROFIT_TARGET_TO_RAISE_WAGES",
+     "value": "0.25"
+    },
+    {
+     "key": "BUILDING_PROFIT_TARGET_TO_LOWER_WAGES",
+     "value": "0.15"
+    },
+    {
+     "key": "BUILDING_PROFIT_TARGET_TO_WITHDRAW_CASH",
+     "value": "0.15"
+    },
+    {
+     "key": "BUILDING_PROFIT_TARGET_TO_HIRE_EMPLOYEES",
+     "value": "0.25"
+    },
+    {
+     "key": "OWNERSHIP_BUILDING_PROFIT_TARGET_TO_RAISE_WAGES",
+     "value": "0.5"
+    },
+    {
+     "key": "OWNERSHIP_BUILDING_PROFIT_TARGET_TO_LOWER_WAGES",
+     "value": "0.3"
+    },
+    {
+     "key": "OWNERSHIP_BUILDING_PROFIT_TARGET_TO_WITHDRAW_CASH",
+     "value": "0.3"
+    },
+    {
+     "key": "OWNERSHIP_BUILDING_PROFIT_TARGET_TO_HIRE_EMPLOYEES",
+     "value": "0.5"
+    },
+    {
+     "key": "SUBSISTENCE_BUILDING_PROFIT_TARGET_TO_RAISE_WAGES",
+     "value": "0.7"
+    },
+    {
+     "key": "SUBSISTENCE_BUILDING_PROFIT_TARGET_TO_LOWER_WAGES",
+     "value": "0.5"
+    },
+    {
+     "key": "SUBSISTENCE_BUILDING_PROFIT_TARGET_TO_WITHDRAW_CASH",
+     "value": "0.5"
+    },
+    {
+     "key": "BUILDING_MAX_EMPLOYMENT_FRACTION_TO_RAISE_WAGES",
+     "value": "0.5"
+    },
+    {
+     "key": "BUILDING_WEEKS_BETWEEN_PAY_CHANGES",
+     "value": "0"
+    },
+    {
+     "key": "BUILDING_WEEKS_BETWEEN_PAY_CHANGES_WHEN_UNPROFITABLE",
+     "value": "0"
+    },
+    {
+     "key": "MIN_RAISE_TO_HIRE",
+     "value": "0.1"
+    },
+    {
+     "key": "MIN_JOB_ATTRACTIVENESS",
+     "value": "0.1"
+    },
+    {
+     "key": "BASE_RESOURCE_DISCOVER_CHANCE",
+     "value": "0.02"
+    },
+    {
+     "key": "EMPLOYMENT_RESOURCE_DEPLETE_CHANCE",
+     "value": "0.005"
+    },
+    {
+     "key": "RESOURCE_DISCOVER_MIN_FRACTION",
+     "value": "0.2"
+    },
+    {
+     "key": "RESOURCE_DISCOVER_MAX_FRACTION",
+     "value": "0.5"
+    },
+    {
+     "key": "FULLY_DISCOVERED_RESOURCE_DEPLETE_CHANCE_MULT",
+     "value": "1"
+    },
+    {
+     "key": "RESOURCE_DEPLETE_MIN_AMOUNT",
+     "value": "2"
+    },
+    {
+     "key": "RESOURCE_DEPLETE_MAX_AMOUNT",
+     "value": "5"
+    },
+    {
+     "key": "QUALITY_OF_LIFE_MIN",
+     "value": "1"
+    },
+    {
+     "key": "QUALITY_OF_LIFE_MAX",
+     "value": "100"
+    },
+    {
+     "key": "SUBSISTENCE_OUTPUT_AVERAGE_WAGE_RATE_FACTOR",
+     "value": "150"
+    },
+    {
+     "key": "PEASANT_STARTING_WAGE_RATE_FACTOR",
+     "value": "1"
+    },
+    {
+     "key": "STARTING_WAGE_RATE_MULTIPLIER",
+     "value": "1"
+    },
+    {
+     "key": "STARTING_WAGE_RATE_SUBSISTENCE_MULTIPLIER",
+     "value": "0.5"
+    },
+    {
+     "key": "NORMAL_WAGE_RATE_FALLBACK",
+     "value": "500"
+    },
+    {
+     "key": "MINIMUM_WAGE_RATE",
+     "value": "10"
+    },
+    {
+     "key": "MAXIMUM_WAGE_RATE",
+     "value": "100000"
+    },
+    {
+     "key": "CREDIT_RATIO_HEALTH_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "GOLD_RESERVE_MIN",
+     "value": "1000"
+    },
+    {
+     "key": "GOLD_RESERVE_LIMIT_FACTOR",
+     "value": "0.2"
+    },
+    {
+     "key": "GOLD_RESERVE_RETURNS_FACTOR",
+     "value": "1"
+    },
+    {
+     "key": "RETOOLING_WEEKS",
+     "value": "0"
+    },
+    {
+     "key": "BUILDING_TIMED_MODIFIER_WEEKS",
+     "value": "52"
+    },
+    {
+     "key": "BUILDING_PAUSE_HIRES_CASH_RESERVES_THRESHOLD",
+     "value": "0.75"
+    },
+    {
+     "key": "BUILDING_MIN_EMPLOYMENT_FRACTION_TO_PAUSE_HIRES",
+     "value": "0.1"
+    },
+    {
+     "key": "BUILDING_MAX_EMPLOYMENT_FRACTION_TO_CONSIDER_CASH_RESERVES",
+     "value": "0.5"
+    },
+    {
+     "key": "BUILDING_MAX_PROFIT_TO_PAUSE_HIRES",
+     "value": "0.2"
+    },
+    {
+     "key": "PRICE_REPORT_MAX_ENTRIES",
+     "value": "10"
+    },
+    {
+     "key": "NUM_COIN_ICONS",
+     "value": "13"
+    },
+    {
+     "key": "COIN_ICON_PRICE_COMPARISON_STEP",
+     "value": "0.12"
+    },
+    {
+     "key": "NUM_PROFITABILITY_ICONS",
+     "value": "13"
+    },
+    {
+     "key": "PROFITABILITY_ICON_COMPARISON_STEP",
+     "value": "0.15"
+    },
+    {
+     "key": "EARNINGS_RATIO_HIGH_THRESHOLD",
+     "value": "1.5"
+    },
+    {
+     "key": "EARNINGS_RATIO_LOW_THRESHOLD",
+     "value": "0.66"
+    },
+    {
+     "key": "EARNINGS_ABSOLUTE_HIGH_THRESHOLD",
+     "value": "30"
+    },
+    {
+     "key": "EARNINGS_ABSOLUTE_LOW_THRESHOLD",
+     "value": "3"
+    },
+    {
+     "key": "SLAVE_BASKET_DEFAULT",
+     "value": "8"
+    },
+    {
+     "key": "SLAVE_BASKET_MIN",
+     "value": "1"
+    },
+    {
+     "key": "SLAVE_BASKET_MAX",
+     "value": "12"
+    },
+    {
+     "key": "SLAVE_BASKET_SCALED_MIN",
+     "value": "0.5"
+    },
+    {
+     "key": "SLAVE_BASKET_SCALED_MAX",
+     "value": "1"
+    },
+    {
+     "key": "SLAVE_BASKET_SUBSISTENCE_GOODS_MULT",
+     "value": "0.05"
+    },
+    {
+     "key": "COLONIAL_SLAVERY_ENSLAVEMENT_RATE",
+     "value": "0.005"
+    },
+    {
+     "key": "COLONIAL_SLAVERY_ENSLAVEMENT_RATE_PER_POP",
+     "value": "0.15"
+    },
+    {
+     "key": "COLONIAL_SLAVERY_ENSLAVEMENT_RATE_DROP_OFF_PER_WEALTH",
+     "value": "0.01"
+    },
+    {
+     "key": "COLONIAL_SLAVERY_MAX_STATE_SLAVE_FRACTION",
+     "value": "0.25"
+    },
+    {
+     "key": "COLONIAL_SLAVERY_ACCEPTANCE_THRESHOLD",
+     "value": "60"
+    },
+    {
+     "key": "DEBT_SLAVERY_ENSLAVEMENT_RATE",
+     "value": "0.005"
+    },
+    {
+     "key": "DEBT_SLAVERY_ENSLAVEMENT_RATE_PER_POP",
+     "value": "0.1"
+    },
+    {
+     "key": "DEBT_SLAVERY_ENSLAVEMENT_RATE_DROP_OFF_PER_WEALTH",
+     "value": "0.01"
+    },
+    {
+     "key": "DEBT_SLAVERY_MAX_STATE_SLAVE_FRACTION",
+     "value": "0.15"
+    },
+    {
+     "key": "SLAVE_TRADE_MIN_VACANCIES_NEEDED_TO_IMPORT",
+     "value": "500"
+    },
+    {
+     "key": "SLAVE_TRADE_MIN_POPULATION_TO_EXPORT",
+     "value": "100000"
+    },
+    {
+     "key": "SLAVE_TRADE_FULL_EXPORT_POPULATION_THRESHOLD",
+     "value": "250000"
+    },
+    {
+     "key": "SLAVE_TRADE_POPULATION_FRACTION_WEIGHT",
+     "value": "100"
+    },
+    {
+     "key": "SLAVE_TRADE_POPULATION_TOTAL_WEIGHT",
+     "value": "0.0002"
+    },
+    {
+     "key": "SLAVE_TRADE_TURMOIL_WEIGHT",
+     "value": "25"
+    },
+    {
+     "key": "SLAVE_TRADE_DISTANCE_WEIGHT",
+     "value": "1"
+    },
+    {
+     "key": "SLAVE_TRADE_OTHER_STATES_WEIGHT",
+     "value": "2"
+    },
+    {
+     "key": "SLAVE_TRADE_EXISTING_STATE_CULTURE_WEIGHT_MULT",
+     "value": "10"
+    },
+    {
+     "key": "SLAVE_TRADE_NUMBER_EVALUATED_STATES",
+     "value": "10"
+    },
+    {
+     "key": "SLAVE_TRADE_BASE_SLAVES_PER_WEEK",
+     "value": "100"
+    },
+    {
+     "key": "SLAVE_TRADE_ARABLE_LAND_EFFECT",
+     "value": "1"
+    },
+    {
+     "key": "SLAVE_TRADE_ARABLE_LAND_EFFECT_MAX",
+     "value": "200"
+    },
+    {
+     "key": "SLAVE_TRADE_RANDOM_MIN",
+     "value": "0.5"
+    },
+    {
+     "key": "SLAVE_TRADE_RANDOM_MAX",
+     "value": "1.5"
+    },
+    {
+     "key": "SLAVE_TRADE_MIN_MARKET_ACCESS",
+     "value": "0.1"
+    },
+    {
+     "key": "BUILDING_FAILED_HIRE_COOLDOWN_WEEKS_WITHOUT_WAGE_RAISE",
+     "value": "4"
+    },
+    {
+     "key": "BUILDING_LAYOFFS_DECREASE_BY",
+     "value": "0.05"
+    },
+    {
+     "key": "BUILDING_LAYOFF_HIRING_COOLDOWN_WEEKS",
+     "value": "4"
+    },
+    {
+     "key": "BUILDING_MINIMUM_HIRING_ADJUSTMENT_FRACTION",
+     "value": "0.001"
+    },
+    {
+     "key": "BUILDING_CASH_RESERVES_HIGH_ROI",
+     "value": "0.25"
+    },
+    {
+     "key": "BUILDING_CASH_RESERVES_MED_ROI",
+     "value": "0.15"
+    },
+    {
+     "key": "BUILDING_CASH_RESERVES_LOW_ROI",
+     "value": "0.05"
+    },
+    {
+     "key": "BUILDING_CASH_RESERVES_FILL_TIME_HIGH_ROI",
+     "value": "26"
+    },
+    {
+     "key": "BUILDING_CASH_RESERVES_FILL_TIME_MED_ROI",
+     "value": "52"
+    },
+    {
+     "key": "BUILDING_CASH_RESERVES_FILL_TIME_LOW_ROI",
+     "value": "78"
+    },
+    {
+     "key": "BUILDING_CASH_RESERVES_MIN_DEPOSIT_PERCENT",
+     "value": "0.25"
+    },
+    {
+     "key": "BUILDING_CASH_RESERVES_MAX_DEPOSIT_PERCENT",
+     "value": "0.5"
+    },
+    {
+     "key": "OWNERSHIP_BUILDING_CASH_RESERVES_MIN_DEPOSIT_PERCENT",
+     "value": "0.125"
+    },
+    {
+     "key": "OWNERSHIP_BUILDING_CASH_RESERVES_MAX_DEPOSIT_PERCENT",
+     "value": "0.25"
+    },
+    {
+     "key": "BUILDING_HIGH_CASH_RESERVES_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "EMPLOYMENT_DIVIDEND_ESTIMATE_MULT",
+     "value": "2"
+    },
+    {
+     "key": "GOODS_DEFAULT_TRADE_QUANTITY",
+     "value": "10"
+    },
+    {
+     "key": "MIN_POPS_PER_PROFESSION",
+     "value": "3"
+    },
+    {
+     "key": "POPS_PER_PROFESSION_LOG_BASE",
+     "value": "10"
+    },
+    {
+     "key": "ESTABLISH_COLONY_PROVIDE_PORT",
+     "value": "true"
+    },
+    {
+     "key": "ESTABLISH_COLONY_PORT_COST",
+     "value": "100000"
+    },
+    {
+     "key": "ESTABLISH_COLONY_PORT_LEVEL",
+     "value": "1"
+    },
+    {
+     "key": "SHIPPING_LANE_MERCHANT_MARINE_COST_SCALING",
+     "value": "0.15"
+    },
+    {
+     "key": "GOODS_DEFAULT_MERCHANT_MARINE_COST_MULTIPLIER",
+     "value": "1"
+    },
+    {
+     "key": "OVERSEAS_INFRASTRUCTURE_MERCHANT_MARINE_COST_MULTIPLIER",
+     "value": "0.1"
+    },
+    {
+     "key": "MERCHANT_MARINE_GOODS_KEY",
+     "value": "merchant_marine"
+    },
+    {
+     "key": "SUPPLY_NETWORK_SHORTAGE_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "SUPPLY_NETWORK_SHORTAGE_INCREASE_SPEED",
+     "value": "0.1"
+    },
+    {
+     "key": "SUPPLY_NETWORK_SHORTAGE_DECREASE_SPEED",
+     "value": "0.1"
+    },
+    {
+     "key": "SUPPLY_NETWORK_SHORTAGE_PENALTY_MIN",
+     "value": "0.05"
+    },
+    {
+     "key": "SUPPLY_NETWORK_SHORTAGE_PENALTY_MAX",
+     "value": "0.5"
+    },
+    {
+     "key": "DEFAULT_EXPORT_TARIFFS",
+     "value": "low_tariffs"
+    },
+    {
+     "key": "DEFAULT_IMPORT_TARIFFS",
+     "value": "low_tariffs"
+    },
+    {
+     "key": "TARIFF_LEVEL_COOLDOWN_GRACE_PERIOD_DAYS",
+     "value": "7"
+    },
+    {
+     "key": "TARIFF_LEVEL_COOLDOWN_MONTHS",
+     "value": "3"
+    },
+    {
+     "key": "TARIFF_LEVEL_EFFECT_LOW",
+     "value": "0.25"
+    },
+    {
+     "key": "TARIFF_LEVEL_EFFECT_HIGH",
+     "value": "0.5"
+    },
+    {
+     "key": "TARIFF_LEVEL_EFFECT_MAXIMUM",
+     "value": "1"
+    },
+    {
+     "key": "SUBVENTION_LEVEL_EFFECT_LOW",
+     "value": "0.25"
+    },
+    {
+     "key": "SUBVENTION_LEVEL_EFFECT_HIGH",
+     "value": "0.5"
+    },
+    {
+     "key": "SUBVENTION_LEVEL_EFFECT_MAXIMUM",
+     "value": "1"
+    },
+    {
+     "key": "REINVESTMENT_SUBSISTENCE_FRACTION_REDUCTION",
+     "value": "0.5"
+    },
+    {
+     "key": "COMPANY_OVER_LIMIT_BONUS_PENALTY_MIN",
+     "value": "0.33"
+    },
+    {
+     "key": "COMPANY_PRODUCTIVITY_RATIO_HIGH_THRESHOLD",
+     "value": "1.25"
+    },
+    {
+     "key": "COMPANY_PRODUCTIVITY_RATIO_LOW_THRESHOLD",
+     "value": "0.75"
+    },
+    {
+     "key": "COMPANY_PRODUCTIVITY_ABSOLUTE_HIGH_THRESHOLD",
+     "value": "25"
+    },
+    {
+     "key": "COMPANY_PRODUCTIVITY_ABSOLUTE_LOW_THRESHOLD",
+     "value": "5"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_MAX",
+     "value": "100"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_BONUS_ACTIVATION_THRESHOLD",
+     "value": "100"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_BONUS_DEACTIVATION_THRESHOLD",
+     "value": "75"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_PRODUCTIVITY_MULTIPLIER",
+     "value": "50"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_PRODUCTIVITY_MAX",
+     "value": "100"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_EMPLOYED_LEVELS_MULTIPLIER",
+     "value": "1"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_EMPLOYED_LEVELS_MAX",
+     "value": "50"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_POPULARITY_MULTIPLIER",
+     "value": "0.1"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_POPULARITY_MAX",
+     "value": "10"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_POPULARITY_MIN",
+     "value": "0"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_WEEKLY_INCREASE_BASE",
+     "value": "0.2"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_WEEKLY_INCREASE_SCALED",
+     "value": "0.04"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_WEEKLY_INCREASE_SCALED_MAX",
+     "value": "0.8"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_WEEKLY_DECREASE_BASE",
+     "value": "-1"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_WEEKLY_DECREASE_SCALED",
+     "value": "0.02"
+    },
+    {
+     "key": "COMPANY_PROSPERITY_WEEKLY_DECREASE_SCALED_MAX",
+     "value": "0.8"
+    },
+    {
+     "key": "COMPANY_COUNTRY_CONSTRUCTION_BONUS_MULT",
+     "value": "0.2"
+    },
+    {
+     "key": "NATIONALIZATION_PER_LEVEL_COST",
+     "value": "500"
+    },
+    {
+     "key": "PRIVATIZATION_PER_LEVEL_COST",
+     "value": "250"
+    },
+    {
+     "key": "MIN_FAKE_CONSTRUCTION_COST",
+     "value": "100"
+    },
+    {
+     "key": "COMPANY_COUNT_OF_REGIONAL_HQ_TYPES",
+     "value": "3"
+    },
+    {
+     "key": "COMPANY_MINIMUM_LEVELS_PER_HQ",
+     "value": "5"
+    },
+    {
+     "key": "BASE_REGIONAL_HQS",
+     "value": "1"
+    },
+    {
+     "key": "LEVELS_PER_REGIONAL_HQ",
+     "value": "50"
+    },
+    {
+     "key": "COMPANY_ON_ESTABLISH_COOLDOWN_MONTHS",
+     "value": "60"
+    },
+    {
+     "key": "COMPANY_ON_DISBAND_COOLDOWN_MONTHS",
+     "value": "48"
+    },
+    {
+     "key": "BUILDING_LEVEL_BUREAUCRACY_COST",
+     "value": "1"
+    },
+    {
+     "key": "COLLECTIVIZATION_DEBT_RATIO",
+     "value": "0.5"
+    },
+    {
+     "key": "MIN_COLLECTIVIZATION_BUDGET",
+     "value": "1000000"
+    },
+    {
+     "key": "DYNAMIC_INDUSTRY_CHARTER",
+     "value": "false"
+    },
+    {
+     "key": "COMPANY_INFLUENCE_LEVEL_STEPS",
+     "value": "10, 50, 100, 250, 500, 1000, 1500, 2500, 5000, 10000"
+    },
+    {
+     "key": "COMPANY_CHARTER_AUTHORITY_COST",
+     "value": "100"
+    },
+    {
+     "key": "HARVEST_CONDITION_MIN_INTENSITY",
+     "value": "0"
+    },
+    {
+     "key": "HARVEST_CONDITION_MAX_INTENSITY",
+     "value": "9"
+    },
+    {
+     "key": "COMPANY_MONOPOLY_COOLDOWN_MONTHS",
+     "value": "60"
+    },
+    {
+     "key": "COUNTRY_MONOPOLY_MAX_COUNT",
+     "value": "5"
+    },
+    {
+     "key": "COUNTRY_MONOPOLY_AUTHORITY_COST",
+     "value": "100"
+    },
+    {
+     "key": "WORLD_MARKET_MONOPOLY_MIN_SHARE",
+     "value": "0.5"
+    },
+    {
+     "key": "MONOPOLY_PRICE_IMPACT",
+     "value": "0.2"
+    },
+    {
+     "key": "PRIVATIZATION_DISCOUNT_MONOPOLY",
+     "value": "0.2"
+    },
+    {
+     "key": "PRIVATIZATION_DISCOUNT_COMPANY_ONLY",
+     "value": "0.1"
+    },
+    {
+     "key": "PRESTIGE_GOODS_INPUT_THROUGHPUT_BONUS",
+     "value": "0.2"
+    },
+    {
+     "key": "TOLL_RATE_NO_TOLLS",
+     "value": "0"
+    },
+    {
+     "key": "TOLL_RATE_LOW_TOLLS",
+     "value": "0.05"
+    },
+    {
+     "key": "TOLL_RATE_MEDIUM_TOLLS",
+     "value": "0.1"
+    },
+    {
+     "key": "TOLL_RATE_HIGH_TOLLS",
+     "value": "0.2"
+    },
+    {
+     "key": "TOLL_RATE_MULTIPLIER_FULL_CONTROL",
+     "value": "2"
+    },
+    {
+     "key": "STRAIT_FULL_CONTROL_TRADE_IMPORTANCE_MULT",
+     "value": "1.5"
+    },
+    {
+     "key": "STRAIT_TOLL_RATE_COOLDOWN_MONTHS",
+     "value": "6"
+    },
+    {
+     "key": "STRAIT_ACCESS_SETTING_COOLDOWN_MONTHS",
+     "value": "6"
+    },
+    {
+     "key": "STRAIT_SETTING_COOLDOWN_GRACE_PERIOD_DAYS",
+     "value": "7"
+    },
+    {
+     "key": "MAX_PIRATED_GOODS_PER_HUB",
+     "value": "0.25"
+    },
+    {
+     "key": "PIRACY_SHIP_SPEED_TO_GOODS_RATIO",
+     "value": "0.003"
+    },
+    {
+     "key": "PIRATED_GOODS_SALE_DISCOUNT",
+     "value": "0.5"
+    },
+    {
+     "key": "PIRACY_SELL_ORDERS_MIN_GOODS",
+     "value": "0.1"
+    }
+   ]
+  },
+  {
+   "namespace": "NMilitary",
+   "values": [
+    {
+     "key": "POWER_PROJECTION_DIVISOR",
+     "value": "1000"
+    },
+    {
+     "key": "INITIAL_MANPOWER_COST_MULTIPLIER",
+     "value": "10"
+    },
+    {
+     "key": "MANPOWER_DIVISOR",
+     "value": "10000"
+    },
+    {
+     "key": "ATTRITION_RISK_EXILED_ARMY_ADD",
+     "value": "0.2"
+    },
+    {
+     "key": "ATTRITION_RISK_ON_ENEMY_TERRITORY_ADD",
+     "value": "0.3"
+    },
+    {
+     "key": "MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MIN",
+     "value": "0.04"
+    },
+    {
+     "key": "MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MAX",
+     "value": "0.12"
+    },
+    {
+     "key": "ATTRITION_RECOVERY_RATE_BASE",
+     "value": "0.7"
+    },
+    {
+     "key": "ATTRITION_RECOVERY_RATE_RANDOM_RANGE",
+     "value": "0.1"
+    },
+    {
+     "key": "MIN_VARIABLE_DISTRIBUTION_PER_POP",
+     "value": "0"
+    },
+    {
+     "key": "MAX_VARIABLE_DISTRIBUTION_PER_POP",
+     "value": "100"
+    },
+    {
+     "key": "BATTLE_LETHALITY_MIN",
+     "value": "0.001"
+    },
+    {
+     "key": "BATTLE_LETHALITY_MAX",
+     "value": "0.005"
+    },
+    {
+     "key": "BATTLE_RAW_MANPOWER_INFLICTED_CASUALTY_RATIO",
+     "value": "0.5"
+    },
+    {
+     "key": "BATTLE_COMBAT_EFFICIENCY_INFLICTED_CASUALTY_RATIO",
+     "value": "1.5"
+    },
+    {
+     "key": "BATTLE_MAX_CASUALTY_DISADVANTAGE_PENALTY",
+     "value": "1"
+    },
+    {
+     "key": "MAX_CE_ADVANTAGE",
+     "value": "1"
+    },
+    {
+     "key": "MIN_MANPOWER_CASUALTY_PER_ROUND",
+     "value": "5"
+    },
+    {
+     "key": "MIN_USABLE_MANPOWER",
+     "value": "100"
+    },
+    {
+     "key": "COMBAT_UNITS_PER_LEVEL",
+     "value": "1"
+    },
+    {
+     "key": "BASE_MORALE_RECOVERED_PER_DAY",
+     "value": "0.03"
+    },
+    {
+     "key": "COMMANDER_TRAVEL_PIXELS_TO_DAYS_SCALE",
+     "value": "0.045"
+    },
+    {
+     "key": "COMMANDER_TRAVEL_MIN",
+     "value": "3"
+    },
+    {
+     "key": "COMMANDER_TRAVEL_MAX",
+     "value": "50"
+    },
+    {
+     "key": "EMBARKATION_MAX_DOCKED_FLEET_TRAVEL_DAYS",
+     "value": "30"
+    },
+    {
+     "key": "FORMATION_TRAVEL_NETWORK_SPEED",
+     "value": "15"
+    },
+    {
+     "key": "EMPTY_FLEET_MOVEMENT_SPEED",
+     "value": "100"
+    },
+    {
+     "key": "BATTLE_PLAN_ADVANCE_PROGRESS_TO_LAUNCH",
+     "value": "100"
+    },
+    {
+     "key": "BATTLE_BASE_MIN_PROVINCES_TAKEN",
+     "value": "4"
+    },
+    {
+     "key": "BATTLE_BASE_MAX_PROVINCES_TAKEN",
+     "value": "12"
+    },
+    {
+     "key": "BATTLE_PROVINCES_TAKEN_FRONT_PROVINCES_NUM_DIVISOR",
+     "value": "5"
+    },
+    {
+     "key": "BATTLE_PROVINCES_TAKEN_THEATER_PROVINCES_NUM_DIVISOR",
+     "value": "50"
+    },
+    {
+     "key": "BATTLE_PROVINCES_TAKEN_ATTACKING_UNIT_SCALE",
+     "value": "0.02"
+    },
+    {
+     "key": "BATTLE_PROVINCES_TAKEN_MAX_DEPTH_MIN",
+     "value": "2"
+    },
+    {
+     "key": "BATTLE_PROVINCES_TAKEN_MAX_DEPTH_MAX",
+     "value": "10"
+    },
+    {
+     "key": "BATTLE_PROVINCES_TAKEN_MAX_DEPTH_FRONT_PROVINCES_NUM_DIVISOR",
+     "value": "50"
+    },
+    {
+     "key": "BATTLE_PROVINCES_TAKEN_MAX_DEPTH_THEATER_PROVINCES_NUM_DIVISOR",
+     "value": "500"
+    },
+    {
+     "key": "DEFENSIVE_PROVINCES_RETAKEN_MAX_DEPTH",
+     "value": "1"
+    },
+    {
+     "key": "BATTLE_PROVINCES_TAKEN_THEATER_UNIT_SCALE",
+     "value": "2"
+    },
+    {
+     "key": "BATTLE_PROVINCES_TAKEN_MAX_EXTRA",
+     "value": "3"
+    },
+    {
+     "key": "BATTLE_PROVINCES_TAKEN_THEATER_MIN_SCALE",
+     "value": "0.01"
+    },
+    {
+     "key": "BATTLE_PROVINCES_TAKEN_ABSOLUTE_MIN",
+     "value": "1"
+    },
+    {
+     "key": "CONVOY_RAIDING_STRENGTH_MULT",
+     "value": "0.3"
+    },
+    {
+     "key": "CONVOY_RAIDING_COOLDOWN_DAYS_MIN",
+     "value": "10"
+    },
+    {
+     "key": "CONVOY_RAIDING_COOLDOWN_DAYS_MAX",
+     "value": "30"
+    },
+    {
+     "key": "CONVOY_RAIDING_DAMAGE_MIN_RANDOM_FACTOR",
+     "value": "0.5"
+    },
+    {
+     "key": "CONVOY_RAIDING_DAMAGE_MAX_RANDOM_FACTOR",
+     "value": "1"
+    },
+    {
+     "key": "CONVOY_RAIDING_DEFENSE_MULT",
+     "value": "0.15"
+    },
+    {
+     "key": "CONVOY_RAIDING_MAX_DEFENSE",
+     "value": "0.9"
+    },
+    {
+     "key": "CONVOY_RAIDING_GLOBAL_RECOVERY_RATE",
+     "value": "0.001"
+    },
+    {
+     "key": "CONVOY_RAIDING_LOCAL_RECOVERY_RATE",
+     "value": "0.01"
+    },
+    {
+     "key": "CONVOY_RAIDING_RECOVERY_RATE_PEACETIME_FACTOR",
+     "value": "4"
+    },
+    {
+     "key": "MIN_OFFENSE_DEFENSE",
+     "value": "1"
+    },
+    {
+     "key": "INTERCEPTION_DELAY_BASE_DAYS",
+     "value": "5"
+    },
+    {
+     "key": "INTERCEPTION_DELAY_MAX_RANDOM_DAYS_FACTOR",
+     "value": "10"
+    },
+    {
+     "key": "INTERCEPTION_BASE_CHANCE",
+     "value": "0.1"
+    },
+    {
+     "key": "DEMOBILIZATION_TIME_DAYS",
+     "value": "90"
+    },
+    {
+     "key": "MOBILIZATION_INFRASTRUCTURE_FACTOR",
+     "value": "0.01"
+    },
+    {
+     "key": "MIN_MOBILIZATION_PER_DAY",
+     "value": "0.05"
+    },
+    {
+     "key": "MAX_MOBILIZATION_PER_DAY",
+     "value": "0.2"
+    },
+    {
+     "key": "FRONT_MARKER_ADVANTAGE_PREDICTION_MIN_COMBAT_POWER",
+     "value": "0.01"
+    },
+    {
+     "key": "BATTLE_CONDITION_MIN_TICKS_BETWEEN_UPDATE_DEFAULT",
+     "value": "40"
+    },
+    {
+     "key": "BATTLE_CONDITION_CHANCE_TO_UPDATE_PER_EXTRA_TICK",
+     "value": "0.01"
+    },
+    {
+     "key": "DEFAULT_ORDER",
+     "value": "advance"
+    },
+    {
+     "key": "MILITARY_FORMATION_COMMAND_LIMIT_NO_COMMANDER",
+     "value": "20"
+    },
+    {
+     "key": "LOW_COMMAND_LIMIT_GRACE_PERIOD_DAYS",
+     "value": "30"
+    },
+    {
+     "key": "INVALID_NAVAL_MISSION_GRACE_PERIOD_DAYS",
+     "value": "10"
+    },
+    {
+     "key": "FORMATION_AUTO_MERGE_GRACE_PERIOD_DAYS",
+     "value": "3"
+    },
+    {
+     "key": "FORMATIONS_MERGE_DISTANCE",
+     "value": "1"
+    },
+    {
+     "key": "COMMANDER_SUFFICIENT_CAPACITY_MULT",
+     "value": "1.5"
+    },
+    {
+     "key": "UNNECESSARY_PROMOTION_PENALTY_YEARS",
+     "value": "5"
+    },
+    {
+     "key": "UNNECESSARY_PROMOTION_ARMED_FORCES_IG",
+     "value": "ig_armed_forces"
+    },
+    {
+     "key": "RECENTLY_PROMOTED_YEARS",
+     "value": "5"
+    },
+    {
+     "key": "MILITARY_FORMATION_ORGANIZATION_MIN",
+     "value": "0"
+    },
+    {
+     "key": "MILITARY_FORMATION_ORGANIZATION_MAX",
+     "value": "100"
+    },
+    {
+     "key": "MILITARY_FORMATION_ORGANIZATION_LOSS_RATE",
+     "value": "0.05"
+    },
+    {
+     "key": "MILITARY_FORMATION_ORGANIZATION_LOSS_MIN",
+     "value": "1"
+    },
+    {
+     "key": "MILITARY_FORMATION_ORGANIZATION_GAIN_MIN",
+     "value": "0.1"
+    },
+    {
+     "key": "MILITARY_FORMATION_ORGANIZATION_SPECIAL_UNITS_ADD",
+     "value": "-50"
+    },
+    {
+     "key": "MILITARY_FORMATION_ORGANIZATION_EXILE_MULT",
+     "value": "-1"
+    },
+    {
+     "key": "MILITARY_FORMATION_ORGANIZATION_SUPPLY_SHORTAGE_EFFECT_THRESHOLD",
+     "value": "0.25"
+    },
+    {
+     "key": "MILITARY_FORMATION_SHORTAGE_BATTALION_ORG_WEIGHT",
+     "value": "0.25"
+    },
+    {
+     "key": "MILITARY_FROMATION_MAX_RESUPPLY_RATIO_PER_WEEK",
+     "value": "0.1"
+    },
+    {
+     "key": "MILITARY_FORMATION_MIN_RESUPPLY_PER_WEEK",
+     "value": "10"
+    },
+    {
+     "key": "MOBILIZATION_OPTION_DIFFERENCE_ORGANIZATION_IMPACT",
+     "value": "20"
+    },
+    {
+     "key": "FLEET_PRESENCE_GAIN_PER_DAY",
+     "value": "0.02"
+    },
+    {
+     "key": "FLEET_PRESENCE_DECAY_PER_DAY",
+     "value": "0.02"
+    },
+    {
+     "key": "FLEET_PRESENCE_TRANSPORTING_OR_INVADING",
+     "value": "1"
+    },
+    {
+     "key": "FLEET_GUARANTEED_BATTLE_SIZE",
+     "value": "0.5"
+    },
+    {
+     "key": "FLEET_SPOT_BASE_CHANCE",
+     "value": "0.00005"
+    },
+    {
+     "key": "FLEET_SPOT_SCALING_MULTIPLIER",
+     "value": "0.01"
+    },
+    {
+     "key": "MILITARY_FORMATION_WEEKLY_MAX_UNIT_UPGRADES_ARMY",
+     "value": "0.1"
+    },
+    {
+     "key": "MILITARY_FORMATION_WEEKLY_MAX_UNIT_UPGRADES_FLEET",
+     "value": "0.05"
+    },
+    {
+     "key": "MANPOWER_RATIO_REQUIRED_TO_CLEAR_DEFEATED_ADMIRALS",
+     "value": "0.75"
+    },
+    {
+     "key": "MILITARY_FORMATION_AUTO_DEPLOY_DISTANCE_LIMIT",
+     "value": "250"
+    },
+    {
+     "key": "BASECAMP_WANTED_FORMATIONS_SCORE",
+     "value": "1"
+    },
+    {
+     "key": "BASECAMP_DISTANCE_SCORE_THRESHOLD",
+     "value": "100"
+    },
+    {
+     "key": "BASECAMP_DISTANCE_PENALTY",
+     "value": "0.4"
+    },
+    {
+     "key": "BASECAMP_DISTANCE_TO_HOME_HQ_PENALTY",
+     "value": "0.2"
+    },
+    {
+     "key": "BASECAMP_OWN_COUNTRY_SCORE",
+     "value": "0.2"
+    },
+    {
+     "key": "BASECAMP_STRATEGIC_OBJECT_SCORE",
+     "value": "1.1"
+    },
+    {
+     "key": "BASECAMP_NUM_PROVINCES_SCORE",
+     "value": "0.05"
+    },
+    {
+     "key": "BLOCKADE_TARGET_STRENGTH_MAXIMUM",
+     "value": "100000"
+    },
+    {
+     "key": "BLOCKADE_TARGET_STRENGTH_PER_TRADED_UNIT",
+     "value": "0.05"
+    },
+    {
+     "key": "BLOCKADE_TARGET_STRENGTH_PER_PRODUCED_UNIT",
+     "value": "0.075"
+    },
+    {
+     "key": "BLOCKADE_TARGET_STRENGTH_PER_MERCHANT_MARINE",
+     "value": "10"
+    },
+    {
+     "key": "BLOCKADE_WORLD_MARKET_ACCESS_IMPACT_SCALING",
+     "value": "0.75"
+    },
+    {
+     "key": "BLOCKADE_SHIPPING_LANE_IMPACT_SCALING",
+     "value": "0.75"
+    },
+    {
+     "key": "BLOCKADE_THROUGHPUT_IMPACT_SCALING",
+     "value": "0.75"
+    },
+    {
+     "key": "BLOCKADE_SEA_PRESENCE_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "BLOCKADE_FORCED_BATTLE_LEVEL",
+     "value": "1"
+    },
+    {
+     "key": "BOMBARDMENT_DEVASTATION_MAX",
+     "value": "25"
+    },
+    {
+     "key": "BOMBARDMENT_DEVASTATION_RATE",
+     "value": "0.2"
+    },
+    {
+     "key": "BOMBARDMENT_BUILDING_DAMAGE_BASE_CHANCE",
+     "value": "0.02"
+    },
+    {
+     "key": "BOMBARDMENT_SEA_PRESENCE_THRESHOLD",
+     "value": "0.1"
+    },
+    {
+     "key": "OFFICERS_TO_SERVICEMEN_RATIO_THRESHOLD",
+     "value": "0.75"
+    },
+    {
+     "key": "OFFICERS_TO_SERVICEMEN_RATIO_EFFECTIVENESS_FACTOR_MIN",
+     "value": "-0.5"
+    },
+    {
+     "key": "OFFICERS_TO_SERVICEMEN_RATIO_EFFECTIVENESS_FACTOR_MAX",
+     "value": "0"
+    },
+    {
+     "key": "SAILORS_PER_ASSIGNMENT_SLOT",
+     "value": "100"
+    },
+    {
+     "key": "SAILORS_PER_BUILDING_LEVEL",
+     "value": "1000"
+    },
+    {
+     "key": "ACTIVE_SHIP_LIVING_CREW_PERCENTAGE",
+     "value": "0.1"
+    },
+    {
+     "key": "DESTROYED_SHIP_LIVING_CREW_PERCENTAGE",
+     "value": "0"
+    },
+    {
+     "key": "MINIMUM_SHIP_CREW_PERCENTAGE_TO_DEPLOY",
+     "value": "0.1"
+    },
+    {
+     "key": "SHIP_PARTICIPATE_IN_UPRISING_CREW_PERCENTAGE",
+     "value": "0.33"
+    },
+    {
+     "key": "SHIP_MAINTENANCE_SHIPYARD_PREMIUM_FACTOR",
+     "value": "0.2"
+    },
+    {
+     "key": "SHIP_MAINTENANCE_GOODS_TO_CONSTRUCTION_GOODS_FACTOR",
+     "value": "0.002"
+    },
+    {
+     "key": "SHIP_UPKEEP_GOODS_TO_CONSTRUCTION_GOODS_FACTOR",
+     "value": "0.002"
+    },
+    {
+     "key": "SHIP_UPKEEP_GOODS_DOCKED_MULT",
+     "value": "-0.8"
+    },
+    {
+     "key": "SHIP_CONSTRUCTION_COST_MODIFICATION_LEVEL_FACTOR",
+     "value": "1.05"
+    },
+    {
+     "key": "SHIP_TEMPLATE_DEFAULT_MODIFICATION_LEVEL",
+     "value": "2"
+    },
+    {
+     "key": "LOGISTICS_CENTER_SUPPLY_PER_LEVEL",
+     "value": "10"
+    },
+    {
+     "key": "SUPPLY_SHIP_TYPE",
+     "value": "ship_type_supply_ship"
+    },
+    {
+     "key": "SUPPLY_SHIP_MAINTENANCE_COST_PER_SHIP",
+     "value": "1"
+    },
+    {
+     "key": "SHIP_CONSTRUCTION_MAINTENANCE_FRACTION",
+     "value": "0.0003"
+    },
+    {
+     "key": "SHIP_CONSTRUCTION_MAINTENANCE_PENALTY_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "SHIP_CONSTRUCTION_MAINTENANCE_MAX_HP_PENALTY_FRACTION",
+     "value": "0.05"
+    },
+    {
+     "key": "SHIP_CONSTRUCTION_MAINTENANCE_DAMAGE_RATIO",
+     "value": "0.2"
+    },
+    {
+     "key": "SUPPLY_SHIP_CONSTRUCTION_MAINTENANCE_FRACTION",
+     "value": "0.0003"
+    },
+    {
+     "key": "SUPPLY_SHIP_MAINTENANCE_STOCKPILE_REMOVAL_FRACTION",
+     "value": "0.05"
+    },
+    {
+     "key": "FLEET_RESUPPLY_SURPLUS",
+     "value": "0.25"
+    },
+    {
+     "key": "ARMY_RESUPPLY_SURPLUS",
+     "value": "0.25"
+    },
+    {
+     "key": "FLEET_SUPPLY_REPLENISH_SHIP_MULT",
+     "value": "1.1"
+    },
+    {
+     "key": "SHIP_POWER_PROJECTION_HULL_DAMAGE_MULTIPLIER",
+     "value": "0.33"
+    },
+    {
+     "key": "SHIP_POWER_PROJECTION_CREW_DAMAGE_MULTIPLIER",
+     "value": "0.33"
+    },
+    {
+     "key": "SHIP_POWER_PROJECTION_ARMOR_MULTIPLIER",
+     "value": "0.33"
+    },
+    {
+     "key": "SHIP_POWER_PROJECTION_HIT_POINTS_MULTIPLIER",
+     "value": "0.1"
+    },
+    {
+     "key": "SHIP_CREW_STARTING_VETERANCY_EXPERIENCE",
+     "value": "0"
+    },
+    {
+     "key": "SHIP_MAX_VETERANCY_EXPERIENCE",
+     "value": "1000"
+    },
+    {
+     "key": "SHIP_VETERANCY_EXPERIENCE_DECAY_RATE",
+     "value": "0.01"
+    },
+    {
+     "key": "SHIP_VETERANCY_EXPERIENCE_MIN_DECAY",
+     "value": "1"
+    },
+    {
+     "key": "SHIP_VETERANCY_BASE_EXPERIENCE_GAIN_BATTLE_VICTORY",
+     "value": "5"
+    },
+    {
+     "key": "SHIP_VETERANCY_BASE_EXPERIENCE_GAIN_BATTLE_DEFEAT",
+     "value": "2"
+    },
+    {
+     "key": "SHIP_VETERANCY_BASE_EXPERIENCE_GAIN_BATTLE_SUNK_ENEMY_SHIP",
+     "value": "1"
+    },
+    {
+     "key": "SHIP_COMBAT_POWER_HULL_DAMAGE_MULTIPLIER",
+     "value": "0.75"
+    },
+    {
+     "key": "SHIP_COMBAT_POWER_CREW_DAMAGE_MULTIPLIER",
+     "value": "0.25"
+    },
+    {
+     "key": "SHIP_COMBAT_POWER_SPEED_MULTIPLIER",
+     "value": "3"
+    },
+    {
+     "key": "COMBAT_UNIT_GROUP_MARINES_GROUP",
+     "value": "combat_unit_group_marines"
+    },
+    {
+     "key": "FLAGSHIP_CHANGE_COOLDOWN_MONTHS",
+     "value": "60"
+    },
+    {
+     "key": "FLAGSHIP_ON_WON_FAIR_COMBAT_POWER_RATIO_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "NAVAL_MISSION_SUPPLY_COST_FACTOR_SCALING",
+     "value": "0.1"
+    },
+    {
+     "key": "NAVAL_MISSION_BASE_MAX_SEA_REGIONS",
+     "value": "2"
+    },
+    {
+     "key": "NAVAL_MISSION_TYPE_INTERCEPT",
+     "value": "naval_mission_type_intercept"
+    },
+    {
+     "key": "NAVAL_MISSION_TYPE_PROJECT_POWER",
+     "value": "naval_mission_type_project_power"
+    },
+    {
+     "key": "FRIENDLY_PORT_MAX_SUPPLY_DISTANCE_DISCOUNT",
+     "value": "0.5"
+    },
+    {
+     "key": "FRIENDLY_PORT_MAX_DISTANCE",
+     "value": "2500"
+    },
+    {
+     "key": "AI_FIND_FLEET_EXPECTED_DISTANCE",
+     "value": "25000"
+    },
+    {
+     "key": "DEFAULT_ARMY_COLOR",
+     "value": "army_color_6"
+    },
+    {
+     "key": "DEFAULT_FLEET_COLOR",
+     "value": "fleet_color_8"
+    }
+   ]
+  },
+  {
+   "namespace": "NDiplomacy",
+   "values": [
+    {
+     "key": "DEFAULT_DIPLOMATIC_PLAY",
+     "value": "dp_default_treaty_article"
+    },
+    {
+     "key": "DEFAULT_WAR_GOAL_IS_HUMILIATION",
+     "value": "true"
+    },
+    {
+     "key": "DEFAULT_TRUCE_MONTHS",
+     "value": "60"
+    },
+    {
+     "key": "PEACE_DEAL_DURATION_IN_DAYS",
+     "value": "30"
+    },
+    {
+     "key": "PEACE_DEAL_COOLDOWN_IN_DAYS",
+     "value": "120"
+    },
+    {
+     "key": "PACT_REQUIRES_APPROVAL_MIN_FORCED_MONTHS",
+     "value": "12"
+    },
+    {
+     "key": "OBLIGATION_FORCED_PACT_MONTHS",
+     "value": "120"
+    },
+    {
+     "key": "SWAY_FORCED_PACT_MONTHS",
+     "value": "120"
+    },
+    {
+     "key": "EXPEL_DIPLOMATS_MONTHS",
+     "value": "60"
+    },
+    {
+     "key": "OBLIGATION_MONTHS",
+     "value": "120"
+    },
+    {
+     "key": "RECENTLY_CONQUERED_DURATION_MONTHS",
+     "value": "120"
+    },
+    {
+     "key": "RECENTLY_LIBERATED_DURATION_MONTHS",
+     "value": "120"
+    },
+    {
+     "key": "DIPLOMATIC_DEMAND_PENDING_APPROVAL_DAYS",
+     "value": "14"
+    },
+    {
+     "key": "DIPLOMATIC_DEMAND_TIMEOUT_DAYS",
+     "value": "14"
+    },
+    {
+     "key": "DIPLOMATIC_ACTION_COOLDOWN_DAYS",
+     "value": "0"
+    },
+    {
+     "key": "DIPLOMATIC_ACTION_PENDING_APPROVAL_DAYS",
+     "value": "30"
+    },
+    {
+     "key": "TREATY_PROPOSAL_PENDING_APPROVAL_DAYS",
+     "value": "30"
+    },
+    {
+     "key": "DIPLOMATIC_PACT_COST_DEFAULT",
+     "value": "0"
+    },
+    {
+     "key": "DIPLOMATIC_PACT_COST_MULT_FROM_INFAMOUS",
+     "value": "0.25"
+    },
+    {
+     "key": "DIPLOMATIC_PACT_COST_MULT_FROM_NOTORIOUS",
+     "value": "0.5"
+    },
+    {
+     "key": "DIPLOMATIC_PACT_COST_MULT_FROM_PARIAH",
+     "value": "1"
+    },
+    {
+     "key": "DIPLOMATIC_PACT_COST_LOBBY_CLOUT_MULT",
+     "value": "0.01"
+    },
+    {
+     "key": "DIPLOMATIC_PACT_COST_LOBBY_CLOUT_MAX",
+     "value": "0.5"
+    },
+    {
+     "key": "TREATY_ARTICLE_COST_LOBBY_CLOUT_MULT",
+     "value": "0.01"
+    },
+    {
+     "key": "TREATY_ARTICLE_COST_LOBBY_CLOUT_MAX",
+     "value": "0.5"
+    },
+    {
+     "key": "RIVALRY_BASE_SCALING",
+     "value": "0.25"
+    },
+    {
+     "key": "RIVALRY_SCALING_PER_INTEREST_LEVEL",
+     "value": "0.25"
+    },
+    {
+     "key": "RIVALRY_MAX_SCALING",
+     "value": "2"
+    },
+    {
+     "key": "RIVALRY_LOWER_RANK_SCALING_MULT",
+     "value": "0.5"
+    },
+    {
+     "key": "RIVALRY_SCALING_LOBBY_CLOUT_MULT",
+     "value": "0.01"
+    },
+    {
+     "key": "RIVALRY_SCALING_LOBBY_CLOUT_MAX",
+     "value": "0.5"
+    },
+    {
+     "key": "MIN_RELATIONS",
+     "value": "-100"
+    },
+    {
+     "key": "MAX_RELATIONS",
+     "value": "100"
+    },
+    {
+     "key": "START_RELATIONS",
+     "value": "0"
+    },
+    {
+     "key": "RELATIONS_THRESHOLD_FRIENDLY",
+     "value": "80"
+    },
+    {
+     "key": "RELATIONS_THRESHOLD_AMICABLE",
+     "value": "50"
+    },
+    {
+     "key": "RELATIONS_THRESHOLD_CORDIAL",
+     "value": "20"
+    },
+    {
+     "key": "RELATIONS_THRESHOLD_POOR",
+     "value": "-20"
+    },
+    {
+     "key": "RELATIONS_THRESHOLD_COLD",
+     "value": "-50"
+    },
+    {
+     "key": "RELATIONS_THRESHOLD_HOSTILE",
+     "value": "-80"
+    },
+    {
+     "key": "REQUIRED_IMPROVE_RELATIONS_PROGRESS",
+     "value": "100"
+    },
+    {
+     "key": "REQUIRED_DAMAGE_RELATIONS_PROGRESS",
+     "value": "-100"
+    },
+    {
+     "key": "INITIAL_LIBERTY_DESIRE",
+     "value": "50"
+    },
+    {
+     "key": "WEEKLY_LIBERTY_DESIRE_FROM_SUPPORT_INDEPENDENCE_TOTAL_MAX",
+     "value": "0.5"
+    },
+    {
+     "key": "MIN_INFAMY",
+     "value": "0"
+    },
+    {
+     "key": "MAX_INFAMY",
+     "value": "1000"
+    },
+    {
+     "key": "START_INFAMY",
+     "value": "0"
+    },
+    {
+     "key": "INFAMY_THRESHOLD_INFAMOUS",
+     "value": "25"
+    },
+    {
+     "key": "INFAMY_THRESHOLD_NOTORIOUS",
+     "value": "50"
+    },
+    {
+     "key": "INFAMY_THRESHOLD_PARIAH",
+     "value": "100"
+    },
+    {
+     "key": "BASE_YEARLY_INFAMY_DECAY_RATE",
+     "value": "5"
+    },
+    {
+     "key": "MIN_TENSION",
+     "value": "0"
+    },
+    {
+     "key": "MAX_TENSION",
+     "value": "100"
+    },
+    {
+     "key": "START_TENSION",
+     "value": "0"
+    },
+    {
+     "key": "TENSION_THRESHOLD_UNEASY",
+     "value": "25"
+    },
+    {
+     "key": "TENSION_THRESHOLD_TENSE",
+     "value": "50"
+    },
+    {
+     "key": "TENSION_THRESHOLD_VOLATILE",
+     "value": "75"
+    },
+    {
+     "key": "TENSION_DECAY_RATE",
+     "value": "5"
+    },
+    {
+     "key": "TENSION_INCREASE_MIN",
+     "value": "2.5"
+    },
+    {
+     "key": "TENSION_INCREASE_MAX",
+     "value": "20"
+    },
+    {
+     "key": "TENSION_NUM_PROVINCE_SCALING_BASE",
+     "value": "10"
+    },
+    {
+     "key": "TENSION_NUM_PROVINCE_SCALING_RATE",
+     "value": "2"
+    },
+    {
+     "key": "TENSION_INCREASE_RATE_ADJACENT",
+     "value": "0.5"
+    },
+    {
+     "key": "TENSION_UPRISING_CHANCE",
+     "value": "0.02"
+    },
+    {
+     "key": "SWAY_OFFER_TIMEOUT_DAYS",
+     "value": "14"
+    },
+    {
+     "key": "SWAY_OFFER_REJECTED_COOLDOWN_DAYS",
+     "value": "7"
+    },
+    {
+     "key": "SWAY_OFFER_CALL_IN_OBLIGATION_MANEUVERS_COST",
+     "value": "10"
+    },
+    {
+     "key": "SWAY_OFFER_OWE_OBLIGATION_MANEUVERS_COST",
+     "value": "10"
+    },
+    {
+     "key": "SWAY_OFFER_CALL_ALLY_MANEUVERS_COST",
+     "value": "20"
+    },
+    {
+     "key": "SWAY_OFFER_TRANSFER_STATE_MANEUVERS_COST",
+     "value": "10"
+    },
+    {
+     "key": "SWAY_OFFER_TRANSFER_SUBJECT_MANEUVERS_COST",
+     "value": "10"
+    },
+    {
+     "key": "SWAY_OFFER_BECOME_SUBJECT_MANEUVERS_COST",
+     "value": "5"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_JOIN_POWER_BLOC",
+     "value": "10"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_LEAVE_POWER_BLOC",
+     "value": "10"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_COLONIZATION_RIGHTS",
+     "value": "10"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_FORCE_NATIONALIZATION",
+     "value": "10"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_HUMILIATION",
+     "value": "20"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_UNIFICATION_LEADERSHIP",
+     "value": "30"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_OPEN_MARKET",
+     "value": "20"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_REGIME_CHANGE",
+     "value": "8"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_ANNEX_COUNTRY",
+     "value": "10"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_LIBERATE_COUNTRY",
+     "value": "30"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_MAKE_PROTECTORATE",
+     "value": "8"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_REDUCE_AUTONOMY",
+     "value": "5"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_INCREASE_AUTONOMY",
+     "value": "10"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_MAKE_TRIBUTARY",
+     "value": "8"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_MAKE_DOMINION",
+     "value": "8"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_CONQUER_STATE",
+     "value": "10"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_RETURN_STATE",
+     "value": "10"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_REVOKE_CLAIM",
+     "value": "5"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_REVOKE_ALL_CLAIMS",
+     "value": "0"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_CONTAIN_THREAT",
+     "value": "1000"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_TRANSFER_SUBJECT",
+     "value": "8"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_LIBERATE_SUBJECT",
+     "value": "20"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_UNIFICATION",
+     "value": "100"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_INDEPENDENCE",
+     "value": "20"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_SECESSION",
+     "value": "100"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_FACTOR",
+     "value": "10000"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_MULTIPLIER",
+     "value": "0.03"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_MULTIPLIER_MAX_PER_STATE",
+     "value": "2.5"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_MULTIPLIER_MAX_TOTAL",
+     "value": "5"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_HOMELAND_FACTOR",
+     "value": "-0.25"
+    },
+    {
+     "key": "SWAY_OFFER_WARGOAL_MANEUVERS_COST_UNINCORPORATED_FACTOR",
+     "value": "-0.5"
+    },
+    {
+     "key": "MAKE_WARGOAL_PRIMARY_DEMAND_MANEUVERS_COST",
+     "value": "0.5"
+    },
+    {
+     "key": "MAKE_WARGOAL_PRIMARY_DEMAND_INFAMY_AMOUNT",
+     "value": "0.5"
+    },
+    {
+     "key": "ALLY_WARGOAL_MAX_MANEUVERS_COST",
+     "value": "25"
+    },
+    {
+     "key": "PERSONAL_UNION_ACTION_NAME",
+     "value": "personal_union"
+    },
+    {
+     "key": "SUPPORT_SEPARATISM_ACTION_NAME",
+     "value": "support_separatism"
+    },
+    {
+     "key": "CULTURAL_MINORITY_MOVEMENT_TYPE",
+     "value": "movement_cultural_minority"
+    },
+    {
+     "key": "INCREASE_AUTONOMY_OF_SELF_NAME",
+     "value": "da_increase_autonomy_of_self"
+    },
+    {
+     "key": "INCREASE_AUTONOMY_OF_SUBJECT_ACTION_NAME",
+     "value": "da_increase_autonomy_of_subject"
+    },
+    {
+     "key": "DECREASE_AUTONOMY_OF_SUBJECT_ACTION_NAME",
+     "value": "da_decrease_autonomy"
+    },
+    {
+     "key": "WAR_GOAL_TRANSFER_SUBJECT_TYPE",
+     "value": "transfer_subject"
+    },
+    {
+     "key": "WAR_GOAL_UNIFICATION_TYPE",
+     "value": "unification"
+    },
+    {
+     "key": "WAR_GOAL_CONTAIN_THREAT_TYPE",
+     "value": "contain_threat"
+    },
+    {
+     "key": "WAR_GOAL_INDEPENDENCE_TYPE",
+     "value": "independence"
+    },
+    {
+     "key": "WAR_GOAL_HUMILIATION_TYPE",
+     "value": "humiliation"
+    },
+    {
+     "key": "WAR_GOAL_ENFORCE_TREATY_ARTICLE_TYPE",
+     "value": "enforce_treaty_article"
+    },
+    {
+     "key": "WAR_GOAL_CONQUER_STATE_TYPE",
+     "value": "conquer_state"
+    },
+    {
+     "key": "WAR_GOAL_REVOKE_ALL_CLAIMS_TYPE",
+     "value": "revoke_all_claims"
+    },
+    {
+     "key": "WAR_GOAL_RETURN_STATE_TYPE",
+     "value": "return_state"
+    },
+    {
+     "key": "WAR_GOAL_OPEN_MARKET_TYPE",
+     "value": "open_market"
+    },
+    {
+     "key": "WAR_GOAL_FOREIGN_INVESTMENT_RIGHTS_TYPE",
+     "value": "foreign_investment_rights"
+    },
+    {
+     "key": "WAR_GOAL_JOIN_POWER_BLOC_TYPE",
+     "value": "join_power_bloc"
+    },
+    {
+     "key": "WAR_GOAL_REPARATIONS_MONTHS",
+     "value": "60"
+    },
+    {
+     "key": "WAR_GOAL_COLONIZATION_RIGHTS_PACT_TYPE",
+     "value": "colonization_rights"
+    },
+    {
+     "key": "WAR_GOAL_COLONIZATION_RIGHTS_MONTHS",
+     "value": "60"
+    },
+    {
+     "key": "WAR_GOAL_OPEN_MARKET_MONTHS",
+     "value": "60"
+    },
+    {
+     "key": "WAR_GOAL_HUMILIATION_PACT_TYPE",
+     "value": "humiliation"
+    },
+    {
+     "key": "WAR_GOAL_HUMILIATION_MONTHS",
+     "value": "60"
+    },
+    {
+     "key": "WAR_GOAL_CONTAIN_THREAT_MONTHS",
+     "value": "60"
+    },
+    {
+     "key": "WAR_GOAL_MAKE_PROTECTORATE_SUBJECT_TYPE",
+     "value": "subject_type_protectorate"
+    },
+    {
+     "key": "WAR_GOAL_MAKE_TRIBUTARY_SUBJECT_TYPE",
+     "value": "subject_type_tributary"
+    },
+    {
+     "key": "WAR_GOAL_MAKE_DOMINION_SUBJECT_TYPE",
+     "value": "subject_type_dominion"
+    },
+    {
+     "key": "WAR_GOAL_TREATY_PORT_BUILDING_LEVEL",
+     "value": "1"
+    },
+    {
+     "key": "WAR_GOAL_LIBERATE_COUNTRY_LIBERATOR_START_RELATIONS",
+     "value": "50"
+    },
+    {
+     "key": "WAR_GOAL_LIBERATE_COUNTRY_OPPRESSOR_START_RELATIONS",
+     "value": "-50"
+    },
+    {
+     "key": "WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST",
+     "value": "10"
+    },
+    {
+     "key": "WAR_GOAL_REGIME_CHANGE_MONTHS",
+     "value": "60"
+    },
+    {
+     "key": "WAR_GOAL_REGIME_CHANGE_MAX_IDEOLOGICAL_OPINION",
+     "value": "-5"
+    },
+    {
+     "key": "WAR_GOAL_REGIME_CHANGE_MIN_LAW_PROGRESSIVENESS_DIFFERENCE",
+     "value": "50"
+    },
+    {
+     "key": "WAR_GOAL_INCREASE_AUTONOMY_MIN_LIBERTY_DESIRE",
+     "value": "75"
+    },
+    {
+     "key": "WAR_GOAL_INDEPENDENCE_MIN_LIBERTY_DESIRE",
+     "value": "90"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_POPULATION_SCALING_FACTOR",
+     "value": "10000"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER",
+     "value": "0.03"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_PER_STATE",
+     "value": "5"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_TOTAL",
+     "value": "50"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_HOMELAND_FACTOR",
+     "value": "-0.25"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_UNINCORPORATED_FACTOR",
+     "value": "-0.5"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_REBELLING_SUBJECT_MULT",
+     "value": "0.25"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_SUBJECT_MULT",
+     "value": "0.25"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD",
+     "value": "25"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_RELATIONS_TARGET_IMPACT",
+     "value": "-1"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_RELATIONS_INTEREST_IMPACT",
+     "value": "-0.5"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_CONQUER_STATE",
+     "value": "5"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_RETURN_STATE",
+     "value": "2"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_MAKE_PROTECTORATE",
+     "value": "2"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_MAKE_TRIBUTARY",
+     "value": "2"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_MAKE_DOMINION",
+     "value": "2"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_REDUCE_AUTONOMY",
+     "value": "2"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_TRANSFER_SUBJECT",
+     "value": "2"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_ANNEX_COUNTRY",
+     "value": "5"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_REGIME_CHANGE",
+     "value": "0.5"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_FORCE_NATIONALIZATION",
+     "value": "5"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_DIPLO_PLAY_BACK_DOWN_REFUND",
+     "value": "-0.75"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_DIPLO_PLAY_BACKER_REFUND",
+     "value": "-1"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_PEACE_REFUND",
+     "value": "-0.5"
+    },
+    {
+     "key": "WAR_GOAL_INFAMY_REDUCTION_FOR_TARGET",
+     "value": "-0.5"
+    },
+    {
+     "key": "WAR_OUTCOME_MIN_WARGOAL_IMPACT",
+     "value": "10"
+    },
+    {
+     "key": "WAR_OUTCOME_VICTORY_RATIO",
+     "value": "2"
+    },
+    {
+     "key": "WAR_OUTCOME_VICTORY_MIN_ENFORCEMENT_RATIO",
+     "value": "0.5"
+    },
+    {
+     "key": "DIPLOMATIC_PLAY_ABANDON_SUPPORT_RELATIONS_IMPACT",
+     "value": "50"
+    },
+    {
+     "key": "DIPLOMATIC_PLAY_ESCALATION_DAILY",
+     "value": "1"
+    },
+    {
+     "key": "DIPLOMATIC_PLAY_ESCALATION_PAUSE_FROM_ACTION",
+     "value": "5"
+    },
+    {
+     "key": "DIPLOMATIC_PLAY_ESCALATION_PAUSE_MAX",
+     "value": "20"
+    },
+    {
+     "key": "DIPLOMATIC_PLAY_OPENING_PHASE_END",
+     "value": "21"
+    },
+    {
+     "key": "DIPLOMATIC_PLAY_CLOSING_PHASE_START",
+     "value": "80"
+    },
+    {
+     "key": "DIPLOMATIC_PLAY_ESCALATION_WAR_BREAKOUT",
+     "value": "100"
+    },
+    {
+     "key": "COLONY_PROVINCE_BASE_SCORE",
+     "value": "10"
+    },
+    {
+     "key": "COLONY_PROVINCE_COASTAL_SCORE",
+     "value": "60"
+    },
+    {
+     "key": "COLONY_PROVINCE_ADJACENCY_SCORE",
+     "value": "25"
+    },
+    {
+     "key": "COLONY_PROVINCE_NO_ADJACENCY_MULT",
+     "value": "0.1"
+    },
+    {
+     "key": "COLONY_PROVINCE_RANDOM_FACTOR",
+     "value": "1.5"
+    },
+    {
+     "key": "BASE_WAR_SUPPORT",
+     "value": "100"
+    },
+    {
+     "key": "MAX_WAR_SUPPORT",
+     "value": "100"
+    },
+    {
+     "key": "MIN_WAR_SUPPORT",
+     "value": "-100"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_HISTORICAL_RELATIONS",
+     "value": "catalyst_historical_relationship"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_BECAME_RELEVANT",
+     "value": "catalyst_became_relevant"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_BECAME_IRRELEVANT",
+     "value": "catalyst_became_irrelevant"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_GAINED_LAND_BORDER",
+     "value": "catalyst_gained_land_border"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_LOST_LAND_BORDER",
+     "value": "catalyst_lost_land_border"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_MARKET_OPENED",
+     "value": "catalyst_market_opened"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_RELATIONS_INCREASED",
+     "value": "catalyst_relations_level_increased"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_RELATIONS_DECREASED",
+     "value": "catalyst_relations_level_decreased"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_DIPLOMATIC_DEMAND",
+     "value": "catalyst_diplomatic_demand"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_DIPLOMATIC_DEMAND_TARGET",
+     "value": "catalyst_diplomatic_demand_target"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_DIPLOMATIC_PLAY",
+     "value": "catalyst_diplomatic_play"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_DIPLOMATIC_PLAY_TARGET",
+     "value": "catalyst_diplomatic_play_target"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_AUTONOMY_INCREASED",
+     "value": "catalyst_autonomy_level_increased"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_AUTONOMY_DECREASED",
+     "value": "catalyst_autonomy_level_decreased"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_GAINED_INDEPENDENCE",
+     "value": "catalyst_gained_independence"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_BECAME_SUBJECT",
+     "value": "catalyst_became_subject"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_DIPLOMATIC_INCIDENT",
+     "value": "catalyst_diplomatic_incident"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_PACT_FORMED",
+     "value": "catalyst_pact_formed"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_PACT_BROKEN",
+     "value": "catalyst_pact_broken"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_ALLIANCE_FORMED",
+     "value": "catalyst_alliance_formed"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_ALLIANCE_BROKEN",
+     "value": "catalyst_alliance_broken"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_ALLIANCE_FORMED_WITH_RIVAL",
+     "value": "catalyst_alliance_with_rival"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_RIVAL_OF_RIVAL",
+     "value": "catalyst_rival_of_rival"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_INCREASED_RELATIONS_WITH_RIVAL",
+     "value": "catalyst_increased_relations_with_rival"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_DECREASED_RELATIONS_WITH_RIVAL",
+     "value": "catalyst_decreased_relations_with_rival"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_OPPOSED_IN_PLAY",
+     "value": "catalyst_opposed_in_play"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_ALLIES_IN_PLAY",
+     "value": "catalyst_allies_in_play"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_WARGOAL_ENFORCED",
+     "value": "catalyst_wargoal_enforced"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_STATE_CONQUERED",
+     "value": "catalyst_state_conquered"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_DIPLOMATIC_STRATEGY_CHANGED",
+     "value": "catalyst_diplomatic_strategy_changed"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_DECLARED_BANKRUPTCY",
+     "value": "catalyst_declared_bankruptcy"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_IDEOLOGICAL_DRIFT",
+     "value": "catalyst_ideological_drift"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_IDEOLOGICAL_ALIGNMENT",
+     "value": "catalyst_ideological_alignment"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_JOINED_SAME_BLOC",
+     "value": "catalyst_joined_same_bloc"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_JOINED_DIFFERENT_BLOC",
+     "value": "catalyst_joined_different_bloc"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_LEFT_POWER_BLOC",
+     "value": "catalyst_left_power_bloc"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_KICKED_OUT_OF_BLOC",
+     "value": "catalyst_kicked_out_of_bloc"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_JOURNAL_ENTRY",
+     "value": "catalyst_journal_entry"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_UNIFICATION_SUPPORT_ADDED",
+     "value": "catalyst_unification_support_added"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_UNIFICATION_SUPPORT_REMOVED",
+     "value": "catalyst_unification_support_removed"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_FRIENDLY_LOBBY_IN_GOVERNMENT",
+     "value": "catalyst_friendly_lobby_in_government"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_HOSTILE_LOBBY_IN_GOVERNMENT",
+     "value": "catalyst_hostile_lobby_in_government"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_NATIONALIZED_BUILDING",
+     "value": "catalyst_nationalized_building"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_OVERTAKEN_IN_PRESTIGE_RANK",
+     "value": "catalyst_overtaken_in_prestige_rank"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_REVOLUTION_SUCCESSFUL",
+     "value": "catalyst_revolution_successful"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_BECAME_RECOGNIZED",
+     "value": "catalyst_became_recognized"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_STRAIT_TOLL_HIGH",
+     "value": "catalyst_strait_toll_high"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_STRAIT_TOLL_REDUCED",
+     "value": "catalyst_strait_toll_reduced"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_STRAIT_NO_MILITARY",
+     "value": "catalyst_strait_no_military"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_STRAIT_CLOSED",
+     "value": "catalyst_strait_closed"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_STRAIT_OPENED",
+     "value": "catalyst_strait_opened"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_TYPE_STRAIT_PARTIALLY_OPENED",
+     "value": "catalyst_strait_partially_opened"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE",
+     "value": "10"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_MIN_CHANGE_FOR_IDEOLOGICAL_DRIFT",
+     "value": "-10"
+    },
+    {
+     "key": "DIPLOMATIC_CATALYST_MIN_CHANGE_FOR_IDEOLOGICAL_ALIGNMENT",
+     "value": "10"
+    },
+    {
+     "key": "TOP_PRESTIGE_RANK_BONUS_THRESHOLD",
+     "value": "10"
+    },
+    {
+     "key": "TOP_PRESTIGE_RANK_BONUS_SCALE",
+     "value": "1"
+    },
+    {
+     "key": "COUNTRY_TIER_CITY_STATE_PRESTIGE",
+     "value": "0"
+    },
+    {
+     "key": "COUNTRY_TIER_PRINCIPALITY_PRESTIGE",
+     "value": "5"
+    },
+    {
+     "key": "COUNTRY_TIER_GRAND_PRINCIPALITY_PRESTIGE",
+     "value": "10"
+    },
+    {
+     "key": "COUNTRY_TIER_KINGDOM_PRESTIGE",
+     "value": "15"
+    },
+    {
+     "key": "COUNTRY_TIER_EMPIRE_PRESTIGE",
+     "value": "25"
+    },
+    {
+     "key": "COUNTRY_TIER_HEGEMONY_PRESTIGE",
+     "value": "50"
+    },
+    {
+     "key": "PRESTIGE_FROM_COUNTRY_GDP_DIVISOR",
+     "value": "1000000"
+    },
+    {
+     "key": "PRESTIGE_FROM_COUNTRY_GDP",
+     "value": "3"
+    },
+    {
+     "key": "PRESTIGE_FROM_SUBJECT_GDP",
+     "value": "1.5"
+    },
+    {
+     "key": "PRESTIGE_FROM_ARMY_POWER_PROJECTION",
+     "value": "0.03"
+    },
+    {
+     "key": "PRESTIGE_FROM_NAVY_POWER_PROJECTION",
+     "value": "0.006"
+    },
+    {
+     "key": "PRESTIGE_FROM_SUBJECT_ARMY_POWER_PROJECTION",
+     "value": "0.0005"
+    },
+    {
+     "key": "PRESTIGE_FROM_SUBJECT_NAVY_POWER_PROJECTION",
+     "value": "0.01"
+    },
+    {
+     "key": "PRESTIGE_FROM_PRESTIGE_GOODS_PRODUCTION",
+     "value": "3"
+    },
+    {
+     "key": "PRESTIGE_MIN_NUM_COUNTRIES",
+     "value": "100"
+    },
+    {
+     "key": "FILLER_COUNTRY_PRESTIGE",
+     "value": "15"
+    },
+    {
+     "key": "DAYS_TO_LOSE_POWER_RANK",
+     "value": "365"
+    },
+    {
+     "key": "POWER_RANK_LOSS_THRESHOLD",
+     "value": "0.9"
+    },
+    {
+     "key": "ARMY_POWER_PROJECTION_MODIFIER_MAX_SCALING",
+     "value": "1000"
+    },
+    {
+     "key": "NAVY_POWER_PROJECTION_MODIFIER_MAX_SCALING",
+     "value": "1000"
+    },
+    {
+     "key": "DEFAULT_STATES_REQUIRED_TO_RELEASE_COUNTRY",
+     "value": "0"
+    },
+    {
+     "key": "DEFAULT_STATES_REQUIRED_TO_FORM_COUNTRY",
+     "value": "0.75"
+    },
+    {
+     "key": "RELEASE_COUNTRY_AS_SUBJECT_RELATIONS_BOOST",
+     "value": "30"
+    },
+    {
+     "key": "RELEASE_COUNTRY_AS_INDEPENDENT_RELATIONS_BOOST",
+     "value": "50"
+    },
+    {
+     "key": "INTEREST_NUM_DAYS_CHANGE",
+     "value": "30"
+    },
+    {
+     "key": "INTEREST_MAX_INVOLVEMENT",
+     "value": "10000"
+    },
+    {
+     "key": "INTEREST_GROWTH_RATIO",
+     "value": "0.02"
+    },
+    {
+     "key": "INTEREST_MIN_GROWTH",
+     "value": "10"
+    },
+    {
+     "key": "INTEREST_DECAY_SPEED",
+     "value": "20"
+    },
+    {
+     "key": "INTEREST_CAPITAL_TARGET_INVOLVEMENT",
+     "value": "2500"
+    },
+    {
+     "key": "INTEREST_CAPITAL_NEIGHBOR_TARGET_INVOLVEMENT",
+     "value": "1500"
+    },
+    {
+     "key": "INTEREST_STATE_OR_CLAIM_TARGET_INVOLVEMENT",
+     "value": "7500"
+    },
+    {
+     "key": "INTEREST_STATE_OR_CLAIM_MIN_TARGET_INVOLVEMENT",
+     "value": "1500"
+    },
+    {
+     "key": "INTEREST_CLAIM_LOCALITY_WEIGHT",
+     "value": "0.2"
+    },
+    {
+     "key": "INTEREST_GDP_TARGET_INVOLVEMENT",
+     "value": "2500"
+    },
+    {
+     "key": "INTEREST_ARMY_TARGET_INVOLVEMENT",
+     "value": "0.33"
+    },
+    {
+     "key": "INTEREST_NAVY_TARGET_INVOLVEMENT",
+     "value": "0.33"
+    },
+    {
+     "key": "INTEREST_NAVY_MISSION_MULTI_REGION_BONUS",
+     "value": "0.75"
+    },
+    {
+     "key": "INTEREST_MIN_INVOLVEMENT_RATIO",
+     "value": "0.1"
+    },
+    {
+     "key": "REGION_LOCALITY_SHARE_THRESHOLD",
+     "value": "0.25"
+    },
+    {
+     "key": "REGION_LOCALITY_COUNTRY_INCORPORATED_SHARE_THRESHOLD",
+     "value": "0.25"
+    },
+    {
+     "key": "INTEREST_TIER_MIN_RELEVANT_RANK",
+     "value": "2"
+    },
+    {
+     "key": "INTEREST_TIER_MIN_VIOLATE_SOVEREIGNTY_RANK",
+     "value": "2"
+    },
+    {
+     "key": "INTEREST_ARMY_INVOLVEMENT_CAP",
+     "value": "5000"
+    },
+    {
+     "key": "INTEREST_NAVY_INVOLVEMENT_CAP",
+     "value": "5000"
+    },
+    {
+     "key": "INTEREST_TREATY_PACT_INVOLVEMENT_CAP",
+     "value": "5000"
+    },
+    {
+     "key": "INTEREST_POWER_BLOC_MEMBER_TARGET_INVOLVEMENT",
+     "value": "2500"
+    },
+    {
+     "key": "INTEREST_TIER_REDUCTION_GRACE_PERIOD_DAYS",
+     "value": "30"
+    },
+    {
+     "key": "STRAIT_MIN_INTEREST_TIER_FOR_CATALYST",
+     "value": "1"
+    },
+    {
+     "key": "REGION_LOCALITY_STATES_WEIGHT",
+     "value": "1"
+    },
+    {
+     "key": "REGION_LOCALITY_POPULATION_WEIGHT",
+     "value": "1.25"
+    },
+    {
+     "key": "RELATION_PENALTY_OVERLORD_KICK_BACKER_SUBJECT",
+     "value": "-30"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_MIN",
+     "value": "0"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_MAX",
+     "value": "5"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_GDP_RATIO_BY_OTHER_FACTOR",
+     "value": "5"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_GDP_RATIO_BY_OTHER_MIN",
+     "value": "0"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_GDP_RATIO_BY_OTHER_MAX",
+     "value": "5"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_OTHER_GDP_RATIO_OWNED_FACTOR",
+     "value": "20"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_OTHER_GDP_RATIO_OWNED_MIN",
+     "value": "-5"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_OTHER_GDP_RATIO_OWNED_MAX",
+     "value": "0"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_GDP_PERCENTAGE_FACTOR",
+     "value": "1"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_GDP_PERCENTAGE_MIN",
+     "value": "0"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_GDP_PERCENTAGE_MAX",
+     "value": "1"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_POP_GOODS_DEPENDENCE_ON_OTHER_FACTOR",
+     "value": "3"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_POP_GOODS_DEPENDENCE_ON_OTHER_MIN",
+     "value": "0"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_POP_GOODS_DEPENDENCE_ON_OTHER_MAX",
+     "value": "2"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_OTHER_POP_GOODS_DEPENDENCE_FACTOR",
+     "value": "3"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_OTHER_POP_GOODS_DEPENDENCE_MIN",
+     "value": "-2"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_OTHER_POP_GOODS_DEPENDENCE_MAX",
+     "value": "0"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_TRADE_DEPENDENCE_FACTOR",
+     "value": "3"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_TRADE_DEPENDENCE_MIN",
+     "value": "0"
+    },
+    {
+     "key": "ECONOMIC_DEPENDENCE_TRADE_DEPENDENCE_MAX",
+     "value": "3"
+    },
+    {
+     "key": "RELATIONS_CHANGE_INVESTORS_MONOPOLY_CREATED",
+     "value": "-10"
+    },
+    {
+     "key": "TREATY_SIGNING_STATE_WEIGHT_CAPITAL",
+     "value": "1"
+    },
+    {
+     "key": "TREATY_SIGNING_STATE_WEIGHT_HIGHEST_GDP",
+     "value": "1"
+    },
+    {
+     "key": "TREATY_SIGNING_STATE_WEIGHT_SECOND_HIGHEST_GDP",
+     "value": "1"
+    },
+    {
+     "key": "TREATY_SIGNING_HUB_WEIGHT_CITY",
+     "value": "5"
+    },
+    {
+     "key": "TREATY_SIGNING_HUB_WEIGHT_PORT",
+     "value": "3"
+    },
+    {
+     "key": "TREATY_SIGNING_HUB_WEIGHT_FARM",
+     "value": "2"
+    },
+    {
+     "key": "TREATY_SIGNING_HUB_WEIGHT_MINE",
+     "value": "1"
+    },
+    {
+     "key": "TREATY_SIGNING_HUB_WEIGHT_WOOD",
+     "value": "1"
+    },
+    {
+     "key": "MAX_TREATY_OBLIGATIONS_DELAY_DAYS",
+     "value": "3650"
+    },
+    {
+     "key": "BINDING_PERIOD_THRESHOLD_TO_EFFECTUATE_TREATY_OBLIGATIONS_DAYS",
+     "value": "30"
+    },
+    {
+     "key": "TREATY_ARTICLE_MONEY_TRANSFER_ARTICLE_TYPE",
+     "value": "money_transfer"
+    },
+    {
+     "key": "TREATY_ARTICLE_TREATY_PORT_ARTICLE_TYPE",
+     "value": "treaty_port"
+    },
+    {
+     "key": "TREATY_ARTICLE_INVESTMENT_RIGHTS_ARTICLE_TYPE",
+     "value": "foreign_investment_rights"
+    },
+    {
+     "key": "TREATY_ARTICLE_LAW_COMMITMENT_ARTICLE_TYPE",
+     "value": "law_commitment"
+    },
+    {
+     "key": "TREATY_ARTICLE_STRAIT_ACCESS_ARTICLE_TYPE",
+     "value": "strait_access"
+    },
+    {
+     "key": "TREATY_ARTICLE_TOLL_EXEMPTION_ARTICLE_TYPE",
+     "value": "toll_exemption"
+    },
+    {
+     "key": "TREATY_ARTICLE_NO_TOLLS_ARTICLE_TYPE",
+     "value": "no_tolls"
+    },
+    {
+     "key": "TREATY_ARTICLE_NO_STRAIT_CLOSURE_ARTICLE_TYPE",
+     "value": "no_strait_closure"
+    },
+    {
+     "key": "DEFAULT_WAR_REPARATIONS_MONEY_TRANSFER",
+     "value": "0.1"
+    },
+    {
+     "key": "TREATY_PROPOSAL_COOLDOWN_DAYS",
+     "value": "7"
+    },
+    {
+     "key": "TREATY_DEFAULT_BINDING_DURATION_YEARS",
+     "value": "5"
+    },
+    {
+     "key": "TREATY_THREATEN_HOSTILITIES_DURATION_DAYS",
+     "value": "365"
+    },
+    {
+     "key": "THREATEN_NAVAL_HOSTILITIES_COOLDOWN_DAYS",
+     "value": "1825"
+    },
+    {
+     "key": "NAVAL_HOSTILITIES_POINTS_MAX",
+     "value": "100"
+    },
+    {
+     "key": "NAVAL_VULNERABILITY_MAX",
+     "value": "1"
+    },
+    {
+     "key": "NAVAL_VULNERABILITY_TRADE_MULTIPLIER",
+     "value": "0.75"
+    },
+    {
+     "key": "NAVAL_VULNERABILITY_COASTAL_GDP_MULTIPLIER",
+     "value": "0.5"
+    },
+    {
+     "key": "NAVAL_VULNERABILITY_PRESTIGE_MULTIPLIER",
+     "value": "1"
+    },
+    {
+     "key": "NAVAL_HOSTILITIES_POINTS_SHIPS_SUNK_AT_FULL_FLEET",
+     "value": "500"
+    },
+    {
+     "key": "NAVAL_HOSTILITIES_POINTS_BLOCKADE_GDP_WEEKLY",
+     "value": "20"
+    },
+    {
+     "key": "NAVAL_HOSTILITIES_POINTS_PIRACY_GDP_WEEKLY",
+     "value": "20"
+    },
+    {
+     "key": "NAVAL_HOSTILITIES_POINTS_BOMBARDMENT_DEVASTATION",
+     "value": "20"
+    },
+    {
+     "key": "NAVAL_HOSTILITIES_POINTS_BOMBARDMENT_BUILDING_DESTROYED",
+     "value": "10"
+    },
+    {
+     "key": "PAST_TEMPORARY_HOSTILITIES_KEEP_YEARS",
+     "value": "20"
+    },
+    {
+     "key": "PIRACY_DAMAGE_TRACKING_WEEKS",
+     "value": "26"
+    }
+   ]
+  },
+  {
+   "namespace": "NPowerBlocs",
+   "values": [
+    {
+     "key": "MAX_PRINCIPLES",
+     "value": "4"
+    },
+    {
+     "key": "INITIAL_PRINCIPLE_LEVELS",
+     "value": "1"
+    },
+    {
+     "key": "FORMATION_COOLDOWN_MONTHS",
+     "value": "24"
+    },
+    {
+     "key": "JOIN_COOLDOWN_MONTHS",
+     "value": "6"
+    },
+    {
+     "key": "LEAVE_COOLDOWN_MONTHS",
+     "value": "6"
+    },
+    {
+     "key": "MIN_MEMBERS",
+     "value": "2"
+    },
+    {
+     "key": "LEVERAGE_LOBBY_CLOUT_FACTOR",
+     "value": "500"
+    },
+    {
+     "key": "INVITE_ACTION_NAME",
+     "value": "invite_to_power_bloc"
+    },
+    {
+     "key": "JOIN_ACTION_NAME",
+     "value": "join_power_bloc"
+    },
+    {
+     "key": "MAX_MANDATE_PROGRESS",
+     "value": "2000"
+    },
+    {
+     "key": "MAX_MANDATES",
+     "value": "3"
+    },
+    {
+     "key": "PRINCIPLE_SELECTION_COOLDOWN_DAYS",
+     "value": "90"
+    },
+    {
+     "key": "POWER_STRUGGLE_PRESTIGE_THRESHOLD_START",
+     "value": "1.2"
+    },
+    {
+     "key": "POWER_STRUGGLE_PRESTIGE_THRESHOLD_FAIL",
+     "value": "1.15"
+    },
+    {
+     "key": "POWER_STRUGGLE_DURATION_SUCCESS_MONTHS",
+     "value": "12"
+    },
+    {
+     "key": "POWER_STRUGGLE_DURATION_FACTOR_FOR_FOUNDER",
+     "value": "0.75"
+    },
+    {
+     "key": "COHESION_WEEKLY_DRIFT_MAX",
+     "value": "1"
+    },
+    {
+     "key": "COHESION_TARGET_MAX",
+     "value": "100"
+    },
+    {
+     "key": "POWER_BLOC_INFLUENCE_COST",
+     "value": "500"
+    },
+    {
+     "key": "MAX_LEVERAGE",
+     "value": "1000"
+    },
+    {
+     "key": "LEVERAGE_WEEKLY_DRIFT_FACTOR",
+     "value": "0.02"
+    },
+    {
+     "key": "LEVERAGE_WEEKLY_DRIFT_MIN",
+     "value": "1"
+    },
+    {
+     "key": "COUNTRY_POPULATION_LEVERAGE_RESISTANCE_MODIFIER_DIVISOR",
+     "value": "1000000"
+    },
+    {
+     "key": "COUNTRY_POPULATION_LEVERAGE_RESISTANCE_MODIFIER_MAX_MULTIPLIER",
+     "value": "100"
+    }
+   ]
+  },
+  {
+   "namespace": "NEvents",
+   "values": [
+    {
+     "key": "DEFAULT_MONTHS_VALID",
+     "value": "-1"
+    },
+    {
+     "key": "DEFAULT_GUI_WINDOW_TYPE",
+     "value": "event_window"
+    },
+    {
+     "key": "NUM_DAYS_TO_AUTO_OPEN_EVENT",
+     "value": "30"
+    }
+   ]
+  },
+  {
+   "namespace": "NTechnology",
+   "values": [
+    {
+     "key": "TECH_SPREAD_RANDOM_RANGE",
+     "value": "0.5"
+    },
+    {
+     "key": "TECH_AHEAD_OF_TIME_PENALTY_FACTOR",
+     "value": "0.25"
+    },
+    {
+     "key": "NATIONALISM_TECHNOLOGY_TYPE",
+     "value": "nationalism"
+    },
+    {
+     "key": "PAN_NATIONALISM_TECHNOLOGY_TYPE",
+     "value": "pan-nationalism"
+    }
+   ]
+  },
+  {
+   "namespace": "NCharacters",
+   "values": [
+    {
+     "key": "NUM_RANDOM_NAME_TRIES_FOR_UNIQUENESS",
+     "value": "3"
+    },
+    {
+     "key": "SET_RULER_NUM_OPTIONS",
+     "value": "3"
+    },
+    {
+     "key": "SET_RULER_POOL_SIZE",
+     "value": "7"
+    },
+    {
+     "key": "RULER_MIN_AGE_FOR_HEIR",
+     "value": "20"
+    },
+    {
+     "key": "RULER_AGE_FOR_HEIR_CHANCE_BOOST",
+     "value": "30"
+    },
+    {
+     "key": "RULER_HEIR_GENERATION_CHANCE",
+     "value": "0.001"
+    },
+    {
+     "key": "RULER_HEIR_CHANCE_BOOST_SCALE",
+     "value": "0.001"
+    },
+    {
+     "key": "AGE_GENERATION_STARTVAL",
+     "value": "20"
+    },
+    {
+     "key": "AGE_GENERATION_DICE_ROLL_MAGNITUDE",
+     "value": "6"
+    },
+    {
+     "key": "AGE_GENERATION_NUM_DICE_ROLLS",
+     "value": "5"
+    },
+    {
+     "key": "RECRUIT_COMMANDER_NUM_OPTIONS",
+     "value": "3"
+    },
+    {
+     "key": "RECRUIT_COMMANDER_POOL_SIZE",
+     "value": "3"
+    },
+    {
+     "key": "RECRUIT_COMMANDER_VALUE_MARGINAL",
+     "value": "-50"
+    },
+    {
+     "key": "RECRUIT_COMMANDER_VALUE_HISTORICAL",
+     "value": "50"
+    },
+    {
+     "key": "HISTORICAL_USAGE_CHANCE_MULT",
+     "value": "2"
+    },
+    {
+     "key": "RECRUIT_COMMANDER_VALUE_AGE_MULT",
+     "value": "0.5"
+    },
+    {
+     "key": "RECRUIT_COMMANDER_VALUE_SAME_IGS",
+     "value": "-40"
+    },
+    {
+     "key": "RECRUIT_COMMANDER_REMOVE_AGE",
+     "value": "55"
+    },
+    {
+     "key": "COMMANDER_START_RANK",
+     "value": "1"
+    },
+    {
+     "key": "HIGHEST_PROMOTION_RANK",
+     "value": "5"
+    },
+    {
+     "key": "RULER_COMMANDER_START_RANK",
+     "value": "6"
+    },
+    {
+     "key": "MIN_POPULARITY",
+     "value": "-100"
+    },
+    {
+     "key": "MAX_POPULARITY",
+     "value": "100"
+    },
+    {
+     "key": "POPULARITY_HATED_THRESHOLD",
+     "value": "-50"
+    },
+    {
+     "key": "POPULARITY_DISLIKED_THRESHOLD",
+     "value": "-25"
+    },
+    {
+     "key": "POPULARITY_LIKED_THRESHOLD",
+     "value": "25"
+    },
+    {
+     "key": "POPULARITY_LOVED_THRESHOLD",
+     "value": "50"
+    },
+    {
+     "key": "POPULARITY_AUTHORITY_FACTOR",
+     "value": "1"
+    },
+    {
+     "key": "ROLE_RULER",
+     "value": "character_role_ruler"
+    },
+    {
+     "key": "ROLE_HEIR",
+     "value": "character_role_heir"
+    },
+    {
+     "key": "ROLE_IG_LEADER",
+     "value": "character_role_ig_leader"
+    },
+    {
+     "key": "DEFAULT_CHARACTER_ROLE",
+     "value": "character_role_politician"
+    },
+    {
+     "key": "DEFAULT_TITLE_PREPOSITION",
+     "value": "PREP_IN"
+    },
+    {
+     "key": "CHARACTER_HOME_STATE_HOMELAND_MIN_WEIGHT",
+     "value": "1000"
+    },
+    {
+     "key": "CHARACTER_HOME_STATE_TRY_EXCLUDE_STATE_WEIGHT",
+     "value": "0.001"
+    },
+    {
+     "key": "CHARACTER_HOME_STATE_CAPITAL_WEIGHT",
+     "value": "10"
+    },
+    {
+     "key": "CHARACTER_TEMPLATE_CULTURE_ACCEPTED_THRESHOLD",
+     "value": "60"
+    },
+    {
+     "key": "CHARACTER_TEMPLATE_RELIGION_ACCEPTED_THRESHOLD",
+     "value": "15"
+    },
+    {
+     "key": "MAX_LOYALTY",
+     "value": "100"
+    },
+    {
+     "key": "LOYALTY_FROM_IG_APPROVAL",
+     "value": "5"
+    },
+    {
+     "key": "LOYALTY_FROM_IG_APPROVAL_MIN",
+     "value": "-50"
+    },
+    {
+     "key": "LOYALTY_FROM_IG_APPROVAL_MAX",
+     "value": "50"
+    },
+    {
+     "key": "LOYALTY_FROM_IDEOLOGY_ENACTED",
+     "value": "25"
+    },
+    {
+     "key": "LOYALTY_FROM_IDEOLOGY_ENACTING",
+     "value": "25"
+    },
+    {
+     "key": "LOYALTY_FROM_IDEOLOGY_MIN",
+     "value": "-50"
+    },
+    {
+     "key": "LOYALTY_FROM_IDEOLOGY_MAX",
+     "value": "50"
+    },
+    {
+     "key": "LOYALTY_UNCERTAIN_THRESHOLD",
+     "value": "25"
+    },
+    {
+     "key": "LOYALTY_NEUTRAL_THRESHOLD",
+     "value": "50"
+    },
+    {
+     "key": "LOYALTY_RELIABLE_THRESHOLD",
+     "value": "75"
+    },
+    {
+     "key": "LOYALTY_FAITHFUL_THRESHOLD",
+     "value": "100"
+    },
+    {
+     "key": "MAX_PROMINENCE",
+     "value": "100"
+    },
+    {
+     "key": "PROMINENCE_FROM_POPULARITY",
+     "value": "0.25"
+    },
+    {
+     "key": "PROMINENCE_NOTEWORTHY_THRESHOLD",
+     "value": "10"
+    },
+    {
+     "key": "PROMINENCE_SIGNIFICANT_THRESHOLD",
+     "value": "25"
+    },
+    {
+     "key": "PROMINENCE_IMPORTANT_THRESHOLD",
+     "value": "50"
+    },
+    {
+     "key": "PROMINENCE_EMINENT_THRESHOLD",
+     "value": "75"
+    },
+    {
+     "key": "PROMINENCE_PREEMINENT_THRESHOLD",
+     "value": "100"
+    },
+    {
+     "key": "PROMINENCE_IG_MIN_MULTIPLIER",
+     "value": "0.05"
+    },
+    {
+     "key": "HISTORICAL_CHARACTER_IDEOLOGY_LEADER_FACTOR",
+     "value": "2"
+    },
+    {
+     "key": "HOLDING_TYPE_RANDOM_FACTOR",
+     "value": "1"
+    },
+    {
+     "key": "HOLDING_REVENUE_SCALING_GDP_DIVISOR",
+     "value": "1250"
+    },
+    {
+     "key": "HOLDING_REVENUE_SCALING_MIN",
+     "value": "0.2"
+    },
+    {
+     "key": "HOLDING_REVENUE_SCALING_MAX",
+     "value": "1"
+    },
+    {
+     "key": "AGITATOR_MOVEMENT_SUPPORT_LITERACY_WEIGHT",
+     "value": "0.75"
+    },
+    {
+     "key": "AGITATOR_MOVEMENT_SUPPORT_IG_MEMBERSHIP_WEIGHT",
+     "value": "0.75"
+    },
+    {
+     "key": "AGITATOR_MOVEMENT_SUPPORT_BASE_FACTOR",
+     "value": "15"
+    },
+    {
+     "key": "AGITATOR_MOVEMENT_SUPPORT_POPULARITY_FACTOR",
+     "value": "0.15"
+    },
+    {
+     "key": "MIN_YEARS_OF_SERVICE_FOR_COMMANDER_IG_LEADER",
+     "value": "5"
+    },
+    {
+     "key": "TARGET_NUM_POOL_POLITICIANS_POWERFUL_IG",
+     "value": "3"
+    },
+    {
+     "key": "TARGET_NUM_POOL_POLITICIANS_INFLUENTIAL_IG",
+     "value": "2"
+    },
+    {
+     "key": "TARGET_NUM_POOL_POLITICIANS_MARGINAL_IG",
+     "value": "0"
+    },
+    {
+     "key": "CHILD_TRAIT",
+     "value": "trait_child"
+    },
+    {
+     "key": "ADULT_AGE",
+     "value": "16"
+    },
+    {
+     "key": "OLD_AGE",
+     "value": "60"
+    },
+    {
+     "key": "VOIDED_CHARACTER_DEFAULT_DURATION",
+     "value": "12"
+    },
+    {
+     "key": "INHERIT_RECESSIVE_GENE_CHANCE",
+     "value": "0.25"
+    },
+    {
+     "key": "AGITATOR_EXPECTED_SPAWN_INTERVAL_0_LITERACY",
+     "value": "12"
+    },
+    {
+     "key": "AGITATOR_EXPECTED_SPAWN_INTERVAL_100_LITERACY",
+     "value": "2"
+    },
+    {
+     "key": "WEEKLY_CONDITION_CHANCE",
+     "value": "0.03"
+    },
+    {
+     "key": "MAX_EXPECTED_TRAIT_VALUE",
+     "value": "12"
+    },
+    {
+     "key": "MAX_TRAITS_PERSONALITY",
+     "value": "2"
+    },
+    {
+     "key": "MAX_TRAITS_SKILL",
+     "value": "2"
+    },
+    {
+     "key": "MAX_TRAITS_CONDITION",
+     "value": "2"
+    },
+    {
+     "key": "TRAIT_GAIN_DIVISOR",
+     "value": "100"
+    },
+    {
+     "key": "DEFAULT_TRAIT_GAIN",
+     "value": "0.25"
+    },
+    {
+     "key": "TRAIT_GAIN_POLITICIAN_POWERFUL",
+     "value": "0.1"
+    },
+    {
+     "key": "TRAIT_GAIN_RULER",
+     "value": "0.1"
+    },
+    {
+     "key": "TRAIT_GAIN_COMMANDER_RECRUITABLE",
+     "value": "0.05"
+    },
+    {
+     "key": "TRAIT_GAIN_IN_EXILE_POOL",
+     "value": "0.1"
+    },
+    {
+     "key": "TRAIT_GAIN_VOIDED",
+     "value": "0"
+    },
+    {
+     "key": "MIN_CHARACTER_HEALTH",
+     "value": "0"
+    },
+    {
+     "key": "MAX_CHARACTER_HEALTH",
+     "value": "2"
+    },
+    {
+     "key": "CHARACTER_LIFE_EXPECTANCY_BASE_YEARS",
+     "value": "75"
+    },
+    {
+     "key": "CHARACTER_LIFE_EXPECTANCY_STDDEV",
+     "value": "5"
+    },
+    {
+     "key": "CHARACTER_LIFE_EXPECTANCY_CUTOFF",
+     "value": "3"
+    },
+    {
+     "key": "CHARACTER_LIFE_EXPECTANCY_DELTA_YEARS_BELOW_BASELINE",
+     "value": "30"
+    },
+    {
+     "key": "CHARACTER_LIFE_EXPECTANCY_DELTA_YEARS_ABOVE_BASELINE",
+     "value": "15"
+    },
+    {
+     "key": "CHARACTER_LIFE_EXPECTANCY_DELTA_LERP_LOWER_BOUND",
+     "value": "0.5"
+    },
+    {
+     "key": "CHARACTER_LIFE_EXPECTANCY_DELTA_LERP_UPPER_BOUND",
+     "value": "1.5"
+    },
+    {
+     "key": "GUARANTEED_SURVIVABILITY_DAYS_MIN",
+     "value": "30"
+    },
+    {
+     "key": "GUARANTEED_SURVIVABILITY_DAYS_MAX",
+     "value": "180"
+    },
+    {
+     "key": "INTERACTION_INVITE_EXILE",
+     "value": "invite_exile"
+    },
+    {
+     "key": "HISTORICAL_CAREER_LENGTH_MULT",
+     "value": "1.5"
+    }
+   ]
+  },
+  {
+   "namespace": "NBattle",
+   "values": [
+    {
+     "key": "CASUALTY_MAJORITY_CULTURE_WEIGHT",
+     "value": "1.5"
+    },
+    {
+     "key": "CASUALTY_ROLL_MIN",
+     "value": "50"
+    },
+    {
+     "key": "CASUALTY_ROLL_MAX",
+     "value": "200"
+    },
+    {
+     "key": "SURVIVAL_RATE",
+     "value": "0.66"
+    },
+    {
+     "key": "DEPENDENTS_ROLL_MIN_PERCENT",
+     "value": "0.1"
+    },
+    {
+     "key": "DEPENDENTS_ROLL_MAX_PERCENT",
+     "value": "0.3"
+    },
+    {
+     "key": "MIN_DEPENDENTS_PER_ROLL",
+     "value": "25"
+    },
+    {
+     "key": "ESCAPE_PROGRESS_REQUIRED_MIN",
+     "value": "10"
+    },
+    {
+     "key": "ESCAPE_PROGRESS_REQUIRED_PER_MANPOWER",
+     "value": "0.001"
+    },
+    {
+     "key": "ESCAPE_PROGRESS_GAIN_BASE",
+     "value": "1"
+    },
+    {
+     "key": "ESCAPE_PROGRESS_GAIN_RANDOM_FACTOR",
+     "value": "2.5"
+    },
+    {
+     "key": "CHANCE_OF_POPULARITY_NARROW_VICTORY",
+     "value": "0.5"
+    },
+    {
+     "key": "CHANCE_OF_POPULARITY_NORMAL_VICTORY",
+     "value": "0.1"
+    },
+    {
+     "key": "CHANCE_OF_POPULARITY_HEROIC_VICTORY",
+     "value": "1"
+    },
+    {
+     "key": "POPULARITY_GAIN_NARROW_VICTORY",
+     "value": "10"
+    },
+    {
+     "key": "POPULARITY_GAIN_NORMAL_VICTORY",
+     "value": "5"
+    },
+    {
+     "key": "POPULARITY_GAIN_HEROIC_VICTORY",
+     "value": "20"
+    },
+    {
+     "key": "POPULARITY_GAIN_NARROW_LOSS",
+     "value": "-10"
+    },
+    {
+     "key": "POPULARITY_GAIN_NORMAL_LOSS",
+     "value": "-5"
+    },
+    {
+     "key": "POPULARITY_GAIN_HEROIC_LOSS",
+     "value": "-20"
+    },
+    {
+     "key": "POPULARITY_DECAY_MONTHS",
+     "value": "30"
+    },
+    {
+     "key": "SHIP_BATTLE_DAYS_BETWEEN_UPDATES",
+     "value": "5"
+    },
+    {
+     "key": "SHIP_BATTLE_DESTROYED_SHIP_RATIO_RESIGN_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "SHIP_REQUIRED_READINESS_TO_ACT",
+     "value": "100"
+    },
+    {
+     "key": "SHIP_DEFAULT_READINESS_GAIN",
+     "value": "10"
+    },
+    {
+     "key": "SHIP_INITIAL_READINESS",
+     "value": "0"
+    },
+    {
+     "key": "SHIP_ATTACK_BASE_MISS_CHANCE",
+     "value": "0.5"
+    },
+    {
+     "key": "SHIP_ATTACK_MIN_MISS_CHANCE",
+     "value": "0.05"
+    },
+    {
+     "key": "SHIP_ATTACK_MAX_MISS_CHANCE",
+     "value": "0.9"
+    },
+    {
+     "key": "SHIP_ATTACK_ACCURACY_SPEED_RATIO",
+     "value": "5"
+    },
+    {
+     "key": "SHIP_ATTACK_MISS_PER_SPEED",
+     "value": "0.03"
+    },
+    {
+     "key": "SHIP_ATTACK_VISIBILITY_DIVISOR",
+     "value": "15"
+    },
+    {
+     "key": "SHIP_WITHDRAW_BASE_CHANCE",
+     "value": "0.5"
+    },
+    {
+     "key": "SHIP_WITHDRAW_SPEED_FACTOR",
+     "value": "1"
+    },
+    {
+     "key": "SUPPLY_SHIP_WITHDRAW_CHANCE_MULT",
+     "value": "0.1"
+    },
+    {
+     "key": "SHIP_LIGHT_DAMAGE",
+     "value": "0.8"
+    },
+    {
+     "key": "SHIP_MODERATE_DAMAGE",
+     "value": "0.5"
+    },
+    {
+     "key": "SHIP_SEVERE_DAMAGE",
+     "value": "0.25"
+    },
+    {
+     "key": "SHIP_WITHDRAW_DESIRE_LIGHT_DAMAGE",
+     "value": "0.05"
+    },
+    {
+     "key": "SHIP_WITHDRAW_DESIRE_MODERATE_DAMAGE",
+     "value": "0.2"
+    },
+    {
+     "key": "SHIP_WITHDRAW_DESIRE_SEVERE_DAMAGE",
+     "value": "0.8"
+    },
+    {
+     "key": "OVERWHELMING_ODDS_POWER_RATIO",
+     "value": "0.5"
+    },
+    {
+     "key": "SHIP_WITHDRAW_DESIRE_OVERWHELMING_ODDS_BASE",
+     "value": "0.1"
+    },
+    {
+     "key": "SHIP_WITHDRAW_DESIRE_OVERWHELMING_ODDS_MAX",
+     "value": "0.5"
+    },
+    {
+     "key": "PRIORITY_SHIPS_EXPOSED_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "PRIORITY_SHIP_WITHDRAW_DESIRE_MULT_PRIORITY_SHIPS_EXPOSED",
+     "value": "0.2"
+    },
+    {
+     "key": "SCREENING_SHIP_WITHDRAW_DESIRE_MULT_PRIORITY_SHIPS_EXPOSED",
+     "value": "-0.2"
+    },
+    {
+     "key": "PRIORITY_SHIPS_EXPOSED_FOR_RAIDING_THRESHOLD",
+     "value": "0.25"
+    },
+    {
+     "key": "RAIDING_SHIP_WITHDRAW_DESIRE_MULT_PRIORITY_SHIPS_EXPOSED",
+     "value": "0.25"
+    },
+    {
+     "key": "ZERO_DAMAGE_HIT_RATIO_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "MIN_ATTACKS_ZERO_DAMAGE_HIT_PENALTY",
+     "value": "50"
+    },
+    {
+     "key": "SHIP_WITHDRAW_DESIRE_HIGH_ZERO_DAMAGE_HIT_RATIO",
+     "value": "0.1"
+    },
+    {
+     "key": "FLEET_UNCONNECTED_MISSION_AREA_TIMEOUT_DAYS",
+     "value": "30"
+    },
+    {
+     "key": "FLEET_INTERCEPT_CHANCE_BASE",
+     "value": "10"
+    },
+    {
+     "key": "FLEET_RAID_SUPPLY_CHANCE_BASE",
+     "value": "10"
+    },
+    {
+     "key": "FLEET_RAID_MAX_SUPPLY_LENGTH_DIVISOR",
+     "value": "5"
+    },
+    {
+     "key": "NAVAL_BATTLE_LOG_INITIAL_SIZE_FACTOR",
+     "value": "8"
+    },
+    {
+     "key": "NAVAL_BATTLE_LOG_ENTRIES_PER_PAGE",
+     "value": "20"
+    },
+    {
+     "key": "NAVAL_BATTLE_CONDITION_DAMAGE_RANGE",
+     "value": "0.25"
+    },
+    {
+     "key": "NAVAL_BATTLE_CRIT_ARMOR_REDUCTION",
+     "value": "1"
+    },
+    {
+     "key": "DEFAULT_NAVAL_BATTLE_CONDITION_TYPE",
+     "value": "naval_condition_calm_waters"
+    },
+    {
+     "key": "HIGHLIGHTED_EVENT_INTERVAL_TURNS",
+     "value": "8"
+    },
+    {
+     "key": "HIGHLIGHTED_EVENT_LOOKBACK_COUNT",
+     "value": "10"
+    },
+    {
+     "key": "HIGHLIGHTED_EVENT_WEIGHT_DAMAGE",
+     "value": "1"
+    },
+    {
+     "key": "HIGHLIGHTED_EVENT_WEIGHT_FLAGSHIP",
+     "value": "500"
+    },
+    {
+     "key": "HIGHLIGHTED_EVENT_WEIGHT_SINK",
+     "value": "100"
+    }
+   ]
+  },
+  {
+   "namespace": "NWar",
+   "values": [
+    {
+     "key": "DEVASTATION_MAX",
+     "value": "100"
+    },
+    {
+     "key": "DEVASTATION_INCREASE_RATE",
+     "value": "0.1"
+    },
+    {
+     "key": "DEVASTATION_DECAY_RATE",
+     "value": "-0.025"
+    },
+    {
+     "key": "DEVASTATION_FROM_BATTLES",
+     "value": "0.1"
+    },
+    {
+     "key": "AUTO_CAPITULATE_WAR_SUPPORT",
+     "value": "-100"
+    },
+    {
+     "key": "DAYS_BETWEEN_WAR_EXHAUSTION",
+     "value": "7"
+    },
+    {
+     "key": "WAR_EXHAUSTION_BASE",
+     "value": "0.2"
+    },
+    {
+     "key": "WAR_EXHAUSTION_KIA_FACTOR",
+     "value": "4"
+    },
+    {
+     "key": "WAR_EXHAUSTION_KIA_BASE_MULTIPLIER",
+     "value": "0.25"
+    },
+    {
+     "key": "WAR_EXHAUSTION_KIA_BATTLES_LOST_MULTIPLIER",
+     "value": "0.75"
+    },
+    {
+     "key": "WAR_EXHAUSTION_TURMOIL_FACTOR",
+     "value": "1.5"
+    },
+    {
+     "key": "WAR_EXHAUSTION_CONTESTED_ENEMY_WARGOALS",
+     "value": "1"
+    },
+    {
+     "key": "WAR_EXHAUSTION_ANTI_WAR_LOBBY_CLOUT_FACTOR",
+     "value": "1"
+    },
+    {
+     "key": "WAR_EXHAUSTION_PRO_WAR_LOBBY_CLOUT_FACTOR",
+     "value": "-1"
+    },
+    {
+     "key": "WAR_EXHAUSTION_MAX",
+     "value": "100"
+    },
+    {
+     "key": "WAR_EXHAUSTION_MIN",
+     "value": "0"
+    },
+    {
+     "key": "OCCUPATION_STATE_BASE_WEIGHT",
+     "value": "1"
+    },
+    {
+     "key": "OCCUPATION_STATE_POP_WEIGHT",
+     "value": "1"
+    },
+    {
+     "key": "OCCUPATION_STATE_INCORPORATED_WEIGHT",
+     "value": "10"
+    },
+    {
+     "key": "OCCUPATION_STATE_DEFENSIVE_BATTLE_VICTORY_SCORE",
+     "value": "50"
+    },
+    {
+     "key": "OCCUPATION_STATE_CLEAR_OCCUPATION_FRACTION",
+     "value": "0.5"
+    },
+    {
+     "key": "LAND_INVASION_TRAVEL_TIME_LIMIT_DAYS",
+     "value": "30"
+    },
+    {
+     "key": "LAND_INVASION_PREPARATION_DURATION_DAYS",
+     "value": "14"
+    },
+    {
+     "key": "NAVAL_INVASION_PREPARATION_DURATION_DAYS",
+     "value": "14"
+    },
+    {
+     "key": "LAND_INVASION_MAX_LAND_BATTLE_DEFEATS_AT_ZERO_OCCUPATION",
+     "value": "3"
+    },
+    {
+     "key": "NAVAL_INVASION_MAX_LAND_BATTLE_DEFEATS_AT_ZERO_OCCUPATION",
+     "value": "3"
+    },
+    {
+     "key": "NAVAL_INVASION_MIN_POWER_PROJECTION_RATIO_TO_BLOCK_LANDING",
+     "value": "0.25"
+    },
+    {
+     "key": "STATE_CONQUEST_HOMELAND_AND_CLAIM_RADICALIZATION",
+     "value": "0.1"
+    },
+    {
+     "key": "STATE_CONQUEST_HOMELAND_AND_CLAIM_DEMILITARIZATION",
+     "value": "0.25"
+    },
+    {
+     "key": "STATE_CONQUEST_HOMELAND_OR_CLAIM_RADICALIZATION",
+     "value": "0.3"
+    },
+    {
+     "key": "STATE_CONQUEST_HOMELAND_OR_CLAIM_DEMILITARIZATION",
+     "value": "0.5"
+    },
+    {
+     "key": "STATE_CONQUEST_DEFAULT_RADICALIZATION",
+     "value": "0.5"
+    },
+    {
+     "key": "STATE_CONQUEST_DEFAULT_DEMILITARIZATION",
+     "value": "0.75"
+    },
+    {
+     "key": "STATE_PEACEFUL_ANNEXATION_RADICALIZATION_FACTOR",
+     "value": "0.25"
+    },
+    {
+     "key": "STATE_CONQUEST_KEEP_ALL",
+     "value": "0"
+    },
+    {
+     "key": "STATE_PARTIAL_OCCUPATION_THRESHOLD",
+     "value": "0.5"
+    },
+    {
+     "key": "OCCUPATION_PROGRESS_DECAY",
+     "value": "0.7"
+    },
+    {
+     "key": "OCCUPATION_PROGRESS_DECAY_ZERO_THRESHOLD",
+     "value": "0.1"
+    },
+    {
+     "key": "FRONT_ADVANCEMENT_RATIO",
+     "value": "1.1"
+    },
+    {
+     "key": "FRONT_DECISIVE_ADVANCEMENT_RATIO",
+     "value": "1.5"
+    }
+   ]
+  },
+  {
+   "namespace": "NTravelNetwork",
+   "values": [
+    {
+     "key": "ARMY_CONNECTION_UNDEVELOPED_COST_MULT",
+     "value": "2"
+    },
+    {
+     "key": "ARMY_CONNECTION_UNDEVELOPED_HARSH_COST_MULT",
+     "value": "4"
+    },
+    {
+     "key": "ARMY_CONNECTION_DIRT_ROAD_COST_MULT",
+     "value": "1.5"
+    },
+    {
+     "key": "ARMY_CONNECTION_HARDENED_ROAD_COST_MULT",
+     "value": "1.25"
+    },
+    {
+     "key": "ARMY_CONNECTION_RAILWAY_COST_MULT",
+     "value": "1"
+    },
+    {
+     "key": "ARMY_CONNECTION_CHARTED_COST_MULT",
+     "value": "1"
+    },
+    {
+     "key": "ARMY_CONNECTION_CANAL_COST_MULT",
+     "value": "1"
+    },
+    {
+     "key": "ARMY_CONNECTION_STRAIT_CROSSING_COST_MULT",
+     "value": "4"
+    },
+    {
+     "key": "ARMY_DIRECT_CONNECTION_COST_MULT",
+     "value": "10"
+    },
+    {
+     "key": "ARMY_CONNECTION_DOCKING_COST",
+     "value": "300"
+    },
+    {
+     "key": "ARMY_CONNECTION_STRAIT_CROSSING_COST",
+     "value": "100"
+    },
+    {
+     "key": "FLEET_CONNECTION_UNDEVELOPED_COST_MULT",
+     "value": "100"
+    },
+    {
+     "key": "FLEET_CONNECTION_UNDEVELOPED_HARSH_COST_MULT",
+     "value": "100"
+    },
+    {
+     "key": "FLEET_CONNECTION_DIRT_ROAD_COST_MULT",
+     "value": "100"
+    },
+    {
+     "key": "FLEET_CONNECTION_HARDENED_ROAD_COST_MULT",
+     "value": "100"
+    },
+    {
+     "key": "FLEET_CONNECTION_RAILWAY_COST_MULT",
+     "value": "100"
+    },
+    {
+     "key": "FLEET_CONNECTION_CHARTED_COST_MULT",
+     "value": "1"
+    },
+    {
+     "key": "FLEET_CONNECTION_CANAL_COST_MULT",
+     "value": "1"
+    },
+    {
+     "key": "FLEET_CONNECTION_STRAIT_CROSSING_COST_MULT",
+     "value": "100"
+    },
+    {
+     "key": "FLEET_DIRECT_CONNECTION_COST_MULT",
+     "value": "4"
+    },
+    {
+     "key": "FLEET_CONNECTION_DOCKING_COST",
+     "value": "10"
+    },
+    {
+     "key": "FLEET_CONNECTION_STRAIT_CROSSING_COST",
+     "value": "100"
+    },
+    {
+     "key": "DIRECT_CONNECTION_NODE_MAX_NODES",
+     "value": "10"
+    },
+    {
+     "key": "DIRECT_CONNECTION_NODE_SEARCH_DISTANCE",
+     "value": "1200"
+    },
+    {
+     "key": "DIRECT_CONNECTION_MAP_MAX_DISTANCE",
+     "value": "200"
+    },
+    {
+     "key": "STRAIT_CROSSING_NODE_CREATION_DISTANCE",
+     "value": "5"
+    },
+    {
+     "key": "FORMATION_REPATH_MAX_DAYS_EXTRA",
+     "value": "60"
+    },
+    {
+     "key": "HARSH_ENVIRONMENT_TERRAIN_LABEL",
+     "value": "label_travel_harsh_environment"
+    },
+    {
+     "key": "PAVED_ROAD_TECH",
+     "value": "paved_roads"
+    },
+    {
+     "key": "PAVED_ROAD_MIN_INFRASTRUCTURE",
+     "value": "500"
+    }
+   ]
+  },
+  {
+   "namespace": "NHarvestConditions",
+   "values": [
+    {
+     "key": "HARVEST_CONDITION_CHANCE_THRESHOLD",
+     "value": "0.2"
+    },
+    {
+     "key": "HARVEST_CONDITION_PERIOD",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "namespace": "NText",
+   "values": [
+    {
+     "key": "DURATION_SHOW_YEARS_THRESHOLD",
+     "value": "1105"
+    },
+    {
+     "key": "DURATION_SHOW_MONTHS_THRESHOLD",
+     "value": "100"
+    },
+    {
+     "key": "DURATION_SHOW_WEEKS_THRESHOLD",
+     "value": "15"
+    },
+    {
+     "key": "TEXT_MATCHING_SCORE_PREFIX_MATCH",
+     "value": "1"
+    },
+    {
+     "key": "TEXT_MATCHING_SCORE_MAX_NON_PREFIX_MATCH",
+     "value": "0.99"
+    },
+    {
+     "key": "TEXT_MATCHING_SCORE_MIN_MATCHING_SCORE",
+     "value": "0.1"
+    }
+   ]
+  },
+  {
+   "namespace": "NDebug",
+   "values": [
+    {
+     "key": "CASUALTY_LOG_EXPIRE_TIME_DAYS",
+     "value": "30"
+    },
+    {
+     "key": "CASUALTY_LOG_NUM_LAST_ENTRIES_VISIBLE",
+     "value": "10"
+    },
+    {
+     "key": "OCCUPATION_TOOL_DELTA",
+     "value": "0.25"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+import TableTools from '../components/TableTools.astro';
+import ModifierList from '../components/ModifierList.astro';
+import unitsJson from '../data/units.json';
+
+const base = import.meta.env.BASE_URL;
+const units = (unitsJson as any).units as any[];
+const army = units.filter((u) => u.domain === 'army');
+const navy = units.filter((u) => u.domain !== 'army');
+
+const csv = {
+  header: ['Unit', 'Id', 'Domain', 'Group', 'Manpower', 'Supply capacity', 'Unlocked by', 'Battle modifiers', 'Upkeep modifiers'],
+  rows: units.map((u) => [
+    u.name, u.id, u.domain ?? '', u.group?.name ?? '', u.manpower ?? '', u.supplyCapacity ?? '',
+    u.techs.map((t: any) => t.name).join('; '),
+    u.battle.map((m: any) => `${m.valueText} ${m.label}`).join('; '),
+    u.upkeep.map((m: any) => `${m.valueText} ${m.label}`).join('; '),
+  ]),
+};
+// Since the naval rework, warships live in ship_types (their own page later) —
+// don't render an empty Navy section.
+const sections = [
+  { list: army, title: 'Army' },
+  { list: navy, title: 'Navy' },
+].filter((s) => s.list.length);
+---
+<Base
+  title="Units"
+  active="units"
+  eyebrow="Military"
+  pageStats={[{ value: army.length, label: 'army unit types' }]}
+>
+  <TableTools csvId="units" csvName="victoria3-units" />
+
+  {sections.map(({ list, title }) => (
+    <>
+      <h2 class="sect">{title}</h2>
+      <div class="grid"><div class="grid__scroll">
+        <table class="vtbl">
+          <thead>
+            <tr>
+              <th style="min-width: 13rem;">Unit type</th>
+              <th style="width: 9rem;">Group</th>
+              <th class="num" style="width: 6.5rem;">Manpower</th>
+              <th class="num" style="width: 5.5rem;" title="Supply the unit can carry">Supply</th>
+              <th style="width: 11rem;">Unlocked by</th>
+              <th>Battle</th>
+            </tr>
+          </thead>
+          <tbody>
+            {list.map((u) => (
+              <tr id={u.id}>
+                <td class="lead-cell">
+                  <span class="lead">
+                    {u.name}
+                    {u.conscriptLevies && <span class="chip" title="Conscripts draw from peasants">· levies</span>}
+                  </span>
+                </td>
+                <td class="dim">{u.group?.name ?? <span class="cell__dash">—</span>}</td>
+                <td class="num">{u.manpower ?? <span class="cell__dash">—</span>}</td>
+                <td class="num">{u.supplyCapacity ?? <span class="cell__dash">—</span>}</td>
+                <td class="dim">{u.techs.length ? u.techs.map((t: any, i: number) => (
+                  <>{i > 0 && ', '}<a href={`${base}technology#${t.id}`}>{t.name}</a></>
+                )) : <span class="cell__dash">—</span>}</td>
+                <td><ModifierList mods={u.battle} inline /></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div></div>
+    </>
+  ))}
+
+  <p class="caption">
+    Within a group, later rows are higher tiers — the game builds the best type you can research ·
+    goods upkeep comes from barracks/naval-base production methods, not the unit type
+  </p>
+
+  <script is:inline define:vars={{ csv }}>
+    window.v3Csv = window.v3Csv || {};
+    window.v3Csv.units = () => csv;
+  </script>
+</Base>

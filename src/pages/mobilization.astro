@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import ModifierList from '../components/ModifierList.astro';
+import mobJson from '../data/mobilization.json';
+
+const base = import.meta.env.BASE_URL;
+const options = (mobJson as any).mobilization as any[];
+const groups = [...new Set(options.map((o) => o.group ?? 'other'))];
+---
+<Base
+  title="Mobilization"
+  active="mobilization"
+  eyebrow="Military"
+  pageStats={[{ value: options.length, label: 'mobilization options' }]}
+>
+  {groups.map((g) => (
+    <>
+      <h2 class="sect">{g}</h2>
+      <div class="grid"><div class="grid__scroll">
+        <table class="vtbl">
+          <thead>
+            <tr>
+              <th style="min-width: 12rem;">Option</th>
+              <th style="width: 11rem;">Unlocked by</th>
+              <th style="min-width: 14rem;" title="Goods consumed per mobilized unit">Upkeep / unit</th>
+              <th style="min-width: 12rem;">Flat effects</th>
+              <th>Unit effects</th>
+            </tr>
+          </thead>
+          <tbody>
+            {options.filter((o) => (o.group ?? 'other') === g).map((o) => (
+              <tr id={o.id}>
+                <td class="lead-cell">
+                  <span class="lead">
+                    <img class="lead__icon" src={`${base}${o.icon}`} alt="" loading="lazy" />
+                    {o.name}
+                  </span>
+                </td>
+                <td class="dim">{o.techs.length ? o.techs.map((t: any, i: number) => (
+                  <>{i > 0 && ', '}<a href={`${base}technology#${t.id}`}>{t.name}</a></>
+                )) : <span class="cell__dash">—</span>}</td>
+                <td><ModifierList mods={o.upkeep} inline /></td>
+                <td><ModifierList mods={o.upkeepUnscaled} inline /></td>
+                <td><ModifierList mods={o.unitEffects} inline /></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div></div>
+    </>
+  ))}
+
+  <p class="caption">Upkeep scales with mobilized combat units · flat effects apply once per formation</p>
+</Base>

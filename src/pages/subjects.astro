@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import subjectsJson from '../data/subjects.json';
+
+const subjects = (subjectsJson as any).subjects as any[];
+const Y = (v: boolean) => (v ? '✓' : '—');
+---
+<Base
+  title="Subjects"
+  active="subjects"
+  eyebrow="Diplomacy"
+  pageStats={[{ value: subjects.length, label: 'subject types' }]}
+>
+  <div class="grid">
+    <div class="grid__scroll">
+      <table class="vtbl">
+        <thead>
+          <tr>
+            <th style="min-width: 11rem;">Subject type</th>
+            <th class="num" title="Lower = more autonomous">Autonomy tier</th>
+            <th>Joins overlord wars</th>
+            <th>Own diplo plays</th>
+            <th>Can have subjects</th>
+            <th>Annexed on formation</th>
+            <th>Overlord map color</th>
+            <th>Prestige to overlord</th>
+            <th>Breaks if unprotected</th>
+          </tr>
+        </thead>
+        <tbody>
+          {subjects.map((s) => (
+            <tr id={s.id}>
+              <td class="lead-cell"><span class="lead">{s.name}</span></td>
+              <td class="num dim">{s.autonomyLevel ?? '—'}</td>
+              <td class={s.joinOverlordWars ? 'tone-good' : 'dim'} style="text-align:center;">{Y(s.joinOverlordWars)}</td>
+              <td class={s.canStartPlays ? 'tone-good' : 'dim'} style="text-align:center;">{Y(s.canStartPlays)}</td>
+              <td class={s.canHaveSubjects ? 'tone-good' : 'dim'} style="text-align:center;">{Y(s.canHaveSubjects)}</td>
+              <td class={s.annexOnFormation ? 'tone-bad' : 'dim'} style="text-align:center;">{Y(s.annexOnFormation)}</td>
+              <td class="dim" style="text-align:center;">{Y(s.overlordMapColor)}</td>
+              <td class={s.givesPrestige ? 'tone-good' : 'dim'} style="text-align:center;">{Y(s.givesPrestige)}</td>
+              <td class={s.breaksIfNotProtected ? 'tone-bad' : 'dim'} style="text-align:center;">{Y(s.breaksIfNotProtected)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="caption">Income transfers, liberty desire, and sway mechanics are scripted/defines-driven — see Defines</p>
+</Base>

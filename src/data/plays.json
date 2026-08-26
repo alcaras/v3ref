@@ -1,0 +1,1128 @@
+{
+ "plays": [
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "dp_default_treaty_article",
+   "name": "…",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "enforce_treaty_article",
+    "name": "Enforce Treaty Article"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/unification.png",
+   "id": "dp_leadership_andes",
+   "name": "Andean Leadership",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "unification_leadership",
+    "name": "Unification Leadership"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "dp_annex_war",
+   "name": "Annex Country",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "annex_country",
+    "name": "Annex Country"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "dp_annex_subject",
+   "name": "Annex Subject",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "annex_country",
+    "name": "Annex Country"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/ban_slavery.png",
+   "id": "dp_ban_slavery",
+   "name": "Ban Slavery",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "ban_slavery",
+    "name": "Ban Slavery"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/conquer_state.png",
+   "id": "dp_conquer_state",
+   "name": "Conquer State",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "conquer_state",
+    "name": "Conquer State"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/contain_threat.png",
+   "id": "dp_contain_threat",
+   "name": "Cut Down to Size",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "contain_threat",
+    "name": "Contain Threat"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/unification.png",
+   "id": "dp_leadership_yugoslavia",
+   "name": "Dp Leadership Yugoslavia",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "unification_leadership",
+    "name": "Unification Leadership"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/return_state.png",
+   "id": "dp_enforce_trialist_manifesto",
+   "name": "Enforce Trialist Manifesto",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "humiliation",
+    "name": "Humiliation"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/force_nationalization.png",
+   "id": "dp_force_nationalization",
+   "name": "Force Nationalization",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "force_nationalization",
+    "name": "Force Nationalization"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/unify_germany.png",
+   "id": "dp_leadership_germany",
+   "name": "German Leadership",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "unification_leadership",
+    "name": "Unification Leadership"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/humiliation.png",
+   "id": "dp_humiliation",
+   "name": "Humiliation",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "humiliation",
+    "name": "Humiliation"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "dp_hungarian_revolution",
+   "name": "Hungarian Revolution",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "annex_country",
+    "name": "Annex Country"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/increase_autonomy.png",
+   "id": "dp_increase_autonomy",
+   "name": "Increase Autonomy",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "increase_autonomy",
+    "name": "Increase Autonomy"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/independence.png",
+   "id": "dp_independence",
+   "name": "Independence",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "independence",
+    "name": "Independence"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/foreign_investment_rights.png",
+   "id": "dp_give_foreign_investment_rights",
+   "name": "Investment Rights",
+   "requiresInterest": true,
+   "warGoal": {
+    "id": "foreign_investment_rights",
+    "name": "Investment Rights"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/unify_italy.png",
+   "id": "dp_leadership_italy",
+   "name": "Italian Leadership",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "unification_leadership",
+    "name": "Unification Leadership"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/join_power_bloc.png",
+   "id": "dp_join_power_bloc",
+   "name": "Join Power Bloc",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "join_power_bloc",
+    "name": "Join Power Bloc"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/leave_power_bloc.png",
+   "id": "dp_leave_power_bloc",
+   "name": "Leave Power Bloc",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "leave_power_bloc",
+    "name": "Leave Power Bloc"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/liberate_country.png",
+   "id": "dp_liberate_country",
+   "name": "Liberate Country",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "liberate_country",
+    "name": "Liberate Country"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/liberate_subject.png",
+   "id": "dp_liberate_subject",
+   "name": "Liberate Subject",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "liberate_subject",
+    "name": "Liberate Subject"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/make_dominion.png",
+   "id": "dp_make_dominion",
+   "name": "Make Dominion",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "make_dominion",
+    "name": "Make Dominion"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/make_protectorate.png",
+   "id": "dp_make_protectorate",
+   "name": "Make Protectorate",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "make_protectorate",
+    "name": "Make Protectorate"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/make_tributary.png",
+   "id": "dp_make_tributary",
+   "name": "Make Tributary",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "make_tributary",
+    "name": "Make Tributary"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "dp_native_uprising",
+   "name": "Native Uprising",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "colonization_rights",
+    "name": "Colonization Rights"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "dp_demand_no_strait_closure",
+   "name": "No Strait Closure",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "demand_no_strait_closure",
+    "name": "Demand No Strait Closure"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "dp_demand_no_tolls",
+   "name": "No Tolls",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "demand_no_tolls",
+    "name": "Demand No Tolls"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/open_market.png",
+   "id": "dp_open_market",
+   "name": "Open Market",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "open_market",
+    "name": "Open Market"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/reduce_autonomy.png",
+   "id": "dp_reduce_autonomy",
+   "name": "Reduce Autonomy",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "reduce_autonomy",
+    "name": "Reduce Autonomy"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/regime_change.png",
+   "id": "dp_regime_change",
+   "name": "Regime Change",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "regime_change",
+    "name": "Regime Change"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "dp_restore_union",
+   "name": "Restore Union",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "restore_union",
+    "name": "Restore Union"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/return_state.png",
+   "id": "dp_return_state",
+   "name": "Return State",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "return_state",
+    "name": "Return State"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "dp_revolution",
+   "name": "Revolution",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "annex_country",
+    "name": "Annex Country"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/unification.png",
+   "id": "dp_leadership_scandinavia",
+   "name": "Scandinavian Leadership",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "unification_leadership",
+    "name": "Unification Leadership"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/secession.png",
+   "id": "dp_secession",
+   "name": "Secession",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "secession",
+    "name": "Secession"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "dp_sepoy_mutiny",
+   "name": "Sepoy Mutiny",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "annex_country",
+    "name": "Annex Country"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "dp_demand_strait_access",
+   "name": "Strait Access",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "demand_strait_access",
+    "name": "Demand Strait Access"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "dp_taiping_rebellion",
+   "name": "Taiping Rebellion",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "annex_country",
+    "name": "Annex Country"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/take_treaty_port.png",
+   "id": "dp_take_treaty_port",
+   "name": "Take Treaty Port",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "take_treaty_port",
+    "name": "Take Treaty Port"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/return_state.png",
+   "id": "dp_balkan_war",
+   "name": "The Balkan War",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "humiliation",
+    "name": "Humiliation"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "dp_demand_toll_exemption",
+   "name": "Toll Exemption",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "demand_toll_exemption",
+    "name": "Demand Toll Exemption"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/transfer_subject.png",
+   "id": "dp_transfer_subject",
+   "name": "Transfer Subject",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "transfer_subject",
+    "name": "Transfer Subject"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "dp_unify_arabia",
+   "name": "Unify Arabia",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "annex_country",
+    "name": "Annex Country"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "dp_unify_china",
+   "name": "Unify China",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "annex_country",
+    "name": "Annex Country"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "dp_unify_ethiopia",
+   "name": "Unify Ethiopia",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "annex_country",
+    "name": "Annex Country"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/unify_germany.png",
+   "id": "dp_unify_germany",
+   "name": "Unify Germany",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "unification",
+    "name": "Unification"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "dp_unify_india",
+   "name": "Unify India",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "annex_country",
+    "name": "Annex Country"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/unify_italy.png",
+   "id": "dp_unify_italy",
+   "name": "Unify Italy",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "unification",
+    "name": "Unification"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/unification.png",
+   "id": "dp_unify_scandinavia",
+   "name": "Unify Scandinavia",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "unification",
+    "name": "Unification"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/unify_germany.png",
+   "id": "dp_unify_andes",
+   "name": "Unify the Andes",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "unification",
+    "name": "Unification"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "dp_unify_indonesia",
+   "name": "Unify the Archipelago",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "annex_country",
+    "name": "Annex Country"
+   },
+   "warOnly": false
+  },
+  {
+   "icon": "img/wargoals/unification.png",
+   "id": "dp_unify_yugoslavia",
+   "name": "Unify Yugoslavia",
+   "requiresInterest": false,
+   "warGoal": {
+    "id": "unification",
+    "name": "Unification"
+   },
+   "warOnly": false
+  }
+ ],
+ "warGoals": [
+  {
+   "icon": "img/wargoals/annex_country.png",
+   "id": "annex_country",
+   "kind": "annex_country",
+   "name": "Annex Country",
+   "plays": [
+    "dp_annex_subject",
+    "dp_revolution",
+    "dp_taiping_rebellion",
+    "dp_annex_war",
+    "dp_unify_ethiopia",
+    "dp_unify_china",
+    "dp_unify_arabia",
+    "dp_unify_india",
+    "dp_unify_indonesia",
+    "dp_sepoy_mutiny",
+    "dp_hungarian_revolution"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "can_add_for_other_country",
+    "annexes_entire_country",
+    "skip_build_list",
+    "validate_conflicts_war_goals_all",
+    "validate_conflicts_annex_country"
+   ]
+  },
+  {
+   "icon": "img/wargoals/ban_slavery.png",
+   "id": "ban_slavery",
+   "kind": "ban_slavery",
+   "name": "Ban Slavery",
+   "plays": [
+    "dp_ban_slavery"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "skip_build_list",
+    "validate_conflicts_war_goals_all"
+   ]
+  },
+  {
+   "icon": "img/wargoals/colonization_rights.png",
+   "id": "colonization_rights",
+   "kind": "colonization_rights",
+   "name": "Colonization Rights",
+   "plays": [
+    "dp_native_uprising"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "skip_build_list",
+    "validate_conflicts_war_goals_all",
+    "validate_colonization_rights",
+    "can_target_decentralized"
+   ]
+  },
+  {
+   "icon": "img/wargoals/conquer_state.png",
+   "id": "conquer_state",
+   "kind": "conquer_state",
+   "name": "Conquer State",
+   "plays": [
+    "dp_conquer_state"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "annexes_entire_state",
+    "can_add_for_other_country",
+    "requires_interest",
+    "validate_target_not_treaty_port",
+    "validate_conflicts_conquer_state",
+    "conflicts_with_country_creation",
+    "conflicts_with_annex_state"
+   ]
+  },
+  {
+   "icon": "img/wargoals/contain_threat.png",
+   "id": "contain_threat",
+   "kind": "contain_threat",
+   "name": "Contain Threat",
+   "plays": [
+    "dp_contain_threat"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "skip_build_list",
+    "validate_contain_threat"
+   ]
+  },
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "demand_no_strait_closure",
+   "kind": "demand_no_strait_closure",
+   "name": "Demand No Strait Closure",
+   "plays": [
+    "dp_demand_no_strait_closure"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "skip_build_list",
+    "validate_conflicts_war_goals_all"
+   ]
+  },
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "demand_no_tolls",
+   "kind": "demand_no_tolls",
+   "name": "Demand No Tolls",
+   "plays": [
+    "dp_demand_no_tolls"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "skip_build_list",
+    "validate_conflicts_war_goals_all"
+   ]
+  },
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "demand_strait_access",
+   "kind": "demand_strait_access",
+   "name": "Demand Strait Access",
+   "plays": [
+    "dp_demand_strait_access"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "skip_build_list",
+    "validate_conflicts_war_goals_all"
+   ]
+  },
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "demand_toll_exemption",
+   "kind": "demand_toll_exemption",
+   "name": "Demand Toll Exemption",
+   "plays": [
+    "dp_demand_toll_exemption"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "skip_build_list",
+    "validate_conflicts_war_goals_all"
+   ]
+  },
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "enforce_treaty_article",
+   "kind": "enforce_treaty_article",
+   "name": "Enforce Treaty Article",
+   "plays": [
+    "dp_default_treaty_article"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "validate_conflicts_war_goals_all"
+   ]
+  },
+  {
+   "icon": "img/wargoals/force_nationalization.png",
+   "id": "force_nationalization",
+   "kind": "force_nationalization",
+   "name": "Force Nationalization",
+   "plays": [
+    "dp_force_nationalization"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "can_add_for_other_country",
+    "validate_conflicts_war_goals_all",
+    "validate_force_nationalization"
+   ]
+  },
+  {
+   "icon": "img/wargoals/humiliation.png",
+   "id": "humiliation",
+   "kind": "humiliation",
+   "name": "Humiliation",
+   "plays": [
+    "dp_humiliation",
+    "dp_balkan_war",
+    "dp_enforce_trialist_manifesto"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "validate_conflicts_war_goals_all"
+   ]
+  },
+  {
+   "icon": "img/wargoals/increase_autonomy.png",
+   "id": "increase_autonomy",
+   "kind": "increase_autonomy",
+   "name": "Increase Autonomy",
+   "plays": [
+    "dp_increase_autonomy"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "validate_conflicts_war_goals_all",
+    "validate_subject_relation",
+    "validate_increase_autonomy"
+   ]
+  },
+  {
+   "icon": "img/wargoals/independence.png",
+   "id": "independence",
+   "kind": "independence",
+   "name": "Independence",
+   "plays": [
+    "dp_independence"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "can_add_for_other_country",
+    "preserve_on_switching_sides",
+    "validate_conflicts_war_goals_all",
+    "validate_independence"
+   ]
+  },
+  {
+   "icon": "img/wargoals/foreign_investment_rights.png",
+   "id": "foreign_investment_rights",
+   "kind": "foreign_investment_rights",
+   "name": "Investment Rights",
+   "plays": [
+    "dp_give_foreign_investment_rights"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "skip_build_list",
+    "validate_conflicts_war_goals_all",
+    "validate_foreign_investment_rights"
+   ]
+  },
+  {
+   "icon": "img/wargoals/join_power_bloc.png",
+   "id": "join_power_bloc",
+   "kind": "join_power_bloc",
+   "name": "Join Power Bloc",
+   "plays": [
+    "dp_join_power_bloc"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "conflicts_with_make_subject",
+    "validate_join_power_bloc",
+    "validate_conflicts_make_subject"
+   ]
+  },
+  {
+   "icon": "img/wargoals/leave_power_bloc.png",
+   "id": "leave_power_bloc",
+   "kind": "leave_power_bloc",
+   "name": "Leave Power Bloc",
+   "plays": [
+    "dp_leave_power_bloc"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "validate_conflicts_war_goals_all"
+   ]
+  },
+  {
+   "icon": "img/wargoals/liberate_country.png",
+   "id": "liberate_country",
+   "kind": "liberate_country",
+   "name": "Liberate Country",
+   "plays": [
+    "dp_liberate_country"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "country_creation",
+    "requires_interest",
+    "conflicts_with_country_creation",
+    "conflicts_with_annex_state",
+    "conflicts_with_annex_country",
+    "conflicts_with_existing_subject"
+   ]
+  },
+  {
+   "icon": "img/wargoals/liberate_subject.png",
+   "id": "liberate_subject",
+   "kind": "liberate_subject",
+   "name": "Liberate Subject",
+   "plays": [
+    "dp_liberate_subject"
+   ],
+   "settings": [
+    "overlord_is_stakeholder",
+    "requires_interest",
+    "targets_enemy_subject",
+    "has_other_stakeholder",
+    "validate_conflicts_war_goals_all",
+    "validate_conflicts_existing_subject"
+   ]
+  },
+  {
+   "icon": "img/wargoals/make_dominion.png",
+   "id": "make_dominion",
+   "kind": "make_dominion",
+   "name": "Make Dominion",
+   "plays": [
+    "dp_make_dominion"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "turns_into_subject",
+    "can_add_for_other_country",
+    "requires_interest",
+    "conflicts_with_make_subject",
+    "validate_subject_relation",
+    "validate_conflicts_make_subject"
+   ]
+  },
+  {
+   "icon": "img/wargoals/make_protectorate.png",
+   "id": "make_protectorate",
+   "kind": "make_protectorate",
+   "name": "Make Protectorate",
+   "plays": [
+    "dp_make_protectorate"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "turns_into_subject",
+    "can_add_for_other_country",
+    "requires_interest",
+    "conflicts_with_make_subject",
+    "validate_subject_relation",
+    "validate_conflicts_make_subject"
+   ]
+  },
+  {
+   "icon": "img/wargoals/make_tributary.png",
+   "id": "make_tributary",
+   "kind": "make_tributary",
+   "name": "Make Tributary",
+   "plays": [
+    "dp_make_tributary"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "turns_into_subject",
+    "can_add_for_other_country",
+    "requires_interest",
+    "conflicts_with_make_subject",
+    "validate_subject_relation",
+    "validate_conflicts_make_subject"
+   ]
+  },
+  {
+   "icon": "img/wargoals/open_market.png",
+   "id": "open_market",
+   "kind": "open_market",
+   "name": "Open Market",
+   "plays": [
+    "dp_open_market"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "validate_conflicts_war_goals_all"
+   ]
+  },
+  {
+   "icon": "img/wargoals/reduce_autonomy.png",
+   "id": "reduce_autonomy",
+   "kind": "reduce_autonomy",
+   "name": "Reduce Autonomy",
+   "plays": [
+    "dp_reduce_autonomy"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "conflicts_with_make_subject",
+    "validate_subject_relation",
+    "validate_conflicts_war_goals_all",
+    "validate_conflicts_make_subject"
+   ]
+  },
+  {
+   "icon": "img/wargoals/regime_change.png",
+   "id": "regime_change",
+   "kind": "regime_change",
+   "name": "Regime Change",
+   "plays": [
+    "dp_regime_change"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "validate_conflicts_war_goals_all",
+    "validate_regime_change",
+    "debug"
+   ]
+  },
+  {
+   "icon": "img/wargoals/enforce_treaty_article.png",
+   "id": "restore_union",
+   "kind": "custom",
+   "name": "Restore Union",
+   "plays": [
+    "dp_restore_union"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "turns_into_subject",
+    "requires_interest",
+    "conflicts_with_make_subject",
+    "validate_conflicts_make_subject"
+   ]
+  },
+  {
+   "icon": "img/wargoals/return_state.png",
+   "id": "return_state",
+   "kind": "return_state",
+   "name": "Return State",
+   "plays": [
+    "dp_return_state"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "annexes_entire_state",
+    "can_add_for_other_country",
+    "requires_interest",
+    "validate_conflicts_conquer_state",
+    "validate_target_not_treaty_port",
+    "conflicts_with_country_creation",
+    "conflicts_with_annex_state"
+   ]
+  },
+  {
+   "icon": "img/wargoals/revoke_claim.png",
+   "id": "revoke_all_claims",
+   "kind": "revoke_all_claims",
+   "name": "Revoke All Claims",
+   "plays": [],
+   "settings": [
+    "require_target_be_part_of_war",
+    "can_add_for_other_country",
+    "skip_build_list",
+    "validate_conflicts_war_goals_holder",
+    "validate_revoke_claims"
+   ]
+  },
+  {
+   "icon": "img/wargoals/revoke_claim.png",
+   "id": "revoke_claim",
+   "kind": "revoke_claim",
+   "name": "Revoke Claim",
+   "plays": [],
+   "settings": [
+    "require_target_be_part_of_war",
+    "can_add_for_other_country",
+    "targets_enemy_claims",
+    "validate_revoke_claims"
+   ]
+  },
+  {
+   "icon": "img/wargoals/secession.png",
+   "id": "secession",
+   "kind": "secession",
+   "name": "Secession",
+   "plays": [
+    "dp_secession"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "skip_build_list",
+    "validate_conflicts_war_goals_all"
+   ]
+  },
+  {
+   "icon": "img/wargoals/take_treaty_port.png",
+   "id": "take_treaty_port",
+   "kind": "take_treaty_port",
+   "name": "Take Treaty Port",
+   "plays": [
+    "dp_take_treaty_port"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "can_add_for_other_country",
+    "skip_build_list",
+    "requires_interest",
+    "validate_conflicts_conquer_state",
+    "validate_take_treaty_port",
+    "conflicts_with_annex_state"
+   ]
+  },
+  {
+   "icon": "img/wargoals/transfer_subject.png",
+   "id": "transfer_subject",
+   "kind": "transfer_subject",
+   "name": "Transfer Subject",
+   "plays": [
+    "dp_transfer_subject"
+   ],
+   "settings": [
+    "overlord_is_stakeholder",
+    "can_add_for_other_country",
+    "targets_enemy_subject",
+    "has_other_stakeholder",
+    "validate_subject_relation",
+    "validate_conflicts_existing_subject",
+    "conflicts_with_existing_subject"
+   ]
+  },
+  {
+   "icon": "img/wargoals/unification.png",
+   "id": "unification",
+   "kind": "unification",
+   "name": "Unification",
+   "plays": [
+    "dp_unify_germany",
+    "dp_unify_italy",
+    "dp_unify_scandinavia",
+    "dp_unify_andes",
+    "dp_unify_yugoslavia"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "annexes_entire_state",
+    "skip_build_list",
+    "validate_conflicts_war_goals_all",
+    "validate_sole_formation_candidate",
+    "validate_conflicts_conquer_state",
+    "conflicts_with_country_creation",
+    "conflicts_with_annex_state"
+   ]
+  },
+  {
+   "icon": "img/wargoals/unification.png",
+   "id": "unification_leadership",
+   "kind": "unification_leadership",
+   "name": "Unification Leadership",
+   "plays": [
+    "dp_leadership_germany",
+    "dp_leadership_italy",
+    "dp_leadership_scandinavia",
+    "dp_leadership_andes",
+    "dp_leadership_yugoslavia"
+   ],
+   "settings": [
+    "require_target_be_part_of_war",
+    "validate_conflicts_war_goals_all",
+    "validate_formation_candidate_self",
+    "validate_formation_candidate_target"
+   ]
+  }
+ ]
+}

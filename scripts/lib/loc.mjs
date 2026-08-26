@@ -81,10 +81,11 @@ export class Loc {
     const concepts = [];
     let text = raw;
 
-    // $key$ substitution — bounded depth guards accidental cycles.
+    // $key$ substitution — bounded depth guards accidental cycles. Unresolved
+    // refs are UI-layer tokens: bullets render as bullets, the rest elide.
     if (_depth < 8) {
       text = text.replace(/\$([\w.\-']+)(?:\|[^$]*)?\$/g, (whole, k) => {
-        if (!this.map.has(k)) return whole;
+        if (!this.map.has(k)) return /BULLET/i.test(k) ? '• ' : '…';
         const inner = this.resolveText(this.map.get(k), _depth + 1);
         concepts.push(...inner.concepts);
         return inner.text;

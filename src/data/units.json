@@ -1,0 +1,1392 @@
+{
+ "units": [
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 15,
+     "valueText": "+15"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "good",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "unit_devastation_mult",
+     "label": "Devastation",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": false,
+   "domain": "army",
+   "fileOrder": 6,
+   "group": {
+    "id": "combat_unit_group_artillery",
+    "name": "Artillery"
+   },
+   "icon": "img/military/cannon_artillery.png",
+   "id": "combat_unit_type_cannon_artillery",
+   "manpower": 1000,
+   "name": "Cannon Artillery",
+   "supplyCapacity": 30,
+   "techs": [
+    {
+     "id": "artillery",
+     "name": "Artillery"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_artillery_add",
+     "label": "Artillery input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 30,
+     "valueText": "+30"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 15,
+     "valueText": "+15"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 8,
+     "valueText": "+8"
+    },
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "good",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "unit_devastation_mult",
+     "label": "Devastation",
+     "tone": "neutral",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": false,
+   "domain": "army",
+   "fileOrder": 7,
+   "group": {
+    "id": "combat_unit_group_artillery",
+    "name": "Artillery"
+   },
+   "icon": "img/military/mobile_artillery.png",
+   "id": "combat_unit_type_mobile_artillery",
+   "manpower": 1000,
+   "name": "Mobile Artillery",
+   "supplyCapacity": 40,
+   "techs": [
+    {
+     "id": "napoleonic_warfare",
+     "name": "Napoleonic Warfare"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_artillery_add",
+     "label": "Artillery input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 45,
+     "valueText": "+45"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 6,
+     "valueText": "+6"
+    },
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "good",
+     "value": 0.3,
+     "valueText": "+30%"
+    },
+    {
+     "key": "unit_devastation_mult",
+     "label": "Devastation",
+     "tone": "neutral",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": false,
+   "domain": "army",
+   "fileOrder": 8,
+   "group": {
+    "id": "combat_unit_group_artillery",
+    "name": "Artillery"
+   },
+   "icon": "img/military/shrapnel_artillery.png",
+   "id": "combat_unit_type_shrapnel_artillery",
+   "manpower": 1000,
+   "name": "Shrapnel Artillery",
+   "supplyCapacity": 60,
+   "techs": [
+    {
+     "id": "breech_loading_artillery",
+     "name": "Breech-Loading Artillery"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_artillery_add",
+     "label": "Artillery input",
+     "tone": "bad",
+     "value": 3,
+     "valueText": "+3"
+    },
+    {
+     "key": "goods_input_ammunition_add",
+     "label": "Ammunition input",
+     "tone": "bad",
+     "value": 3,
+     "valueText": "+3"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 55,
+     "valueText": "+55"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 30,
+     "valueText": "+30"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 6,
+     "valueText": "+6"
+    },
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "unit_devastation_mult",
+     "label": "Devastation",
+     "tone": "neutral",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": false,
+   "domain": "army",
+   "fileOrder": 9,
+   "group": {
+    "id": "combat_unit_group_artillery",
+    "name": "Artillery"
+   },
+   "icon": "img/military/siege_artillery.png",
+   "id": "combat_unit_type_siege_artillery",
+   "manpower": 1000,
+   "name": "Siege Artillery",
+   "supplyCapacity": 80,
+   "techs": [
+    {
+     "id": "defense_in_depth",
+     "name": "Defense in Depth"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_artillery_add",
+     "label": "Artillery input",
+     "tone": "bad",
+     "value": 4,
+     "valueText": "+4"
+    },
+    {
+     "key": "goods_input_ammunition_add",
+     "label": "Ammunition input",
+     "tone": "bad",
+     "value": 4,
+     "valueText": "+4"
+    },
+    {
+     "key": "goods_input_radios_add",
+     "label": "Radio input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 70,
+     "valueText": "+70"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 35,
+     "valueText": "+35"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 4,
+     "valueText": "+4"
+    },
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "good",
+     "value": 0.25,
+     "valueText": "+25%"
+    },
+    {
+     "key": "unit_morale_damage_mult",
+     "label": "Morale Damage",
+     "tone": "good",
+     "value": 0.15,
+     "valueText": "+15%"
+    },
+    {
+     "key": "unit_devastation_mult",
+     "label": "Devastation",
+     "tone": "neutral",
+     "value": 0.2,
+     "valueText": "+20%"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": false,
+   "domain": "army",
+   "fileOrder": 10,
+   "group": {
+    "id": "combat_unit_group_artillery",
+    "name": "Artillery"
+   },
+   "icon": "img/military/heavy_tank.png",
+   "id": "combat_unit_type_heavy_tank",
+   "manpower": 1000,
+   "name": "Heavy Tanks",
+   "supplyCapacity": 100,
+   "techs": [
+    {
+     "id": "mobile_armor",
+     "name": "Mobile Armor"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_tanks_add",
+     "label": "Tanks input",
+     "tone": "bad",
+     "value": 3,
+     "valueText": "+3"
+    },
+    {
+     "key": "goods_input_artillery_add",
+     "label": "Artillery input",
+     "tone": "bad",
+     "value": 4,
+     "valueText": "+4"
+    },
+    {
+     "key": "goods_input_ammunition_add",
+     "label": "Ammunition input",
+     "tone": "bad",
+     "value": 4,
+     "valueText": "+4"
+    },
+    {
+     "key": "goods_input_radios_add",
+     "label": "Radio input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "goods_input_oil_add",
+     "label": "Oil input",
+     "tone": "bad",
+     "value": 3,
+     "valueText": "+3"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 15,
+     "valueText": "+15"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": false,
+   "domain": "army",
+   "fileOrder": 11,
+   "group": {
+    "id": "combat_unit_group_cavalry",
+    "name": "Cavalry"
+   },
+   "icon": "img/military/hussars.png",
+   "id": "combat_unit_type_hussars",
+   "manpower": 1000,
+   "name": "Hussars",
+   "supplyCapacity": 25,
+   "techs": [
+    {
+     "id": "standing_army",
+     "name": "Standing Army"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_grain_add",
+     "label": "Grain input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 8,
+     "valueText": "+8"
+    },
+    {
+     "key": "unit_occupation_mult",
+     "label": "Battle Occupation",
+     "tone": "good",
+     "value": 0.3,
+     "valueText": "+30%"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": false,
+   "domain": "army",
+   "fileOrder": 12,
+   "group": {
+    "id": "combat_unit_group_cavalry",
+    "name": "Cavalry"
+   },
+   "icon": "img/military/dragoons.png",
+   "id": "combat_unit_type_dragoons",
+   "manpower": 1000,
+   "name": "Dragoons",
+   "supplyCapacity": 40,
+   "techs": [
+    {
+     "id": "line_infantry",
+     "name": "Line Infantry"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_grain_add",
+     "label": "Grain input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "goods_input_small_arms_add",
+     "label": "Small Arms input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 8,
+     "valueText": "+8"
+    },
+    {
+     "key": "unit_occupation_mult",
+     "label": "Battle Occupation",
+     "tone": "good",
+     "value": 0.3,
+     "valueText": "+30%"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": false,
+   "domain": "army",
+   "fileOrder": 13,
+   "group": {
+    "id": "combat_unit_group_cavalry",
+    "name": "Cavalry"
+   },
+   "icon": "img/military/cuirassiers.png",
+   "id": "combat_unit_type_cuirassiers",
+   "manpower": 1000,
+   "name": "Cuirassiers",
+   "supplyCapacity": 40,
+   "techs": [
+    {
+     "id": "line_infantry",
+     "name": "Line Infantry"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_grain_add",
+     "label": "Grain input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "goods_input_small_arms_add",
+     "label": "Small Arms input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 30,
+     "valueText": "+30"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 6,
+     "valueText": "+6"
+    },
+    {
+     "key": "unit_kill_rate_add",
+     "label": "Kill Rate",
+     "tone": "good",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "unit_morale_loss_mult",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 0.05,
+     "valueText": "+5%"
+    },
+    {
+     "key": "unit_occupation_mult",
+     "label": "Battle Occupation",
+     "tone": "good",
+     "value": 0.3,
+     "valueText": "+30%"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": false,
+   "domain": "army",
+   "fileOrder": 14,
+   "group": {
+    "id": "combat_unit_group_cavalry",
+    "name": "Cavalry"
+   },
+   "icon": "img/military/lancers.png",
+   "id": "combat_unit_type_lancers",
+   "manpower": 1000,
+   "name": "Lancers",
+   "supplyCapacity": 70,
+   "techs": [
+    {
+     "id": "napoleonic_warfare",
+     "name": "Napoleonic Warfare"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_grain_add",
+     "label": "Grain input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "goods_input_small_arms_add",
+     "label": "Small Arms input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "goods_input_iron_add",
+     "label": "Iron input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 45,
+     "valueText": "+45"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 45,
+     "valueText": "+45"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 4,
+     "valueText": "+4"
+    },
+    {
+     "key": "unit_devastation_mult",
+     "label": "Devastation",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    },
+    {
+     "key": "unit_occupation_mult",
+     "label": "Battle Occupation",
+     "tone": "good",
+     "value": 0.3,
+     "valueText": "+30%"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": false,
+   "domain": "army",
+   "fileOrder": 15,
+   "group": {
+    "id": "combat_unit_group_cavalry",
+    "name": "Cavalry"
+   },
+   "icon": "img/military/light_tanks.png",
+   "id": "combat_unit_type_light_tanks",
+   "manpower": 1000,
+   "name": "Light Tanks",
+   "supplyCapacity": 100,
+   "techs": [
+    {
+     "id": "mobile_armor",
+     "name": "Mobile Armor"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_tanks_add",
+     "label": "Tanks input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "goods_input_artillery_add",
+     "label": "Artillery input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "goods_input_oil_add",
+     "label": "Oil input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "goods_input_ammunition_add",
+     "label": "Ammunition input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "goods_input_radios_add",
+     "label": "Radio input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 15,
+     "valueText": "+15"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": true,
+   "domain": "army",
+   "fileOrder": 0,
+   "group": {
+    "id": "combat_unit_group_infantry",
+    "name": "Infantry"
+   },
+   "icon": "img/military/irregular_infantry.png",
+   "id": "combat_unit_type_irregular_infantry",
+   "manpower": 1000,
+   "name": "Irregular Infantry",
+   "supplyCapacity": 25,
+   "techs": [],
+   "upkeep": []
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": true,
+   "domain": "army",
+   "fileOrder": 1,
+   "group": {
+    "id": "combat_unit_group_infantry",
+    "name": "Infantry"
+   },
+   "icon": "img/military/line_infantry.png",
+   "id": "combat_unit_type_line_infantry",
+   "manpower": 1000,
+   "name": "Line Infantry",
+   "supplyCapacity": 30,
+   "techs": [
+    {
+     "id": "line_infantry",
+     "name": "Line Infantry"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_small_arms_add",
+     "label": "Small Arms input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 35,
+     "valueText": "+35"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 10,
+     "valueText": "+10"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": true,
+   "domain": "army",
+   "fileOrder": 2,
+   "group": {
+    "id": "combat_unit_group_infantry",
+    "name": "Infantry"
+   },
+   "icon": "img/military/skirmish_infantry.png",
+   "id": "combat_unit_type_skirmish_infantry",
+   "manpower": 1000,
+   "name": "Skirmish Infantry",
+   "supplyCapacity": 40,
+   "techs": [
+    {
+     "id": "general_staff",
+     "name": "General Staff"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_small_arms_add",
+     "label": "Small Arms input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    },
+    {
+     "key": "goods_input_ammunition_add",
+     "label": "Ammunition input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 30,
+     "valueText": "+30"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 40,
+     "valueText": "+40"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 8,
+     "valueText": "+8"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": true,
+   "domain": "army",
+   "fileOrder": 3,
+   "group": {
+    "id": "combat_unit_group_infantry",
+    "name": "Infantry"
+   },
+   "icon": "img/military/trench_infantry.png",
+   "id": "combat_unit_type_trench_infantry",
+   "manpower": 1000,
+   "name": "Trench Infantry",
+   "supplyCapacity": 50,
+   "techs": [
+    {
+     "id": "trench_works",
+     "name": "Trench Works"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_small_arms_add",
+     "label": "Small Arms input",
+     "tone": "bad",
+     "value": 3,
+     "valueText": "+3"
+    },
+    {
+     "key": "goods_input_ammunition_add",
+     "label": "Ammunition input",
+     "tone": "bad",
+     "value": 2,
+     "valueText": "+2"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 40,
+     "valueText": "+40"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 50,
+     "valueText": "+50"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 6,
+     "valueText": "+6"
+    },
+    {
+     "key": "unit_naval_invasion_efficiency_mult",
+     "label": "Naval Invasion Efficiency",
+     "tone": "bad",
+     "value": -0.25,
+     "valueText": "-25%"
+    }
+   ],
+   "conscriptLevies": true,
+   "domain": "army",
+   "fileOrder": 4,
+   "group": {
+    "id": "combat_unit_group_infantry",
+    "name": "Infantry"
+   },
+   "icon": "img/military/squad_infantry.png",
+   "id": "combat_unit_type_squad_infantry",
+   "manpower": 1000,
+   "name": "Squad Infantry",
+   "supplyCapacity": 60,
+   "techs": [
+    {
+     "id": "nco_training",
+     "name": "NCO Training"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_small_arms_add",
+     "label": "Small Arms input",
+     "tone": "bad",
+     "value": 3,
+     "valueText": "+3"
+    },
+    {
+     "key": "goods_input_ammunition_add",
+     "label": "Ammunition input",
+     "tone": "bad",
+     "value": 3,
+     "valueText": "+3"
+    },
+    {
+     "key": "goods_input_radios_add",
+     "label": "Radio input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 50,
+     "valueText": "+50"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 60,
+     "valueText": "+60"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 4,
+     "valueText": "+4"
+    },
+    {
+     "key": "unit_devastation_mult",
+     "label": "Devastation",
+     "tone": "neutral",
+     "value": 0.1,
+     "valueText": "+10%"
+    }
+   ],
+   "conscriptLevies": false,
+   "domain": "army",
+   "fileOrder": 5,
+   "group": {
+    "id": "combat_unit_group_infantry",
+    "name": "Infantry"
+   },
+   "icon": "img/military/mechanized_infantry.png",
+   "id": "combat_unit_type_mechanized_infantry",
+   "manpower": 1000,
+   "name": "Mechanized Infantry",
+   "supplyCapacity": 80,
+   "techs": [
+    {
+     "id": "mobile_armor",
+     "name": "Mobile Armor"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_small_arms_add",
+     "label": "Small Arms input",
+     "tone": "bad",
+     "value": 3,
+     "valueText": "+3"
+    },
+    {
+     "key": "goods_input_ammunition_add",
+     "label": "Ammunition input",
+     "tone": "bad",
+     "value": 3,
+     "valueText": "+3"
+    },
+    {
+     "key": "goods_input_oil_add",
+     "label": "Oil input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "goods_input_radios_add",
+     "label": "Radio input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    },
+    {
+     "key": "goods_input_tanks_add",
+     "label": "Tanks input",
+     "tone": "bad",
+     "value": 1,
+     "valueText": "+1"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 20,
+     "valueText": "+20"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "conscriptLevies": true,
+   "domain": "army",
+   "fileOrder": 16,
+   "group": {
+    "id": "combat_unit_group_marines",
+    "name": "Marines"
+   },
+   "icon": "img/military/low_tier_marines.png",
+   "id": "combat_unit_type_low_tier_marines",
+   "manpower": 1000,
+   "name": "Shipboard Marines",
+   "supplyCapacity": 30,
+   "techs": [
+    {
+     "id": "line_infantry",
+     "name": "Line Infantry"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_small_arms_add",
+     "label": "Small Arms input",
+     "tone": "bad",
+     "value": 1.5,
+     "valueText": "+1.5"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 25,
+     "valueText": "+25"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 35,
+     "valueText": "+35"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 10,
+     "valueText": "+10"
+    }
+   ],
+   "conscriptLevies": true,
+   "domain": "army",
+   "fileOrder": 17,
+   "group": {
+    "id": "combat_unit_group_marines",
+    "name": "Marines"
+   },
+   "icon": "img/military/mid_tier_marines.png",
+   "id": "combat_unit_type_mid_tier_marines",
+   "manpower": 1000,
+   "name": "Landing Marines",
+   "supplyCapacity": 45,
+   "techs": [
+    {
+     "id": "power_of_the_purse",
+     "name": "Power of the Purse"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_small_arms_add",
+     "label": "Small Arms input",
+     "tone": "bad",
+     "value": 2.5,
+     "valueText": "+2.5"
+    },
+    {
+     "key": "goods_input_ammunition_add",
+     "label": "Ammunition input",
+     "tone": "bad",
+     "value": 1.5,
+     "valueText": "+1.5"
+    }
+   ]
+  },
+  {
+   "battle": [
+    {
+     "key": "unit_offense_add",
+     "label": "Offense",
+     "tone": "good",
+     "value": 30,
+     "valueText": "+30"
+    },
+    {
+     "key": "unit_defense_add",
+     "label": "Defense",
+     "tone": "good",
+     "value": 40,
+     "valueText": "+40"
+    },
+    {
+     "key": "unit_morale_loss_add",
+     "label": "Morale Loss",
+     "tone": "bad",
+     "value": 8,
+     "valueText": "+8"
+    }
+   ],
+   "conscriptLevies": true,
+   "domain": "army",
+   "fileOrder": 18,
+   "group": {
+    "id": "combat_unit_group_marines",
+    "name": "Marines"
+   },
+   "icon": "img/military/high_tier_marines.png",
+   "id": "combat_unit_type_high_tier_marines",
+   "manpower": 1000,
+   "name": "Assault Marines",
+   "supplyCapacity": 60,
+   "techs": [
+    {
+     "id": "landing_craft",
+     "name": "Landing Craft"
+    }
+   ],
+   "upkeep": [
+    {
+     "key": "goods_input_small_arms_add",
+     "label": "Small Arms input",
+     "tone": "bad",
+     "value": 4,
+     "valueText": "+4"
+    },
+    {
+     "key": "goods_input_ammunition_add",
+     "label": "Ammunition input",
+     "tone": "bad",
+     "value": 3,
+     "valueText": "+3"
+    }
+   ]
+  }
+ ]
+}

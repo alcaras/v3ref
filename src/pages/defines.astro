@@ -1,0 +1,66 @@
+---
+import Base from '../layouts/Base.astro';
+import definesJson from '../data/defines.json';
+
+const groups = (definesJson as any).groups as any[];
+const total = groups.reduce((s, g) => s + g.values.length, 0);
+---
+<Base
+  title="Defines"
+  active="defines"
+  eyebrow="Concepts"
+  pageFilter="Filter defines…"
+  pageStats={[
+    { value: groups.length, label: 'namespaces' },
+    { value: total, label: 'constants' },
+  ]}
+>
+  {groups.map((g) => (
+    <div data-defgroup>
+      <h2 class="sect" id={g.namespace}>{g.namespace}</h2>
+      <div class="grid"><div class="grid__scroll">
+        <table class="vtbl vtbl--defines">
+          <tbody>
+            {g.values.map((v: any) => (
+              <tr data-name={`${g.namespace} ${v.key} ${v.value}`.toLowerCase()}>
+                <td class="def-key">{v.key}</td>
+                <td class="def-val">{v.value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+  ))}
+
+  <p class="caption">Raw engine constants from defines/00_defines.txt — the numbers under every mechanic</p>
+
+  <script is:inline>
+    const filter = document.getElementById('page-filter');
+    if (filter) {
+      const rows = [...document.querySelectorAll('tbody tr[data-name]')];
+      filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        for (const r of rows) r.classList.toggle('is-hidden', !!q && !r.dataset.name.includes(q));
+        document.querySelectorAll('[data-defgroup]').forEach((wrap) => {
+          const any = [...wrap.querySelectorAll('tbody tr[data-name]')].some((r) => !r.classList.contains('is-hidden'));
+          wrap.classList.toggle('is-hidden', !any);
+        });
+      });
+    }
+  </script>
+
+  <style is:global>
+    .vtbl--defines .def-key {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-soft);
+      width: 34rem;
+    }
+    .vtbl--defines .def-val {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--gold-soft);
+    }
+  </style>
+</Base>
