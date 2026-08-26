@@ -20,6 +20,8 @@ Point the pipeline at the mirror with `V3REF` (defaults to `../v3ref`):
 
 ```
 make data       node scripts/build_*.mjs → src/data/*.json (+ public/data/*.json)
+                  build_map.mjs needs ImageMagick and reads provinces.png;
+                  build_locations.mjs joins the 1836 history folders
 make art        scripts/extract_art.sh   → DDS→PNG from a local install (VIC3_APP)
 make audit      scripts/audit.mjs        → HARD GATE (see below)
 make changelog  scripts/changelog.mjs    → diff vs last snapshot → CHANGELOG.md
@@ -110,6 +112,27 @@ Inherited from owreference's design pass, re-tokened for Vic3:
 7. **Header nav + home index share one source of truth**: `src/data/tabs.ts`.
    Nav shows `built` pages; the index also shows `placeholder` ones dimmed.
    Building a page = flip its status to `built`.
+8. **The map is one recoloured index image.** `build_map.mjs` downsamples
+   `provinces.png` with ImageMagick `-sample` (NEAREST NEIGHBOUR — an
+   interpolating filter invents colours matching no province) and encodes the
+   state index in each pixel's R+G. Every layer, overlay and locator map
+   recolours that one 111KB image client-side; never generate per-state
+   images. Label anchors are the mean of a state's own pixels SNAPPED to a
+   pixel in that state — a bbox centre lands in the sea for concave shapes.
+9. **A choropleth is an all-pairs form**: any two regions get compared, not
+   just legend neighbours, so the categorical palette caps at its three
+   all-pairs-safe slots. Overlays therefore max out at three and colour by
+   which layer LEADS, never by blending hues (that is what makes these maps
+   muddy). One layer = sequential ramp, near-zero closest to the surface.
+10. **Never scale text with a CSS transform.** Map numbers lived inside the
+    zoomed layer with a counter-scaled font and turned to mush — the browser
+    rasterises at the computed size then stretches. Keep labels OUTSIDE the
+    transform and apply the view to their POSITION. Likewise, anything
+    positioned against a transformed element (tooltips) must measure the
+    untransformed wrapper.
+11. **A sticky GRID ITEM is constrained by the grid container, not its row**
+    (Chrome), so in a multi-row grid it slides over the row below. Put the
+    sticky on an inner wrapper.
 
 ---
 
@@ -228,23 +251,65 @@ Mechanics for staying anchored:
   groups actually reference (`core: true` in ideologies.json).
 - **Modifier blocks carry meta keys** (`icon`, `multiplier`) that are not
   modifiers — `formatBag` filters to numeric/boolean values only.
+- **`parseFolder` merges by TOP-LEVEL key, and the history folders all use the
+  same one** (`POPS`, `BUILDINGS`, `STATES`), so it silently keeps only the
+  last file — 47 populated states and a 38M world. Parse those per file
+  (`parseEach` in `build_locations.mjs`). The tell was the world population:
+  1.022 BILLION is right for 1836, and country totals match history
+  (France 34.6M, Britain 26.0M, Russia 55.9M, China 366M). Use that check.
+- **218 of 675 states are SPLIT between countries**, and the setup records
+  each pop under the country holding it. Attribute population per owner, not
+  per state, or Portugal appears to hold 45M people instead of its 446k in
+  Bombay. `locations.json` carries `owners[].population` and a `split` flag.
+- **Capped resources and arable land in a split state divide by each owner's
+  share of provinces** (wiki-documented, not in script). Say so where the
+  whole-state figure is shown.
+- **Construction cost is a property of the BUILDING**; no production method
+  modifies it (checked across every PM). So ranking a building's methods by
+  profit-per-construction is profit divided by a constant — same order. It
+  only reorders ACROSS buildings, which is why that target lives on Compare
+  Buildings.
+- **A lone production method is not buildable.** A building runs one method
+  from every group, so cross-building comparisons must evaluate whole
+  configurations, not isolated methods.
+- **Save files**: a `.v3` is a ZIP whose `gamestate` is PDX BINARY (~244MB
+  unpacked) — unreadable in the browser, hence melting at pdx.tools first.
+  In a melted save, current prices live at
+  `<market id>={ … previous_price_report={ goods={ N={ value=X } } } }`, goods
+  keyed by POSITION in `common/goods` (hence `index` on each good).
+  `meta_data.name` is the played country; `country_manager…definition="TAG"`
+  carries `market=N`, which is how the importer finds the player's market.
+  A save holds many markets (12 in a real MP save) with different prices.
 
 ---
 
 ## Roadmap
 
-- **Stages 0-5 (done)**: every planned reference page — economy (goods,
-  buildings, PMs, pops, needs, companies), politics (laws, IGs, ideologies,
-  institutions, traits, decrees), technology, military (units, mobilization,
-  ships), diplomacy (treaties, power blocs, subjects, war goals), world
-  (countries, states, cultures), journal/events/decisions, concepts, defines.
-- **Tools (done)**: profit calculator, company planner (shareable via URL
-  hash), patch notes.
+- **Reference (done)**: every planned page — economy (goods, buildings, PMs,
+  pops, needs, companies), politics (laws, IGs, ideologies, institutions,
+  traits, decrees), technology, military (units, mobilization, ships),
+  diplomacy (treaties, power blocs, subjects, war goals), world (countries,
+  locations, cultures), journal/events/decisions, concepts, defines.
+- **Locations (done)**: 675 per-state pages with the 1836 owner split, pops by
+  culture and religion, starting buildings with their active methods, computed
+  goods output, and a locator map cropped from the shared index image.
+- **Map (done)**: layers for deposits, undiscovered finds, 1836 production and
+  population; up to three overlays; numbers on the map; zoom, pan and pinch;
+  ranked table + CSV. View lives in the hash (`#l=…&labels=1&z=3`).
+- **Profit tools (done)**: Building Profit (one building, every method ranked
+  in place, per-group locks, optimise by construction point or per worker) and
+  Compare Buildings (every building at its best full configuration). Prices are
+  shared via localStorage and can be imported from a melted save.
 - **Infrastructure (done)**: `make audit` gate, per-patch changelog with
-  gzipped snapshots.
+  gzipped snapshots, invented-label tracking.
+- **Companies planning lives elsewhere**: <https://alcaras.github.io/v3co/> is
+  the maintained tool (coverage matrix, seven-slot optimiser, filters). This
+  site keeps the reference data and links across; do not rebuild a planner.
 - **Open**: a shareable tech-tree planner (owtt-style: era columns, click a
   tech to pull in its prereq closure, nation picker seeded from the tier
   bundles in `scripted_effects/00_starting_inventions.txt` + per-country
   history files, plan in the URL hash). Deeper event trigger/effect rendering
-  (a generic Paradox-script pretty-printer) if the loc text proves not enough.
-  States↔cultural-homelands join. Country flags (procedural coats of arms).
+  if the loc text proves not enough. States↔cultural-homelands join. Country
+  flags (procedural coats of arms). The save importer's file-picker path is
+  implemented but has never been exercised in a real browser — its parsing is
+  verified against a 309MB melted save in Node, the click-to-load is not.
