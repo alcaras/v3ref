@@ -8,6 +8,10 @@ import { writeFileSync, readFileSync } from 'node:fs';
 const gen = (f) => JSON.parse(readFileSync(new URL(`../src/data/${f}`, import.meta.url).pathname, 'utf8'));
 const { buildings } = gen('buildings.json');
 const { goods } = gen('goods.json');
+// Tag -> name, so the save importer can match meta_data.name ("Russia") to the
+// tag that owns a market.
+const countries = {};
+for (const c of gen('countries.json').countries) countries[c.tag] = c.name;
 
 const goodsOut = {};
 for (const g of goods) goodsOut[g.id] = { name: g.name, cost: g.cost, icon: g.icon, index: g.index };
@@ -38,6 +42,6 @@ const buildingsOut = buildings
 
 writeFileSync(
   new URL('../public/data/profit-calc.json', import.meta.url).pathname,
-  JSON.stringify({ buildings: buildingsOut, goods: goodsOut }),
+  JSON.stringify({ buildings: buildingsOut, goods: goodsOut, countries }),
 );
 console.log(`profit-calc.json: ${buildingsOut.length} buildings`);

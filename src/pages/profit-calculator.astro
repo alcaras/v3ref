@@ -9,8 +9,6 @@ const base = import.meta.env.BASE_URL;
   eyebrow="Tools"
   description="What one Victoria 3 building earns per level at your market prices, with every production method in every group ranked in place."
 >
-  <PriceRail />
-
   <div class="bp">
     <aside class="rail">
       <div>
@@ -25,6 +23,7 @@ const base = import.meta.env.BASE_URL;
         </select>
         <p class="bp__railnote" id="bp-ranknote"></p>
       </div>
+      <PriceRail />
       <div>
         <div class="rail__label">
           <span>Market prices</span>
@@ -76,6 +75,10 @@ const base = import.meta.env.BASE_URL;
         return;
       }
       const data = await fetch(`${base}data/profit-calc.json`).then((r) => r.json());
+      // The importer needs the goods table (for base costs and file-order index).
+      window.v3ImportGoods = data.goods;
+      window.v3CountryName = data.countries;   // lets the importer find the played country
+      document.addEventListener('v3prices-changed', () => { renderPrices(); renderAll(); });
       const $ = (id) => document.getElementById(id);
       const P = window.v3Prices;
       // A locked group is one you have decided for other reasons — you want the
@@ -173,7 +176,7 @@ const base = import.meta.env.BASE_URL;
               <span class="prow__name">${data.goods[g].name}</span>
               <span class="prow__val" data-val="${g}"></span>
             </div>
-            <input type="range" min="-75" max="75" step="5" value="${P.get(g)}" data-good="${g}" />
+            <input type="range" min="-75" max="75" step="1" value="${P.get(g)}" data-good="${g}" />
           </div>`).join('');
 
         $('bp-prices').querySelectorAll('input[data-good]').forEach((input) =>

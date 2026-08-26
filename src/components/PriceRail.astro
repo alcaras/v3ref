@@ -1,11 +1,86 @@
 ---
-// Shared market-price state for the profit tools.
-//
-// Both tools ask the same question — "at MY prices, what pays?" — so the
-// market you set on one page carries to the other via localStorage. Prices are
-// stored as a percentage offset from each good's base cost, which is how the
-// game's own price bands work (±75%).
+// Shared market-price state and the save-file price importer for the profit
+// tools. Render <PriceRail /> once per page, and <PriceImport /> markup where
+// the control belongs.
 ---
+<div class="imp">
+  <input type="file" id="imp-file" accept=".v3,.txt,.json" hidden />
+  <button type="button" class="imp__btn" id="imp-open">&#8681; Load prices from a save</button>
+  <select id="imp-market" class="imp__sel" hidden></select>
+  <p class="imp__note" id="imp-note">
+    Melt your save at <a href="https://pdx.tools/" target="_blank" rel="noopener">pdx.tools</a>,
+    then pick the melted file. It is read on your machine — nothing is uploaded.
+  </p>
+</div>
+
+<script is:inline>
+  (() => {
+    const $ = (id) => document.getElementById(id);
+    const note = $('imp-note'), sel = $('imp-market');
+    let parsed = null;
+
+    const say = (html, cls = '') => { note.innerHTML = html; note.className = `imp__note ${cls}`; };
+
+    function applyMarket(id) {
+      const goods = window.v3ImportGoods;   // the page supplies its goods table
+      if (!goods || !parsed) return;
+      const { offsets, matched } = window.v3SaveImport.toOffsets(parsed.markets[id], goods);
+      window.v3Prices.setAll(offsets);
+      window.v3Prices.source = `${parsed.label[id] ?? `market ${id}`} · ${parsed.date ?? 'save'}`;
+      say(`Loaded <b>${matched}</b> prices from <b>${parsed.label[id] ?? `market ${id}`}</b>.`, 'is-good');
+      document.dispatchEvent(new CustomEvent('v3prices-changed'));
+    }
+
+    $('imp-open').addEventListener('click', () => $('imp-file').click());
+    $('imp-file').addEventListener('change', async (e) => {
+      const file = e.target.files?.[0];
+      if (!file) return;
+      const pre = await window.v3SaveImport.check(file);
+      if (!pre.ok) {
+        say('That is still a packed save (its gamestate is binary). Melt it at '
+          + '<a href="https://pdx.tools/" target="_blank" rel="noopener">pdx.tools</a> '
+          + 'and choose the melted file.', 'is-bad');
+        return;
+      }
+      say(`Reading ${(file.size / 1048576).toFixed(0)} MB…`);
+      try {
+        const res = await window.v3SaveImport.parse(file, (p) =>
+          say(`Reading ${(file.size / 1048576).toFixed(0)} MB… ${Math.round(p * 100)}%`));
+        const ids = Object.keys(res.markets);
+        if (!ids.length) { say('No price data found in that file.', 'is-bad'); return; }
+
+        // Label each market by the countries trading in it, and find the one
+        // belonging to the country this save was played as.
+        const byMarket = {};
+        for (const [tag, m] of Object.entries(res.tagMarket)) (byMarket[m] ??= []).push(tag);
+        res.label = {};
+        for (const id of ids) {
+          const tags = (byMarket[id] ?? []).slice(0, 3).join(', ');
+          res.label[id] = tags ? `${tags}${(byMarket[id] || []).length > 3 ? '…' : ''}` : `market ${id}`;
+        }
+        parsed = res;
+
+        sel.hidden = ids.length < 2;
+        sel.innerHTML = ids
+          .map((id) => `<option value="${id}">${res.label[id]}</option>`).join('');
+        // Default to the played country's own market where we can identify it.
+        const playerTag = Object.keys(res.tagMarket).find(
+          (t) => res.player && (window.v3CountryName?.[t] === res.player));
+        const want = playerTag ? String(res.tagMarket[playerTag]) : ids[0];
+        sel.value = ids.includes(want) ? want : ids[0];
+        applyMarket(sel.value);
+        if (res.player) {
+          note.innerHTML += ` Save played as <b>${res.player}</b>.`;
+        }
+      } catch (err) {
+        say(`Could not read that file: ${err.message}`, 'is-bad');
+      }
+    });
+
+    sel.addEventListener('change', () => applyMarket(sel.value));
+  })();
+</script>
+
 <script is:inline>
   window.v3Prices = (() => {
     const KEY = 'v3ref-market-prices';
@@ -26,6 +101,96 @@
       of(goods, g) { return (goods[g]?.cost ?? 0) * (1 + this.get(g) / 100); },
       /** True when nothing has been moved off base. */
       isBase() { return Object.keys(offsets).length === 0; },
+      /** Replace the whole market at once (used by the save importer). */
+      setAll(next) {
+        offsets = {};
+        for (const [g, pct] of Object.entries(next)) if (pct !== 0) offsets[g] = pct;
+        try { localStorage.setItem(KEY, JSON.stringify(offsets)); } catch {}
+      },
+      source: null,   // human-readable note about where these prices came from
+    };
+  })();
+
+  // ── Import prices from a melted save ────────────────────────────────
+  //
+  // A .v3 save is a ZIP whose gamestate is PDX BINARY, which cannot be read
+  // here — melt it at pdx.tools first, then drop the plaintext file in. Nothing
+  // is uploaded: the file is read locally with the File API.
+  //
+  // Where the prices live, verified against a real 1876 save:
+  //   meta_data.name                     the country you played
+  //   country_manager…definition="TAG"   with market=N  → tag to market
+  //   <market id>={ … previous_price_report={ goods={ N={ value=X } } } }
+  // Goods are identified by their POSITION in common/goods, not by name, which
+  // is why the site data carries a file-order index for each good.
+  window.v3SaveImport = (function () {
+    const CHUNK = 4 << 20;       // market key sits ~10KB before its report and
+    const OVERLAP = 256 << 10;   // a report is ~4.6KB, so this never splits one
+
+    async function parse(file, onProgress) {
+      const dec = new TextDecoder('latin1');   // byte-for-char; the syntax is ASCII
+      let carry = '';
+      let lastKey = null;
+      let player = null;
+      const tagMarket = {};
+      const markets = {};        // market id -> { goodIndex: price }
+
+      for (let start = 0; start < file.size; start += CHUNK) {
+        const buf = await file.slice(start, Math.min(start + CHUNK, file.size)).arrayBuffer();
+        const text = carry + dec.decode(buf);
+
+        if (player === null) {
+          const m = /meta_data=\{[\s\S]{0,400}?name="([^"]+)"/.exec(text);
+          if (m) player = m[1];
+        }
+        for (const m of text.matchAll(/definition="([A-Z0-9]{3})"[\s\S]{0,400}?\bmarket=(\d+)/g)) {
+          tagMarket[m[1]] = Number(m[2]);
+        }
+        // One pass, in order, so each report is attributed to the database key
+        // that opened its market block.
+        for (const m of text.matchAll(/\n\t\t(\d+)=\{|previous_price_report=/g)) {
+          if (m[1] !== undefined) { lastKey = Number(m[1]); continue; }
+          if (lastKey === null) continue;
+          const blk = text.slice(m.index, m.index + 8000);
+          const vals = {};
+          for (const v of blk.matchAll(/\n\t+(\d+)=\{\s*\n\t+value=([\d.]+)/g)) {
+            vals[Number(v[1])] = Number(v[2]);
+          }
+          // Only trust a complete report; a truncated one means it straddled the
+          // chunk edge and the overlap will present it again intact.
+          if (Object.keys(vals).length >= 20) markets[lastKey] = vals;
+        }
+
+        carry = text.slice(-OVERLAP);
+        onProgress?.(Math.min(1, (start + CHUNK) / file.size));
+      }
+      return { player, tagMarket, markets };
+    }
+
+    return {
+      /** Reject a raw save early, with the fix, rather than scanning 300MB. */
+      async check(file) {
+        const head = new Uint8Array(await file.slice(0, 4).arrayBuffer());
+        if (head[0] === 0x50 && head[1] === 0x4b) {
+          return { ok: false, reason: 'binary' };   // "PK" — still a zipped save
+        }
+        return { ok: true };
+      },
+      parse,
+      /** Turn a market's prices into offsets from each good's base cost. */
+      toOffsets(prices, goods) {
+        const byIndex = {};
+        for (const [id, g] of Object.entries(goods)) if (g.index != null) byIndex[g.index] = { id, cost: g.cost };
+        const offsets = {};
+        let matched = 0;
+        for (const [idx, price] of Object.entries(prices)) {
+          const g = byIndex[Number(idx)];
+          if (!g || !g.cost) continue;
+          matched++;
+          offsets[g.id] = Math.round((price / g.cost - 1) * 1000) / 10;
+        }
+        return { offsets, matched };
+      },
     };
   })();
 </script>
@@ -73,4 +238,21 @@
   .prow__val { font-variant-numeric: tabular-nums; color: var(--text); }
   .prow__val.is-off { color: var(--gold); }
   .prow input { width: 100%; accent-color: var(--gold); margin: 0; height: 1rem; }
+
+  /* Save importer */
+  .imp { display: flex; flex-direction: column; gap: 0.3rem; }
+  .imp__btn {
+    font: inherit; font-size: 0.72rem; cursor: pointer; text-align: left;
+    background: var(--bg-elev); border: 1px solid var(--border-strong);
+    color: var(--text-dim); border-radius: 6px; padding: 0.3rem 0.5rem;
+  }
+  .imp__btn:hover { color: var(--gold); border-color: var(--gold-deep); }
+  .imp__note { font-size: 0.66rem; color: var(--text-faint); line-height: 1.45; }
+  .imp__note a { color: var(--gold-soft); }
+  .imp__note.is-bad { color: var(--tone-bad); }
+  .imp__note.is-good { color: var(--tone-good); }
+  .imp__sel {
+    background: var(--bg-elev); color: var(--text); border: 1px solid var(--border);
+    border-radius: 5px; font: inherit; font-size: 0.72rem; padding: 0.2rem 0.3rem; width: 100%;
+  }
 </style>
