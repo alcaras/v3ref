@@ -22,6 +22,7 @@ const base = import.meta.env.BASE_URL;
         <select id="bp-rank" class="rail__select">
           <option value="net">Total profit (£ / level)</option>
           <option value="worker">Profit per worker</option>
+          <option value="constr">Profit per construction point</option>
         </select>
         <p class="bp__railnote" id="bp-ranknote"></p>
       </div>
@@ -103,8 +104,15 @@ const base = import.meta.env.BASE_URL;
       // same order. It only reorders across buildings, which is why it is a
       // column on Compare Methods and not a mode here.
       const rankBy = () => document.getElementById('bp-rank').value;
-      const metric = (r) =>
-        rankBy() === 'worker' ? (r.totalJobs > 0 ? r.net / r.totalJobs : -Infinity) : r.net;
+      const metric = (r) => {
+        const mode = rankBy();
+        if (mode === 'worker') return r.totalJobs > 0 ? r.net / r.totalJobs : -Infinity;
+        if (mode === 'constr') {
+          const c = state.building?.construction;
+          return c ? r.net / c : r.net;
+        }
+        return r.net;
+      };
 
       const liveGroups = () =>
         state.building.pmGroups.map((g, gi) => ({ gi, g })).filter(({ g }) => g.pms.length);
@@ -221,6 +229,7 @@ const base = import.meta.env.BASE_URL;
       }
 
       function renderGroups() {
+        const mode = rankBy();
         $('bp-groups').innerHTML = liveGroups().map(({ gi, g }) => {
           const current = state.choice[gi];
           const currentNet = evaluateWith(gi, current).net;
@@ -229,6 +238,7 @@ const base = import.meta.env.BASE_URL;
             return {
               pi, pm, net: r.net, jobs: r.totalJobs, delta: r.net - currentNet,
               perWorker: r.totalJobs > 0 ? r.net / r.totalJobs : null,
+              perConstr: state.building.construction ? r.net / state.building.construction : null,
               score: metric(r),
             };
           });
@@ -239,8 +249,12 @@ const base = import.meta.env.BASE_URL;
               <div class="bp__gname">${g.name}</div>
               <table class="vtbl bp__gtable">
                 <thead><tr>
-                  <th>Method</th><th class="num">Net £</th><th class="num">vs now</th>
-                  <th class="num">Jobs</th><th class="num">£/wkr</th>
+                  <th>Method</th>
+                  <th class="num ${mode === 'net' ? 'is-opt' : ''}">Net £</th>
+                  <th class="num">vs now</th>
+                  <th class="num">Jobs</th>
+                  <th class="num ${mode === 'worker' ? 'is-opt' : ''}" title="Profit per worker">£/wkr</th>
+                  <th class="num ${mode === 'constr' ? 'is-opt' : ''}" title="Profit per construction point">£/con</th>
                 </tr></thead>
                 <tbody>${ranked.map((o) => `
                   <tr class="bp__opt ${o.pi === current ? 'is-current' : ''}" data-gi="${gi}" data-pi="${o.pi}">
@@ -250,12 +264,15 @@ const base = import.meta.env.BASE_URL;
                       ${o.pm.name}
                       ${o.score === best ? '<span class="bp__badge">best</span>' : ''}
                     </td>
-                    <td class="num"><b class="${o.net >= 0 ? 'tone-good' : 'tone-bad'}">£${o.net.toFixed(0)}</b></td>
+                    <td class="num ${mode === 'net' ? 'is-opt' : ''}"><b class="${o.net >= 0 ? 'tone-good' : 'tone-bad'}">£${o.net.toFixed(0)}</b></td>
                     <td class="num">${o.pi === current ? '<span class="bp__cur">—</span>'
                       : `<span class="${o.delta > 0 ? 'tone-good' : o.delta < 0 ? 'tone-bad' : 'tone-neutral'}">${
                           o.delta > 0 ? '+' : ''}£${o.delta.toFixed(0)}</span>`}</td>
                     <td class="num dim">${o.jobs}</td>
-                    <td class="num dim">${o.perWorker == null ? '—' : o.perWorker.toFixed(2)}</td>
+                    <td class="num ${mode === 'worker' ? 'is-opt' : 'dim'}">${
+                      o.perWorker == null ? '—' : o.perWorker.toFixed(2)}</td>
+                    <td class="num ${mode === 'constr' ? 'is-opt' : 'dim'}">${
+                      o.perConstr == null ? '—' : o.perConstr.toFixed(2)}</td>
                   </tr>`).join('')}
                 </tbody>
               </table>
@@ -307,13 +324,19 @@ const base = import.meta.env.BASE_URL;
 
       $('bp-combos').closest('details').addEventListener('toggle', renderCombos);
       function rankNote() {
-        $('bp-ranknote').innerHTML = rankBy() === 'worker'
-          ? 'Ranking by output per job — this is where automation earns its place.'
-          : 'Ranking by total profit per level. Per point of construction gives the same order here '
-            + `(cost is fixed per building), so use <a href="${base}method-comparison">Compare Methods</a> `
-            + 'to optimise construction across buildings.';
+        const c = state.building?.construction;
+        const notes = {
+          net: 'Ranking by total profit per level.',
+          worker: 'Ranking by output per job — this is where automation earns its place.',
+          constr: `Every method here divides by the same ${c ?? '—'} construction points, so the order `
+            + 'matches total profit; the £/con column is what compares this building against others. '
+            + `To rank across buildings, use <a href="${base}method-comparison">Compare Methods</a>.`,
+        };
+        $('bp-ranknote').innerHTML = notes[rankBy()];
       }
       $('bp-rank').addEventListener('change', () => { rankNote(); renderAll(); });
+      // The construction note names this building's cost, so it follows the picker.
+      sel.addEventListener('change', rankNote);
       rankNote();
       $('bp-reset').addEventListener('click', () => { P.reset(); renderPrices(); renderAll(); });
       sel.addEventListener('change', () => pickBuilding(sel.value));
@@ -385,6 +408,9 @@ const base = import.meta.env.BASE_URL;
       border-radius: 999px; padding: 0.02rem 0.3rem;
     }
     .bp__cur { color: var(--text-faint); }
+    /* The column you are optimising for reads as the primary one. */
+    .bp__gtable .is-opt { color: var(--gold); }
+    .bp__gtable thead th.is-opt { color: var(--gold); }
 
     .bp__cross {
       font-size: 0.78rem; color: var(--text-dim); margin: 0 0 0.8rem;

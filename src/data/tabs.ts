@@ -189,9 +189,9 @@ export const TABS: Tab[] = [
     summary: 'One building at your prices — every method in every group ranked in place',
   },
   {
-    slug: 'method-comparison', icon: '⚖️', label: 'Compare Methods', section: 'Tools',
+    slug: 'method-comparison', icon: '⚖️', label: 'Compare Buildings', section: 'Tools',
     status: 'built',
-    summary: 'Every production method priced at your market — sort by profit, per worker, or per construction',
+    summary: 'Every building at its best production set for your prices — by profit, per worker, or per construction',
   },
   {
     slug: 'company-planner', icon: '🏢', label: 'Company Planner', section: 'Tools',

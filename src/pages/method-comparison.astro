@@ -5,7 +5,7 @@ import PriceRail from '../components/PriceRail.astro';
 const base = import.meta.env.BASE_URL;
 ---
 <Base
-  title="Compare Methods"
+  title="Compare Buildings"
   active="method-comparison"
   eyebrow="Tools"
   description="Every Victoria 3 production method priced at your market, sortable by profit, profit per worker, and profit per point of construction."
@@ -27,8 +27,8 @@ const base = import.meta.env.BASE_URL;
 
     <div class="mc__main">
       <p class="bp__cross">
-        Every method in the game, priced at your market. For one building's groups ranked against each
-        other, use <a href={`${base}profit-calculator`}>Building Profit →</a>
+        Every building at its best production set for your market and target. To break one building
+        down group by group, use <a href={`${base}profit-calculator`}>Building Profit →</a>
       </p>
       <div class="mc__bar">
         <label class="mc__field mc__field--opt">
@@ -53,7 +53,7 @@ const base = import.meta.env.BASE_URL;
           <thead>
             <tr>
               <th style="min-width: 12rem;">Building</th>
-              <th style="min-width: 12rem;">Production method</th>
+              <th style="min-width: 16rem;" title="The method from each group that wins for the chosen target">Best set</th>
               <th class="num" title="Revenue − input cost at your prices, per building level">Net £</th>
               <th class="num" title="Jobs this method adds per level">Workers</th>
               <th class="num" title="Net £ per worker employed">£/worker</th>
@@ -66,11 +66,13 @@ const base = import.meta.env.BASE_URL;
       </div></div>
 
       <p class="caption">
-        Each row is one method's own goods and jobs, independent of the rest of its building — methods
-        that move no goods are omitted. Automation methods remove jobs, so they carry no per-worker
-        figure. Construction is the building's cost in construction points, so £/constr. compares where
-        a point of construction capacity buys the most output. Prices are shared with
-        <a href={`${base}profit-calculator`}>Building Profit</a>.
+        Each row is a whole building running its best set for the chosen target — one method from every
+        group, chosen by searching all of its combinations at your prices, because a single method is
+        not something you can build on its own. Buildings that move no goods (monuments, financial
+        districts) are absent. Construction is the building's cost in construction points, so £/constr.
+        shows where a point of construction capacity buys the most output. Prices and target are shared
+        with <a href={`${base}profit-calculator`}>Building Profit</a>, which breaks one building down
+        group by group.
       </p>
     </div>
   </div>
@@ -82,22 +84,59 @@ const base = import.meta.env.BASE_URL;
       const P = window.v3Prices;
       const priceOf = (g) => P.of(data.goods, g);
 
-      // One row per (building, method) that actually moves goods.
-      const rows = [];
+      // One row per BUILDING, run as an actual building would be: one method
+      // from every group. A lone method is not a thing you can build — comparing
+      // methods in isolation implies combinations that cannot exist and hides
+      // the inputs their siblings add.
       const usedGoods = new Set();
-      for (const b of data.buildings) {
-        for (const g of b.pmGroups) {
-          for (const pm of g.pms) {
-            if (!pm.inputs.length && !pm.outputs.length) continue;
-            for (const l of [...pm.inputs, ...pm.outputs]) usedGoods.add(l.g);
-            rows.push({
-              b, pm,
-              jobs: pm.jobs.reduce((s, j) => s + j.a, 0),
-              search: `${b.name} ${g.name} ${pm.name} ${[...pm.inputs, ...pm.outputs]
-                .map((l) => data.goods[l.g]?.name ?? l.g).join(' ')}`.toLowerCase(),
-            });
-          }
+      const buildings = data.buildings.map((b) => {
+        const groups = b.pmGroups.map((g, gi) => ({ gi, g })).filter(({ g }) => g.pms.length);
+        let combos = [{}];
+        for (const { gi, g } of groups) {
+          const next = [];
+          for (const c of combos) for (let pi = 0; pi < g.pms.length; pi++) next.push({ ...c, [gi]: pi });
+          combos = next;
         }
+        for (const g of b.pmGroups)
+          for (const pm of g.pms)
+            for (const l of [...pm.inputs, ...pm.outputs]) usedGoods.add(l.g);
+        return {
+          b, groups, combos,
+          search: `${b.name} ${b.group ?? ''} ${b.pmGroups
+            .flatMap((g) => g.pms.map((pm) => pm.name)).join(' ')} ${b.pmGroups
+            .flatMap((g) => g.pms.flatMap((pm) => [...pm.inputs, ...pm.outputs]
+              .map((l) => data.goods[l.g]?.name ?? l.g))).join(' ')}`.toLowerCase(),
+        };
+      }).filter((r) => r.combos.length);
+
+      // Evaluate one full building configuration.
+      function evalCombo(r, choice) {
+        const flow = {}, jobs = {};
+        for (const { gi } of r.groups) {
+          const pm = r.b.pmGroups[gi].pms[choice[gi]];
+          for (const l of pm.inputs) flow[l.g] = (flow[l.g] ?? 0) - l.a;
+          for (const l of pm.outputs) flow[l.g] = (flow[l.g] ?? 0) + l.a;
+          for (const j of pm.jobs) jobs[j.p] = (jobs[j.p] ?? 0) + j.a;
+        }
+        let net = 0;
+        for (const [g, u] of Object.entries(flow)) net += u * priceOf(g);
+        const totalJobs = Object.values(jobs).reduce((s, a) => s + a, 0);
+        return { net, totalJobs };
+      }
+
+      // The best configuration for the chosen target. The space is small (108
+      // at the widest), so this is exhaustive rather than assuming the per-group
+      // winners combine — which holds for total profit but not for the ratios.
+      function bestFor(r, mode, constr) {
+        let best = null;
+        for (const c of r.combos) {
+          const e = evalCombo(r, c);
+          const score = mode === 'worker' ? (e.totalJobs > 0 ? e.net / e.totalJobs : -Infinity)
+            : mode === 'constr' ? (constr ? e.net / constr : e.net)
+            : e.net;
+          if (!best || score > best.score) best = { c, ...e, score };
+        }
+        return best;
       }
 
       // ── Price rail: every good any method touches ──────────────────
@@ -139,7 +178,7 @@ const base = import.meta.env.BASE_URL;
 
       // The control and the clickable headers drive the same sort, so the two
       // can never disagree: choosing a target just sets that column's header.
-      const OPT_COL = { net: 2, worker: 4, constr: 6 };
+      const OPT_COL = { net: 2, worker: 4, constr: 6 };   // Net £, £/worker, £/constr
       function applyOpt() {
         const want = OPT_COL[$('mc-opt').value];
         [...$('mc-table').tHead.rows[0].cells].forEach((th, i) =>
@@ -150,36 +189,37 @@ const base = import.meta.env.BASE_URL;
       function renderTable() {
         const q = $('mc-filter').value.trim().toLowerCase();
         const onlyPositive = $('mc-positive').checked;
+        const mode = $('mc-opt').value;
         const out = [];
-        for (const r of rows) {
+        for (const r of buildings) {
           if (q && !r.search.includes(q)) continue;
-          const net = money(r.pm.outputs, 1) + money(r.pm.inputs, -1);
-          if (onlyPositive && net <= 0) continue;
-          // Automation methods REMOVE jobs; a negative net over negative workers
-          // yields a cheerful positive ratio that means nothing.
-          const perWorker = r.jobs > 0 ? net / r.jobs : null;
-          const perConstruction = r.b.construction ? net / r.b.construction : null;
+          const constr = r.b.construction;
+          const best = bestFor(r, mode, constr);
+          if (!best) continue;
+          if (onlyPositive && best.net <= 0) continue;
+          const perWorker = best.totalJobs > 0 ? best.net / best.totalJobs : null;
+          const perConstruction = constr ? best.net / constr : null;
           const tone = (v) => (v > 0 ? 'tone-good' : v < 0 ? 'tone-bad' : 'tone-neutral');
           const num = (v, d = 0) => (v == null ? '<span class="cell__dash">—</span>' : v.toFixed(d));
+          const setNames = r.groups.map(({ gi }) => r.b.pmGroups[gi].pms[best.c[gi]].name);
           out.push({
-            sort: [r.b.name, r.pm.name, net, r.jobs, perWorker, r.b.construction, perConstruction],
+            sort: [r.b.name, setNames.join(', '), best.net, best.totalJobs, perWorker, constr, perConstruction],
             html: `<tr>
               <td class="lead-cell" data-sort="${r.b.name}">
                 <span class="lead"><img class="lead__icon" src="${base}${r.b.icon}" alt="" loading="lazy" />
                 <a href="${base}buildings/${r.b.id.replace('building_', '')}">${r.b.name}</a></span></td>
-              <td>${r.pm.name}</td>
-              <td class="num" data-sort="${net.toFixed(2)}"><b class="${tone(net)}">£${net.toFixed(0)}</b></td>
-              <td class="num" data-sort="${r.jobs || ''}">${r.jobs || '<span class="cell__dash">—</span>'}</td>
+              <td class="dim mc__set">${setNames.join(' · ')}</td>
+              <td class="num" data-sort="${best.net.toFixed(2)}"><b class="${tone(best.net)}">£${best.net.toFixed(0)}</b></td>
+              <td class="num" data-sort="${best.totalJobs || ''}">${best.totalJobs ? best.totalJobs.toLocaleString() : '<span class="cell__dash">—</span>'}</td>
               <td class="num" data-sort="${perWorker ?? ''}"><span class="${perWorker == null ? '' : tone(perWorker)}">${num(perWorker, 3)}</span></td>
-              <td class="num dim" data-sort="${r.b.construction ?? ''}">${r.b.construction ?? '<span class="cell__dash">—</span>'}</td>
+              <td class="num dim" data-sort="${constr ?? ''}">${constr ?? '<span class="cell__dash">—</span>'}</td>
               <td class="num" data-sort="${perConstruction ?? ''}"><span class="${perConstruction == null ? '' : tone(perConstruction)}">${num(perConstruction, 2)}</span></td>
             </tr>`,
           });
         }
 
-        // Re-apply the active sort: TableTools sorts the live DOM, and we just
-        // replaced every row, so a price nudge would otherwise drop the user
-        // back to build order.
+        // Re-apply the active sort: TableTools sorts the live DOM and we just
+        // replaced every row.
         const heads = [...$('mc-table').tHead.rows[0].cells];
         const col = heads.findIndex((th) => (th.getAttribute('aria-sort') ?? 'none') !== 'none');
         if (col >= 0) {
@@ -187,17 +227,16 @@ const base = import.meta.env.BASE_URL;
           out.sort((a, b) => {
             const av = a.sort[col], bv = b.sort[col];
             if (av == null && bv == null) return 0;
-            if (av == null) return 1;   // blanks sink in both directions
+            if (av == null) return 1;
             if (bv == null) return -1;
             return (typeof av === 'number' ? av - bv : String(av).localeCompare(String(bv))) * dir;
           });
         }
         $('mc-table').tBodies[0].innerHTML = out.map((r) => r.html).join('');
-        $('mc-count').textContent = `${out.length} of ${rows.length} methods`;
+        $('mc-count').textContent = `${out.length} of ${buildings.length} buildings`;
         $('mc-table').tBodies[0].querySelectorAll('tr').forEach((tr) => tr.removeAttribute('data-tt-i'));
       }
 
-      $('mc-goodfilter').addEventListener('input', renderPrices);
       $('mc-opt').addEventListener('change', applyOpt);
       $('mc-filter').addEventListener('input', renderTable);
       $('mc-positive').addEventListener('change', renderTable);
@@ -219,5 +258,6 @@ const base = import.meta.env.BASE_URL;
     }
     .mc__toggle input { accent-color: var(--gold); margin: 0; }
     .mc__hint { font-size: 0.76rem; color: var(--text-faint); }
+    .mc__set { font-size: 0.72rem; line-height: 1.3; }
   </style>
 </Base>
