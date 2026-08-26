@@ -33,8 +33,13 @@ const base = import.meta.env.BASE_URL;
           <label class="rm__toggle">
             <input type="checkbox" id="rm-labels-cb" /> numbers on map
           </label>
-          <label class="rm__toggle" title="A few deposits dwarf the rest, so shading uses a square-root scale by default">
-            <input type="checkbox" id="rm-sqrt" checked /> compress large values
+          <label class="rm__toggle">
+            shading
+            <select id="rm-sqrt" class="rm__sel"
+              title="Balanced uses a square-root scale so a typical state stays visible next to the biggest one. On population, a median state reads 16% bright instead of 2%.">
+              <option value="sqrt" selected>balanced</option>
+              <option value="linear">strictly proportional</option>
+            </select>
           </label>
           <span id="rm-labnote" class="rm__hint"></span>
         </div>
@@ -135,7 +140,10 @@ const base = import.meta.env.BASE_URL;
       const selected = [];
       const scale = (v, max) => {
         if (max <= 0) return 0;
-        return $('rm-sqrt').checked ? Math.sqrt(v) / Math.sqrt(max) : v / max;
+        // Balanced = square-root. A handful of states hold far more than the
+        // rest, so a strictly proportional ramp renders the typical state almost
+        // black — on population the median is 2% of the maximum.
+        return $('rm-sqrt').value === 'sqrt' ? Math.sqrt(v) / Math.sqrt(max) : v / max;
       };
 
       // Two different questions live in this list, so they get separate
@@ -289,13 +297,19 @@ const base = import.meta.env.BASE_URL;
         const layer = $('rm-labels');
         layer.innerHTML = '';
         if (!showLabels() || !selected.length) {
-          $('rm-labnote').textContent = 'Small states have no room for a number until you zoom in.';
+          $('rm-labnote').textContent = 'Numbers appear inside states with room for them.';
           return;
         }
 
-        // Only label a state if the number can actually sit inside it at the
-        // current zoom. Screen pixels per map pixel:
+        // Biggest deposits get the biggest type, on the same scale the shading
+        // uses, so size and brightness tell the same story.
+        const vals = selected.map((k) => meta.values[k] ?? {});
+        let max = 0;
+        for (const v of vals) for (const n of Object.values(v)) if (n > max) max = n;
+
+        // Screen pixels per map pixel, so the fit test is in real pixels.
         const perPx = (wrap.clientWidth / W) * view.z;
+        const MIN_PT = 8, MAX_PT = 19;
         let drawn = 0, skipped = 0;
         const html = [];
         for (const [i, st] of Object.entries(meta.states)) {
@@ -304,16 +318,15 @@ const base = import.meta.env.BASE_URL;
           const b = meta.bbox[i];
           if (!b || b.cx == null) continue;
           const text = compact(total);
-          // ~5.6px per character at the 10px label size, plus padding.
-          if ((b.x1 - b.x0) * perPx < text.length * 5.6 + 4 || (b.y1 - b.y0) * perPx < 9) {
-            skipped++;
-            continue;
-          }
+          const pt = MIN_PT + (MAX_PT - MIN_PT) * scale(total, max);
+          // Monospace runs about 0.6em wide per character.
+          const needW = text.length * pt * 0.6 + 3;
+          if ((b.x1 - b.x0) * perPx < needW || (b.y1 - b.y0) * perPx < pt) { skipped++; continue; }
           drawn++;
-          html.push(`<span class="rm__lab" style="left:${(b.cx / W) * 100}%;top:${(b.cy / H) * 100}%">${text}</span>`);
+          html.push(`<span class="rm__lab" style="left:${(b.cx / W) * 100}%;top:${
+            (b.cy / H) * 100}%;font-size:${(pt / view.z).toFixed(2)}px">${text}</span>`);
         }
         layer.innerHTML = html.join('');
-        layer.style.setProperty('--lab', `${10 / view.z}px`);
         $('rm-labnote').textContent = skipped
           ? `${drawn} shown, ${skipped} too small at this zoom — use + to fit more.`
           : `${drawn} shown.`;
@@ -431,7 +444,7 @@ const base = import.meta.env.BASE_URL;
         if (view.z > 1) parts.push(`z=${view.z}`);
         history.replaceState(null, '', parts.length ? `#${parts.join('&')}` : location.pathname);
       }
-      $('rm-sqrt').addEventListener('change', draw);
+      $('rm-sqrt').addEventListener('change', () => { draw(); renderLabels(); });
       $('rm-labels-cb').addEventListener('change', () => { renderLabels(); syncHash(); });
       $('rm-zin').addEventListener('click', () => zoomTo(view.z * 1.6));
       $('rm-zout').addEventListener('click', () => zoomTo(view.z / 1.6));
@@ -537,6 +550,10 @@ const base = import.meta.env.BASE_URL;
       font-size: 0.76rem; color: var(--text-dim); cursor: pointer;
     }
     .rm__toggle input { accent-color: var(--gold); margin: 0; }
+    .rm__sel {
+      background: var(--bg-elev); color: var(--text); border: 1px solid var(--border);
+      border-radius: 5px; font: inherit; font-size: 0.74rem; padding: 0.1rem 0.25rem;
+    }
 
     .rm__canvaswrap {
       position: relative; border: 1px solid var(--border); border-radius: 8px;
@@ -546,7 +563,7 @@ const base = import.meta.env.BASE_URL;
     .rm__labels { position: absolute; inset: 0; pointer-events: none; }
     .rm__lab {
       position: absolute; transform: translate(-50%, -50%);
-      font-family: var(--font-mono); font-size: var(--lab, 10px); line-height: 1;
+      font-family: var(--font-mono); font-weight: 500; line-height: 1;
       color: #fff; text-shadow: 0 0 2px #000, 0 0 3px #000, 0 1px 2px #000;
       white-space: nowrap;
     }

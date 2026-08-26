@@ -158,6 +158,12 @@ const num = (n: number) => n.toLocaleString();
       <div class="loc__cols">
         <div>
           <div class="loc__sub">Extraction caps</div>
+          {loc.split && (
+            <p class="loc__note" style="margin:0 0 0.35rem;">
+              This state is split, and capped resources and arable land are divided between its
+              owners by the share of provinces each holds — the figures below are the whole state's.
+            </p>
+          )}
           {loc.cappedResources.length ? (
             <div class="loc__goods">
               {loc.cappedResources.map((r: any) => (
