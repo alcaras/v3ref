@@ -30,10 +30,22 @@ const base = import.meta.env.BASE_URL;
         down group by group, use <a href={`${base}profit-calculator`}>Building Profit →</a>
       </p>
 
+      <div class="mc__target">
+        <label class="mc__field mc__field--opt">
+          <span class="rail__label" style="margin-right:0.4rem;">Optimise for</span>
+          <select id="mc-opt" class="rail__select" style="min-width:16rem;">
+            <option value="net">Total profit (£ / level)</option>
+            <option value="worker">Profit per worker</option>
+            <option value="constr">Profit per construction point</option>
+          </select>
+        </label>
+        <span class="mc__hint" id="mc-optnote"></span>
+      </div>
+
       <!-- Only rendered once a save has been read; see renderAudit(). -->
       <section id="mc-audit" class="aud" hidden>
         <div class="aud__head">
-          <h2 class="aud__title">Methods to change</h2>
+          <h2 class="aud__title">Your buildings: methods to change</h2>
           <span class="aud__sum" id="aud-sum"></span>
         </div>
         <div class="grid"><div class="grid__scroll">
@@ -53,15 +65,12 @@ const base = import.meta.env.BASE_URL;
         <p class="caption" id="aud-note"></p>
       </section>
 
+      <h2 class="mc__h2">Every building, at the best set it could run</h2>
+      <p class="mc__lede">
+        Not what you have — what a building of each kind would earn if you built one now, which is why
+        every row here is already at its best. The panel above is the other question.
+      </p>
       <div class="mc__bar">
-        <label class="mc__field mc__field--opt">
-          <span class="rail__label" style="margin-right:0.4rem;">Optimise for</span>
-          <select id="mc-opt" class="rail__select" style="min-width:15rem;">
-            <option value="net">Total profit (£ / level)</option>
-            <option value="worker">Profit per worker</option>
-            <option value="constr">Profit per construction point</option>
-          </select>
-        </label>
         <label class="mc__field">
           <input id="mc-filter" type="search" class="rail__select" style="min-width:18rem;"
             placeholder="Filter by building, method, or good…" />
@@ -143,7 +152,8 @@ const base = import.meta.env.BASE_URL;
       const byId = Object.fromEntries(buildings.map((r) => [r.b.id, r]));
 
       // The sign belongs in front of the £, not between it and the digits.
-      const money = (v) => `${v < 0 ? '−' : ''}£${Math.abs(v).toFixed(0)}`;
+      const money = (v) =>
+        `${v < 0 ? '−' : ''}£${Math.round(Math.abs(v)).toLocaleString()}`;
 
       // A handful of methods need a SIBLING method in another group — Bone
       // China only runs on Crystal Glass or Houseware Plastics. Combinations
@@ -175,6 +185,15 @@ const base = import.meta.env.BASE_URL;
         return { net, totalJobs };
       }
 
+      // What "better" means, in one place. Construction cost is a property of
+      // the building and no method changes it, so INSIDE one building £/constr
+      // is £ divided by a constant — the same ordering as total profit. Only
+      // £/worker actually reorders a building's own options.
+      const score = (e, mode, constr) =>
+        mode === 'worker' ? (e.totalJobs > 0 ? e.net / e.totalJobs : -Infinity)
+        : mode === 'constr' ? (constr ? e.net / constr : e.net)
+        : e.net;
+
       // The best configuration for the chosen target. The space is small (108
       // at the widest), so this is exhaustive rather than assuming the per-group
       // winners combine — which holds for total profit but not for the ratios.
@@ -183,10 +202,8 @@ const base = import.meta.env.BASE_URL;
         for (const c of r.combos) {
           if (!buildable(r, c)) continue;
           const e = evalCombo(r, c);
-          const score = mode === 'worker' ? (e.totalJobs > 0 ? e.net / e.totalJobs : -Infinity)
-            : mode === 'constr' ? (constr ? e.net / constr : e.net)
-            : e.net;
-          if (!best || score > best.score) best = { c, ...e, score };
+          const sc = score(e, mode, constr);
+          if (!best || sc > best.score) best = { c, ...e, score: sc };
         }
         return best;
       }
@@ -247,7 +264,7 @@ const base = import.meta.env.BASE_URL;
         return r.b.pmGroups.some((g) => g.pms.some((pm) => pm.outputs.length));
       }
 
-      function auditRows(country) {
+      function auditRows(country, mode) {
         const techs = new Set(country.techs ?? []);
         const laws = new Set(country.laws ?? []);
         // A method is available if its technology is researched, one of its
@@ -290,17 +307,23 @@ const base = import.meta.env.BASE_URL;
             for (const c of combos) for (const { pi } of opts) next.push({ ...c, [gi]: pi });
             combos = next;
           }
+          const constr = r.b.construction;
           const now = evalCombo(r, cur);
           // Seed with what the save is running: whatever our data says, the
           // game is already running it, so it is by definition an option.
-          let best = { c: cur, ...now };
+          let best = { c: cur, ...now, score: score(now, mode, constr) };
           for (const c of combos) {
             if (!buildable(r, c)) continue;
             const e = evalCombo(r, c);
-            if (e.net > best.net) best = { c, ...e };
+            const sc = score(e, mode, constr);
+            if (sc > best.score) best = { c, ...e, score: sc };
           }
           const gain = best.net - now.net;
-          if (gain <= 0.5) continue;
+          const jobs = best.totalJobs - now.totalJobs;
+          // Under the per-worker target a switch can trade total £ for labour,
+          // so "better" is the target improving, not £ going up.
+          if (best.score <= score(now, mode, constr) + 1e-9) continue;
+          if (mode !== 'worker' && gain <= 0.5) continue;
 
           const changes = live.filter(({ gi }) => best.c[gi] !== cur[gi])
             .map(({ gi, g }) => ({ group: g.name, from: g.pms[cur[gi]], to: g.pms[best.c[gi]] }));
@@ -310,28 +333,51 @@ const base = import.meta.env.BASE_URL;
           // per level, whatever else differs about them, so they belong on one
           // row rather than three near-identical ones.
           const key = r.b.id + '|' + changes.map((c) => `${c.group}:${c.from.id}>${c.to.id}`).join('|');
-          const hit = merged.get(key) ?? { r, changes, gain, lv: 0, n: 0 };
+          const hit = merged.get(key) ?? { r, changes, gain, jobs, lv: 0, n: 0 };
           hit.lv += row.lv; hit.n += row.n;
           merged.set(key, hit);
         }
-        const rows = [...merged.values()].sort((a, b) => b.gain * b.lv - a.gain * a.lv);
+        const rank = (x) => (mode === 'worker' ? x.jobs * -1 : x.gain) * x.lv;
+        const rows = [...merged.values()].sort((a, b) => rank(b) - rank(a));
         return { rows, skipped: [...skipped], unreadable, checked };
       }
 
+      // What the target means for buildings that already exist.
+      const TARGET_NOTE = {
+        net: 'Total profit. For buildings you already have this is the one that matters — '
+          + 'the construction is spent and the workers are hired.',
+        constr: 'Profit per construction point. No method changes what a building cost to build, '
+          + 'so inside one building this is total profit divided by a constant — same answer as '
+          + 'total profit for the panel below. It only reorders the ranking table.',
+        worker: 'Profit per worker. This can tell you to give up total £ to employ fewer people, '
+          + 'so watch the £/week column go red.',
+      };
+
       function renderAudit() {
         const el = $('mc-audit');
+        const mode = $('mc-opt').value;
+        $('mc-optnote').textContent = TARGET_NOTE[mode];
         const country = window.v3Save?.country?.();
         if (!country || !country.buildings?.length) { el.hidden = true; return; }
         el.hidden = false;
 
-        const { rows, skipped, unreadable, checked } = auditRows(country);
+        const { rows, skipped, unreadable, checked } = auditRows(country, mode);
         const total = rows.reduce((s, r) => s + r.gain * r.lv, 0);
-        const maxWeek = Math.max(0, ...rows.map((r) => r.gain * r.lv));
-        const maxLevel = Math.max(0, ...rows.map((r) => r.gain));
+        const jobs = rows.reduce((s, r) => s + r.jobs * r.lv, 0);
+        const switches = rows.reduce((s, r) => s + r.changes.length, 0);
+        const maxWeek = Math.max(0, ...rows.map((r) => Math.abs(r.gain * r.lv)));
+        const maxLevel = Math.max(0, ...rows.map((r) => Math.abs(r.gain)));
         const name = window.v3CountryName?.[country.tag] ?? country.tag;
+        const plural = (n, one, many) => `${n.toLocaleString()} ${n === 1 ? one : many}`;
 
         $('aud-sum').innerHTML = rows.length
-          ? `${rows.length} switch${rows.length === 1 ? '' : 'es'} worth <b class="tone-good">£${Math.round(total).toLocaleString()}</b> a week`
+          ? `${plural(rows.length, 'building', 'buildings')} · `
+            + `${plural(switches, 'method to switch', 'methods to switch')} · `
+            + `<b class="${total >= 0 ? 'tone-good' : 'tone-bad'}">${money(total)}</b> a week`
+            + (mode === 'worker' && jobs
+              ? ` · ${jobs < 0 ? plural(-jobs, 'worker freed', 'workers freed')
+                               : plural(jobs, 'worker hired', 'workers hired')}`
+              : '')
           : '<span class="tone-good">nothing to change — every method is already the best one available</span>';
 
         $('aud-table').closest('.grid').hidden = !rows.length;
@@ -346,12 +392,14 @@ const base = import.meta.env.BASE_URL;
                   c.to.needs ? ` <span class="aud__caveat" title="Also needs: ${esc(c.to.needs.join(', '))}">needs ${esc(c.to.needs[0])}</span>` : ''}
               </span>`).join('')}</td>
             <td class="num dim">${r.lv.toLocaleString()}<span class="aud__n"> in ${r.n}</span></td>
-            <td class="num">${mag(r.gain, maxLevel, '+£' + r.gain.toFixed(1))}</td>
-            <td class="num">${mag(r.gain * r.lv, maxWeek, '+£' + Math.round(r.gain * r.lv).toLocaleString())}</td>
+            <td class="num">${mag(r.gain, maxLevel, `${r.gain > 0 ? '+' : r.gain < 0 ? '−' : ''}£${Math.abs(r.gain).toFixed(1)}`)}</td>
+            <td class="num">${mag(r.gain * r.lv, maxWeek, `${r.gain > 0 ? '+' : r.gain < 0 ? '−' : ''}£${Math.round(Math.abs(r.gain * r.lv)).toLocaleString()}`)}</td>
           </tr>`).join('');
 
         $('aud-note').innerHTML =
-          `Read from your save: ${checked} building set${checked === 1 ? '' : 's'} across <b>${esc(name)}</b>, `
+          `The buildings you already have, versus the best they could run — a different question from `
+          + `the ranking below, which is about what to build next and so shows every building already `
+          + `at its best. Read from your save: ${checked} building set${checked === 1 ? '' : 's'} across <b>${esc(name)}</b>, `
           + `priced at its own market and limited to methods it has the technology and laws for. `
           + `Gains are the goods margin at full employment, so treat them as an ordering, not a forecast — `
           + `throughput, staffing and wages all move the real figure. `
@@ -445,7 +493,7 @@ const base = import.meta.env.BASE_URL;
         $('mc-table').tBodies[0].querySelectorAll('tr').forEach((tr) => tr.removeAttribute('data-tt-i'));
       }
 
-      $('mc-opt').addEventListener('change', applyOpt);
+      $('mc-opt').addEventListener('change', () => { applyOpt(); renderAudit(); });
       $('mc-filter').addEventListener('input', renderTable);
       $('mc-positive').addEventListener('change', renderTable);
       $('mc-standard').addEventListener('change', renderTable);
@@ -470,6 +518,15 @@ const base = import.meta.env.BASE_URL;
     }
     .mc__toggle input { accent-color: var(--gold); margin: 0; }
     .mc__hint { font-size: 0.76rem; color: var(--text-faint); }
+    /* The target governs both tables, so it sits above them both. */
+    .mc__target {
+      display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; margin-bottom: 0.9rem;
+    }
+    .mc__target .mc__hint { max-width: 46rem; line-height: 1.45; }
+    .mc__h2 {
+      font-family: var(--font-display); font-size: 1.15rem; margin: 1.6rem 0 0.2rem;
+    }
+    .mc__lede { font-size: 0.8rem; color: var(--text-dim); margin: 0 0 0.7rem; max-width: 52rem; line-height: 1.5; }
     .mc__set { font-size: 0.72rem; line-height: 1.3; }
 
     /* The save audit sits above the ranking: it is about the buildings you
