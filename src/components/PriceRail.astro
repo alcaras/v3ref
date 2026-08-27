@@ -11,12 +11,17 @@
   <button type="button" class="imp__btn" id="imp-open">&#8681; Load prices from a save</button>
   <select id="imp-country" class="imp__sel" hidden></select>
   <p class="imp__note" id="imp-note">
-    Melt your save at <a href="https://pdx.tools/" target="_blank" rel="noopener">pdx.tools</a>,
-    then pick the melted file. It is read on your machine — nothing is uploaded.
+    Melt it at <a href="https://pdx.tools/" target="_blank" rel="noopener">pdx.tools</a> first.
+    Read locally; nothing is uploaded.
   </p>
 </div>
 
 <script is:inline>
+  // Bump when the save snapshot grows a field the tools gate on, so stored
+  // snapshots from an older shape are re-read rather than silently narrowing.
+  window.v3SnapVersion = 2;
+  const SNAP_V = window.v3SnapVersion;
+
   window.v3Prices = (() => {
     const KEY = 'v3ref-market-prices';
     let offsets = {};
@@ -91,6 +96,10 @@
       '\\n\\t\\t\\tactive=yes',                           //    enacted flag
       '\\n\\t\\t\\tacquired_technologies=\\{([^}]*)\\}',  // 11 researched
       '\\n\\t\\t\\tuser="([^"]*)"',                       // 12 player seat
+      '\\n\\t\\t\\tpower_bloc_as_core=(\\d+)',            // 13 the bloc it is in
+      '\\n\\t\\t\\tidentity="([a-z0-9_]+)"',                // 14 bloc identity
+      '\\n\\t\\t\\tprinciples=\\{([^}]*)\\}',            // 15 bloc principles
+      '\\n\\t\\t\\tstatus=active',                          //    bloc is live
       'previous_price_report=',                           //    prices follow
     ].join('|'), 'g');
 
@@ -112,7 +121,11 @@
           if (cur.country != null) S.stateCountry[cur.id] = cur.country;
         } else if (sec === 'country_manager') {
           if (cur.tag && (!S.country[cur.id] || cur.main)) {
-            S.country[cur.id] = { tag: cur.tag, market: cur.market };
+            S.country[cur.id] = { tag: cur.tag, market: cur.market, bloc: cur.bloc };
+          }
+        } else if (sec === 'power_bloc_manager') {
+          if (cur.live && (cur.principles || cur.identity)) {
+            S.blocs[cur.id] = { principles: cur.principles ?? [], identity: cur.identity ?? null };
           }
         } else if (sec === 'technology') {
           if (cur.techs && cur.country != null) S.techs[cur.country] = cur.techs;
@@ -131,6 +144,7 @@
         if (m[2] !== undefined) { flush(); cur = { id: Number(m[2]) }; continue; }
         if (m[0].startsWith('\n\t\t\tis_main_tag')) { if (cur) cur.main = true; continue; }
         if (m[0].startsWith('\n\t\t\tactive=')) { if (cur) cur.active = true; continue; }
+        if (m[0].startsWith('\n\t\t\tstatus=')) { if (cur) cur.live = true; continue; }
         if (m[0] === 'previous_price_report=') {
           if (S.sec !== 'country_manager' || !cur) continue;
           const blk = text.slice(m.index, m.index + 8000);
@@ -152,6 +166,9 @@
         else if (m[10] !== undefined) cur.law = m[10];
         else if (m[11] !== undefined) cur.techs = words(m[11]);
         else if (m[12] !== undefined) cur.user = m[12];
+        else if (m[13] !== undefined) cur.bloc = Number(m[13]);
+        else if (m[14] !== undefined) cur.identity = m[14];
+        else if (m[15] !== undefined) cur.principles = words(m[15]);
       }
     }
 
@@ -159,7 +176,7 @@
       const dec = new TextDecoder('latin1');   // byte-for-char; the syntax is ASCII
       const S = {
         sec: null, country: {}, stateCountry: {}, priceOwner: {}, seats: [],
-        techs: {}, laws: {}, seen: new Set(), builds: [],
+        techs: {}, laws: {}, blocs: {}, seen: new Set(), builds: [],
       };
       let carry = '', meta = {};
 
@@ -204,15 +221,17 @@
       for (const id of wanted) {
         const c = S.country[id];
         if (!c) continue;
+        const bloc = c.bloc != null ? S.blocs[c.bloc] : null;
         countries[id] = {
           tag: c.tag, market: c.market ?? null,
           techs: S.techs[id] ?? [], laws: S.laws[id] ?? [],
+          principles: bloc?.principles ?? [], identity: bloc?.identity ?? null,
           buildings: Object.values(sets).filter((r) => r.c === id)
             .map((r) => ({ b: r.b, pms: r.pms, lv: r.lv, n: r.n })),
         };
       }
       return {
-        ...meta, markets, members, countries,
+        v: SNAP_V, ...meta, markets, members, countries,
         seats: S.seats.filter((p) => countries[p.country]),
       };
     }
@@ -250,6 +269,9 @@
     const KEY = 'v3ref-save';
     let held = null;
     try { held = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch {}
+    // A snapshot from an older shape is missing fields the tools now gate on,
+    // which would quietly narrow the advice. Drop it and ask for the file again.
+    if (held && held.snap?.v !== window.v3SnapVersion) held = null;
 
     const api = {
       get snap() { return held?.snap ?? null; },
@@ -355,9 +377,8 @@
       e.target.value = '';   // so picking the same file again re-reads it
       const pre = await window.v3SaveImport.check(file);
       if (!pre.ok) {
-        say('That is still a packed save (its gamestate is binary). Melt it at '
-          + '<a href="https://pdx.tools/" target="_blank" rel="noopener">pdx.tools</a> '
-          + 'and choose the melted file.', 'is-bad');
+        say('Still packed — melt it at '
+          + '<a href="https://pdx.tools/" target="_blank" rel="noopener">pdx.tools</a> first.', 'is-bad');
         return;
       }
       const mb = (file.size / 1048576).toFixed(0);

@@ -20,6 +20,7 @@
    ],
    "icon": "img/pms/ownership_clergy.png",
    "id": "pm_religious_bureaucrats",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -38,9 +39,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -53,6 +56,7 @@
    ],
    "icon": "img/pms/fortification_advanced.png",
    "id": "pm_naval_fortification_advanced",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -96,6 +100,7 @@
    "netAtBase": -1400,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -103,7 +108,8 @@
      "name": "Concrete Fortifications"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -121,6 +127,7 @@
    ],
    "icon": "img/pms/squad_infantry.png",
    "id": "pm_advanced_tactics_training",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -128,6 +135,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -135,7 +143,8 @@
      "name": "Military Statistics"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -157,6 +166,7 @@
    ],
    "icon": "img/pms/squad_infantry.png",
    "id": "pm_advanced_tactics_training_conscription",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -164,6 +174,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -171,7 +182,8 @@
      "name": "Military Statistics"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -184,6 +196,7 @@
    ],
    "icon": "img/pms/aeroplanes.png",
    "id": "pm_aeroplane_production",
+   "identities": [],
    "inputs": [
     {
      "amount": 4,
@@ -223,6 +236,7 @@
      "name": "Automobiles"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -230,7 +244,8 @@
      "name": "Military Aviation"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -243,6 +258,7 @@
    ],
    "icon": "img/pms/airship_mooring_post.png",
    "id": "pm_airship_mooring_post",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -250,6 +266,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -257,7 +274,8 @@
      "name": "Zeppelins"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -270,6 +288,7 @@
    ],
    "icon": "img/pms/ammonia_soda_process.png",
    "id": "pm_ammonia-soda_process",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -324,6 +343,7 @@
      "name": "Explosives"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -331,7 +351,8 @@
      "name": "Nitroglycerin"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -344,6 +365,7 @@
    ],
    "icon": "img/pms/analytical_philosophy_department.png",
    "id": "pm_analytical_philosophy_department",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -374,6 +396,7 @@
    "netAtBase": -450,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -381,7 +404,8 @@
      "name": "Analytical Philosophy"
     }
    ],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -394,6 +418,7 @@
    ],
    "icon": "img/pms/anchorage.png",
    "id": "pm_anchorage",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -417,9 +442,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -432,6 +459,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_angkor_wat",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -445,9 +473,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -460,6 +490,7 @@
    ],
    "icon": "img/pms/orchards.png",
    "id": "pm_apple_orchards",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -486,9 +517,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -501,6 +534,7 @@
    ],
    "icon": "img/pms/arc_welded_buildings.png",
    "id": "pm_arc_welded_buildings",
+   "identities": [],
    "inputs": [
     {
      "amount": 50,
@@ -565,6 +599,7 @@
    "netAtBase": -7900,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -572,7 +607,8 @@
      "name": "Arc Welding"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -585,6 +621,7 @@
    ],
    "icon": "img/pms/arc_welded_steam_ships.png",
    "id": "pm_arc_welding_shipbuilding",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -639,6 +676,7 @@
      "name": "Steamers"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -646,7 +684,8 @@
      "name": "Arc Welding"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -659,6 +698,7 @@
    ],
    "icon": "img/pms/arcades.png",
    "id": "pm_arcades",
+   "identities": [],
    "inputs": [
     {
      "amount": 2,
@@ -708,6 +748,7 @@
      "name": "Services"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -715,7 +756,8 @@
      "name": "Elevators"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -728,6 +770,7 @@
    ],
    "icon": "img/pms/chemical_fertilizers.png",
    "id": "pm_artificial_fertilizers",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -776,9 +819,11 @@
      "name": "Fertilizer"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -796,6 +841,7 @@
    ],
    "icon": "img/pms/assembly_lines.png",
    "id": "pm_assembly_lines_building_arms_industry",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -822,6 +868,7 @@
    "netAtBase": -550,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -829,7 +876,8 @@
      "name": "Conveyors"
     }
    ],
-   "totalJobs": -2500
+   "totalJobs": -2500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -842,6 +890,7 @@
    ],
    "icon": "img/pms/assembly_lines.png",
    "id": "pm_assembly_lines_building_automotive_industry",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -874,6 +923,7 @@
    "netAtBase": -550,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -881,7 +931,8 @@
      "name": "Conveyors"
     }
    ],
-   "totalJobs": -1500
+   "totalJobs": -1500,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -899,6 +950,7 @@
    ],
    "icon": "img/pms/assembly_lines.png",
    "id": "pm_assembly_lines_building_furniture_manufactory",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -931,6 +983,7 @@
    "netAtBase": -550,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -938,7 +991,8 @@
      "name": "Conveyors"
     }
    ],
-   "totalJobs": -3000
+   "totalJobs": -3000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -951,6 +1005,7 @@
    ],
    "icon": "img/pms/assembly_lines.png",
    "id": "pm_assembly_lines_building_motor_industry",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -988,6 +1043,7 @@
    "netAtBase": -550,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -995,7 +1051,8 @@
      "name": "Conveyors"
     }
    ],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1008,6 +1065,7 @@
    ],
    "icon": "img/pms/assembly_lines.png",
    "id": "pm_assembly_lines_building_munition_plant",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -1034,6 +1092,7 @@
    "netAtBase": -550,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1041,7 +1100,8 @@
      "name": "Conveyors"
     }
    ],
-   "totalJobs": -2500
+   "totalJobs": -2500,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -1059,6 +1119,7 @@
    ],
    "icon": "img/pms/assembly_lines.png",
    "id": "pm_assembly_lines_building_tooling_workshop",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -1085,6 +1146,7 @@
    "netAtBase": -550,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1092,7 +1154,8 @@
      "name": "Conveyors"
     }
    ],
-   "totalJobs": -3000
+   "totalJobs": -3000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1105,6 +1168,7 @@
    ],
    "icon": "img/pms/pumps.png",
    "id": "pm_atmospheric_engine_pump_building_coal_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -1147,6 +1211,7 @@
      "name": "Coal"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1154,7 +1219,8 @@
      "name": "Atmospheric Engine"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1167,6 +1233,7 @@
    ],
    "icon": "img/pms/pumps.png",
    "id": "pm_atmospheric_engine_pump_building_gold_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -1215,6 +1282,7 @@
      "name": "Gold"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1222,7 +1290,8 @@
      "name": "Atmospheric Engine"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1235,6 +1304,7 @@
    ],
    "icon": "img/pms/pumps.png",
    "id": "pm_atmospheric_engine_pump_building_iron_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -1283,6 +1353,7 @@
      "name": "Iron"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1290,7 +1361,8 @@
      "name": "Atmospheric Engine"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1303,6 +1375,7 @@
    ],
    "icon": "img/pms/pumps.png",
    "id": "pm_atmospheric_engine_pump_building_lead_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -1351,6 +1424,7 @@
      "name": "Lead"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1358,7 +1432,8 @@
      "name": "Atmospheric Engine"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1371,6 +1446,7 @@
    ],
    "icon": "img/pms/pumps.png",
    "id": "pm_atmospheric_engine_pump_building_sulfur_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -1419,6 +1495,7 @@
      "name": "Sulfur"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1426,7 +1503,8 @@
      "name": "Atmospheric Engine"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -1444,6 +1522,7 @@
    ],
    "icon": "img/pms/automated_bakery.png",
    "id": "pm_automated_bakery",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -1464,6 +1543,7 @@
    "netAtBase": -400,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1471,7 +1551,8 @@
      "name": "Dough Rollers"
     }
    ],
-   "totalJobs": -2500
+   "totalJobs": -2500,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -1489,6 +1570,7 @@
    ],
    "icon": "img/pms/automated_bottle_blowers.png",
    "id": "pm_automatic_bottle_blowers",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -1521,6 +1603,7 @@
    "netAtBase": -400,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1528,7 +1611,8 @@
      "name": "Automatic Bottle Blowers"
     }
    ],
-   "totalJobs": -2500
+   "totalJobs": -2500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1541,6 +1625,7 @@
    ],
    "icon": "img/pms/automatic_irrigation.png",
    "id": "automatic_irrigation_building_banana_plantation",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -1578,6 +1663,7 @@
      "name": "Fruit"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1585,7 +1671,8 @@
      "name": "Pumpjacks"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1598,6 +1685,7 @@
    ],
    "icon": "img/pms/automatic_irrigation.png",
    "id": "automatic_irrigation_building_cotton_plantation",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -1635,6 +1723,7 @@
      "name": "Fabric"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1642,7 +1731,8 @@
      "name": "Pumpjacks"
     }
    ],
-   "totalJobs": 7000
+   "totalJobs": 7000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1655,6 +1745,7 @@
    ],
    "icon": "img/pms/automatic_irrigation.png",
    "id": "automatic_irrigation_building_dye_plantation",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -1692,6 +1783,7 @@
      "name": "Dye"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1699,7 +1791,8 @@
      "name": "Pumpjacks"
     }
    ],
-   "totalJobs": 6500
+   "totalJobs": 6500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1712,6 +1805,7 @@
    ],
    "icon": "img/pms/automatic_irrigation.png",
    "id": "automatic_irrigation_building_opium_plantation",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -1749,6 +1843,7 @@
      "name": "Opium"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1756,7 +1851,8 @@
      "name": "Pumpjacks"
     }
    ],
-   "totalJobs": 4500
+   "totalJobs": 4500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1769,6 +1865,7 @@
    ],
    "icon": "img/pms/automatic_irrigation.png",
    "id": "automatic_irrigation_building_rubber_plantation",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -1806,6 +1903,7 @@
      "name": "Rubber"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1813,7 +1911,8 @@
      "name": "Pumpjacks"
     }
    ],
-   "totalJobs": 6000
+   "totalJobs": 6000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1826,6 +1925,7 @@
    ],
    "icon": "img/pms/automatic_irrigation.png",
    "id": "automatic_irrigation_building_silk_plantation",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -1863,6 +1963,7 @@
      "name": "Silk"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1870,7 +1971,8 @@
      "name": "Pumpjacks"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1883,6 +1985,7 @@
    ],
    "icon": "img/pms/automatic_irrigation.png",
    "id": "automatic_irrigation_building_sugar_plantation",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -1920,6 +2023,7 @@
      "name": "Sugar"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1927,7 +2031,8 @@
      "name": "Pumpjacks"
     }
    ],
-   "totalJobs": 8500
+   "totalJobs": 8500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1940,6 +2045,7 @@
    ],
    "icon": "img/pms/automatic_irrigation.png",
    "id": "automatic_irrigation_building_tea_plantation",
+   "identities": [],
    "inputs": [
     {
      "amount": 4,
@@ -1977,6 +2083,7 @@
      "name": "Tea"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -1984,7 +2091,8 @@
      "name": "Pumpjacks"
     }
    ],
-   "totalJobs": 6000
+   "totalJobs": 6000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -1997,6 +2105,7 @@
    ],
    "icon": "img/pms/automatic_irrigation.png",
    "id": "automatic_irrigation_building_tobacco_plantation",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -2034,6 +2143,7 @@
      "name": "Tobacco"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -2041,7 +2151,8 @@
      "name": "Pumpjacks"
     }
    ],
-   "totalJobs": 6000
+   "totalJobs": 6000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2054,6 +2165,7 @@
    ],
    "icon": "img/pms/automatic_irrigation.png",
    "id": "automatic_irrigation_building_vineyard",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -2091,6 +2203,7 @@
      "name": "Wine"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -2098,7 +2211,8 @@
      "name": "Pumpjacks"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -2116,6 +2230,7 @@
    ],
    "icon": "img/pms/automatic_power_looms.png",
    "id": "pm_automatic_power_looms",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -2142,6 +2257,7 @@
    "netAtBase": -500,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -2149,7 +2265,8 @@
      "name": "Electrical Capacitors"
     }
    ],
-   "totalJobs": -2500
+   "totalJobs": -2500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2162,6 +2279,7 @@
    ],
    "icon": "img/pms/automobiles.png",
    "id": "pm_automobile_production",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -2216,6 +2334,7 @@
      "name": "Automobiles"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -2223,7 +2342,8 @@
      "name": "Combustion Engine"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2236,6 +2356,7 @@
    ],
    "icon": "img/pms/bakeries.png",
    "id": "pm_bakery",
+   "identities": [],
    "inputs": [
     {
      "amount": 40,
@@ -2268,9 +2389,11 @@
      "name": "Groceries"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2283,6 +2406,7 @@
    ],
    "icon": "img/pms/baking_powder.png",
    "id": "pm_baking_powder",
+   "identities": [],
    "inputs": [
     {
      "amount": 80,
@@ -2331,6 +2455,7 @@
      "name": "Groceries"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -2338,7 +2463,8 @@
      "name": "Baking Powder"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2351,6 +2477,7 @@
    ],
    "icon": "img/pms/barbed_wire_fencing.png",
    "id": "pm_barbed_wire_fences",
+   "identities": [],
    "inputs": [
     {
      "amount": 1,
@@ -2371,6 +2498,7 @@
    "netAtBase": -40,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -2378,7 +2506,8 @@
      "name": "Field Works"
     }
    ],
-   "totalJobs": -500
+   "totalJobs": -500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2391,6 +2520,7 @@
    ],
    "icon": "img/pms/logistics_center.png",
    "id": "pm_basic_army_logistics_center",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -2414,9 +2544,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2429,6 +2561,7 @@
    ],
    "icon": "img/pms/logistics_center.png",
    "id": "pm_basic_naval_logistics_center",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -2452,9 +2585,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2467,6 +2602,7 @@
    ],
    "icon": "img/pms/fortification_basic.png",
    "id": "pm_naval_fortification_basic",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -2498,9 +2634,11 @@
    "netAtBase": -500,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2513,6 +2651,7 @@
    ],
    "icon": "img/pms/plantation_production.png",
    "id": "default_building_banana_plantation",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -2538,9 +2677,11 @@
      "name": "Fruit"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 6000
+   "totalJobs": 6000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2553,6 +2694,7 @@
    ],
    "icon": "img/pms/plantation_production.png",
    "id": "default_building_cotton_plantation",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -2578,9 +2720,11 @@
      "name": "Fabric"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 8000
+   "totalJobs": 8000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2593,6 +2737,7 @@
    ],
    "icon": "img/pms/plantation_production.png",
    "id": "default_building_dye_plantation",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -2618,9 +2763,11 @@
      "name": "Dye"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 7000
+   "totalJobs": 7000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2633,6 +2780,7 @@
    ],
    "icon": "img/pms/gold_mining.png",
    "id": "default_building_gold_field",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -2658,9 +2806,11 @@
      "name": "Gold"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2673,6 +2823,7 @@
    ],
    "icon": "img/pms/plantation_production.png",
    "id": "default_building_opium_plantation",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -2698,9 +2849,11 @@
      "name": "Opium"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2713,6 +2866,7 @@
    ],
    "icon": "img/pms/plantation_production.png",
    "id": "default_building_rubber_plantation",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -2738,9 +2892,11 @@
      "name": "Rubber"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 7000
+   "totalJobs": 7000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2753,6 +2909,7 @@
    ],
    "icon": "img/pms/plantation_production.png",
    "id": "default_building_silk_plantation",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -2778,9 +2935,11 @@
      "name": "Silk"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2793,6 +2952,7 @@
    ],
    "icon": "img/pms/subsistence_farming.png",
    "id": "default_building_subsistence_farm",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -2831,9 +2991,11 @@
      "name": "Services"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2846,6 +3008,7 @@
    ],
    "icon": "img/pms/subsistence_farming.png",
    "id": "default_building_subsistence_fishing_village",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -2890,9 +3053,11 @@
      "name": "Wood"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2905,6 +3070,7 @@
    ],
    "icon": "img/pms/subsistence_farming.png",
    "id": "default_building_subsistence_orchard",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -2949,9 +3115,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -2964,6 +3132,7 @@
    ],
    "icon": "img/pms/subsistence_farming.png",
    "id": "default_building_subsistence_pasture",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -3008,9 +3177,11 @@
      "name": "Wood"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3023,6 +3194,7 @@
    ],
    "icon": "img/pms/subsistence_farming.png",
    "id": "default_building_subsistence_rice_farm",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -3061,9 +3233,11 @@
      "name": "Wood"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 10000
+   "totalJobs": 10000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3076,6 +3250,7 @@
    ],
    "icon": "img/pms/plantation_production.png",
    "id": "default_building_sugar_plantation",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -3101,9 +3276,11 @@
      "name": "Sugar"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 10000
+   "totalJobs": 10000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3116,6 +3293,7 @@
    ],
    "icon": "img/pms/plantation_production.png",
    "id": "default_building_tea_plantation",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -3141,9 +3319,11 @@
      "name": "Tea"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 7000
+   "totalJobs": 7000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3156,6 +3336,7 @@
    ],
    "icon": "img/pms/plantation_production.png",
    "id": "default_building_tobacco_plantation",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -3181,9 +3362,11 @@
      "name": "Tobacco"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 7000
+   "totalJobs": 7000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3196,6 +3379,7 @@
    ],
    "icon": "img/pms/plantation_production.png",
    "id": "default_building_vineyard",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -3221,9 +3405,11 @@
      "name": "Wine"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3236,6 +3422,7 @@
    ],
    "icon": "img/pms/bessemer_process.png",
    "id": "pm_bessemer_process",
+   "identities": [],
    "inputs": [
     {
      "amount": 60,
@@ -3284,6 +3471,7 @@
      "name": "Steel"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -3291,7 +3479,8 @@
      "name": "Bessemer Process"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3304,6 +3493,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_big_ben",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -3317,9 +3507,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3332,6 +3524,7 @@
    ],
    "icon": "img/pms/blister_steel_process.png",
    "id": "pm_blister_steel_process",
+   "identities": [],
    "inputs": [
     {
      "amount": 40,
@@ -3380,9 +3573,11 @@
      "name": "Steel"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3395,6 +3590,7 @@
    ],
    "icon": "img/pms/bolt_action_rifles.png",
    "id": "pm_bolt_action_rifles",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -3455,6 +3651,7 @@
      "name": "Small Arms"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -3462,7 +3659,8 @@
      "name": "Bolt-Action Rifle"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3475,6 +3673,7 @@
    ],
    "icon": "img/pms/bone_china.png",
    "id": "pm_bone_china",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -3517,6 +3716,7 @@
      "name": "Glass"
     }
    ],
+   "principles": [],
    "reqPms": [
     {
      "id": "pm_crystal_glass",
@@ -3533,7 +3733,8 @@
      "name": "Chemical Bleaching"
     }
    ],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -3555,6 +3756,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_bourgeoisie_patronage",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -3578,6 +3780,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -3585,7 +3788,8 @@
      "name": "Realism"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3598,6 +3802,7 @@
    ],
    "icon": "img/pms/breech_loading_artillery_production.png",
    "id": "pm_breech_loaders",
+   "identities": [],
    "inputs": [
     {
      "amount": 25,
@@ -3652,6 +3857,7 @@
      "name": "Artillery"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -3659,7 +3865,8 @@
      "name": "Breech-Loading Artillery"
     }
    ],
-   "totalJobs": 5250
+   "totalJobs": 5250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3672,6 +3879,7 @@
    ],
    "icon": "img/pms/vaccum_brine_electrolysis.png",
    "id": "pm_brine_electrolysis",
+   "identities": [],
    "inputs": [
     {
      "amount": 50,
@@ -3732,6 +3940,7 @@
      "name": "Explosives"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -3739,7 +3948,8 @@
      "name": "Electrical Capacitors"
     }
    ],
-   "totalJobs": 4000
+   "totalJobs": 4000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3752,6 +3962,7 @@
    ],
    "icon": "img/pms/trade_quantity_3.png",
    "id": "pm_trade_center_trade_quantity_high",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -3766,6 +3977,7 @@
    "netAtBase": -250,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -3773,7 +3985,8 @@
      "name": "Hydraulic Cranes"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3786,6 +3999,7 @@
    ],
    "icon": "img/pms/ownership_bureacrats.png",
    "id": "pm_manor_house_bureaucrat_ownership",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -3804,9 +4018,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3819,6 +4035,7 @@
    ],
    "icon": "img/pms/skyscraper_bureaucratic_nexus.png",
    "id": "pm_skyscraper_bureaucratic_nexus",
+   "identities": [],
    "inputs": [
     {
      "amount": 25,
@@ -3849,9 +4066,11 @@
    "netAtBase": -750,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3864,6 +4083,7 @@
    ],
    "icon": "img/pms/butchering_tools.png",
    "id": "pm_butchering_tools",
+   "identities": [],
    "inputs": [
     {
      "amount": 2,
@@ -3896,9 +4116,11 @@
      "name": "Meat"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3921,6 +4143,7 @@
    ],
    "icon": "img/pms/canals.png",
    "id": "pm_canal",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -3957,9 +4180,11 @@
    "netAtBase": -850,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -3972,6 +4197,7 @@
    ],
    "icon": "img/pms/canneries.png",
    "id": "pm_cannery_fish",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -4011,6 +4237,7 @@
      "name": "Groceries"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -4018,7 +4245,8 @@
      "name": "Canneries"
     }
    ],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4031,6 +4259,7 @@
    ],
    "icon": "img/pms/canneries.png",
    "id": "pm_cannery",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -4070,6 +4299,7 @@
      "name": "Groceries"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -4077,7 +4307,8 @@
      "name": "Canneries"
     }
    ],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4090,6 +4321,7 @@
    ],
    "icon": "img/pms/artillery_production.png",
    "id": "pm_cannons",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -4133,6 +4365,7 @@
      "name": "Artillery"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -4140,7 +4373,8 @@
      "name": "Artillery"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4153,6 +4387,7 @@
    ],
    "icon": "img/pms/basic_port.png",
    "id": "pm_basic_port",
+   "identities": [],
    "inputs": [
     {
      "amount": 6,
@@ -4190,9 +4425,11 @@
      "name": "Merchant Marine"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4205,6 +4442,7 @@
    ],
    "icon": "img/pms/no_passenger_trains.png",
    "id": "pm_no_passenger_trains",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -4212,9 +4450,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4227,6 +4467,7 @@
    ],
    "icon": "img/pms/centrifugal_machine.png",
    "id": "centrifugal_machine_sugar",
+   "identities": [],
    "inputs": [
     {
      "amount": 4,
@@ -4270,6 +4511,7 @@
      "name": "Sugar"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -4277,7 +4519,8 @@
      "name": "Rotary Valve Engine"
     }
    ],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4290,6 +4533,7 @@
    ],
    "icon": "img/pms/ceramics.png",
    "id": "pm_ceramics",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -4323,9 +4567,11 @@
      "name": "Glass"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -4343,6 +4589,7 @@
    ],
    "icon": "img/pms/chainsaws.png",
    "id": "pm_chainsaws",
+   "identities": [],
    "inputs": [
     {
      "amount": 4,
@@ -4374,6 +4621,7 @@
    "netAtBase": -220,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -4381,7 +4629,8 @@
      "name": "Combustion Engine"
     }
    ],
-   "totalJobs": -1250
+   "totalJobs": -1250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4409,6 +4658,7 @@
    ],
    "icon": "img/pms/chemical_fertilizers.png",
    "id": "pm_chemical_fertilizer",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -4441,6 +4691,7 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -4448,7 +4699,8 @@
      "name": "Nitrogen Fixation"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4461,6 +4713,7 @@
    ],
    "icon": "img/pms/chemical_fertilizers.png",
    "id": "pm_chemical_fertilizer_building_rice_farm",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -4493,6 +4746,7 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -4500,7 +4754,8 @@
      "name": "Nitrogen Fixation"
     }
    ],
-   "totalJobs": 10000
+   "totalJobs": 10000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4518,6 +4773,7 @@
    ],
    "icon": "img/pms/orchards.png",
    "id": "pm_citrus_orchards",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -4544,9 +4800,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -4564,6 +4822,7 @@
    ],
    "icon": "img/pms/ownership_clergy.png",
    "id": "pm_manor_house_clergy_ownership",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -4577,9 +4836,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -4601,6 +4862,7 @@
    ],
    "icon": "img/pms/ownership_clergy.png",
    "id": "pm_religious_academia",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -4619,9 +4881,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4634,6 +4898,7 @@
    ],
    "icon": "img/pms/coal_fired_plant.png",
    "id": "pm_coal-fired_plant",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -4677,6 +4942,7 @@
      "name": "Electricity"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -4684,7 +4950,8 @@
      "name": "Steam Turbine"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4697,6 +4964,7 @@
    ],
    "icon": "img/pms/combustion_derricks.png",
    "id": "pm_combustion_derricks",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -4739,6 +5007,7 @@
      "name": "Oil"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -4746,7 +5015,8 @@
      "name": "Combustion Engine"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4774,6 +5044,7 @@
    ],
    "icon": "img/pms/compression_ignition_tractors.png",
    "id": "pm_compression_ignition_tractors",
+   "identities": [],
    "inputs": [
     {
      "amount": 2,
@@ -4800,6 +5071,7 @@
    "netAtBase": -140,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -4807,7 +5079,8 @@
      "name": "Compression Ignition"
     }
    ],
-   "totalJobs": -2500
+   "totalJobs": -2500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4820,6 +5093,7 @@
    ],
    "icon": "img/pms/condensing_engine_pump.png",
    "id": "pm_condensing_engine_pump_building_coal_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -4862,6 +5136,7 @@
      "name": "Coal"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -4869,7 +5144,8 @@
      "name": "Water-tube Boiler"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4882,6 +5158,7 @@
    ],
    "icon": "img/pms/condensing_engine_pump.png",
    "id": "pm_condensing_engine_pump_building_gold_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -4930,6 +5207,7 @@
      "name": "Gold"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -4937,7 +5215,8 @@
      "name": "Water-tube Boiler"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -4950,6 +5229,7 @@
    ],
    "icon": "img/pms/condensing_engine_pump.png",
    "id": "pm_condensing_engine_pump_building_iron_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -4998,6 +5278,7 @@
      "name": "Iron"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -5005,7 +5286,8 @@
      "name": "Water-tube Boiler"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5018,6 +5300,7 @@
    ],
    "icon": "img/pms/condensing_engine_pump.png",
    "id": "pm_condensing_engine_pump_building_lead_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -5066,6 +5349,7 @@
      "name": "Lead"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -5073,7 +5357,8 @@
      "name": "Water-tube Boiler"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5086,6 +5371,7 @@
    ],
    "icon": "img/pms/condensing_engine_pump.png",
    "id": "pm_condensing_engine_pump_building_sulfur_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -5134,6 +5420,7 @@
      "name": "Sulfur"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -5141,7 +5428,8 @@
      "name": "Water-tube Boiler"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5174,6 +5462,7 @@
    ],
    "icon": "img/pms/corvee_labor.png",
    "id": "pm_corvee_labor",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -5193,9 +5482,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5208,6 +5499,7 @@
    ],
    "icon": "img/pms/covered_markets.png",
    "id": "pm_covered_markets",
+   "identities": [],
    "inputs": [
     {
      "amount": 2,
@@ -5251,6 +5543,7 @@
      "name": "Services"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -5258,7 +5551,8 @@
      "name": "Steel-Frame Buildings"
     }
    ],
-   "totalJobs": 4800
+   "totalJobs": 4800,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5271,6 +5565,7 @@
    ],
    "icon": "img/pms/craftsman_sewing.png",
    "id": "pm_craftsman_sewing",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -5310,9 +5605,11 @@
      "name": "Clothes"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5325,6 +5622,7 @@
    ],
    "icon": "img/pms/crude_tools.png",
    "id": "pm_crude_tools",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -5357,9 +5655,11 @@
      "name": "Tools"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5372,6 +5672,7 @@
    ],
    "icon": "img/pms/crystal_glass.png",
    "id": "pm_crystal_glass",
+   "identities": [],
    "inputs": [
     {
      "amount": 35,
@@ -5414,6 +5715,7 @@
      "name": "Glass"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -5421,7 +5723,8 @@
      "name": "Crystal Glass"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5434,6 +5737,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_cristo_redentor",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -5447,9 +5751,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5462,6 +5768,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_eiffel_tower",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -5475,9 +5782,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5490,6 +5799,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_estacion_de_madrid_atocha",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -5513,9 +5823,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5528,6 +5840,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_gran_teatro_de_la_habana",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -5555,9 +5868,11 @@
      "name": "Fine Art"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 200
+   "totalJobs": 200,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5570,6 +5885,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_kaiserforum_1",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -5577,9 +5893,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5592,6 +5910,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_kaiserforum_2",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -5599,9 +5918,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5614,6 +5935,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_kaiserforum_3",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -5637,9 +5959,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 400
+   "totalJobs": 400,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5652,6 +5976,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_kaiserforum_4",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -5675,9 +6000,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 400
+   "totalJobs": 400,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5690,6 +6017,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_manila_cathedral_monument",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -5703,9 +6031,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5718,6 +6048,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_manila_cathedral_ruins",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -5731,9 +6062,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5746,6 +6079,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_pena_convent",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -5753,9 +6087,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5768,6 +6104,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_pena_palace",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -5786,9 +6123,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 300
+   "totalJobs": 300,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5801,6 +6140,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_sagrada_familia_cathedral_1",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -5808,9 +6148,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5823,6 +6165,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_sagrada_familia_cathedral_2",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -5830,9 +6173,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5845,6 +6190,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_sagrada_familia_cathedral_3",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -5858,9 +6204,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 400
+   "totalJobs": 400,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5873,6 +6221,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_victoria_terminus",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -5896,9 +6245,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5911,6 +6262,7 @@
    ],
    "icon": "img/pms/diesel_engines.png",
    "id": "pm_diesel_engines",
+   "identities": [],
    "inputs": [
     {
      "amount": 50,
@@ -5959,6 +6311,7 @@
      "name": "Engines"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -5966,7 +6319,8 @@
      "name": "Compression Ignition"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -5979,6 +6333,7 @@
    ],
    "icon": "img/pms/diesel_pump.png",
    "id": "pm_diesel_pump_building_coal_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -6027,6 +6382,7 @@
      "name": "Coal"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -6034,7 +6390,8 @@
      "name": "Compression Ignition"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6047,6 +6404,7 @@
    ],
    "icon": "img/pms/diesel_pump.png",
    "id": "pm_diesel_pump_building_gold_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -6095,6 +6453,7 @@
      "name": "Gold"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -6102,7 +6461,8 @@
      "name": "Compression Ignition"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6115,6 +6475,7 @@
    ],
    "icon": "img/pms/diesel_pump.png",
    "id": "pm_diesel_pump_building_iron_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -6163,6 +6524,7 @@
      "name": "Iron"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -6170,7 +6532,8 @@
      "name": "Compression Ignition"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6183,6 +6546,7 @@
    ],
    "icon": "img/pms/diesel_pump.png",
    "id": "pm_diesel_pump_building_lead_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -6231,6 +6595,7 @@
      "name": "Lead"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -6238,7 +6603,8 @@
      "name": "Compression Ignition"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6251,6 +6617,7 @@
    ],
    "icon": "img/pms/diesel_pump.png",
    "id": "pm_diesel_pump_building_sulfur_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -6299,6 +6666,7 @@
      "name": "Sulfur"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -6306,7 +6674,8 @@
      "name": "Compression Ignition"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6319,6 +6688,7 @@
    ],
    "icon": "img/pms/trains_diesel.png",
    "id": "pm_diesel_trains",
+   "identities": [],
    "inputs": [
     {
      "amount": 6,
@@ -6367,6 +6737,7 @@
      "name": "Transportation"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -6374,7 +6745,8 @@
      "name": "Compression Ignition"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6387,6 +6759,7 @@
    ],
    "icon": "img/pms/coffee_plantation_dry_process.png",
    "id": "coffee_plantation_dry_process",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -6412,9 +6785,11 @@
      "name": "Coffee"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 7000
+   "totalJobs": 7000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6502,6 +6877,7 @@
    ],
    "icon": null,
    "id": "pm_dummy",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -6509,9 +6885,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6524,6 +6902,7 @@
    ],
    "icon": "img/pms/dye_workshops.png",
    "id": "pm_dye_workshops",
+   "identities": [],
    "inputs": [
     {
      "amount": 40,
@@ -6567,6 +6946,7 @@
      "name": "Clothes"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -6574,7 +6954,8 @@
      "name": "Lathe"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6587,6 +6968,7 @@
    ],
    "icon": "img/pms/dynamite.png",
    "id": "pm_dynamite_building_coal_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -6614,6 +6996,7 @@
      "name": "Coal"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -6621,7 +7004,8 @@
      "name": "Dynamite"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6634,6 +7018,7 @@
    ],
    "icon": "img/pms/dynamite.png",
    "id": "pm_dynamite_building_gold_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -6661,6 +7046,7 @@
      "name": "Gold"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -6668,7 +7054,8 @@
      "name": "Dynamite"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6681,6 +7068,7 @@
    ],
    "icon": "img/pms/dynamite.png",
    "id": "pm_dynamite_building_iron_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -6708,6 +7096,7 @@
      "name": "Iron"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -6715,7 +7104,8 @@
      "name": "Dynamite"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6728,6 +7118,7 @@
    ],
    "icon": "img/pms/dynamite.png",
    "id": "pm_dynamite_building_lead_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -6755,6 +7146,7 @@
      "name": "Lead"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -6762,7 +7154,8 @@
      "name": "Dynamite"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6775,6 +7168,7 @@
    ],
    "icon": "img/pms/dynamite.png",
    "id": "pm_dynamite_building_sulfur_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -6802,6 +7196,7 @@
      "name": "Sulfur"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -6809,7 +7204,8 @@
      "name": "Dynamite"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6822,6 +7218,7 @@
    ],
    "icon": "img/pms/power_plant.png",
    "id": "pm_early_power_plant",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -6871,9 +7268,11 @@
      "name": "Electricity"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6886,6 +7285,7 @@
    ],
    "icon": "img/pms/vaccum_canning.png",
    "id": "pm_vacuum_canning_principle_3",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -6947,6 +7347,12 @@
      "name": "Groceries"
     }
    ],
+   "principles": [
+    {
+     "id": "principle_food_standardization_3",
+     "name": "Principle Food Standardization 3"
+    }
+   ],
    "reqPms": [],
    "techs": [
     {
@@ -6954,7 +7360,8 @@
      "name": "Vacuum Canning"
     }
    ],
-   "totalJobs": 700
+   "totalJobs": 700,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -6967,6 +7374,7 @@
    ],
    "icon": "img/pms/elastics.png",
    "id": "pm_elastics",
+   "identities": [],
    "inputs": [
     {
      "amount": 35,
@@ -7021,6 +7429,7 @@
      "name": "Clothes"
     }
    ],
+   "principles": [],
    "reqPms": [
     {
      "id": "pm_sewing_machines",
@@ -7037,7 +7446,8 @@
      "name": "Vulcanization"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -7050,6 +7460,7 @@
    ],
    "icon": "img/pms/electric_arc_process.png",
    "id": "pm_electric_arc_process",
+   "identities": [],
    "inputs": [
     {
      "amount": 100,
@@ -7104,6 +7515,7 @@
      "name": "Steel"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -7111,7 +7523,8 @@
      "name": "Electric Arc Process"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -7124,6 +7537,7 @@
    ],
    "icon": "img/pms/electric_engines.png",
    "id": "pm_electric_engines",
+   "identities": [],
    "inputs": [
     {
      "amount": 40,
@@ -7172,6 +7586,7 @@
      "name": "Engines"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -7179,7 +7594,8 @@
      "name": "Electric Railways"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -7192,6 +7608,7 @@
    ],
    "icon": "img/pms/electric_fencing.png",
    "id": "pm_electric_fencing",
+   "identities": [],
    "inputs": [
     {
      "amount": 1,
@@ -7218,6 +7635,7 @@
    "netAtBase": -70,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -7225,7 +7643,8 @@
      "name": "Electrical Generation"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -7238,6 +7657,7 @@
    ],
    "icon": "img/pms/electric_rollers.png",
    "id": "electric_rollers",
+   "identities": [],
    "inputs": [
     {
      "amount": 2,
@@ -7276,6 +7696,7 @@
      "name": "Tobacco"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -7283,7 +7704,8 @@
      "name": "Electrical Generation"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -7296,6 +7718,7 @@
    ],
    "icon": "img/pms/electric_saw_mills.png",
    "id": "pm_electric_saw_mills",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -7344,6 +7767,7 @@
      "name": "Wood"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -7351,7 +7775,8 @@
      "name": "Electrical Generation"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -7364,6 +7789,7 @@
    ],
    "icon": "img/pms/electric_sewing_machines.png",
    "id": "pm_electric_sewing_machines",
+   "identities": [],
    "inputs": [
     {
      "amount": 60,
@@ -7424,6 +7850,7 @@
      "name": "Clothes"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -7431,7 +7858,8 @@
      "name": "Electrical Capacitors"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -7444,6 +7872,7 @@
    ],
    "icon": "img/pms/electric_streetlights.png",
    "id": "pm_electric_streetlights",
+   "identities": [],
    "inputs": [
     {
      "amount": 3,
@@ -7476,6 +7905,7 @@
      "name": "Services"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -7483,7 +7913,8 @@
      "name": "Electrical Generation"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -7496,6 +7927,7 @@
    ],
    "icon": "img/pms/trains_electric.png",
    "id": "pm_electric_trains",
+   "identities": [],
    "inputs": [
     {
      "amount": 8,
@@ -7544,6 +7976,7 @@
      "name": "Transportation"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -7551,7 +7984,8 @@
      "name": "Electric Railways"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -7564,6 +7998,7 @@
    ],
    "icon": "img/pms/experimental_trains.png",
    "id": "pm_early_trains",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -7607,9 +8042,11 @@
      "name": "Transportation"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -7671,6 +8108,7 @@
    ],
    "icon": "img/pms/exploitative_practices.png",
    "id": "worker_exploitation_banana",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -7685,9 +8123,11 @@
      "name": "Fruit"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -7749,6 +8189,7 @@
    ],
    "icon": "img/pms/exploitative_practices.png",
    "id": "worker_exploitation_coffee",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -7763,9 +8204,11 @@
      "name": "Coffee"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -7827,6 +8270,7 @@
    ],
    "icon": "img/pms/exploitative_practices.png",
    "id": "worker_exploitation_cotton",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -7841,9 +8285,11 @@
      "name": "Fabric"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -7905,6 +8351,7 @@
    ],
    "icon": "img/pms/exploitative_practices.png",
    "id": "worker_exploitation_dye",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -7919,9 +8366,11 @@
      "name": "Dye"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -7983,6 +8432,7 @@
    ],
    "icon": "img/pms/exploitative_practices.png",
    "id": "worker_exploitation_rubber",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -7997,9 +8447,11 @@
      "name": "Rubber"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -8061,6 +8513,7 @@
    ],
    "icon": "img/pms/exploitative_practices.png",
    "id": "worker_exploitation_sugar",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -8075,9 +8528,11 @@
      "name": "Sugar"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -8139,6 +8594,7 @@
    ],
    "icon": "img/pms/exploitative_practices.png",
    "id": "worker_exploitation_tea",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -8153,9 +8609,11 @@
      "name": "Tea"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -8217,6 +8675,7 @@
    ],
    "icon": "img/pms/exploitative_practices.png",
    "id": "worker_exploitation_tobacco",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -8237,9 +8696,11 @@
      "name": "Tobacco"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8252,6 +8713,7 @@
    ],
    "icon": "img/pms/explosive_shells.png",
    "id": "pm_explosive_shells",
+   "identities": [],
    "inputs": [
     {
      "amount": 40,
@@ -8300,6 +8762,7 @@
      "name": "Ammunition"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -8307,7 +8770,8 @@
      "name": "Dynamite"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8320,6 +8784,7 @@
    ],
    "icon": "img/pms/radio_stations.png",
    "id": "radio_stations_tobacco",
+   "identities": [],
    "inputs": [
     {
      "amount": 1,
@@ -8341,6 +8806,7 @@
      "name": "Tobacco"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -8348,7 +8814,8 @@
      "name": "Radio"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8376,6 +8843,7 @@
    ],
    "icon": "img/pms/fertilization.png",
    "id": "pm_fertilization",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -8408,6 +8876,7 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -8415,7 +8884,8 @@
      "name": "Improved Fertilizer"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8428,6 +8898,7 @@
    ],
    "icon": "img/pms/fertilization.png",
    "id": "pm_fertilization_building_rice_farm",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -8460,6 +8931,7 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -8467,7 +8939,8 @@
      "name": "Improved Fertilizer"
     }
    ],
-   "totalJobs": 10000
+   "totalJobs": 10000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8480,6 +8953,7 @@
    ],
    "icon": "img/pms/orchards.png",
    "id": "pm_fig_orchards",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -8506,9 +8980,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8521,6 +8997,7 @@
    ],
    "icon": "img/pms/orchards.png",
    "id": "pm_fig_orchards_building_rice_farm",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -8547,9 +9024,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8562,6 +9041,7 @@
    ],
    "icon": "img/pms/horizontal_drawer_cabinets.png",
    "id": "pm_horizontal_drawer_cabinets",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -8582,6 +9062,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -8589,7 +9070,8 @@
      "name": "Centralization"
     }
    ],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8602,6 +9084,7 @@
    ],
    "icon": "img/pms/film_art.png",
    "id": "pm_film_art",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -8635,6 +9118,7 @@
      "name": "Fine Art"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -8642,7 +9126,8 @@
      "name": "Film"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8655,6 +9140,7 @@
    ],
    "icon": "img/pms/simple_fishing.png",
    "id": "pm_herring_meal_farming",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -8692,9 +9178,16 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": [
+    {
+     "id": "geographic_region_japan",
+     "name": "Japan"
+    }
+   ]
   },
   {
    "blockedByLaws": [],
@@ -8707,6 +9200,7 @@
    ],
    "icon": "img/pms/simple_fishing.png",
    "id": "pm_herring_meal_farming_building_rice_farm",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -8744,9 +9238,16 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 10000
+   "totalJobs": 10000,
+   "unverified": [
+    {
+     "id": "geographic_region_japan",
+     "name": "Japan"
+    }
+   ]
   },
   {
    "blockedByLaws": [],
@@ -8759,6 +9260,7 @@
    ],
    "icon": "img/pms/trawlers.png",
    "id": "pm_fishing_trawlers",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -8796,9 +9298,11 @@
      "name": "Fish"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8811,6 +9315,7 @@
    ],
    "icon": "img/pms/flash_refrigerated.png",
    "id": "pm_flash_freezing_building_fishing_wharf",
+   "identities": [],
    "inputs": [
     {
      "amount": 7,
@@ -8837,6 +9342,7 @@
    "netAtBase": -420,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -8844,7 +9350,8 @@
      "name": "Flash Freezing"
     }
    ],
-   "totalJobs": -3000
+   "totalJobs": -3000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8857,6 +9364,7 @@
    ],
    "icon": "img/pms/flash_refrigerated.png",
    "id": "pm_flash_freezing_building_whaling_station",
+   "identities": [],
    "inputs": [
     {
      "amount": 7,
@@ -8883,6 +9391,7 @@
    "netAtBase": -420,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -8890,7 +9399,8 @@
      "name": "Flash Freezing"
     }
    ],
-   "totalJobs": -3000
+   "totalJobs": -3000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8903,6 +9413,7 @@
    ],
    "icon": "img/pms/increased_hardwood.png",
    "id": "pm_increased_hardwood",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -8932,6 +9443,7 @@
      "name": "Wood"
     }
    ],
+   "principles": [],
    "reqPms": [
     {
      "id": "pm_saw_mills",
@@ -8943,7 +9455,8 @@
     }
    ],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8956,6 +9469,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_forbidden_city",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -8974,9 +9488,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -8989,6 +9505,7 @@
    ],
    "icon": "img/pms/forest_glass.png",
    "id": "pm_forest_glass",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -9021,9 +9538,11 @@
      "name": "Glass"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -9045,6 +9564,7 @@
    ],
    "icon": "img/pms/ownership_bureacrats.png",
    "id": "pm_free_urban_clergy",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -9063,9 +9583,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9098,6 +9620,7 @@
    ],
    "icon": "img/pms/no_serfdom.png",
    "id": "pm_serfdom_no",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -9126,9 +9649,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9141,6 +9666,7 @@
    ],
    "icon": "img/pms/gas_streetlights.png",
    "id": "pm_gas_streetlights",
+   "identities": [],
    "inputs": [
     {
      "amount": 2,
@@ -9168,9 +9694,11 @@
      "name": "Services"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -9188,6 +9716,7 @@
    ],
    "icon": "img/pms/cavalry.png",
    "id": "pm_general_training",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -9195,6 +9724,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -9202,7 +9732,8 @@
      "name": "General Staff"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9215,6 +9746,7 @@
    ],
    "icon": "img/pms/cavalry.png",
    "id": "pm_general_training_conscription",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -9222,6 +9754,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -9229,7 +9762,8 @@
      "name": "General Staff"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9247,6 +9781,7 @@
    ],
    "icon": "img/pms/government_run.png",
    "id": "pm_company_headquarter_government_run",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -9270,9 +9805,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9285,6 +9822,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_hagia_sophia",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -9298,9 +9836,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 200
+   "totalJobs": 200,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9353,6 +9893,7 @@
    ],
    "icon": "img/pms/no_automation.png",
    "id": "pm_automation_disabled",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -9360,9 +9901,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9395,6 +9938,7 @@
    ],
    "icon": "img/pms/no_automation.png",
    "id": "pm_no_steam_automation",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -9402,9 +9946,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9417,6 +9963,7 @@
    ],
    "icon": "img/pms/hand_rolled.png",
    "id": "hand_rolled",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -9430,9 +9977,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9445,6 +9994,7 @@
    ],
    "icon": "img/pms/furniture_handicraft.png",
    "id": "pm_handcrafted_furniture",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -9483,9 +10033,11 @@
      "name": "Furniture"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9498,6 +10050,7 @@
    ],
    "icon": "img/pms/handsewn_clothes.png",
    "id": "pm_handsewn_clothes",
+   "identities": [],
    "inputs": [
     {
      "amount": 40,
@@ -9530,9 +10083,11 @@
      "name": "Clothes"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9545,6 +10100,7 @@
    ],
    "icon": "img/pms/hardwood_selection.png",
    "id": "pm_hardwood",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -9565,9 +10121,11 @@
      "name": "Wood"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9595,6 +10153,7 @@
    ],
    "icon": "img/pms/harvesting_tools.png",
    "id": "pm_tools",
+   "identities": [],
    "inputs": [
     {
      "amount": 2,
@@ -9615,9 +10174,11 @@
    "netAtBase": -80,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9630,6 +10191,7 @@
    ],
    "icon": "img/pms/harvesting_tools.png",
    "id": "pm_tools_building_rice_farm",
+   "identities": [],
    "inputs": [
     {
      "amount": 4,
@@ -9650,9 +10212,11 @@
    "netAtBase": -160,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9665,6 +10229,7 @@
    ],
    "icon": "img/pms/ownership_aristocrats.png",
    "id": "pm_hereditary_bureaucrats",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -9692,9 +10257,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -9712,6 +10279,7 @@
    ],
    "icon": "img/pms/home_workshops.png",
    "id": "pm_home_workshops_building_subsistence_farm",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -9738,9 +10306,11 @@
      "name": "Liquor"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -9758,6 +10328,7 @@
    ],
    "icon": "img/pms/home_workshops.png",
    "id": "pm_home_workshops_building_subsistence_fishing_village",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -9784,9 +10355,11 @@
      "name": "Liquor"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -9804,6 +10377,7 @@
    ],
    "icon": "img/pms/home_workshops.png",
    "id": "pm_home_workshops_building_subsistence_orchard",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -9830,9 +10404,11 @@
      "name": "Liquor"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -9850,6 +10426,7 @@
    ],
    "icon": "img/pms/home_workshops.png",
    "id": "pm_home_workshops_building_subsistence_pasture",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -9876,9 +10453,11 @@
      "name": "Liquor"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -9896,6 +10475,7 @@
    ],
    "icon": "img/pms/home_workshops.png",
    "id": "pm_home_workshops_building_subsistence_rice_farm",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -9922,9 +10502,11 @@
      "name": "Liquor"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -9957,6 +10539,7 @@
    ],
    "icon": "img/pms/homesteading.png",
    "id": "pm_homesteading_building_subsistence",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -9987,9 +10570,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -10002,6 +10587,7 @@
    ],
    "icon": "img/pms/no_automation.png",
    "id": "pm_no_equipment",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -10009,9 +10595,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -10024,6 +10612,7 @@
    ],
    "icon": "img/pms/houseware_plastics.png",
    "id": "pm_houseware_plastics",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -10072,6 +10661,7 @@
      "name": "Glass"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -10079,7 +10669,8 @@
      "name": "Plastics"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -10092,6 +10683,12 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_power_bloc_statue_ideological_union",
+   "identities": [
+    {
+     "id": "identity_ideological_union",
+     "name": "Ideological Union"
+    }
+   ],
    "inputs": [],
    "jobs": [
     {
@@ -10110,9 +10707,11 @@
     }
    ],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -10125,6 +10724,7 @@
    ],
    "icon": "img/pms/improved_fertilizer.png",
    "id": "pm_improved_fertilizer",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -10173,6 +10773,7 @@
      "name": "Fertilizer"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -10180,7 +10781,8 @@
      "name": "Improved Fertilizer"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -10207,6 +10809,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_company_headquarter_principle_divine_economics_2",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -10238,9 +10841,25 @@
     }
    ],
    "outputs": [],
+   "principles": [
+    {
+     "id": "principle_divine_economics_2",
+     "name": "Principle Divine Economics 2"
+    },
+    {
+     "id": "principle_divine_economics_3",
+     "name": "Principle Divine Economics 3"
+    }
+   ],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": [
+    {
+     "id": "capitalist_owned",
+     "name": "Capitalist Owned"
+    }
+   ]
   },
   {
    "blockedByLaws": [
@@ -10267,6 +10886,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_company_headquarter_principle_divine_economics_2_academics",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -10303,9 +10923,25 @@
     }
    ],
    "outputs": [],
+   "principles": [
+    {
+     "id": "principle_divine_economics_2",
+     "name": "Principle Divine Economics 2"
+    },
+    {
+     "id": "principle_divine_economics_3",
+     "name": "Principle Divine Economics 3"
+    }
+   ],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": [
+    {
+     "id": "academic_owned",
+     "name": "Academic Owned"
+    }
+   ]
   },
   {
    "blockedByLaws": [
@@ -10336,6 +10972,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_company_headquarter_principle_divine_economics_2_aristocrats",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -10372,9 +11009,25 @@
     }
    ],
    "outputs": [],
+   "principles": [
+    {
+     "id": "principle_divine_economics_2",
+     "name": "Principle Divine Economics 2"
+    },
+    {
+     "id": "principle_divine_economics_3",
+     "name": "Principle Divine Economics 3"
+    }
+   ],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": [
+    {
+     "id": "aristocrat_owned",
+     "name": "Aristocrat Owned"
+    }
+   ]
   },
   {
    "blockedByLaws": [
@@ -10401,6 +11054,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_company_headquarter_principle_divine_economics_2_aristocrats_commercial_agriculture",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -10442,9 +11096,25 @@
     }
    ],
    "outputs": [],
+   "principles": [
+    {
+     "id": "principle_divine_economics_2",
+     "name": "Principle Divine Economics 2"
+    },
+    {
+     "id": "principle_divine_economics_3",
+     "name": "Principle Divine Economics 3"
+    }
+   ],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": [
+    {
+     "id": "aristocrat_owned",
+     "name": "Aristocrat Owned"
+    }
+   ]
   },
   {
    "blockedByLaws": [
@@ -10471,6 +11141,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_company_headquarter_principle_divine_economics_2_bureaucrats",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -10507,9 +11178,25 @@
     }
    ],
    "outputs": [],
+   "principles": [
+    {
+     "id": "principle_divine_economics_2",
+     "name": "Principle Divine Economics 2"
+    },
+    {
+     "id": "principle_divine_economics_3",
+     "name": "Principle Divine Economics 3"
+    }
+   ],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": [
+    {
+     "id": "bureaucrat_owned",
+     "name": "Bureaucrat Owned"
+    }
+   ]
   },
   {
    "blockedByLaws": [
@@ -10536,6 +11223,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_company_headquarter_principle_divine_economics_2_shopkeepers",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -10572,9 +11260,25 @@
     }
    ],
    "outputs": [],
+   "principles": [
+    {
+     "id": "principle_divine_economics_2",
+     "name": "Principle Divine Economics 2"
+    },
+    {
+     "id": "principle_divine_economics_3",
+     "name": "Principle Divine Economics 3"
+    }
+   ],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": [
+    {
+     "id": "shopkeeper_owned",
+     "name": "Shopkeeper Owned"
+    }
+   ]
   },
   {
    "blockedByLaws": [],
@@ -10587,6 +11291,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_financial_district_principle_divine_economics_2",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -10619,9 +11324,20 @@
     }
    ],
    "outputs": [],
+   "principles": [
+    {
+     "id": "principle_divine_economics_2",
+     "name": "Principle Divine Economics 2"
+    },
+    {
+     "id": "principle_divine_economics_3",
+     "name": "Principle Divine Economics 3"
+    }
+   ],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -10634,6 +11350,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_manor_house_principle_divine_economics_2",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -10661,9 +11378,20 @@
     }
    ],
    "outputs": [],
+   "principles": [
+    {
+     "id": "principle_divine_economics_2",
+     "name": "Principle Divine Economics 2"
+    },
+    {
+     "id": "principle_divine_economics_3",
+     "name": "Principle Divine Economics 3"
+    }
+   ],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -10681,6 +11409,7 @@
    ],
    "icon": "img/pms/government_run.png",
    "id": "pm_principle_freedom_of_movement_3",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -10693,9 +11422,16 @@
     }
    ],
    "outputs": [],
+   "principles": [
+    {
+     "id": "principle_freedom_of_movement_3",
+     "name": "Principle Freedom Of Movement 3"
+    }
+   ],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -10708,6 +11444,7 @@
    ],
    "icon": "img/pms/sheep_farms.png",
    "id": "pm_sheep_farms",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -10735,6 +11472,7 @@
      "name": "Fertilizer"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -10742,7 +11480,8 @@
      "name": "Intensive Agriculture"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -10755,6 +11494,7 @@
    ],
    "icon": "img/pms/independent_artists.png",
    "id": "pm_independent_artists",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -10778,6 +11518,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -10785,7 +11526,8 @@
      "name": "Realism"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -10798,6 +11540,7 @@
    ],
    "icon": "img/pms/industrial_port.png",
    "id": "pm_industrial_port",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -10846,6 +11589,7 @@
      "name": "Merchant Marine"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -10853,7 +11597,8 @@
      "name": "Gantry Cranes"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -10866,6 +11611,7 @@
    ],
    "icon": "img/pms/trade_center.png",
    "id": "pm_trade_center_principle_external_trade_2",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -10893,9 +11639,20 @@
     }
    ],
    "outputs": [],
+   "principles": [
+    {
+     "id": "principle_external_trade_2",
+     "name": "Principle External Trade 2"
+    },
+    {
+     "id": "principle_external_trade_3",
+     "name": "Principle External Trade 3"
+    }
+   ],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -10908,6 +11665,7 @@
    ],
    "icon": "img/pms/large_sheep_ranch.png",
    "id": "pm_intensive_grazing_ranch",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -10948,6 +11706,7 @@
      "name": "Fertilizer"
     }
    ],
+   "principles": [],
    "reqPms": [
     {
      "id": "pm_butchering_tools",
@@ -10968,7 +11727,8 @@
      "name": "Mechanized Farming"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -10981,6 +11741,7 @@
    ],
    "icon": "img/pms/trade_center.png",
    "id": "pm_trade_center",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -10999,9 +11760,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11014,6 +11777,7 @@
    ],
    "icon": "img/pms/iron_frame_buildings.png",
    "id": "pm_iron_frame_buildings",
+   "identities": [],
    "inputs": [
     {
      "amount": 50,
@@ -11067,6 +11831,7 @@
    "netAtBase": -3600,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -11074,7 +11839,8 @@
      "name": "Urban Planning"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11087,6 +11853,7 @@
    ],
    "icon": "img/pms/no_canning.png",
    "id": "pm_disabled_canning",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -11094,9 +11861,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11109,6 +11878,7 @@
    ],
    "icon": "img/pms/trains_diesel.png",
    "id": "pm_diesel_trains_principle_transport_3",
+   "identities": [],
    "inputs": [
     {
      "amount": 8,
@@ -11162,6 +11932,12 @@
      "name": "Transportation"
     }
    ],
+   "principles": [
+    {
+     "id": "principle_transport_3",
+     "name": "Principle Transport 3"
+    }
+   ],
    "reqPms": [],
    "techs": [
     {
@@ -11169,7 +11945,8 @@
      "name": "Compression Ignition"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11182,6 +11959,7 @@
    ],
    "icon": "img/pms/trains_electric.png",
    "id": "pm_electric_trains_principle_transport_3",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -11235,6 +12013,12 @@
      "name": "Transportation"
     }
    ],
+   "principles": [
+    {
+     "id": "principle_transport_3",
+     "name": "Principle Transport 3"
+    }
+   ],
    "reqPms": [],
    "techs": [
     {
@@ -11242,7 +12026,8 @@
      "name": "Electric Railways"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11255,6 +12040,7 @@
    ],
    "icon": "img/pms/trains_steam.png",
    "id": "pm_steam_trains_principle_transport_3",
+   "identities": [],
    "inputs": [
     {
      "amount": 6,
@@ -11303,6 +12089,12 @@
      "name": "Transportation"
     }
    ],
+   "principles": [
+    {
+     "id": "principle_transport_3",
+     "name": "Principle Transport 3"
+    }
+   ],
    "reqPms": [],
    "techs": [
     {
@@ -11310,7 +12102,8 @@
      "name": "Steel Railway Cars"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11323,6 +12116,7 @@
    ],
    "icon": "img/pms/lathes.png",
    "id": "pm_lathe",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -11377,6 +12171,7 @@
      "name": "Furniture"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -11384,7 +12179,8 @@
      "name": "Lathe"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11397,6 +12193,7 @@
    ],
    "icon": "img/pms/leaded_glass.png",
    "id": "pm_leaded_glass",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -11440,6 +12237,7 @@
      "name": "Glass"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -11447,7 +12245,8 @@
      "name": "Lathe"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11460,6 +12259,7 @@
    ],
    "icon": "img/pms/leblanc_process.png",
    "id": "pm_leblanc_process",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -11508,9 +12308,11 @@
      "name": "Explosives"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -11528,6 +12330,7 @@
    ],
    "icon": "img/pms/lectors.png",
    "id": "lectors_tobacco",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -11542,9 +12345,11 @@
      "name": "Tobacco"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11557,6 +12362,7 @@
    ],
    "icon": "img/pms/luxury_furniture.png",
    "id": "pm_luxury_furniture",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -11596,9 +12402,11 @@
      "name": "Furniture"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11611,6 +12419,7 @@
    ],
    "icon": "img/pms/steel_tools.png",
    "id": "pm_rubber_grips",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -11659,6 +12468,7 @@
      "name": "Tools"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -11666,7 +12476,8 @@
      "name": "Vulcanization"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11699,6 +12510,7 @@
    ],
    "icon": "img/pms/no_orchards.png",
    "id": "pm_no_secondary",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -11706,9 +12518,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11721,6 +12535,7 @@
    ],
    "icon": "img/pms/no_automation.png",
    "id": "pm_manual_dough_processing",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -11728,9 +12543,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11763,6 +12580,7 @@
    ],
    "icon": "img/pms/no_explosives.png",
    "id": "pm_no_explosives",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -11770,9 +12588,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11785,6 +12605,7 @@
    ],
    "icon": "img/pms/glassworks_handicraft.png",
    "id": "pm_manual_glassblowing",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -11792,9 +12613,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11807,6 +12630,7 @@
    ],
    "icon": "img/pms/market_squares.png",
    "id": "pm_market_squares",
+   "identities": [],
    "inputs": [
     {
      "amount": 1,
@@ -11850,6 +12674,7 @@
      "name": "Services"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -11857,7 +12682,8 @@
      "name": "Urban Planning"
     }
    ],
-   "totalJobs": 4800
+   "totalJobs": 4800,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11870,6 +12696,7 @@
    ],
    "icon": "img/pms/market_stalls.png",
    "id": "pm_market_stalls",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -11900,9 +12727,11 @@
      "name": "Services"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 4800
+   "totalJobs": 4800,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11915,6 +12744,7 @@
    ],
    "icon": "img/pms/standardized_automobiles.png",
    "id": "pm_mass_automobile_production",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -11969,6 +12799,7 @@
      "name": "Automobiles"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -11976,7 +12807,8 @@
      "name": "Compression Ignition"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -11989,6 +12821,7 @@
    ],
    "icon": "img/pms/trade_quantity_4.png",
    "id": "pm_trade_center_trade_quantity_very_high",
+   "identities": [],
    "inputs": [
     {
      "amount": 6,
@@ -12003,6 +12836,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12010,7 +12844,8 @@
      "name": "Floating Harbor"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12023,6 +12858,7 @@
    ],
    "icon": "img/pms/coffee_plantation_mechanical_drying.png",
    "id": "coffee_plantation_mechanical_drying",
+   "identities": [],
    "inputs": [
     {
      "amount": 3,
@@ -12061,6 +12897,7 @@
      "name": "Coffee"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12068,7 +12905,8 @@
      "name": "Mechanized Workshops"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -12086,6 +12924,7 @@
    ],
    "icon": "img/pms/mechanized_looms.png",
    "id": "pm_mechanized_looms",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -12106,6 +12945,7 @@
    "netAtBase": -200,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12113,7 +12953,8 @@
      "name": "Mechanized Workshops"
     }
    ],
-   "totalJobs": -1500
+   "totalJobs": -1500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12126,6 +12967,7 @@
    ],
    "icon": "img/pms/mechanized_slaughtering.png",
    "id": "pm_mechanized_slaughtering",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -12169,6 +13011,7 @@
      "name": "Meat"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12176,7 +13019,8 @@
      "name": "Mechanized Farming"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12189,6 +13033,7 @@
    ],
    "icon": "img/pms/mechanized_workshops.png",
    "id": "pm_mechanized_workshops",
+   "identities": [],
    "inputs": [
     {
      "amount": 50,
@@ -12243,6 +13088,7 @@
      "name": "Furniture"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12250,7 +13096,8 @@
      "name": "Mechanized Workshops"
     }
    ],
-   "totalJobs": 5500
+   "totalJobs": 5500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12263,6 +13110,12 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_power_bloc_statue_military_treaty",
+   "identities": [
+    {
+     "id": "identity_military_treaty_organization",
+     "name": "Military Treaty"
+    }
+   ],
    "inputs": [],
    "jobs": [
     {
@@ -12281,9 +13134,11 @@
     }
    ],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -12301,6 +13156,7 @@
    ],
    "icon": "img/pms/motorised_logistics.png",
    "id": "pm_mobile_warfare_tactics",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -12308,6 +13164,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12315,7 +13172,8 @@
      "name": "Mobile Armor"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -12337,6 +13195,7 @@
    ],
    "icon": "img/pms/motorised_logistics.png",
    "id": "pm_mobile_warfare_tactics_conscription",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -12344,6 +13203,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12351,7 +13211,8 @@
      "name": "Mobile Armor"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12364,6 +13225,7 @@
    ],
    "icon": "img/pms/modern_port.png",
    "id": "pm_modern_port",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -12417,6 +13279,7 @@
      "name": "Merchant Marine"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12424,7 +13287,8 @@
      "name": "Concrete Dockyards"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12437,6 +13301,7 @@
    ],
    "icon": "img/pms/molds.png",
    "id": "molds",
+   "identities": [],
    "inputs": [
     {
      "amount": 1,
@@ -12464,9 +13329,11 @@
      "name": "Tobacco"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12479,6 +13346,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_mosque_of_djenne",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -12492,9 +13360,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12507,6 +13377,7 @@
    ],
    "icon": "img/pms/muskets.png",
    "id": "pm_muskets",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -12550,9 +13421,11 @@
      "name": "Small Arms"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -12570,6 +13443,7 @@
    ],
    "icon": "img/pms/nco_incorporation.png",
    "id": "pm_nco_incorporation",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -12577,6 +13451,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12584,7 +13459,8 @@
      "name": "NCO Training"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -12606,6 +13482,7 @@
    ],
    "icon": "img/pms/nco_incorporation.png",
    "id": "pm_nco_incorporation_conscription",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -12613,6 +13490,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12620,7 +13498,8 @@
      "name": "NCO Training"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12633,6 +13512,7 @@
    ],
    "icon": "img/pms/nitrogen_fixation.png",
    "id": "pm_nitrogen_fixation",
+   "identities": [],
    "inputs": [
     {
      "amount": 40,
@@ -12687,6 +13567,7 @@
      "name": "Fertilizer"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12694,7 +13575,8 @@
      "name": "Nitrogen Fixation"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12707,6 +13589,7 @@
    ],
    "icon": "img/pms/nitroglycerin.png",
    "id": "pm_nitroglycerin_building_coal_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -12734,6 +13617,7 @@
      "name": "Coal"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12741,7 +13625,8 @@
      "name": "Nitroglycerin"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12754,6 +13639,7 @@
    ],
    "icon": "img/pms/nitroglycerin.png",
    "id": "pm_nitroglycerin_building_gold_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -12781,6 +13667,7 @@
      "name": "Gold"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12788,7 +13675,8 @@
      "name": "Nitroglycerin"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12801,6 +13689,7 @@
    ],
    "icon": "img/pms/nitroglycerin.png",
    "id": "pm_nitroglycerin_building_iron_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -12828,6 +13717,7 @@
      "name": "Iron"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12835,7 +13725,8 @@
      "name": "Nitroglycerin"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12848,6 +13739,7 @@
    ],
    "icon": "img/pms/nitroglycerin.png",
    "id": "pm_nitroglycerin_building_lead_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -12875,6 +13767,7 @@
      "name": "Lead"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12882,7 +13775,8 @@
      "name": "Nitroglycerin"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12895,6 +13789,7 @@
    ],
    "icon": "img/pms/nitroglycerin.png",
    "id": "pm_nitroglycerin_building_sulfur_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -12922,6 +13817,7 @@
      "name": "Sulfur"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -12929,7 +13825,8 @@
      "name": "Nitroglycerin"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12942,6 +13839,7 @@
    ],
    "icon": "img/pms/no_aeroplanes.png",
    "id": "pm_no_aeroplane_production",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -12949,9 +13847,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12964,6 +13864,7 @@
    ],
    "icon": "img/pms/no_airships.png",
    "id": "pm_no_airships",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -12971,9 +13872,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -12991,6 +13894,7 @@
    ],
    "icon": "img/pms/government_run.png",
    "id": "pm_freedom_of_movement_no_effect",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -12998,9 +13902,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13143,6 +14049,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_monument_no_effects",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -13150,9 +14057,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13165,6 +14074,7 @@
    ],
    "icon": "img/pms/no_home_workshops.png",
    "id": "pm_home_workshops_no_building_subsistence_farm",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -13196,9 +14106,11 @@
      "name": "Wood"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13211,6 +14123,7 @@
    ],
    "icon": "img/pms/no_home_workshops.png",
    "id": "pm_home_workshops_no_building_subsistence_fishing_village",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -13242,9 +14155,11 @@
      "name": "Wood"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13257,6 +14172,7 @@
    ],
    "icon": "img/pms/no_home_workshops.png",
    "id": "pm_home_workshops_no_building_subsistence_orchard",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -13288,9 +14204,11 @@
      "name": "Wood"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13303,6 +14221,7 @@
    ],
    "icon": "img/pms/no_home_workshops.png",
    "id": "pm_home_workshops_no_building_subsistence_pasture",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -13328,9 +14247,11 @@
      "name": "Meat"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13343,6 +14264,7 @@
    ],
    "icon": "img/pms/no_home_workshops.png",
    "id": "pm_home_workshops_no_building_subsistence_rice_farm",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -13374,9 +14296,11 @@
      "name": "Wood"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -13394,6 +14318,7 @@
    ],
    "icon": "img/pms/no_specialists.png",
    "id": "pm_no_organization",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -13401,9 +14326,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13416,6 +14343,7 @@
    ],
    "icon": "img/pms/no_specialists.png",
    "id": "pm_no_organization_conscription",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -13423,9 +14351,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13438,6 +14368,7 @@
    ],
    "icon": "img/pms/no_tanks.png",
    "id": "pm_no_tank_production",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -13445,9 +14376,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13460,6 +14393,7 @@
    ],
    "icon": "img/pms/oil_fired_plant.png",
    "id": "pm_oil-fired_plant",
+   "identities": [],
    "inputs": [
     {
      "amount": 25,
@@ -13503,6 +14437,7 @@
      "name": "Electricity"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -13510,7 +14445,8 @@
      "name": "Oil Turbine"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13523,6 +14459,7 @@
    ],
    "icon": "img/pms/open_air_stockyards.png",
    "id": "pm_open_air_stockyards",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -13548,9 +14485,11 @@
      "name": "Meat"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13563,6 +14502,7 @@
    ],
    "icon": "img/pms/open_hearth_process.png",
    "id": "pm_open_hearth_process",
+   "identities": [],
    "inputs": [
     {
      "amount": 90,
@@ -13611,6 +14551,7 @@
      "name": "Steel"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -13618,7 +14559,8 @@
      "name": "Open Hearth Process"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13631,6 +14573,7 @@
    ],
    "icon": "img/pms/ox_driven_rollers.png",
    "id": "ox_driven_rollers_sugar",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -13638,9 +14581,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13673,6 +14618,7 @@
    ],
    "icon": "img/pms/no_tool_use.png",
    "id": "pm_tools_disabled",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -13680,9 +14626,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13695,6 +14643,7 @@
    ],
    "icon": "img/pms/bleached_paper.png",
    "id": "pm_bleached_paper",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -13749,6 +14698,7 @@
      "name": "Paper"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -13756,7 +14706,8 @@
      "name": "Chemical Bleaching"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13769,6 +14720,7 @@
    ],
    "icon": "img/pms/patent_stills.png",
    "id": "pm_patent_stills",
+   "identities": [],
    "inputs": [
     {
      "amount": 25,
@@ -13818,6 +14770,7 @@
      "name": "Groceries"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -13825,7 +14778,8 @@
      "name": "Fractional Distillation"
     }
    ],
-   "totalJobs": 900
+   "totalJobs": 900,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13838,6 +14792,7 @@
    ],
    "icon": "img/pms/coffee_plantation_patio_drying.png",
    "id": "coffee_plantation_patio_drying",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -13858,9 +14813,11 @@
      "name": "Coffee"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1500
+   "totalJobs": 1500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13893,6 +14850,7 @@
    ],
    "icon": "img/pms/homesteading.png",
    "id": "pm_peasant_proprietorship_building_subsistence",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -13923,9 +14881,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -13938,6 +14898,7 @@
    ],
    "icon": "img/pms/percussion_caps.png",
    "id": "pm_percussion_caps",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -13986,9 +14947,11 @@
      "name": "Ammunition"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14001,6 +14964,7 @@
    ],
    "icon": "img/pms/no_public_transport.png",
    "id": "pm_no_public_transport",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -14015,9 +14979,11 @@
      "name": "Transportation"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14030,6 +14996,7 @@
    ],
    "icon": "img/pms/philosophy_dept.png",
    "id": "pm_philosophy_department",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -14055,6 +15022,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -14062,7 +15030,8 @@
      "name": "Dialectics"
     }
    ],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14075,6 +15044,7 @@
    ],
    "icon": "img/pms/photographic_art.png",
    "id": "pm_photographic_art",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -14102,6 +15072,7 @@
      "name": "Fine Art"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -14109,7 +15080,8 @@
      "name": "Camera"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14122,6 +15094,7 @@
    ],
    "icon": "img/pms/picks_and_shovels.png",
    "id": "pm_picks_and_shovels_building_coal_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -14154,9 +15127,11 @@
      "name": "Coal"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14169,6 +15144,7 @@
    ],
    "icon": "img/pms/picks_and_shovels.png",
    "id": "pm_picks_and_shovels_building_gold_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -14201,9 +15177,11 @@
      "name": "Gold"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14216,6 +15194,7 @@
    ],
    "icon": "img/pms/picks_and_shovels.png",
    "id": "pm_picks_and_shovels_building_iron_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -14248,9 +15227,11 @@
      "name": "Iron"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14263,6 +15244,7 @@
    ],
    "icon": "img/pms/picks_and_shovels.png",
    "id": "pm_picks_and_shovels_building_lead_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -14295,9 +15277,11 @@
      "name": "Lead"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14310,6 +15294,7 @@
    ],
    "icon": "img/pms/picks_and_shovels.png",
    "id": "pm_picks_and_shovels_building_sulfur_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -14342,9 +15327,11 @@
      "name": "Sulfur"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14357,6 +15344,7 @@
    ],
    "icon": "img/pms/pot_stills.png",
    "id": "pm_pot_stills",
+   "identities": [],
    "inputs": [
     {
      "amount": 25,
@@ -14395,6 +15383,7 @@
      "name": "Groceries"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -14402,7 +15391,8 @@
      "name": "Distillation"
     }
    ],
-   "totalJobs": 350
+   "totalJobs": 350,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14415,6 +15405,7 @@
    ],
    "icon": "img/pms/potatoes.png",
    "id": "pm_potatoes",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -14435,9 +15426,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14450,6 +15443,7 @@
    ],
    "icon": "img/pms/precision_tools.png",
    "id": "pm_precision_tools",
+   "identities": [],
    "inputs": [
     {
      "amount": 25,
@@ -14504,6 +15498,7 @@
      "name": "Furniture"
     }
    ],
+   "principles": [],
    "reqPms": [
     {
      "id": "pm_lathe",
@@ -14520,7 +15515,8 @@
      "name": "Mechanical Tools"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14658,6 +15654,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_monument_prestige_only",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -14665,9 +15662,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14680,6 +15679,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_monument_prestige_only_vatican_city",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -14687,9 +15687,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14702,6 +15704,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_power_bloc_prestige_only",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -14709,9 +15712,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14724,6 +15729,7 @@
    ],
    "icon": "img/pms/no_artificial_silk.png",
    "id": "pm_no_artificial_fibers",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -14731,9 +15737,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14746,6 +15754,7 @@
    ],
    "icon": "img/pms/no_ceramics.png",
    "id": "pm_disabled_ceramics",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -14753,9 +15762,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14768,6 +15779,7 @@
    ],
    "icon": "img/pms/no_distillery.png",
    "id": "pm_disabled_distillery",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -14775,9 +15787,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14790,6 +15804,7 @@
    ],
    "icon": "img/pms/no_luxury_clothes.png",
    "id": "pm_no_luxury_clothes",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -14797,9 +15812,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14812,6 +15829,7 @@
    ],
    "icon": "img/pms/no_luxury_furniture.png",
    "id": "pm_no_luxuries",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -14819,9 +15837,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14834,6 +15854,7 @@
    ],
    "icon": "img/pms/no_hardwood_selection.png",
    "id": "pm_no_hardwood",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -14841,9 +15862,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -14856,6 +15879,7 @@
    ],
    "icon": "img/pms/no_radios.png",
    "id": "pm_no_radios",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -14863,9 +15887,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -14892,6 +15918,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_company_headquarter_privately_owned",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -14915,9 +15942,16 @@
     }
    ],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": [
+    {
+     "id": "capitalist_owned",
+     "name": "Capitalist Owned"
+    }
+   ]
   },
   {
    "blockedByLaws": [
@@ -14944,6 +15978,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_company_headquarter_privately_owned_academics",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -14972,9 +16007,16 @@
     }
    ],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": [
+    {
+     "id": "academic_owned",
+     "name": "Academic Owned"
+    }
+   ]
   },
   {
    "blockedByLaws": [
@@ -15005,6 +16047,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_company_headquarter_privately_owned_aristocrats",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -15033,9 +16076,16 @@
     }
    ],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": [
+    {
+     "id": "aristocrat_owned",
+     "name": "Aristocrat Owned"
+    }
+   ]
   },
   {
    "blockedByLaws": [
@@ -15062,6 +16112,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_company_headquarter_privately_owned_aristocrats_commercial_agriculture",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -15095,9 +16146,16 @@
     }
    ],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": [
+    {
+     "id": "aristocrat_owned",
+     "name": "Aristocrat Owned"
+    }
+   ]
   },
   {
    "blockedByLaws": [
@@ -15124,6 +16182,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_company_headquarter_privately_owned_bureaucrats",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -15152,9 +16211,16 @@
     }
    ],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": [
+    {
+     "id": "bureaucrat_owned",
+     "name": "Bureaucrat Owned"
+    }
+   ]
   },
   {
    "blockedByLaws": [
@@ -15181,6 +16247,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_company_headquarter_privately_owned_shopkeepers",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -15209,9 +16276,16 @@
     }
    ],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": [
+    {
+     "id": "shopkeeper_owned",
+     "name": "Shopkeeper Owned"
+    }
+   ]
   },
   {
    "blockedByLaws": [],
@@ -15224,6 +16298,7 @@
    ],
    "icon": "img/pms/privately_owned.png",
    "id": "pm_financial_district_privately_owned",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -15247,9 +16322,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15262,6 +16339,7 @@
    ],
    "icon": "img/pms/ownership_aristocrats.png",
    "id": "pm_manor_house_privately_owned",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -15275,9 +16353,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 50
+   "totalJobs": 50,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -15299,6 +16379,7 @@
    ],
    "icon": "img/pms/professional_bureaucrats.png",
    "id": "pm_professional_bureaucrats",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -15312,9 +16393,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15327,6 +16410,7 @@
    ],
    "icon": "img/pms/public_motor_carriages.png",
    "id": "pm_public_motor_carriages",
+   "identities": [],
    "inputs": [
     {
      "amount": 1,
@@ -15364,6 +16448,7 @@
      "name": "Transportation"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -15371,7 +16456,8 @@
      "name": "Combustion Engine"
     }
    ],
-   "totalJobs": -400
+   "totalJobs": -400,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15384,6 +16470,7 @@
    ],
    "icon": "img/pms/public_trams.png",
    "id": "pm_public_trams",
+   "identities": [],
    "inputs": [
     {
      "amount": 0.5,
@@ -15421,6 +16508,7 @@
      "name": "Transportation"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -15428,7 +16516,8 @@
      "name": "Railways"
     }
    ],
-   "totalJobs": -200
+   "totalJobs": -200,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15441,6 +16530,7 @@
    ],
    "icon": "img/pms/publicly_traded.png",
    "id": "pm_financial_district_publicly_traded",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -15464,6 +16554,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -15471,7 +16562,8 @@
      "name": "Mutual Funds"
     }
    ],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15484,6 +16576,7 @@
    ],
    "icon": "img/pms/pulp_pressing.png",
    "id": "pm_pulp_pressing",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -15516,9 +16609,11 @@
      "name": "Paper"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15531,6 +16626,7 @@
    ],
    "icon": "img/pms/radios.png",
    "id": "pm_radios",
+   "identities": [],
    "inputs": [
     {
      "amount": 50,
@@ -15564,6 +16660,7 @@
      "name": "Telephones"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -15571,7 +16668,8 @@
      "name": "Radio"
     }
    ],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15584,6 +16682,7 @@
    ],
    "icon": "img/pms/log_carts.png",
    "id": "pm_log_carts",
+   "identities": [],
    "inputs": [
     {
      "amount": 8,
@@ -15604,6 +16703,7 @@
    "netAtBase": -240,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -15611,7 +16711,8 @@
      "name": "Electric Railways"
     }
    ],
-   "totalJobs": -1500
+   "totalJobs": -1500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15624,6 +16725,7 @@
    ],
    "icon": "img/pms/rail_transport.png",
    "id": "pm_rail_transport_building_logging_camp",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -15644,6 +16746,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -15651,7 +16754,8 @@
      "name": "Railways"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15664,6 +16768,7 @@
    ],
    "icon": "img/pms/rail_transport.png",
    "id": "pm_rail_transport_building_oil_rig",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -15684,6 +16789,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -15691,7 +16797,8 @@
      "name": "Railways"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15724,6 +16831,7 @@
    ],
    "icon": "img/pms/rail_transport.png",
    "id": "pm_rail_transport_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -15744,6 +16852,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -15751,7 +16860,8 @@
      "name": "Railways"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15814,6 +16924,7 @@
    ],
    "icon": "img/pms/rail_transport.png",
    "id": "pm_steam_rail_transport",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -15834,6 +16945,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -15841,7 +16953,8 @@
      "name": "Railways"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15854,6 +16967,7 @@
    ],
    "icon": "img/pms/rayon.png",
    "id": "pm_rayon",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -15892,6 +17006,7 @@
      "name": "Dye"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -15899,7 +17014,8 @@
      "name": "Art Silk"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15912,6 +17028,7 @@
    ],
    "icon": "img/pms/realist_art.png",
    "id": "pm_realist_art",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -15933,6 +17050,7 @@
      "name": "Fine Art"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -15940,7 +17058,8 @@
      "name": "Realism"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -15953,6 +17072,7 @@
    ],
    "icon": "img/pms/recoil_mechanism_artillery_production.png",
    "id": "pm_recoiled_barrels",
+   "identities": [],
    "inputs": [
     {
      "amount": 40,
@@ -16007,6 +17127,7 @@
      "name": "Artillery"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16014,7 +17135,8 @@
      "name": "Automatic Machine Guns"
     }
    ],
-   "totalJobs": 5250
+   "totalJobs": 5250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16027,6 +17149,7 @@
    ],
    "icon": "img/pms/refrigerated_rail_cars.png",
    "id": "pm_refrigerated_rail_cars_building_fishing_wharf",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -16053,6 +17176,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16060,7 +17184,8 @@
      "name": "Electric Railways"
     }
    ],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16073,6 +17198,7 @@
    ],
    "icon": "img/pms/refrigerated_rail_cars.png",
    "id": "pm_refrigerated_rail_cars_building_livestock_ranch",
+   "identities": [],
    "inputs": [
     {
      "amount": 1,
@@ -16099,6 +17225,7 @@
    "netAtBase": -60,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16106,7 +17233,8 @@
      "name": "Electric Railways"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16119,6 +17247,7 @@
    ],
    "icon": "img/pms/refrigerated_rail_cars.png",
    "id": "pm_refrigerated_rail_cars_building_whaling_station",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -16145,6 +17274,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16152,7 +17282,8 @@
      "name": "Electric Railways"
     }
    ],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16165,6 +17296,7 @@
    ],
    "icon": "img/pms/refrigerated_storage.png",
    "id": "pm_refrigerated_storage_building_fishing_wharf",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -16185,6 +17317,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16192,7 +17325,8 @@
      "name": "Pasteurization"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16205,6 +17339,7 @@
    ],
    "icon": "img/pms/refrigerated_storage.png",
    "id": "pm_refrigerated_storage_building_livestock_ranch",
+   "identities": [],
    "inputs": [
     {
      "amount": 1,
@@ -16225,6 +17360,7 @@
    "netAtBase": -30,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16232,7 +17368,8 @@
      "name": "Pasteurization"
     }
    ],
-   "totalJobs": -500
+   "totalJobs": -500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16245,6 +17382,7 @@
    ],
    "icon": "img/pms/refrigerated_storage.png",
    "id": "pm_refrigerated_storage_building_whaling_station",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -16265,6 +17403,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16272,7 +17411,8 @@
      "name": "Pasteurization"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16285,6 +17425,7 @@
    ],
    "icon": "img/pms/trade_quantity_2.png",
    "id": "pm_trade_center_trade_quantity_normal",
+   "identities": [],
    "inputs": [
     {
      "amount": 4,
@@ -16299,9 +17440,11 @@
    "netAtBase": -200,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16314,6 +17457,7 @@
    ],
    "icon": "img/pms/fortification_reinforced.png",
    "id": "pm_naval_fortification_reinforced",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -16351,6 +17495,7 @@
    "netAtBase": -760,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16358,7 +17503,8 @@
      "name": "Breech-Loading Artillery"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16371,6 +17517,7 @@
    ],
    "icon": "img/pms/reinforced_wooden_ships.png",
    "id": "pm_complex_shipbuilding",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -16431,6 +17578,7 @@
      "name": "Clippers"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16438,7 +17586,8 @@
      "name": "Screw Frigate"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16451,6 +17600,12 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_power_bloc_statue_religious",
+   "identities": [
+    {
+     "id": "identity_religious",
+     "name": "Religious Convocation"
+    }
+   ],
    "inputs": [],
    "jobs": [
     {
@@ -16469,9 +17624,11 @@
     }
    ],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16484,6 +17641,7 @@
    ],
    "icon": "img/pms/repeaters.png",
    "id": "pm_repeaters",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -16538,6 +17696,7 @@
      "name": "Small Arms"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16545,7 +17704,8 @@
      "name": "Repeaters"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16558,6 +17718,7 @@
    ],
    "icon": "img/pms/rifles.png",
    "id": "pm_rifles",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -16607,6 +17768,7 @@
      "name": "Small Arms"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16614,7 +17776,8 @@
      "name": "Rifling"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16712,6 +17875,7 @@
    ],
    "icon": "img/pms/no_rail_transport.png",
    "id": "pm_road_carts",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -16719,9 +17883,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16739,6 +17905,7 @@
    ],
    "icon": "img/pms/rotary_valve_engine.png",
    "id": "pm_rotary_valve_engine_building_arms_industry",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -16759,6 +17926,7 @@
    "netAtBase": -450,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16766,7 +17934,8 @@
      "name": "Rotary Valve Engine"
     }
    ],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -16784,6 +17953,7 @@
    ],
    "icon": "img/pms/rotary_valve_engine.png",
    "id": "pm_rotary_valve_engine_building_furniture_manufactory",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -16810,6 +17980,7 @@
    "netAtBase": -500,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16817,7 +17988,8 @@
      "name": "Rotary Valve Engine"
     }
    ],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16830,6 +18002,7 @@
    ],
    "icon": "img/pms/rotary_valve_engine.png",
    "id": "pm_rotary_valve_engine_building_motor_industry",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -16861,6 +18034,7 @@
    "netAtBase": -500,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16868,7 +18042,8 @@
      "name": "Rotary Valve Engine"
     }
    ],
-   "totalJobs": -1500
+   "totalJobs": -1500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16881,6 +18056,7 @@
    ],
    "icon": "img/pms/rotary_valve_engine.png",
    "id": "pm_rotary_valve_engine_building_munition_plant",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -16901,6 +18077,7 @@
    "netAtBase": -450,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16908,7 +18085,8 @@
      "name": "Rotary Valve Engine"
     }
    ],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -16926,6 +18104,7 @@
    ],
    "icon": "img/pms/rotary_valve_engine.png",
    "id": "pm_rotary_valve_engine_building_paper_mill",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -16952,6 +18131,7 @@
    "netAtBase": -500,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -16959,7 +18139,8 @@
      "name": "Rotary Valve Engine"
     }
    ],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -16972,6 +18153,7 @@
    ],
    "icon": "img/pms/rotary_valve_engine.png",
    "id": "pm_rotary_valve_engine_building_steel_mill",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -16998,6 +18180,7 @@
    "netAtBase": -500,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -17005,7 +18188,8 @@
      "name": "Rotary Valve Engine"
     }
    ],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -17023,6 +18207,7 @@
    ],
    "icon": "img/pms/rotary_valve_engine.png",
    "id": "pm_rotary_valve_engine_building_tooling_workshop",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -17043,6 +18228,7 @@
    "netAtBase": -450,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -17050,7 +18236,8 @@
      "name": "Rotary Valve Engine"
     }
    ],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17063,6 +18250,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_saint_basils_cathedral",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -17076,9 +18264,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 200
+   "totalJobs": 200,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17091,6 +18281,7 @@
    ],
    "icon": "img/pms/samurai_training.png",
    "id": "pm_samurai_training",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -17103,9 +18294,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17118,6 +18311,7 @@
    ],
    "icon": "img/pms/saw_mills.png",
    "id": "pm_saw_mills",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -17155,6 +18349,7 @@
      "name": "Wood"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -17162,7 +18357,8 @@
      "name": "Steelworking"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17175,6 +18371,7 @@
    ],
    "icon": "img/pms/scholastic_education.png",
    "id": "pm_scholastic_education",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -17200,9 +18397,11 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -17220,6 +18419,7 @@
    ],
    "icon": "img/pms/ownership_academics.png",
    "id": "pm_secular_academia",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -17233,9 +18433,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -17253,6 +18455,7 @@
    ],
    "icon": "img/pms/ownership_bureacrats.png",
    "id": "pm_secular_bureaucrats",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -17266,9 +18469,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17281,6 +18486,7 @@
    ],
    "icon": "img/pms/serfdom.png",
    "id": "pm_serfdom",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -17300,9 +18506,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17315,6 +18523,7 @@
    ],
    "icon": "img/pms/serfdom.png",
    "id": "pm_serfdom_building_subsistence_fishing_village",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -17334,9 +18543,11 @@
      "name": "Fish"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17349,6 +18560,7 @@
    ],
    "icon": "img/pms/serfdom.png",
    "id": "pm_serfdom_building_subsistence_orchard",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -17368,9 +18580,11 @@
      "name": "Fruit"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17383,6 +18597,7 @@
    ],
    "icon": "img/pms/serfdom.png",
    "id": "pm_serfdom_building_subsistence_pasture",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -17402,9 +18617,11 @@
      "name": "Meat"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17417,6 +18634,7 @@
    ],
    "icon": "img/pms/serfdom.png",
    "id": "pm_serfdom_building_subsistence_rice_farm",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [
@@ -17436,9 +18654,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17451,6 +18671,7 @@
    ],
    "icon": "img/pms/sewing_machines.png",
    "id": "pm_sewing_machines",
+   "identities": [],
    "inputs": [
     {
      "amount": 60,
@@ -17505,6 +18726,7 @@
      "name": "Clothes"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -17512,7 +18734,8 @@
      "name": "Mechanized Workshops"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17525,6 +18748,7 @@
    ],
    "icon": "img/pms/sheep_ranch.png",
    "id": "pm_simple_ranch",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -17539,9 +18763,11 @@
      "name": "Fabric"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17569,6 +18795,7 @@
    ],
    "icon": "img/pms/simple_farming.png",
    "id": "pm_simple_farming",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -17594,9 +18821,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17609,6 +18838,7 @@
    ],
    "icon": "img/pms/simple_farming.png",
    "id": "pm_simple_farming_building_rice_farm",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -17634,9 +18864,11 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 10000
+   "totalJobs": 10000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17649,6 +18881,7 @@
    ],
    "icon": "img/pms/simple_fishing.png",
    "id": "pm_simple_fishing",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -17674,9 +18907,11 @@
      "name": "Fish"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17689,6 +18924,7 @@
    ],
    "icon": "img/pms/simple_forestry.png",
    "id": "pm_simple_forestry",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -17714,9 +18950,11 @@
      "name": "Wood"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17729,6 +18967,7 @@
    ],
    "icon": "img/pms/simple_organization.png",
    "id": "pm_simple_organization",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -17742,9 +18981,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17757,6 +18998,7 @@
    ],
    "icon": "img/pms/no_naval_theory.png",
    "id": "pm_simple_sailor_recruitment",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -17775,9 +19017,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17790,6 +19034,7 @@
    ],
    "icon": "img/pms/simple_whaling.png",
    "id": "pm_simple_whaling",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -17821,9 +19066,11 @@
      "name": "Meat"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17836,6 +19083,7 @@
    ],
    "icon": "img/pms/slaughterhouses.png",
    "id": "pm_slaughterhouses",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -17873,6 +19121,7 @@
      "name": "Meat"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -17880,7 +19129,8 @@
      "name": "Mechanical Tools"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17893,6 +19143,7 @@
    ],
    "icon": "img/pms/trade_quantity_1.png",
    "id": "pm_trade_center_trade_quantity_limited",
+   "identities": [],
    "inputs": [
     {
      "amount": 3,
@@ -17907,9 +19158,11 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -17922,6 +19175,7 @@
    ],
    "icon": "img/pms/smoothbores.png",
    "id": "pm_smoothbores",
+   "identities": [],
    "inputs": [
     {
      "amount": 25,
@@ -17970,6 +19224,7 @@
      "name": "Artillery"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -17977,7 +19232,8 @@
      "name": "Shell Gun"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18005,6 +19261,7 @@
    ],
    "icon": "img/pms/soil_enriching_farming.png",
    "id": "pm_soil_enriching_farming",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -18037,6 +19294,7 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -18044,7 +19302,8 @@
      "name": "Intensive Agriculture"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18057,6 +19316,7 @@
    ],
    "icon": "img/pms/soil_enriching_farming.png",
    "id": "pm_soil_enriching_farming_building_rice_farm",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -18089,6 +19349,7 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -18096,7 +19357,8 @@
      "name": "Intensive Agriculture"
     }
    ],
-   "totalJobs": 10000
+   "totalJobs": 10000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18109,6 +19371,12 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_power_bloc_statue_sovereign_empire",
+   "identities": [
+    {
+     "id": "identity_sovereign_empire",
+     "name": "Sovereign Empire"
+    }
+   ],
    "inputs": [],
    "jobs": [
     {
@@ -18127,9 +19395,11 @@
     }
    ],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18142,6 +19412,7 @@
    ],
    "icon": "img/pms/standard_fences.png",
    "id": "pm_standard_fences",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -18149,9 +19420,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -18199,6 +19472,7 @@
    ],
    "icon": "img/pms/standard_labor.png",
    "id": "default_labour",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -18206,9 +19480,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18221,6 +19497,7 @@
    ],
    "icon": "img/pms/standard_labor.png",
    "id": "default_labour_tobacco",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -18228,9 +19505,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18243,6 +19522,7 @@
    ],
    "icon": "img/pms/vertical_filing_cabinets.png",
    "id": "pm_vertical_filing_cabinets",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -18263,6 +19543,7 @@
    "netAtBase": -600,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -18270,7 +19551,8 @@
      "name": "Central Archives"
     }
    ],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18283,6 +19565,7 @@
    ],
    "icon": "img/pms/state_atheism.png",
    "id": "pm_no_urban_clergy",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -18306,9 +19589,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 200
+   "totalJobs": 200,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18321,6 +19606,7 @@
    ],
    "icon": "img/pms/ownership_clergy.png",
    "id": "pm_state_urban_clergy",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -18339,9 +19625,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 200
+   "totalJobs": 200,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18354,6 +19642,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_statue_of_liberty",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -18367,9 +19656,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -18387,6 +19678,7 @@
    ],
    "icon": "img/pms/steam_donkey.png",
    "id": "pm_steam_donkey_building_coal_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 1,
@@ -18414,6 +19706,7 @@
      "name": "Coal"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -18421,7 +19714,8 @@
      "name": "Steam Donkey"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -18439,6 +19733,7 @@
    ],
    "icon": "img/pms/steam_donkey.png",
    "id": "pm_steam_donkey_building_logging_camp",
+   "identities": [],
    "inputs": [
     {
      "amount": 4,
@@ -18465,6 +19760,7 @@
    "netAtBase": -180,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -18472,7 +19768,8 @@
      "name": "Steam Donkey"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -18505,6 +19802,7 @@
    ],
    "icon": "img/pms/steam_donkey.png",
    "id": "pm_steam_donkey_mine",
+   "identities": [],
    "inputs": [
     {
      "amount": 4,
@@ -18531,6 +19829,7 @@
    "netAtBase": -180,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -18538,7 +19837,8 @@
      "name": "Steam Donkey"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18551,6 +19851,7 @@
    ],
    "icon": "img/pms/steamworks.png",
    "id": "pm_steam_engines",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -18593,9 +19894,11 @@
      "name": "Engines"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18608,6 +19911,7 @@
    ],
    "icon": "img/pms/trains_steam.png",
    "id": "pm_steam_trains",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -18651,6 +19955,7 @@
      "name": "Transportation"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -18658,7 +19963,8 @@
      "name": "Steel Railway Cars"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18671,6 +19977,7 @@
    ],
    "icon": "img/pms/steam_trawlers.png",
    "id": "pm_steam_trawlers",
+   "identities": [],
    "inputs": [
     {
      "amount": 15,
@@ -18719,6 +20026,7 @@
      "name": "Fish"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -18726,7 +20034,8 @@
      "name": "Gantry Cranes"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18739,6 +20048,7 @@
    ],
    "icon": "img/pms/simple_oil_extraction.png",
    "id": "pm_steam_derricks",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -18787,9 +20097,11 @@
      "name": "Oil"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18802,6 +20114,7 @@
    ],
    "icon": "img/pms/steam_powered_evaporation.png",
    "id": "steam_powered_evaporation_sugar",
+   "identities": [],
    "inputs": [
     {
      "amount": 2,
@@ -18840,6 +20153,7 @@
      "name": "Sugar"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -18847,7 +20161,8 @@
      "name": "Fractional Distillation"
     }
    ],
-   "totalJobs": -1500
+   "totalJobs": -1500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18875,6 +20190,7 @@
    ],
    "icon": "img/pms/steam_powered_threshers.png",
    "id": "pm_steam_threshers",
+   "identities": [],
    "inputs": [
     {
      "amount": 2,
@@ -18901,6 +20217,7 @@
    "netAtBase": -110,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -18908,7 +20225,8 @@
      "name": "Threshing Machines"
     }
    ],
-   "totalJobs": -1500
+   "totalJobs": -1500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18921,6 +20239,7 @@
    ],
    "icon": "img/pms/steam_powered_threshers.png",
    "id": "pm_steam_threshers_building_rice_farm",
+   "identities": [],
    "inputs": [
     {
      "amount": 4,
@@ -18947,6 +20266,7 @@
    "netAtBase": -220,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -18954,7 +20274,8 @@
      "name": "Threshing Machines"
     }
    ],
-   "totalJobs": -3000
+   "totalJobs": -3000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -18967,6 +20288,7 @@
    ],
    "icon": "img/pms/steam_whaling_ships.png",
    "id": "pm_steam_whaling_ships",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -19021,6 +20343,7 @@
      "name": "Meat"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -19028,7 +20351,8 @@
      "name": "Gantry Cranes"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19041,6 +20365,7 @@
    ],
    "icon": "img/pms/reinforced_steam_ships.png",
    "id": "pm_metal_shipbuilding",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -19095,6 +20420,7 @@
      "name": "Steamers"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -19102,7 +20428,8 @@
      "name": "Gantry Cranes"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19115,6 +20442,7 @@
    ],
    "icon": "img/pms/passenger_carriages.png",
    "id": "pm_steel_passenger_carriages",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -19142,6 +20470,7 @@
      "name": "Transportation"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -19149,7 +20478,8 @@
      "name": "Steel Railway Cars"
     }
    ],
-   "totalJobs": 200
+   "totalJobs": 200,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19162,6 +20492,7 @@
    ],
    "icon": "img/pms/bessemer_process.png",
    "id": "pm_steel",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -19210,6 +20541,7 @@
      "name": "Tools"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -19217,7 +20549,8 @@
      "name": "Mechanical Tools"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19230,6 +20563,7 @@
    ],
    "icon": "img/pms/steel_frame_buildings.png",
    "id": "pm_steel_frame_buildings",
+   "identities": [],
    "inputs": [
     {
      "amount": 50,
@@ -19283,6 +20617,7 @@
    "netAtBase": -5400,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -19290,7 +20625,8 @@
      "name": "Steel-Frame Buildings"
     }
    ],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19308,6 +20644,7 @@
    ],
    "icon": "img/pms/sugar_beets.png",
    "id": "pm_sugar_beets",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -19328,6 +20665,7 @@
      "name": "Grain"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -19335,7 +20673,8 @@
      "name": "Fractional Distillation"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19348,6 +20687,7 @@
    ],
    "icon": "img/pms/sulfite_pulping.png",
    "id": "pm_sulfite_pulping",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -19391,6 +20731,7 @@
      "name": "Paper"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -19398,7 +20739,8 @@
      "name": "Mechanical Tools"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19411,6 +20753,7 @@
    ],
    "icon": "img/pms/sweeteners.png",
    "id": "pm_sweeteners",
+   "identities": [],
    "inputs": [
     {
      "amount": 40,
@@ -19454,6 +20797,7 @@
      "name": "Groceries"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -19461,7 +20805,8 @@
      "name": "Distillation"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19474,6 +20819,7 @@
    ],
    "icon": "img/pms/synthetic_dyes.png",
    "id": "pm_dye_production",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -19522,9 +20868,11 @@
      "name": "Dye"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19537,6 +20885,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_taj_mahal",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -19550,9 +20899,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19565,6 +20916,7 @@
    ],
    "icon": "img/pms/tanks.png",
    "id": "pm_tank_production",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -19598,6 +20950,7 @@
      "name": "Automobiles"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -19605,7 +20958,8 @@
      "name": "Mobile Armor"
     }
    ],
-   "totalJobs": 250
+   "totalJobs": 250,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19618,6 +20972,7 @@
    ],
    "icon": "img/pms/tanker_cars.png",
    "id": "pm_tanker_cars",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -19638,6 +20993,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -19645,7 +21001,8 @@
      "name": "Steel Railway Cars"
     }
    ],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19658,6 +21015,7 @@
    ],
    "icon": "img/pms/telephones.png",
    "id": "pm_telephones",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -19718,9 +21076,11 @@
      "name": "Telephones"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19733,6 +21093,7 @@
    ],
    "icon": "img/pms/telephone_switchboards.png",
    "id": "pm_switch_boards",
+   "identities": [],
    "inputs": [
     {
      "amount": 20,
@@ -19759,6 +21120,7 @@
    "netAtBase": -950,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -19766,7 +21128,8 @@
      "name": "Central Planning"
     }
    ],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19794,6 +21157,7 @@
    ],
    "icon": "img/pms/tractors.png",
    "id": "pm_tractors",
+   "identities": [],
    "inputs": [
     {
      "amount": 2,
@@ -19820,6 +21184,7 @@
    "netAtBase": -120,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -19827,7 +21192,8 @@
      "name": "Mechanized Farming"
     }
    ],
-   "totalJobs": -2000
+   "totalJobs": -2000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19840,6 +21206,12 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_power_bloc_statue_trade_league",
+   "identities": [
+    {
+     "id": "identity_trade_league",
+     "name": "Trade League"
+    }
+   ],
    "inputs": [],
    "jobs": [
     {
@@ -19858,9 +21230,11 @@
     }
    ],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19873,6 +21247,7 @@
    ],
    "icon": "img/pms/skyscraper_trade_nexus.png",
    "id": "pm_skyscraper_trade_nexus",
+   "identities": [],
    "inputs": [
     {
      "amount": 25,
@@ -19903,9 +21278,11 @@
    "netAtBase": -750,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19918,6 +21295,7 @@
    ],
    "icon": "img/pms/traditional_art.png",
    "id": "pm_traditional_art",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -19939,9 +21317,11 @@
      "name": "Fine Art"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -19954,6 +21334,7 @@
    ],
    "icon": "img/pms/no_automation.png",
    "id": "pm_traditional_looms",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -19961,9 +21342,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -19985,6 +21368,7 @@
    ],
    "icon": "img/pms/ownership_aristocrats.png",
    "id": "pm_traditional_patronage",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -20008,9 +21392,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -20028,6 +21414,7 @@
    ],
    "icon": "img/pms/skirmish_infantry.png",
    "id": "pm_training_streamlining",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -20035,6 +21422,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -20042,7 +21430,8 @@
      "name": "Wargaming"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -20064,6 +21453,7 @@
    ],
    "icon": "img/pms/skirmish_infantry.png",
    "id": "pm_training_streamlining_conscription",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -20071,6 +21461,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -20078,7 +21469,8 @@
      "name": "Wargaming"
     }
    ],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -20091,6 +21483,7 @@
    ],
    "icon": "img/pms/no_street_lighting.png",
    "id": "pm_no_street_lighting",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -20098,9 +21491,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -20123,6 +21518,7 @@
    ],
    "icon": "img/pms/no_refrigeration.png",
    "id": "pm_unrefrigerated",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -20130,9 +21526,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -20145,6 +21543,7 @@
    ],
    "icon": "img/pms/vaccum_evaporation.png",
    "id": "pm_vacuum_evaporation",
+   "identities": [],
    "inputs": [
     {
      "amount": 40,
@@ -20199,6 +21598,7 @@
      "name": "Explosives"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -20206,7 +21606,8 @@
      "name": "Dynamite"
     }
    ],
-   "totalJobs": 4500
+   "totalJobs": 4500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -20219,6 +21620,7 @@
    ],
    "icon": "img/pms/vaccum_canning.png",
    "id": "pm_vacuum_canning",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -20275,6 +21677,7 @@
      "name": "Groceries"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -20282,7 +21685,8 @@
      "name": "Vacuum Canning"
     }
    ],
-   "totalJobs": 700
+   "totalJobs": 700,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -20295,6 +21699,7 @@
    ],
    "icon": "img/pms/vacuum_pan.png",
    "id": "vacuum_pan_sugar",
+   "identities": [],
    "inputs": [
     {
      "amount": 1,
@@ -20322,6 +21727,7 @@
      "name": "Sugar"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -20329,7 +21735,8 @@
      "name": "Water-tube Boiler"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -20342,6 +21749,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_vatican_city",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -20360,9 +21768,16 @@
     }
    ],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": [
+    {
+     "id": "catholic",
+     "name": "Catholic"
+    }
+   ]
   },
   {
    "blockedByLaws": [
@@ -20388,6 +21803,7 @@
    ],
    "icon": "img/pms/violent_treatment.png",
    "id": "slave_exploitation_banana",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -20402,9 +21818,11 @@
      "name": "Fruit"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -20430,6 +21848,7 @@
    ],
    "icon": "img/pms/violent_treatment.png",
    "id": "slave_exploitation_coffee",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -20444,9 +21863,11 @@
      "name": "Coffee"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -20472,6 +21893,7 @@
    ],
    "icon": "img/pms/violent_treatment.png",
    "id": "slave_exploitation_cotton",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -20486,9 +21908,11 @@
      "name": "Fabric"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -20514,6 +21938,7 @@
    ],
    "icon": "img/pms/violent_treatment.png",
    "id": "slave_exploitation_dye",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -20528,9 +21953,11 @@
      "name": "Dye"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -20556,6 +21983,7 @@
    ],
    "icon": "img/pms/violent_treatment.png",
    "id": "slave_exploitation_rubber",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -20570,9 +21998,11 @@
      "name": "Rubber"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -20598,6 +22028,7 @@
    ],
    "icon": "img/pms/violent_treatment.png",
    "id": "slave_exploitation_sugar",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -20612,9 +22043,11 @@
      "name": "Sugar"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -20640,6 +22073,7 @@
    ],
    "icon": "img/pms/violent_treatment.png",
    "id": "slave_exploitation_tea",
+   "identities": [],
    "inputs": [],
    "jobs": [],
    "laws": [],
@@ -20654,9 +22088,11 @@
      "name": "Tea"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 0
+   "totalJobs": 0,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -20674,6 +22110,7 @@
    ],
    "icon": "img/pms/watertube_boiler.png",
    "id": "pm_watertube_boiler_building_furniture_manufactory",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -20700,6 +22137,7 @@
    "netAtBase": -350,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -20707,7 +22145,8 @@
      "name": "Water-tube Boiler"
     }
    ],
-   "totalJobs": -1500
+   "totalJobs": -1500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -20720,6 +22159,7 @@
    ],
    "icon": "img/pms/watertube_boiler.png",
    "id": "pm_watertube_boiler_building_motor_industry",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -20751,6 +22191,7 @@
    "netAtBase": -350,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -20758,7 +22199,8 @@
      "name": "Water-tube Boiler"
     }
    ],
-   "totalJobs": -1000
+   "totalJobs": -1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -20776,6 +22218,7 @@
    ],
    "icon": "img/pms/watertube_boiler.png",
    "id": "pm_watertube_boiler_building_paper_mill",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -20802,6 +22245,7 @@
    "netAtBase": -350,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -20809,7 +22253,8 @@
      "name": "Water-tube Boiler"
     }
    ],
-   "totalJobs": -1500
+   "totalJobs": -1500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -20822,6 +22267,7 @@
    ],
    "icon": "img/pms/watertube_boiler.png",
    "id": "pm_watertube_boiler_building_steel_mill",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -20848,6 +22294,7 @@
    "netAtBase": -350,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -20855,7 +22302,8 @@
      "name": "Water-tube Boiler"
     }
    ],
-   "totalJobs": -1500
+   "totalJobs": -1500,
+   "unverified": []
   },
   {
    "blockedByLaws": [
@@ -20873,6 +22321,7 @@
    ],
    "icon": "img/pms/watertube_boiler.png",
    "id": "pm_watertube_boiler_building_tooling_workshop",
+   "identities": [],
    "inputs": [
     {
      "amount": 10,
@@ -20893,6 +22342,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -20900,7 +22350,8 @@
      "name": "Water-tube Boiler"
     }
    ],
-   "totalJobs": -1500
+   "totalJobs": -1500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -20913,6 +22364,7 @@
    ],
    "icon": "img/pms/coffee_plantation_wet_process_manual.png",
    "id": "coffee_plantation_wet_process_manual",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -20950,6 +22402,7 @@
      "name": "Coffee"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -20957,7 +22410,13 @@
      "name": "Mechanical Tools"
     }
    ],
-   "totalJobs": 5500
+   "totalJobs": 5500,
+   "unverified": [
+    {
+     "id": "geographic_region_wet_process_coffee_region",
+     "name": "Humid Coffee Belt"
+    }
+   ]
   },
   {
    "blockedByLaws": [],
@@ -20970,6 +22429,7 @@
    ],
    "icon": "img/pms/coffee_plantation_wet_process_mechanical.png",
    "id": "coffee_plantation_wet_process_mechanical",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -21013,6 +22473,7 @@
      "name": "Coffee"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -21020,7 +22481,8 @@
      "name": "Mechanized Workshops"
     }
    ],
-   "totalJobs": 5500
+   "totalJobs": 5500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -21033,6 +22495,7 @@
    ],
    "icon": "img/pms/wooden_whaling_ships.png",
    "id": "pm_wooden_whaling_ships",
+   "identities": [],
    "inputs": [
     {
      "amount": 5,
@@ -21076,9 +22539,11 @@
      "name": "Meat"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -21091,6 +22556,7 @@
    ],
    "icon": "img/pms/wonders.png",
    "id": "pm_default_building_white_house",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -21104,9 +22570,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 500
+   "totalJobs": 500,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -21119,6 +22587,7 @@
    ],
    "icon": "img/pms/wooden_buildings.png",
    "id": "pm_wooden_buildings",
+   "identities": [],
    "inputs": [
     {
      "amount": 75,
@@ -21155,9 +22624,11 @@
    "netAtBase": -2000,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 1000
+   "totalJobs": 1000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -21170,6 +22641,7 @@
    ],
    "icon": "img/pms/passenger_trains.png",
    "id": "pm_wooden_passenger_carriages",
+   "identities": [],
    "inputs": [
     {
      "amount": 8,
@@ -21197,9 +22669,11 @@
      "name": "Transportation"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -21212,6 +22686,7 @@
    ],
    "icon": "img/pms/wooden_ships.png",
    "id": "pm_basic_shipbuilding",
+   "identities": [],
    "inputs": [
     {
      "amount": 40,
@@ -21260,9 +22735,11 @@
      "name": "Clippers"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -21280,6 +22757,7 @@
    ],
    "icon": "img/pms/worker_cooperative.png",
    "id": "pm_company_headquarter_worker_cooperative",
+   "identities": [],
    "inputs": [],
    "jobs": [
     {
@@ -21303,9 +22781,11 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "principles": [],
    "reqPms": [],
    "techs": [],
-   "totalJobs": 100
+   "totalJobs": 100,
+   "unverified": []
   },
   {
    "blockedByLaws": [],
@@ -21318,6 +22798,7 @@
    ],
    "icon": "img/pms/pig_iron_tools.png",
    "id": "pm_pig_iron",
+   "identities": [],
    "inputs": [
     {
      "amount": 30,
@@ -21361,6 +22842,7 @@
      "name": "Tools"
     }
    ],
+   "principles": [],
    "reqPms": [],
    "techs": [
     {
@@ -21368,7 +22850,8 @@
      "name": "Steelworking"
     }
    ],
-   "totalJobs": 5000
+   "totalJobs": 5000,
+   "unverified": []
   }
  ]
 }

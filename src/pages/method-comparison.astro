@@ -34,42 +34,37 @@ const base = import.meta.env.BASE_URL;
         <label class="mc__field mc__field--opt">
           <span class="rail__label" style="margin-right:0.4rem;">Optimise for</span>
           <select id="mc-opt" class="rail__select" style="min-width:16rem;">
-            <option value="net">Total profit (£ / level)</option>
-            <option value="worker">Profit per worker</option>
             <option value="constr">Profit per construction point</option>
+            <option value="worker">Profit per worker</option>
           </select>
         </label>
-        <span class="mc__hint" id="mc-optnote"></span>
+        <span class="mc__hint">Sort by any column to override.</span>
       </div>
 
       <!-- Only rendered once a save has been read; see renderAudit(). -->
-      <section id="mc-audit" class="aud" hidden>
-        <div class="aud__head">
+      <details id="mc-audit" class="aud" hidden open>
+        <summary class="aud__head">
           <h2 class="aud__title">Your buildings: methods to change</h2>
           <span class="aud__sum" id="aud-sum"></span>
-        </div>
+        </summary>
         <div class="grid"><div class="grid__scroll">
           <table class="vtbl aud__table" id="aud-table">
             <thead>
               <tr>
                 <th style="min-width: 11rem;">Building</th>
-                <th style="min-width: 20rem;">Switch</th>
+                <th style="min-width: 22rem;">Group · now → change to</th>
                 <th class="num" title="Total levels running this set">Levels</th>
-                <th class="num" title="Extra goods margin per level, per week">£/level</th>
-                <th class="num" title="Extra goods margin per week across those levels">£/week</th>
+                <th class="num">£/level</th>
+                <th class="num">£/week</th>
               </tr>
             </thead>
             <tbody></tbody>
           </table>
         </div></div>
-        <p class="caption" id="aud-note"></p>
-      </section>
+        <p class="aud__note" id="aud-note"></p>
+      </details>
 
       <h2 class="mc__h2">Every building, at the best set it could run</h2>
-      <p class="mc__lede">
-        Not what you have — what a building of each kind would earn if you built one now, which is why
-        every row here is already at its best. The panel above is the other question.
-      </p>
       <div class="mc__bar">
         <label class="mc__field">
           <input id="mc-filter" type="search" class="rail__select" style="min-width:18rem;"
@@ -100,14 +95,9 @@ const base = import.meta.env.BASE_URL;
       </div></div>
 
       <p class="caption">
-        Each row is a whole building running its best set for the chosen target — one method from every
-        group, chosen by searching all of its combinations at your prices, because a single method is
-        not something you can build on its own. Buildings that move no goods (monuments, financial
-        districts) are absent. Construction is the building's cost in construction points, so £/constr.
-        shows where a point of construction capacity buys the most output. Numbers are shaded by size,
-        brightest at the largest figure on screen. Prices, target and the loaded save are shared
-        with <a href={`${base}profit-calculator`}>Building Profit</a>, which breaks one building down
-        group by group.
+        Revenue − input cost at your prices, per level, at full employment. One method from every
+        group, best combination searched. Prices, target and save shared with
+        <a href={`${base}profit-calculator`}>Building Profit</a>.
       </p>
     </div>
   </div>
@@ -267,12 +257,18 @@ const base = import.meta.env.BASE_URL;
       function auditRows(country, mode) {
         const techs = new Set(country.techs ?? []);
         const laws = new Set(country.laws ?? []);
-        // A method is available if its technology is researched, one of its
-        // unlocking laws is enacted, and no enacted law disallows it.
+        const prin = new Set(country.principles ?? []);
+        const ident = country.identity ?? null;
+        // Only what the save says this country can actually run today.
         const canRun = (pm) =>
           (!pm.techs || pm.techs.every((t) => techs.has(t)))
           && (!pm.laws || pm.laws.some((l) => laws.has(l)))
-          && (!pm.blocked || !pm.blocked.some((l) => laws.has(l)));
+          && (!pm.blocked || !pm.blocked.some((l) => laws.has(l)))
+          && (!pm.reqPrin || pm.reqPrin.some((x) => prin.has(x)))
+          && (!pm.reqIdent || pm.reqIdent.includes(ident))
+          // Company category, region, religion: a save cannot answer these, so
+          // the method is never put forward.
+          && !pm.unverified;
 
         const merged = new Map();
         const skipped = new Set();
@@ -328,13 +324,18 @@ const base = import.meta.env.BASE_URL;
           const changes = live.filter(({ gi }) => best.c[gi] !== cur[gi])
             .map(({ gi, g }) => ({ group: g.name, from: g.pms[cur[gi]], to: g.pms[best.c[gi]] }));
           if (!changes.length) continue;
+          const keep = live.filter(({ gi }) => best.c[gi] === cur[gi])
+            .map(({ gi, g }) => g.pms[cur[gi]].name);
 
           // Two buildings of the same type making the same switch gain the same
           // per level, whatever else differs about them, so they belong on one
           // row rather than three near-identical ones.
           const key = r.b.id + '|' + changes.map((c) => `${c.group}:${c.from.id}>${c.to.id}`).join('|');
-          const hit = merged.get(key) ?? { r, changes, gain, jobs, lv: 0, n: 0 };
+          const hit = merged.get(key) ?? { r, changes, gain, jobs, lv: 0, n: 0, keep };
           hit.lv += row.lv; hit.n += row.n;
+          // Rows merge on the switch, so only claim the untouched groups where
+          // every building behind the row agrees on them.
+          if (hit.keep && hit.keep.join() !== keep.join()) hit.keep = null;
           merged.set(key, hit);
         }
         const rank = (x) => (mode === 'worker' ? x.jobs * -1 : x.gain) * x.lv;
@@ -342,21 +343,9 @@ const base = import.meta.env.BASE_URL;
         return { rows, skipped: [...skipped], unreadable, checked };
       }
 
-      // What the target means for buildings that already exist.
-      const TARGET_NOTE = {
-        net: 'Total profit. For buildings you already have this is the one that matters — '
-          + 'the construction is spent and the workers are hired.',
-        constr: 'Profit per construction point. No method changes what a building cost to build, '
-          + 'so inside one building this is total profit divided by a constant — same answer as '
-          + 'total profit for the panel below. It only reorders the ranking table.',
-        worker: 'Profit per worker. This can tell you to give up total £ to employ fewer people, '
-          + 'so watch the £/week column go red.',
-      };
-
       function renderAudit() {
         const el = $('mc-audit');
         const mode = $('mc-opt').value;
-        $('mc-optnote').textContent = TARGET_NOTE[mode];
         const country = window.v3Save?.country?.();
         if (!country || !country.buildings?.length) { el.hidden = true; return; }
         el.hidden = false;
@@ -387,36 +376,31 @@ const base = import.meta.env.BASE_URL;
               <span class="lead"><img class="lead__icon" src="${base}${r.r.b.icon}" alt="" loading="lazy" />
               <a href="${base}buildings/${r.r.b.id.replace('building_', '')}">${esc(r.r.b.name)}</a></span></td>
             <td class="aud__sw">${r.changes.map((c) => `
-              <span class="aud__one"><i>${esc(c.group)}</i>
-                ${esc(c.from.name)} <b>→</b> <span class="aud__to">${esc(c.to.name)}</span>${
-                  c.to.needs ? ` <span class="aud__caveat" title="Also needs: ${esc(c.to.needs.join(', '))}">needs ${esc(c.to.needs[0])}</span>` : ''}
-              </span>`).join('')}</td>
+              <span class="aud__one">
+                <i class="aud__grp">${esc(c.group)}</i>
+                <span class="aud__from">${esc(c.from.name)}</span>
+                <b>→</b>
+                <span class="aud__to">${esc(c.to.name)}</span>
+              </span>`).join('')}${
+              r.keep && r.keep.length
+                ? `<span class="aud__keep"><i class="aud__grp">leave</i>${esc(r.keep.join(' · '))}</span>`
+                : ''}</td>
             <td class="num dim">${r.lv.toLocaleString()}<span class="aud__n"> in ${r.n}</span></td>
             <td class="num">${mag(r.gain, maxLevel, `${r.gain > 0 ? '+' : r.gain < 0 ? '−' : ''}£${Math.abs(r.gain).toFixed(1)}`)}</td>
             <td class="num">${mag(r.gain * r.lv, maxWeek, `${r.gain > 0 ? '+' : r.gain < 0 ? '−' : ''}£${Math.round(Math.abs(r.gain * r.lv)).toLocaleString()}`)}</td>
           </tr>`).join('');
 
-        $('aud-note').innerHTML =
-          `The buildings you already have, versus the best they could run — a different question from `
-          + `the ranking below, which is about what to build next and so shows every building already `
-          + `at its best. Read from your save: ${checked} building set${checked === 1 ? '' : 's'} across <b>${esc(name)}</b>, `
-          + `priced at its own market and limited to methods it has the technology and laws for. `
-          + `Gains are the goods margin at full employment, so treat them as an ordering, not a forecast — `
-          + `throughput, staffing and wages all move the real figure. `
-          + (skipped.length
-            ? `Not ranked: ${skipped.map(esc).join(', ')} — what they really produce (construction, bureaucracy, `
-              + `trade capacity, innovation) has no price here, so cheapest inputs would read as best. `
-            : '')
-          + (unreadable
-            ? `${unreadable} method group${unreadable === 1 ? '' : 's'} in the save did not match this patch's data and were left out of both sides. `
-            : '')
-          + `Switching a method costs nothing but time in game.`;
+        $('aud-note').innerHTML = [
+          `<b>${esc(name)}</b> · ${checked} building sets · goods margin at full employment`,
+          skipped.length ? `sells nothing, not ranked: ${skipped.map(esc).join(', ')}` : '',
+          unreadable ? `${unreadable} groups didn't match this patch` : '',
+        ].filter(Boolean).join(' · ');
       }
 
       // ── Table ──────────────────────────────────────────────────────
       // The control and the clickable headers drive the same sort, so the two
       // can never disagree: choosing a target just sets that column's header.
-      const OPT_COL = { net: 2, worker: 4, constr: 6 };   // Net £, £/worker, £/constr
+      const OPT_COL = { worker: 4, constr: 6 };   // £/worker, £/constr
       function applyOpt() {
         const want = OPT_COL[$('mc-opt').value];
         [...$('mc-table').tHead.rows[0].cells].forEach((th, i) =>
@@ -497,6 +481,12 @@ const base = import.meta.env.BASE_URL;
       $('mc-filter').addEventListener('input', renderTable);
       $('mc-positive').addEventListener('change', renderTable);
       $('mc-standard').addEventListener('change', renderTable);
+      try {
+        $('mc-audit').open = localStorage.getItem('v3ref-audit-open') !== '0';
+      } catch {}
+      $('mc-audit').addEventListener('toggle', () => {
+        try { localStorage.setItem('v3ref-audit-open', $('mc-audit').open ? '1' : '0'); } catch {}
+      });
       $('mc-goodfilter').addEventListener('input', renderPrices);
       $('mc-reset').addEventListener('click', () => { P.reset(); renderPrices(); renderTable(); renderAudit(); });
       renderPrices();
@@ -536,20 +526,34 @@ const base = import.meta.env.BASE_URL;
       border: 1px solid var(--gold-deep); border-radius: 8px;
       background: var(--bg-elev);
     }
-    .aud__head { display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+    .aud__head {
+      display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap;
+      margin-bottom: 0.5rem; cursor: pointer; list-style: none;
+    }
+    .aud__head::-webkit-details-marker { display: none; }
+    .aud__head::before {
+      content: '▸'; color: var(--gold-soft); font-size: 0.8rem; margin-right: -0.4rem;
+    }
+    .aud[open] > .aud__head::before { content: '▾'; }
     .aud__title { font-family: var(--font-display); font-size: 1.15rem; margin: 0; }
     .aud__sum { font-size: 0.8rem; color: var(--text-dim); }
     .aud__table thead th { background: var(--bg-elev); }
     .aud__sw { font-size: 0.76rem; line-height: 1.35; }
-    .aud__one { display: block; }
-    .aud__one i { font-style: normal; color: var(--text-faint); margin-right: 0.35rem; }
-    .aud__one b { color: var(--gold-soft); font-weight: 400; }
-    .aud__to { color: var(--text); }
-    .aud__caveat {
-      font-family: var(--font-mono); font-size: 0.56rem; text-transform: uppercase;
-      letter-spacing: 0.08em; color: var(--gold-soft); cursor: help;
-      border: 1px solid var(--gold-deep); border-radius: 999px; padding: 0.02rem 0.34rem;
+    /* Group label in a fixed column so the "now" values line up under each
+       other and the arrow always separates the same two things. */
+    .aud__one, .aud__keep { display: flex; align-items: baseline; gap: 0.4rem; }
+    .aud__grp {
+      font-style: normal; color: var(--text-faint); flex: 0 0 8.5rem;
+      font-size: 0.68rem; text-align: right;
     }
+    .aud__one b { color: var(--text-faint); font-weight: 400; }
+    .aud__from { color: var(--text-dim); }
+    .aud__to { color: var(--gold); }
+    .aud__keep { color: var(--text-faint); }
+    .aud__note {
+      font-size: 0.68rem; color: var(--text-faint); margin: 0.45rem 0 0.2rem; line-height: 1.5;
+    }
+    .aud__note b { color: var(--text-dim); }
     .aud__n { color: var(--text-faint); font-size: 0.7rem; }
     .aud .caption { margin-top: 0.4rem; }
   </style>

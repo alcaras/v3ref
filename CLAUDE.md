@@ -300,9 +300,14 @@ Mechanics for staying anchored:
     in `common/goods` (hence `index` on each good).
   - `states…<id>.country` owns each building; `building_manager…<id>` carries
     `building=`, `levels=`, `state=`, `production_methods={ … }`.
-  - `technology…<id>.acquired_technologies` and `laws…<id>` with `active=yes`
-    are what make method advice honest — never suggest a method the country
-    has not unlocked.
+  - `technology…<id>.acquired_technologies`, `laws…<id>` with `active=yes`, and
+    the country's `power_bloc_as_core` → `power_bloc_manager…<id>` (`principles`,
+    `identity`, `status=active`) are what make method advice honest. Never
+    suggest a method the country has not unlocked. `unlocking_company_categories`,
+    `unlocking_geographic_regions` and `unlocking_religions` cannot be read back
+    from a save, so those methods (3 of them) are never put forward at all.
+  - The snapshot carries a `v`; bump `window.v3SnapVersion` whenever it grows a
+    field the tools gate on, or a stored snapshot silently narrows the advice.
   - `player_manager` lists every SEAT (user → country). `meta_data.name` is
     only whoever saved, so in a multiplayer save it is usually not you: the
     rail offers the seats and defaults to the meta_data one.
@@ -332,9 +337,11 @@ Mechanics for staying anchored:
   Compare Buildings (every building at its best full configuration, with a
   standard-buildings-only filter that drops the four uniques). Numbers are
   shaded by magnitude against the largest figure on screen (`.mag`, `--m`),
-  not just by sign. A melted save is read once and shared by both tools; on
-  Compare Buildings it drives an audit of the methods your buildings are
-  actually running, gated on the country's own technologies and laws.
+  not just by sign. Two targets only — per construction point (default) and
+  per worker: total profit is per-construction times a constant inside one
+  building, and the Net £ column is sortable anyway. A melted save is read once
+  and shared by both tools; on Compare Buildings it drives a collapsible audit
+  of the methods your buildings are actually running.
 - **Infrastructure (done)**: `make audit` gate, per-patch changelog with
   gzipped snapshots, invented-label tracking.
 - **Companies planning lives elsewhere**: <https://alcaras.github.io/v3co/> is

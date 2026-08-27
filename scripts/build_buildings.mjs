@@ -66,18 +66,18 @@ function pmView(pmId) {
   const outputs = side('output');
   const price = (list) =>
     list.filter((l) => l.kind === 'add').reduce((s, l) => s + l.amount * (goodCost[l.good] ?? 0), 0);
-  // A method that leans on a SIBLING method — Bone China needs Crystal Glass in
-  // the base group — is a hard constraint across groups, so keep it apart from
-  // the requirements nothing here can check.
+  // Split what unlocks a method by whether a save can answer it. Techs, laws,
+  // sibling methods, power-bloc principles and the bloc identity can all be
+  // read back; company categories, regions and religions cannot.
   const reqPms = names(pm.unlocking_production_methods);
-  const other = [
-    ...names(pm.unlocking_principles),
-    ...names(pm.unlocking_identity),
+  const principles = names(pm.unlocking_principles);
+  const identities = names(pm.unlocking_identity);
+  const unverified = [
     ...names(pm.unlocking_company_categories),
     ...names(pm.unlocking_geographic_regions),
     ...names(pm.unlocking_religions),
-    ...reqPms,
   ];
+  const other = [...principles, ...identities, ...unverified, ...reqPms];
   return {
     id: pmId,
     name: loc.name(pmId),
@@ -86,6 +86,9 @@ function pmView(pmId) {
     laws: names(pm.unlocking_laws),
     blockedByLaws: names(pm.disallowing_laws),
     reqPms,
+    principles,
+    identities,
+    unverified,
     other,
     inputs,
     outputs,

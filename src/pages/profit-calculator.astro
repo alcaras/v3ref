@@ -35,9 +35,8 @@ const base = import.meta.env.BASE_URL;
 
     <div class="bp__main">
       <p class="bp__cross">
-        Comparing one building here. To rank <b>every</b> method in the game at these same prices —
-        sortable by profit, profit per worker, and profit per point of construction —
-        use <a href={`${base}method-comparison`}>Compare Methods →</a>
+        One building here. To rank every building at these prices, use
+        <a href={`${base}method-comparison`}>Compare Buildings →</a>
       </p>
       <div id="bp-head" class="bp__head"></div>
       <div id="bp-groups" class="bp__groups"></div>
@@ -45,10 +44,8 @@ const base = import.meta.env.BASE_URL;
       <details class="bp__all">
         <summary>Every combination, ranked</summary>
         <p class="bp__hint">
-          Every goods line in the game data is a flat amount — there are no percentage goods
-          modifiers — so groups do not interact and the best option in each group always combines
-          into the best overall set (checked against 19,200 building × random-market cases). This
-          list is here to show the spread, not to correct the blocks above.
+          Goods lines are flat amounts, so groups do not interact and the per-group winners always
+          combine into the best set. Here to show the spread.
         </p>
         <div class="grid"><div class="grid__scroll">
           <table class="vtbl" id="bp-combos"><thead></thead><tbody></tbody></table>
@@ -56,13 +53,8 @@ const base = import.meta.env.BASE_URL;
       </details>
 
       <p class="caption">
-        Revenue − input costs at your prices, per building level at full employment. This is the
-        goods margin: it counts every goods line and every employment line in the game's production
-        methods, and nothing else. Methods also carry effects this cannot price — mortality, shares,
-        job attractiveness, minimum wage, training rate — and wages, economy of scale, and state
-        throughput bonuses are not modeled. 64 of the game's 97 buildings appear here; the rest
-        (monuments, financial districts, ownership-only buildings) move no goods.
-        To rank methods across every building, use <a href={`${base}method-comparison`}>Compare Methods</a>.
+        Revenue − input cost at your prices, per level, at full employment. Goods and jobs only:
+        no wages, throughput, economy of scale, mortality or shares. 64 of 97 buildings move goods.
       </p>
     </div>
   </div>
@@ -285,11 +277,11 @@ const base = import.meta.env.BASE_URL;
               : `<button type="button" id="bp-loadbest" class="bp__bestbtn">load best set${
                   lockCount ? ' (keeping locks)' : ''} (${money(best)})</button>`}
           </div>
-          ${state.fromSave ? `<p class="bp__fromsave">Opened on the set your save runs across
+          ${state.fromSave ? `<p class="bp__fromsave">Your save's set ·
             <b>${state.fromSave.lv.toLocaleString()}</b> level${state.fromSave.lv === 1 ? '' : 's'}
-            in ${state.fromSave.n} building${state.fromSave.n === 1 ? '' : 's'}.${
+            in ${state.fromSave.n} building${state.fromSave.n === 1 ? '' : 's'}${
               state.fromSave.matched < state.fromSave.groups
-                ? ` Only ${state.fromSave.matched} of ${state.fromSave.groups} groups matched this patch's data — the rest opened on their defaults.`
+                ? ` · ${state.fromSave.groups - state.fromSave.matched} group${state.fromSave.groups - state.fromSave.matched === 1 ? '' : 's'} didn't match this patch`
                 : ''}</p>` : ''}
           <div class="bp__flow">
             ${lines.map((l) => `<span class="bp__fl">
@@ -431,11 +423,9 @@ const base = import.meta.env.BASE_URL;
       function rankNote() {
         const c = state.building?.construction;
         const notes = {
-          worker: 'Ranking by output per job — this is where automation earns its place.',
-          constr: `Ranking by return on a point of construction, this building's real bottleneck. `
-            + `Every method divides by the same fixed ${c ?? '—'} points, so the order matches total `
-            + `profit — total £ is still in the table. To compare this building against others, where `
-            + `the cost differs, use <a href="${base}method-comparison">Compare Buildings</a>.`,
+          worker: 'Ranked by £ per job.',
+          constr: `Ranked by £ per construction point. Every method here divides by the same ${c ?? '—'}, `
+            + `so the order matches total £. Costs differ <a href="${base}method-comparison">across buildings</a>.`,
         };
         $('bp-ranknote').innerHTML = notes[rankBy()];
       }

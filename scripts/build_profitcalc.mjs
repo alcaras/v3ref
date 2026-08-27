@@ -46,13 +46,13 @@ const buildingsOut = buildings
         // constraint across groups, so the combination search honours it.
         reqPms: pm.reqPms?.length ? pm.reqPms.map((o) => o.id) : undefined,
         reqPmNames: pm.reqPms?.length ? pm.reqPms.map((o) => o.name) : undefined,
-        // Principles, identities, regions: conditions nothing here can check,
-        // so they become a caveat on the row rather than a gate.
-        needs: (() => {
-          const req = new Set((pm.reqPms ?? []).map((o) => o.id));
-          const rest = (pm.other ?? []).filter((o) => !req.has(o.id));
-          return rest.length ? rest.map((o) => o.name) : undefined;
-        })(),
+        // Power-bloc principles and identity: any one of them unlocks it, and a
+        // save carries both, so the audit checks them like techs and laws.
+        reqPrin: pm.principles?.length ? pm.principles.map((o) => o.id) : undefined,
+        reqIdent: pm.identities?.length ? pm.identities.map((o) => o.id) : undefined,
+        // Company categories, regions, religions: a save cannot answer these,
+        // so the audit will not put them forward at all.
+        unverified: pm.unverified?.length ? pm.unverified.map((o) => o.name) : undefined,
       })),
     })),
   }))
