@@ -17,8 +17,7 @@ const base = import.meta.env.BASE_URL;
           <button type="button" id="rm-clear" class="rail__btn">clear</button>
         </div>
         <p class="rm__note">
-          Pick one for a magnitude map. Pick two or three to compare — each gets its own hue and a
-          state takes the hue of whichever leads there.
+          Up to three. Each takes a hue; a state takes the hue of whichever leads there.
         </p>
         <input id="rm-search" class="rail__select" type="search" placeholder="Find a layer…"
           style="margin-bottom:0.4rem;" />
@@ -68,14 +67,9 @@ const base = import.meta.env.BASE_URL;
       </div></div>
 
       <p class="caption">
-        Two kinds of layer. <b>Deposit</b> layers (mines, wharves, arable land, undiscovered finds)
-        come from the game's <code>state_regions</code> caps — the maximum levels a state can ever
-        hold. <b>Produced</b> layers come from the 1836 setup: the buildings each state starts with,
-        at their starting levels, running their activated production methods, so they show where a
-        good is actually made on day one rather than where it could be. Hover a state for its full
-        breakdown, click to open its <a href={`${base}states`}>location page</a>. Sea, lakes, and the
-        106 water regions carry no data. Built by recolouring a state-index map derived from
-        <code>provinces.png</code>.
+        <b>Deposit</b> layers are <code>state_regions</code> caps — the most a state can ever hold ·
+        <b>produced</b> layers are the 1836 buildings at their starting levels and methods ·
+        click a state for its <a href={`${base}states`}>breakdown</a> · water regions carry no data
       </p>
     </div>
   </div>

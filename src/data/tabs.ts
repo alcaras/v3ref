@@ -191,7 +191,7 @@ export const TABS: Tab[] = [
   {
     slug: 'method-comparison', icon: '⚖️', label: 'Compare Buildings', section: 'Tools',
     status: 'built',
-    summary: 'Every building at its best production set for your prices — by profit, per worker, or per construction',
+    summary: 'Every building at its best production set for your prices — and an audit of the ones in your save',
   },
   {
     slug: 'patch-notes', icon: '🛠', label: 'Patch Notes', section: 'Tools',
