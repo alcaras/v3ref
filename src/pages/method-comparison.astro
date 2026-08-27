@@ -29,6 +29,30 @@ const base = import.meta.env.BASE_URL;
         Every building at its best production set for your market and target. To break one building
         down group by group, use <a href={`${base}profit-calculator`}>Building Profit →</a>
       </p>
+
+      <!-- Only rendered once a save has been read; see renderAudit(). -->
+      <section id="mc-audit" class="aud" hidden>
+        <div class="aud__head">
+          <h2 class="aud__title">Methods to change</h2>
+          <span class="aud__sum" id="aud-sum"></span>
+        </div>
+        <div class="grid"><div class="grid__scroll">
+          <table class="vtbl aud__table" id="aud-table">
+            <thead>
+              <tr>
+                <th style="min-width: 11rem;">Building</th>
+                <th style="min-width: 20rem;">Switch</th>
+                <th class="num" title="Total levels running this set">Levels</th>
+                <th class="num" title="Extra goods margin per level, per week">£/level</th>
+                <th class="num" title="Extra goods margin per week across those levels">£/week</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div></div>
+        <p class="caption" id="aud-note"></p>
+      </section>
+
       <div class="mc__bar">
         <label class="mc__field mc__field--opt">
           <span class="rail__label" style="margin-right:0.4rem;">Optimise for</span>
@@ -43,6 +67,8 @@ const base = import.meta.env.BASE_URL;
             placeholder="Filter by building, method, or good…" />
         </label>
         <label class="mc__toggle"><input type="checkbox" id="mc-positive" /> only profitable</label>
+        <label class="mc__toggle" title="Wonders and the great canals: one per world, so they are not something to build more of">
+          <input type="checkbox" id="mc-standard" checked /> standard buildings only</label>
         <span id="mc-count" class="mc__hint"></span>
       </div>
 
@@ -69,7 +95,8 @@ const base = import.meta.env.BASE_URL;
         group, chosen by searching all of its combinations at your prices, because a single method is
         not something you can build on its own. Buildings that move no goods (monuments, financial
         districts) are absent. Construction is the building's cost in construction points, so £/constr.
-        shows where a point of construction capacity buys the most output. Prices and target are shared
+        shows where a point of construction capacity buys the most output. Numbers are shaded by size,
+        brightest at the largest figure on screen. Prices, target and the loaded save are shared
         with <a href={`${base}profit-calculator`}>Building Profit</a>, which breaks one building down
         group by group.
       </p>
@@ -80,11 +107,14 @@ const base = import.meta.env.BASE_URL;
     (async () => {
       const data = await fetch(`${base}data/profit-calc.json`).then((r) => r.json());
       window.v3ImportGoods = data.goods;
-      window.v3CountryName = data.countries;   // lets the importer find the played country
-      document.addEventListener('v3prices-changed', () => { renderPrices(); renderTable(); });
+      window.v3CountryName = data.countries;   // lets the importer name each seat
+      document.dispatchEvent(new CustomEvent('v3data-ready'));
+      document.addEventListener('v3prices-changed', () => { renderPrices(); renderTable(); renderAudit(); });
+      document.addEventListener('v3save-changed', renderAudit);
       const $ = (id) => document.getElementById(id);
       const P = window.v3Prices;
       const priceOf = (g) => P.of(data.goods, g);
+      const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 
       // One row per BUILDING, run as an actual building would be: one method
       // from every group. A lone method is not a thing you can build — comparing
@@ -110,12 +140,31 @@ const base = import.meta.env.BASE_URL;
               .map((l) => data.goods[l.g]?.name ?? l.g))).join(' ')}`.toLowerCase(),
         };
       }).filter((r) => r.combos.length);
+      const byId = Object.fromEntries(buildings.map((r) => [r.b.id, r]));
+
+      // The sign belongs in front of the £, not between it and the digits.
+      const money = (v) => `${v < 0 ? '−' : ''}£${Math.abs(v).toFixed(0)}`;
+
+      // A handful of methods need a SIBLING method in another group — Bone
+      // China only runs on Crystal Glass or Houseware Plastics. Combinations
+      // that break that cannot be built, so they must not win a row.
+      function buildable(r, choice) {
+        let picked = null;
+        for (const gi of Object.keys(choice)) {
+          const pm = r.b.pmGroups[gi].pms[choice[gi]];
+          if (!pm?.reqPms) continue;
+          picked ??= new Set(Object.keys(choice).map((k) => r.b.pmGroups[k].pms[choice[k]]?.id));
+          if (!pm.reqPms.some((id) => picked.has(id))) return false;
+        }
+        return true;
+      }
 
       // Evaluate one full building configuration.
       function evalCombo(r, choice) {
         const flow = {}, jobs = {};
-        for (const { gi } of r.groups) {
+        for (const gi of Object.keys(choice)) {
           const pm = r.b.pmGroups[gi].pms[choice[gi]];
+          if (!pm) continue;
           for (const l of pm.inputs) flow[l.g] = (flow[l.g] ?? 0) - l.a;
           for (const l of pm.outputs) flow[l.g] = (flow[l.g] ?? 0) + l.a;
           for (const j of pm.jobs) jobs[j.p] = (jobs[j.p] ?? 0) + j.a;
@@ -132,6 +181,7 @@ const base = import.meta.env.BASE_URL;
       function bestFor(r, mode, constr) {
         let best = null;
         for (const c of r.combos) {
+          if (!buildable(r, c)) continue;
           const e = evalCombo(r, c);
           const score = mode === 'worker' ? (e.totalJobs > 0 ? e.net / e.totalJobs : -Infinity)
             : mode === 'constr' ? (constr ? e.net / constr : e.net)
@@ -139,6 +189,17 @@ const base = import.meta.env.BASE_URL;
           if (!best || score > best.score) best = { c, ...e, score };
         }
         return best;
+      }
+
+      // ── Shading ────────────────────────────────────────────────────
+      // Sign alone gives two buckets, which is not enough to scan a column by.
+      // Each number is shaded against the largest of its own column on screen,
+      // on a gentle curve so the middle of the range stays distinguishable.
+      function mag(v, max, text) {
+        if (v == null) return '<span class="cell__dash">—</span>';
+        const t = max > 0 ? Math.min(1, Math.pow(Math.abs(v) / max, 0.55)) : 0;
+        const cls = v > 0 ? 'mag mag--good' : v < 0 ? 'mag mag--bad' : 'tone-neutral';
+        return `<span class="${cls}${t > 0.86 ? ' mag--peak' : ''}" style="--m:${(0.2 + 0.8 * t).toFixed(3)}">${text}</span>`;
       }
 
       // ── Price rail: every good any method touches ──────────────────
@@ -162,6 +223,7 @@ const base = import.meta.env.BASE_URL;
             P.set(input.dataset.good, Number(input.value));
             renderPriceLabels();
             renderTable();
+            renderAudit();
           }));
         renderPriceLabels();
       }
@@ -174,10 +236,136 @@ const base = import.meta.env.BASE_URL;
         }
       }
 
-      // ── Table ──────────────────────────────────────────────────────
-      const money = (lines, sign) =>
-        lines.reduce((s, l) => s + sign * l.a * priceOf(l.g), 0);
+      // ── The audit: what the save has set, versus what it should ────
+      //
+      // Only buildings that SELL something are ranked. A building that merely
+      // consumes goods — construction sector, government administration, trade
+      // centre, university — produces construction points, bureaucracy, trade
+      // capacity or innovation, none of which is priced here, so "spend least
+      // on inputs" would come out as "best" and the advice would be backwards.
+      function sells(r) {
+        return r.b.pmGroups.some((g) => g.pms.some((pm) => pm.outputs.length));
+      }
 
+      function auditRows(country) {
+        const techs = new Set(country.techs ?? []);
+        const laws = new Set(country.laws ?? []);
+        // A method is available if its technology is researched, one of its
+        // unlocking laws is enacted, and no enacted law disallows it.
+        const canRun = (pm) =>
+          (!pm.techs || pm.techs.every((t) => techs.has(t)))
+          && (!pm.laws || pm.laws.some((l) => laws.has(l)))
+          && (!pm.blocked || !pm.blocked.some((l) => laws.has(l)));
+
+        const merged = new Map();
+        const skipped = new Set();
+        let unreadable = 0, checked = 0;
+
+        for (const row of country.buildings ?? []) {
+          const r = byId[row.b];
+          if (!r) continue;                       // moves no goods; not in this dataset
+          if (!sells(r)) { skipped.add(r.b.name); continue; }
+
+          // Match the save's method list onto this building's groups. A group we
+          // cannot place (a patch renamed it, say) is dropped from BOTH sides:
+          // every goods line in the game is a flat amount, so groups do not
+          // interact and leaving one out shifts current and best equally.
+          const live = [];
+          const cur = {};
+          for (const { gi, g } of r.groups) {
+            const pi = g.pms.findIndex((pm) => row.pms.includes(pm.id));
+            if (pi < 0) { unreadable++; continue; }
+            live.push({ gi, g });
+            cur[gi] = pi;
+          }
+          if (!live.length) continue;
+          checked++;
+
+          let combos = [{}];
+          for (const { gi, g } of live) {
+            const opts = g.pms
+              .map((pm, pi) => ({ pm, pi }))
+              .filter(({ pm, pi }) => pi === cur[gi] || canRun(pm));
+            const next = [];
+            for (const c of combos) for (const { pi } of opts) next.push({ ...c, [gi]: pi });
+            combos = next;
+          }
+          const now = evalCombo(r, cur);
+          // Seed with what the save is running: whatever our data says, the
+          // game is already running it, so it is by definition an option.
+          let best = { c: cur, ...now };
+          for (const c of combos) {
+            if (!buildable(r, c)) continue;
+            const e = evalCombo(r, c);
+            if (e.net > best.net) best = { c, ...e };
+          }
+          const gain = best.net - now.net;
+          if (gain <= 0.5) continue;
+
+          const changes = live.filter(({ gi }) => best.c[gi] !== cur[gi])
+            .map(({ gi, g }) => ({ group: g.name, from: g.pms[cur[gi]], to: g.pms[best.c[gi]] }));
+          if (!changes.length) continue;
+
+          // Two buildings of the same type making the same switch gain the same
+          // per level, whatever else differs about them, so they belong on one
+          // row rather than three near-identical ones.
+          const key = r.b.id + '|' + changes.map((c) => `${c.group}:${c.from.id}>${c.to.id}`).join('|');
+          const hit = merged.get(key) ?? { r, changes, gain, lv: 0, n: 0 };
+          hit.lv += row.lv; hit.n += row.n;
+          merged.set(key, hit);
+        }
+        const rows = [...merged.values()].sort((a, b) => b.gain * b.lv - a.gain * a.lv);
+        return { rows, skipped: [...skipped], unreadable, checked };
+      }
+
+      function renderAudit() {
+        const el = $('mc-audit');
+        const country = window.v3Save?.country?.();
+        if (!country || !country.buildings?.length) { el.hidden = true; return; }
+        el.hidden = false;
+
+        const { rows, skipped, unreadable, checked } = auditRows(country);
+        const total = rows.reduce((s, r) => s + r.gain * r.lv, 0);
+        const maxWeek = Math.max(0, ...rows.map((r) => r.gain * r.lv));
+        const maxLevel = Math.max(0, ...rows.map((r) => r.gain));
+        const name = window.v3CountryName?.[country.tag] ?? country.tag;
+
+        $('aud-sum').innerHTML = rows.length
+          ? `${rows.length} switch${rows.length === 1 ? '' : 'es'} worth <b class="tone-good">£${Math.round(total).toLocaleString()}</b> a week`
+          : '<span class="tone-good">nothing to change — every method is already the best one available</span>';
+
+        $('aud-table').closest('.grid').hidden = !rows.length;
+        $('aud-table').tBodies[0].innerHTML = rows.map((r) => `
+          <tr>
+            <td class="lead-cell">
+              <span class="lead"><img class="lead__icon" src="${base}${r.r.b.icon}" alt="" loading="lazy" />
+              <a href="${base}buildings/${r.r.b.id.replace('building_', '')}">${esc(r.r.b.name)}</a></span></td>
+            <td class="aud__sw">${r.changes.map((c) => `
+              <span class="aud__one"><i>${esc(c.group)}</i>
+                ${esc(c.from.name)} <b>→</b> <span class="aud__to">${esc(c.to.name)}</span>${
+                  c.to.needs ? ` <span class="aud__caveat" title="Also needs: ${esc(c.to.needs.join(', '))}">needs ${esc(c.to.needs[0])}</span>` : ''}
+              </span>`).join('')}</td>
+            <td class="num dim">${r.lv.toLocaleString()}<span class="aud__n"> in ${r.n}</span></td>
+            <td class="num">${mag(r.gain, maxLevel, '+£' + r.gain.toFixed(1))}</td>
+            <td class="num">${mag(r.gain * r.lv, maxWeek, '+£' + Math.round(r.gain * r.lv).toLocaleString())}</td>
+          </tr>`).join('');
+
+        $('aud-note').innerHTML =
+          `Read from your save: ${checked} building set${checked === 1 ? '' : 's'} across <b>${esc(name)}</b>, `
+          + `priced at its own market and limited to methods it has the technology and laws for. `
+          + `Gains are the goods margin at full employment, so treat them as an ordering, not a forecast — `
+          + `throughput, staffing and wages all move the real figure. `
+          + (skipped.length
+            ? `Not ranked: ${skipped.map(esc).join(', ')} — what they really produce (construction, bureaucracy, `
+              + `trade capacity, innovation) has no price here, so cheapest inputs would read as best. `
+            : '')
+          + (unreadable
+            ? `${unreadable} method group${unreadable === 1 ? '' : 's'} in the save did not match this patch's data and were left out of both sides. `
+            : '')
+          + `Switching a method costs nothing but time in game.`;
+      }
+
+      // ── Table ──────────────────────────────────────────────────────
       // The control and the clickable headers drive the same sort, so the two
       // can never disagree: choosing a target just sets that column's header.
       const OPT_COL = { net: 2, worker: 4, constr: 6 };   // Net £, £/worker, £/constr
@@ -191,34 +379,51 @@ const base = import.meta.env.BASE_URL;
       function renderTable() {
         const q = $('mc-filter').value.trim().toLowerCase();
         const onlyPositive = $('mc-positive').checked;
+        const standardOnly = $('mc-standard').checked;
         const mode = $('mc-opt').value;
-        const out = [];
+        const rows = [];
+        let hiddenUnique = 0;
         for (const r of buildings) {
+          if (r.b.unique) { hiddenUnique++; if (standardOnly) continue; }
           if (q && !r.search.includes(q)) continue;
           const constr = r.b.construction;
           const best = bestFor(r, mode, constr);
           if (!best) continue;
           if (onlyPositive && best.net <= 0) continue;
-          const perWorker = best.totalJobs > 0 ? best.net / best.totalJobs : null;
-          const perConstruction = constr ? best.net / constr : null;
-          const tone = (v) => (v > 0 ? 'tone-good' : v < 0 ? 'tone-bad' : 'tone-neutral');
-          const num = (v, d = 0) => (v == null ? '<span class="cell__dash">—</span>' : v.toFixed(d));
-          const setNames = r.groups.map(({ gi }) => r.b.pmGroups[gi].pms[best.c[gi]].name);
-          out.push({
-            sort: [r.b.name, setNames.join(', '), best.net, best.totalJobs, perWorker, constr, perConstruction],
-            html: `<tr>
-              <td class="lead-cell" data-sort="${r.b.name}">
-                <span class="lead"><img class="lead__icon" src="${base}${r.b.icon}" alt="" loading="lazy" />
-                <a href="${base}buildings/${r.b.id.replace('building_', '')}">${r.b.name}</a></span></td>
-              <td class="dim mc__set">${setNames.join(' · ')}</td>
-              <td class="num" data-sort="${best.net.toFixed(2)}"><b class="${tone(best.net)}">£${best.net.toFixed(0)}</b></td>
-              <td class="num" data-sort="${best.totalJobs || ''}">${best.totalJobs ? best.totalJobs.toLocaleString() : '<span class="cell__dash">—</span>'}</td>
-              <td class="num" data-sort="${perWorker ?? ''}"><span class="${perWorker == null ? '' : tone(perWorker)}">${num(perWorker, 3)}</span></td>
-              <td class="num dim" data-sort="${constr ?? ''}">${constr ?? '<span class="cell__dash">—</span>'}</td>
-              <td class="num" data-sort="${perConstruction ?? ''}"><span class="${perConstruction == null ? '' : tone(perConstruction)}">${num(perConstruction, 2)}</span></td>
-            </tr>`,
+          rows.push({
+            r, best, constr,
+            perWorker: best.totalJobs > 0 ? best.net / best.totalJobs : null,
+            perConstruction: constr ? best.net / constr : null,
+            setNames: r.groups.map(({ gi }) => r.b.pmGroups[gi].pms[best.c[gi]].name),
           });
         }
+
+        // Shade each column against the biggest number actually on screen, so
+        // the scale follows the filter rather than the whole game.
+        const peak = (pick) => Math.max(0, ...rows.map((x) => Math.abs(pick(x) ?? 0)));
+        const mNet = peak((x) => x.best.net);
+        const mWkr = peak((x) => x.perWorker);
+        const mCon = peak((x) => x.perConstruction);
+        const num = (v, d) => v.toFixed(d);
+
+        const out = rows.map((x) => ({
+          sort: [x.r.b.name, x.setNames.join(', '), x.best.net, x.best.totalJobs,
+                 x.perWorker, x.constr, x.perConstruction],
+          html: `<tr>
+            <td class="lead-cell" data-sort="${x.r.b.name}">
+              <span class="lead"><img class="lead__icon" src="${base}${x.r.b.icon}" alt="" loading="lazy" />
+              <a href="${base}buildings/${x.r.b.id.replace('building_', '')}">${x.r.b.name}</a></span></td>
+            <td class="dim mc__set">${x.setNames.join(' · ')}</td>
+            <td class="num" data-sort="${x.best.net.toFixed(2)}">${mag(x.best.net, mNet, money(x.best.net))}</td>
+            <td class="num dim" data-sort="${x.best.totalJobs || ''}">${
+              x.best.totalJobs ? x.best.totalJobs.toLocaleString() : '<span class="cell__dash">—</span>'}</td>
+            <td class="num" data-sort="${x.perWorker ?? ''}">${
+              x.perWorker == null ? '<span class="cell__dash">—</span>' : mag(x.perWorker, mWkr, num(x.perWorker, 3))}</td>
+            <td class="num dim" data-sort="${x.constr ?? ''}">${x.constr ?? '<span class="cell__dash">—</span>'}</td>
+            <td class="num" data-sort="${x.perConstruction ?? ''}">${
+              x.perConstruction == null ? '<span class="cell__dash">—</span>' : mag(x.perConstruction, mCon, num(x.perConstruction, 2))}</td>
+          </tr>`,
+        }));
 
         // Re-apply the active sort: TableTools sorts the live DOM and we just
         // replaced every row.
@@ -235,22 +440,27 @@ const base = import.meta.env.BASE_URL;
           });
         }
         $('mc-table').tBodies[0].innerHTML = out.map((r) => r.html).join('');
-        $('mc-count').textContent = `${out.length} of ${buildings.length} buildings`;
+        const pool = buildings.length - ($('mc-standard').checked ? hiddenUnique : 0);
+        $('mc-count').textContent = `${out.length} of ${pool} buildings`;
         $('mc-table').tBodies[0].querySelectorAll('tr').forEach((tr) => tr.removeAttribute('data-tt-i'));
       }
 
       $('mc-opt').addEventListener('change', applyOpt);
       $('mc-filter').addEventListener('input', renderTable);
       $('mc-positive').addEventListener('change', renderTable);
-      $('mc-reset').addEventListener('click', () => { P.reset(); renderPrices(); renderTable(); });
+      $('mc-standard').addEventListener('change', renderTable);
+      $('mc-goodfilter').addEventListener('input', renderPrices);
+      $('mc-reset').addEventListener('click', () => { P.reset(); renderPrices(); renderTable(); renderAudit(); });
       renderPrices();
       applyOpt();   // open on total profit, ranked
+      renderAudit();
     })();
   </script>
 
   <style is:global>
     .mc { display: grid; grid-template-columns: minmax(14rem, 17rem) 1fr; gap: 1.6rem; align-items: start; }
     @media (max-width: 900px) { .mc { grid-template-columns: 1fr; } }
+    .mc__main { min-width: 0; }
     .mc__bar { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
     .mc__field { display: inline-flex; align-items: center; }
     .mc__field--opt .rail__label { white-space: nowrap; }
@@ -261,5 +471,29 @@ const base = import.meta.env.BASE_URL;
     .mc__toggle input { accent-color: var(--gold); margin: 0; }
     .mc__hint { font-size: 0.76rem; color: var(--text-faint); }
     .mc__set { font-size: 0.72rem; line-height: 1.3; }
+
+    /* The save audit sits above the ranking: it is about the buildings you
+       already have, which is a different question from what to build next. */
+    .aud {
+      margin: 0 0 1.4rem; padding: 0.7rem 0.9rem 0.2rem;
+      border: 1px solid var(--gold-deep); border-radius: 8px;
+      background: var(--bg-elev);
+    }
+    .aud__head { display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+    .aud__title { font-family: var(--font-display); font-size: 1.15rem; margin: 0; }
+    .aud__sum { font-size: 0.8rem; color: var(--text-dim); }
+    .aud__table thead th { background: var(--bg-elev); }
+    .aud__sw { font-size: 0.76rem; line-height: 1.35; }
+    .aud__one { display: block; }
+    .aud__one i { font-style: normal; color: var(--text-faint); margin-right: 0.35rem; }
+    .aud__one b { color: var(--gold-soft); font-weight: 400; }
+    .aud__to { color: var(--text); }
+    .aud__caveat {
+      font-family: var(--font-mono); font-size: 0.56rem; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--gold-soft); cursor: help;
+      border: 1px solid var(--gold-deep); border-radius: 999px; padding: 0.02rem 0.34rem;
+    }
+    .aud__n { color: var(--text-faint); font-size: 0.7rem; }
+    .aud .caption { margin-top: 0.4rem; }
   </style>
 </Base>

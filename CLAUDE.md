@@ -272,14 +272,45 @@ Mechanics for staying anchored:
 - **A lone production method is not buildable.** A building runs one method
   from every group, so cross-building comparisons must evaluate whole
   configurations, not isolated methods.
+- **Five methods need a SIBLING method in another group** (`unlocking_production_methods`
+  — Bone China only runs on Crystal Glass or Houseware Plastics). Kept as
+  `reqPms` and enforced when searching combinations; a set that breaks it
+  cannot be built and must never win a row. The other `unlocking_*` conditions
+  (principles, identity, region, religion) are not checkable here and stay a
+  caveat on the row.
+- **A building that SELLS nothing cannot be ranked on goods margin.** Construction
+  sector, government administration, trade centre, university, naval
+  fortification, skyscraper and the canals only consume: what they really
+  produce (construction points, bureaucracy, trade capacity, innovation) has no
+  price here, so "cheapest inputs" would come out as "best" and the advice
+  would be exactly backwards. The save audit excludes them by
+  `outputs.length === 0` and says so.
 - **Save files**: a `.v3` is a ZIP whose `gamestate` is PDX BINARY (~244MB
   unpacked) — unreadable in the browser, hence melting at pdx.tools first.
-  In a melted save, current prices live at
-  `<market id>={ … previous_price_report={ goods={ N={ value=X } } } }`, goods
-  keyed by POSITION in `common/goods` (hence `index` on each good).
-  `meta_data.name` is the played country; `country_manager…definition="TAG"`
-  carries `market=N`, which is how the importer finds the player's market.
-  A save holds many markets (12 in a real MP save) with different prices.
+  `PriceRail.astro` scans the melted text in 4MB windows with a 256KB overlap,
+  in ONE ordered pass. Every field sits at a known depth, and the top-level
+  section name types the entry — without that gate, `country=` at three tabs
+  matches in interest groups, characters, companies and a dozen other
+  databases, and state→country attribution silently goes wrong (39,084 "states"
+  instead of 912).
+  - `previous_price_report` lives inside the MARKET CAPITAL'S OWN COUNTRY
+    BLOCK, not in `market_manager`. Attribute it through that country's
+    `market=N`; keying it by the entry id (what the first version did) labels
+    a Japan save's prices as the Russian market's. Goods are keyed by POSITION
+    in `common/goods` (hence `index` on each good).
+  - `states…<id>.country` owns each building; `building_manager…<id>` carries
+    `building=`, `levels=`, `state=`, `production_methods={ … }`.
+  - `technology…<id>.acquired_technologies` and `laws…<id>` with `active=yes`
+    are what make method advice honest — never suggest a method the country
+    has not unlocked.
+  - `player_manager` lists every SEAT (user → country). `meta_data.name` is
+    only whoever saved, so in a multiplayer save it is usually not you: the
+    rail offers the seats and defaults to the meta_data one.
+  - A save holds many markets (12 in a real MP save) with different prices.
+  - The snapshot (prices per market + per-seat techs, laws and building sets
+    folded to one row per type and method set) is ~180KB for a 15-seat MP save
+    and lives in localStorage under `v3ref-save`, so a save is read once and
+    both profit tools see it.
 
 ---
 
@@ -298,8 +329,12 @@ Mechanics for staying anchored:
   ranked table + CSV. View lives in the hash (`#l=…&labels=1&z=3`).
 - **Profit tools (done)**: Building Profit (one building, every method ranked
   in place, per-group locks, optimise by construction point or per worker) and
-  Compare Buildings (every building at its best full configuration). Prices are
-  shared via localStorage and can be imported from a melted save.
+  Compare Buildings (every building at its best full configuration, with a
+  standard-buildings-only filter that drops the four uniques). Numbers are
+  shaded by magnitude against the largest figure on screen (`.mag`, `--m`),
+  not just by sign. A melted save is read once and shared by both tools; on
+  Compare Buildings it drives an audit of the methods your buildings are
+  actually running, gated on the country's own technologies and laws.
 - **Infrastructure (done)**: `make audit` gate, per-patch changelog with
   gzipped snapshots, invented-label tracking.
 - **Companies planning lives elsewhere**: <https://alcaras.github.io/v3co/> is
@@ -310,6 +345,8 @@ Mechanics for staying anchored:
   bundles in `scripted_effects/00_starting_inventions.txt` + per-country
   history files, plan in the URL hash). Deeper event trigger/effect rendering
   if the loc text proves not enough. States↔cultural-homelands join. Country
-  flags (procedural coats of arms). The save importer's file-picker path is
-  implemented but has never been exercised in a real browser — its parsing is
-  verified against a 309MB melted save in Node, the click-to-load is not.
+  flags (procedural coats of arms). The save importer is now exercised
+  end-to-end in headless Chromium against a 309MB melted save (13 seats, right
+  markets, audit rendered). Still open there: the audit cannot price throughput,
+  staffing, wages or economy of scale, so it is an ordering rather than a
+  forecast, and it says so.

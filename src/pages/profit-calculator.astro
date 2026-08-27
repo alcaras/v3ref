@@ -77,8 +77,12 @@ const base = import.meta.env.BASE_URL;
       const data = await fetch(`${base}data/profit-calc.json`).then((r) => r.json());
       // The importer needs the goods table (for base costs and file-order index).
       window.v3ImportGoods = data.goods;
-      window.v3CountryName = data.countries;   // lets the importer find the played country
+      window.v3CountryName = data.countries;   // lets the importer name each seat
+      document.dispatchEvent(new CustomEvent('v3data-ready'));
       document.addEventListener('v3prices-changed', () => { renderPrices(); renderAll(); });
+      // A save loaded on Compare Buildings lands here too: re-open the building
+      // on the set it is actually running.
+      document.addEventListener('v3save-changed', () => { pickBuilding(sel.value); });
       const $ = (id) => document.getElementById(id);
       const P = window.v3Prices;
       // A locked group is one you have decided for other reasons — you want the
@@ -86,6 +90,25 @@ const base = import.meta.env.BASE_URL;
       // to work around it instead of switching it off.
       const state = { building: null, choice: {}, locked: {} };
       const priceOf = (g) => P.of(data.goods, g);
+
+      // A handful of methods need a SIBLING method in another group — Bone
+      // China only runs on Crystal Glass or Houseware Plastics. A set that
+      // breaks that cannot be built, so it must never be offered as "best".
+      function buildable(choice) {
+        const picked = new Set(Object.keys(choice)
+          .map((gi) => state.building.pmGroups[gi]?.pms[choice[gi]]?.id));
+        for (const gi of Object.keys(choice)) {
+          const pm = state.building.pmGroups[gi]?.pms[choice[gi]];
+          if (pm?.reqPms && !pm.reqPms.some((id) => picked.has(id))) return false;
+        }
+        return true;
+      }
+      /** What a method is missing, given the rest of the current set. */
+      function blockedBy(gi, pi) {
+        const pm = state.building.pmGroups[gi]?.pms[pi];
+        if (!pm?.reqPms) return null;
+        return buildable({ ...state.choice, [gi]: pi }) ? null : pm.reqPmNames.join(' or ');
+      }
 
       // Aggregate a building's goods and jobs for a set of PM choices.
       function evaluate(choice) {
@@ -122,6 +145,40 @@ const base = import.meta.env.BASE_URL;
       const liveGroups = () =>
         state.building.pmGroups.map((g, gi) => ({ gi, g })).filter(({ g }) => g.pms.length);
 
+      // The sign belongs in front of the £, not between it and the digits.
+      const money = (v, sign) =>
+        `${v < 0 ? '−' : sign && v > 0 ? '+' : ''}£${Math.abs(v).toFixed(0)}`;
+      const rate = (v, d) => `${v < 0 ? '−' : ''}£${Math.abs(v).toFixed(d)}`;
+
+      // Sign alone gives two buckets, which is not enough to scan a column by.
+      // Each number is shaded against the largest of its own column in view, on
+      // a gentle curve so the middle of the range stays distinguishable.
+      function mag(v, max, text) {
+        const t = max > 0 ? Math.min(1, Math.pow(Math.abs(v) / max, 0.55)) : 0;
+        const cls = v > 0 ? 'mag mag--good' : v < 0 ? 'mag mag--bad' : 'tone-neutral';
+        return `<span class="${cls}${t > 0.86 ? ' mag--peak' : ''}" style="--m:${(0.2 + 0.8 * t).toFixed(3)}">${text}</span>`;
+      }
+
+      // What the loaded save has this building set to — the busiest set, when
+      // different states run different ones. Groups the save does not mention
+      // (a patch renamed them) simply keep the page's default.
+      function saveSet() {
+        const country = window.v3Save?.country?.();
+        if (!country || !state.building) return null;
+        const rows = (country.buildings ?? []).filter((r) => r.b === state.building.id);
+        if (!rows.length) return null;
+        const row = rows.reduce((a, b) => (b.lv > a.lv ? b : a));
+        const choice = {};
+        let matched = 0;
+        for (const { gi, g } of liveGroups()) {
+          const pi = g.pms.findIndex((pm) => row.pms.includes(pm.id));
+          if (pi >= 0) { choice[gi] = pi; matched++; }
+        }
+        return matched
+          ? { choice, lv: row.lv, n: row.n, tag: country.tag, matched, groups: liveGroups().length }
+          : null;
+      }
+
       function allCombinations() {
         let combos = [{}];
         for (const { gi, g } of liveGroups()) {
@@ -131,7 +188,7 @@ const base = import.meta.env.BASE_URL;
           for (const c of combos) for (const pi of options) next.push({ ...c, [gi]: pi });
           combos = next;
         }
-        return combos;
+        return combos.filter(buildable);
       }
 
       // ── Building picker ────────────────────────────────────────────
@@ -155,6 +212,11 @@ const base = import.meta.env.BASE_URL;
         state.choice = {};
         state.locked = {};
         for (const { gi } of liveGroups()) state.choice[gi] = 0;
+        // Start from what you are actually running, so "load best set" reads as
+        // the gain on the table rather than the gain over an arbitrary default.
+        const inSave = saveSet();
+        state.fromSave = inSave;
+        if (inSave) Object.assign(state.choice, inSave.choice);
         renderPrices();
         renderAll();
       }
@@ -209,25 +271,32 @@ const base = import.meta.env.BASE_URL;
         const atBest = metric({ net, totalJobs }) >= metric(bestEntry.r) - 1e-9;
         const constr = state.building.construction;
         const lockCount = Object.keys(state.locked).length;
+        const maxLine = Math.max(0, ...lines.map((l) => Math.abs(l.value)));
 
         $('bp-head').innerHTML = `
           <div class="bp__netrow">
-            <div class="bp__net ${net >= 0 ? 'tone-good' : 'tone-bad'}">£${net.toFixed(0)}<span>net / level</span></div>
+            <div class="bp__net ${net >= 0 ? 'tone-good' : 'tone-bad'}">${money(net)}<span>net / level</span></div>
             <div class="bp__jobs">${totalJobs.toLocaleString()}<span>workers</span></div>
-            <div class="bp__perw">${totalJobs > 0 ? '£' + (net / totalJobs).toFixed(2) : '—'}<span>per worker</span></div>
+            <div class="bp__perw">${totalJobs > 0 ? rate(net / totalJobs, 2) : '—'}<span>per worker</span></div>
             <div class="bp__perw" title="Construction points this building costs — fixed per building, so it never changes which method wins here">${
-              constr ? '£' + (net / constr).toFixed(2) : '—'}<span>per construction${constr ? ` (of ${constr})` : ''}</span></div>
+              constr ? rate(net / constr, 2) : '—'}<span>per construction${constr ? ` (of ${constr})` : ''}</span></div>
             ${atBest
               ? `<span class="bp__atbest">best set${lockCount ? ' within your locks' : ''} at these prices</span>`
               : `<button type="button" id="bp-loadbest" class="bp__bestbtn">load best set${
-                  lockCount ? ' (keeping locks)' : ''} (£${best.toFixed(0)})</button>`}
+                  lockCount ? ' (keeping locks)' : ''} (${money(best)})</button>`}
           </div>
+          ${state.fromSave ? `<p class="bp__fromsave">Opened on the set your save runs across
+            <b>${state.fromSave.lv.toLocaleString()}</b> level${state.fromSave.lv === 1 ? '' : 's'}
+            in ${state.fromSave.n} building${state.fromSave.n === 1 ? '' : 's'}.${
+              state.fromSave.matched < state.fromSave.groups
+                ? ` Only ${state.fromSave.matched} of ${state.fromSave.groups} groups matched this patch's data — the rest opened on their defaults.`
+                : ''}</p>` : ''}
           <div class="bp__flow">
             ${lines.map((l) => `<span class="bp__fl">
               <img src="${base}${data.goods[l.g].icon}" alt="" loading="lazy" />
               ${data.goods[l.g].name}
               <b class="${l.u > 0 ? 'tone-good' : 'tone-bad'}">${l.u > 0 ? '+' : ''}${l.u}</b>
-              <i>£${l.value.toFixed(0)}</i></span>`).join('')}
+              ${mag(l.value, maxLine, `<i>${money(l.value)}</i>`)}</span>`).join('')}
             ${Object.entries(jobs).map(([p, a]) => `<span class="bp__fl bp__fl--job">${p} <b>${a}</b></span>`).join('')}
           </div>`;
 
@@ -245,15 +314,19 @@ const base = import.meta.env.BASE_URL;
           const currentNet = evaluateWith(gi, current).net;
           const options = g.pms.map((pm, pi) => {
             const r = evaluateWith(gi, pi);
+            const blocked = blockedBy(gi, pi);
             return {
-              pi, pm, net: r.net, jobs: r.totalJobs, delta: r.net - currentNet,
+              pi, pm, blocked, net: r.net, jobs: r.totalJobs, delta: r.net - currentNet,
               perWorker: r.totalJobs > 0 ? r.net / r.totalJobs : null,
               perConstr: state.building.construction ? r.net / state.building.construction : null,
-              score: metric(r),
+              score: blocked ? -Infinity : metric(r),
             };
           });
           const best = Math.max(...options.map((o) => o.score));
           const ranked = [...options].sort((a, b) => b.score - a.score || a.pi - b.pi);
+          const mNet = Math.max(0, ...options.filter((o) => !o.blocked).map((o) => Math.abs(o.net)));
+          const mDelta = Math.max(0, ...options.filter((o) => !o.blocked).map((o) => Math.abs(o.delta)));
+          const inSave = state.fromSave?.choice[gi];
           return `
             <div class="bp__group">
               <div class="bp__gname">
@@ -267,6 +340,10 @@ const base = import.meta.env.BASE_URL;
                 </button>
               </div>
               <table class="vtbl bp__gtable">
+                <colgroup>
+                  <col /><col class="bp__c1" /><col class="bp__c1" />
+                  <col class="bp__c2" /><col class="bp__c2" /><col class="bp__c2" />
+                </colgroup>
                 <thead><tr>
                   <th>Method</th>
                   <th class="num">Net £</th>
@@ -276,17 +353,18 @@ const base = import.meta.env.BASE_URL;
                   <th class="num ${mode === 'constr' ? 'is-opt' : ''}" title="Profit per construction point">£/con</th>
                 </tr></thead>
                 <tbody>${ranked.map((o) => `
-                  <tr class="bp__opt ${o.pi === current ? 'is-current' : ''}" data-gi="${gi}" data-pi="${o.pi}">
-                    <td class="bp__optname">
+                  <tr class="bp__opt ${o.pi === current ? 'is-current' : ''}${o.blocked ? ' is-blocked' : ''}" data-gi="${gi}" data-pi="${o.pi}">
+                    <td class="bp__optname" title="${o.pm.name}">
                       <img src="${base}${o.pm.icon ?? ''}" alt="" loading="lazy"
                            onerror="this.style.visibility='hidden'" />
-                      ${o.pm.name}
+                      <span class="bp__pmname">${o.pm.name}</span>
                       ${o.score === best ? '<span class="bp__badge">best</span>' : ''}
+                      ${o.pi === inSave && o.score !== best ? '<span class="bp__badge bp__badge--save">yours</span>' : ''}
+                      ${o.blocked ? `<span class="bp__badge bp__badge--blocked" title="Needs ${o.blocked} in another group">needs ${o.blocked}</span>` : ''}
                     </td>
-                    <td class="num"><b class="${o.net >= 0 ? 'tone-good' : 'tone-bad'}">£${o.net.toFixed(0)}</b></td>
+                    <td class="num">${mag(o.net, mNet, `<b>${money(o.net)}</b>`)}</td>
                     <td class="num">${o.pi === current ? '<span class="bp__cur">—</span>'
-                      : `<span class="${o.delta > 0 ? 'tone-good' : o.delta < 0 ? 'tone-bad' : 'tone-neutral'}">${
-                          o.delta > 0 ? '+' : ''}£${o.delta.toFixed(0)}</span>`}</td>
+                      : mag(o.delta, mDelta, money(o.delta, true))}</td>
                     <td class="num dim">${o.jobs}</td>
                     <td class="num ${mode === 'worker' ? 'is-opt' : 'dim'}">${
                       o.perWorker == null ? '—' : o.perWorker.toFixed(2)}</td>
@@ -322,6 +400,7 @@ const base = import.meta.env.BASE_URL;
                    score: metric(r) };
         }).sort((a, b) => b.score - a.score);
         const same = (c) => groups.every(({ gi }) => c[gi] === state.choice[gi]);
+        const mNet = Math.max(0, ...scored.map((r) => Math.abs(r.net)));
 
         $('bp-combos').tHead.innerHTML = `<tr><th class="num" style="width:3rem;">#</th>
           ${groups.map(({ g }) => `<th>${g.name}</th>`).join('')}
@@ -331,7 +410,7 @@ const base = import.meta.env.BASE_URL;
               data-combo="${groups.map(({ gi }) => `${gi}:${r.choice[gi]}`).join(',')}">
             <td class="num dim">${i + 1}</td>
             ${groups.map(({ gi, g }) => `<td>${g.pms[r.choice[gi]].name}</td>`).join('')}
-            <td class="num"><b class="${r.net >= 0 ? 'tone-good' : 'tone-bad'}">£${r.net.toFixed(0)}</b></td>
+            <td class="num">${mag(r.net, mNet, `<b>${money(r.net)}</b>`)}</td>
             <td class="num dim">${r.jobs}</td>
             <td class="num dim">${r.perWorker == null ? '—' : r.perWorker.toFixed(2)}</td>
           </tr>`).join('');
@@ -372,6 +451,7 @@ const base = import.meta.env.BASE_URL;
 
   <style is:global>
     .bp { display: grid; grid-template-columns: minmax(14rem, 17rem) 1fr; gap: 1.6rem; align-items: start; }
+    .bp__main { min-width: 0; }
     @media (max-width: 900px) { .bp { grid-template-columns: 1fr; } }
 
     .bp__netrow {
@@ -407,9 +487,13 @@ const base = import.meta.env.BASE_URL;
     .bp__fl--job { color: var(--text-dim); }
 
     .bp__groups {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
       gap: 0.4rem 1.5rem; align-items: start;
     }
+    /* A grid item defaults to min-width:auto, which lets a wide table push its
+       track open and ride over the group beside it. Pin it shut and let the
+       table divide a known width instead. */
+    .bp__group { min-width: 0; }
     .bp__gname {
       font-family: var(--font-ui); font-size: 0.6rem; text-transform: uppercase;
       letter-spacing: 0.16em; color: var(--gold-soft); font-weight: 500;
@@ -422,7 +506,11 @@ const base = import.meta.env.BASE_URL;
     }
     .bp__lock:hover { color: var(--gold); }
     .bp__lock.is-on { color: var(--gold); }
-    .bp__gtable { margin-bottom: 0.9rem; }
+    /* Fixed layout is what makes the method name shrink-and-ellipsis rather
+       than set the table's width from its longest string. */
+    .bp__gtable { margin-bottom: 0.9rem; table-layout: fixed; width: 100%; }
+    .bp__gtable .bp__c1 { width: 4.4rem; }
+    .bp__gtable .bp__c2 { width: 3.5rem; }
     .bp__gtable thead th {
       position: static; border-bottom: 1px solid var(--border);
       font-size: 0.54rem; letter-spacing: 0.1em; padding: 0.2rem 0.45rem;
@@ -432,15 +520,28 @@ const base = import.meta.env.BASE_URL;
     .bp__opt:hover td { background: oklch(0.30 0.04 80 / 0.3); }
     .bp__opt.is-current { background: var(--bg-elev); }
     .bp__opt.is-current td:first-child { box-shadow: inset 3px 0 0 var(--gold); }
-    .bp__optname { display: flex; align-items: center; gap: 0.4rem; white-space: nowrap; }
+    .bp__optname { display: flex; align-items: center; gap: 0.4rem; min-width: 0; }
     .bp__optname img { width: 17px; height: 17px; object-fit: contain; flex-shrink: 0; }
+    .bp__pmname { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .bp__badge {
       font-family: var(--font-mono); font-size: 0.52rem; text-transform: uppercase;
-      letter-spacing: 0.1em; color: var(--tone-good);
+      letter-spacing: 0.1em; color: var(--tone-good); flex-shrink: 0;
       border: 1px solid color-mix(in srgb, var(--tone-good) 45%, transparent);
       border-radius: 999px; padding: 0.02rem 0.3rem;
     }
+    .bp__opt.is-blocked td { opacity: 0.55; }
+    .bp__badge--blocked {
+      color: var(--tone-bad); flex-shrink: 0; text-transform: none; letter-spacing: 0.04em;
+      border-color: color-mix(in srgb, var(--tone-bad) 45%, transparent);
+    }
+    .bp__badge--save {
+      color: var(--gold-soft); border-color: var(--gold-deep); flex-shrink: 0;
+    }
     .bp__cur { color: var(--text-faint); }
+    .bp__fromsave {
+      font-size: 0.72rem; color: var(--text-dim); margin: -0.5rem 0 0.8rem;
+    }
+    .bp__fromsave b { color: var(--gold-soft); font-weight: 400; }
     /* The column you are optimising for reads as the primary one. */
     .bp__gtable .is-opt { color: var(--gold); }
     .bp__gtable thead th.is-opt { color: var(--gold); }

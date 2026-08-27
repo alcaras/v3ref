@@ -22,6 +22,9 @@ const buildingsOut = buildings
     name: b.name,
     icon: b.icon,
     group: b.groupRoot?.name ?? null,
+    // Wonders and the great canals: one per world, so they never belong in a
+    // "what should I build more of" ranking.
+    unique: b.unique === true ? true : undefined,
     // Construction points the building costs — the denominator for
     // "profit per point of construction" in the comparison table.
     construction: b.construction?.value ?? null,
@@ -34,6 +37,22 @@ const buildingsOut = buildings
         inputs: pm.inputs.map((l) => ({ g: l.good, a: l.amount, k: l.kind })),
         outputs: pm.outputs.map((l) => ({ g: l.good, a: l.amount, k: l.kind })),
         jobs: pm.jobs.map((j) => ({ p: j.name, a: j.amount })),
+        // What it takes to run this method. The audit uses these to keep its
+        // advice to methods the save's country can actually switch to.
+        techs: pm.techs?.length ? pm.techs.map((t) => t.id) : undefined,
+        laws: pm.laws?.length ? pm.laws.map((l) => l.id) : undefined,
+        blocked: pm.blockedByLaws?.length ? pm.blockedByLaws.map((l) => l.id) : undefined,
+        // A sibling method this one needs — any one of them will do. Real
+        // constraint across groups, so the combination search honours it.
+        reqPms: pm.reqPms?.length ? pm.reqPms.map((o) => o.id) : undefined,
+        reqPmNames: pm.reqPms?.length ? pm.reqPms.map((o) => o.name) : undefined,
+        // Principles, identities, regions: conditions nothing here can check,
+        // so they become a caveat on the row rather than a gate.
+        needs: (() => {
+          const req = new Set((pm.reqPms ?? []).map((o) => o.id));
+          const rest = (pm.other ?? []).filter((o) => !req.has(o.id));
+          return rest.length ? rest.map((o) => o.name) : undefined;
+        })(),
       })),
     })),
   }))

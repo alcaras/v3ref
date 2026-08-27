@@ -38,6 +38,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -95,6 +96,7 @@
    "netAtBase": -1400,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "concrete_fortifications",
@@ -126,6 +128,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "military_statistics",
@@ -161,6 +164,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "military_statistics",
@@ -219,6 +223,7 @@
      "name": "Automobiles"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "military_aviation",
@@ -245,6 +250,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "zeppelins",
@@ -318,6 +324,7 @@
      "name": "Explosives"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "nitroglycerin",
@@ -367,6 +374,7 @@
    "netAtBase": -450,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "analytical_philosophy",
@@ -409,6 +417,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -436,6 +445,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -476,6 +486,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -554,6 +565,7 @@
    "netAtBase": -7900,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "arc_welding",
@@ -627,6 +639,7 @@
      "name": "Steamers"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "arc_welding",
@@ -695,6 +708,7 @@
      "name": "Services"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "elevator",
@@ -762,6 +776,7 @@
      "name": "Fertilizer"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -807,6 +822,7 @@
    "netAtBase": -550,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "conveyors",
@@ -858,6 +874,7 @@
    "netAtBase": -550,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "conveyors",
@@ -914,6 +931,7 @@
    "netAtBase": -550,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "conveyors",
@@ -970,6 +988,7 @@
    "netAtBase": -550,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "conveyors",
@@ -1015,6 +1034,7 @@
    "netAtBase": -550,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "conveyors",
@@ -1065,6 +1085,7 @@
    "netAtBase": -550,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "conveyors",
@@ -1126,6 +1147,7 @@
      "name": "Coal"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "atmospheric_engine",
@@ -1193,6 +1215,7 @@
      "name": "Gold"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "atmospheric_engine",
@@ -1260,6 +1283,7 @@
      "name": "Iron"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "atmospheric_engine",
@@ -1327,6 +1351,7 @@
      "name": "Lead"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "atmospheric_engine",
@@ -1394,6 +1419,7 @@
      "name": "Sulfur"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "atmospheric_engine",
@@ -1438,6 +1464,7 @@
    "netAtBase": -400,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "dough_rollers",
@@ -1494,6 +1521,7 @@
    "netAtBase": -400,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "automatic_bottle_blowers",
@@ -1550,6 +1578,7 @@
      "name": "Fruit"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "pumpjacks",
@@ -1606,6 +1635,7 @@
      "name": "Fabric"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "pumpjacks",
@@ -1662,6 +1692,7 @@
      "name": "Dye"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "pumpjacks",
@@ -1718,6 +1749,7 @@
      "name": "Opium"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "pumpjacks",
@@ -1774,6 +1806,7 @@
      "name": "Rubber"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "pumpjacks",
@@ -1830,6 +1863,7 @@
      "name": "Silk"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "pumpjacks",
@@ -1886,6 +1920,7 @@
      "name": "Sugar"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "pumpjacks",
@@ -1942,6 +1977,7 @@
      "name": "Tea"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "pumpjacks",
@@ -1998,6 +2034,7 @@
      "name": "Tobacco"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "pumpjacks",
@@ -2054,6 +2091,7 @@
      "name": "Wine"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "pumpjacks",
@@ -2104,6 +2142,7 @@
    "netAtBase": -500,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "electrical_capacitors",
@@ -2177,6 +2216,7 @@
      "name": "Automobiles"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "combustion_engine",
@@ -2228,6 +2268,7 @@
      "name": "Groceries"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -2290,6 +2331,7 @@
      "name": "Groceries"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "baking_powder",
@@ -2329,6 +2371,7 @@
    "netAtBase": -40,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "field_works",
@@ -2371,6 +2414,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -2408,6 +2452,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -2453,6 +2498,7 @@
    "netAtBase": -500,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -2492,6 +2538,7 @@
      "name": "Fruit"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 6000
   },
@@ -2531,6 +2578,7 @@
      "name": "Fabric"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 8000
   },
@@ -2570,6 +2618,7 @@
      "name": "Dye"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 7000
   },
@@ -2609,6 +2658,7 @@
      "name": "Gold"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -2648,6 +2698,7 @@
      "name": "Opium"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -2687,6 +2738,7 @@
      "name": "Rubber"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 7000
   },
@@ -2726,6 +2778,7 @@
      "name": "Silk"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -2778,6 +2831,7 @@
      "name": "Services"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -2836,6 +2890,7 @@
      "name": "Wood"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -2894,6 +2949,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -2952,6 +3008,7 @@
      "name": "Wood"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -3004,6 +3061,7 @@
      "name": "Wood"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 10000
   },
@@ -3043,6 +3101,7 @@
      "name": "Sugar"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 10000
   },
@@ -3082,6 +3141,7 @@
      "name": "Tea"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 7000
   },
@@ -3121,6 +3181,7 @@
      "name": "Tobacco"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 7000
   },
@@ -3160,6 +3221,7 @@
      "name": "Wine"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -3222,6 +3284,7 @@
      "name": "Steel"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "bessemer_process",
@@ -3254,6 +3317,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -3316,6 +3380,7 @@
      "name": "Steel"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -3390,6 +3455,7 @@
      "name": "Small Arms"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "bolt_action_rifles",
@@ -3451,6 +3517,16 @@
      "name": "Glass"
     }
    ],
+   "reqPms": [
+    {
+     "id": "pm_crystal_glass",
+     "name": "Crystal Glass"
+    },
+    {
+     "id": "pm_houseware_plastics",
+     "name": "Houseware Plastics"
+    }
+   ],
    "techs": [
     {
      "id": "chemical_bleaching",
@@ -3502,6 +3578,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "realism",
@@ -3575,6 +3652,7 @@
      "name": "Artillery"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "breech_loading_artillery",
@@ -3654,6 +3732,7 @@
      "name": "Explosives"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "electrical_capacitors",
@@ -3687,6 +3766,7 @@
    "netAtBase": -250,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "hydraulic_cranes",
@@ -3724,6 +3804,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -3768,6 +3849,7 @@
    "netAtBase": -750,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -3814,6 +3896,7 @@
      "name": "Meat"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -3874,6 +3957,7 @@
    "netAtBase": -850,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -3927,6 +4011,7 @@
      "name": "Groceries"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "canneries",
@@ -3985,6 +4070,7 @@
      "name": "Groceries"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "canneries",
@@ -4047,6 +4133,7 @@
      "name": "Artillery"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "artillery",
@@ -4103,6 +4190,7 @@
      "name": "Merchant Marine"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -4124,6 +4212,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -4181,6 +4270,7 @@
      "name": "Sugar"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "rotary_valve_engine",
@@ -4233,6 +4323,7 @@
      "name": "Glass"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 250
   },
@@ -4283,6 +4374,7 @@
    "netAtBase": -220,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "combustion_engine",
@@ -4349,6 +4441,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "nitrogen_fixation",
@@ -4400,6 +4493,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "nitrogen_fixation",
@@ -4450,6 +4544,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -4482,6 +4577,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -4523,6 +4619,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -4580,6 +4677,7 @@
      "name": "Electricity"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "steam_turbine",
@@ -4641,6 +4739,7 @@
      "name": "Oil"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "combustion_engine",
@@ -4701,6 +4800,7 @@
    "netAtBase": -140,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "compression_ignition",
@@ -4762,6 +4862,7 @@
      "name": "Coal"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "watertube_boiler",
@@ -4829,6 +4930,7 @@
      "name": "Gold"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "watertube_boiler",
@@ -4896,6 +4998,7 @@
      "name": "Iron"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "watertube_boiler",
@@ -4963,6 +5066,7 @@
      "name": "Lead"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "watertube_boiler",
@@ -5030,6 +5134,7 @@
      "name": "Sulfur"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "watertube_boiler",
@@ -5088,6 +5193,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -5145,6 +5251,7 @@
      "name": "Services"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "steel_frame_buildings",
@@ -5203,6 +5310,7 @@
      "name": "Clothes"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -5249,6 +5357,7 @@
      "name": "Tools"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -5305,6 +5414,7 @@
      "name": "Glass"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "crystal_glass",
@@ -5337,6 +5447,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -5364,6 +5475,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -5401,6 +5513,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -5442,6 +5555,7 @@
      "name": "Fine Art"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 200
   },
@@ -5463,6 +5577,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -5484,6 +5599,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -5521,6 +5637,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 400
   },
@@ -5558,6 +5675,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 400
   },
@@ -5585,6 +5703,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -5612,6 +5731,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -5633,6 +5753,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -5665,6 +5786,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 300
   },
@@ -5686,6 +5808,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -5707,6 +5830,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -5734,6 +5858,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 400
   },
@@ -5771,6 +5896,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -5833,6 +5959,7 @@
      "name": "Engines"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "compression_ignition",
@@ -5900,6 +6027,7 @@
      "name": "Coal"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "compression_ignition",
@@ -5967,6 +6095,7 @@
      "name": "Gold"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "compression_ignition",
@@ -6034,6 +6163,7 @@
      "name": "Iron"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "compression_ignition",
@@ -6101,6 +6231,7 @@
      "name": "Lead"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "compression_ignition",
@@ -6168,6 +6299,7 @@
      "name": "Sulfur"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "compression_ignition",
@@ -6235,6 +6367,7 @@
      "name": "Transportation"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "compression_ignition",
@@ -6279,6 +6412,7 @@
      "name": "Coffee"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 7000
   },
@@ -6375,6 +6509,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -6432,6 +6567,7 @@
      "name": "Clothes"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "lathe",
@@ -6478,6 +6614,7 @@
      "name": "Coal"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "dynamite",
@@ -6524,6 +6661,7 @@
      "name": "Gold"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "dynamite",
@@ -6570,6 +6708,7 @@
      "name": "Iron"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "dynamite",
@@ -6616,6 +6755,7 @@
      "name": "Lead"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "dynamite",
@@ -6662,6 +6802,7 @@
      "name": "Sulfur"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "dynamite",
@@ -6730,6 +6871,7 @@
      "name": "Electricity"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -6805,6 +6947,7 @@
      "name": "Groceries"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "vacuum_canning",
@@ -6876,6 +7019,16 @@
      "good": "clothes",
      "kind": "add",
      "name": "Clothes"
+    }
+   ],
+   "reqPms": [
+    {
+     "id": "pm_sewing_machines",
+     "name": "Sewing Machines"
+    },
+    {
+     "id": "pm_electric_sewing_machines",
+     "name": "Electric Sewing Machines"
     }
    ],
    "techs": [
@@ -6951,6 +7104,7 @@
      "name": "Steel"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "electric_arc_process",
@@ -7018,6 +7172,7 @@
      "name": "Engines"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "electric_railway",
@@ -7063,6 +7218,7 @@
    "netAtBase": -70,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "electrical_generation",
@@ -7120,6 +7276,7 @@
      "name": "Tobacco"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "electrical_generation",
@@ -7187,6 +7344,7 @@
      "name": "Wood"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "electrical_generation",
@@ -7266,6 +7424,7 @@
      "name": "Clothes"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "electrical_capacitors",
@@ -7317,6 +7476,7 @@
      "name": "Services"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "electrical_generation",
@@ -7384,6 +7544,7 @@
      "name": "Transportation"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "electric_railway",
@@ -7446,6 +7607,7 @@
      "name": "Transportation"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -7523,6 +7685,7 @@
      "name": "Fruit"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -7600,6 +7763,7 @@
      "name": "Coffee"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -7677,6 +7841,7 @@
      "name": "Fabric"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -7754,6 +7919,7 @@
      "name": "Dye"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -7831,6 +7997,7 @@
      "name": "Rubber"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -7908,6 +8075,7 @@
      "name": "Sugar"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -7985,6 +8153,7 @@
      "name": "Tea"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -8068,6 +8237,7 @@
      "name": "Tobacco"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -8130,6 +8300,7 @@
      "name": "Ammunition"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "dynamite",
@@ -8170,6 +8341,7 @@
      "name": "Tobacco"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "radio",
@@ -8236,6 +8408,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "improved_fertilizer",
@@ -8287,6 +8460,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "improved_fertilizer",
@@ -8332,6 +8506,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -8372,6 +8547,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -8406,6 +8582,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "centralization",
@@ -8458,6 +8635,7 @@
      "name": "Fine Art"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "film",
@@ -8514,6 +8692,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -8565,6 +8744,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 10000
   },
@@ -8616,6 +8796,7 @@
      "name": "Fish"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -8656,6 +8837,7 @@
    "netAtBase": -420,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "flash_freezing",
@@ -8701,6 +8883,7 @@
    "netAtBase": -420,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "flash_freezing",
@@ -8749,6 +8932,16 @@
      "name": "Wood"
     }
    ],
+   "reqPms": [
+    {
+     "id": "pm_saw_mills",
+     "name": "Saw Mills"
+    },
+    {
+     "id": "pm_electric_saw_mills",
+     "name": "Electric Saw Mills"
+    }
+   ],
    "techs": [],
    "totalJobs": 0
   },
@@ -8781,6 +8974,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -8827,6 +9021,7 @@
      "name": "Glass"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -8868,6 +9063,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 250
   },
@@ -8930,6 +9126,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -8971,6 +9168,7 @@
      "name": "Services"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 250
   },
@@ -8997,6 +9195,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "general_staff",
@@ -9023,6 +9222,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "general_staff",
@@ -9070,6 +9270,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -9097,6 +9298,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 200
   },
@@ -9158,6 +9360,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -9199,6 +9402,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -9226,6 +9430,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -9278,6 +9483,7 @@
      "name": "Furniture"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -9324,6 +9530,7 @@
      "name": "Clothes"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -9358,6 +9565,7 @@
      "name": "Wood"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -9407,6 +9615,7 @@
    "netAtBase": -80,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": -1000
   },
@@ -9441,6 +9650,7 @@
    "netAtBase": -160,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": -2000
   },
@@ -9482,6 +9692,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -9527,6 +9738,7 @@
      "name": "Liquor"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -9572,6 +9784,7 @@
      "name": "Liquor"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -9617,6 +9830,7 @@
      "name": "Liquor"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -9662,6 +9876,7 @@
      "name": "Liquor"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -9707,6 +9922,7 @@
      "name": "Liquor"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -9771,6 +9987,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -9792,6 +10009,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -9854,6 +10072,7 @@
      "name": "Glass"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "plastics",
@@ -9891,6 +10110,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -9953,6 +10173,7 @@
      "name": "Fertilizer"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "improved_fertilizer",
@@ -10017,6 +10238,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -10081,6 +10303,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -10149,6 +10372,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -10218,6 +10442,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -10282,6 +10507,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -10346,6 +10572,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -10392,6 +10619,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -10433,6 +10661,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -10464,6 +10693,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -10505,6 +10735,7 @@
      "name": "Fertilizer"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "intensive_agriculture",
@@ -10547,6 +10778,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "realism",
@@ -10614,6 +10846,7 @@
      "name": "Merchant Marine"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "gantry_cranes",
@@ -10660,6 +10893,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -10714,6 +10948,20 @@
      "name": "Fertilizer"
     }
    ],
+   "reqPms": [
+    {
+     "id": "pm_butchering_tools",
+     "name": "Butchering Tools"
+    },
+    {
+     "id": "pm_slaughterhouses",
+     "name": "Slaughterhouses"
+    },
+    {
+     "id": "pm_mechanized_slaughtering",
+     "name": "Mechanized Slaughterhouses"
+    }
+   ],
    "techs": [
     {
      "id": "mechanized_farming",
@@ -10751,6 +10999,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -10818,6 +11067,7 @@
    "netAtBase": -3600,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "urban_planning",
@@ -10844,6 +11094,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -10911,6 +11162,7 @@
      "name": "Transportation"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "compression_ignition",
@@ -10983,6 +11235,7 @@
      "name": "Transportation"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "electric_railway",
@@ -11050,6 +11303,7 @@
      "name": "Transportation"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "steel_railway_cars",
@@ -11123,6 +11377,7 @@
      "name": "Furniture"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "lathe",
@@ -11185,6 +11440,7 @@
      "name": "Glass"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "lathe",
@@ -11252,6 +11508,7 @@
      "name": "Explosives"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -11285,6 +11542,7 @@
      "name": "Tobacco"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -11338,6 +11596,7 @@
      "name": "Furniture"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -11400,6 +11659,7 @@
      "name": "Tools"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "vulcanization",
@@ -11446,6 +11706,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -11467,6 +11728,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -11508,6 +11770,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -11529,6 +11792,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -11586,6 +11850,7 @@
      "name": "Services"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "urban_planning",
@@ -11635,6 +11900,7 @@
      "name": "Services"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 4800
   },
@@ -11703,6 +11969,7 @@
      "name": "Automobiles"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "compression_ignition",
@@ -11736,6 +12003,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "floating_harbor",
@@ -11793,6 +12061,7 @@
      "name": "Coffee"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "mechanized_workshops",
@@ -11837,6 +12106,7 @@
    "netAtBase": -200,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "mechanized_workshops",
@@ -11899,6 +12169,7 @@
      "name": "Meat"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "mechanized_farming",
@@ -11972,6 +12243,7 @@
      "name": "Furniture"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "mechanized_workshops",
@@ -12009,6 +12281,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -12035,6 +12308,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "mobile_armor",
@@ -12070,6 +12344,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "mobile_armor",
@@ -12142,6 +12417,7 @@
      "name": "Merchant Marine"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "concrete_dockyards",
@@ -12188,6 +12464,7 @@
      "name": "Tobacco"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -12215,6 +12492,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -12272,6 +12550,7 @@
      "name": "Small Arms"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -12298,6 +12577,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "nco_training",
@@ -12333,6 +12613,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "nco_training",
@@ -12406,6 +12687,7 @@
      "name": "Fertilizer"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "nitrogen_fixation",
@@ -12452,6 +12734,7 @@
      "name": "Coal"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "nitroglycerin",
@@ -12498,6 +12781,7 @@
      "name": "Gold"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "nitroglycerin",
@@ -12544,6 +12828,7 @@
      "name": "Iron"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "nitroglycerin",
@@ -12590,6 +12875,7 @@
      "name": "Lead"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "nitroglycerin",
@@ -12636,6 +12922,7 @@
      "name": "Sulfur"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "nitroglycerin",
@@ -12662,6 +12949,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -12683,6 +12971,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -12709,6 +12998,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -12860,6 +13150,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -12905,6 +13196,7 @@
      "name": "Wood"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -12950,6 +13242,7 @@
      "name": "Wood"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -12995,6 +13288,7 @@
      "name": "Wood"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -13034,6 +13328,7 @@
      "name": "Meat"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -13079,6 +13374,7 @@
      "name": "Wood"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -13105,6 +13401,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -13126,6 +13423,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -13147,6 +13445,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -13204,6 +13503,7 @@
      "name": "Electricity"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "oil_turbine",
@@ -13248,6 +13548,7 @@
      "name": "Meat"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -13310,6 +13611,7 @@
      "name": "Steel"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "open_hearth_process",
@@ -13336,6 +13638,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -13377,6 +13680,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -13445,6 +13749,7 @@
      "name": "Paper"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "chemical_bleaching",
@@ -13513,6 +13818,7 @@
      "name": "Groceries"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "fractional_distillation",
@@ -13552,6 +13858,7 @@
      "name": "Coffee"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1500
   },
@@ -13616,6 +13923,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -13678,6 +13986,7 @@
      "name": "Ammunition"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -13706,6 +14015,7 @@
      "name": "Transportation"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -13745,6 +14055,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "dialectics",
@@ -13791,6 +14102,7 @@
      "name": "Fine Art"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "camera",
@@ -13842,6 +14154,7 @@
      "name": "Coal"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -13888,6 +14201,7 @@
      "name": "Gold"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -13934,6 +14248,7 @@
      "name": "Iron"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -13980,6 +14295,7 @@
      "name": "Lead"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -14026,6 +14342,7 @@
      "name": "Sulfur"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -14078,6 +14395,7 @@
      "name": "Groceries"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "distillation",
@@ -14117,6 +14435,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -14183,6 +14502,16 @@
      "good": "furniture",
      "kind": "add",
      "name": "Furniture"
+    }
+   ],
+   "reqPms": [
+    {
+     "id": "pm_lathe",
+     "name": "Lathes"
+    },
+    {
+     "id": "pm_mechanized_workshops",
+     "name": "Mechanized Workshops"
     }
    ],
    "techs": [
@@ -14336,6 +14665,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -14357,6 +14687,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -14378,6 +14709,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -14399,6 +14731,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -14420,6 +14753,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -14441,6 +14775,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -14462,6 +14797,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -14483,6 +14819,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -14504,6 +14841,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -14525,6 +14863,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -14576,6 +14915,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -14632,6 +14972,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -14692,6 +15033,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -14753,6 +15095,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -14809,6 +15152,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -14865,6 +15209,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -14902,6 +15247,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -14929,6 +15275,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 50
   },
@@ -14965,6 +15312,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -15016,6 +15364,7 @@
      "name": "Transportation"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "combustion_engine",
@@ -15072,6 +15421,7 @@
      "name": "Transportation"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "railways",
@@ -15114,6 +15464,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "mutual_funds",
@@ -15165,6 +15516,7 @@
      "name": "Paper"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -15212,6 +15564,7 @@
      "name": "Telephones"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "radio",
@@ -15251,6 +15604,7 @@
    "netAtBase": -240,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "electric_railway",
@@ -15290,6 +15644,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "railways",
@@ -15329,6 +15684,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "railways",
@@ -15388,6 +15744,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "railways",
@@ -15477,6 +15834,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "railways",
@@ -15534,6 +15892,7 @@
      "name": "Dye"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "art_silk",
@@ -15574,6 +15933,7 @@
      "name": "Fine Art"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "realism",
@@ -15647,6 +16007,7 @@
      "name": "Artillery"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "automatic_machine_guns",
@@ -15692,6 +16053,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "electric_railway",
@@ -15737,6 +16099,7 @@
    "netAtBase": -60,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "electric_railway",
@@ -15782,6 +16145,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "electric_railway",
@@ -15821,6 +16185,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "pasteurization",
@@ -15860,6 +16225,7 @@
    "netAtBase": -30,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "pasteurization",
@@ -15899,6 +16265,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "pasteurization",
@@ -15932,6 +16299,7 @@
    "netAtBase": -200,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -15983,6 +16351,7 @@
    "netAtBase": -760,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "breech_loading_artillery",
@@ -16062,6 +16431,7 @@
      "name": "Clippers"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "screw_frigate",
@@ -16099,6 +16469,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -16167,6 +16538,7 @@
      "name": "Small Arms"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "repeaters",
@@ -16235,6 +16607,7 @@
      "name": "Small Arms"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "rifling",
@@ -16346,6 +16719,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -16385,6 +16759,7 @@
    "netAtBase": -450,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "rotary_valve_engine",
@@ -16435,6 +16810,7 @@
    "netAtBase": -500,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "rotary_valve_engine",
@@ -16485,6 +16861,7 @@
    "netAtBase": -500,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "rotary_valve_engine",
@@ -16524,6 +16901,7 @@
    "netAtBase": -450,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "rotary_valve_engine",
@@ -16574,6 +16952,7 @@
    "netAtBase": -500,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "rotary_valve_engine",
@@ -16619,6 +16998,7 @@
    "netAtBase": -500,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "rotary_valve_engine",
@@ -16663,6 +17043,7 @@
    "netAtBase": -450,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "rotary_valve_engine",
@@ -16695,6 +17076,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 200
   },
@@ -16721,6 +17103,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -16772,6 +17155,7 @@
      "name": "Wood"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "steelworking",
@@ -16816,6 +17200,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -16848,6 +17233,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -16880,6 +17266,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -16913,6 +17300,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -16946,6 +17334,7 @@
      "name": "Fish"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -16979,6 +17368,7 @@
      "name": "Fruit"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -17012,6 +17402,7 @@
      "name": "Meat"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -17045,6 +17436,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -17113,6 +17505,7 @@
      "name": "Clothes"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "mechanized_workshops",
@@ -17146,6 +17539,7 @@
      "name": "Fabric"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -17200,6 +17594,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -17239,6 +17634,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 10000
   },
@@ -17278,6 +17674,7 @@
      "name": "Fish"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -17317,6 +17714,7 @@
      "name": "Wood"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -17344,6 +17742,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -17376,6 +17775,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -17421,6 +17821,7 @@
      "name": "Meat"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -17472,6 +17873,7 @@
      "name": "Meat"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "mechanical_tools",
@@ -17505,6 +17907,7 @@
    "netAtBase": -150,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -17567,6 +17970,7 @@
      "name": "Artillery"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "shell_gun",
@@ -17633,6 +18037,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "intensive_agriculture",
@@ -17684,6 +18089,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "intensive_agriculture",
@@ -17721,6 +18127,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -17742,6 +18149,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -17798,6 +18206,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -17819,6 +18228,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -17853,6 +18263,7 @@
    "netAtBase": -600,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "central_archives",
@@ -17895,6 +18306,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 200
   },
@@ -17927,6 +18339,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 200
   },
@@ -17954,6 +18367,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -18000,6 +18414,7 @@
      "name": "Coal"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "steam_donkey",
@@ -18050,6 +18465,7 @@
    "netAtBase": -180,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "steam_donkey",
@@ -18115,6 +18531,7 @@
    "netAtBase": -180,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "steam_donkey",
@@ -18176,6 +18593,7 @@
      "name": "Engines"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -18233,6 +18651,7 @@
      "name": "Transportation"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "steel_railway_cars",
@@ -18300,6 +18719,7 @@
      "name": "Fish"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "gantry_cranes",
@@ -18367,6 +18787,7 @@
      "name": "Oil"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -18419,6 +18840,7 @@
      "name": "Sugar"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "fractional_distillation",
@@ -18479,6 +18901,7 @@
    "netAtBase": -110,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "threshing_machine",
@@ -18524,6 +18947,7 @@
    "netAtBase": -220,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "threshing_machine",
@@ -18597,6 +19021,7 @@
      "name": "Meat"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "gantry_cranes",
@@ -18670,6 +19095,7 @@
      "name": "Steamers"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "gantry_cranes",
@@ -18716,6 +19142,7 @@
      "name": "Transportation"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "steel_railway_cars",
@@ -18783,6 +19210,7 @@
      "name": "Tools"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "mechanical_tools",
@@ -18855,6 +19283,7 @@
    "netAtBase": -5400,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "steel_frame_buildings",
@@ -18899,6 +19328,7 @@
      "name": "Grain"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "fractional_distillation",
@@ -18961,6 +19391,7 @@
      "name": "Paper"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "mechanical_tools",
@@ -19023,6 +19454,7 @@
      "name": "Groceries"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "distillation",
@@ -19090,6 +19522,7 @@
      "name": "Dye"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -19117,6 +19550,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -19164,6 +19598,7 @@
      "name": "Automobiles"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "mobile_armor",
@@ -19203,6 +19638,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "steel_railway_cars",
@@ -19282,6 +19718,7 @@
      "name": "Telephones"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -19322,6 +19759,7 @@
    "netAtBase": -950,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "central_planning",
@@ -19382,6 +19820,7 @@
    "netAtBase": -120,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "mechanized_farming",
@@ -19419,6 +19858,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -19463,6 +19903,7 @@
    "netAtBase": -750,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -19498,6 +19939,7 @@
      "name": "Fine Art"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -19519,6 +19961,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -19565,6 +20008,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -19591,6 +20035,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "wargaming",
@@ -19626,6 +20071,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "wargaming",
@@ -19652,6 +20098,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -19683,6 +20130,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -19751,6 +20199,7 @@
      "name": "Explosives"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "dynamite",
@@ -19826,6 +20275,7 @@
      "name": "Groceries"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "vacuum_canning",
@@ -19872,6 +20322,7 @@
      "name": "Sugar"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "watertube_boiler",
@@ -19909,6 +20360,7 @@
     }
    ],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -19950,6 +20402,7 @@
      "name": "Fruit"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -19991,6 +20444,7 @@
      "name": "Coffee"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -20032,6 +20486,7 @@
      "name": "Fabric"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -20073,6 +20528,7 @@
      "name": "Dye"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -20114,6 +20570,7 @@
      "name": "Rubber"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -20155,6 +20612,7 @@
      "name": "Sugar"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -20196,6 +20654,7 @@
      "name": "Tea"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 0
   },
@@ -20241,6 +20700,7 @@
    "netAtBase": -350,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "watertube_boiler",
@@ -20291,6 +20751,7 @@
    "netAtBase": -350,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "watertube_boiler",
@@ -20341,6 +20802,7 @@
    "netAtBase": -350,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "watertube_boiler",
@@ -20386,6 +20848,7 @@
    "netAtBase": -350,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "watertube_boiler",
@@ -20430,6 +20893,7 @@
    "netAtBase": -300,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [
     {
      "id": "watertube_boiler",
@@ -20486,6 +20950,7 @@
      "name": "Coffee"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "mechanical_tools",
@@ -20548,6 +21013,7 @@
      "name": "Coffee"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "mechanized_workshops",
@@ -20610,6 +21076,7 @@
      "name": "Meat"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -20637,6 +21104,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 500
   },
@@ -20687,6 +21155,7 @@
    "netAtBase": -2000,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 1000
   },
@@ -20728,6 +21197,7 @@
      "name": "Transportation"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -20790,6 +21260,7 @@
      "name": "Clippers"
     }
    ],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 5000
   },
@@ -20832,6 +21303,7 @@
    "netAtBase": 0,
    "other": [],
    "outputs": [],
+   "reqPms": [],
    "techs": [],
    "totalJobs": 100
   },
@@ -20889,6 +21361,7 @@
      "name": "Tools"
     }
    ],
+   "reqPms": [],
    "techs": [
     {
      "id": "steelworking",

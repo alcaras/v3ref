@@ -1,12 +1,15 @@
 ---
-// Shared market-price state and the save-file price importer for the profit
-// tools. Render <PriceRail /> once per page, and <PriceImport /> markup where
-// the control belongs.
+// Shared market-price state, the save-file importer, and the save context both
+// profit tools read. Render <PriceRail /> once per page, in the rail.
+//
+// A save is read once and kept in localStorage, so loading it on Building
+// Profit also lights up Compare Buildings (and the other way round) without
+// picking the file again.
 ---
 <div class="imp">
   <input type="file" id="imp-file" accept=".v3,.txt,.json" hidden />
   <button type="button" class="imp__btn" id="imp-open">&#8681; Load prices from a save</button>
-  <select id="imp-market" class="imp__sel" hidden></select>
+  <select id="imp-country" class="imp__sel" hidden></select>
   <p class="imp__note" id="imp-note">
     Melt your save at <a href="https://pdx.tools/" target="_blank" rel="noopener">pdx.tools</a>,
     then pick the melted file. It is read on your machine — nothing is uploaded.
@@ -14,88 +17,23 @@
 </div>
 
 <script is:inline>
-  (() => {
-    const $ = (id) => document.getElementById(id);
-    const note = $('imp-note'), sel = $('imp-market');
-    let parsed = null;
-
-    const say = (html, cls = '') => { note.innerHTML = html; note.className = `imp__note ${cls}`; };
-
-    function applyMarket(id) {
-      const goods = window.v3ImportGoods;   // the page supplies its goods table
-      if (!goods || !parsed) return;
-      const { offsets, matched } = window.v3SaveImport.toOffsets(parsed.markets[id], goods);
-      window.v3Prices.setAll(offsets);
-      window.v3Prices.source = `${parsed.label[id] ?? `market ${id}`} · ${parsed.date ?? 'save'}`;
-      say(`Loaded <b>${matched}</b> prices from <b>${parsed.label[id] ?? `market ${id}`}</b>.`, 'is-good');
-      document.dispatchEvent(new CustomEvent('v3prices-changed'));
-    }
-
-    $('imp-open').addEventListener('click', () => $('imp-file').click());
-    $('imp-file').addEventListener('change', async (e) => {
-      const file = e.target.files?.[0];
-      if (!file) return;
-      const pre = await window.v3SaveImport.check(file);
-      if (!pre.ok) {
-        say('That is still a packed save (its gamestate is binary). Melt it at '
-          + '<a href="https://pdx.tools/" target="_blank" rel="noopener">pdx.tools</a> '
-          + 'and choose the melted file.', 'is-bad');
-        return;
-      }
-      say(`Reading ${(file.size / 1048576).toFixed(0)} MB…`);
-      try {
-        const res = await window.v3SaveImport.parse(file, (p) =>
-          say(`Reading ${(file.size / 1048576).toFixed(0)} MB… ${Math.round(p * 100)}%`));
-        const ids = Object.keys(res.markets);
-        if (!ids.length) { say('No price data found in that file.', 'is-bad'); return; }
-
-        // Label each market by the countries trading in it, and find the one
-        // belonging to the country this save was played as.
-        const byMarket = {};
-        for (const [tag, m] of Object.entries(res.tagMarket)) (byMarket[m] ??= []).push(tag);
-        res.label = {};
-        for (const id of ids) {
-          const tags = (byMarket[id] ?? []).slice(0, 3).join(', ');
-          res.label[id] = tags ? `${tags}${(byMarket[id] || []).length > 3 ? '…' : ''}` : `market ${id}`;
-        }
-        parsed = res;
-
-        sel.hidden = ids.length < 2;
-        sel.innerHTML = ids
-          .map((id) => `<option value="${id}">${res.label[id]}</option>`).join('');
-        // Default to the played country's own market where we can identify it.
-        const playerTag = Object.keys(res.tagMarket).find(
-          (t) => res.player && (window.v3CountryName?.[t] === res.player));
-        const want = playerTag ? String(res.tagMarket[playerTag]) : ids[0];
-        sel.value = ids.includes(want) ? want : ids[0];
-        applyMarket(sel.value);
-        if (res.player) {
-          note.innerHTML += ` Save played as <b>${res.player}</b>.`;
-        }
-      } catch (err) {
-        say(`Could not read that file: ${err.message}`, 'is-bad');
-      }
-    });
-
-    sel.addEventListener('change', () => applyMarket(sel.value));
-  })();
-</script>
-
-<script is:inline>
   window.v3Prices = (() => {
     const KEY = 'v3ref-market-prices';
     let offsets = {};
     try { offsets = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch {}
+    const store = () => { try { localStorage.setItem(KEY, JSON.stringify(offsets)); } catch {} };
     return {
       offsets,
       get(g) { return offsets[g] ?? 0; },
       set(g, pct) {
         if (pct === 0) delete offsets[g]; else offsets[g] = pct;
-        try { localStorage.setItem(KEY, JSON.stringify(offsets)); } catch {}
+        store();
+        window.v3Save?.markEdited();   // the rail note stops claiming these are the save's
       },
       reset() {
         offsets = {};
         try { localStorage.removeItem(KEY); } catch {}
+        window.v3Save?.markEdited();
       },
       /** Price of a good at the current market. */
       of(goods, g) { return (goods[g]?.cost ?? 0) * (1 + this.get(g) / 100); },
@@ -105,66 +43,178 @@
       setAll(next) {
         offsets = {};
         for (const [g, pct] of Object.entries(next)) if (pct !== 0) offsets[g] = pct;
-        try { localStorage.setItem(KEY, JSON.stringify(offsets)); } catch {}
+        store();
       },
-      source: null,   // human-readable note about where these prices came from
     };
   })();
 
-  // ── Import prices from a melted save ────────────────────────────────
+  // ── Reading a melted save ───────────────────────────────────────────
   //
   // A .v3 save is a ZIP whose gamestate is PDX BINARY, which cannot be read
   // here — melt it at pdx.tools first, then drop the plaintext file in. Nothing
   // is uploaded: the file is read locally with the File API.
   //
-  // Where the prices live, verified against a real 1876 save:
-  //   meta_data.name                     the country you played
-  //   country_manager…definition="TAG"   with market=N  → tag to market
-  //   <market id>={ … previous_price_report={ goods={ N={ value=X } } } }
+  // Verified against real saves. What we take, and where it sits:
+  //   meta_data              name= (country saved as), game_date=, version=
+  //   country_manager…<id>   definition="TAG", market=N, and the market's
+  //                          previous_price_report — the report lives in the
+  //                          market capital's own country block, NOT in
+  //                          market_manager, so it must be attributed through
+  //                          that country's market= or it labels the wrong market
+  //   states…<id>            country=<id>, which is how a building finds its owner
+  //   building_manager…<id>  building=, levels=, state=, production_methods={…}
+  //   technology…<id>        country=, acquired_technologies={…}
+  //   laws…<id>              law=, country=, active=yes
+  //   player_manager…<id>    user=, country= — every seat in a multiplayer save,
+  //                          so you can audit the country YOU played
   // Goods are identified by their POSITION in common/goods, not by name, which
   // is why the site data carries a file-order index for each good.
   window.v3SaveImport = (function () {
-    const CHUNK = 4 << 20;       // market key sits ~10KB before its report and
-    const OVERLAP = 256 << 10;   // a report is ~4.6KB, so this never splits one
+    const CHUNK = 4 << 20;       // a price report is ~4.6KB and a building entry
+    const OVERLAP = 256 << 10;   // a few KB, so this window never loses one
+
+    // One ordered pass. Every field we want sits at a known depth, and the
+    // top-level section name says which database we are inside, so an entry is
+    // typed by where it came from rather than guessed at from its fields.
+    const RE = new RegExp([
+      '\\n([a-z_]+)=\\{',                                 // 1  section
+      '\\n\\t\\t(\\d+)=\\{',                              // 2  entry id
+      '\\n\\t\\t\\tis_main_tag=yes',                      //    main-tag flag
+      '\\n\\t\\t\\tdefinition="([A-Z0-9]{3})"',           // 3  country tag
+      '\\n\\t\\t\\tmarket=(\\d+)',                        // 4  its market
+      '\\n\\t\\t\\tbuilding="([a-z0-9_]+)"',              // 5  building type
+      '\\n\\t\\t\\tlevels=(\\d+)',                        // 6  levels
+      '\\n\\t\\t\\tstate=(\\d+)',                         // 7  state it sits in
+      '\\n\\t\\t\\tproduction_methods=\\{([^}]*)\\}',     // 8  methods in use
+      '\\n\\t\\t\\tcountry=(\\d+)',                       // 9  owner
+      '\\n\\t\\t\\tlaw="([a-z0-9_]+)"',                   // 10 law
+      '\\n\\t\\t\\tactive=yes',                           //    enacted flag
+      '\\n\\t\\t\\tacquired_technologies=\\{([^}]*)\\}',  // 11 researched
+      '\\n\\t\\t\\tuser="([^"]*)"',                       // 12 player seat
+      'previous_price_report=',                           //    prices follow
+    ].join('|'), 'g');
+
+    const words = (s) => (s.match(/"([^"]+)"/g) || []).map((w) => w.slice(1, -1));
+
+    // Scan one window. Never flushes the entry left open at the end: it may be
+    // cut in half, and the next window's overlap presents it again whole.
+    function scan(text, S) {
+      let cur = null;
+      const flush = () => {
+        if (!cur) return;
+        const sec = S.sec;
+        if (sec === 'building_manager') {
+          if (cur.building && cur.pms && !S.seen.has(cur.id)) {
+            S.seen.add(cur.id);
+            S.builds.push({ b: cur.building, lv: cur.levels ?? 1, st: cur.state, pms: cur.pms });
+          }
+        } else if (sec === 'states') {
+          if (cur.country != null) S.stateCountry[cur.id] = cur.country;
+        } else if (sec === 'country_manager') {
+          if (cur.tag && (!S.country[cur.id] || cur.main)) {
+            S.country[cur.id] = { tag: cur.tag, market: cur.market };
+          }
+        } else if (sec === 'technology') {
+          if (cur.techs && cur.country != null) S.techs[cur.country] = cur.techs;
+        } else if (sec === 'laws') {
+          if (cur.law && cur.active && cur.country != null) (S.laws[cur.country] ??= []).push(cur.law);
+        } else if (sec === 'player_manager') {
+          if (cur.country != null && !S.seats.some((p) => p.country === cur.country && p.user === cur.user)) {
+            S.seats.push({ user: cur.user ?? '', country: cur.country });
+          }
+        }
+        cur = null;
+      };
+
+      for (const m of text.matchAll(RE)) {
+        if (m[1] !== undefined) { flush(); S.sec = m[1]; continue; }
+        if (m[2] !== undefined) { flush(); cur = { id: Number(m[2]) }; continue; }
+        if (m[0].startsWith('\n\t\t\tis_main_tag')) { if (cur) cur.main = true; continue; }
+        if (m[0].startsWith('\n\t\t\tactive=')) { if (cur) cur.active = true; continue; }
+        if (m[0] === 'previous_price_report=') {
+          if (S.sec !== 'country_manager' || !cur) continue;
+          const blk = text.slice(m.index, m.index + 8000);
+          const vals = {};
+          for (const v of blk.matchAll(/\n\t+(\d+)=\{\s*\n\t+value=([\d.]+)/g)) vals[Number(v[1])] = Number(v[2]);
+          // Only a complete report; a short one straddled the window edge and
+          // the overlap will present it again intact.
+          if (Object.keys(vals).length >= 20) S.priceOwner[cur.id] = vals;
+          continue;
+        }
+        if (!cur) continue;
+        if (m[3] !== undefined) cur.tag = m[3];
+        else if (m[4] !== undefined) cur.market = Number(m[4]);
+        else if (m[5] !== undefined) cur.building = m[5];
+        else if (m[6] !== undefined) cur.levels ??= Number(m[6]);
+        else if (m[7] !== undefined) cur.state ??= Number(m[7]);
+        else if (m[8] !== undefined) cur.pms = words(m[8]);
+        else if (m[9] !== undefined) cur.country ??= Number(m[9]);
+        else if (m[10] !== undefined) cur.law = m[10];
+        else if (m[11] !== undefined) cur.techs = words(m[11]);
+        else if (m[12] !== undefined) cur.user = m[12];
+      }
+    }
 
     async function parse(file, onProgress) {
       const dec = new TextDecoder('latin1');   // byte-for-char; the syntax is ASCII
-      let carry = '';
-      let lastKey = null;
-      let player = null;
-      const tagMarket = {};
-      const markets = {};        // market id -> { goodIndex: price }
+      const S = {
+        sec: null, country: {}, stateCountry: {}, priceOwner: {}, seats: [],
+        techs: {}, laws: {}, seen: new Set(), builds: [],
+      };
+      let carry = '', meta = {};
 
       for (let start = 0; start < file.size; start += CHUNK) {
         const buf = await file.slice(start, Math.min(start + CHUNK, file.size)).arrayBuffer();
         const text = carry + dec.decode(buf);
-
-        if (player === null) {
-          const m = /meta_data=\{[\s\S]{0,400}?name="([^"]+)"/.exec(text);
-          if (m) player = m[1];
+        if (meta.player === undefined) {
+          meta = {
+            player: (/meta_data=\{[\s\S]{0,600}?name="([^"]+)"/.exec(text) || [])[1] ?? null,
+            date: (/\bgame_date=(\d+\.\d+\.\d+)/.exec(text) || [])[1] ?? null,
+            version: (/\bversion="([^"]+)"/.exec(text) || [])[1] ?? null,
+          };
         }
-        for (const m of text.matchAll(/definition="([A-Z0-9]{3})"[\s\S]{0,400}?\bmarket=(\d+)/g)) {
-          tagMarket[m[1]] = Number(m[2]);
-        }
-        // One pass, in order, so each report is attributed to the database key
-        // that opened its market block.
-        for (const m of text.matchAll(/\n\t\t(\d+)=\{|previous_price_report=/g)) {
-          if (m[1] !== undefined) { lastKey = Number(m[1]); continue; }
-          if (lastKey === null) continue;
-          const blk = text.slice(m.index, m.index + 8000);
-          const vals = {};
-          for (const v of blk.matchAll(/\n\t+(\d+)=\{\s*\n\t+value=([\d.]+)/g)) {
-            vals[Number(v[1])] = Number(v[2]);
-          }
-          // Only trust a complete report; a truncated one means it straddled the
-          // chunk edge and the overlap will present it again intact.
-          if (Object.keys(vals).length >= 20) markets[lastKey] = vals;
-        }
-
+        scan(text, S);
         carry = text.slice(-OVERLAP);
         onProgress?.(Math.min(1, (start + CHUNK) / file.size));
       }
-      return { player, tagMarket, markets };
+
+      // Fold into what the pages keep: prices per market, and one row per
+      // building type and method set for each country somebody played.
+      const markets = {}, members = {};
+      for (const [id, c] of Object.entries(S.country)) {
+        if (c.market == null) continue;
+        (members[c.market] ??= []).push(c.tag);
+        if (S.priceOwner[id]) markets[c.market] = S.priceOwner[id];
+      }
+      const sets = {};
+      for (const b of S.builds) {
+        const c = S.stateCountry[b.st];
+        if (c == null) continue;
+        const k = `${c} ${b.b} ${b.pms.join(' ')}`;
+        const row = (sets[k] ??= { c, b: b.b, pms: b.pms, lv: 0, n: 0 });
+        row.lv += b.lv; row.n++;
+      }
+      const wanted = new Set();
+      for (const p of S.seats) if (S.country[p.country]) wanted.add(p.country);
+      // A single-player save still has one seat; if the section were missing,
+      // fall back to every country that owns buildings.
+      if (!wanted.size) for (const r of Object.values(sets)) wanted.add(r.c);
+
+      const countries = {};
+      for (const id of wanted) {
+        const c = S.country[id];
+        if (!c) continue;
+        countries[id] = {
+          tag: c.tag, market: c.market ?? null,
+          techs: S.techs[id] ?? [], laws: S.laws[id] ?? [],
+          buildings: Object.values(sets).filter((r) => r.c === id)
+            .map((r) => ({ b: r.b, pms: r.pms, lv: r.lv, n: r.n })),
+        };
+      }
+      return {
+        ...meta, markets, members, countries,
+        seats: S.seats.filter((p) => countries[p.country]),
+      };
     }
 
     return {
@@ -183,7 +233,7 @@
         for (const [id, g] of Object.entries(goods)) if (g.index != null) byIndex[g.index] = { id, cost: g.cost };
         const offsets = {};
         let matched = 0;
-        for (const [idx, price] of Object.entries(prices)) {
+        for (const [idx, price] of Object.entries(prices || {})) {
           const g = byIndex[Number(idx)];
           if (!g || !g.cost) continue;
           matched++;
@@ -192,6 +242,151 @@
         return { offsets, matched };
       },
     };
+  })();
+
+  // ── The loaded save, shared by every page ───────────────────────────
+  // Kept in localStorage so the file is read once, not once per tool.
+  window.v3Save = (() => {
+    const KEY = 'v3ref-save';
+    let held = null;
+    try { held = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch {}
+
+    const api = {
+      get snap() { return held?.snap ?? null; },
+      get countryId() { return held?.countryId ?? null; },
+      get edited() { return held?.edited === true; },
+      /** The country whose buildings, techs and laws the tools should use. */
+      country() { return held?.snap?.countries?.[held.countryId] ?? null; },
+      /** Who trades in a market, for naming it. */
+      members(mid) { return held?.snap?.members?.[mid] ?? []; },
+      seatFor(id) { return (held?.snap?.seats ?? []).filter((p) => String(p.country) === String(id)); },
+
+      store() {
+        try { localStorage.setItem(KEY, JSON.stringify(held)); }
+        catch { /* over quota: the save still works for this tab */ }
+      },
+      adopt(snap, countryId) {
+        held = { snap, countryId: String(countryId), edited: false };
+        api.store();
+      },
+      markEdited() {
+        if (!held || held.edited) return;
+        held.edited = true;
+        api.store();
+        document.dispatchEvent(new CustomEvent('v3save-edited'));
+      },
+      clear() {
+        held = null;
+        try { localStorage.removeItem(KEY); } catch {}
+        document.dispatchEvent(new CustomEvent('v3save-changed'));
+      },
+      /** Point the tools at one country: its market sets the prices. */
+      select(countryId, goods) {
+        if (!held?.snap) return 0;
+        held.countryId = String(countryId);
+        held.edited = false;
+        const c = api.country();
+        let matched = 0;
+        if (c && goods) {
+          const res = window.v3SaveImport.toOffsets(held.snap.markets[c.market], goods);
+          matched = res.matched;
+          window.v3Prices.setAll(res.offsets);
+        }
+        api.store();
+        document.dispatchEvent(new CustomEvent('v3save-changed'));
+        document.dispatchEvent(new CustomEvent('v3prices-changed'));
+        return matched;
+      },
+    };
+    return api;
+  })();
+</script>
+
+<script is:inline>
+  (() => {
+    const $ = (id) => document.getElementById(id);
+    const note = $('imp-note'), sel = $('imp-country'), open = $('imp-open');
+    const say = (html, cls = '') => { note.innerHTML = html; note.className = `imp__note ${cls}`; };
+    const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+    const nameOf = (tag) => window.v3CountryName?.[tag] ?? tag;
+
+    // The rail is drawn twice: once now, so a restored save is visible before
+    // the page's data arrives, and again on v3data-ready, when country names
+    // exist and the labels can be complete.
+    function renderRail() {
+      const S = window.v3Save, snap = S.snap;
+      if (!snap) { sel.hidden = true; return; }
+      const seats = snap.seats ?? [];
+      const ids = Object.keys(snap.countries);
+      sel.hidden = ids.length < 2;
+      sel.innerHTML = ids.map((id) => {
+        const c = snap.countries[id];
+        const users = S.seatFor(id).map((p) => p.user).filter(Boolean).join(', ');
+        return `<option value="${id}">${esc(nameOf(c.tag))}${users ? ` — ${esc(users)}` : ''}</option>`;
+      }).join('');
+      sel.value = S.countryId ?? ids[0];
+
+      const c = S.country();
+      if (!c) { say('That save has no country we can read buildings for.', 'is-bad'); return; }
+      const mkt = S.members(c.market).slice(0, 3).join(', ');
+      const goods = Object.keys(snap.markets[c.market] ?? {}).length;
+      open.textContent = '⇩ Load a different save';
+      say(
+        `<b>${esc(nameOf(c.tag))}</b>${snap.date ? ` · ${esc(snap.date)}` : ''}`
+        + `${snap.version ? ` · v${esc(snap.version)}` : ''}<br />`
+        + `${goods} prices from the <b>${esc(mkt || c.tag)}</b> market`
+        + `${seats.length > 1 ? ` · ${seats.length} seats in this save` : ''}`
+        + `${S.edited ? ' · <i>prices edited since</i>' : ''}`
+        + ` · <button type="button" class="rail__btn" id="imp-forget">forget</button>`,
+        S.edited ? '' : 'is-good');
+      $('imp-forget')?.addEventListener('click', () => {
+        window.v3Save.clear();
+        open.textContent = '⇩ Load prices from a save';
+        sel.hidden = true;
+        say('Save forgotten. Prices left as they are.');
+      });
+    }
+
+    open.addEventListener('click', () => $('imp-file').click());
+
+    $('imp-file').addEventListener('change', async (e) => {
+      const file = e.target.files?.[0];
+      if (!file) return;
+      e.target.value = '';   // so picking the same file again re-reads it
+      const pre = await window.v3SaveImport.check(file);
+      if (!pre.ok) {
+        say('That is still a packed save (its gamestate is binary). Melt it at '
+          + '<a href="https://pdx.tools/" target="_blank" rel="noopener">pdx.tools</a> '
+          + 'and choose the melted file.', 'is-bad');
+        return;
+      }
+      const mb = (file.size / 1048576).toFixed(0);
+      say(`Reading ${mb} MB…`);
+      try {
+        const snap = await window.v3SaveImport.parse(file, (p) =>
+          say(`Reading ${mb} MB… ${Math.round(p * 100)}%`));
+        const ids = Object.keys(snap.countries);
+        if (!ids.length) { say('No country data found in that file.', 'is-bad'); return; }
+
+        // Default to the country the save was stored as; in a multiplayer save
+        // that is whoever saved it, so the picker is how you get to your own.
+        const mine = ids.find((id) => nameOf(snap.countries[id].tag) === snap.player) ?? ids[0];
+        window.v3Save.adopt(snap, mine);
+        window.v3Save.select(mine, window.v3ImportGoods);
+        renderRail();
+      } catch (err) {
+        say(`Could not read that file: ${err.message}`, 'is-bad');
+      }
+    });
+
+    sel.addEventListener('change', () => {
+      window.v3Save.select(sel.value, window.v3ImportGoods);
+      renderRail();
+    });
+
+    document.addEventListener('v3data-ready', renderRail);
+    document.addEventListener('v3save-edited', renderRail);
+    renderRail();
   })();
 </script>
 
@@ -249,6 +444,7 @@
   .imp__btn:hover { color: var(--gold); border-color: var(--gold-deep); }
   .imp__note { font-size: 0.66rem; color: var(--text-faint); line-height: 1.45; }
   .imp__note a { color: var(--gold-soft); }
+  .imp__note b { color: var(--text-soft); }
   .imp__note.is-bad { color: var(--tone-bad); }
   .imp__note.is-good { color: var(--tone-good); }
   .imp__sel {
