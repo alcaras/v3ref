@@ -141,55 +141,127 @@ Labels stack: mountain is `elevated` + `hazardous`; desert is `flat` +
 
 `battle_combat_width_mult` and `battle_total_combat_width_mult` modify it.
 
-**[unknown]** the exact arithmetic turning `combat_width` into the advantage
-cap.
+Recovered in §5.2: the cap applies to the *numeric* advantage only, as
+`min(excess, 1) * combat_width`.
 
-## 5. Rounds, morale and casualties
+## 5. The round [exe]
 
-Structure [script, `concept_battle_desc` / `concept_morale_desc` /
-`concept_casualties_desc`]:
+Recovered from `battle.cpp UpdateTickSerialPre` @ `0x140de97c0` and the four
+casualty functions next to it. Structure and arithmetic are exact; the binding
+of which side supplies which argument is read off the call site and is the one
+part of this section worth re-checking.
 
-- A battle runs in **rounds**. Each round some remaining manpower becomes
-  **demoralized** for the rest of the battle and can no longer act.
-- Morale is *the fraction of remaining manpower still able to fight*, not a
-  separate pool.
-- Casualties split into dead and wounded by the unit's **recovery rate**
-  against the enemy's **kill rate**.
-- The side that runs out of manpower, or hits a low-morale threshold, withdraws.
-- Morale recovers after battle at `BASE_MORALE_RECOVERED_PER_DAY = 0.03`,
-  scaled by formation supply.
+### 5.1 Lethality — a fresh uniform draw every round
 
-Constants [script, `NMilitary` / `NBattle`]:
+battle.cpp:986, `0x140de97c0`:
 
 ```
-BATTLE_LETHALITY_MIN/MAX                    0.001 / 0.005
-BATTLE_RAW_MANPOWER_INFLICTED_CASUALTY_RATIO  0.5   # casualties from numbers alone
-BATTLE_COMBAT_EFFICIENCY_INFLICTED_CASUALTY_RATIO 1.5 # casualties from offense/defense
-BATTLE_MAX_CASUALTY_DISADVANTAGE_PENALTY    1.0
-MAX_CE_ADVANTAGE                            1
-MIN_MANPOWER_CASUALTY_PER_ROUND             5
-MIN_USABLE_MANPOWER                         100
-CASUALTY_ROLL_MIN / MAX                     50 / 200
-SURVIVAL_RATE                               0.66
-ESCAPE_PROGRESS_REQUIRED_MIN                10.0
-ESCAPE_PROGRESS_REQUIRED_PER_MANPOWER       0.001
-ESCAPE_PROGRESS_GAIN_BASE                   1.0
-ESCAPE_PROGRESS_GAIN_RANDOM_FACTOR          2.5
+lethality = LETHALITY_MIN + rand01 * (LETHALITY_MAX - LETHALITY_MIN)
 ```
 
-Paradox's comments are explicit that the two casualty ratios are the balance
-knob: raising the raw-manpower one "makes CE less important and battles more
-lethal".
+So lethality is uniform in **[0.001, 0.005]** per round. It is *not* derived
+from terrain; terrain `risk` must act elsewhere.
 
-`DistributeCasualtiesAmongstUnits` (battle_casualties.cpp:370–376) [exe,
-`0x14118aae0`] rolls twice per call and clamps each roll to the remaining
-amount on each side — consistent with `CASUALTY_ROLL_MIN/MAX` being a per-unit
-chunking of an already-decided total.
+### 5.2 Numeric advantage, and what combat width actually caps
 
-**[unknown]** the equation producing that total per round, the round duration,
-and how morale loss scales per round. These set absolute casualties and battle
-length; they do not change which composition wins, because composition enters
-only through the mean of §2.
+`FUN_140dec9f0` @ `0x140dec9f0`:
+
+```
+excess = max(ourManpower / theirManpower - 1, 0)      // 0 when not ahead
+```
+
+`FUN_140decaf0` @ `0x140decaf0`:
+
+```
+advantage = min(excess, MAX_CE_ADVANTAGE) * W + uniform(-W, +W)
+```
+
+where `W` is the battle's combat width and `MAX_CE_ADVANTAGE = 1`.
+
+This is exactly Paradox's comment on the terrain field: capping `excess` at 1
+means at most a 2:1 numbers edge counts, and scaling by `W = 0.8` yields "up to
+80% more of an advantage". Note the jitter term is **±W**, so on wide terrain
+the round-to-round randomness is as large as the whole advantage.
+
+### 5.3 Casualties — two halves of identical shape
+
+`FUN_140decc00` @ `0x140decc00` (raw manpower) and `FUN_140decd80` @
+`0x140decd80` (combat efficiency) reduce to the same expression:
+
+```
+casualties = (powerRatio + advantage) * lethality * targetUnits * RATIO / 1e5
+```
+
+| half | powerRatio | RATIO |
+|---|---|---|
+| raw manpower | manpower ratio | `BATTLE_RAW_MANPOWER_INFLICTED_CASUALTY_RATIO` = 0.5 |
+| combat efficiency | `(ourUnits * ourCE) / (theirUnits * theirCE)` | `BATTLE_COMBAT_EFFICIENCY_INFLICTED_CASUALTY_RATIO` = 1.5 |
+
+`CE` here is the **mean** of §2. Both halves return 0 when the target has fewer
+than 1 unit, and each is floored at `MIN_MANPOWER_CASUALTY_PER_ROUND = 5`
+(`0x1458ff4a8`). The round then sums them and caps at the manpower actually
+available:
+
+```
+total = min(rawHalf + ceHalf, availableManpower)
+```
+
+Because the CE half carries 1.5 against the raw half's 0.5, **quality is
+weighted 3:1 against numbers** before the width cap is applied — and the width
+cap only limits the *bonus* term, never the CE ratio itself.
+
+### 5.4 Dead versus wounded
+
+`FUN_140ded0d0` @ `0x140ded0d0`:
+
+```
+deadFraction = clamp(killRateModifier - recoveryRateModifier, 0, 1)
+```
+
+matching `concept_casualties_desc` [script]: the split "is dependent on the
+unit's recovery rate compared to their enemy's kill rate". This is why
+artillery (`unit_kill_rate_add` +0.10 … +0.30) makes battles bloody rather than
+decisive, and why field hospitals (`unit_recovery_rate_add` +0.40) cancel a lot
+of it.
+
+`DistributeCasualtiesAmongstUnits` (battle_casualties.cpp:370-376) @
+`0x14118aae0` then chunks the decided total across units, rolling
+`CASUALTY_ROLL_MIN/MAX` (50-200) per unit and clamping to what remains.
+
+### 5.5 Constants, and where they live
+
+| define | value | storage |
+|---|---|---|
+| BATTLE_LETHALITY_MIN | 0.001 | `0x1458ff4e0` |
+| BATTLE_LETHALITY_MAX | 0.005 | `0x1458ff4d8` |
+| BATTLE_RAW_MANPOWER_INFLICTED_CASUALTY_RATIO | 0.5 | `0x1458ff4d0` |
+| BATTLE_COMBAT_EFFICIENCY_INFLICTED_CASUALTY_RATIO | 1.5 | `0x1458ff4f8` |
+| MAX_CE_ADVANTAGE | 1 | `0x1458ff4e8` |
+| MIN_MANPOWER_CASUALTY_PER_ROUND | 5 | `0x1458ff4a8` |
+| MIN_USABLE_MANPOWER | 100 | `0x1458ff49c` |
+| MIN_OFFENSE_DEFENSE | 1 | `0x1458ff3d0` |
+| SURVIVAL_RATE | 0.66 | `0x1458fe118` |
+
+Storage addresses come from the registration call
+`FUN_140bd9a10(_, "NMilitary", "<DEFINE>", &storage)`; finding the readers of
+those addresses is how each formula above was located.
+
+### 5.6 Still open
+
+- **[unknown]** morale loss per round. `unit_morale_loss_add` runs 15 on
+  irregulars down to 4 on mechanized, and morale is the fraction of manpower
+  still able to act, but the per-round conversion is not yet traced.
+- **[unknown]** how terrain `risk` (0.1-0.6) enters, given lethality does not
+  use it.
+- **[unknown]** round duration in game time, and the morale threshold at which
+  a side withdraws. Escape uses `ESCAPE_PROGRESS_*` (§below).
+- **[unknown]** whether `W` in 5.2 is the raw terrain `combat_width` or that
+  value after `battle_combat_width_mult`. Structurally it is read off the
+  battle object, so almost certainly post-modifier.
+
+Escape [script]: progress needed is
+`ESCAPE_PROGRESS_REQUIRED_MIN (10) + 0.001 per manpower`, gained per round at
+`ESCAPE_PROGRESS_GAIN_BASE (1.0)` with a random factor up to 2.5.
 
 ## 6. Everything that modifies the above [script]
 
@@ -221,8 +293,11 @@ only through the mean of §2.
 
 ## 7. What the simulator must not claim
 
-- Absolute casualty counts and battle durations rest on §5 **[unknown]**. Show
-  them as relative, or label them.
+- Casualty counts per round are now exact (§5.3), but **battle length is not**:
+  round duration and the withdraw threshold are still unknown, so total
+  casualties over a whole battle remain inferred. Label them.
+- Morale loss per round is unknown (§5.6), so any "who breaks first" result is
+  inferred rather than derived.
 - Front-level behaviour (which battles happen, province capture, advance
   progress) is out of scope; this is a single-battle model.
 - Naval combat is a separate system (hull damage, armour, readiness, screening)
