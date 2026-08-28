@@ -212,21 +212,54 @@ cap only limits the *bonus* term, never the CE ratio itself.
 
 ### 5.4 Dead versus wounded
 
-`FUN_140ded0d0` @ `0x140ded0d0`:
+`FUN_140ded0d0` @ `0x140ded0d0`, with the modifier ids resolved through
+`tools/decompile/modifier-ids.json`:
 
 ```
-deadFraction = clamp(killRateModifier - recoveryRateModifier, 0, 1)
+woundedFraction = clamp(ownRecoveryRate - enemyKillRate, 0, 1)
 ```
 
-matching `concept_casualties_desc` [script]: the split "is dependent on the
-unit's recovery rate compared to their enemy's kill rate". This is why
-artillery (`unit_kill_rate_add` +0.10 … +0.30) makes battles bloody rather than
-decisive, and why field hospitals (`unit_recovery_rate_add` +0.40) cancel a lot
-of it.
+`0x145145d68` is `unit_recovery_rate_add` and `0x145145d6c` is
+`unit_kill_rate_add`. `FUN_140dec020` @ `0x140dec020` then moves that fraction
+of the casualty pool from one bucket to the other, clamping both at zero.
 
-`DistributeCasualtiesAmongstUnits` (battle_casualties.cpp:370-376) @
-`0x14118aae0` then chunks the decided total across units, rolling
-`CASUALTY_ROLL_MIN/MAX` (50-200) per unit and clamping to what remains.
+The direction matters and is easy to get backwards: **recovery rate is the
+share that merely gets wounded**, which the `NMilitary` comment on
+`ATTRITION_RECOVERY_RATE_BASE` states outright — "casualties with 0.7 recovery
+rate would consist of 70% wounded and 30% deaths" [script].
+
+So artillery (`unit_kill_rate_add` +0.10 … +0.30) converts enemy wounded into
+enemy dead, and field hospitals (`unit_recovery_rate_add` +0.40) convert your
+own dead back into wounded. Neither changes how fast a battle is decided.
+
+### 5.4b Morale loss — manpower going out of action
+
+`FUN_140dec130` @ `0x140dec130`:
+
+```
+total = 0
+for each unit u:
+    ml     = resolve(u, unit_morale_loss_add, unit_morale_loss_mult)
+    total += min(round(ml), u.manpower)          // in MEN, not percent
+factor = max(1 + enemySide.unit_morale_damage_mult, 0)
+return round(total * factor / 4)
+```
+
+Three things worth pulling out:
+
+- Morale loss is counted in **manpower going out of action**, matching
+  `concept_morale_desc` [script]: "some of the remaining manpower will become
+  demoralized for the remainder of the battle". Morale is not a separate pool.
+- It is a **sum over units**, not a mean — the opposite of offense/defense
+  (§2). Each battalion brings its own `unit_morale_loss_add` (15 on irregulars
+  down to 4 on mechanized), so a bigger army loses more men to demoralization
+  in absolute terms, and a *better* army loses fewer per battalion.
+- The **`/4` is hardcoded** — it is in no defines file. Same for the rounding,
+  which is round-half-away-from-zero throughout.
+
+That last point is the whole reason low `unit_morale_loss_add` is worth paying
+for: it is the only stat that decides how long you can keep fighting, and it
+does not get averaged away by the rest of the army.
 
 ### 5.5 Constants, and where they live
 
@@ -242,22 +275,26 @@ of it.
 | MIN_OFFENSE_DEFENSE | 1 | `0x1458ff3d0` |
 | SURVIVAL_RATE | 0.66 | `0x1458fe118` |
 
+`tools/decompile/modifier-ids.json` maps all **427 modifier names** to their id
+globals, extracted from the init function at `0x1415959c0` by pairing each
+`leaq <name string>, %rax` with the `movw %ax, <global>` that follows. That map
+is what turns an opaque `_DAT_145145d60` in decompiled battle code into
+`unit_morale_loss_add`, and it is reusable for any other subsystem.
+
 Storage addresses come from the registration call
 `FUN_140bd9a10(_, "NMilitary", "<DEFINE>", &storage)`; finding the readers of
 those addresses is how each formula above was located.
 
 ### 5.6 Still open
 
-- **[unknown]** morale loss per round. `unit_morale_loss_add` runs 15 on
-  irregulars down to 4 on mechanized, and morale is the fraction of manpower
-  still able to act, but the per-round conversion is not yet traced.
 - **[unknown]** how terrain `risk` (0.1-0.6) enters, given lethality does not
   use it.
-- **[unknown]** round duration in game time, and the morale threshold at which
-  a side withdraws. Escape uses `ESCAPE_PROGRESS_*` (§below).
-- **[unknown]** whether `W` in 5.2 is the raw terrain `combat_width` or that
-  value after `battle_combat_width_mult`. Structurally it is read off the
-  battle object, so almost certainly post-modifier.
+- **[unknown]** round duration in game time.
+- `W` in §5.2 is the **post-modifier** width: `battle_combat_width_mult`
+  (`0x145145de8`) has exactly one reader, `0x140deb1a0`, which populates battle
+  state, and §5.2 reads `W` from a cached field on the battle object.
+- **[unknown]** the withdraw threshold — the morale level at which a side
+  breaks. Escape progress (below) is separate and is about getting away.
 
 Escape [script]: progress needed is
 `ESCAPE_PROGRESS_REQUIRED_MIN (10) + 0.001 per manpower`, gained per round at
@@ -296,8 +333,8 @@ Escape [script]: progress needed is
 - Casualty counts per round are now exact (§5.3), but **battle length is not**:
   round duration and the withdraw threshold are still unknown, so total
   casualties over a whole battle remain inferred. Label them.
-- Morale loss per round is unknown (§5.6), so any "who breaks first" result is
-  inferred rather than derived.
+- Morale loss per round is exact (§5.4b), but the **withdraw threshold** is
+  not, so "who breaks first" is derived while "when" is not.
 - Front-level behaviour (which battles happen, province capture, advance
   progress) is out of scope; this is a single-battle model.
 - Naval combat is a separate system (hull damage, armour, readiness, screening)
